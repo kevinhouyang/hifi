@@ -1,0 +1,43 @@
+{
+	"sources" : 
+	[
+		{
+			"file" : "/Users/kevinhouyang/Development/hifi/build/ext/Xcode/vhacd/CMakeFiles/vhacd"
+		},
+		{
+			"file" : "/Users/kevinhouyang/Development/hifi/build/ext/Xcode/vhacd/CMakeFiles/vhacd.rule"
+		},
+		{
+			"file" : "/Users/kevinhouyang/Development/hifi/build/ext/Xcode/vhacd/CMakeFiles/CMakeFiles/vhacd-complete.rule"
+		},
+		{
+			"file" : "/Users/kevinhouyang/Development/hifi/build/ext/Xcode/vhacd/project/src/vhacd-stamp/CMakeFiles/vhacd-install.rule"
+		},
+		{
+			"file" : "/Users/kevinhouyang/Development/hifi/build/ext/Xcode/vhacd/project/src/vhacd-stamp/CMakeFiles/vhacd-mkdir.rule"
+		},
+		{
+			"file" : "/Users/kevinhouyang/Development/hifi/build/ext/Xcode/vhacd/project/src/vhacd-stamp/CMakeFiles/vhacd-download.rule"
+		},
+		{
+			"file" : "/Users/kevinhouyang/Development/hifi/build/ext/Xcode/vhacd/project/src/vhacd-stamp/CMakeFiles/vhacd-update.rule"
+		},
+		{
+			"file" : "/Users/kevinhouyang/Development/hifi/build/ext/Xcode/vhacd/project/src/vhacd-stamp/CMakeFiles/vhacd-patch.rule"
+		},
+		{
+			"file" : "/Users/kevinhouyang/Development/hifi/build/ext/Xcode/vhacd/project/src/vhacd-stamp/CMakeFiles/vhacd-configure.rule"
+		},
+		{
+			"file" : "/Users/kevinhouyang/Development/hifi/build/ext/Xcode/vhacd/project/src/vhacd-stamp/CMakeFiles/vhacd-build.rule"
+		}
+	],
+	"target" : 
+	{
+		"labels" : 
+		[
+			"vhacd"
+		],
+		"name" : "vhacd"
+	}
+}

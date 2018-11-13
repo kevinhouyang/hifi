@@ -1,0 +1,1295 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXAggregateTarget section */
+		324A15BFFEE94E94BA16B115 /* ZERO_CHECK */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 4B42CA4484814F5FA4292A11 /* Build configuration list for PBXAggregateTarget "ZERO_CHECK" */;
+			buildPhases = (
+				3206887CB89E4D3F9C088DA6 /* CMake Rules */,
+			);
+			dependencies = (
+			);
+			name = ZERO_CHECK;
+			productName = ZERO_CHECK;
+		};
+		76BBA07C604F4D0E89A822F7 /* RUN_TESTS */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 86C4AC9F3D2E4F34A46C7E23 /* Build configuration list for PBXAggregateTarget "RUN_TESTS" */;
+			buildPhases = (
+				60E97356FDA24B9A86BC82D2 /* CMake PostBuild Rules */,
+			);
+			dependencies = (
+			);
+			name = RUN_TESTS;
+			productName = RUN_TESTS;
+		};
+		7A7E10E72F85450A98FB2D43 /* install */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = B4A3968509FB431E9CCEC7CE /* Build configuration list for PBXAggregateTarget "install" */;
+			buildPhases = (
+				D0E2703581FC4DE584ED8620 /* CMake PostBuild Rules */,
+			);
+			dependencies = (
+				1A25527E3A144A13B094F9D1 /* PBXTargetDependency */,
+			);
+			name = install;
+			productName = install;
+		};
+		A0EF40283FD3451D881D67E2 /* package */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = C73A826C3F7B4BA3A58555CC /* Build configuration list for PBXAggregateTarget "package" */;
+			buildPhases = (
+				55F93B3E98814CDC8582EE92 /* CMake PostBuild Rules */,
+			);
+			dependencies = (
+				A3BC8D9566044A92A3896E18 /* PBXTargetDependency */,
+			);
+			name = package;
+			productName = package;
+		};
+		EC7358D97DFB4AB0AF8A20EB /* ALL_BUILD */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = C5C072122FA84127BDD6B9FD /* Build configuration list for PBXAggregateTarget "ALL_BUILD" */;
+			buildPhases = (
+				547B399AC94744618156AD68 /* CMake Rules */,
+			);
+			dependencies = (
+				688EB7F1F42948B29006A4F6 /* PBXTargetDependency */,
+				7D8C2DDB55AC4CCFA1E696E9 /* PBXTargetDependency */,
+			);
+			name = ALL_BUILD;
+			productName = ALL_BUILD;
+		};
+		F0908C17DE574313863C5CEA /* pcmCodec_autogen */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 966E917CD1744AFD82F0CA68 /* Build configuration list for PBXAggregateTarget "pcmCodec_autogen" */;
+			buildPhases = (
+				F6A76788778F48289C25D4C7 /* CMake Rules */,
+			);
+			dependencies = (
+				65A74FFB5C4342F4AF6BF52C /* PBXTargetDependency */,
+			);
+			name = pcmCodec_autogen;
+			productName = pcmCodec_autogen;
+		};
+/* End PBXAggregateTarget section */
+
+/* Begin PBXBuildFile section */
+		19FB5721DA2340749E0AF9E6 /* /Users/kevinhouyang/Development/hifi/plugins/pcmCodec/CMakeLists.txt */ = {isa = PBXBuildFile; fileRef = 8F66F2AF3AA7445DAF347BBC /* /Users/kevinhouyang/Development/hifi/plugins/pcmCodec/CMakeLists.txt */; };
+		1C995C74B7D6422AA1F8D021 /* /Users/kevinhouyang/Development/hifi/plugins/pcmCodec/src/PCMCodecManager.h */ = {isa = PBXBuildFile; fileRef = C6892CB2B1444E23B949C74D /* /Users/kevinhouyang/Development/hifi/plugins/pcmCodec/src/PCMCodecManager.h */; };
+		39BA1EFAA50D4F9D9CCA086A /* /Users/kevinhouyang/Development/hifi/plugins/pcmCodec/src/PCMCodecProvider.cpp */ = {isa = PBXBuildFile; fileRef = 2CB6B6805FE04C10BDE951D3 /* /Users/kevinhouyang/Development/hifi/plugins/pcmCodec/src/PCMCodecProvider.cpp */; };
+		C58156BE39034A4DA3B928E3 /* /Users/kevinhouyang/Development/hifi/plugins/pcmCodec/src/PCMCodecManager.cpp */ = {isa = PBXBuildFile; fileRef = 11B48969ACD44C88986B663A /* /Users/kevinhouyang/Development/hifi/plugins/pcmCodec/src/PCMCodecManager.cpp */; };
+		D886F3E387804C2FB5A00113 /* /Users/kevinhouyang/Development/hifi/build/plugins/pcmCodec/pcmCodec_autogen/mocs_compilation.cpp */ = {isa = PBXBuildFile; fileRef = 3F2ECF7301D84EC4ADDDA7C2 /* /Users/kevinhouyang/Development/hifi/build/plugins/pcmCodec/pcmCodec_autogen/mocs_compilation.cpp */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXBuildStyle section */
+		0164AEEFD2E34FA7AA33F21B /* MinSizeRel */ = {
+			isa = PBXBuildStyle;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+			};
+			name = MinSizeRel;
+		};
+		7CE01018D491479D97CEEB31 /* Debug */ = {
+			isa = PBXBuildStyle;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+			};
+			name = Debug;
+		};
+		963D12F015F64FB8BD0BA27A /* Release */ = {
+			isa = PBXBuildStyle;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+			};
+			name = Release;
+		};
+		BD821F6B0DDB45E896474735 /* RelWithDebInfo */ = {
+			isa = PBXBuildStyle;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+			};
+			name = RelWithDebInfo;
+		};
+/* End PBXBuildStyle section */
+
+/* Begin PBXContainerItemProxy section */
+		3F837FAD12E14801A3FDCC1B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B20D5A53AE2E4086ADAE22B2 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 324A15BFFEE94E94BA16B115;
+			remoteInfo = ZERO_CHECK;
+		};
+		443D0D2469F34059A743307E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B20D5A53AE2E4086ADAE22B2 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EC7358D97DFB4AB0AF8A20EB;
+			remoteInfo = ALL_BUILD;
+		};
+		7BA32B5C90C94FF5A568FDBD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B20D5A53AE2E4086ADAE22B2 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F0908C17DE574313863C5CEA;
+			remoteInfo = pcmCodec_autogen;
+		};
+		820243A364124C2097DBBEA0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B20D5A53AE2E4086ADAE22B2 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EC7358D97DFB4AB0AF8A20EB;
+			remoteInfo = ALL_BUILD;
+		};
+		96948B9E0F7C49D582345CBF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B20D5A53AE2E4086ADAE22B2 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 324A15BFFEE94E94BA16B115;
+			remoteInfo = ZERO_CHECK;
+		};
+		BCBD2A65DA784130B0D58668 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B20D5A53AE2E4086ADAE22B2 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 324A15BFFEE94E94BA16B115;
+			remoteInfo = ZERO_CHECK;
+		};
+		D2F908E2F28F4D17AAB9D39D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B20D5A53AE2E4086ADAE22B2 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7EEF0BF21F6B44119EAC2D3F;
+			remoteInfo = pcmCodec;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		11B48969ACD44C88986B663A /* /Users/kevinhouyang/Development/hifi/plugins/pcmCodec/src/PCMCodecManager.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = PCMCodecManager.cpp; path = src/PCMCodecManager.cpp; sourceTree = SOURCE_ROOT; };
+		2CB6B6805FE04C10BDE951D3 /* /Users/kevinhouyang/Development/hifi/plugins/pcmCodec/src/PCMCodecProvider.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = PCMCodecProvider.cpp; path = src/PCMCodecProvider.cpp; sourceTree = SOURCE_ROOT; };
+		3F2ECF7301D84EC4ADDDA7C2 /* /Users/kevinhouyang/Development/hifi/build/plugins/pcmCodec/pcmCodec_autogen/mocs_compilation.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = mocs_compilation.cpp; path = ../../build/plugins/pcmCodec/pcmCodec_autogen/mocs_compilation.cpp; sourceTree = SOURCE_ROOT; };
+		8F66F2AF3AA7445DAF347BBC /* /Users/kevinhouyang/Development/hifi/plugins/pcmCodec/CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; name = CMakeLists.txt; path = CMakeLists.txt; sourceTree = SOURCE_ROOT; };
+		9C06CD09D5B8465B8CC3DA54 /* pcmCodec */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.dylib"; path = libpcmCodec.dylib; sourceTree = BUILT_PRODUCTS_DIR; };
+		B6C8825F849D42D1AA10E5BC /* /Users/kevinhouyang/Development/hifi/plugins/pcmCodec/CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; name = CMakeLists.txt; path = CMakeLists.txt; sourceTree = SOURCE_ROOT; };
+		C6892CB2B1444E23B949C74D /* /Users/kevinhouyang/Development/hifi/plugins/pcmCodec/src/PCMCodecManager.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = PCMCodecManager.h; path = src/PCMCodecManager.h; sourceTree = SOURCE_ROOT; };
+		C9FEE4202DF84B2982CBC080 /* /Users/kevinhouyang/Development/hifi/plugins/pcmCodec/CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; name = CMakeLists.txt; path = CMakeLists.txt; sourceTree = SOURCE_ROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXGroup section */
+		1689795D24964A76954B65D8 /* Header Files */ = {
+			isa = PBXGroup;
+			children = (
+				C6892CB2B1444E23B949C74D /* /Users/kevinhouyang/Development/hifi/plugins/pcmCodec/src/PCMCodecManager.h */,
+			);
+			name = "Header Files";
+			sourceTree = "<group>";
+		};
+		3A49C6C8CD904F66A0826C9D /* CMake Rules */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "CMake Rules";
+			sourceTree = "<group>";
+		};
+		4EF232A3542E48FDB8E4419C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				9C06CD09D5B8465B8CC3DA54 /* pcmCodec */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		4FD13EC044394C63BE1D7F52 /* Source Files */ = {
+			isa = PBXGroup;
+			children = (
+				3F2ECF7301D84EC4ADDDA7C2 /* /Users/kevinhouyang/Development/hifi/build/plugins/pcmCodec/pcmCodec_autogen/mocs_compilation.cpp */,
+				11B48969ACD44C88986B663A /* /Users/kevinhouyang/Development/hifi/plugins/pcmCodec/src/PCMCodecManager.cpp */,
+				2CB6B6805FE04C10BDE951D3 /* /Users/kevinhouyang/Development/hifi/plugins/pcmCodec/src/PCMCodecProvider.cpp */,
+			);
+			name = "Source Files";
+			sourceTree = "<group>";
+		};
+		658DA8DF6C4248C2ABE1AA94 = {
+			isa = PBXGroup;
+			children = (
+				B8E9EF9AB2F0473787EF3939 /* Plugins */,
+				9583F8B7B0EE49FD99936133 /* ALL_BUILD */,
+				4EF232A3542E48FDB8E4419C /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		6798F97D87C642CAB04167BE /* CMake Rules */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "CMake Rules";
+			sourceTree = "<group>";
+		};
+		9583F8B7B0EE49FD99936133 /* ALL_BUILD */ = {
+			isa = PBXGroup;
+			children = (
+				6798F97D87C642CAB04167BE /* CMake Rules */,
+				B6C8825F849D42D1AA10E5BC /* /Users/kevinhouyang/Development/hifi/plugins/pcmCodec/CMakeLists.txt */,
+			);
+			name = ALL_BUILD;
+			sourceTree = "<group>";
+		};
+		AD50815023044F9E9C124EDE /* pcmCodec_autogen */ = {
+			isa = PBXGroup;
+			children = (
+				3A49C6C8CD904F66A0826C9D /* CMake Rules */,
+				C9FEE4202DF84B2982CBC080 /* /Users/kevinhouyang/Development/hifi/plugins/pcmCodec/CMakeLists.txt */,
+			);
+			name = pcmCodec_autogen;
+			sourceTree = "<group>";
+		};
+		B78338A9367141738A597882 /* pcmCodec */ = {
+			isa = PBXGroup;
+			children = (
+				4FD13EC044394C63BE1D7F52 /* Source Files */,
+				1689795D24964A76954B65D8 /* Header Files */,
+				8F66F2AF3AA7445DAF347BBC /* /Users/kevinhouyang/Development/hifi/plugins/pcmCodec/CMakeLists.txt */,
+			);
+			name = pcmCodec;
+			sourceTree = "<group>";
+		};
+		B8E9EF9AB2F0473787EF3939 /* Plugins */ = {
+			isa = PBXGroup;
+			children = (
+				B78338A9367141738A597882 /* pcmCodec */,
+				AD50815023044F9E9C124EDE /* pcmCodec_autogen */,
+			);
+			name = Plugins;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		7EEF0BF21F6B44119EAC2D3F /* pcmCodec */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EFA276C891EA40EE95381744 /* Build configuration list for PBXNativeTarget "pcmCodec" */;
+			buildPhases = (
+				DF66201F54804C6087829A79 /* Sources */,
+				00E314FF49B54DFAACDC2F87 /* CMake PostBuild Rules */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9ED8D5DECF0D4761B21A6B61 /* PBXTargetDependency */,
+				1664CDADAE79485DB1F167D7 /* PBXTargetDependency */,
+			);
+			name = pcmCodec;
+			productName = pcmCodec;
+			productReference = 9C06CD09D5B8465B8CC3DA54 /* pcmCodec */;
+			productType = "com.apple.product-type.library.dynamic";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B20D5A53AE2E4086ADAE22B2 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = YES;
+				LastUpgradeCheck = 0930;
+			};
+			buildConfigurationList = C2AC5B1E7B524CF4AF512791 /* Build configuration list for PBXProject "pcmCodec" */;
+			buildSettings = {
+			};
+			buildStyles = (
+				7CE01018D491479D97CEEB31 /* Debug */,
+				963D12F015F64FB8BD0BA27A /* Release */,
+				0164AEEFD2E34FA7AA33F21B /* MinSizeRel */,
+				BD821F6B0DDB45E896474735 /* RelWithDebInfo */,
+			);
+			compatibilityVersion = "Xcode 3.2";
+			hasScannedForEncodings = 0;
+			mainGroup = 658DA8DF6C4248C2ABE1AA94;
+			projectDirPath = ../../../plugins/pcmCodec;
+			projectRoot = "";
+			targets = (
+				EC7358D97DFB4AB0AF8A20EB /* ALL_BUILD */,
+				76BBA07C604F4D0E89A822F7 /* RUN_TESTS */,
+				324A15BFFEE94E94BA16B115 /* ZERO_CHECK */,
+				7A7E10E72F85450A98FB2D43 /* install */,
+				A0EF40283FD3451D881D67E2 /* package */,
+				7EEF0BF21F6B44119EAC2D3F /* pcmCodec */,
+				F0908C17DE574313863C5CEA /* pcmCodec_autogen */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		00E314FF49B54DFAACDC2F87 /* CMake PostBuild Rules */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			name = "CMake PostBuild Rules";
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "make -C /Users/kevinhouyang/Development/hifi/build/plugins/pcmCodec -f /Users/kevinhouyang/Development/hifi/build/plugins/pcmCodec/CMakeScripts/pcmCodec_postBuildPhase.make$CONFIGURATION all";
+			showEnvVarsInLog = 0;
+		};
+		3206887CB89E4D3F9C088DA6 /* CMake Rules */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			name = "CMake Rules";
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "make -C /Users/kevinhouyang/Development/hifi/build/plugins/pcmCodec -f /Users/kevinhouyang/Development/hifi/build/plugins/pcmCodec/CMakeScripts/ZERO_CHECK_cmakeRulesBuildPhase.make$CONFIGURATION all";
+			showEnvVarsInLog = 0;
+		};
+		547B399AC94744618156AD68 /* CMake Rules */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			name = "CMake Rules";
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "make -C /Users/kevinhouyang/Development/hifi/build/plugins/pcmCodec -f /Users/kevinhouyang/Development/hifi/build/plugins/pcmCodec/CMakeScripts/ALL_BUILD_cmakeRulesBuildPhase.make$CONFIGURATION all";
+			showEnvVarsInLog = 0;
+		};
+		55F93B3E98814CDC8582EE92 /* CMake PostBuild Rules */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			name = "CMake PostBuild Rules";
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "make -C /Users/kevinhouyang/Development/hifi/build/plugins/pcmCodec -f /Users/kevinhouyang/Development/hifi/build/plugins/pcmCodec/CMakeScripts/package_postBuildPhase.make$CONFIGURATION all";
+			showEnvVarsInLog = 0;
+		};
+		60E97356FDA24B9A86BC82D2 /* CMake PostBuild Rules */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			name = "CMake PostBuild Rules";
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "make -C /Users/kevinhouyang/Development/hifi/build/plugins/pcmCodec -f /Users/kevinhouyang/Development/hifi/build/plugins/pcmCodec/CMakeScripts/RUN_TESTS_postBuildPhase.make$CONFIGURATION all";
+			showEnvVarsInLog = 0;
+		};
+		9913595683BF435EAC5F43F4 = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# shell script goes here
+exit 0";
+			showEnvVarsInLog = 0;
+		};
+		A4485C4920F4414989EF2163 = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# shell script goes here
+exit 0";
+			showEnvVarsInLog = 0;
+		};
+		BC9E11E7C37044D4BD9524C1 = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# shell script goes here
+exit 0";
+			showEnvVarsInLog = 0;
+		};
+		D0E2703581FC4DE584ED8620 /* CMake PostBuild Rules */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			name = "CMake PostBuild Rules";
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "make -C /Users/kevinhouyang/Development/hifi/build/plugins/pcmCodec -f /Users/kevinhouyang/Development/hifi/build/plugins/pcmCodec/CMakeScripts/install_postBuildPhase.make$CONFIGURATION all";
+			showEnvVarsInLog = 0;
+		};
+		ECE67698000641DAB4976342 = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# shell script goes here
+exit 0";
+			showEnvVarsInLog = 0;
+		};
+		F099376948654576AE0124D7 = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# shell script goes here
+exit 0";
+			showEnvVarsInLog = 0;
+		};
+		F6099D34125D4FED8123CAED = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# shell script goes here
+exit 0";
+			showEnvVarsInLog = 0;
+		};
+		F6A76788778F48289C25D4C7 /* CMake Rules */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			name = "CMake Rules";
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "make -C /Users/kevinhouyang/Development/hifi/build/plugins/pcmCodec -f /Users/kevinhouyang/Development/hifi/build/plugins/pcmCodec/CMakeScripts/pcmCodec_autogen_cmakeRulesBuildPhase.make$CONFIGURATION all";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		DF66201F54804C6087829A79 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D886F3E387804C2FB5A00113 /* /Users/kevinhouyang/Development/hifi/build/plugins/pcmCodec/pcmCodec_autogen/mocs_compilation.cpp */,
+				C58156BE39034A4DA3B928E3 /* /Users/kevinhouyang/Development/hifi/plugins/pcmCodec/src/PCMCodecManager.cpp */,
+				39BA1EFAA50D4F9D9CCA086A /* /Users/kevinhouyang/Development/hifi/plugins/pcmCodec/src/PCMCodecProvider.cpp */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		1664CDADAE79485DB1F167D7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F0908C17DE574313863C5CEA /* pcmCodec_autogen */;
+			targetProxy = 7BA32B5C90C94FF5A568FDBD /* PBXContainerItemProxy */;
+		};
+		1A25527E3A144A13B094F9D1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EC7358D97DFB4AB0AF8A20EB /* ALL_BUILD */;
+			targetProxy = 820243A364124C2097DBBEA0 /* PBXContainerItemProxy */;
+		};
+		65A74FFB5C4342F4AF6BF52C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 324A15BFFEE94E94BA16B115 /* ZERO_CHECK */;
+			targetProxy = 3F837FAD12E14801A3FDCC1B /* PBXContainerItemProxy */;
+		};
+		688EB7F1F42948B29006A4F6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 324A15BFFEE94E94BA16B115 /* ZERO_CHECK */;
+			targetProxy = BCBD2A65DA784130B0D58668 /* PBXContainerItemProxy */;
+		};
+		7D8C2DDB55AC4CCFA1E696E9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 7EEF0BF21F6B44119EAC2D3F /* pcmCodec */;
+			targetProxy = D2F908E2F28F4D17AAB9D39D /* PBXContainerItemProxy */;
+		};
+		9ED8D5DECF0D4761B21A6B61 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 324A15BFFEE94E94BA16B115 /* ZERO_CHECK */;
+			targetProxy = 96948B9E0F7C49D582345CBF /* PBXContainerItemProxy */;
+		};
+		A3BC8D9566044A92A3896E18 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EC7358D97DFB4AB0AF8A20EB /* ALL_BUILD */;
+			targetProxy = 443D0D2469F34059A743307E /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		00AF0327A07E4365BC5BA8E5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				DYLIB_COMPATIBILITY_VERSION = "";
+				DYLIB_CURRENT_VERSION = "";
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .dylib;
+				FRAMEWORK_SEARCH_PATHS = (/usr/local/Cellar/qt/5.11.2/lib);
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 3;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",pcmCodec_EXPORTS,GLM_FORCE_RADIANS,DEV_BUILD,QT_CORE_LIB,QT_NO_DEBUG,QT_GUI_LIB,QT_NETWORK_LIB,QT_SCRIPT_LIB);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (/Users/kevinhouyang/Development/hifi/build/plugins/pcmCodec,/Users/kevinhouyang/Development/hifi/plugins/pcmCodec,/Users/kevinhouyang/Development/hifi/build/plugins/pcmCodec/pcmCodec_autogen/include_Release,/Users/kevinhouyang/Development/hifi/build/includes,/Users/kevinhouyang/Development/hifi/build/ext/Xcode/glm/project/include,/Users/kevinhouyang/Development/hifi/libraries/shared/src,/Users/kevinhouyang/Development/hifi/build/libraries/shared,/Users/kevinhouyang/Development/hifi/libraries/plugins/src,/Users/kevinhouyang/Development/hifi/build/libraries/plugins);
+				INSTALL_PATH = "@rpath";
+				LIBRARY_SEARCH_PATHS = "";
+				LIBRARY_STYLE = DYNAMIC;
+				OTHER_CPLUSPLUSFLAGS = " -Wall -Wextra -fno-strict-aliasing -Wno-unused-parameter --stdlib=libc++        -DNDEBUG -fPIC -fPIC '-std=gnu++14'  ";
+				OTHER_LDFLAGS = " -dynamiclib -Wl,-headerpad_max_install_names  /Users/kevinhouyang/Development/hifi/build/libraries/shared/Release/libshared.a /Users/kevinhouyang/Development/hifi/build/libraries/plugins/Release/libplugins.a /Users/kevinhouyang/Development/hifi/build/libraries/networking/Release/libnetworking.a /Users/kevinhouyang/Development/hifi/build/libraries/shared/Release/libshared.a /usr/local/Cellar/qt/5.11.2/lib/QtGui.framework/QtGui /usr/local/Cellar/qt/5.11.2/lib/QtScript.framework/QtScript /usr/lib/libz.dylib /usr/local/Cellar/qt/5.11.2/lib/QtNetwork.framework/QtNetwork /usr/local/Cellar/qt/5.11.2/lib/QtCore.framework/QtCore /usr/local/Cellar/openssl/1.0.2p/lib/libssl.dylib /usr/local/Cellar/openssl/1.0.2p/lib/libcrypto.dylib /Users/kevinhouyang/Development/hifi/build/ext/Xcode/tbb/project/src/tbb/lib/libtbb.dylib /Users/kevinhouyang/Development/hifi/build/ext/Xcode/tbb/project/src/tbb/lib/libtbbmalloc.dylib -framework IOKit -framework CoreFoundation";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = pcmCodec;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/kevinhouyang/Development/hifi/build/plugins/pcmCodec;
+				SYSTEM_HEADER_SEARCH_PATHS = (/usr/local/Cellar/qt/5.11.2/lib/QtCore.framework/Headers,"/usr/local/Cellar/qt/5.11.2/./mkspecs/macx-clang",/usr/local/Cellar/qt/5.11.2/lib/QtGui.framework/Headers,/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk/System/Library/Frameworks/OpenGL.framework/Headers,/usr/local/Cellar/qt/5.11.2/lib/QtNetwork.framework/Headers,/usr/local/Cellar/qt/5.11.2/lib/QtScript.framework/Headers,/Users/kevinhouyang/Development/hifi/build/ext/Xcode/tbb/project/src/tbb/include);
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = Release;
+		};
+		0109D4F4890C465BB30DFDA5 /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = pcmCodec_autogen;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/kevinhouyang/Development/hifi/build/plugins/pcmCodec;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = MinSizeRel;
+		};
+		054BD351868543BDA3999F30 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = RUN_TESTS;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/kevinhouyang/Development/hifi/build/plugins/pcmCodec;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = Release;
+		};
+		0C8B7FFC74F94C28A4938B6B /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = RUN_TESTS;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/kevinhouyang/Development/hifi/build/plugins/pcmCodec;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = MinSizeRel;
+		};
+		165F93259EDD40D9B46F4EB9 /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = package;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/kevinhouyang/Development/hifi/build/plugins/pcmCodec;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = MinSizeRel;
+		};
+		1731235AE55C434EB48B980A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ZERO_CHECK;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/kevinhouyang/Development/hifi/build/plugins/pcmCodec;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = Debug;
+		};
+		28DB58D0F7C14E4F9C7B19A9 /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ZERO_CHECK;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/kevinhouyang/Development/hifi/build/plugins/pcmCodec;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = RelWithDebInfo;
+		};
+		2B77F7DCFD38403C8C894576 /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = RUN_TESTS;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/kevinhouyang/Development/hifi/build/plugins/pcmCodec;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = RelWithDebInfo;
+		};
+		368633AE10B3451091955822 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = package;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/kevinhouyang/Development/hifi/build/plugins/pcmCodec;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = Release;
+		};
+		3B049A6D0F4645E6BC32C554 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "c++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEPLOYMENT_POSTPROCESSING = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk;
+				SYMROOT = /Users/kevinhouyang/Development/hifi/build/plugins/pcmCodec/build;
+			};
+			name = Release;
+		};
+		3EA6441C72D84F43A2B92DCE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ALL_BUILD;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/kevinhouyang/Development/hifi/build/plugins/pcmCodec;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = Debug;
+		};
+		40A25C300DC74B67BF351CE4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = pcmCodec_autogen;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/kevinhouyang/Development/hifi/build/plugins/pcmCodec;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = Debug;
+		};
+		427C9C9BBC3145179FBFE44B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = package;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/kevinhouyang/Development/hifi/build/plugins/pcmCodec;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = Debug;
+		};
+		464E1407B5784536B42B1155 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ALL_BUILD;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/kevinhouyang/Development/hifi/build/plugins/pcmCodec;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = Release;
+		};
+		4C033C34825643398E545A34 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = RUN_TESTS;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/kevinhouyang/Development/hifi/build/plugins/pcmCodec;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = Debug;
+		};
+		5106C784D1D948B18D7DD642 /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = package;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/kevinhouyang/Development/hifi/build/plugins/pcmCodec;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = RelWithDebInfo;
+		};
+		5407DB6803834B6B8D603238 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = pcmCodec_autogen;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/kevinhouyang/Development/hifi/build/plugins/pcmCodec;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = Release;
+		};
+		5591EE3913CE4375BE91D6FF /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "c++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk;
+				SYMROOT = /Users/kevinhouyang/Development/hifi/build/plugins/pcmCodec/build;
+			};
+			name = MinSizeRel;
+		};
+		62CEDC4B39D5494DA3CD4569 /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				DYLIB_COMPATIBILITY_VERSION = "";
+				DYLIB_CURRENT_VERSION = "";
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .dylib;
+				FRAMEWORK_SEARCH_PATHS = (/usr/local/Cellar/qt/5.11.2/lib);
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = s;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",pcmCodec_EXPORTS,GLM_FORCE_RADIANS,DEV_BUILD,QT_CORE_LIB,QT_NO_DEBUG,QT_GUI_LIB,QT_NETWORK_LIB,QT_SCRIPT_LIB);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (/Users/kevinhouyang/Development/hifi/build/plugins/pcmCodec,/Users/kevinhouyang/Development/hifi/plugins/pcmCodec,/Users/kevinhouyang/Development/hifi/build/plugins/pcmCodec/pcmCodec_autogen/include_MinSizeRel,/Users/kevinhouyang/Development/hifi/build/includes,/Users/kevinhouyang/Development/hifi/build/ext/Xcode/glm/project/include,/Users/kevinhouyang/Development/hifi/libraries/shared/src,/Users/kevinhouyang/Development/hifi/build/libraries/shared,/Users/kevinhouyang/Development/hifi/libraries/plugins/src,/Users/kevinhouyang/Development/hifi/build/libraries/plugins);
+				INSTALL_PATH = "@rpath";
+				LIBRARY_SEARCH_PATHS = "";
+				LIBRARY_STYLE = DYNAMIC;
+				OTHER_CPLUSPLUSFLAGS = " -Wall -Wextra -fno-strict-aliasing -Wno-unused-parameter --stdlib=libc++        -DNDEBUG -fPIC -fPIC '-std=gnu++14'  ";
+				OTHER_LDFLAGS = " -dynamiclib -Wl,-headerpad_max_install_names  /Users/kevinhouyang/Development/hifi/build/libraries/shared/MinSizeRel/libshared.a /Users/kevinhouyang/Development/hifi/build/libraries/plugins/MinSizeRel/libplugins.a /Users/kevinhouyang/Development/hifi/build/libraries/networking/MinSizeRel/libnetworking.a /Users/kevinhouyang/Development/hifi/build/libraries/shared/MinSizeRel/libshared.a /usr/local/Cellar/qt/5.11.2/lib/QtGui.framework/QtGui /usr/local/Cellar/qt/5.11.2/lib/QtScript.framework/QtScript /usr/lib/libz.dylib /usr/local/Cellar/qt/5.11.2/lib/QtNetwork.framework/QtNetwork /usr/local/Cellar/qt/5.11.2/lib/QtCore.framework/QtCore /usr/local/Cellar/openssl/1.0.2p/lib/libssl.dylib /usr/local/Cellar/openssl/1.0.2p/lib/libcrypto.dylib /Users/kevinhouyang/Development/hifi/build/ext/Xcode/tbb/project/src/tbb/lib/libtbb.dylib /Users/kevinhouyang/Development/hifi/build/ext/Xcode/tbb/project/src/tbb/lib/libtbbmalloc.dylib -framework IOKit -framework CoreFoundation";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = pcmCodec;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/kevinhouyang/Development/hifi/build/plugins/pcmCodec;
+				SYSTEM_HEADER_SEARCH_PATHS = (/usr/local/Cellar/qt/5.11.2/lib/QtCore.framework/Headers,"/usr/local/Cellar/qt/5.11.2/./mkspecs/macx-clang",/usr/local/Cellar/qt/5.11.2/lib/QtGui.framework/Headers,/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk/System/Library/Frameworks/OpenGL.framework/Headers,/usr/local/Cellar/qt/5.11.2/lib/QtNetwork.framework/Headers,/usr/local/Cellar/qt/5.11.2/lib/QtScript.framework/Headers,/Users/kevinhouyang/Development/hifi/build/ext/Xcode/tbb/project/src/tbb/include);
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = MinSizeRel;
+		};
+		6A584912BC854B75A350F327 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "c++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk;
+				SYMROOT = /Users/kevinhouyang/Development/hifi/build/plugins/pcmCodec/build;
+			};
+			name = Debug;
+		};
+		8B2ADBB50FC344AA8E5F5445 /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ALL_BUILD;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/kevinhouyang/Development/hifi/build/plugins/pcmCodec;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = RelWithDebInfo;
+		};
+		959EE207032B402CB3A5C2C8 /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = install;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/kevinhouyang/Development/hifi/build/plugins/pcmCodec;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = MinSizeRel;
+		};
+		CE0A0609DCF84D8EA0C65639 /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "c++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk;
+				SYMROOT = /Users/kevinhouyang/Development/hifi/build/plugins/pcmCodec/build;
+			};
+			name = RelWithDebInfo;
+		};
+		D2C8174CF48345B3A4A628BB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = install;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/kevinhouyang/Development/hifi/build/plugins/pcmCodec;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = Debug;
+		};
+		D383EA9D0AA34AFC8BCF1EC4 /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ZERO_CHECK;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/kevinhouyang/Development/hifi/build/plugins/pcmCodec;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = MinSizeRel;
+		};
+		D550239A65A64966BED86481 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = install;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/kevinhouyang/Development/hifi/build/plugins/pcmCodec;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = Release;
+		};
+		DE3B1B756DAD4EE6A3D4D740 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ZERO_CHECK;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/kevinhouyang/Development/hifi/build/plugins/pcmCodec;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = Release;
+		};
+		EA0400B957C246C3BA75C5EF /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = install;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/kevinhouyang/Development/hifi/build/plugins/pcmCodec;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = RelWithDebInfo;
+		};
+		EB9F4582BE21465CB276DE34 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				DYLIB_COMPATIBILITY_VERSION = "";
+				DYLIB_CURRENT_VERSION = "";
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .dylib;
+				FRAMEWORK_SEARCH_PATHS = (/usr/local/Cellar/qt/5.11.2/lib);
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",pcmCodec_EXPORTS,GLM_FORCE_RADIANS,DEV_BUILD,QT_CORE_LIB,QT_GUI_LIB,QT_NETWORK_LIB,QT_SCRIPT_LIB);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (/Users/kevinhouyang/Development/hifi/build/plugins/pcmCodec,/Users/kevinhouyang/Development/hifi/plugins/pcmCodec,/Users/kevinhouyang/Development/hifi/build/plugins/pcmCodec/pcmCodec_autogen/include_Debug,/Users/kevinhouyang/Development/hifi/build/includes,/Users/kevinhouyang/Development/hifi/build/ext/Xcode/glm/project/include,/Users/kevinhouyang/Development/hifi/libraries/shared/src,/Users/kevinhouyang/Development/hifi/build/libraries/shared,/Users/kevinhouyang/Development/hifi/libraries/plugins/src,/Users/kevinhouyang/Development/hifi/build/libraries/plugins);
+				INSTALL_PATH = "@rpath";
+				LIBRARY_SEARCH_PATHS = "";
+				LIBRARY_STYLE = DYNAMIC;
+				OTHER_CPLUSPLUSFLAGS = " -Wall -Wextra -fno-strict-aliasing -Wno-unused-parameter --stdlib=libc++       -DDEBUG -fPIC -fPIC '-std=gnu++14'  ";
+				OTHER_LDFLAGS = " -dynamiclib -Wl,-headerpad_max_install_names  /Users/kevinhouyang/Development/hifi/build/libraries/shared/Debug/libshared.a /Users/kevinhouyang/Development/hifi/build/libraries/plugins/Debug/libplugins.a /Users/kevinhouyang/Development/hifi/build/libraries/networking/Debug/libnetworking.a /Users/kevinhouyang/Development/hifi/build/libraries/shared/Debug/libshared.a /usr/local/Cellar/qt/5.11.2/lib/QtGui.framework/QtGui /usr/local/Cellar/qt/5.11.2/lib/QtScript.framework/QtScript /usr/lib/libz.dylib /usr/local/Cellar/qt/5.11.2/lib/QtNetwork.framework/QtNetwork /usr/local/Cellar/qt/5.11.2/lib/QtCore.framework/QtCore /usr/local/Cellar/openssl/1.0.2p/lib/libssl.dylib /usr/local/Cellar/openssl/1.0.2p/lib/libcrypto.dylib /Users/kevinhouyang/Development/hifi/build/ext/Xcode/tbb/project/src/tbb/lib/libtbb_debug.dylib /Users/kevinhouyang/Development/hifi/build/ext/Xcode/tbb/project/src/tbb/lib/libtbbmalloc_debug.dylib -framework IOKit -framework CoreFoundation";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = pcmCodec;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/kevinhouyang/Development/hifi/build/plugins/pcmCodec;
+				SYSTEM_HEADER_SEARCH_PATHS = (/usr/local/Cellar/qt/5.11.2/lib/QtCore.framework/Headers,"/usr/local/Cellar/qt/5.11.2/./mkspecs/macx-clang",/usr/local/Cellar/qt/5.11.2/lib/QtGui.framework/Headers,/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk/System/Library/Frameworks/OpenGL.framework/Headers,/usr/local/Cellar/qt/5.11.2/lib/QtNetwork.framework/Headers,/usr/local/Cellar/qt/5.11.2/lib/QtScript.framework/Headers,/Users/kevinhouyang/Development/hifi/build/ext/Xcode/tbb/project/src/tbb/include);
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = Debug;
+		};
+		EE2849AFD07C484D8C4D6D4C /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				DYLIB_COMPATIBILITY_VERSION = "";
+				DYLIB_CURRENT_VERSION = "";
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .dylib;
+				FRAMEWORK_SEARCH_PATHS = (/usr/local/Cellar/qt/5.11.2/lib);
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 2;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",pcmCodec_EXPORTS,GLM_FORCE_RADIANS,DEV_BUILD,QT_CORE_LIB,QT_NO_DEBUG,QT_GUI_LIB,QT_NETWORK_LIB,QT_SCRIPT_LIB);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (/Users/kevinhouyang/Development/hifi/build/plugins/pcmCodec,/Users/kevinhouyang/Development/hifi/plugins/pcmCodec,/Users/kevinhouyang/Development/hifi/build/plugins/pcmCodec/pcmCodec_autogen/include_RelWithDebInfo,/Users/kevinhouyang/Development/hifi/build/includes,/Users/kevinhouyang/Development/hifi/build/ext/Xcode/glm/project/include,/Users/kevinhouyang/Development/hifi/libraries/shared/src,/Users/kevinhouyang/Development/hifi/build/libraries/shared,/Users/kevinhouyang/Development/hifi/libraries/plugins/src,/Users/kevinhouyang/Development/hifi/build/libraries/plugins);
+				INSTALL_PATH = "@rpath";
+				LIBRARY_SEARCH_PATHS = "";
+				LIBRARY_STYLE = DYNAMIC;
+				OTHER_CPLUSPLUSFLAGS = " -Wall -Wextra -fno-strict-aliasing -Wno-unused-parameter --stdlib=libc++           -DNDEBUG -fPIC -fPIC '-std=gnu++14'  ";
+				OTHER_LDFLAGS = " -dynamiclib -Wl,-headerpad_max_install_names  /Users/kevinhouyang/Development/hifi/build/libraries/shared/RelWithDebInfo/libshared.a /Users/kevinhouyang/Development/hifi/build/libraries/plugins/RelWithDebInfo/libplugins.a /Users/kevinhouyang/Development/hifi/build/libraries/networking/RelWithDebInfo/libnetworking.a /Users/kevinhouyang/Development/hifi/build/libraries/shared/RelWithDebInfo/libshared.a /usr/local/Cellar/qt/5.11.2/lib/QtGui.framework/QtGui /usr/local/Cellar/qt/5.11.2/lib/QtScript.framework/QtScript /usr/lib/libz.dylib /usr/local/Cellar/qt/5.11.2/lib/QtNetwork.framework/QtNetwork /usr/local/Cellar/qt/5.11.2/lib/QtCore.framework/QtCore /usr/local/Cellar/openssl/1.0.2p/lib/libssl.dylib /usr/local/Cellar/openssl/1.0.2p/lib/libcrypto.dylib /Users/kevinhouyang/Development/hifi/build/ext/Xcode/tbb/project/src/tbb/lib/libtbb.dylib /Users/kevinhouyang/Development/hifi/build/ext/Xcode/tbb/project/src/tbb/lib/libtbbmalloc.dylib -framework IOKit -framework CoreFoundation";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = pcmCodec;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/kevinhouyang/Development/hifi/build/plugins/pcmCodec;
+				SYSTEM_HEADER_SEARCH_PATHS = (/usr/local/Cellar/qt/5.11.2/lib/QtCore.framework/Headers,"/usr/local/Cellar/qt/5.11.2/./mkspecs/macx-clang",/usr/local/Cellar/qt/5.11.2/lib/QtGui.framework/Headers,/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk/System/Library/Frameworks/OpenGL.framework/Headers,/usr/local/Cellar/qt/5.11.2/lib/QtNetwork.framework/Headers,/usr/local/Cellar/qt/5.11.2/lib/QtScript.framework/Headers,/Users/kevinhouyang/Development/hifi/build/ext/Xcode/tbb/project/src/tbb/include);
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = RelWithDebInfo;
+		};
+		F664B063D73F4368A8114BF7 /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ALL_BUILD;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/kevinhouyang/Development/hifi/build/plugins/pcmCodec;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = MinSizeRel;
+		};
+		FA27E7F2392D4803956CC673 /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = pcmCodec_autogen;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/kevinhouyang/Development/hifi/build/plugins/pcmCodec;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = RelWithDebInfo;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4B42CA4484814F5FA4292A11 /* Build configuration list for PBXAggregateTarget "ZERO_CHECK" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1731235AE55C434EB48B980A /* Debug */,
+				DE3B1B756DAD4EE6A3D4D740 /* Release */,
+				D383EA9D0AA34AFC8BCF1EC4 /* MinSizeRel */,
+				28DB58D0F7C14E4F9C7B19A9 /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		86C4AC9F3D2E4F34A46C7E23 /* Build configuration list for PBXAggregateTarget "RUN_TESTS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4C033C34825643398E545A34 /* Debug */,
+				054BD351868543BDA3999F30 /* Release */,
+				0C8B7FFC74F94C28A4938B6B /* MinSizeRel */,
+				2B77F7DCFD38403C8C894576 /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		966E917CD1744AFD82F0CA68 /* Build configuration list for PBXAggregateTarget "pcmCodec_autogen" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				40A25C300DC74B67BF351CE4 /* Debug */,
+				5407DB6803834B6B8D603238 /* Release */,
+				0109D4F4890C465BB30DFDA5 /* MinSizeRel */,
+				FA27E7F2392D4803956CC673 /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		B4A3968509FB431E9CCEC7CE /* Build configuration list for PBXAggregateTarget "install" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D2C8174CF48345B3A4A628BB /* Debug */,
+				D550239A65A64966BED86481 /* Release */,
+				959EE207032B402CB3A5C2C8 /* MinSizeRel */,
+				EA0400B957C246C3BA75C5EF /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		C2AC5B1E7B524CF4AF512791 /* Build configuration list for PBXProject "pcmCodec" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6A584912BC854B75A350F327 /* Debug */,
+				3B049A6D0F4645E6BC32C554 /* Release */,
+				5591EE3913CE4375BE91D6FF /* MinSizeRel */,
+				CE0A0609DCF84D8EA0C65639 /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		C5C072122FA84127BDD6B9FD /* Build configuration list for PBXAggregateTarget "ALL_BUILD" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3EA6441C72D84F43A2B92DCE /* Debug */,
+				464E1407B5784536B42B1155 /* Release */,
+				F664B063D73F4368A8114BF7 /* MinSizeRel */,
+				8B2ADBB50FC344AA8E5F5445 /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		C73A826C3F7B4BA3A58555CC /* Build configuration list for PBXAggregateTarget "package" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				427C9C9BBC3145179FBFE44B /* Debug */,
+				368633AE10B3451091955822 /* Release */,
+				165F93259EDD40D9B46F4EB9 /* MinSizeRel */,
+				5106C784D1D948B18D7DD642 /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		EFA276C891EA40EE95381744 /* Build configuration list for PBXNativeTarget "pcmCodec" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EB9F4582BE21465CB276DE34 /* Debug */,
+				00AF0327A07E4365BC5BA8E5 /* Release */,
+				62CEDC4B39D5494DA3CD4569 /* MinSizeRel */,
+				EE2849AFD07C484D8C4D6D4C /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = B20D5A53AE2E4086ADAE22B2 /* Project object */;
+}

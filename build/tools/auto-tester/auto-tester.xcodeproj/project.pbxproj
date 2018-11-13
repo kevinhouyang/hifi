@@ -1,0 +1,1389 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXAggregateTarget section */
+		324A15BFFEE94E94BA16B115 /* ZERO_CHECK */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = C6D02BBD933E45C2AE34A0B3 /* Build configuration list for PBXAggregateTarget "ZERO_CHECK" */;
+			buildPhases = (
+				3542C5671B794AE6AA616D4E /* CMake Rules */,
+			);
+			dependencies = (
+			);
+			name = ZERO_CHECK;
+			productName = ZERO_CHECK;
+		};
+		76BBA07C604F4D0E89A822F7 /* RUN_TESTS */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = E28FDF070FAE40068095FF65 /* Build configuration list for PBXAggregateTarget "RUN_TESTS" */;
+			buildPhases = (
+				22E4099E2CF14FA2BD26D682 /* CMake PostBuild Rules */,
+			);
+			dependencies = (
+			);
+			name = RUN_TESTS;
+			productName = RUN_TESTS;
+		};
+		7A7E10E72F85450A98FB2D43 /* install */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 2AD3F3D8A4F442B3B7BDDDCA /* Build configuration list for PBXAggregateTarget "install" */;
+			buildPhases = (
+				EE0E0DA388B44FDCB93CC850 /* CMake PostBuild Rules */,
+			);
+			dependencies = (
+				0F7BFF8CC56844F290626A1F /* PBXTargetDependency */,
+			);
+			name = install;
+			productName = install;
+		};
+		A0EF40283FD3451D881D67E2 /* package */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 01BBF6CDB0B343AF82761FFE /* Build configuration list for PBXAggregateTarget "package" */;
+			buildPhases = (
+				FB6077C08F884AC8B93D1F05 /* CMake PostBuild Rules */,
+			);
+			dependencies = (
+				1DE0C9305539422889E46CCD /* PBXTargetDependency */,
+			);
+			name = package;
+			productName = package;
+		};
+		D1C5275AF4C94B05BB207CE2 /* auto-tester_autogen */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = CAE1020CAA9B418EB8D77347 /* Build configuration list for PBXAggregateTarget "auto-tester_autogen" */;
+			buildPhases = (
+				0DFEAC5089924FCB8E6E99D3 /* CMake Rules */,
+			);
+			dependencies = (
+				25DE74DF1D444E2EA2D5D58B /* PBXTargetDependency */,
+			);
+			name = "auto-tester_autogen";
+			productName = "auto-tester_autogen";
+		};
+		EC7358D97DFB4AB0AF8A20EB /* ALL_BUILD */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = E044CFD88B41488E807A7531 /* Build configuration list for PBXAggregateTarget "ALL_BUILD" */;
+			buildPhases = (
+				E6EF751D72F34D1EA190490B /* CMake Rules */,
+			);
+			dependencies = (
+				5A6DB0CDDCE942EFA72B516C /* PBXTargetDependency */,
+				C69D076C2BB74A089ED674F8 /* PBXTargetDependency */,
+			);
+			name = ALL_BUILD;
+			productName = ALL_BUILD;
+		};
+/* End PBXAggregateTarget section */
+
+/* Begin PBXBuildFile section */
+		01674304BA6A494887EC83FC /* /Users/kevinhouyang/Development/hifi/tools/auto-tester/src/ImageComparer.h */ = {isa = PBXBuildFile; fileRef = 9614180E36F8411598811757 /* /Users/kevinhouyang/Development/hifi/tools/auto-tester/src/ImageComparer.h */; };
+		0A375BF799B7428A8589DB17 /* /Users/kevinhouyang/Development/hifi/tools/auto-tester/src/Downloader.cpp */ = {isa = PBXBuildFile; fileRef = 92B4F3DCEBB54ACF88AFB576 /* /Users/kevinhouyang/Development/hifi/tools/auto-tester/src/Downloader.cpp */; };
+		1514C17526934559A211D8B6 /* /Users/kevinhouyang/Development/hifi/tools/auto-tester/src/ui/TestRailRunSelectorWindow.cpp */ = {isa = PBXBuildFile; fileRef = A93AD8E02F2D4CFAAEA65C95 /* /Users/kevinhouyang/Development/hifi/tools/auto-tester/src/ui/TestRailRunSelectorWindow.cpp */; };
+		19C079BAE0F14D5F9FC78A4E /* /Users/kevinhouyang/Development/hifi/tools/auto-tester/src/main.cpp */ = {isa = PBXBuildFile; fileRef = 30FF3188B1B04927A2F5F754 /* /Users/kevinhouyang/Development/hifi/tools/auto-tester/src/main.cpp */; };
+		262064ADFE464E648CF09E5C /* /Users/kevinhouyang/Development/hifi/tools/auto-tester/src/common.h */ = {isa = PBXBuildFile; fileRef = BB3A8464699048DDA9991563 /* /Users/kevinhouyang/Development/hifi/tools/auto-tester/src/common.h */; };
+		2A36F8BA7C4C494C9BF90BC6 /* /Users/kevinhouyang/Development/hifi/tools/auto-tester/src/TestRailInterface.h */ = {isa = PBXBuildFile; fileRef = D5560AEFF85F4A6BBA1BC545 /* /Users/kevinhouyang/Development/hifi/tools/auto-tester/src/TestRailInterface.h */; };
+		3126B860CD1C459B976220EA /* /Users/kevinhouyang/Development/hifi/tools/auto-tester/src/ui/TestRailTestCasesSelectorWindow.h */ = {isa = PBXBuildFile; fileRef = 2E7C2D93304542889D67973A /* /Users/kevinhouyang/Development/hifi/tools/auto-tester/src/ui/TestRailTestCasesSelectorWindow.h */; };
+		3199C551EB85487AB1453187 /* /Users/kevinhouyang/Development/hifi/tools/auto-tester/src/ImageComparer.cpp */ = {isa = PBXBuildFile; fileRef = 9F687961807944D8A97E29FE /* /Users/kevinhouyang/Development/hifi/tools/auto-tester/src/ImageComparer.cpp */; };
+		3B782DAA84044A429625FF2A /* /Users/kevinhouyang/Development/hifi/tools/auto-tester/src/PythonInterface.h */ = {isa = PBXBuildFile; fileRef = A1190FDE9D944F8CA8F9D954 /* /Users/kevinhouyang/Development/hifi/tools/auto-tester/src/PythonInterface.h */; };
+		41B8FE9999FD4F0BACD921AE /* /Users/kevinhouyang/Development/hifi/tools/auto-tester/src/ui/TestRailTestCasesSelectorWindow.ui */ = {isa = PBXBuildFile; fileRef = 1D1CB78441954AD0A02D1769 /* /Users/kevinhouyang/Development/hifi/tools/auto-tester/src/ui/TestRailTestCasesSelectorWindow.ui */; };
+		49BC0CA910014A09AB31BDD4 /* /Users/kevinhouyang/Development/hifi/tools/auto-tester/src/ui/BusyWindow.h */ = {isa = PBXBuildFile; fileRef = 16571F741284404C83C209BF /* /Users/kevinhouyang/Development/hifi/tools/auto-tester/src/ui/BusyWindow.h */; };
+		51355598901F4DEF81225BDD /* /Users/kevinhouyang/Development/hifi/tools/auto-tester/src/ui/AutoTester.cpp */ = {isa = PBXBuildFile; fileRef = C22ABEC5E7CC488E955A6817 /* /Users/kevinhouyang/Development/hifi/tools/auto-tester/src/ui/AutoTester.cpp */; };
+		548C6D1C90E84EF9841C996D /* /Users/kevinhouyang/Development/hifi/tools/auto-tester/src/Test.cpp */ = {isa = PBXBuildFile; fileRef = 613181EC863B49E195DE7307 /* /Users/kevinhouyang/Development/hifi/tools/auto-tester/src/Test.cpp */; };
+		566F9A435C87489FBC02BC5C /* /Users/kevinhouyang/Development/hifi/tools/auto-tester/src/ui/MismatchWindow.cpp */ = {isa = PBXBuildFile; fileRef = E0ACC111B87E4AD890F6A834 /* /Users/kevinhouyang/Development/hifi/tools/auto-tester/src/ui/MismatchWindow.cpp */; };
+		56D43AC7855546D3A8D5A730 /* /Users/kevinhouyang/Development/hifi/tools/auto-tester/src/Downloader.h */ = {isa = PBXBuildFile; fileRef = 9D43C6ADD7DE47AFB04E5C39 /* /Users/kevinhouyang/Development/hifi/tools/auto-tester/src/Downloader.h */; };
+		5989A5A112AC4F72A0006279 /* /Users/kevinhouyang/Development/hifi/tools/auto-tester/src/ui/MismatchWindow.h */ = {isa = PBXBuildFile; fileRef = 366B65C0C5D74F77BEEF7357 /* /Users/kevinhouyang/Development/hifi/tools/auto-tester/src/ui/MismatchWindow.h */; };
+		6E666240046C4FC88EFB9D86 /* /Users/kevinhouyang/Development/hifi/tools/auto-tester/src/ui/BusyWindow.ui */ = {isa = PBXBuildFile; fileRef = E0FD08424E9D47CBAAEC5749 /* /Users/kevinhouyang/Development/hifi/tools/auto-tester/src/ui/BusyWindow.ui */; };
+		7904681A0E9A4B7793B6741E /* /Users/kevinhouyang/Development/hifi/tools/auto-tester/src/ui */ = {isa = PBXBuildFile; fileRef = 6DF33914D33642A5A0F1C4B7 /* /Users/kevinhouyang/Development/hifi/tools/auto-tester/src/ui */; };
+		81BAE0C19F594865B85AB216 /* /Users/kevinhouyang/Development/hifi/tools/auto-tester/src/TestRailInterface.cpp */ = {isa = PBXBuildFile; fileRef = E681F7F7F09E4B9995317EEF /* /Users/kevinhouyang/Development/hifi/tools/auto-tester/src/TestRailInterface.cpp */; };
+		8D1C711C0DB54B50AED21219 /* /Users/kevinhouyang/Development/hifi/tools/auto-tester/src/ui/MismatchWindow.ui */ = {isa = PBXBuildFile; fileRef = 091B1610CF7240C4960C6558 /* /Users/kevinhouyang/Development/hifi/tools/auto-tester/src/ui/MismatchWindow.ui */; };
+		8DA79467FC7D46F7827D441B /* /Users/kevinhouyang/Development/hifi/tools/auto-tester/src/ui/HelpWindow.h */ = {isa = PBXBuildFile; fileRef = 6AEBD96B31C74A68B56E6B9F /* /Users/kevinhouyang/Development/hifi/tools/auto-tester/src/ui/HelpWindow.h */; };
+		8DC653F8486341F799B64737 /* /Users/kevinhouyang/Development/hifi/tools/auto-tester/src/ui/TestRailRunSelectorWindow.ui */ = {isa = PBXBuildFile; fileRef = 633C1A39023E48F3BE5499D3 /* /Users/kevinhouyang/Development/hifi/tools/auto-tester/src/ui/TestRailRunSelectorWindow.ui */; };
+		8FEE4485CF78446C8759CF8F /* /Users/kevinhouyang/Development/hifi/tools/auto-tester/src/ui/TestRailResultsSelectorWindow.h */ = {isa = PBXBuildFile; fileRef = A4F7546CF1A342DE87CE9BF9 /* /Users/kevinhouyang/Development/hifi/tools/auto-tester/src/ui/TestRailResultsSelectorWindow.h */; };
+		9985646B579747019073E2FD /* /Users/kevinhouyang/Development/hifi/tools/auto-tester/src/ui/AutoTester.h */ = {isa = PBXBuildFile; fileRef = 334E241F2AF04FA5ACA15760 /* /Users/kevinhouyang/Development/hifi/tools/auto-tester/src/ui/AutoTester.h */; };
+		9F2AC353C33A4A3EA25C734A /* /Users/kevinhouyang/Development/hifi/tools/auto-tester/src/ui/TestRailTestCasesSelectorWindow.cpp */ = {isa = PBXBuildFile; fileRef = BFF1513E03404518A98EB764 /* /Users/kevinhouyang/Development/hifi/tools/auto-tester/src/ui/TestRailTestCasesSelectorWindow.cpp */; };
+		A24C517CD9B2496DB803D357 /* /Users/kevinhouyang/Development/hifi/tools/auto-tester/src/ui/BusyWindow.cpp */ = {isa = PBXBuildFile; fileRef = 2B2E779DD02842AB98539C22 /* /Users/kevinhouyang/Development/hifi/tools/auto-tester/src/ui/BusyWindow.cpp */; };
+		B729116547D344B39316FDBB /* /Users/kevinhouyang/Development/hifi/tools/auto-tester/src/ui/TestRailResultsSelectorWindow.ui */ = {isa = PBXBuildFile; fileRef = 2118CB1DCAF84CCE8EE6333E /* /Users/kevinhouyang/Development/hifi/tools/auto-tester/src/ui/TestRailResultsSelectorWindow.ui */; };
+		BCA0DC5CF7844DE7909AC834 /* /Users/kevinhouyang/Development/hifi/tools/auto-tester/src/TestRunner.h */ = {isa = PBXBuildFile; fileRef = 4BA6C7F450B04D19A1663E15 /* /Users/kevinhouyang/Development/hifi/tools/auto-tester/src/TestRunner.h */; };
+		BE8AFAC3590D42E49950563D /* /Users/kevinhouyang/Development/hifi/tools/auto-tester/src/PythonInterface.cpp */ = {isa = PBXBuildFile; fileRef = 8A03509121B54989B9000523 /* /Users/kevinhouyang/Development/hifi/tools/auto-tester/src/PythonInterface.cpp */; };
+		C6B18E65CA8F411BB5463CE0 /* /Users/kevinhouyang/Development/hifi/tools/auto-tester/src/Test.h */ = {isa = PBXBuildFile; fileRef = E52643AFB7B542EA8E12C114 /* /Users/kevinhouyang/Development/hifi/tools/auto-tester/src/Test.h */; };
+		CFF26CBED4324E35A9D30FB8 /* /Users/kevinhouyang/Development/hifi/build/tools/auto-tester/auto-tester_autogen/mocs_compilation.cpp */ = {isa = PBXBuildFile; fileRef = 60213A2832D844B58F2FBC83 /* /Users/kevinhouyang/Development/hifi/build/tools/auto-tester/auto-tester_autogen/mocs_compilation.cpp */; };
+		D0CBDB80247941478BD5B000 /* /Users/kevinhouyang/Development/hifi/tools/auto-tester/src/ui/HelpWindow.ui */ = {isa = PBXBuildFile; fileRef = BA58A04DD64746018C265F21 /* /Users/kevinhouyang/Development/hifi/tools/auto-tester/src/ui/HelpWindow.ui */; };
+		D1C81489730046499B93FB8D /* /Users/kevinhouyang/Development/hifi/tools/auto-tester/CMakeLists.txt */ = {isa = PBXBuildFile; fileRef = E68E065D186D455C9019D466 /* /Users/kevinhouyang/Development/hifi/tools/auto-tester/CMakeLists.txt */; };
+		D363DA6431C54B30AF1D45B0 /* /Users/kevinhouyang/Development/hifi/tools/auto-tester/src/ui/HelpWindow.cpp */ = {isa = PBXBuildFile; fileRef = 29617FAB5B934331A65C0CF5 /* /Users/kevinhouyang/Development/hifi/tools/auto-tester/src/ui/HelpWindow.cpp */; };
+		DD0814B7876C4848939D67B2 /* /Users/kevinhouyang/Development/hifi/tools/auto-tester/src/ui/TestRailRunSelectorWindow.h */ = {isa = PBXBuildFile; fileRef = 135B3F0722C94CF7BB396B12 /* /Users/kevinhouyang/Development/hifi/tools/auto-tester/src/ui/TestRailRunSelectorWindow.h */; };
+		EABF49BCC8864B47B51CFE5F /* /Users/kevinhouyang/Development/hifi/tools/auto-tester/src/ui/AutoTester.ui */ = {isa = PBXBuildFile; fileRef = 2BF3FCF8FBCC4B5AA00F58EF /* /Users/kevinhouyang/Development/hifi/tools/auto-tester/src/ui/AutoTester.ui */; };
+		EEB1BE231CCA432CAE3D324C /* /Users/kevinhouyang/Development/hifi/tools/auto-tester/src/AWSInterface.h */ = {isa = PBXBuildFile; fileRef = A5AD903A861E45D39BC87136 /* /Users/kevinhouyang/Development/hifi/tools/auto-tester/src/AWSInterface.h */; };
+		F8222F0D9E7E4A44BF8359FC /* /Users/kevinhouyang/Development/hifi/tools/auto-tester/src/TestRunner.cpp */ = {isa = PBXBuildFile; fileRef = 741AC169F4BF47349A965383 /* /Users/kevinhouyang/Development/hifi/tools/auto-tester/src/TestRunner.cpp */; };
+		F9FDB1553BE44867A95A2D0F /* /Users/kevinhouyang/Development/hifi/tools/auto-tester/src/ui/TestRailResultsSelectorWindow.cpp */ = {isa = PBXBuildFile; fileRef = 70AEE532967844A79DF16929 /* /Users/kevinhouyang/Development/hifi/tools/auto-tester/src/ui/TestRailResultsSelectorWindow.cpp */; };
+		FBDC3320EE8E4FACB6F7D371 /* /Users/kevinhouyang/Development/hifi/tools/auto-tester/src/AWSInterface.cpp */ = {isa = PBXBuildFile; fileRef = D9AE2D1BF73449EB8B517E21 /* /Users/kevinhouyang/Development/hifi/tools/auto-tester/src/AWSInterface.cpp */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXBuildStyle section */
+		0BB7313B458C49FB84381ED4 /* Release */ = {
+			isa = PBXBuildStyle;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+			};
+			name = Release;
+		};
+		76C7D9980CD340639F9ADCC2 /* RelWithDebInfo */ = {
+			isa = PBXBuildStyle;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+			};
+			name = RelWithDebInfo;
+		};
+		E3167D4AE89447788FD8D7EA /* Debug */ = {
+			isa = PBXBuildStyle;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+			};
+			name = Debug;
+		};
+		EACE419785FC4556814623C6 /* MinSizeRel */ = {
+			isa = PBXBuildStyle;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+			};
+			name = MinSizeRel;
+		};
+/* End PBXBuildStyle section */
+
+/* Begin PBXContainerItemProxy section */
+		3128716FBD254BE3AC55C1B1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1892A87265134EC2BB9BB312 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EC7358D97DFB4AB0AF8A20EB;
+			remoteInfo = ALL_BUILD;
+		};
+		3D3E14FCFA194CB18066C64B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1892A87265134EC2BB9BB312 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 324A15BFFEE94E94BA16B115;
+			remoteInfo = ZERO_CHECK;
+		};
+		65719D6EF6B64C56AA5409FF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1892A87265134EC2BB9BB312 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EB852845D3444541A807E1EA;
+			remoteInfo = "auto-tester";
+		};
+		9D5B7CA8F3194348BA425CAD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1892A87265134EC2BB9BB312 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 324A15BFFEE94E94BA16B115;
+			remoteInfo = ZERO_CHECK;
+		};
+		BFF91566AA2C4A5F875DEE17 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1892A87265134EC2BB9BB312 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EC7358D97DFB4AB0AF8A20EB;
+			remoteInfo = ALL_BUILD;
+		};
+		CF13C8011E5D4C7B87E7A336 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1892A87265134EC2BB9BB312 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 324A15BFFEE94E94BA16B115;
+			remoteInfo = ZERO_CHECK;
+		};
+		FD77107CE97D43579EE9E8D4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1892A87265134EC2BB9BB312 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D1C5275AF4C94B05BB207CE2;
+			remoteInfo = "auto-tester_autogen";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		091B1610CF7240C4960C6558 /* /Users/kevinhouyang/Development/hifi/tools/auto-tester/src/ui/MismatchWindow.ui */ = {isa = PBXFileReference; explicitFileType = sourcecode; fileEncoding = 4; name = MismatchWindow.ui; path = src/ui/MismatchWindow.ui; sourceTree = SOURCE_ROOT; };
+		135B3F0722C94CF7BB396B12 /* /Users/kevinhouyang/Development/hifi/tools/auto-tester/src/ui/TestRailRunSelectorWindow.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = TestRailRunSelectorWindow.h; path = src/ui/TestRailRunSelectorWindow.h; sourceTree = SOURCE_ROOT; };
+		16571F741284404C83C209BF /* /Users/kevinhouyang/Development/hifi/tools/auto-tester/src/ui/BusyWindow.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = BusyWindow.h; path = src/ui/BusyWindow.h; sourceTree = SOURCE_ROOT; };
+		1D1CB78441954AD0A02D1769 /* /Users/kevinhouyang/Development/hifi/tools/auto-tester/src/ui/TestRailTestCasesSelectorWindow.ui */ = {isa = PBXFileReference; explicitFileType = sourcecode; fileEncoding = 4; name = TestRailTestCasesSelectorWindow.ui; path = src/ui/TestRailTestCasesSelectorWindow.ui; sourceTree = SOURCE_ROOT; };
+		2118CB1DCAF84CCE8EE6333E /* /Users/kevinhouyang/Development/hifi/tools/auto-tester/src/ui/TestRailResultsSelectorWindow.ui */ = {isa = PBXFileReference; explicitFileType = sourcecode; fileEncoding = 4; name = TestRailResultsSelectorWindow.ui; path = src/ui/TestRailResultsSelectorWindow.ui; sourceTree = SOURCE_ROOT; };
+		29617FAB5B934331A65C0CF5 /* /Users/kevinhouyang/Development/hifi/tools/auto-tester/src/ui/HelpWindow.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = HelpWindow.cpp; path = src/ui/HelpWindow.cpp; sourceTree = SOURCE_ROOT; };
+		2B2E779DD02842AB98539C22 /* /Users/kevinhouyang/Development/hifi/tools/auto-tester/src/ui/BusyWindow.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = BusyWindow.cpp; path = src/ui/BusyWindow.cpp; sourceTree = SOURCE_ROOT; };
+		2BF3FCF8FBCC4B5AA00F58EF /* /Users/kevinhouyang/Development/hifi/tools/auto-tester/src/ui/AutoTester.ui */ = {isa = PBXFileReference; explicitFileType = sourcecode; fileEncoding = 4; name = AutoTester.ui; path = src/ui/AutoTester.ui; sourceTree = SOURCE_ROOT; };
+		2E7C2D93304542889D67973A /* /Users/kevinhouyang/Development/hifi/tools/auto-tester/src/ui/TestRailTestCasesSelectorWindow.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = TestRailTestCasesSelectorWindow.h; path = src/ui/TestRailTestCasesSelectorWindow.h; sourceTree = SOURCE_ROOT; };
+		30FF3188B1B04927A2F5F754 /* /Users/kevinhouyang/Development/hifi/tools/auto-tester/src/main.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = main.cpp; path = src/main.cpp; sourceTree = SOURCE_ROOT; };
+		334E241F2AF04FA5ACA15760 /* /Users/kevinhouyang/Development/hifi/tools/auto-tester/src/ui/AutoTester.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = AutoTester.h; path = src/ui/AutoTester.h; sourceTree = SOURCE_ROOT; };
+		366B65C0C5D74F77BEEF7357 /* /Users/kevinhouyang/Development/hifi/tools/auto-tester/src/ui/MismatchWindow.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = MismatchWindow.h; path = src/ui/MismatchWindow.h; sourceTree = SOURCE_ROOT; };
+		4BA6C7F450B04D19A1663E15 /* /Users/kevinhouyang/Development/hifi/tools/auto-tester/src/TestRunner.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = TestRunner.h; path = src/TestRunner.h; sourceTree = SOURCE_ROOT; };
+		60213A2832D844B58F2FBC83 /* /Users/kevinhouyang/Development/hifi/build/tools/auto-tester/auto-tester_autogen/mocs_compilation.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = mocs_compilation.cpp; path = "../../build/tools/auto-tester/auto-tester_autogen/mocs_compilation.cpp"; sourceTree = SOURCE_ROOT; };
+		613181EC863B49E195DE7307 /* /Users/kevinhouyang/Development/hifi/tools/auto-tester/src/Test.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = Test.cpp; path = src/Test.cpp; sourceTree = SOURCE_ROOT; };
+		633C1A39023E48F3BE5499D3 /* /Users/kevinhouyang/Development/hifi/tools/auto-tester/src/ui/TestRailRunSelectorWindow.ui */ = {isa = PBXFileReference; explicitFileType = sourcecode; fileEncoding = 4; name = TestRailRunSelectorWindow.ui; path = src/ui/TestRailRunSelectorWindow.ui; sourceTree = SOURCE_ROOT; };
+		6AEBD96B31C74A68B56E6B9F /* /Users/kevinhouyang/Development/hifi/tools/auto-tester/src/ui/HelpWindow.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = HelpWindow.h; path = src/ui/HelpWindow.h; sourceTree = SOURCE_ROOT; };
+		6DF33914D33642A5A0F1C4B7 /* /Users/kevinhouyang/Development/hifi/tools/auto-tester/src/ui */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = folder; name = ui; path = src/ui; sourceTree = SOURCE_ROOT; };
+		70AEE532967844A79DF16929 /* /Users/kevinhouyang/Development/hifi/tools/auto-tester/src/ui/TestRailResultsSelectorWindow.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = TestRailResultsSelectorWindow.cpp; path = src/ui/TestRailResultsSelectorWindow.cpp; sourceTree = SOURCE_ROOT; };
+		741AC169F4BF47349A965383 /* /Users/kevinhouyang/Development/hifi/tools/auto-tester/src/TestRunner.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = TestRunner.cpp; path = src/TestRunner.cpp; sourceTree = SOURCE_ROOT; };
+		8A03509121B54989B9000523 /* /Users/kevinhouyang/Development/hifi/tools/auto-tester/src/PythonInterface.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = PythonInterface.cpp; path = src/PythonInterface.cpp; sourceTree = SOURCE_ROOT; };
+		92B4F3DCEBB54ACF88AFB576 /* /Users/kevinhouyang/Development/hifi/tools/auto-tester/src/Downloader.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = Downloader.cpp; path = src/Downloader.cpp; sourceTree = SOURCE_ROOT; };
+		9614180E36F8411598811757 /* /Users/kevinhouyang/Development/hifi/tools/auto-tester/src/ImageComparer.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = ImageComparer.h; path = src/ImageComparer.h; sourceTree = SOURCE_ROOT; };
+		9D43C6ADD7DE47AFB04E5C39 /* /Users/kevinhouyang/Development/hifi/tools/auto-tester/src/Downloader.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = Downloader.h; path = src/Downloader.h; sourceTree = SOURCE_ROOT; };
+		9DF3E3C21BD34D6BB89DC638 /* /Users/kevinhouyang/Development/hifi/tools/auto-tester/CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; name = CMakeLists.txt; path = CMakeLists.txt; sourceTree = SOURCE_ROOT; };
+		9F687961807944D8A97E29FE /* /Users/kevinhouyang/Development/hifi/tools/auto-tester/src/ImageComparer.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = ImageComparer.cpp; path = src/ImageComparer.cpp; sourceTree = SOURCE_ROOT; };
+		A1190FDE9D944F8CA8F9D954 /* /Users/kevinhouyang/Development/hifi/tools/auto-tester/src/PythonInterface.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = PythonInterface.h; path = src/PythonInterface.h; sourceTree = SOURCE_ROOT; };
+		A4F7546CF1A342DE87CE9BF9 /* /Users/kevinhouyang/Development/hifi/tools/auto-tester/src/ui/TestRailResultsSelectorWindow.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = TestRailResultsSelectorWindow.h; path = src/ui/TestRailResultsSelectorWindow.h; sourceTree = SOURCE_ROOT; };
+		A5AD903A861E45D39BC87136 /* /Users/kevinhouyang/Development/hifi/tools/auto-tester/src/AWSInterface.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = AWSInterface.h; path = src/AWSInterface.h; sourceTree = SOURCE_ROOT; };
+		A93AD8E02F2D4CFAAEA65C95 /* /Users/kevinhouyang/Development/hifi/tools/auto-tester/src/ui/TestRailRunSelectorWindow.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = TestRailRunSelectorWindow.cpp; path = src/ui/TestRailRunSelectorWindow.cpp; sourceTree = SOURCE_ROOT; };
+		BA58A04DD64746018C265F21 /* /Users/kevinhouyang/Development/hifi/tools/auto-tester/src/ui/HelpWindow.ui */ = {isa = PBXFileReference; explicitFileType = sourcecode; fileEncoding = 4; name = HelpWindow.ui; path = src/ui/HelpWindow.ui; sourceTree = SOURCE_ROOT; };
+		BB3A8464699048DDA9991563 /* /Users/kevinhouyang/Development/hifi/tools/auto-tester/src/common.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = common.h; path = src/common.h; sourceTree = SOURCE_ROOT; };
+		BDB6C8487D4A43DEB4DF550F /* /Users/kevinhouyang/Development/hifi/tools/auto-tester/CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; name = CMakeLists.txt; path = CMakeLists.txt; sourceTree = SOURCE_ROOT; };
+		BFF1513E03404518A98EB764 /* /Users/kevinhouyang/Development/hifi/tools/auto-tester/src/ui/TestRailTestCasesSelectorWindow.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = TestRailTestCasesSelectorWindow.cpp; path = src/ui/TestRailTestCasesSelectorWindow.cpp; sourceTree = SOURCE_ROOT; };
+		C22ABEC5E7CC488E955A6817 /* /Users/kevinhouyang/Development/hifi/tools/auto-tester/src/ui/AutoTester.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = AutoTester.cpp; path = src/ui/AutoTester.cpp; sourceTree = SOURCE_ROOT; };
+		C5766B196A154FB79AF17357 /* auto-tester */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; path = "auto-tester"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D5560AEFF85F4A6BBA1BC545 /* /Users/kevinhouyang/Development/hifi/tools/auto-tester/src/TestRailInterface.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = TestRailInterface.h; path = src/TestRailInterface.h; sourceTree = SOURCE_ROOT; };
+		D9AE2D1BF73449EB8B517E21 /* /Users/kevinhouyang/Development/hifi/tools/auto-tester/src/AWSInterface.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = AWSInterface.cpp; path = src/AWSInterface.cpp; sourceTree = SOURCE_ROOT; };
+		E0ACC111B87E4AD890F6A834 /* /Users/kevinhouyang/Development/hifi/tools/auto-tester/src/ui/MismatchWindow.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = MismatchWindow.cpp; path = src/ui/MismatchWindow.cpp; sourceTree = SOURCE_ROOT; };
+		E0FD08424E9D47CBAAEC5749 /* /Users/kevinhouyang/Development/hifi/tools/auto-tester/src/ui/BusyWindow.ui */ = {isa = PBXFileReference; explicitFileType = sourcecode; fileEncoding = 4; name = BusyWindow.ui; path = src/ui/BusyWindow.ui; sourceTree = SOURCE_ROOT; };
+		E52643AFB7B542EA8E12C114 /* /Users/kevinhouyang/Development/hifi/tools/auto-tester/src/Test.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = Test.h; path = src/Test.h; sourceTree = SOURCE_ROOT; };
+		E681F7F7F09E4B9995317EEF /* /Users/kevinhouyang/Development/hifi/tools/auto-tester/src/TestRailInterface.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = TestRailInterface.cpp; path = src/TestRailInterface.cpp; sourceTree = SOURCE_ROOT; };
+		E68E065D186D455C9019D466 /* /Users/kevinhouyang/Development/hifi/tools/auto-tester/CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; name = CMakeLists.txt; path = CMakeLists.txt; sourceTree = SOURCE_ROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXGroup section */
+		4580EFE5FC084629B3F1B45F /* CMake Rules */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "CMake Rules";
+			sourceTree = "<group>";
+		};
+		45B3D867214A441B9315AA02 /* auto-tester_autogen */ = {
+			isa = PBXGroup;
+			children = (
+				F87F2DDB6CB34DA094D34E3C /* CMake Rules */,
+				9DF3E3C21BD34D6BB89DC638 /* /Users/kevinhouyang/Development/hifi/tools/auto-tester/CMakeLists.txt */,
+			);
+			name = "auto-tester_autogen";
+			sourceTree = "<group>";
+		};
+		64A2C69DFB6C429687BBCDB5 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C5766B196A154FB79AF17357 /* auto-tester */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		8CB69BFCE11D4629B527AD76 /* Source Files */ = {
+			isa = PBXGroup;
+			children = (
+				60213A2832D844B58F2FBC83 /* /Users/kevinhouyang/Development/hifi/build/tools/auto-tester/auto-tester_autogen/mocs_compilation.cpp */,
+				D9AE2D1BF73449EB8B517E21 /* /Users/kevinhouyang/Development/hifi/tools/auto-tester/src/AWSInterface.cpp */,
+				92B4F3DCEBB54ACF88AFB576 /* /Users/kevinhouyang/Development/hifi/tools/auto-tester/src/Downloader.cpp */,
+				9F687961807944D8A97E29FE /* /Users/kevinhouyang/Development/hifi/tools/auto-tester/src/ImageComparer.cpp */,
+				8A03509121B54989B9000523 /* /Users/kevinhouyang/Development/hifi/tools/auto-tester/src/PythonInterface.cpp */,
+				613181EC863B49E195DE7307 /* /Users/kevinhouyang/Development/hifi/tools/auto-tester/src/Test.cpp */,
+				E681F7F7F09E4B9995317EEF /* /Users/kevinhouyang/Development/hifi/tools/auto-tester/src/TestRailInterface.cpp */,
+				741AC169F4BF47349A965383 /* /Users/kevinhouyang/Development/hifi/tools/auto-tester/src/TestRunner.cpp */,
+				30FF3188B1B04927A2F5F754 /* /Users/kevinhouyang/Development/hifi/tools/auto-tester/src/main.cpp */,
+				C22ABEC5E7CC488E955A6817 /* /Users/kevinhouyang/Development/hifi/tools/auto-tester/src/ui/AutoTester.cpp */,
+				2B2E779DD02842AB98539C22 /* /Users/kevinhouyang/Development/hifi/tools/auto-tester/src/ui/BusyWindow.cpp */,
+				29617FAB5B934331A65C0CF5 /* /Users/kevinhouyang/Development/hifi/tools/auto-tester/src/ui/HelpWindow.cpp */,
+				E0ACC111B87E4AD890F6A834 /* /Users/kevinhouyang/Development/hifi/tools/auto-tester/src/ui/MismatchWindow.cpp */,
+				70AEE532967844A79DF16929 /* /Users/kevinhouyang/Development/hifi/tools/auto-tester/src/ui/TestRailResultsSelectorWindow.cpp */,
+				A93AD8E02F2D4CFAAEA65C95 /* /Users/kevinhouyang/Development/hifi/tools/auto-tester/src/ui/TestRailRunSelectorWindow.cpp */,
+				BFF1513E03404518A98EB764 /* /Users/kevinhouyang/Development/hifi/tools/auto-tester/src/ui/TestRailTestCasesSelectorWindow.cpp */,
+			);
+			name = "Source Files";
+			sourceTree = "<group>";
+		};
+		9E9139B7BE744853A2DCA5EE /* Tools */ = {
+			isa = PBXGroup;
+			children = (
+				B8DC72E847844AD4AC910567 /* auto-tester */,
+				45B3D867214A441B9315AA02 /* auto-tester_autogen */,
+			);
+			name = Tools;
+			sourceTree = "<group>";
+		};
+		A58D184B89B1411B8A9EC2FF /* Header Files */ = {
+			isa = PBXGroup;
+			children = (
+				A5AD903A861E45D39BC87136 /* /Users/kevinhouyang/Development/hifi/tools/auto-tester/src/AWSInterface.h */,
+				9D43C6ADD7DE47AFB04E5C39 /* /Users/kevinhouyang/Development/hifi/tools/auto-tester/src/Downloader.h */,
+				9614180E36F8411598811757 /* /Users/kevinhouyang/Development/hifi/tools/auto-tester/src/ImageComparer.h */,
+				A1190FDE9D944F8CA8F9D954 /* /Users/kevinhouyang/Development/hifi/tools/auto-tester/src/PythonInterface.h */,
+				E52643AFB7B542EA8E12C114 /* /Users/kevinhouyang/Development/hifi/tools/auto-tester/src/Test.h */,
+				D5560AEFF85F4A6BBA1BC545 /* /Users/kevinhouyang/Development/hifi/tools/auto-tester/src/TestRailInterface.h */,
+				4BA6C7F450B04D19A1663E15 /* /Users/kevinhouyang/Development/hifi/tools/auto-tester/src/TestRunner.h */,
+				BB3A8464699048DDA9991563 /* /Users/kevinhouyang/Development/hifi/tools/auto-tester/src/common.h */,
+				334E241F2AF04FA5ACA15760 /* /Users/kevinhouyang/Development/hifi/tools/auto-tester/src/ui/AutoTester.h */,
+				16571F741284404C83C209BF /* /Users/kevinhouyang/Development/hifi/tools/auto-tester/src/ui/BusyWindow.h */,
+				6AEBD96B31C74A68B56E6B9F /* /Users/kevinhouyang/Development/hifi/tools/auto-tester/src/ui/HelpWindow.h */,
+				366B65C0C5D74F77BEEF7357 /* /Users/kevinhouyang/Development/hifi/tools/auto-tester/src/ui/MismatchWindow.h */,
+				A4F7546CF1A342DE87CE9BF9 /* /Users/kevinhouyang/Development/hifi/tools/auto-tester/src/ui/TestRailResultsSelectorWindow.h */,
+				135B3F0722C94CF7BB396B12 /* /Users/kevinhouyang/Development/hifi/tools/auto-tester/src/ui/TestRailRunSelectorWindow.h */,
+				2E7C2D93304542889D67973A /* /Users/kevinhouyang/Development/hifi/tools/auto-tester/src/ui/TestRailTestCasesSelectorWindow.h */,
+			);
+			name = "Header Files";
+			sourceTree = "<group>";
+		};
+		B8DC72E847844AD4AC910567 /* auto-tester */ = {
+			isa = PBXGroup;
+			children = (
+				8CB69BFCE11D4629B527AD76 /* Source Files */,
+				A58D184B89B1411B8A9EC2FF /* Header Files */,
+				E68E065D186D455C9019D466 /* /Users/kevinhouyang/Development/hifi/tools/auto-tester/CMakeLists.txt */,
+				6DF33914D33642A5A0F1C4B7 /* /Users/kevinhouyang/Development/hifi/tools/auto-tester/src/ui */,
+				2BF3FCF8FBCC4B5AA00F58EF /* /Users/kevinhouyang/Development/hifi/tools/auto-tester/src/ui/AutoTester.ui */,
+				E0FD08424E9D47CBAAEC5749 /* /Users/kevinhouyang/Development/hifi/tools/auto-tester/src/ui/BusyWindow.ui */,
+				BA58A04DD64746018C265F21 /* /Users/kevinhouyang/Development/hifi/tools/auto-tester/src/ui/HelpWindow.ui */,
+				091B1610CF7240C4960C6558 /* /Users/kevinhouyang/Development/hifi/tools/auto-tester/src/ui/MismatchWindow.ui */,
+				2118CB1DCAF84CCE8EE6333E /* /Users/kevinhouyang/Development/hifi/tools/auto-tester/src/ui/TestRailResultsSelectorWindow.ui */,
+				633C1A39023E48F3BE5499D3 /* /Users/kevinhouyang/Development/hifi/tools/auto-tester/src/ui/TestRailRunSelectorWindow.ui */,
+				1D1CB78441954AD0A02D1769 /* /Users/kevinhouyang/Development/hifi/tools/auto-tester/src/ui/TestRailTestCasesSelectorWindow.ui */,
+			);
+			name = "auto-tester";
+			sourceTree = "<group>";
+		};
+		CF96F4C2D85947A7A609D5A4 = {
+			isa = PBXGroup;
+			children = (
+				9E9139B7BE744853A2DCA5EE /* Tools */,
+				DC3471E60C8042A3BFCAE70C /* ALL_BUILD */,
+				64A2C69DFB6C429687BBCDB5 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		DC3471E60C8042A3BFCAE70C /* ALL_BUILD */ = {
+			isa = PBXGroup;
+			children = (
+				4580EFE5FC084629B3F1B45F /* CMake Rules */,
+				BDB6C8487D4A43DEB4DF550F /* /Users/kevinhouyang/Development/hifi/tools/auto-tester/CMakeLists.txt */,
+			);
+			name = ALL_BUILD;
+			sourceTree = "<group>";
+		};
+		F87F2DDB6CB34DA094D34E3C /* CMake Rules */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "CMake Rules";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		EB852845D3444541A807E1EA /* auto-tester */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A03017EF2FAB4EABA65E54C0 /* Build configuration list for PBXNativeTarget "auto-tester" */;
+			buildPhases = (
+				E3133774EDBB4A348B86F2F6 /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				063754FF43344090957BC99E /* PBXTargetDependency */,
+				18439A6A7C694C0FB24FE4D1 /* PBXTargetDependency */,
+			);
+			name = "auto-tester";
+			productName = "auto-tester";
+			productReference = C5766B196A154FB79AF17357 /* auto-tester */;
+			productType = "com.apple.product-type.tool";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		1892A87265134EC2BB9BB312 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = YES;
+				LastUpgradeCheck = 0930;
+			};
+			buildConfigurationList = FF65E9FAF35746D98081EB08 /* Build configuration list for PBXProject "auto-tester" */;
+			buildSettings = {
+			};
+			buildStyles = (
+				E3167D4AE89447788FD8D7EA /* Debug */,
+				0BB7313B458C49FB84381ED4 /* Release */,
+				EACE419785FC4556814623C6 /* MinSizeRel */,
+				76C7D9980CD340639F9ADCC2 /* RelWithDebInfo */,
+			);
+			compatibilityVersion = "Xcode 3.2";
+			hasScannedForEncodings = 0;
+			mainGroup = CF96F4C2D85947A7A609D5A4;
+			projectDirPath = "../../../tools/auto-tester";
+			projectRoot = "";
+			targets = (
+				EC7358D97DFB4AB0AF8A20EB /* ALL_BUILD */,
+				76BBA07C604F4D0E89A822F7 /* RUN_TESTS */,
+				324A15BFFEE94E94BA16B115 /* ZERO_CHECK */,
+				EB852845D3444541A807E1EA /* auto-tester */,
+				D1C5275AF4C94B05BB207CE2 /* auto-tester_autogen */,
+				7A7E10E72F85450A98FB2D43 /* install */,
+				A0EF40283FD3451D881D67E2 /* package */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0CBB2A004B1E4E458692AC3D = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# shell script goes here
+exit 0";
+			showEnvVarsInLog = 0;
+		};
+		0DFEAC5089924FCB8E6E99D3 /* CMake Rules */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			name = "CMake Rules";
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "make -C /Users/kevinhouyang/Development/hifi/build/tools/auto-tester -f /Users/kevinhouyang/Development/hifi/build/tools/auto-tester/CMakeScripts/auto-tester_autogen_cmakeRulesBuildPhase.make$CONFIGURATION all";
+			showEnvVarsInLog = 0;
+		};
+		22E4099E2CF14FA2BD26D682 /* CMake PostBuild Rules */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			name = "CMake PostBuild Rules";
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "make -C /Users/kevinhouyang/Development/hifi/build/tools/auto-tester -f /Users/kevinhouyang/Development/hifi/build/tools/auto-tester/CMakeScripts/RUN_TESTS_postBuildPhase.make$CONFIGURATION all";
+			showEnvVarsInLog = 0;
+		};
+		32854A32EEBF485985D4DACE = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# shell script goes here
+exit 0";
+			showEnvVarsInLog = 0;
+		};
+		3542C5671B794AE6AA616D4E /* CMake Rules */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			name = "CMake Rules";
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "make -C /Users/kevinhouyang/Development/hifi/build/tools/auto-tester -f /Users/kevinhouyang/Development/hifi/build/tools/auto-tester/CMakeScripts/ZERO_CHECK_cmakeRulesBuildPhase.make$CONFIGURATION all";
+			showEnvVarsInLog = 0;
+		};
+		42B3C467D32C44A48103E750 = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# shell script goes here
+exit 0";
+			showEnvVarsInLog = 0;
+		};
+		80B58C0056154ADFB1CA4161 = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# shell script goes here
+exit 0";
+			showEnvVarsInLog = 0;
+		};
+		9790F38BEF684A92819D5043 = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# shell script goes here
+exit 0";
+			showEnvVarsInLog = 0;
+		};
+		A0401D89916E4BDB9458165D = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# shell script goes here
+exit 0";
+			showEnvVarsInLog = 0;
+		};
+		E6EF751D72F34D1EA190490B /* CMake Rules */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			name = "CMake Rules";
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "make -C /Users/kevinhouyang/Development/hifi/build/tools/auto-tester -f /Users/kevinhouyang/Development/hifi/build/tools/auto-tester/CMakeScripts/ALL_BUILD_cmakeRulesBuildPhase.make$CONFIGURATION all";
+			showEnvVarsInLog = 0;
+		};
+		EE0E0DA388B44FDCB93CC850 /* CMake PostBuild Rules */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			name = "CMake PostBuild Rules";
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "make -C /Users/kevinhouyang/Development/hifi/build/tools/auto-tester -f /Users/kevinhouyang/Development/hifi/build/tools/auto-tester/CMakeScripts/install_postBuildPhase.make$CONFIGURATION all";
+			showEnvVarsInLog = 0;
+		};
+		FB6077C08F884AC8B93D1F05 /* CMake PostBuild Rules */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			name = "CMake PostBuild Rules";
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "make -C /Users/kevinhouyang/Development/hifi/build/tools/auto-tester -f /Users/kevinhouyang/Development/hifi/build/tools/auto-tester/CMakeScripts/package_postBuildPhase.make$CONFIGURATION all";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		E3133774EDBB4A348B86F2F6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CFF26CBED4324E35A9D30FB8 /* /Users/kevinhouyang/Development/hifi/build/tools/auto-tester/auto-tester_autogen/mocs_compilation.cpp */,
+				FBDC3320EE8E4FACB6F7D371 /* /Users/kevinhouyang/Development/hifi/tools/auto-tester/src/AWSInterface.cpp */,
+				0A375BF799B7428A8589DB17 /* /Users/kevinhouyang/Development/hifi/tools/auto-tester/src/Downloader.cpp */,
+				3199C551EB85487AB1453187 /* /Users/kevinhouyang/Development/hifi/tools/auto-tester/src/ImageComparer.cpp */,
+				BE8AFAC3590D42E49950563D /* /Users/kevinhouyang/Development/hifi/tools/auto-tester/src/PythonInterface.cpp */,
+				548C6D1C90E84EF9841C996D /* /Users/kevinhouyang/Development/hifi/tools/auto-tester/src/Test.cpp */,
+				81BAE0C19F594865B85AB216 /* /Users/kevinhouyang/Development/hifi/tools/auto-tester/src/TestRailInterface.cpp */,
+				F8222F0D9E7E4A44BF8359FC /* /Users/kevinhouyang/Development/hifi/tools/auto-tester/src/TestRunner.cpp */,
+				19C079BAE0F14D5F9FC78A4E /* /Users/kevinhouyang/Development/hifi/tools/auto-tester/src/main.cpp */,
+				51355598901F4DEF81225BDD /* /Users/kevinhouyang/Development/hifi/tools/auto-tester/src/ui/AutoTester.cpp */,
+				A24C517CD9B2496DB803D357 /* /Users/kevinhouyang/Development/hifi/tools/auto-tester/src/ui/BusyWindow.cpp */,
+				D363DA6431C54B30AF1D45B0 /* /Users/kevinhouyang/Development/hifi/tools/auto-tester/src/ui/HelpWindow.cpp */,
+				566F9A435C87489FBC02BC5C /* /Users/kevinhouyang/Development/hifi/tools/auto-tester/src/ui/MismatchWindow.cpp */,
+				F9FDB1553BE44867A95A2D0F /* /Users/kevinhouyang/Development/hifi/tools/auto-tester/src/ui/TestRailResultsSelectorWindow.cpp */,
+				1514C17526934559A211D8B6 /* /Users/kevinhouyang/Development/hifi/tools/auto-tester/src/ui/TestRailRunSelectorWindow.cpp */,
+				9F2AC353C33A4A3EA25C734A /* /Users/kevinhouyang/Development/hifi/tools/auto-tester/src/ui/TestRailTestCasesSelectorWindow.cpp */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		063754FF43344090957BC99E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 324A15BFFEE94E94BA16B115 /* ZERO_CHECK */;
+			targetProxy = 9D5B7CA8F3194348BA425CAD /* PBXContainerItemProxy */;
+		};
+		0F7BFF8CC56844F290626A1F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EC7358D97DFB4AB0AF8A20EB /* ALL_BUILD */;
+			targetProxy = 3128716FBD254BE3AC55C1B1 /* PBXContainerItemProxy */;
+		};
+		18439A6A7C694C0FB24FE4D1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D1C5275AF4C94B05BB207CE2 /* auto-tester_autogen */;
+			targetProxy = FD77107CE97D43579EE9E8D4 /* PBXContainerItemProxy */;
+		};
+		1DE0C9305539422889E46CCD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EC7358D97DFB4AB0AF8A20EB /* ALL_BUILD */;
+			targetProxy = BFF91566AA2C4A5F875DEE17 /* PBXContainerItemProxy */;
+		};
+		25DE74DF1D444E2EA2D5D58B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 324A15BFFEE94E94BA16B115 /* ZERO_CHECK */;
+			targetProxy = CF13C8011E5D4C7B87E7A336 /* PBXContainerItemProxy */;
+		};
+		5A6DB0CDDCE942EFA72B516C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EB852845D3444541A807E1EA /* auto-tester */;
+			targetProxy = 65719D6EF6B64C56AA5409FF /* PBXContainerItemProxy */;
+		};
+		C69D076C2BB74A089ED674F8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 324A15BFFEE94E94BA16B115 /* ZERO_CHECK */;
+			targetProxy = 3D3E14FCFA194CB18066C64B /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		0903337D03564CB49E6E1D67 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = "auto-tester_autogen";
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/kevinhouyang/Development/hifi/build/tools/auto-tester";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = Debug;
+		};
+		09B134254886421091A6EA2F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ALL_BUILD;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/kevinhouyang/Development/hifi/build/tools/auto-tester";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = Release;
+		};
+		0AF66294D32F46EABDC2DE37 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = install;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/kevinhouyang/Development/hifi/build/tools/auto-tester";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = Release;
+		};
+		0BE8034EE92D4D9085177B72 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "c++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk;
+				SYMROOT = "/Users/kevinhouyang/Development/hifi/build/tools/auto-tester/build";
+			};
+			name = Debug;
+		};
+		20BDF14A38D0450CAB1CD959 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ZERO_CHECK;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/kevinhouyang/Development/hifi/build/tools/auto-tester";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = Debug;
+		};
+		313F7E83EA254922909969CC /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ALL_BUILD;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/kevinhouyang/Development/hifi/build/tools/auto-tester";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = RelWithDebInfo;
+		};
+		35CAEE1DBFAD45B38441922C /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = install;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/kevinhouyang/Development/hifi/build/tools/auto-tester";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = RelWithDebInfo;
+		};
+		3BA87DA9FAD0482A97DCBE7E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ZERO_CHECK;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/kevinhouyang/Development/hifi/build/tools/auto-tester";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = Release;
+		};
+		3E98B47D88004E258A524BF0 /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = install;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/kevinhouyang/Development/hifi/build/tools/auto-tester";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = MinSizeRel;
+		};
+		409F98FDDCC5421D92499407 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "c++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEPLOYMENT_POSTPROCESSING = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk;
+				SYMROOT = "/Users/kevinhouyang/Development/hifi/build/tools/auto-tester/build";
+			};
+			name = Release;
+		};
+		4D1E1376A390448887656D9F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				FRAMEWORK_SEARCH_PATHS = (/usr/local/Cellar/qt/5.11.2/lib);
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 3;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",GLM_FORCE_RADIANS,DEV_BUILD,QT_CORE_LIB,QT_NO_DEBUG,QT_WIDGETS_LIB,QT_GUI_LIB,QT_NETWORK_LIB,QT_XML_LIB);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = ("/Users/kevinhouyang/Development/hifi/build/tools/auto-tester","/Users/kevinhouyang/Development/hifi/tools/auto-tester","/Users/kevinhouyang/Development/hifi/build/tools/auto-tester/auto-tester_autogen/include_Release",/Users/kevinhouyang/Development/hifi/build/includes,/Users/kevinhouyang/Development/hifi/build/ext/Xcode/glm/project/include);
+				INSTALL_PATH = "";
+				LIBRARY_SEARCH_PATHS = "";
+				OTHER_CPLUSPLUSFLAGS = " -Wall -Wextra -fno-strict-aliasing -Wno-unused-parameter --stdlib=libc++        -DNDEBUG -fPIC '-std=gnu++14'  ";
+				OTHER_LDFLAGS = " -Wl,-search_paths_first -Wl,-headerpad_max_install_names  /usr/local/Cellar/qt/5.11.2/lib/QtWidgets.framework/QtWidgets /usr/local/Cellar/qt/5.11.2/lib/QtNetwork.framework/QtNetwork /usr/local/Cellar/qt/5.11.2/lib/QtXml.framework/QtXml /usr/lib/libz.dylib /Users/kevinhouyang/Development/hifi/build/ext/Xcode/quazip/project/lib/libquazip5.1.0.0.dylib /usr/local/Cellar/qt/5.11.2/lib/QtGui.framework/QtGui /usr/local/Cellar/qt/5.11.2/lib/QtCore.framework/QtCore";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = "auto-tester";
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/kevinhouyang/Development/hifi/build/tools/auto-tester";
+				SYSTEM_HEADER_SEARCH_PATHS = (/usr/local/Cellar/qt/5.11.2/lib/QtCore.framework/Headers,"/usr/local/Cellar/qt/5.11.2/./mkspecs/macx-clang",/usr/local/Cellar/qt/5.11.2/lib/QtWidgets.framework/Headers,/usr/local/Cellar/qt/5.11.2/lib/QtGui.framework/Headers,/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk/System/Library/Frameworks/OpenGL.framework/Headers,/Users/kevinhouyang/Development/hifi/build/ext/Xcode/quazip/project/include,/usr/local/Cellar/qt/5.11.2/lib/QtNetwork.framework/Headers,/usr/local/Cellar/qt/5.11.2/lib/QtXml.framework/Headers);
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = Release;
+		};
+		4DCA08D4139C4380AAE98E0E /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = package;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/kevinhouyang/Development/hifi/build/tools/auto-tester";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = MinSizeRel;
+		};
+		57C43C7E11FD41BEB1AD54E6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = package;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/kevinhouyang/Development/hifi/build/tools/auto-tester";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = Debug;
+		};
+		58B6202114A048B9B2B47C58 /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ZERO_CHECK;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/kevinhouyang/Development/hifi/build/tools/auto-tester";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = MinSizeRel;
+		};
+		7485F6EA6463449C80F81E0B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ALL_BUILD;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/kevinhouyang/Development/hifi/build/tools/auto-tester";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = Debug;
+		};
+		74C45756794146D3BD5E3BA3 /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = RUN_TESTS;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/kevinhouyang/Development/hifi/build/tools/auto-tester";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = MinSizeRel;
+		};
+		7B0205DD4FC64964A7891055 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = RUN_TESTS;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/kevinhouyang/Development/hifi/build/tools/auto-tester";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = Release;
+		};
+		808DCA13F7074433BB609157 /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "c++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk;
+				SYMROOT = "/Users/kevinhouyang/Development/hifi/build/tools/auto-tester/build";
+			};
+			name = RelWithDebInfo;
+		};
+		892DBF71CA254E63ABEA82AC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = package;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/kevinhouyang/Development/hifi/build/tools/auto-tester";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = Release;
+		};
+		9C830F7D35DC429EACB97BE4 /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ALL_BUILD;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/kevinhouyang/Development/hifi/build/tools/auto-tester";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = MinSizeRel;
+		};
+		9E4CC63C5B714E3C8D23CF7F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				FRAMEWORK_SEARCH_PATHS = (/usr/local/Cellar/qt/5.11.2/lib);
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",GLM_FORCE_RADIANS,DEV_BUILD,QT_CORE_LIB,QT_WIDGETS_LIB,QT_GUI_LIB,QT_NETWORK_LIB,QT_XML_LIB);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = ("/Users/kevinhouyang/Development/hifi/build/tools/auto-tester","/Users/kevinhouyang/Development/hifi/tools/auto-tester","/Users/kevinhouyang/Development/hifi/build/tools/auto-tester/auto-tester_autogen/include_Debug",/Users/kevinhouyang/Development/hifi/build/includes,/Users/kevinhouyang/Development/hifi/build/ext/Xcode/glm/project/include);
+				INSTALL_PATH = "";
+				LIBRARY_SEARCH_PATHS = "";
+				OTHER_CPLUSPLUSFLAGS = " -Wall -Wextra -fno-strict-aliasing -Wno-unused-parameter --stdlib=libc++       -DDEBUG -fPIC '-std=gnu++14'  ";
+				OTHER_LDFLAGS = " -Wl,-search_paths_first -Wl,-headerpad_max_install_names  /usr/local/Cellar/qt/5.11.2/lib/QtWidgets.framework/QtWidgets /usr/local/Cellar/qt/5.11.2/lib/QtNetwork.framework/QtNetwork /usr/local/Cellar/qt/5.11.2/lib/QtXml.framework/QtXml /usr/lib/libz.dylib /Users/kevinhouyang/Development/hifi/build/ext/Xcode/quazip/project/lib/libquazip5d.1.0.0.dylib /usr/local/Cellar/qt/5.11.2/lib/QtGui.framework/QtGui /usr/local/Cellar/qt/5.11.2/lib/QtCore.framework/QtCore";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = "auto-tester";
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/kevinhouyang/Development/hifi/build/tools/auto-tester";
+				SYSTEM_HEADER_SEARCH_PATHS = (/usr/local/Cellar/qt/5.11.2/lib/QtCore.framework/Headers,"/usr/local/Cellar/qt/5.11.2/./mkspecs/macx-clang",/usr/local/Cellar/qt/5.11.2/lib/QtWidgets.framework/Headers,/usr/local/Cellar/qt/5.11.2/lib/QtGui.framework/Headers,/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk/System/Library/Frameworks/OpenGL.framework/Headers,/Users/kevinhouyang/Development/hifi/build/ext/Xcode/quazip/project/include,/usr/local/Cellar/qt/5.11.2/lib/QtNetwork.framework/Headers,/usr/local/Cellar/qt/5.11.2/lib/QtXml.framework/Headers);
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = Debug;
+		};
+		A3317BF711634D3C8EFFC70A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = RUN_TESTS;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/kevinhouyang/Development/hifi/build/tools/auto-tester";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = Debug;
+		};
+		B0BABC278ACC4D398CC7DB67 /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = "auto-tester_autogen";
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/kevinhouyang/Development/hifi/build/tools/auto-tester";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = RelWithDebInfo;
+		};
+		C802341613EA41CC8892C5E8 /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = RUN_TESTS;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/kevinhouyang/Development/hifi/build/tools/auto-tester";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = RelWithDebInfo;
+		};
+		CD1BE0BD554143E39855D2A0 /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "c++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk;
+				SYMROOT = "/Users/kevinhouyang/Development/hifi/build/tools/auto-tester/build";
+			};
+			name = MinSizeRel;
+		};
+		D26B2179562F466497E601B4 /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = "auto-tester_autogen";
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/kevinhouyang/Development/hifi/build/tools/auto-tester";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = MinSizeRel;
+		};
+		D28B0308670C405E89A75AAF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = "auto-tester_autogen";
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/kevinhouyang/Development/hifi/build/tools/auto-tester";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = Release;
+		};
+		DDFD6997E9D049849F2259A4 /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				FRAMEWORK_SEARCH_PATHS = (/usr/local/Cellar/qt/5.11.2/lib);
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 2;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",GLM_FORCE_RADIANS,DEV_BUILD,QT_CORE_LIB,QT_NO_DEBUG,QT_WIDGETS_LIB,QT_GUI_LIB,QT_NETWORK_LIB,QT_XML_LIB);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = ("/Users/kevinhouyang/Development/hifi/build/tools/auto-tester","/Users/kevinhouyang/Development/hifi/tools/auto-tester","/Users/kevinhouyang/Development/hifi/build/tools/auto-tester/auto-tester_autogen/include_RelWithDebInfo",/Users/kevinhouyang/Development/hifi/build/includes,/Users/kevinhouyang/Development/hifi/build/ext/Xcode/glm/project/include);
+				INSTALL_PATH = "";
+				LIBRARY_SEARCH_PATHS = "";
+				OTHER_CPLUSPLUSFLAGS = " -Wall -Wextra -fno-strict-aliasing -Wno-unused-parameter --stdlib=libc++           -DNDEBUG -fPIC '-std=gnu++14'  ";
+				OTHER_LDFLAGS = " -Wl,-search_paths_first -Wl,-headerpad_max_install_names  /usr/local/Cellar/qt/5.11.2/lib/QtWidgets.framework/QtWidgets /usr/local/Cellar/qt/5.11.2/lib/QtNetwork.framework/QtNetwork /usr/local/Cellar/qt/5.11.2/lib/QtXml.framework/QtXml /usr/lib/libz.dylib /Users/kevinhouyang/Development/hifi/build/ext/Xcode/quazip/project/lib/libquazip5.1.0.0.dylib /usr/local/Cellar/qt/5.11.2/lib/QtGui.framework/QtGui /usr/local/Cellar/qt/5.11.2/lib/QtCore.framework/QtCore";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = "auto-tester";
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/kevinhouyang/Development/hifi/build/tools/auto-tester";
+				SYSTEM_HEADER_SEARCH_PATHS = (/usr/local/Cellar/qt/5.11.2/lib/QtCore.framework/Headers,"/usr/local/Cellar/qt/5.11.2/./mkspecs/macx-clang",/usr/local/Cellar/qt/5.11.2/lib/QtWidgets.framework/Headers,/usr/local/Cellar/qt/5.11.2/lib/QtGui.framework/Headers,/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk/System/Library/Frameworks/OpenGL.framework/Headers,/Users/kevinhouyang/Development/hifi/build/ext/Xcode/quazip/project/include,/usr/local/Cellar/qt/5.11.2/lib/QtNetwork.framework/Headers,/usr/local/Cellar/qt/5.11.2/lib/QtXml.framework/Headers);
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = RelWithDebInfo;
+		};
+		E488803C0BDD43B08A93FE39 /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				FRAMEWORK_SEARCH_PATHS = (/usr/local/Cellar/qt/5.11.2/lib);
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = s;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",GLM_FORCE_RADIANS,DEV_BUILD,QT_CORE_LIB,QT_NO_DEBUG,QT_WIDGETS_LIB,QT_GUI_LIB,QT_NETWORK_LIB,QT_XML_LIB);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = ("/Users/kevinhouyang/Development/hifi/build/tools/auto-tester","/Users/kevinhouyang/Development/hifi/tools/auto-tester","/Users/kevinhouyang/Development/hifi/build/tools/auto-tester/auto-tester_autogen/include_MinSizeRel",/Users/kevinhouyang/Development/hifi/build/includes,/Users/kevinhouyang/Development/hifi/build/ext/Xcode/glm/project/include);
+				INSTALL_PATH = "";
+				LIBRARY_SEARCH_PATHS = "";
+				OTHER_CPLUSPLUSFLAGS = " -Wall -Wextra -fno-strict-aliasing -Wno-unused-parameter --stdlib=libc++        -DNDEBUG -fPIC '-std=gnu++14'  ";
+				OTHER_LDFLAGS = " -Wl,-search_paths_first -Wl,-headerpad_max_install_names  /usr/local/Cellar/qt/5.11.2/lib/QtWidgets.framework/QtWidgets /usr/local/Cellar/qt/5.11.2/lib/QtNetwork.framework/QtNetwork /usr/local/Cellar/qt/5.11.2/lib/QtXml.framework/QtXml /usr/lib/libz.dylib /Users/kevinhouyang/Development/hifi/build/ext/Xcode/quazip/project/lib/libquazip5.1.0.0.dylib /usr/local/Cellar/qt/5.11.2/lib/QtGui.framework/QtGui /usr/local/Cellar/qt/5.11.2/lib/QtCore.framework/QtCore";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = "auto-tester";
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/kevinhouyang/Development/hifi/build/tools/auto-tester";
+				SYSTEM_HEADER_SEARCH_PATHS = (/usr/local/Cellar/qt/5.11.2/lib/QtCore.framework/Headers,"/usr/local/Cellar/qt/5.11.2/./mkspecs/macx-clang",/usr/local/Cellar/qt/5.11.2/lib/QtWidgets.framework/Headers,/usr/local/Cellar/qt/5.11.2/lib/QtGui.framework/Headers,/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk/System/Library/Frameworks/OpenGL.framework/Headers,/Users/kevinhouyang/Development/hifi/build/ext/Xcode/quazip/project/include,/usr/local/Cellar/qt/5.11.2/lib/QtNetwork.framework/Headers,/usr/local/Cellar/qt/5.11.2/lib/QtXml.framework/Headers);
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = MinSizeRel;
+		};
+		F37CF2FD936449139D154640 /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = package;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/kevinhouyang/Development/hifi/build/tools/auto-tester";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = RelWithDebInfo;
+		};
+		FED831938B8D4A548641C251 /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ZERO_CHECK;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/kevinhouyang/Development/hifi/build/tools/auto-tester";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = RelWithDebInfo;
+		};
+		FFBB3228DE1246979EA7E918 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = install;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/kevinhouyang/Development/hifi/build/tools/auto-tester";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		01BBF6CDB0B343AF82761FFE /* Build configuration list for PBXAggregateTarget "package" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				57C43C7E11FD41BEB1AD54E6 /* Debug */,
+				892DBF71CA254E63ABEA82AC /* Release */,
+				4DCA08D4139C4380AAE98E0E /* MinSizeRel */,
+				F37CF2FD936449139D154640 /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		2AD3F3D8A4F442B3B7BDDDCA /* Build configuration list for PBXAggregateTarget "install" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FFBB3228DE1246979EA7E918 /* Debug */,
+				0AF66294D32F46EABDC2DE37 /* Release */,
+				3E98B47D88004E258A524BF0 /* MinSizeRel */,
+				35CAEE1DBFAD45B38441922C /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		A03017EF2FAB4EABA65E54C0 /* Build configuration list for PBXNativeTarget "auto-tester" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9E4CC63C5B714E3C8D23CF7F /* Debug */,
+				4D1E1376A390448887656D9F /* Release */,
+				E488803C0BDD43B08A93FE39 /* MinSizeRel */,
+				DDFD6997E9D049849F2259A4 /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		C6D02BBD933E45C2AE34A0B3 /* Build configuration list for PBXAggregateTarget "ZERO_CHECK" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				20BDF14A38D0450CAB1CD959 /* Debug */,
+				3BA87DA9FAD0482A97DCBE7E /* Release */,
+				58B6202114A048B9B2B47C58 /* MinSizeRel */,
+				FED831938B8D4A548641C251 /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		CAE1020CAA9B418EB8D77347 /* Build configuration list for PBXAggregateTarget "auto-tester_autogen" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0903337D03564CB49E6E1D67 /* Debug */,
+				D28B0308670C405E89A75AAF /* Release */,
+				D26B2179562F466497E601B4 /* MinSizeRel */,
+				B0BABC278ACC4D398CC7DB67 /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		E044CFD88B41488E807A7531 /* Build configuration list for PBXAggregateTarget "ALL_BUILD" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7485F6EA6463449C80F81E0B /* Debug */,
+				09B134254886421091A6EA2F /* Release */,
+				9C830F7D35DC429EACB97BE4 /* MinSizeRel */,
+				313F7E83EA254922909969CC /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		E28FDF070FAE40068095FF65 /* Build configuration list for PBXAggregateTarget "RUN_TESTS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A3317BF711634D3C8EFFC70A /* Debug */,
+				7B0205DD4FC64964A7891055 /* Release */,
+				74C45756794146D3BD5E3BA3 /* MinSizeRel */,
+				C802341613EA41CC8892C5E8 /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		FF65E9FAF35746D98081EB08 /* Build configuration list for PBXProject "auto-tester" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0BE8034EE92D4D9085177B72 /* Debug */,
+				409F98FDDCC5421D92499407 /* Release */,
+				CD1BE0BD554143E39855D2A0 /* MinSizeRel */,
+				808DCA13F7074433BB609157 /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 1892A87265134EC2BB9BB312 /* Project object */;
+}

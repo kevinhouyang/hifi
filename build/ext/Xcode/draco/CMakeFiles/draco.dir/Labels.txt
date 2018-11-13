@@ -1,0 +1,13 @@
+# Target labels
+ draco
+# Source files and their labels
+/Users/kevinhouyang/Development/hifi/build/ext/Xcode/draco/CMakeFiles/draco
+/Users/kevinhouyang/Development/hifi/build/ext/Xcode/draco/CMakeFiles/draco.rule
+/Users/kevinhouyang/Development/hifi/build/ext/Xcode/draco/CMakeFiles/CMakeFiles/draco-complete.rule
+/Users/kevinhouyang/Development/hifi/build/ext/Xcode/draco/project/src/draco-stamp/CMakeFiles/draco-install.rule
+/Users/kevinhouyang/Development/hifi/build/ext/Xcode/draco/project/src/draco-stamp/CMakeFiles/draco-mkdir.rule
+/Users/kevinhouyang/Development/hifi/build/ext/Xcode/draco/project/src/draco-stamp/CMakeFiles/draco-download.rule
+/Users/kevinhouyang/Development/hifi/build/ext/Xcode/draco/project/src/draco-stamp/CMakeFiles/draco-update.rule
+/Users/kevinhouyang/Development/hifi/build/ext/Xcode/draco/project/src/draco-stamp/CMakeFiles/draco-patch.rule
+/Users/kevinhouyang/Development/hifi/build/ext/Xcode/draco/project/src/draco-stamp/CMakeFiles/draco-configure.rule
+/Users/kevinhouyang/Development/hifi/build/ext/Xcode/draco/project/src/draco-stamp/CMakeFiles/draco-build.rule

@@ -1,0 +1,3 @@
+repository='external project URL'
+module='https://public.highfidelity.com/dependencies/quazip-0.7.3.zip'
+tag='MD5=ed03754d39b9da1775771819b8001d45'

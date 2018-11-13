@@ -1,0 +1,1293 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXAggregateTarget section */
+		09327795EE8D4B9F80FA1777 /* qml-test_autogen */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = D66872EC095144398F6B71F6 /* Build configuration list for PBXAggregateTarget "qml-test_autogen" */;
+			buildPhases = (
+				4A2295272F094179813AB71C /* CMake Rules */,
+			);
+			dependencies = (
+				26B1E1478F3042D197DA0F5A /* PBXTargetDependency */,
+			);
+			name = "qml-test_autogen";
+			productName = "qml-test_autogen";
+		};
+		324A15BFFEE94E94BA16B115 /* ZERO_CHECK */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 573F19AD9B8342FEA2746A5F /* Build configuration list for PBXAggregateTarget "ZERO_CHECK" */;
+			buildPhases = (
+				FBFA751F52B14E9C8CB546AE /* CMake Rules */,
+			);
+			dependencies = (
+			);
+			name = ZERO_CHECK;
+			productName = ZERO_CHECK;
+		};
+		76BBA07C604F4D0E89A822F7 /* RUN_TESTS */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = F31A01D6919448B993E2291C /* Build configuration list for PBXAggregateTarget "RUN_TESTS" */;
+			buildPhases = (
+				CB59CED728B24443873E1BA7 /* CMake PostBuild Rules */,
+			);
+			dependencies = (
+			);
+			name = RUN_TESTS;
+			productName = RUN_TESTS;
+		};
+		7A7E10E72F85450A98FB2D43 /* install */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 5547A27C9690483C9E3E0B8E /* Build configuration list for PBXAggregateTarget "install" */;
+			buildPhases = (
+				1FEFE4C9029A44D4A49BB221 /* CMake PostBuild Rules */,
+			);
+			dependencies = (
+				0CA965BF022C432AAA9201A2 /* PBXTargetDependency */,
+			);
+			name = install;
+			productName = install;
+		};
+		A0EF40283FD3451D881D67E2 /* package */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 096850D851DE4E5B9292E968 /* Build configuration list for PBXAggregateTarget "package" */;
+			buildPhases = (
+				E69DD3A4A73548B8992C11A0 /* CMake PostBuild Rules */,
+			);
+			dependencies = (
+				DD273A83F8084BD390AF0132 /* PBXTargetDependency */,
+			);
+			name = package;
+			productName = package;
+		};
+		EC7358D97DFB4AB0AF8A20EB /* ALL_BUILD */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 71A39E594F924EFD928EAE3F /* Build configuration list for PBXAggregateTarget "ALL_BUILD" */;
+			buildPhases = (
+				8014538B55CD4870B852D46E /* CMake Rules */,
+			);
+			dependencies = (
+				96B2DF5DBAB74862B6574E2A /* PBXTargetDependency */,
+				F552B6C2629649C6A9D04C11 /* PBXTargetDependency */,
+			);
+			name = ALL_BUILD;
+			productName = ALL_BUILD;
+		};
+/* End PBXAggregateTarget section */
+
+/* Begin PBXBuildFile section */
+		10A72B786C594C8C8E4CD48A /* /Users/kevinhouyang/Development/hifi/tests-manual/qml/src/MacQml.cpp */ = {isa = PBXBuildFile; fileRef = 2832F71C519D42249FF5FC2D /* /Users/kevinhouyang/Development/hifi/tests-manual/qml/src/MacQml.cpp */; };
+		243AD737279244588F0974FE /* /Users/kevinhouyang/Development/hifi/tests-manual/qml/src/StressWeb.cpp */ = {isa = PBXBuildFile; fileRef = EBB15237A2FA49C4B0F3BB22 /* /Users/kevinhouyang/Development/hifi/tests-manual/qml/src/StressWeb.cpp */; };
+		266C41D26F6C4EC9989503A5 /* /Users/kevinhouyang/Development/hifi/tests-manual/qml/CMakeLists.txt */ = {isa = PBXBuildFile; fileRef = 7148D924D9484FF391969472 /* /Users/kevinhouyang/Development/hifi/tests-manual/qml/CMakeLists.txt */; };
+		27B157240FFC4470A669C4FA /* /Users/kevinhouyang/Development/hifi/tests-manual/qml/src/TestCase.h */ = {isa = PBXBuildFile; fileRef = C708DC8AF66946F68DC1A9BB /* /Users/kevinhouyang/Development/hifi/tests-manual/qml/src/TestCase.h */; };
+		2C07A7C0CA43484488325A3E /* /Users/kevinhouyang/Development/hifi/tests-manual/qml/src/TestCase.cpp */ = {isa = PBXBuildFile; fileRef = 04FA8C34532A4732B88E1783 /* /Users/kevinhouyang/Development/hifi/tests-manual/qml/src/TestCase.cpp */; };
+		446E2D234173484EA3E7DDA3 /* /Users/kevinhouyang/Development/hifi/tests-manual/qml/src/MacQml.h */ = {isa = PBXBuildFile; fileRef = B56FFA95560C47F1A21C187F /* /Users/kevinhouyang/Development/hifi/tests-manual/qml/src/MacQml.h */; };
+		8944C47B0DD34E27B80E749D /* /Users/kevinhouyang/Development/hifi/tests-manual/qml/src/StressWeb.h */ = {isa = PBXBuildFile; fileRef = 3F0C8ECE507C4F1AAA144832 /* /Users/kevinhouyang/Development/hifi/tests-manual/qml/src/StressWeb.h */; };
+		B9B2214BF8934673B43361F5 /* /Users/kevinhouyang/Development/hifi/tests-manual/qml/src/main.cpp */ = {isa = PBXBuildFile; fileRef = 337CD637654448C39913609C /* /Users/kevinhouyang/Development/hifi/tests-manual/qml/src/main.cpp */; };
+		E182507BC04D49EE8487814F /* /Users/kevinhouyang/Development/hifi/build/tests-manual/qml/qml-test_autogen/mocs_compilation.cpp */ = {isa = PBXBuildFile; fileRef = 8B000AF61903498FA2D38F8F /* /Users/kevinhouyang/Development/hifi/build/tests-manual/qml/qml-test_autogen/mocs_compilation.cpp */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXBuildStyle section */
+		2B88E915C2314690B72F2798 /* RelWithDebInfo */ = {
+			isa = PBXBuildStyle;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+			};
+			name = RelWithDebInfo;
+		};
+		2C9A75D9DEAE4CDDA8F2C2B6 /* Debug */ = {
+			isa = PBXBuildStyle;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+			};
+			name = Debug;
+		};
+		52DED5FA35B5448CB813A6BD /* Release */ = {
+			isa = PBXBuildStyle;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+			};
+			name = Release;
+		};
+		797E2482D9C04BA0B6991AAB /* MinSizeRel */ = {
+			isa = PBXBuildStyle;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+			};
+			name = MinSizeRel;
+		};
+/* End PBXBuildStyle section */
+
+/* Begin PBXContainerItemProxy section */
+		5B4C8C61EB16427FBB56837B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 48B372CEB9CB496B8D4D390A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EC7358D97DFB4AB0AF8A20EB;
+			remoteInfo = ALL_BUILD;
+		};
+		600B18A936ED440CAFA8F90C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 48B372CEB9CB496B8D4D390A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BE44B558152E401DA561057D;
+			remoteInfo = "qml-test";
+		};
+		71F6CC6BDAEF41D1A4D89DBB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 48B372CEB9CB496B8D4D390A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 324A15BFFEE94E94BA16B115;
+			remoteInfo = ZERO_CHECK;
+		};
+		B4C1D1F4AE7E46869D69E631 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 48B372CEB9CB496B8D4D390A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 09327795EE8D4B9F80FA1777;
+			remoteInfo = "qml-test_autogen";
+		};
+		DD62FA6AFDA947C79442C86D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 48B372CEB9CB496B8D4D390A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 324A15BFFEE94E94BA16B115;
+			remoteInfo = ZERO_CHECK;
+		};
+		E1E4EB9580BA42A796E21DD2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 48B372CEB9CB496B8D4D390A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EC7358D97DFB4AB0AF8A20EB;
+			remoteInfo = ALL_BUILD;
+		};
+		E40BF83471D34B58942CC214 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 48B372CEB9CB496B8D4D390A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 324A15BFFEE94E94BA16B115;
+			remoteInfo = ZERO_CHECK;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		04FA8C34532A4732B88E1783 /* /Users/kevinhouyang/Development/hifi/tests-manual/qml/src/TestCase.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = TestCase.cpp; path = src/TestCase.cpp; sourceTree = SOURCE_ROOT; };
+		2832F71C519D42249FF5FC2D /* /Users/kevinhouyang/Development/hifi/tests-manual/qml/src/MacQml.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = MacQml.cpp; path = src/MacQml.cpp; sourceTree = SOURCE_ROOT; };
+		337CD637654448C39913609C /* /Users/kevinhouyang/Development/hifi/tests-manual/qml/src/main.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = main.cpp; path = src/main.cpp; sourceTree = SOURCE_ROOT; };
+		3F0C8ECE507C4F1AAA144832 /* /Users/kevinhouyang/Development/hifi/tests-manual/qml/src/StressWeb.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = StressWeb.h; path = src/StressWeb.h; sourceTree = SOURCE_ROOT; };
+		6344368AB738404C859A7D5D /* /Users/kevinhouyang/Development/hifi/tests-manual/qml/CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; name = CMakeLists.txt; path = CMakeLists.txt; sourceTree = SOURCE_ROOT; };
+		640491BF9A3A4B5ABFE4CDE0 /* qml-test */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; path = "qml-test"; sourceTree = BUILT_PRODUCTS_DIR; };
+		7148D924D9484FF391969472 /* /Users/kevinhouyang/Development/hifi/tests-manual/qml/CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; name = CMakeLists.txt; path = CMakeLists.txt; sourceTree = SOURCE_ROOT; };
+		82C1BB0151F5471AB20524CB /* /Users/kevinhouyang/Development/hifi/tests-manual/qml/CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; name = CMakeLists.txt; path = CMakeLists.txt; sourceTree = SOURCE_ROOT; };
+		8B000AF61903498FA2D38F8F /* /Users/kevinhouyang/Development/hifi/build/tests-manual/qml/qml-test_autogen/mocs_compilation.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = mocs_compilation.cpp; path = "../../build/tests-manual/qml/qml-test_autogen/mocs_compilation.cpp"; sourceTree = SOURCE_ROOT; };
+		B56FFA95560C47F1A21C187F /* /Users/kevinhouyang/Development/hifi/tests-manual/qml/src/MacQml.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = MacQml.h; path = src/MacQml.h; sourceTree = SOURCE_ROOT; };
+		C708DC8AF66946F68DC1A9BB /* /Users/kevinhouyang/Development/hifi/tests-manual/qml/src/TestCase.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = TestCase.h; path = src/TestCase.h; sourceTree = SOURCE_ROOT; };
+		EBB15237A2FA49C4B0F3BB22 /* /Users/kevinhouyang/Development/hifi/tests-manual/qml/src/StressWeb.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = StressWeb.cpp; path = src/StressWeb.cpp; sourceTree = SOURCE_ROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXGroup section */
+		00FFCE52016145488BB1BD3C = {
+			isa = PBXGroup;
+			children = (
+				17535D97DFA340C59CFDE81A /* Tests */,
+				EF07F9DECD5549FA87867BEF /* ALL_BUILD */,
+				D4272C95DCD74CCE83C61A0C /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		17535D97DFA340C59CFDE81A /* Tests */ = {
+			isa = PBXGroup;
+			children = (
+				4AEBD2030A0740FCB2AF8AF2 /* manual-tests */,
+			);
+			name = Tests;
+			sourceTree = "<group>";
+		};
+		31EB2C0AEB854CE4A468AA93 /* Source Files */ = {
+			isa = PBXGroup;
+			children = (
+				8B000AF61903498FA2D38F8F /* /Users/kevinhouyang/Development/hifi/build/tests-manual/qml/qml-test_autogen/mocs_compilation.cpp */,
+				2832F71C519D42249FF5FC2D /* /Users/kevinhouyang/Development/hifi/tests-manual/qml/src/MacQml.cpp */,
+				EBB15237A2FA49C4B0F3BB22 /* /Users/kevinhouyang/Development/hifi/tests-manual/qml/src/StressWeb.cpp */,
+				04FA8C34532A4732B88E1783 /* /Users/kevinhouyang/Development/hifi/tests-manual/qml/src/TestCase.cpp */,
+				337CD637654448C39913609C /* /Users/kevinhouyang/Development/hifi/tests-manual/qml/src/main.cpp */,
+			);
+			name = "Source Files";
+			sourceTree = "<group>";
+		};
+		32D16090B9E0475C8EA1BC47 /* CMake Rules */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "CMake Rules";
+			sourceTree = "<group>";
+		};
+		3C1FDADDAC8947A1B756C580 /* qml-test */ = {
+			isa = PBXGroup;
+			children = (
+				31EB2C0AEB854CE4A468AA93 /* Source Files */,
+				E804E80EC20743AC95FAA498 /* Header Files */,
+				7148D924D9484FF391969472 /* /Users/kevinhouyang/Development/hifi/tests-manual/qml/CMakeLists.txt */,
+			);
+			name = "qml-test";
+			sourceTree = "<group>";
+		};
+		4AEBD2030A0740FCB2AF8AF2 /* manual-tests */ = {
+			isa = PBXGroup;
+			children = (
+				3C1FDADDAC8947A1B756C580 /* qml-test */,
+				D2ED9BDB16194771ABA4B150 /* qml-test_autogen */,
+			);
+			name = "manual-tests";
+			sourceTree = "<group>";
+		};
+		A27DF1D828F646098F25E6DB /* CMake Rules */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "CMake Rules";
+			sourceTree = "<group>";
+		};
+		D2ED9BDB16194771ABA4B150 /* qml-test_autogen */ = {
+			isa = PBXGroup;
+			children = (
+				32D16090B9E0475C8EA1BC47 /* CMake Rules */,
+				82C1BB0151F5471AB20524CB /* /Users/kevinhouyang/Development/hifi/tests-manual/qml/CMakeLists.txt */,
+			);
+			name = "qml-test_autogen";
+			sourceTree = "<group>";
+		};
+		D4272C95DCD74CCE83C61A0C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				640491BF9A3A4B5ABFE4CDE0 /* qml-test */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E804E80EC20743AC95FAA498 /* Header Files */ = {
+			isa = PBXGroup;
+			children = (
+				B56FFA95560C47F1A21C187F /* /Users/kevinhouyang/Development/hifi/tests-manual/qml/src/MacQml.h */,
+				3F0C8ECE507C4F1AAA144832 /* /Users/kevinhouyang/Development/hifi/tests-manual/qml/src/StressWeb.h */,
+				C708DC8AF66946F68DC1A9BB /* /Users/kevinhouyang/Development/hifi/tests-manual/qml/src/TestCase.h */,
+			);
+			name = "Header Files";
+			sourceTree = "<group>";
+		};
+		EF07F9DECD5549FA87867BEF /* ALL_BUILD */ = {
+			isa = PBXGroup;
+			children = (
+				A27DF1D828F646098F25E6DB /* CMake Rules */,
+				6344368AB738404C859A7D5D /* /Users/kevinhouyang/Development/hifi/tests-manual/qml/CMakeLists.txt */,
+			);
+			name = ALL_BUILD;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		BE44B558152E401DA561057D /* qml-test */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F320D93420EB4FB5B75BB711 /* Build configuration list for PBXNativeTarget "qml-test" */;
+			buildPhases = (
+				B5EBBAFB86E24AE3B9DD760E /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7466C3CAB8D14B46956ED361 /* PBXTargetDependency */,
+				CF66A683921A4AA293C887FA /* PBXTargetDependency */,
+			);
+			name = "qml-test";
+			productName = "qml-test";
+			productReference = 640491BF9A3A4B5ABFE4CDE0 /* qml-test */;
+			productType = "com.apple.product-type.tool";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		48B372CEB9CB496B8D4D390A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = YES;
+				LastUpgradeCheck = 0930;
+			};
+			buildConfigurationList = E45EFCACEFFA4A8496881994 /* Build configuration list for PBXProject "qml-test" */;
+			buildSettings = {
+			};
+			buildStyles = (
+				2C9A75D9DEAE4CDDA8F2C2B6 /* Debug */,
+				52DED5FA35B5448CB813A6BD /* Release */,
+				797E2482D9C04BA0B6991AAB /* MinSizeRel */,
+				2B88E915C2314690B72F2798 /* RelWithDebInfo */,
+			);
+			compatibilityVersion = "Xcode 3.2";
+			hasScannedForEncodings = 0;
+			mainGroup = 00FFCE52016145488BB1BD3C;
+			projectDirPath = "../../../tests-manual/qml";
+			projectRoot = "";
+			targets = (
+				EC7358D97DFB4AB0AF8A20EB /* ALL_BUILD */,
+				76BBA07C604F4D0E89A822F7 /* RUN_TESTS */,
+				324A15BFFEE94E94BA16B115 /* ZERO_CHECK */,
+				7A7E10E72F85450A98FB2D43 /* install */,
+				A0EF40283FD3451D881D67E2 /* package */,
+				BE44B558152E401DA561057D /* qml-test */,
+				09327795EE8D4B9F80FA1777 /* qml-test_autogen */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		05BC657CA48C4CCF8A414027 = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# shell script goes here
+exit 0";
+			showEnvVarsInLog = 0;
+		};
+		13A4A9C940D74B859EE1344E = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# shell script goes here
+exit 0";
+			showEnvVarsInLog = 0;
+		};
+		19A5A0F3AFF1402C9891E176 = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# shell script goes here
+exit 0";
+			showEnvVarsInLog = 0;
+		};
+		1FEFE4C9029A44D4A49BB221 /* CMake PostBuild Rules */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			name = "CMake PostBuild Rules";
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "make -C /Users/kevinhouyang/Development/hifi/build/tests-manual/qml -f /Users/kevinhouyang/Development/hifi/build/tests-manual/qml/CMakeScripts/install_postBuildPhase.make$CONFIGURATION all";
+			showEnvVarsInLog = 0;
+		};
+		3FA8ED4BB41C44D5BA688746 = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# shell script goes here
+exit 0";
+			showEnvVarsInLog = 0;
+		};
+		4A2295272F094179813AB71C /* CMake Rules */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			name = "CMake Rules";
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "make -C /Users/kevinhouyang/Development/hifi/build/tests-manual/qml -f /Users/kevinhouyang/Development/hifi/build/tests-manual/qml/CMakeScripts/qml-test_autogen_cmakeRulesBuildPhase.make$CONFIGURATION all";
+			showEnvVarsInLog = 0;
+		};
+		8014538B55CD4870B852D46E /* CMake Rules */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			name = "CMake Rules";
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "make -C /Users/kevinhouyang/Development/hifi/build/tests-manual/qml -f /Users/kevinhouyang/Development/hifi/build/tests-manual/qml/CMakeScripts/ALL_BUILD_cmakeRulesBuildPhase.make$CONFIGURATION all";
+			showEnvVarsInLog = 0;
+		};
+		87DCB739168746489170B837 = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# shell script goes here
+exit 0";
+			showEnvVarsInLog = 0;
+		};
+		CB59CED728B24443873E1BA7 /* CMake PostBuild Rules */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			name = "CMake PostBuild Rules";
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "make -C /Users/kevinhouyang/Development/hifi/build/tests-manual/qml -f /Users/kevinhouyang/Development/hifi/build/tests-manual/qml/CMakeScripts/RUN_TESTS_postBuildPhase.make$CONFIGURATION all";
+			showEnvVarsInLog = 0;
+		};
+		D9CA2A7E229948A7B6D3E702 = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# shell script goes here
+exit 0";
+			showEnvVarsInLog = 0;
+		};
+		E69DD3A4A73548B8992C11A0 /* CMake PostBuild Rules */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			name = "CMake PostBuild Rules";
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "make -C /Users/kevinhouyang/Development/hifi/build/tests-manual/qml -f /Users/kevinhouyang/Development/hifi/build/tests-manual/qml/CMakeScripts/package_postBuildPhase.make$CONFIGURATION all";
+			showEnvVarsInLog = 0;
+		};
+		FBFA751F52B14E9C8CB546AE /* CMake Rules */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			name = "CMake Rules";
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "make -C /Users/kevinhouyang/Development/hifi/build/tests-manual/qml -f /Users/kevinhouyang/Development/hifi/build/tests-manual/qml/CMakeScripts/ZERO_CHECK_cmakeRulesBuildPhase.make$CONFIGURATION all";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B5EBBAFB86E24AE3B9DD760E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E182507BC04D49EE8487814F /* /Users/kevinhouyang/Development/hifi/build/tests-manual/qml/qml-test_autogen/mocs_compilation.cpp */,
+				10A72B786C594C8C8E4CD48A /* /Users/kevinhouyang/Development/hifi/tests-manual/qml/src/MacQml.cpp */,
+				243AD737279244588F0974FE /* /Users/kevinhouyang/Development/hifi/tests-manual/qml/src/StressWeb.cpp */,
+				2C07A7C0CA43484488325A3E /* /Users/kevinhouyang/Development/hifi/tests-manual/qml/src/TestCase.cpp */,
+				B9B2214BF8934673B43361F5 /* /Users/kevinhouyang/Development/hifi/tests-manual/qml/src/main.cpp */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		0CA965BF022C432AAA9201A2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EC7358D97DFB4AB0AF8A20EB /* ALL_BUILD */;
+			targetProxy = 5B4C8C61EB16427FBB56837B /* PBXContainerItemProxy */;
+		};
+		26B1E1478F3042D197DA0F5A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 324A15BFFEE94E94BA16B115 /* ZERO_CHECK */;
+			targetProxy = E40BF83471D34B58942CC214 /* PBXContainerItemProxy */;
+		};
+		7466C3CAB8D14B46956ED361 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 324A15BFFEE94E94BA16B115 /* ZERO_CHECK */;
+			targetProxy = DD62FA6AFDA947C79442C86D /* PBXContainerItemProxy */;
+		};
+		96B2DF5DBAB74862B6574E2A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 324A15BFFEE94E94BA16B115 /* ZERO_CHECK */;
+			targetProxy = 71F6CC6BDAEF41D1A4D89DBB /* PBXContainerItemProxy */;
+		};
+		CF66A683921A4AA293C887FA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 09327795EE8D4B9F80FA1777 /* qml-test_autogen */;
+			targetProxy = B4C1D1F4AE7E46869D69E631 /* PBXContainerItemProxy */;
+		};
+		DD273A83F8084BD390AF0132 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EC7358D97DFB4AB0AF8A20EB /* ALL_BUILD */;
+			targetProxy = E1E4EB9580BA42A796E21DD2 /* PBXContainerItemProxy */;
+		};
+		F552B6C2629649C6A9D04C11 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BE44B558152E401DA561057D /* qml-test */;
+			targetProxy = 600B18A936ED440CAFA8F90C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		00A2ECAA42D24E3DB15CF9D4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = install;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/kevinhouyang/Development/hifi/build/tests-manual/qml";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = Debug;
+		};
+		0CF192616E124C9F95ABB661 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = "qml-test_autogen";
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/kevinhouyang/Development/hifi/build/tests-manual/qml";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = Release;
+		};
+		0EFE091A862040A487DAC445 /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = "qml-test_autogen";
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/kevinhouyang/Development/hifi/build/tests-manual/qml";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = MinSizeRel;
+		};
+		1A785E6AA9B2435AA01C000A /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ALL_BUILD;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/kevinhouyang/Development/hifi/build/tests-manual/qml";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = MinSizeRel;
+		};
+		1B0D67F929BF47B792A60B42 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ALL_BUILD;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/kevinhouyang/Development/hifi/build/tests-manual/qml";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = Release;
+		};
+		1E420B26D64F4989861B9C6D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = RUN_TESTS;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/kevinhouyang/Development/hifi/build/tests-manual/qml";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = Debug;
+		};
+		1FEDC8A4ADCC44F2AAE2CD74 /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = install;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/kevinhouyang/Development/hifi/build/tests-manual/qml";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = RelWithDebInfo;
+		};
+		201EABD8D7BB4068AD33CB32 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = RUN_TESTS;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/kevinhouyang/Development/hifi/build/tests-manual/qml";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = Release;
+		};
+		27022F3F863F404DBDEE6316 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ALL_BUILD;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/kevinhouyang/Development/hifi/build/tests-manual/qml";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = Debug;
+		};
+		2970C895A7FF41D8B1B9E02C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ZERO_CHECK;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/kevinhouyang/Development/hifi/build/tests-manual/qml";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = Debug;
+		};
+		3E236796636F46ECAD2E77E1 /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = package;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/kevinhouyang/Development/hifi/build/tests-manual/qml";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = MinSizeRel;
+		};
+		3F053F9B3D444379AFC01BB4 /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ALL_BUILD;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/kevinhouyang/Development/hifi/build/tests-manual/qml";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = RelWithDebInfo;
+		};
+		54F54A3F30F74F38937D30CD /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = RUN_TESTS;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/kevinhouyang/Development/hifi/build/tests-manual/qml";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = RelWithDebInfo;
+		};
+		58BDF09B88F349CE8255C3AC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = package;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/kevinhouyang/Development/hifi/build/tests-manual/qml";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = Release;
+		};
+		5B0D62C3D8CB4C9AA630768E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				FRAMEWORK_SEARCH_PATHS = (/usr/local/Cellar/qt/5.11.2/lib);
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",GLM_FORCE_RADIANS,DEV_BUILD,QT_QUICK_LIB,QT_GUI_LIB,QT_CORE_LIB,QT_QML_LIB,QT_NETWORK_LIB,QT_OPENGL_LIB,QT_WIDGETS_LIB,QT_SCRIPT_LIB,QT_MULTIMEDIA_LIB,QT_WEBCHANNEL_LIB,QT_WEBSOCKETS_LIB,QT_WEBENGINE_LIB,QT_WEBENGINECORE_LIB,QT_POSITIONING_LIB);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = ("/Users/kevinhouyang/Development/hifi/build/tests-manual/qml","/Users/kevinhouyang/Development/hifi/tests-manual/qml","/Users/kevinhouyang/Development/hifi/build/tests-manual/qml/qml-test_autogen/include_Debug",/Users/kevinhouyang/Development/hifi/build/includes,/Users/kevinhouyang/Development/hifi/build/ext/Xcode/glm/project/include,/Users/kevinhouyang/Development/hifi/libraries/shared/src,/Users/kevinhouyang/Development/hifi/build/libraries/shared,/Users/kevinhouyang/Development/hifi/libraries/networking/src,/Users/kevinhouyang/Development/hifi/build/libraries/networking,/Users/kevinhouyang/Development/hifi/libraries/gl/src,/Users/kevinhouyang/Development/hifi/build/libraries/gl,/Users/kevinhouyang/Development/hifi/libraries/qml/src,/Users/kevinhouyang/Development/hifi/build/libraries/qml,/Users/kevinhouyang/Development/hifi/build/ext/Xcode/glad45/project/include);
+				INSTALL_PATH = "";
+				LIBRARY_SEARCH_PATHS = "";
+				OTHER_CPLUSPLUSFLAGS = " -Wall -Wextra -fno-strict-aliasing -Wno-unused-parameter --stdlib=libc++       -DDEBUG -fPIC '-std=gnu++14'  ";
+				OTHER_LDFLAGS = " -Wl,-search_paths_first -Wl,-headerpad_max_install_names  /usr/local/Cellar/qt/5.11.2/lib/QtOpenGL.framework/QtOpenGL /Users/kevinhouyang/Development/hifi/build/libraries/shared/Debug/libshared.a /Users/kevinhouyang/Development/hifi/build/libraries/networking/Debug/libnetworking.a /Users/kevinhouyang/Development/hifi/build/libraries/gl/Debug/libgl.a /Users/kevinhouyang/Development/hifi/build/libraries/qml/Debug/libqml.a /Users/kevinhouyang/Development/hifi/build/libraries/networking/Debug/libnetworking.a /usr/local/Cellar/openssl/1.0.2p/lib/libssl.dylib /usr/local/Cellar/openssl/1.0.2p/lib/libcrypto.dylib /Users/kevinhouyang/Development/hifi/build/ext/Xcode/tbb/project/src/tbb/lib/libtbb_debug.dylib /Users/kevinhouyang/Development/hifi/build/ext/Xcode/tbb/project/src/tbb/lib/libtbbmalloc_debug.dylib -framework IOKit -framework CoreFoundation /Users/kevinhouyang/Development/hifi/build/libraries/gl/Debug/libgl.a /Users/kevinhouyang/Development/hifi/build/libraries/shared/Debug/libshared.a /usr/local/Cellar/qt/5.11.2/lib/QtScript.framework/QtScript /usr/lib/libz.dylib /usr/local/Cellar/qt/5.11.2/lib/QtWidgets.framework/QtWidgets /Users/kevinhouyang/Development/hifi/build/ext/Xcode/glad45/project/lib/libglad_d.a -framework OpenGL -ldl /usr/local/Cellar/qt/5.11.2/lib/QtMultimedia.framework/QtMultimedia /usr/local/Cellar/qt/5.11.2/lib/QtWebSockets.framework/QtWebSockets /usr/local/Cellar/qt/5.11.2/lib/QtWebEngine.framework/QtWebEngine /usr/local/Cellar/qt/5.11.2/lib/QtWebEngineCore.framework/QtWebEngineCore /usr/local/Cellar/qt/5.11.2/lib/QtQuick.framework/QtQuick /usr/local/Cellar/qt/5.11.2/lib/QtGui.framework/QtGui /usr/local/Cellar/qt/5.11.2/lib/QtWebChannel.framework/QtWebChannel /usr/local/Cellar/qt/5.11.2/lib/QtQml.framework/QtQml /usr/local/Cellar/qt/5.11.2/lib/QtNetwork.framework/QtNetwork /usr/local/Cellar/qt/5.11.2/lib/QtPositioning.framework/QtPositioning /usr/local/Cellar/qt/5.11.2/lib/QtCore.framework/QtCore";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = "qml-test";
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/kevinhouyang/Development/hifi/build/tests-manual/qml";
+				SYSTEM_HEADER_SEARCH_PATHS = (/usr/local/Cellar/qt/5.11.2/lib/QtQuick.framework/Headers,/usr/local/Cellar/qt/5.11.2/lib/QtGui.framework/Headers,/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk/System/Library/Frameworks/OpenGL.framework/Headers,/usr/local/Cellar/qt/5.11.2/lib/QtCore.framework/Headers,"/usr/local/Cellar/qt/5.11.2/./mkspecs/macx-clang",/usr/local/Cellar/qt/5.11.2/lib/QtQml.framework/Headers,/usr/local/Cellar/qt/5.11.2/lib/QtNetwork.framework/Headers,/usr/local/Cellar/qt/5.11.2/lib/QtOpenGL.framework/Headers,/usr/local/Cellar/qt/5.11.2/lib/QtWidgets.framework/Headers,/usr/local/Cellar/qt/5.11.2/lib/QtScript.framework/Headers,/Users/kevinhouyang/Development/hifi/build/ext/Xcode/tbb/project/src/tbb/include,/usr/local/Cellar/qt/5.11.2/lib/QtMultimedia.framework/Headers,/usr/local/Cellar/qt/5.11.2/lib/QtWebChannel.framework/Headers,/usr/local/Cellar/qt/5.11.2/lib/QtWebSockets.framework/Headers,/usr/local/Cellar/qt/5.11.2/lib/QtWebEngine.framework/Headers,/usr/local/Cellar/qt/5.11.2/lib/QtWebEngineCore.framework/Headers,/usr/local/Cellar/qt/5.11.2/lib/QtPositioning.framework/Headers);
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = Debug;
+		};
+		5D6D3BFE6C0047039D428908 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				FRAMEWORK_SEARCH_PATHS = (/usr/local/Cellar/qt/5.11.2/lib);
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 3;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",GLM_FORCE_RADIANS,DEV_BUILD,QT_QUICK_LIB,QT_GUI_LIB,QT_CORE_LIB,QT_NO_DEBUG,QT_QML_LIB,QT_NETWORK_LIB,QT_OPENGL_LIB,QT_WIDGETS_LIB,QT_SCRIPT_LIB,QT_MULTIMEDIA_LIB,QT_WEBCHANNEL_LIB,QT_WEBSOCKETS_LIB,QT_WEBENGINE_LIB,QT_WEBENGINECORE_LIB,QT_POSITIONING_LIB);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = ("/Users/kevinhouyang/Development/hifi/build/tests-manual/qml","/Users/kevinhouyang/Development/hifi/tests-manual/qml","/Users/kevinhouyang/Development/hifi/build/tests-manual/qml/qml-test_autogen/include_Release",/Users/kevinhouyang/Development/hifi/build/includes,/Users/kevinhouyang/Development/hifi/build/ext/Xcode/glm/project/include,/Users/kevinhouyang/Development/hifi/libraries/shared/src,/Users/kevinhouyang/Development/hifi/build/libraries/shared,/Users/kevinhouyang/Development/hifi/libraries/networking/src,/Users/kevinhouyang/Development/hifi/build/libraries/networking,/Users/kevinhouyang/Development/hifi/libraries/gl/src,/Users/kevinhouyang/Development/hifi/build/libraries/gl,/Users/kevinhouyang/Development/hifi/libraries/qml/src,/Users/kevinhouyang/Development/hifi/build/libraries/qml,/Users/kevinhouyang/Development/hifi/build/ext/Xcode/glad45/project/include);
+				INSTALL_PATH = "";
+				LIBRARY_SEARCH_PATHS = "";
+				OTHER_CPLUSPLUSFLAGS = " -Wall -Wextra -fno-strict-aliasing -Wno-unused-parameter --stdlib=libc++        -DNDEBUG -fPIC '-std=gnu++14'  ";
+				OTHER_LDFLAGS = " -Wl,-search_paths_first -Wl,-headerpad_max_install_names  /usr/local/Cellar/qt/5.11.2/lib/QtOpenGL.framework/QtOpenGL /Users/kevinhouyang/Development/hifi/build/libraries/shared/Release/libshared.a /Users/kevinhouyang/Development/hifi/build/libraries/networking/Release/libnetworking.a /Users/kevinhouyang/Development/hifi/build/libraries/gl/Release/libgl.a /Users/kevinhouyang/Development/hifi/build/libraries/qml/Release/libqml.a /Users/kevinhouyang/Development/hifi/build/libraries/networking/Release/libnetworking.a /usr/local/Cellar/openssl/1.0.2p/lib/libssl.dylib /usr/local/Cellar/openssl/1.0.2p/lib/libcrypto.dylib /Users/kevinhouyang/Development/hifi/build/ext/Xcode/tbb/project/src/tbb/lib/libtbb.dylib /Users/kevinhouyang/Development/hifi/build/ext/Xcode/tbb/project/src/tbb/lib/libtbbmalloc.dylib -framework IOKit -framework CoreFoundation /Users/kevinhouyang/Development/hifi/build/libraries/gl/Release/libgl.a /Users/kevinhouyang/Development/hifi/build/libraries/shared/Release/libshared.a /usr/local/Cellar/qt/5.11.2/lib/QtScript.framework/QtScript /usr/lib/libz.dylib /usr/local/Cellar/qt/5.11.2/lib/QtWidgets.framework/QtWidgets /Users/kevinhouyang/Development/hifi/build/ext/Xcode/glad45/project/lib/libglad.a -framework OpenGL -ldl /usr/local/Cellar/qt/5.11.2/lib/QtMultimedia.framework/QtMultimedia /usr/local/Cellar/qt/5.11.2/lib/QtWebSockets.framework/QtWebSockets /usr/local/Cellar/qt/5.11.2/lib/QtWebEngine.framework/QtWebEngine /usr/local/Cellar/qt/5.11.2/lib/QtWebEngineCore.framework/QtWebEngineCore /usr/local/Cellar/qt/5.11.2/lib/QtQuick.framework/QtQuick /usr/local/Cellar/qt/5.11.2/lib/QtGui.framework/QtGui /usr/local/Cellar/qt/5.11.2/lib/QtWebChannel.framework/QtWebChannel /usr/local/Cellar/qt/5.11.2/lib/QtQml.framework/QtQml /usr/local/Cellar/qt/5.11.2/lib/QtNetwork.framework/QtNetwork /usr/local/Cellar/qt/5.11.2/lib/QtPositioning.framework/QtPositioning /usr/local/Cellar/qt/5.11.2/lib/QtCore.framework/QtCore";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = "qml-test";
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/kevinhouyang/Development/hifi/build/tests-manual/qml";
+				SYSTEM_HEADER_SEARCH_PATHS = (/usr/local/Cellar/qt/5.11.2/lib/QtQuick.framework/Headers,/usr/local/Cellar/qt/5.11.2/lib/QtGui.framework/Headers,/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk/System/Library/Frameworks/OpenGL.framework/Headers,/usr/local/Cellar/qt/5.11.2/lib/QtCore.framework/Headers,"/usr/local/Cellar/qt/5.11.2/./mkspecs/macx-clang",/usr/local/Cellar/qt/5.11.2/lib/QtQml.framework/Headers,/usr/local/Cellar/qt/5.11.2/lib/QtNetwork.framework/Headers,/usr/local/Cellar/qt/5.11.2/lib/QtOpenGL.framework/Headers,/usr/local/Cellar/qt/5.11.2/lib/QtWidgets.framework/Headers,/usr/local/Cellar/qt/5.11.2/lib/QtScript.framework/Headers,/Users/kevinhouyang/Development/hifi/build/ext/Xcode/tbb/project/src/tbb/include,/usr/local/Cellar/qt/5.11.2/lib/QtMultimedia.framework/Headers,/usr/local/Cellar/qt/5.11.2/lib/QtWebChannel.framework/Headers,/usr/local/Cellar/qt/5.11.2/lib/QtWebSockets.framework/Headers,/usr/local/Cellar/qt/5.11.2/lib/QtWebEngine.framework/Headers,/usr/local/Cellar/qt/5.11.2/lib/QtWebEngineCore.framework/Headers,/usr/local/Cellar/qt/5.11.2/lib/QtPositioning.framework/Headers);
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = Release;
+		};
+		69A770C8EF054CDFBF80B926 /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = install;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/kevinhouyang/Development/hifi/build/tests-manual/qml";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = MinSizeRel;
+		};
+		82A746C226C6451990F4C2D0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = "qml-test_autogen";
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/kevinhouyang/Development/hifi/build/tests-manual/qml";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = Debug;
+		};
+		9573FAD9FC1440B5918705F6 /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = RUN_TESTS;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/kevinhouyang/Development/hifi/build/tests-manual/qml";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = MinSizeRel;
+		};
+		9F43535AA7F640818524FE1C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ZERO_CHECK;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/kevinhouyang/Development/hifi/build/tests-manual/qml";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = Release;
+		};
+		A1A8C448AC974F179BA27480 /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "c++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk;
+				SYMROOT = "/Users/kevinhouyang/Development/hifi/build/tests-manual/qml/build";
+			};
+			name = RelWithDebInfo;
+		};
+		A7E72C5E9F7E491B8624E4E2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = package;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/kevinhouyang/Development/hifi/build/tests-manual/qml";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = Debug;
+		};
+		AB12896B934D404B95C8E930 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = install;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/kevinhouyang/Development/hifi/build/tests-manual/qml";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = Release;
+		};
+		AD971BF59F7E49A7BDFF12F2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "c++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEPLOYMENT_POSTPROCESSING = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk;
+				SYMROOT = "/Users/kevinhouyang/Development/hifi/build/tests-manual/qml/build";
+			};
+			name = Release;
+		};
+		BBF51093DF8B47DAA832139C /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = "qml-test_autogen";
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/kevinhouyang/Development/hifi/build/tests-manual/qml";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = RelWithDebInfo;
+		};
+		BFBC6332F21B42D1A2085DD2 /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ZERO_CHECK;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/kevinhouyang/Development/hifi/build/tests-manual/qml";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = MinSizeRel;
+		};
+		C639CB232EBE47B6A4EE89BC /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				FRAMEWORK_SEARCH_PATHS = (/usr/local/Cellar/qt/5.11.2/lib);
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = s;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",GLM_FORCE_RADIANS,DEV_BUILD,QT_QUICK_LIB,QT_GUI_LIB,QT_CORE_LIB,QT_NO_DEBUG,QT_QML_LIB,QT_NETWORK_LIB,QT_OPENGL_LIB,QT_WIDGETS_LIB,QT_SCRIPT_LIB,QT_MULTIMEDIA_LIB,QT_WEBCHANNEL_LIB,QT_WEBSOCKETS_LIB,QT_WEBENGINE_LIB,QT_WEBENGINECORE_LIB,QT_POSITIONING_LIB);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = ("/Users/kevinhouyang/Development/hifi/build/tests-manual/qml","/Users/kevinhouyang/Development/hifi/tests-manual/qml","/Users/kevinhouyang/Development/hifi/build/tests-manual/qml/qml-test_autogen/include_MinSizeRel",/Users/kevinhouyang/Development/hifi/build/includes,/Users/kevinhouyang/Development/hifi/build/ext/Xcode/glm/project/include,/Users/kevinhouyang/Development/hifi/libraries/shared/src,/Users/kevinhouyang/Development/hifi/build/libraries/shared,/Users/kevinhouyang/Development/hifi/libraries/networking/src,/Users/kevinhouyang/Development/hifi/build/libraries/networking,/Users/kevinhouyang/Development/hifi/libraries/gl/src,/Users/kevinhouyang/Development/hifi/build/libraries/gl,/Users/kevinhouyang/Development/hifi/libraries/qml/src,/Users/kevinhouyang/Development/hifi/build/libraries/qml,/Users/kevinhouyang/Development/hifi/build/ext/Xcode/glad45/project/include);
+				INSTALL_PATH = "";
+				LIBRARY_SEARCH_PATHS = "";
+				OTHER_CPLUSPLUSFLAGS = " -Wall -Wextra -fno-strict-aliasing -Wno-unused-parameter --stdlib=libc++        -DNDEBUG -fPIC '-std=gnu++14'  ";
+				OTHER_LDFLAGS = " -Wl,-search_paths_first -Wl,-headerpad_max_install_names  /usr/local/Cellar/qt/5.11.2/lib/QtOpenGL.framework/QtOpenGL /Users/kevinhouyang/Development/hifi/build/libraries/shared/MinSizeRel/libshared.a /Users/kevinhouyang/Development/hifi/build/libraries/networking/MinSizeRel/libnetworking.a /Users/kevinhouyang/Development/hifi/build/libraries/gl/MinSizeRel/libgl.a /Users/kevinhouyang/Development/hifi/build/libraries/qml/MinSizeRel/libqml.a /Users/kevinhouyang/Development/hifi/build/libraries/networking/MinSizeRel/libnetworking.a /usr/local/Cellar/openssl/1.0.2p/lib/libssl.dylib /usr/local/Cellar/openssl/1.0.2p/lib/libcrypto.dylib /Users/kevinhouyang/Development/hifi/build/ext/Xcode/tbb/project/src/tbb/lib/libtbb.dylib /Users/kevinhouyang/Development/hifi/build/ext/Xcode/tbb/project/src/tbb/lib/libtbbmalloc.dylib -framework IOKit -framework CoreFoundation /Users/kevinhouyang/Development/hifi/build/libraries/gl/MinSizeRel/libgl.a /Users/kevinhouyang/Development/hifi/build/libraries/shared/MinSizeRel/libshared.a /usr/local/Cellar/qt/5.11.2/lib/QtScript.framework/QtScript /usr/lib/libz.dylib /usr/local/Cellar/qt/5.11.2/lib/QtWidgets.framework/QtWidgets /Users/kevinhouyang/Development/hifi/build/ext/Xcode/glad45/project/lib/libglad.a -framework OpenGL -ldl /usr/local/Cellar/qt/5.11.2/lib/QtMultimedia.framework/QtMultimedia /usr/local/Cellar/qt/5.11.2/lib/QtWebSockets.framework/QtWebSockets /usr/local/Cellar/qt/5.11.2/lib/QtWebEngine.framework/QtWebEngine /usr/local/Cellar/qt/5.11.2/lib/QtWebEngineCore.framework/QtWebEngineCore /usr/local/Cellar/qt/5.11.2/lib/QtQuick.framework/QtQuick /usr/local/Cellar/qt/5.11.2/lib/QtGui.framework/QtGui /usr/local/Cellar/qt/5.11.2/lib/QtWebChannel.framework/QtWebChannel /usr/local/Cellar/qt/5.11.2/lib/QtQml.framework/QtQml /usr/local/Cellar/qt/5.11.2/lib/QtNetwork.framework/QtNetwork /usr/local/Cellar/qt/5.11.2/lib/QtPositioning.framework/QtPositioning /usr/local/Cellar/qt/5.11.2/lib/QtCore.framework/QtCore";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = "qml-test";
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/kevinhouyang/Development/hifi/build/tests-manual/qml";
+				SYSTEM_HEADER_SEARCH_PATHS = (/usr/local/Cellar/qt/5.11.2/lib/QtQuick.framework/Headers,/usr/local/Cellar/qt/5.11.2/lib/QtGui.framework/Headers,/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk/System/Library/Frameworks/OpenGL.framework/Headers,/usr/local/Cellar/qt/5.11.2/lib/QtCore.framework/Headers,"/usr/local/Cellar/qt/5.11.2/./mkspecs/macx-clang",/usr/local/Cellar/qt/5.11.2/lib/QtQml.framework/Headers,/usr/local/Cellar/qt/5.11.2/lib/QtNetwork.framework/Headers,/usr/local/Cellar/qt/5.11.2/lib/QtOpenGL.framework/Headers,/usr/local/Cellar/qt/5.11.2/lib/QtWidgets.framework/Headers,/usr/local/Cellar/qt/5.11.2/lib/QtScript.framework/Headers,/Users/kevinhouyang/Development/hifi/build/ext/Xcode/tbb/project/src/tbb/include,/usr/local/Cellar/qt/5.11.2/lib/QtMultimedia.framework/Headers,/usr/local/Cellar/qt/5.11.2/lib/QtWebChannel.framework/Headers,/usr/local/Cellar/qt/5.11.2/lib/QtWebSockets.framework/Headers,/usr/local/Cellar/qt/5.11.2/lib/QtWebEngine.framework/Headers,/usr/local/Cellar/qt/5.11.2/lib/QtWebEngineCore.framework/Headers,/usr/local/Cellar/qt/5.11.2/lib/QtPositioning.framework/Headers);
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = MinSizeRel;
+		};
+		CAE1158A3E4F4C0BB6016A72 /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ZERO_CHECK;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/kevinhouyang/Development/hifi/build/tests-manual/qml";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = RelWithDebInfo;
+		};
+		DB4B72ED5AE0477AA37C6D69 /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				FRAMEWORK_SEARCH_PATHS = (/usr/local/Cellar/qt/5.11.2/lib);
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 2;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",GLM_FORCE_RADIANS,DEV_BUILD,QT_QUICK_LIB,QT_GUI_LIB,QT_CORE_LIB,QT_NO_DEBUG,QT_QML_LIB,QT_NETWORK_LIB,QT_OPENGL_LIB,QT_WIDGETS_LIB,QT_SCRIPT_LIB,QT_MULTIMEDIA_LIB,QT_WEBCHANNEL_LIB,QT_WEBSOCKETS_LIB,QT_WEBENGINE_LIB,QT_WEBENGINECORE_LIB,QT_POSITIONING_LIB);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = ("/Users/kevinhouyang/Development/hifi/build/tests-manual/qml","/Users/kevinhouyang/Development/hifi/tests-manual/qml","/Users/kevinhouyang/Development/hifi/build/tests-manual/qml/qml-test_autogen/include_RelWithDebInfo",/Users/kevinhouyang/Development/hifi/build/includes,/Users/kevinhouyang/Development/hifi/build/ext/Xcode/glm/project/include,/Users/kevinhouyang/Development/hifi/libraries/shared/src,/Users/kevinhouyang/Development/hifi/build/libraries/shared,/Users/kevinhouyang/Development/hifi/libraries/networking/src,/Users/kevinhouyang/Development/hifi/build/libraries/networking,/Users/kevinhouyang/Development/hifi/libraries/gl/src,/Users/kevinhouyang/Development/hifi/build/libraries/gl,/Users/kevinhouyang/Development/hifi/libraries/qml/src,/Users/kevinhouyang/Development/hifi/build/libraries/qml,/Users/kevinhouyang/Development/hifi/build/ext/Xcode/glad45/project/include);
+				INSTALL_PATH = "";
+				LIBRARY_SEARCH_PATHS = "";
+				OTHER_CPLUSPLUSFLAGS = " -Wall -Wextra -fno-strict-aliasing -Wno-unused-parameter --stdlib=libc++           -DNDEBUG -fPIC '-std=gnu++14'  ";
+				OTHER_LDFLAGS = " -Wl,-search_paths_first -Wl,-headerpad_max_install_names  /usr/local/Cellar/qt/5.11.2/lib/QtOpenGL.framework/QtOpenGL /Users/kevinhouyang/Development/hifi/build/libraries/shared/RelWithDebInfo/libshared.a /Users/kevinhouyang/Development/hifi/build/libraries/networking/RelWithDebInfo/libnetworking.a /Users/kevinhouyang/Development/hifi/build/libraries/gl/RelWithDebInfo/libgl.a /Users/kevinhouyang/Development/hifi/build/libraries/qml/RelWithDebInfo/libqml.a /Users/kevinhouyang/Development/hifi/build/libraries/networking/RelWithDebInfo/libnetworking.a /usr/local/Cellar/openssl/1.0.2p/lib/libssl.dylib /usr/local/Cellar/openssl/1.0.2p/lib/libcrypto.dylib /Users/kevinhouyang/Development/hifi/build/ext/Xcode/tbb/project/src/tbb/lib/libtbb.dylib /Users/kevinhouyang/Development/hifi/build/ext/Xcode/tbb/project/src/tbb/lib/libtbbmalloc.dylib -framework IOKit -framework CoreFoundation /Users/kevinhouyang/Development/hifi/build/libraries/gl/RelWithDebInfo/libgl.a /Users/kevinhouyang/Development/hifi/build/libraries/shared/RelWithDebInfo/libshared.a /usr/local/Cellar/qt/5.11.2/lib/QtScript.framework/QtScript /usr/lib/libz.dylib /usr/local/Cellar/qt/5.11.2/lib/QtWidgets.framework/QtWidgets /Users/kevinhouyang/Development/hifi/build/ext/Xcode/glad45/project/lib/libglad.a -framework OpenGL -ldl /usr/local/Cellar/qt/5.11.2/lib/QtMultimedia.framework/QtMultimedia /usr/local/Cellar/qt/5.11.2/lib/QtWebSockets.framework/QtWebSockets /usr/local/Cellar/qt/5.11.2/lib/QtWebEngine.framework/QtWebEngine /usr/local/Cellar/qt/5.11.2/lib/QtWebEngineCore.framework/QtWebEngineCore /usr/local/Cellar/qt/5.11.2/lib/QtQuick.framework/QtQuick /usr/local/Cellar/qt/5.11.2/lib/QtGui.framework/QtGui /usr/local/Cellar/qt/5.11.2/lib/QtWebChannel.framework/QtWebChannel /usr/local/Cellar/qt/5.11.2/lib/QtQml.framework/QtQml /usr/local/Cellar/qt/5.11.2/lib/QtNetwork.framework/QtNetwork /usr/local/Cellar/qt/5.11.2/lib/QtPositioning.framework/QtPositioning /usr/local/Cellar/qt/5.11.2/lib/QtCore.framework/QtCore";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = "qml-test";
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/kevinhouyang/Development/hifi/build/tests-manual/qml";
+				SYSTEM_HEADER_SEARCH_PATHS = (/usr/local/Cellar/qt/5.11.2/lib/QtQuick.framework/Headers,/usr/local/Cellar/qt/5.11.2/lib/QtGui.framework/Headers,/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk/System/Library/Frameworks/OpenGL.framework/Headers,/usr/local/Cellar/qt/5.11.2/lib/QtCore.framework/Headers,"/usr/local/Cellar/qt/5.11.2/./mkspecs/macx-clang",/usr/local/Cellar/qt/5.11.2/lib/QtQml.framework/Headers,/usr/local/Cellar/qt/5.11.2/lib/QtNetwork.framework/Headers,/usr/local/Cellar/qt/5.11.2/lib/QtOpenGL.framework/Headers,/usr/local/Cellar/qt/5.11.2/lib/QtWidgets.framework/Headers,/usr/local/Cellar/qt/5.11.2/lib/QtScript.framework/Headers,/Users/kevinhouyang/Development/hifi/build/ext/Xcode/tbb/project/src/tbb/include,/usr/local/Cellar/qt/5.11.2/lib/QtMultimedia.framework/Headers,/usr/local/Cellar/qt/5.11.2/lib/QtWebChannel.framework/Headers,/usr/local/Cellar/qt/5.11.2/lib/QtWebSockets.framework/Headers,/usr/local/Cellar/qt/5.11.2/lib/QtWebEngine.framework/Headers,/usr/local/Cellar/qt/5.11.2/lib/QtWebEngineCore.framework/Headers,/usr/local/Cellar/qt/5.11.2/lib/QtPositioning.framework/Headers);
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = RelWithDebInfo;
+		};
+		E6675ACEC3AB47B6A6708791 /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = package;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/kevinhouyang/Development/hifi/build/tests-manual/qml";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = RelWithDebInfo;
+		};
+		F53F9142214D429DA6BB1CA5 /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "c++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk;
+				SYMROOT = "/Users/kevinhouyang/Development/hifi/build/tests-manual/qml/build";
+			};
+			name = MinSizeRel;
+		};
+		FE4D9F91074741D4A5952D16 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "c++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk;
+				SYMROOT = "/Users/kevinhouyang/Development/hifi/build/tests-manual/qml/build";
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		096850D851DE4E5B9292E968 /* Build configuration list for PBXAggregateTarget "package" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A7E72C5E9F7E491B8624E4E2 /* Debug */,
+				58BDF09B88F349CE8255C3AC /* Release */,
+				3E236796636F46ECAD2E77E1 /* MinSizeRel */,
+				E6675ACEC3AB47B6A6708791 /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		5547A27C9690483C9E3E0B8E /* Build configuration list for PBXAggregateTarget "install" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				00A2ECAA42D24E3DB15CF9D4 /* Debug */,
+				AB12896B934D404B95C8E930 /* Release */,
+				69A770C8EF054CDFBF80B926 /* MinSizeRel */,
+				1FEDC8A4ADCC44F2AAE2CD74 /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		573F19AD9B8342FEA2746A5F /* Build configuration list for PBXAggregateTarget "ZERO_CHECK" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2970C895A7FF41D8B1B9E02C /* Debug */,
+				9F43535AA7F640818524FE1C /* Release */,
+				BFBC6332F21B42D1A2085DD2 /* MinSizeRel */,
+				CAE1158A3E4F4C0BB6016A72 /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		71A39E594F924EFD928EAE3F /* Build configuration list for PBXAggregateTarget "ALL_BUILD" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				27022F3F863F404DBDEE6316 /* Debug */,
+				1B0D67F929BF47B792A60B42 /* Release */,
+				1A785E6AA9B2435AA01C000A /* MinSizeRel */,
+				3F053F9B3D444379AFC01BB4 /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		D66872EC095144398F6B71F6 /* Build configuration list for PBXAggregateTarget "qml-test_autogen" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				82A746C226C6451990F4C2D0 /* Debug */,
+				0CF192616E124C9F95ABB661 /* Release */,
+				0EFE091A862040A487DAC445 /* MinSizeRel */,
+				BBF51093DF8B47DAA832139C /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		E45EFCACEFFA4A8496881994 /* Build configuration list for PBXProject "qml-test" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FE4D9F91074741D4A5952D16 /* Debug */,
+				AD971BF59F7E49A7BDFF12F2 /* Release */,
+				F53F9142214D429DA6BB1CA5 /* MinSizeRel */,
+				A1A8C448AC974F179BA27480 /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		F31A01D6919448B993E2291C /* Build configuration list for PBXAggregateTarget "RUN_TESTS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1E420B26D64F4989861B9C6D /* Debug */,
+				201EABD8D7BB4068AD33CB32 /* Release */,
+				9573FAD9FC1440B5918705F6 /* MinSizeRel */,
+				54F54A3F30F74F38937D30CD /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		F320D93420EB4FB5B75BB711 /* Build configuration list for PBXNativeTarget "qml-test" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5B0D62C3D8CB4C9AA630768E /* Debug */,
+				5D6D3BFE6C0047039D428908 /* Release */,
+				C639CB232EBE47B6A4EE89BC /* MinSizeRel */,
+				DB4B72ED5AE0477AA37C6D69 /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 48B372CEB9CB496B8D4D390A /* Project object */;
+}

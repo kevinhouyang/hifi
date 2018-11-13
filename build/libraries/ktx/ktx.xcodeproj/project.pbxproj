@@ -1,0 +1,1289 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXAggregateTarget section */
+		324A15BFFEE94E94BA16B115 /* ZERO_CHECK */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = F18676AAA6DC4E8F9CAEB752 /* Build configuration list for PBXAggregateTarget "ZERO_CHECK" */;
+			buildPhases = (
+				39FB33B2CAB9448EBA71DA07 /* CMake Rules */,
+			);
+			dependencies = (
+			);
+			name = ZERO_CHECK;
+			productName = ZERO_CHECK;
+		};
+		76BBA07C604F4D0E89A822F7 /* RUN_TESTS */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 331368E6D73E4627814654C3 /* Build configuration list for PBXAggregateTarget "RUN_TESTS" */;
+			buildPhases = (
+				BF47A4DC1643480D8EE7A1EA /* CMake PostBuild Rules */,
+			);
+			dependencies = (
+			);
+			name = RUN_TESTS;
+			productName = RUN_TESTS;
+		};
+		7A7E10E72F85450A98FB2D43 /* install */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = F0F5C32B0C4B49809A4EDCE8 /* Build configuration list for PBXAggregateTarget "install" */;
+			buildPhases = (
+				16D0519A7B1C42719D169C14 /* CMake PostBuild Rules */,
+			);
+			dependencies = (
+				BB31A78F841E4339A7C2B6C8 /* PBXTargetDependency */,
+			);
+			name = install;
+			productName = install;
+		};
+		A0EF40283FD3451D881D67E2 /* package */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 0F0D96C830AA430391A95A6A /* Build configuration list for PBXAggregateTarget "package" */;
+			buildPhases = (
+				0C59643740174FE98054203E /* CMake PostBuild Rules */,
+			);
+			dependencies = (
+				4A1029C05E0F4374AD96A0E3 /* PBXTargetDependency */,
+			);
+			name = package;
+			productName = package;
+		};
+		BB5D6C92AE624E5D9F159077 /* ktx_autogen */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = BAC84E49800F46EDA31C3708 /* Build configuration list for PBXAggregateTarget "ktx_autogen" */;
+			buildPhases = (
+				04F763AE1EB640BFB8683902 /* CMake Rules */,
+			);
+			dependencies = (
+				5CECC297B49444F598A686A0 /* PBXTargetDependency */,
+			);
+			name = ktx_autogen;
+			productName = ktx_autogen;
+		};
+		EC7358D97DFB4AB0AF8A20EB /* ALL_BUILD */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 0AE09D547CF3413D8394CAA0 /* Build configuration list for PBXAggregateTarget "ALL_BUILD" */;
+			buildPhases = (
+				BF3A8DA1C0154B12869370ED /* CMake Rules */,
+			);
+			dependencies = (
+				7007369157EC483992ACCF14 /* PBXTargetDependency */,
+				3A50F15399294556B7538EAE /* PBXTargetDependency */,
+			);
+			name = ALL_BUILD;
+			productName = ALL_BUILD;
+		};
+/* End PBXAggregateTarget section */
+
+/* Begin PBXBuildFile section */
+		0F944BD59A2944729846AB1A /* /Users/kevinhouyang/Development/hifi/libraries/ktx/src/ktx/Reader.cpp */ = {isa = PBXBuildFile; fileRef = 886D23B815C74BB6BA054109 /* /Users/kevinhouyang/Development/hifi/libraries/ktx/src/ktx/Reader.cpp */; };
+		13AF959A2EBE4CE58A1A46F4 /* /Users/kevinhouyang/Development/hifi/build/libraries/ktx/ktx_autogen/mocs_compilation.cpp */ = {isa = PBXBuildFile; fileRef = 3A55945B048A487E899124E9 /* /Users/kevinhouyang/Development/hifi/build/libraries/ktx/ktx_autogen/mocs_compilation.cpp */; };
+		369436144FD3469B9C878F01 /* /Users/kevinhouyang/Development/hifi/libraries/ktx/src/khronos/KHR.h */ = {isa = PBXBuildFile; fileRef = 042043B7C1AF47658CEBA939 /* /Users/kevinhouyang/Development/hifi/libraries/ktx/src/khronos/KHR.h */; };
+		4FCF958F697E420F983C20BF /* /Users/kevinhouyang/Development/hifi/libraries/ktx/src/TextureMeta.cpp */ = {isa = PBXBuildFile; fileRef = FCDB30748D964BFAA6D2FAE9 /* /Users/kevinhouyang/Development/hifi/libraries/ktx/src/TextureMeta.cpp */; };
+		986F35C3B7004BAAA0B93870 /* /Users/kevinhouyang/Development/hifi/libraries/ktx/src/ktx/KTX.h */ = {isa = PBXBuildFile; fileRef = 9B1F596734F34C54A0373453 /* /Users/kevinhouyang/Development/hifi/libraries/ktx/src/ktx/KTX.h */; };
+		C0B0F08BB95F4D7A9C11EE4A /* /Users/kevinhouyang/Development/hifi/libraries/ktx/src/ktx/Validation.cpp */ = {isa = PBXBuildFile; fileRef = E6C28A2A6D3042A9847C3673 /* /Users/kevinhouyang/Development/hifi/libraries/ktx/src/ktx/Validation.cpp */; };
+		E25BCE15B7174D6CA61A7EC8 /* /Users/kevinhouyang/Development/hifi/libraries/ktx/src/ktx/Writer.cpp */ = {isa = PBXBuildFile; fileRef = 67C3AD0724C74F7383390602 /* /Users/kevinhouyang/Development/hifi/libraries/ktx/src/ktx/Writer.cpp */; };
+		EA663E9900FB40D8A414C8D5 /* /Users/kevinhouyang/Development/hifi/libraries/ktx/src/TextureMeta.h */ = {isa = PBXBuildFile; fileRef = 8E7F14F1847549719B926C4C /* /Users/kevinhouyang/Development/hifi/libraries/ktx/src/TextureMeta.h */; };
+		F23C057449CF4CCE9939A250 /* /Users/kevinhouyang/Development/hifi/libraries/ktx/src/ktx/KTX.cpp */ = {isa = PBXBuildFile; fileRef = F367714B72654E6D983B61F3 /* /Users/kevinhouyang/Development/hifi/libraries/ktx/src/ktx/KTX.cpp */; };
+		F7458C4930A94ADA9BCC0CFF /* /Users/kevinhouyang/Development/hifi/libraries/ktx/CMakeLists.txt */ = {isa = PBXBuildFile; fileRef = 37AF1AF577AC4D3AA73842FA /* /Users/kevinhouyang/Development/hifi/libraries/ktx/CMakeLists.txt */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXBuildStyle section */
+		3A6F08AE72EB4F8D8EBD9C40 /* RelWithDebInfo */ = {
+			isa = PBXBuildStyle;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+			};
+			name = RelWithDebInfo;
+		};
+		6BE3814154E24090B7BE8944 /* Release */ = {
+			isa = PBXBuildStyle;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+			};
+			name = Release;
+		};
+		8DA67FD420DA401586C638F9 /* MinSizeRel */ = {
+			isa = PBXBuildStyle;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+			};
+			name = MinSizeRel;
+		};
+		C9EAC64DB64A4A73AB8DA2FE /* Debug */ = {
+			isa = PBXBuildStyle;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+			};
+			name = Debug;
+		};
+/* End PBXBuildStyle section */
+
+/* Begin PBXContainerItemProxy section */
+		4C05EF0B9ECD4CA09C0E9290 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8E0079998EAD4F84848F42A7 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EC7358D97DFB4AB0AF8A20EB;
+			remoteInfo = ALL_BUILD;
+		};
+		5CBB583F038D4BF49B43E9C9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8E0079998EAD4F84848F42A7 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EC7358D97DFB4AB0AF8A20EB;
+			remoteInfo = ALL_BUILD;
+		};
+		6361CD17DEE24FBA9025565A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8E0079998EAD4F84848F42A7 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 324A15BFFEE94E94BA16B115;
+			remoteInfo = ZERO_CHECK;
+		};
+		63EA7B78394541B5877B51DC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8E0079998EAD4F84848F42A7 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 324A15BFFEE94E94BA16B115;
+			remoteInfo = ZERO_CHECK;
+		};
+		7E862781E63C4777A637479C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8E0079998EAD4F84848F42A7 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 585DC4B3E64843B29BF08FF5;
+			remoteInfo = ktx;
+		};
+		E3100A09BF374F5E860CF6A6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8E0079998EAD4F84848F42A7 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 324A15BFFEE94E94BA16B115;
+			remoteInfo = ZERO_CHECK;
+		};
+		EE0514C5A1F74C03AAE666D6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8E0079998EAD4F84848F42A7 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BB5D6C92AE624E5D9F159077;
+			remoteInfo = ktx_autogen;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		042043B7C1AF47658CEBA939 /* /Users/kevinhouyang/Development/hifi/libraries/ktx/src/khronos/KHR.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = KHR.h; path = src/khronos/KHR.h; sourceTree = SOURCE_ROOT; };
+		37AF1AF577AC4D3AA73842FA /* /Users/kevinhouyang/Development/hifi/libraries/ktx/CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; name = CMakeLists.txt; path = CMakeLists.txt; sourceTree = SOURCE_ROOT; };
+		3A55945B048A487E899124E9 /* /Users/kevinhouyang/Development/hifi/build/libraries/ktx/ktx_autogen/mocs_compilation.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = mocs_compilation.cpp; path = ../../build/libraries/ktx/ktx_autogen/mocs_compilation.cpp; sourceTree = SOURCE_ROOT; };
+		5041128389C241CCBBA006FA /* /Users/kevinhouyang/Development/hifi/libraries/ktx/CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; name = CMakeLists.txt; path = CMakeLists.txt; sourceTree = SOURCE_ROOT; };
+		60400C9D311648FD9B94966B /* ktx */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libktx.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		67C3AD0724C74F7383390602 /* /Users/kevinhouyang/Development/hifi/libraries/ktx/src/ktx/Writer.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = Writer.cpp; path = src/ktx/Writer.cpp; sourceTree = SOURCE_ROOT; };
+		886D23B815C74BB6BA054109 /* /Users/kevinhouyang/Development/hifi/libraries/ktx/src/ktx/Reader.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = Reader.cpp; path = src/ktx/Reader.cpp; sourceTree = SOURCE_ROOT; };
+		8E7F14F1847549719B926C4C /* /Users/kevinhouyang/Development/hifi/libraries/ktx/src/TextureMeta.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = TextureMeta.h; path = src/TextureMeta.h; sourceTree = SOURCE_ROOT; };
+		9B1F596734F34C54A0373453 /* /Users/kevinhouyang/Development/hifi/libraries/ktx/src/ktx/KTX.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = KTX.h; path = src/ktx/KTX.h; sourceTree = SOURCE_ROOT; };
+		D6D694E8BDAF491EB7EEBA1A /* /Users/kevinhouyang/Development/hifi/libraries/ktx/CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; name = CMakeLists.txt; path = CMakeLists.txt; sourceTree = SOURCE_ROOT; };
+		E6C28A2A6D3042A9847C3673 /* /Users/kevinhouyang/Development/hifi/libraries/ktx/src/ktx/Validation.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = Validation.cpp; path = src/ktx/Validation.cpp; sourceTree = SOURCE_ROOT; };
+		F367714B72654E6D983B61F3 /* /Users/kevinhouyang/Development/hifi/libraries/ktx/src/ktx/KTX.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = KTX.cpp; path = src/ktx/KTX.cpp; sourceTree = SOURCE_ROOT; };
+		FCDB30748D964BFAA6D2FAE9 /* /Users/kevinhouyang/Development/hifi/libraries/ktx/src/TextureMeta.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = TextureMeta.cpp; path = src/TextureMeta.cpp; sourceTree = SOURCE_ROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXGroup section */
+		048CDB2B58914288ACD4B1D3 = {
+			isa = PBXGroup;
+			children = (
+				2E8C214E2A0446409D9BE7AF /* Libraries */,
+				BD0B8803C1CF4133A01E8E6D /* ALL_BUILD */,
+				85A1C199A6444998AAF7233B /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		06F9F33CDA804FD79210C3EC /* Header Files */ = {
+			isa = PBXGroup;
+			children = (
+				8E7F14F1847549719B926C4C /* /Users/kevinhouyang/Development/hifi/libraries/ktx/src/TextureMeta.h */,
+				042043B7C1AF47658CEBA939 /* /Users/kevinhouyang/Development/hifi/libraries/ktx/src/khronos/KHR.h */,
+				9B1F596734F34C54A0373453 /* /Users/kevinhouyang/Development/hifi/libraries/ktx/src/ktx/KTX.h */,
+			);
+			name = "Header Files";
+			sourceTree = "<group>";
+		};
+		0A363CF94DC34B8897F6BBB0 /* ktx */ = {
+			isa = PBXGroup;
+			children = (
+				B8D9898B0FC547F881317346 /* Source Files */,
+				06F9F33CDA804FD79210C3EC /* Header Files */,
+				37AF1AF577AC4D3AA73842FA /* /Users/kevinhouyang/Development/hifi/libraries/ktx/CMakeLists.txt */,
+			);
+			name = ktx;
+			sourceTree = "<group>";
+		};
+		2E8C214E2A0446409D9BE7AF /* Libraries */ = {
+			isa = PBXGroup;
+			children = (
+				0A363CF94DC34B8897F6BBB0 /* ktx */,
+				3AD7D139EA2E44EAB788F4A2 /* ktx_autogen */,
+			);
+			name = Libraries;
+			sourceTree = "<group>";
+		};
+		3AD7D139EA2E44EAB788F4A2 /* ktx_autogen */ = {
+			isa = PBXGroup;
+			children = (
+				E360DDF15C6E49F19C4D8A27 /* CMake Rules */,
+				D6D694E8BDAF491EB7EEBA1A /* /Users/kevinhouyang/Development/hifi/libraries/ktx/CMakeLists.txt */,
+			);
+			name = ktx_autogen;
+			sourceTree = "<group>";
+		};
+		85A1C199A6444998AAF7233B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				60400C9D311648FD9B94966B /* ktx */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B8D9898B0FC547F881317346 /* Source Files */ = {
+			isa = PBXGroup;
+			children = (
+				3A55945B048A487E899124E9 /* /Users/kevinhouyang/Development/hifi/build/libraries/ktx/ktx_autogen/mocs_compilation.cpp */,
+				FCDB30748D964BFAA6D2FAE9 /* /Users/kevinhouyang/Development/hifi/libraries/ktx/src/TextureMeta.cpp */,
+				F367714B72654E6D983B61F3 /* /Users/kevinhouyang/Development/hifi/libraries/ktx/src/ktx/KTX.cpp */,
+				886D23B815C74BB6BA054109 /* /Users/kevinhouyang/Development/hifi/libraries/ktx/src/ktx/Reader.cpp */,
+				E6C28A2A6D3042A9847C3673 /* /Users/kevinhouyang/Development/hifi/libraries/ktx/src/ktx/Validation.cpp */,
+				67C3AD0724C74F7383390602 /* /Users/kevinhouyang/Development/hifi/libraries/ktx/src/ktx/Writer.cpp */,
+			);
+			name = "Source Files";
+			sourceTree = "<group>";
+		};
+		BD0B8803C1CF4133A01E8E6D /* ALL_BUILD */ = {
+			isa = PBXGroup;
+			children = (
+				E3F001F0E6804159AD6F79AB /* CMake Rules */,
+				5041128389C241CCBBA006FA /* /Users/kevinhouyang/Development/hifi/libraries/ktx/CMakeLists.txt */,
+			);
+			name = ALL_BUILD;
+			sourceTree = "<group>";
+		};
+		E360DDF15C6E49F19C4D8A27 /* CMake Rules */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "CMake Rules";
+			sourceTree = "<group>";
+		};
+		E3F001F0E6804159AD6F79AB /* CMake Rules */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "CMake Rules";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		585DC4B3E64843B29BF08FF5 /* ktx */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 54E34A0A4B4745B8A9B76D89 /* Build configuration list for PBXNativeTarget "ktx" */;
+			buildPhases = (
+				1D98BAF49B30463C85BF2AC0 /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2A87A356F9004E7AAFB76BA5 /* PBXTargetDependency */,
+				13B2DE7130CA40F1B9F6AE6E /* PBXTargetDependency */,
+			);
+			name = ktx;
+			productName = ktx;
+			productReference = 60400C9D311648FD9B94966B /* ktx */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		8E0079998EAD4F84848F42A7 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = YES;
+				LastUpgradeCheck = 0930;
+			};
+			buildConfigurationList = 5FB6EBBA94F64B3BB3B19D9C /* Build configuration list for PBXProject "ktx" */;
+			buildSettings = {
+			};
+			buildStyles = (
+				C9EAC64DB64A4A73AB8DA2FE /* Debug */,
+				6BE3814154E24090B7BE8944 /* Release */,
+				8DA67FD420DA401586C638F9 /* MinSizeRel */,
+				3A6F08AE72EB4F8D8EBD9C40 /* RelWithDebInfo */,
+			);
+			compatibilityVersion = "Xcode 3.2";
+			hasScannedForEncodings = 0;
+			mainGroup = 048CDB2B58914288ACD4B1D3;
+			projectDirPath = ../../../libraries/ktx;
+			projectRoot = "";
+			targets = (
+				EC7358D97DFB4AB0AF8A20EB /* ALL_BUILD */,
+				76BBA07C604F4D0E89A822F7 /* RUN_TESTS */,
+				324A15BFFEE94E94BA16B115 /* ZERO_CHECK */,
+				7A7E10E72F85450A98FB2D43 /* install */,
+				585DC4B3E64843B29BF08FF5 /* ktx */,
+				BB5D6C92AE624E5D9F159077 /* ktx_autogen */,
+				A0EF40283FD3451D881D67E2 /* package */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		04F763AE1EB640BFB8683902 /* CMake Rules */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			name = "CMake Rules";
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "make -C /Users/kevinhouyang/Development/hifi/build/libraries/ktx -f /Users/kevinhouyang/Development/hifi/build/libraries/ktx/CMakeScripts/ktx_autogen_cmakeRulesBuildPhase.make$CONFIGURATION all";
+			showEnvVarsInLog = 0;
+		};
+		0C59643740174FE98054203E /* CMake PostBuild Rules */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			name = "CMake PostBuild Rules";
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "make -C /Users/kevinhouyang/Development/hifi/build/libraries/ktx -f /Users/kevinhouyang/Development/hifi/build/libraries/ktx/CMakeScripts/package_postBuildPhase.make$CONFIGURATION all";
+			showEnvVarsInLog = 0;
+		};
+		16D0519A7B1C42719D169C14 /* CMake PostBuild Rules */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			name = "CMake PostBuild Rules";
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "make -C /Users/kevinhouyang/Development/hifi/build/libraries/ktx -f /Users/kevinhouyang/Development/hifi/build/libraries/ktx/CMakeScripts/install_postBuildPhase.make$CONFIGURATION all";
+			showEnvVarsInLog = 0;
+		};
+		263521156E8C4F7286DF1BFD = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# shell script goes here
+exit 0";
+			showEnvVarsInLog = 0;
+		};
+		39FB33B2CAB9448EBA71DA07 /* CMake Rules */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			name = "CMake Rules";
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "make -C /Users/kevinhouyang/Development/hifi/build/libraries/ktx -f /Users/kevinhouyang/Development/hifi/build/libraries/ktx/CMakeScripts/ZERO_CHECK_cmakeRulesBuildPhase.make$CONFIGURATION all";
+			showEnvVarsInLog = 0;
+		};
+		7149A18033014A99AF94B829 = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# shell script goes here
+exit 0";
+			showEnvVarsInLog = 0;
+		};
+		7207162456A24E948FDC5D8D = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# shell script goes here
+exit 0";
+			showEnvVarsInLog = 0;
+		};
+		87BB3A8C96F74CBC8F998B0C = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# shell script goes here
+exit 0";
+			showEnvVarsInLog = 0;
+		};
+		A9CE7844FF684D01830A849D = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# shell script goes here
+exit 0";
+			showEnvVarsInLog = 0;
+		};
+		BF3A8DA1C0154B12869370ED /* CMake Rules */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			name = "CMake Rules";
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "make -C /Users/kevinhouyang/Development/hifi/build/libraries/ktx -f /Users/kevinhouyang/Development/hifi/build/libraries/ktx/CMakeScripts/ALL_BUILD_cmakeRulesBuildPhase.make$CONFIGURATION all";
+			showEnvVarsInLog = 0;
+		};
+		BF47A4DC1643480D8EE7A1EA /* CMake PostBuild Rules */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			name = "CMake PostBuild Rules";
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "make -C /Users/kevinhouyang/Development/hifi/build/libraries/ktx -f /Users/kevinhouyang/Development/hifi/build/libraries/ktx/CMakeScripts/RUN_TESTS_postBuildPhase.make$CONFIGURATION all";
+			showEnvVarsInLog = 0;
+		};
+		CA2DBAF44C9F461EB3DFBB4C = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# shell script goes here
+exit 0";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1D98BAF49B30463C85BF2AC0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				13AF959A2EBE4CE58A1A46F4 /* /Users/kevinhouyang/Development/hifi/build/libraries/ktx/ktx_autogen/mocs_compilation.cpp */,
+				4FCF958F697E420F983C20BF /* /Users/kevinhouyang/Development/hifi/libraries/ktx/src/TextureMeta.cpp */,
+				F23C057449CF4CCE9939A250 /* /Users/kevinhouyang/Development/hifi/libraries/ktx/src/ktx/KTX.cpp */,
+				0F944BD59A2944729846AB1A /* /Users/kevinhouyang/Development/hifi/libraries/ktx/src/ktx/Reader.cpp */,
+				C0B0F08BB95F4D7A9C11EE4A /* /Users/kevinhouyang/Development/hifi/libraries/ktx/src/ktx/Validation.cpp */,
+				E25BCE15B7174D6CA61A7EC8 /* /Users/kevinhouyang/Development/hifi/libraries/ktx/src/ktx/Writer.cpp */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		13B2DE7130CA40F1B9F6AE6E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 324A15BFFEE94E94BA16B115 /* ZERO_CHECK */;
+			targetProxy = 6361CD17DEE24FBA9025565A /* PBXContainerItemProxy */;
+		};
+		2A87A356F9004E7AAFB76BA5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BB5D6C92AE624E5D9F159077 /* ktx_autogen */;
+			targetProxy = EE0514C5A1F74C03AAE666D6 /* PBXContainerItemProxy */;
+		};
+		3A50F15399294556B7538EAE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 324A15BFFEE94E94BA16B115 /* ZERO_CHECK */;
+			targetProxy = E3100A09BF374F5E860CF6A6 /* PBXContainerItemProxy */;
+		};
+		4A1029C05E0F4374AD96A0E3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EC7358D97DFB4AB0AF8A20EB /* ALL_BUILD */;
+			targetProxy = 5CBB583F038D4BF49B43E9C9 /* PBXContainerItemProxy */;
+		};
+		5CECC297B49444F598A686A0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 324A15BFFEE94E94BA16B115 /* ZERO_CHECK */;
+			targetProxy = 63EA7B78394541B5877B51DC /* PBXContainerItemProxy */;
+		};
+		7007369157EC483992ACCF14 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 585DC4B3E64843B29BF08FF5 /* ktx */;
+			targetProxy = 7E862781E63C4777A637479C /* PBXContainerItemProxy */;
+		};
+		BB31A78F841E4339A7C2B6C8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EC7358D97DFB4AB0AF8A20EB /* ALL_BUILD */;
+			targetProxy = 4C05EF0B9ECD4CA09C0E9290 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		09494B031DAA4AD0A6F98BAD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ALL_BUILD;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/kevinhouyang/Development/hifi/build/libraries/ktx;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = Debug;
+		};
+		122E83D66D2C4F80BFB54ABC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ALL_BUILD;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/kevinhouyang/Development/hifi/build/libraries/ktx;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = Release;
+		};
+		23D16421CC9B42D4A883FE60 /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ktx_autogen;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/kevinhouyang/Development/hifi/build/libraries/ktx;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = RelWithDebInfo;
+		};
+		23ECBEAAEB4F494A9DDADF23 /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ALL_BUILD;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/kevinhouyang/Development/hifi/build/libraries/ktx;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = RelWithDebInfo;
+		};
+		331DBF9A3030481EBF6931E7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .a;
+				FRAMEWORK_SEARCH_PATHS = (/usr/local/Cellar/qt/5.11.2/lib);
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 3;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",GLM_FORCE_RADIANS,DEV_BUILD,QT_CORE_LIB,QT_NO_DEBUG,QT_GUI_LIB,QT_NETWORK_LIB,QT_SCRIPT_LIB);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (/Users/kevinhouyang/Development/hifi/build/libraries/ktx,/Users/kevinhouyang/Development/hifi/libraries/ktx,/Users/kevinhouyang/Development/hifi/build/libraries/ktx/ktx_autogen/include_Release,/Users/kevinhouyang/Development/hifi/build/includes,/Users/kevinhouyang/Development/hifi/libraries/gpu/src,/Users/kevinhouyang/Development/hifi/build/ext/Xcode/glm/project/include,/Users/kevinhouyang/Development/hifi/libraries/shared/src,/Users/kevinhouyang/Development/hifi/build/libraries/shared);
+				INSTALL_PATH = "";
+				LIBRARY_STYLE = STATIC;
+				OTHER_CPLUSPLUSFLAGS = " -Wall -Wextra -fno-strict-aliasing -Wno-unused-parameter --stdlib=libc++        -DNDEBUG -fPIC '-std=gnu++14'  ";
+				OTHER_LIBTOOLFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ktx;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/kevinhouyang/Development/hifi/build/libraries/ktx;
+				SYSTEM_HEADER_SEARCH_PATHS = (/usr/local/Cellar/qt/5.11.2/lib/QtCore.framework/Headers,"/usr/local/Cellar/qt/5.11.2/./mkspecs/macx-clang",/usr/local/Cellar/qt/5.11.2/lib/QtGui.framework/Headers,/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk/System/Library/Frameworks/OpenGL.framework/Headers,/usr/local/Cellar/qt/5.11.2/lib/QtNetwork.framework/Headers,/usr/local/Cellar/qt/5.11.2/lib/QtScript.framework/Headers);
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = Release;
+		};
+		33C49E7F37704779BA4C263D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ZERO_CHECK;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/kevinhouyang/Development/hifi/build/libraries/ktx;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = Debug;
+		};
+		396FE5F3AB8242C2A77F4DFE /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ALL_BUILD;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/kevinhouyang/Development/hifi/build/libraries/ktx;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = MinSizeRel;
+		};
+		3A8D092CB5DE4565831D541D /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = install;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/kevinhouyang/Development/hifi/build/libraries/ktx;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = MinSizeRel;
+		};
+		3BF1E7DD54354D7397E43AED /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = RUN_TESTS;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/kevinhouyang/Development/hifi/build/libraries/ktx;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = Release;
+		};
+		43F36B0408B04A909E1FF4CF /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = package;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/kevinhouyang/Development/hifi/build/libraries/ktx;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = RelWithDebInfo;
+		};
+		4DE1CE19C20E4894BB4EB4B1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "c++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEPLOYMENT_POSTPROCESSING = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk;
+				SYMROOT = /Users/kevinhouyang/Development/hifi/build/libraries/ktx/build;
+			};
+			name = Release;
+		};
+		53CBBBCE8BBF496FA1873802 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "c++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk;
+				SYMROOT = /Users/kevinhouyang/Development/hifi/build/libraries/ktx/build;
+			};
+			name = Debug;
+		};
+		5FA1943F97474EBDB9E6FDF1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = RUN_TESTS;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/kevinhouyang/Development/hifi/build/libraries/ktx;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = Debug;
+		};
+		76FC21C22545448A8B291F67 /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "c++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk;
+				SYMROOT = /Users/kevinhouyang/Development/hifi/build/libraries/ktx/build;
+			};
+			name = MinSizeRel;
+		};
+		77A0FD12AC7D47CBBFF11268 /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .a;
+				FRAMEWORK_SEARCH_PATHS = (/usr/local/Cellar/qt/5.11.2/lib);
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = s;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",GLM_FORCE_RADIANS,DEV_BUILD,QT_CORE_LIB,QT_NO_DEBUG,QT_GUI_LIB,QT_NETWORK_LIB,QT_SCRIPT_LIB);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (/Users/kevinhouyang/Development/hifi/build/libraries/ktx,/Users/kevinhouyang/Development/hifi/libraries/ktx,/Users/kevinhouyang/Development/hifi/build/libraries/ktx/ktx_autogen/include_MinSizeRel,/Users/kevinhouyang/Development/hifi/build/includes,/Users/kevinhouyang/Development/hifi/libraries/gpu/src,/Users/kevinhouyang/Development/hifi/build/ext/Xcode/glm/project/include,/Users/kevinhouyang/Development/hifi/libraries/shared/src,/Users/kevinhouyang/Development/hifi/build/libraries/shared);
+				INSTALL_PATH = "";
+				LIBRARY_STYLE = STATIC;
+				OTHER_CPLUSPLUSFLAGS = " -Wall -Wextra -fno-strict-aliasing -Wno-unused-parameter --stdlib=libc++        -DNDEBUG -fPIC '-std=gnu++14'  ";
+				OTHER_LIBTOOLFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ktx;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/kevinhouyang/Development/hifi/build/libraries/ktx;
+				SYSTEM_HEADER_SEARCH_PATHS = (/usr/local/Cellar/qt/5.11.2/lib/QtCore.framework/Headers,"/usr/local/Cellar/qt/5.11.2/./mkspecs/macx-clang",/usr/local/Cellar/qt/5.11.2/lib/QtGui.framework/Headers,/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk/System/Library/Frameworks/OpenGL.framework/Headers,/usr/local/Cellar/qt/5.11.2/lib/QtNetwork.framework/Headers,/usr/local/Cellar/qt/5.11.2/lib/QtScript.framework/Headers);
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = MinSizeRel;
+		};
+		83A3CDB17E2F4708B391218E /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "c++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk;
+				SYMROOT = /Users/kevinhouyang/Development/hifi/build/libraries/ktx/build;
+			};
+			name = RelWithDebInfo;
+		};
+		9D4ADD233E174606962E98D3 /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = RUN_TESTS;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/kevinhouyang/Development/hifi/build/libraries/ktx;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = MinSizeRel;
+		};
+		9FFC9AE18E3D460395AAD4F8 /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = RUN_TESTS;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/kevinhouyang/Development/hifi/build/libraries/ktx;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = RelWithDebInfo;
+		};
+		A6E95D8C7E2A422FB68D21A2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ZERO_CHECK;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/kevinhouyang/Development/hifi/build/libraries/ktx;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = Release;
+		};
+		A77CE7D22EA34689B1E0036E /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = package;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/kevinhouyang/Development/hifi/build/libraries/ktx;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = MinSizeRel;
+		};
+		A7E533B4FFC645858A788CCE /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ZERO_CHECK;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/kevinhouyang/Development/hifi/build/libraries/ktx;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = MinSizeRel;
+		};
+		C51EE6A0FC1A465181549BF1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .a;
+				FRAMEWORK_SEARCH_PATHS = (/usr/local/Cellar/qt/5.11.2/lib);
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",GLM_FORCE_RADIANS,DEV_BUILD,QT_CORE_LIB,QT_GUI_LIB,QT_NETWORK_LIB,QT_SCRIPT_LIB);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (/Users/kevinhouyang/Development/hifi/build/libraries/ktx,/Users/kevinhouyang/Development/hifi/libraries/ktx,/Users/kevinhouyang/Development/hifi/build/libraries/ktx/ktx_autogen/include_Debug,/Users/kevinhouyang/Development/hifi/build/includes,/Users/kevinhouyang/Development/hifi/libraries/gpu/src,/Users/kevinhouyang/Development/hifi/build/ext/Xcode/glm/project/include,/Users/kevinhouyang/Development/hifi/libraries/shared/src,/Users/kevinhouyang/Development/hifi/build/libraries/shared);
+				INSTALL_PATH = "";
+				LIBRARY_STYLE = STATIC;
+				OTHER_CPLUSPLUSFLAGS = " -Wall -Wextra -fno-strict-aliasing -Wno-unused-parameter --stdlib=libc++       -DDEBUG -fPIC '-std=gnu++14'  ";
+				OTHER_LIBTOOLFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ktx;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/kevinhouyang/Development/hifi/build/libraries/ktx;
+				SYSTEM_HEADER_SEARCH_PATHS = (/usr/local/Cellar/qt/5.11.2/lib/QtCore.framework/Headers,"/usr/local/Cellar/qt/5.11.2/./mkspecs/macx-clang",/usr/local/Cellar/qt/5.11.2/lib/QtGui.framework/Headers,/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk/System/Library/Frameworks/OpenGL.framework/Headers,/usr/local/Cellar/qt/5.11.2/lib/QtNetwork.framework/Headers,/usr/local/Cellar/qt/5.11.2/lib/QtScript.framework/Headers);
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = Debug;
+		};
+		C798F8B04B79496DAA583C6B /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = install;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/kevinhouyang/Development/hifi/build/libraries/ktx;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = RelWithDebInfo;
+		};
+		C79B0951592247B38AEC3713 /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .a;
+				FRAMEWORK_SEARCH_PATHS = (/usr/local/Cellar/qt/5.11.2/lib);
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 2;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",GLM_FORCE_RADIANS,DEV_BUILD,QT_CORE_LIB,QT_NO_DEBUG,QT_GUI_LIB,QT_NETWORK_LIB,QT_SCRIPT_LIB);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (/Users/kevinhouyang/Development/hifi/build/libraries/ktx,/Users/kevinhouyang/Development/hifi/libraries/ktx,/Users/kevinhouyang/Development/hifi/build/libraries/ktx/ktx_autogen/include_RelWithDebInfo,/Users/kevinhouyang/Development/hifi/build/includes,/Users/kevinhouyang/Development/hifi/libraries/gpu/src,/Users/kevinhouyang/Development/hifi/build/ext/Xcode/glm/project/include,/Users/kevinhouyang/Development/hifi/libraries/shared/src,/Users/kevinhouyang/Development/hifi/build/libraries/shared);
+				INSTALL_PATH = "";
+				LIBRARY_STYLE = STATIC;
+				OTHER_CPLUSPLUSFLAGS = " -Wall -Wextra -fno-strict-aliasing -Wno-unused-parameter --stdlib=libc++           -DNDEBUG -fPIC '-std=gnu++14'  ";
+				OTHER_LIBTOOLFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ktx;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/kevinhouyang/Development/hifi/build/libraries/ktx;
+				SYSTEM_HEADER_SEARCH_PATHS = (/usr/local/Cellar/qt/5.11.2/lib/QtCore.framework/Headers,"/usr/local/Cellar/qt/5.11.2/./mkspecs/macx-clang",/usr/local/Cellar/qt/5.11.2/lib/QtGui.framework/Headers,/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk/System/Library/Frameworks/OpenGL.framework/Headers,/usr/local/Cellar/qt/5.11.2/lib/QtNetwork.framework/Headers,/usr/local/Cellar/qt/5.11.2/lib/QtScript.framework/Headers);
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = RelWithDebInfo;
+		};
+		C909D2CC2ED34D7B972FE7DD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = package;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/kevinhouyang/Development/hifi/build/libraries/ktx;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = Debug;
+		};
+		CD4E180AEF984F80AB3756A4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = install;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/kevinhouyang/Development/hifi/build/libraries/ktx;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = Debug;
+		};
+		CFB681A22F46428B9CF5D1A6 /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ktx_autogen;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/kevinhouyang/Development/hifi/build/libraries/ktx;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = MinSizeRel;
+		};
+		CFE81AF237D04118967A9A6F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ktx_autogen;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/kevinhouyang/Development/hifi/build/libraries/ktx;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = Debug;
+		};
+		E6923BEE6E22419D98CC7663 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = install;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/kevinhouyang/Development/hifi/build/libraries/ktx;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = Release;
+		};
+		F3A41D1DF5E34909B7419CF7 /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ZERO_CHECK;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/kevinhouyang/Development/hifi/build/libraries/ktx;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = RelWithDebInfo;
+		};
+		FAE036F994ED4CE5954529E5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = package;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/kevinhouyang/Development/hifi/build/libraries/ktx;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = Release;
+		};
+		FCC0554B145E4BBB81E3A652 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ktx_autogen;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/kevinhouyang/Development/hifi/build/libraries/ktx;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		0AE09D547CF3413D8394CAA0 /* Build configuration list for PBXAggregateTarget "ALL_BUILD" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				09494B031DAA4AD0A6F98BAD /* Debug */,
+				122E83D66D2C4F80BFB54ABC /* Release */,
+				396FE5F3AB8242C2A77F4DFE /* MinSizeRel */,
+				23ECBEAAEB4F494A9DDADF23 /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		0F0D96C830AA430391A95A6A /* Build configuration list for PBXAggregateTarget "package" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C909D2CC2ED34D7B972FE7DD /* Debug */,
+				FAE036F994ED4CE5954529E5 /* Release */,
+				A77CE7D22EA34689B1E0036E /* MinSizeRel */,
+				43F36B0408B04A909E1FF4CF /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		331368E6D73E4627814654C3 /* Build configuration list for PBXAggregateTarget "RUN_TESTS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5FA1943F97474EBDB9E6FDF1 /* Debug */,
+				3BF1E7DD54354D7397E43AED /* Release */,
+				9D4ADD233E174606962E98D3 /* MinSizeRel */,
+				9FFC9AE18E3D460395AAD4F8 /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		54E34A0A4B4745B8A9B76D89 /* Build configuration list for PBXNativeTarget "ktx" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C51EE6A0FC1A465181549BF1 /* Debug */,
+				331DBF9A3030481EBF6931E7 /* Release */,
+				77A0FD12AC7D47CBBFF11268 /* MinSizeRel */,
+				C79B0951592247B38AEC3713 /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		5FB6EBBA94F64B3BB3B19D9C /* Build configuration list for PBXProject "ktx" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				53CBBBCE8BBF496FA1873802 /* Debug */,
+				4DE1CE19C20E4894BB4EB4B1 /* Release */,
+				76FC21C22545448A8B291F67 /* MinSizeRel */,
+				83A3CDB17E2F4708B391218E /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		BAC84E49800F46EDA31C3708 /* Build configuration list for PBXAggregateTarget "ktx_autogen" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CFE81AF237D04118967A9A6F /* Debug */,
+				FCC0554B145E4BBB81E3A652 /* Release */,
+				CFB681A22F46428B9CF5D1A6 /* MinSizeRel */,
+				23D16421CC9B42D4A883FE60 /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		F0F5C32B0C4B49809A4EDCE8 /* Build configuration list for PBXAggregateTarget "install" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CD4E180AEF984F80AB3756A4 /* Debug */,
+				E6923BEE6E22419D98CC7663 /* Release */,
+				3A8D092CB5DE4565831D541D /* MinSizeRel */,
+				C798F8B04B79496DAA583C6B /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		F18676AAA6DC4E8F9CAEB752 /* Build configuration list for PBXAggregateTarget "ZERO_CHECK" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				33C49E7F37704779BA4C263D /* Debug */,
+				A6E95D8C7E2A422FB68D21A2 /* Release */,
+				A7E533B4FFC645858A788CCE /* MinSizeRel */,
+				F3A41D1DF5E34909B7419CF7 /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 8E0079998EAD4F84848F42A7 /* Project object */;
+}

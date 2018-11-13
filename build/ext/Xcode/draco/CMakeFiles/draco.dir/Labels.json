@@ -1,0 +1,43 @@
+{
+	"sources" : 
+	[
+		{
+			"file" : "/Users/kevinhouyang/Development/hifi/build/ext/Xcode/draco/CMakeFiles/draco"
+		},
+		{
+			"file" : "/Users/kevinhouyang/Development/hifi/build/ext/Xcode/draco/CMakeFiles/draco.rule"
+		},
+		{
+			"file" : "/Users/kevinhouyang/Development/hifi/build/ext/Xcode/draco/CMakeFiles/CMakeFiles/draco-complete.rule"
+		},
+		{
+			"file" : "/Users/kevinhouyang/Development/hifi/build/ext/Xcode/draco/project/src/draco-stamp/CMakeFiles/draco-install.rule"
+		},
+		{
+			"file" : "/Users/kevinhouyang/Development/hifi/build/ext/Xcode/draco/project/src/draco-stamp/CMakeFiles/draco-mkdir.rule"
+		},
+		{
+			"file" : "/Users/kevinhouyang/Development/hifi/build/ext/Xcode/draco/project/src/draco-stamp/CMakeFiles/draco-download.rule"
+		},
+		{
+			"file" : "/Users/kevinhouyang/Development/hifi/build/ext/Xcode/draco/project/src/draco-stamp/CMakeFiles/draco-update.rule"
+		},
+		{
+			"file" : "/Users/kevinhouyang/Development/hifi/build/ext/Xcode/draco/project/src/draco-stamp/CMakeFiles/draco-patch.rule"
+		},
+		{
+			"file" : "/Users/kevinhouyang/Development/hifi/build/ext/Xcode/draco/project/src/draco-stamp/CMakeFiles/draco-configure.rule"
+		},
+		{
+			"file" : "/Users/kevinhouyang/Development/hifi/build/ext/Xcode/draco/project/src/draco-stamp/CMakeFiles/draco-build.rule"
+		}
+	],
+	"target" : 
+	{
+		"labels" : 
+		[
+			"draco"
+		],
+		"name" : "draco"
+	}
+}

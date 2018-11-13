@@ -1,0 +1,49 @@
+{
+	"sources" : 
+	[
+		{
+			"file" : "/Users/kevinhouyang/Development/hifi/build/ext/Xcode/polyvox/CMakeFiles/polyvox"
+		},
+		{
+			"file" : "/Users/kevinhouyang/Development/hifi/build/ext/Xcode/polyvox/CMakeFiles/polyvox.rule"
+		},
+		{
+			"file" : "/Users/kevinhouyang/Development/hifi/build/ext/Xcode/polyvox/CMakeFiles/CMakeFiles/polyvox-complete.rule"
+		},
+		{
+			"file" : "/Users/kevinhouyang/Development/hifi/build/ext/Xcode/polyvox/project/src/polyvox-stamp/CMakeFiles/polyvox-install.rule"
+		},
+		{
+			"file" : "/Users/kevinhouyang/Development/hifi/build/ext/Xcode/polyvox/project/src/polyvox-stamp/CMakeFiles/polyvox-mkdir.rule"
+		},
+		{
+			"file" : "/Users/kevinhouyang/Development/hifi/build/ext/Xcode/polyvox/project/src/polyvox-stamp/CMakeFiles/polyvox-download.rule"
+		},
+		{
+			"file" : "/Users/kevinhouyang/Development/hifi/build/ext/Xcode/polyvox/project/src/polyvox-stamp/CMakeFiles/polyvox-update.rule"
+		},
+		{
+			"file" : "/Users/kevinhouyang/Development/hifi/build/ext/Xcode/polyvox/project/src/polyvox-stamp/CMakeFiles/polyvox-patch.rule"
+		},
+		{
+			"file" : "/Users/kevinhouyang/Development/hifi/build/ext/Xcode/polyvox/project/src/polyvox-stamp/CMakeFiles/polyvox-configure.rule"
+		},
+		{
+			"file" : "/Users/kevinhouyang/Development/hifi/build/ext/Xcode/polyvox/project/src/polyvox-stamp/CMakeFiles/polyvox-build.rule"
+		},
+		{
+			"file" : "/Users/kevinhouyang/Development/hifi/build/ext/Xcode/polyvox/project/src/polyvox-stamp/CMakeFiles/polyvox-change-install-name-debug.rule"
+		},
+		{
+			"file" : "/Users/kevinhouyang/Development/hifi/build/ext/Xcode/polyvox/project/src/polyvox-stamp/CMakeFiles/polyvox-change-install-name-release.rule"
+		}
+	],
+	"target" : 
+	{
+		"labels" : 
+		[
+			"polyvox"
+		],
+		"name" : "polyvox"
+	}
+}

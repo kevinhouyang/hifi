@@ -1,0 +1,2500 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXAggregateTarget section */
+		324A15BFFEE94E94BA16B115 /* ZERO_CHECK */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 33AEA145F9FC4EEEB7B6DE63 /* Build configuration list for PBXAggregateTarget "ZERO_CHECK" */;
+			buildPhases = (
+				C1E1374BA49A48358E87DCA1 /* CMake Rules */,
+			);
+			dependencies = (
+			);
+			name = ZERO_CHECK;
+			productName = ZERO_CHECK;
+		};
+		706F62AD7D3F40C28305D80F /* task_autogen */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 70400F728DEC4E03A829FDEC /* Build configuration list for PBXAggregateTarget "task_autogen" */;
+			buildPhases = (
+				95DE46EA768C4824B127D3C3 /* CMake Rules */,
+			);
+			dependencies = (
+			);
+			name = task_autogen;
+			productName = task_autogen;
+		};
+		76BBA07C604F4D0E89A822F7 /* RUN_TESTS */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = B515830665CB498AA6A0CCAC /* Build configuration list for PBXAggregateTarget "RUN_TESTS" */;
+			buildPhases = (
+				432CBDE84FD44A5CA6B66504 /* CMake PostBuild Rules */,
+			);
+			dependencies = (
+			);
+			name = RUN_TESTS;
+			productName = RUN_TESTS;
+		};
+		7A7E10E72F85450A98FB2D43 /* install */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = C2C3E209413F4717A3E33F55 /* Build configuration list for PBXAggregateTarget "install" */;
+			buildPhases = (
+				524F1A2CC8734D629B3942A7 /* CMake PostBuild Rules */,
+			);
+			dependencies = (
+				E6A4692B375740EE8AB7AA57 /* PBXTargetDependency */,
+			);
+			name = install;
+			productName = install;
+		};
+		8D57798453994B4D90A25EE1 /* bullet */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = E1565C471E114DDDB9210314 /* Build configuration list for PBXAggregateTarget "bullet" */;
+			buildPhases = (
+				730B797515B14475A07D5B6F /* CMake Rules */,
+			);
+			dependencies = (
+			);
+			name = bullet;
+			productName = bullet;
+		};
+		A0EF40283FD3451D881D67E2 /* package */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 3828C244FC1E493E9CA20DAD /* Build configuration list for PBXAggregateTarget "package" */;
+			buildPhases = (
+				922C07C3CF444AABAF7E7092 /* CMake PostBuild Rules */,
+			);
+			dependencies = (
+				DA5540306068460EB3646E5D /* PBXTargetDependency */,
+			);
+			name = package;
+			productName = package;
+		};
+		C9A52801EF88483BB604BD79 /* workload_autogen */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 61B4EBF7470C44DCA3522C78 /* Build configuration list for PBXAggregateTarget "workload_autogen" */;
+			buildPhases = (
+				E38C2886395848D28424F86C /* CMake Rules */,
+			);
+			dependencies = (
+				1C1DD46394644E0FA1DF616B /* PBXTargetDependency */,
+			);
+			name = workload_autogen;
+			productName = workload_autogen;
+		};
+		EC7358D97DFB4AB0AF8A20EB /* ALL_BUILD */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 45C1C00188084498A9EB1FFC /* Build configuration list for PBXAggregateTarget "ALL_BUILD" */;
+			buildPhases = (
+				191D98B256FF45C1935D73A3 /* CMake Rules */,
+			);
+			dependencies = (
+				08BCA4824646401F92E4597E /* PBXTargetDependency */,
+				34000D2F0D7E4D2186AD2439 /* PBXTargetDependency */,
+				FC3D7CDE0BFB4BD48436D0CB /* PBXTargetDependency */,
+				FED25012458546DEB757D9CA /* PBXTargetDependency */,
+				05F0C5C0E9C943D391473D9A /* PBXTargetDependency */,
+			);
+			name = ALL_BUILD;
+			productName = ALL_BUILD;
+		};
+		F1EAB527104D44D2BE752E8D /* physics_autogen */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 170DB3047B934EA884A376EB /* Build configuration list for PBXAggregateTarget "physics_autogen" */;
+			buildPhases = (
+				448AE0D86D72472789340B4E /* CMake Rules */,
+			);
+			dependencies = (
+				92C0B46372F94F549B55F44A /* PBXTargetDependency */,
+				9CF8B69C99F34FF882017D4D /* PBXTargetDependency */,
+				E3941807DC7A4A7A901E1ECD /* PBXTargetDependency */,
+				5F9D2BC3ED224809AE3C3F7D /* PBXTargetDependency */,
+			);
+			name = physics_autogen;
+			productName = physics_autogen;
+		};
+/* End PBXAggregateTarget section */
+
+/* Begin PBXBuildFile section */
+		04CE37975F8649AA92775382 /* /Users/kevinhouyang/Development/hifi/libraries/task/src/task/Varying.h */ = {isa = PBXBuildFile; fileRef = F480B7166B0847BE8F3B3EFF /* /Users/kevinhouyang/Development/hifi/libraries/task/src/task/Varying.h */; };
+		0659177522064C278405C356 /* /Users/kevinhouyang/Development/hifi/libraries/physics/src/ShapeFactory.cpp */ = {isa = PBXBuildFile; fileRef = 9819CAC4FBB140F0B7D8FF08 /* /Users/kevinhouyang/Development/hifi/libraries/physics/src/ShapeFactory.cpp */; };
+		07B42DC2AF974AF88B8CA29D /* /Users/kevinhouyang/Development/hifi/libraries/physics/src/PhysicsLogging.cpp */ = {isa = PBXBuildFile; fileRef = D91DC864159B46FA80363A20 /* /Users/kevinhouyang/Development/hifi/libraries/physics/src/PhysicsLogging.cpp */; };
+		08A0940CD41048B7870414EE /* /Users/kevinhouyang/Development/hifi/libraries/physics/src/CharacterGhostObject.h */ = {isa = PBXBuildFile; fileRef = DA265627950645988C75AECE /* /Users/kevinhouyang/Development/hifi/libraries/physics/src/CharacterGhostObject.h */; };
+		11DE51F02B13476C9F748E97 /* /Users/kevinhouyang/Development/hifi/libraries/physics/src/CharacterGhostShape.cpp */ = {isa = PBXBuildFile; fileRef = 797939A8EDE54DBBB2555968 /* /Users/kevinhouyang/Development/hifi/libraries/physics/src/CharacterGhostShape.cpp */; };
+		140648DF5FE849A6BC4692AA /* /Users/kevinhouyang/Development/hifi/libraries/physics/src/ShapeManager.cpp */ = {isa = PBXBuildFile; fileRef = 04CAA3E080604526B47F72D3 /* /Users/kevinhouyang/Development/hifi/libraries/physics/src/ShapeManager.cpp */; };
+		15FAD70C1EBA4DD781A6E03E /* /Users/kevinhouyang/Development/hifi/libraries/workload/src/workload/Space.h */ = {isa = PBXBuildFile; fileRef = 72975825D2AA43D4A018F161 /* /Users/kevinhouyang/Development/hifi/libraries/workload/src/workload/Space.h */; };
+		17AC60A596FB46B09B93FED0 /* /Users/kevinhouyang/Development/hifi/libraries/physics/src/ObjectConstraint.cpp */ = {isa = PBXBuildFile; fileRef = 751DD8C6388244E2A96AF0F4 /* /Users/kevinhouyang/Development/hifi/libraries/physics/src/ObjectConstraint.cpp */; };
+		1A78538A22F74A58B2BC31E0 /* /Users/kevinhouyang/Development/hifi/libraries/physics/src/ObjectAction.cpp */ = {isa = PBXBuildFile; fileRef = 328BDCE335A74D9589B968B2 /* /Users/kevinhouyang/Development/hifi/libraries/physics/src/ObjectAction.cpp */; };
+		1DE03C3AB62642E1A6AEE059 /* /Users/kevinhouyang/Development/hifi/libraries/physics/src/ObjectConstraintSlider.h */ = {isa = PBXBuildFile; fileRef = 16709BAF3F7649C486D6ABDB /* /Users/kevinhouyang/Development/hifi/libraries/physics/src/ObjectConstraintSlider.h */; };
+		1FA7FDCC1BC74A428B963D65 /* /Users/kevinhouyang/Development/hifi/libraries/physics/src/ObjectActionTravelOriented.cpp */ = {isa = PBXBuildFile; fileRef = 68832829C9B444B990FC8A08 /* /Users/kevinhouyang/Development/hifi/libraries/physics/src/ObjectActionTravelOriented.cpp */; };
+		26114CB49AA4412E850704DF /* /Users/kevinhouyang/Development/hifi/libraries/physics/src/PhysicsDebugDraw.h */ = {isa = PBXBuildFile; fileRef = E9D436CA65DE49FDAD9545FB /* /Users/kevinhouyang/Development/hifi/libraries/physics/src/PhysicsDebugDraw.h */; };
+		2681416B1A854CD2AE9641B6 /* /Users/kevinhouyang/Development/hifi/libraries/task/src/task/Task.h */ = {isa = PBXBuildFile; fileRef = A7AE65C1BB2A4218815FD572 /* /Users/kevinhouyang/Development/hifi/libraries/task/src/task/Task.h */; };
+		2A1E65794184455392732657 /* /Users/kevinhouyang/Development/hifi/libraries/physics/src/EntityMotionState.h */ = {isa = PBXBuildFile; fileRef = A754510B7E8348AA8D115608 /* /Users/kevinhouyang/Development/hifi/libraries/physics/src/EntityMotionState.h */; };
+		2A3E8EF813214E42B045E203 /* /Users/kevinhouyang/Development/hifi/libraries/physics/CMakeLists.txt */ = {isa = PBXBuildFile; fileRef = BDBE34D2C6B44707AF3D4847 /* /Users/kevinhouyang/Development/hifi/libraries/physics/CMakeLists.txt */; };
+		2BD2AAB1EA4B41A38FA3BDE2 /* /Users/kevinhouyang/Development/hifi/libraries/physics/src/ObjectConstraint.h */ = {isa = PBXBuildFile; fileRef = 669A4D2E9BD040DE94983388 /* /Users/kevinhouyang/Development/hifi/libraries/physics/src/ObjectConstraint.h */; };
+		2D7C26AF6D9F4F69BA43636C /* /Users/kevinhouyang/Development/hifi/libraries/physics/src/ObjectActionTractor.cpp */ = {isa = PBXBuildFile; fileRef = 63535797C12D422E93EBFCFD /* /Users/kevinhouyang/Development/hifi/libraries/physics/src/ObjectActionTractor.cpp */; };
+		3001CC8B37D64DEA8175E36B /* /Users/kevinhouyang/Development/hifi/libraries/physics/src/CharacterGhostObject.cpp */ = {isa = PBXBuildFile; fileRef = 1F59DB7A245D4082B6706CCA /* /Users/kevinhouyang/Development/hifi/libraries/physics/src/CharacterGhostObject.cpp */; };
+		34A5A41E71BB4521AA62CCFC /* /Users/kevinhouyang/Development/hifi/libraries/physics/src/CharacterController.cpp */ = {isa = PBXBuildFile; fileRef = 5D50CF6CE60544098DD53A49 /* /Users/kevinhouyang/Development/hifi/libraries/physics/src/CharacterController.cpp */; };
+		36BE244D70FF48828F03FBD1 /* /Users/kevinhouyang/Development/hifi/libraries/workload/src/workload/View.h */ = {isa = PBXBuildFile; fileRef = 71605F0A8B0C4EDE94FB1368 /* /Users/kevinhouyang/Development/hifi/libraries/workload/src/workload/View.h */; };
+		3D8F09E47EF64B9C9DD876FB /* /Users/kevinhouyang/Development/hifi/libraries/workload/src/workload/SpaceClassifier.h */ = {isa = PBXBuildFile; fileRef = 7629035EEFEE423C938B7073 /* /Users/kevinhouyang/Development/hifi/libraries/workload/src/workload/SpaceClassifier.h */; };
+		3EC8A7E4237B4294BDAB4733 /* /Users/kevinhouyang/Development/hifi/libraries/physics/src/MeshMassProperties.h */ = {isa = PBXBuildFile; fileRef = 11ABB6A5ADFA4282A47B4D88 /* /Users/kevinhouyang/Development/hifi/libraries/physics/src/MeshMassProperties.h */; };
+		438BE678C3A344C59BA244EA /* /Users/kevinhouyang/Development/hifi/libraries/workload/CMakeLists.txt */ = {isa = PBXBuildFile; fileRef = B8F2DFEA63A44C55B9AED94B /* /Users/kevinhouyang/Development/hifi/libraries/workload/CMakeLists.txt */; };
+		4B0C9035376E48769264517F /* /Users/kevinhouyang/Development/hifi/libraries/physics/src/ContactInfo.cpp */ = {isa = PBXBuildFile; fileRef = 7278C40F5E064903873044D5 /* /Users/kevinhouyang/Development/hifi/libraries/physics/src/ContactInfo.cpp */; };
+		5123C5E5AEEA4B7BAB98CA32 /* /Users/kevinhouyang/Development/hifi/libraries/workload/src/workload/View.cpp */ = {isa = PBXBuildFile; fileRef = AFC44C7946314FD9972107AE /* /Users/kevinhouyang/Development/hifi/libraries/workload/src/workload/View.cpp */; };
+		53CCD951972A4067A8826FF3 /* /Users/kevinhouyang/Development/hifi/libraries/physics/src/ObjectActionOffset.h */ = {isa = PBXBuildFile; fileRef = 6BB180B10CE946C8B0DCBC4B /* /Users/kevinhouyang/Development/hifi/libraries/physics/src/ObjectActionOffset.h */; };
+		55F7E5C3EDE1409389B9F140 /* /Users/kevinhouyang/Development/hifi/libraries/physics/src/CharacterSweepResult.cpp */ = {isa = PBXBuildFile; fileRef = 284A57B15ACD48AAAFC6BC3F /* /Users/kevinhouyang/Development/hifi/libraries/physics/src/CharacterSweepResult.cpp */; };
+		5ADE1B91585E43258BD4936E /* /Users/kevinhouyang/Development/hifi/build/libraries/physics/physics_autogen/mocs_compilation.cpp */ = {isa = PBXBuildFile; fileRef = F8206CCD96DD449FB2C07383 /* /Users/kevinhouyang/Development/hifi/build/libraries/physics/physics_autogen/mocs_compilation.cpp */; };
+		5CBB11D13C3E44299B70EFD4 /* /Users/kevinhouyang/Development/hifi/libraries/physics/src/ObjectConstraintHinge.cpp */ = {isa = PBXBuildFile; fileRef = 4FA53C5A58A44E80AFEE4E83 /* /Users/kevinhouyang/Development/hifi/libraries/physics/src/ObjectConstraintHinge.cpp */; };
+		62D17D32A62F450F9A8C98A1 /* /Users/kevinhouyang/Development/hifi/libraries/physics/src/ThreadSafeDynamicsWorld.h */ = {isa = PBXBuildFile; fileRef = 8D4E3A46BEBE49C48833AA13 /* /Users/kevinhouyang/Development/hifi/libraries/physics/src/ThreadSafeDynamicsWorld.h */; };
+		65880DB633B1459EA2BCC62F /* /Users/kevinhouyang/Development/hifi/libraries/physics/src/ObjectConstraintConeTwist.h */ = {isa = PBXBuildFile; fileRef = D039CB75688F4DBB961E4C99 /* /Users/kevinhouyang/Development/hifi/libraries/physics/src/ObjectConstraintConeTwist.h */; };
+		6AAB1FC4F2A9486EBAB21884 /* /Users/kevinhouyang/Development/hifi/libraries/workload/src/workload/SpaceClassifier.cpp */ = {isa = PBXBuildFile; fileRef = D00B2A1089CF41B8B70A3FDD /* /Users/kevinhouyang/Development/hifi/libraries/workload/src/workload/SpaceClassifier.cpp */; };
+		6B05BC7FB24345CF9C51F544 /* /Users/kevinhouyang/Development/hifi/libraries/physics/src/PhysicsEngine.h */ = {isa = PBXBuildFile; fileRef = 33A0912EDDDD43FFB37C1871 /* /Users/kevinhouyang/Development/hifi/libraries/physics/src/PhysicsEngine.h */; };
+		6BA7CDE222814890A03EAD9E /* /Users/kevinhouyang/Development/hifi/libraries/physics/src/PhysicsDebugDraw.cpp */ = {isa = PBXBuildFile; fileRef = BB45D229B8DA4939A18F44D8 /* /Users/kevinhouyang/Development/hifi/libraries/physics/src/PhysicsDebugDraw.cpp */; };
+		6D181EB21B8F4B2187D9053F /* /Users/kevinhouyang/Development/hifi/libraries/task/src/task/Config.h */ = {isa = PBXBuildFile; fileRef = D5021795D1944AC98DE053A2 /* /Users/kevinhouyang/Development/hifi/libraries/task/src/task/Config.h */; };
+		6FAE3F0498624D058A313567 /* /Users/kevinhouyang/Development/hifi/libraries/physics/src/ThreadSafeDynamicsWorld.cpp */ = {isa = PBXBuildFile; fileRef = A9C8EEEDC5834DACB131A688 /* /Users/kevinhouyang/Development/hifi/libraries/physics/src/ThreadSafeDynamicsWorld.cpp */; };
+		733300B5984D43938B4E2BC0 /* /Users/kevinhouyang/Development/hifi/libraries/physics/src/PhysicsLogging.h */ = {isa = PBXBuildFile; fileRef = 4A8B3CA3944A4C51A7597BBC /* /Users/kevinhouyang/Development/hifi/libraries/physics/src/PhysicsLogging.h */; };
+		7644DFFB91E34D6AA009794A /* /Users/kevinhouyang/Development/hifi/libraries/physics/src/CharacterSweepResult.h */ = {isa = PBXBuildFile; fileRef = 82A6AA5D86C14016A101BD00 /* /Users/kevinhouyang/Development/hifi/libraries/physics/src/CharacterSweepResult.h */; };
+		79A445828F9F4CF3AD9AD703 /* /Users/kevinhouyang/Development/hifi/libraries/workload/src/workload/RegionTracker.cpp */ = {isa = PBXBuildFile; fileRef = 6ECB336B68AD491D91AD490B /* /Users/kevinhouyang/Development/hifi/libraries/workload/src/workload/RegionTracker.cpp */; };
+		7EBBA322100C4C2AA9A20830 /* /Users/kevinhouyang/Development/hifi/libraries/physics/src/CharacterRayResult.h */ = {isa = PBXBuildFile; fileRef = 3BD45296686D47109CF01127 /* /Users/kevinhouyang/Development/hifi/libraries/physics/src/CharacterRayResult.h */; };
+		8032157FEA9D4539AD8DEE72 /* /Users/kevinhouyang/Development/hifi/libraries/physics/src/ObjectActionTractor.h */ = {isa = PBXBuildFile; fileRef = 4FED440B90FF4AC5BCD38FB4 /* /Users/kevinhouyang/Development/hifi/libraries/physics/src/ObjectActionTractor.h */; };
+		83C9AE1409E04783A5DDF073 /* /Users/kevinhouyang/Development/hifi/libraries/workload/src/workload/RegionState.h */ = {isa = PBXBuildFile; fileRef = 473910D466F24105908DD96E /* /Users/kevinhouyang/Development/hifi/libraries/workload/src/workload/RegionState.h */; };
+		845D5AFD805D4CB69EA6B756 /* /Users/kevinhouyang/Development/hifi/libraries/workload/src/workload/Transaction.cpp */ = {isa = PBXBuildFile; fileRef = 36090B7C8CBF4386AB879C87 /* /Users/kevinhouyang/Development/hifi/libraries/workload/src/workload/Transaction.cpp */; };
+		8D6E03210AC743CF8A057FC8 /* /Users/kevinhouyang/Development/hifi/libraries/physics/src/ObjectActionTravelOriented.h */ = {isa = PBXBuildFile; fileRef = BA2AF2EBA2C546B0A46FE2EF /* /Users/kevinhouyang/Development/hifi/libraries/physics/src/ObjectActionTravelOriented.h */; };
+		9024076476D7491B939B0118 /* /Users/kevinhouyang/Development/hifi/libraries/physics/src/ObjectConstraintBallSocket.h */ = {isa = PBXBuildFile; fileRef = 119AA31B8586481CB8BDBB86 /* /Users/kevinhouyang/Development/hifi/libraries/physics/src/ObjectConstraintBallSocket.h */; };
+		925C332A029F4BB0B0059FD2 /* /Users/kevinhouyang/Development/hifi/libraries/workload/src/workload/Space.cpp */ = {isa = PBXBuildFile; fileRef = BF72DB53DA624C5B8038FADE /* /Users/kevinhouyang/Development/hifi/libraries/workload/src/workload/Space.cpp */; };
+		962770416D754A8497E24058 /* /Users/kevinhouyang/Development/hifi/libraries/physics/src/ObjectDynamic.h */ = {isa = PBXBuildFile; fileRef = 16BC95AABD6A48AC88E887A7 /* /Users/kevinhouyang/Development/hifi/libraries/physics/src/ObjectDynamic.h */; };
+		96736546020D43A8B74B4477 /* /Users/kevinhouyang/Development/hifi/libraries/physics/src/ObjectMotionState.cpp */ = {isa = PBXBuildFile; fileRef = 314EEE946CAA466D98A32196 /* /Users/kevinhouyang/Development/hifi/libraries/physics/src/ObjectMotionState.cpp */; };
+		9D4F4B7407194811A534F66A /* /Users/kevinhouyang/Development/hifi/libraries/physics/src/ObjectConstraintConeTwist.cpp */ = {isa = PBXBuildFile; fileRef = 6D914B0943ED402BA393737A /* /Users/kevinhouyang/Development/hifi/libraries/physics/src/ObjectConstraintConeTwist.cpp */; };
+		9F9B56EC81634661B3D15841 /* /Users/kevinhouyang/Development/hifi/libraries/workload/src/workload/ViewTask.h */ = {isa = PBXBuildFile; fileRef = 4472C6E54F2B474CA8651149 /* /Users/kevinhouyang/Development/hifi/libraries/workload/src/workload/ViewTask.h */; };
+		A231FBD2EE284897B31D6A48 /* /Users/kevinhouyang/Development/hifi/libraries/physics/src/ObjectConstraintBallSocket.cpp */ = {isa = PBXBuildFile; fileRef = 00399162E36F4421A606BCF4 /* /Users/kevinhouyang/Development/hifi/libraries/physics/src/ObjectConstraintBallSocket.cpp */; };
+		A4640E49DA47469284CECD2D /* /Users/kevinhouyang/Development/hifi/libraries/physics/src/ObjectActionOffset.cpp */ = {isa = PBXBuildFile; fileRef = FC8F97A92EC14C6DB9B89E73 /* /Users/kevinhouyang/Development/hifi/libraries/physics/src/ObjectActionOffset.cpp */; };
+		AC048101EBBD424890181CAC /* /Users/kevinhouyang/Development/hifi/libraries/physics/src/CharacterController.h */ = {isa = PBXBuildFile; fileRef = FECA2046F56D4255B45ED6FF /* /Users/kevinhouyang/Development/hifi/libraries/physics/src/CharacterController.h */; };
+		B1A7716540324D99A240E1D3 /* /Users/kevinhouyang/Development/hifi/libraries/physics/src/PhysicalEntitySimulation.h */ = {isa = PBXBuildFile; fileRef = 7F70678F3C6F496F851E2064 /* /Users/kevinhouyang/Development/hifi/libraries/physics/src/PhysicalEntitySimulation.h */; };
+		B7D00F34F2EB4052A7FEE2F4 /* /Users/kevinhouyang/Development/hifi/libraries/workload/src/workload/ViewTask.cpp */ = {isa = PBXBuildFile; fileRef = 3DC9553E79F649CCB87EE07D /* /Users/kevinhouyang/Development/hifi/libraries/workload/src/workload/ViewTask.cpp */; };
+		BB59D335B17D459FB0E240A7 /* /Users/kevinhouyang/Development/hifi/libraries/workload/src/workload/RegionState.cpp */ = {isa = PBXBuildFile; fileRef = 51C84C66D02D42EBA9756C9D /* /Users/kevinhouyang/Development/hifi/libraries/workload/src/workload/RegionState.cpp */; };
+		BE9F9ACE8CB64E26B2337A13 /* /Users/kevinhouyang/Development/hifi/libraries/physics/src/BulletUtil.h */ = {isa = PBXBuildFile; fileRef = 002EF4091AAD4F6EAA116A6F /* /Users/kevinhouyang/Development/hifi/libraries/physics/src/BulletUtil.h */; };
+		BF3E7D2C1DB446ECA2BA301B /* /Users/kevinhouyang/Development/hifi/libraries/physics/src/CharacterRayResult.cpp */ = {isa = PBXBuildFile; fileRef = 1E96F04DC1AD468EAB406420 /* /Users/kevinhouyang/Development/hifi/libraries/physics/src/CharacterRayResult.cpp */; };
+		C01EAAAD3CDE4F04A13043BB /* /Users/kevinhouyang/Development/hifi/libraries/physics/src/EntityMotionState.cpp */ = {isa = PBXBuildFile; fileRef = BFD79B58FB9345BF8098C2C9 /* /Users/kevinhouyang/Development/hifi/libraries/physics/src/EntityMotionState.cpp */; };
+		C158385DD3054ACA897101D2 /* /Users/kevinhouyang/Development/hifi/libraries/physics/src/ContactInfo.h */ = {isa = PBXBuildFile; fileRef = 286FBFFE6AFB46F1B7287644 /* /Users/kevinhouyang/Development/hifi/libraries/physics/src/ContactInfo.h */; };
+		C5BB5DFD6FC4405F9FBA3065 /* /Users/kevinhouyang/Development/hifi/libraries/physics/src/ShapeManager.h */ = {isa = PBXBuildFile; fileRef = 6858AD26AE0047A682A99584 /* /Users/kevinhouyang/Development/hifi/libraries/physics/src/ShapeManager.h */; };
+		C82B912F25A34B78BB92DF17 /* /Users/kevinhouyang/Development/hifi/libraries/workload/src/workload/Engine.h */ = {isa = PBXBuildFile; fileRef = 4F42B251AD034EEAA58B1BC5 /* /Users/kevinhouyang/Development/hifi/libraries/workload/src/workload/Engine.h */; };
+		CDF9C9C922BA408DB638CB3C /* /Users/kevinhouyang/Development/hifi/libraries/physics/src/ObjectAction.h */ = {isa = PBXBuildFile; fileRef = BD50882042404923A2B1E90C /* /Users/kevinhouyang/Development/hifi/libraries/physics/src/ObjectAction.h */; };
+		D1F561479BE54BF39E3AFAB2 /* /Users/kevinhouyang/Development/hifi/libraries/physics/src/ObjectMotionState.h */ = {isa = PBXBuildFile; fileRef = 1C585AC2171846DD9A9C8855 /* /Users/kevinhouyang/Development/hifi/libraries/physics/src/ObjectMotionState.h */; };
+		D20E6982D9D34F7FAD5D1A74 /* /Users/kevinhouyang/Development/hifi/build/libraries/task/task_autogen/mocs_compilation.cpp */ = {isa = PBXBuildFile; fileRef = 6A2C271E552F41F995578310 /* /Users/kevinhouyang/Development/hifi/build/libraries/task/task_autogen/mocs_compilation.cpp */; };
+		D2BC9345F9484849A08C3BBB /* /Users/kevinhouyang/Development/hifi/libraries/physics/src/PhysicalEntitySimulation.cpp */ = {isa = PBXBuildFile; fileRef = B6BB46BCD74A4CFD8F18F501 /* /Users/kevinhouyang/Development/hifi/libraries/physics/src/PhysicalEntitySimulation.cpp */; };
+		D3CE75950E324BD581CC33BA /* /Users/kevinhouyang/Development/hifi/libraries/workload/src/workload/RegionTracker.h */ = {isa = PBXBuildFile; fileRef = 46877740563543508096FC74 /* /Users/kevinhouyang/Development/hifi/libraries/workload/src/workload/RegionTracker.h */; };
+		D8696D0F46EF4FC8BE590EAC /* /Users/kevinhouyang/Development/hifi/libraries/physics/src/CharacterGhostShape.h */ = {isa = PBXBuildFile; fileRef = 5467BC67C2C64E9DA477960D /* /Users/kevinhouyang/Development/hifi/libraries/physics/src/CharacterGhostShape.h */; };
+		DA1CD2C0D3A04424A63CCADA /* /Users/kevinhouyang/Development/hifi/libraries/task/src/task/Task.cpp */ = {isa = PBXBuildFile; fileRef = B0857F17CCAD402B8945CD76 /* /Users/kevinhouyang/Development/hifi/libraries/task/src/task/Task.cpp */; };
+		DE51B3AC26AE4978A0B21EDF /* /Users/kevinhouyang/Development/hifi/libraries/workload/src/workload/Proxy.h */ = {isa = PBXBuildFile; fileRef = D583110467A84D1CA661816E /* /Users/kevinhouyang/Development/hifi/libraries/workload/src/workload/Proxy.h */; };
+		E11A40448924478C8B981744 /* /Users/kevinhouyang/Development/hifi/libraries/physics/src/ShapeFactory.h */ = {isa = PBXBuildFile; fileRef = D3658B12A894417E99D98D3A /* /Users/kevinhouyang/Development/hifi/libraries/physics/src/ShapeFactory.h */; };
+		E2E4DD3184714724B4F6170F /* /Users/kevinhouyang/Development/hifi/libraries/physics/src/ObjectConstraintSlider.cpp */ = {isa = PBXBuildFile; fileRef = 065E556F444140DDA6A20FCB /* /Users/kevinhouyang/Development/hifi/libraries/physics/src/ObjectConstraintSlider.cpp */; };
+		E4CFDA150DFF4897929834D2 /* /Users/kevinhouyang/Development/hifi/libraries/task/CMakeLists.txt */ = {isa = PBXBuildFile; fileRef = 958B5BD8845E4FB1AADECED6 /* /Users/kevinhouyang/Development/hifi/libraries/task/CMakeLists.txt */; };
+		E70A92FA691A428F9A0D5256 /* /Users/kevinhouyang/Development/hifi/build/libraries/workload/workload_autogen/mocs_compilation.cpp */ = {isa = PBXBuildFile; fileRef = 041217ABF91F41D9B8D6E16B /* /Users/kevinhouyang/Development/hifi/build/libraries/workload/workload_autogen/mocs_compilation.cpp */; };
+		E72EAE7A4FAF4559948EB0A3 /* /Users/kevinhouyang/Development/hifi/libraries/workload/src/workload/Engine.cpp */ = {isa = PBXBuildFile; fileRef = 292468CB88084D089B73D6FE /* /Users/kevinhouyang/Development/hifi/libraries/workload/src/workload/Engine.cpp */; };
+		F359A6A593544E8787F41556 /* /Users/kevinhouyang/Development/hifi/libraries/physics/src/ObjectConstraintHinge.h */ = {isa = PBXBuildFile; fileRef = 108942020FDB46D291F53B25 /* /Users/kevinhouyang/Development/hifi/libraries/physics/src/ObjectConstraintHinge.h */; };
+		F48355CAE8114D13AE1FD32C /* /Users/kevinhouyang/Development/hifi/libraries/task/src/task/Config.cpp */ = {isa = PBXBuildFile; fileRef = 60272C2F176F4F6B950475CB /* /Users/kevinhouyang/Development/hifi/libraries/task/src/task/Config.cpp */; };
+		F54E43C5615840F592F690CD /* /Users/kevinhouyang/Development/hifi/libraries/workload/src/workload/Transaction.h */ = {isa = PBXBuildFile; fileRef = 643EF8F509E44CAB8F7845B2 /* /Users/kevinhouyang/Development/hifi/libraries/workload/src/workload/Transaction.h */; };
+		FBB06231E4834293BFE90D99 /* /Users/kevinhouyang/Development/hifi/libraries/physics/src/ObjectDynamic.cpp */ = {isa = PBXBuildFile; fileRef = 713B9E311B734764BCF114BA /* /Users/kevinhouyang/Development/hifi/libraries/physics/src/ObjectDynamic.cpp */; };
+		FD293F266FAA430AB90A8E00 /* /Users/kevinhouyang/Development/hifi/libraries/workload/src/workload/Region.h */ = {isa = PBXBuildFile; fileRef = A153DC940B264B93B8D28F23 /* /Users/kevinhouyang/Development/hifi/libraries/workload/src/workload/Region.h */; };
+		FE06B40F42B14D8EA0DB628F /* /Users/kevinhouyang/Development/hifi/libraries/physics/src/MeshMassProperties.cpp */ = {isa = PBXBuildFile; fileRef = 6DB69504D99C48489CAA3800 /* /Users/kevinhouyang/Development/hifi/libraries/physics/src/MeshMassProperties.cpp */; };
+		FFAB5D834E1D4F899F7C22B0 /* /Users/kevinhouyang/Development/hifi/libraries/physics/src/PhysicsEngine.cpp */ = {isa = PBXBuildFile; fileRef = 5D50CBC8D3AA4643B5E5EC12 /* /Users/kevinhouyang/Development/hifi/libraries/physics/src/PhysicsEngine.cpp */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXBuildStyle section */
+		706CC9EB1FCB42C18D387969 /* RelWithDebInfo */ = {
+			isa = PBXBuildStyle;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+			};
+			name = RelWithDebInfo;
+		};
+		9877FFF5686B4CC78F5B29A3 /* Release */ = {
+			isa = PBXBuildStyle;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+			};
+			name = Release;
+		};
+		C4D60C9573C34348BFFF0062 /* MinSizeRel */ = {
+			isa = PBXBuildStyle;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+			};
+			name = MinSizeRel;
+		};
+		EF003E416E684ED7986CA366 /* Debug */ = {
+			isa = PBXBuildStyle;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+			};
+			name = Debug;
+		};
+/* End PBXBuildStyle section */
+
+/* Begin PBXContainerItemProxy section */
+		03F27DD13A734653950022DF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0D0207A4C58245D69F5FAE3A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D695DA5E07244EFFBC0ADA9C;
+			remoteInfo = workload;
+		};
+		11DD6D535ED346169FFF1790 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0D0207A4C58245D69F5FAE3A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 706F62AD7D3F40C28305D80F;
+			remoteInfo = task_autogen;
+		};
+		2425B3B8415440EDAD9EEA0A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0D0207A4C58245D69F5FAE3A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6903A256FC7A439396139BEA;
+			remoteInfo = physics;
+		};
+		2C151080C45C49979B55DC49 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0D0207A4C58245D69F5FAE3A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D695DA5E07244EFFBC0ADA9C;
+			remoteInfo = workload;
+		};
+		488FA93DBE3648378BC7AB0F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0D0207A4C58245D69F5FAE3A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8D57798453994B4D90A25EE1;
+			remoteInfo = bullet;
+		};
+		4CA3907AFD524A0B8BD30ABC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0D0207A4C58245D69F5FAE3A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 324A15BFFEE94E94BA16B115;
+			remoteInfo = ZERO_CHECK;
+		};
+		4F26D7040E264E91BDA8088B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0D0207A4C58245D69F5FAE3A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E91F769E938F47D3A74AB7B7;
+			remoteInfo = task;
+		};
+		556F0D6B1D9945CA8AB81E1B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0D0207A4C58245D69F5FAE3A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E91F769E938F47D3A74AB7B7;
+			remoteInfo = task;
+		};
+		70C3441EA5424CD2961280D9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0D0207A4C58245D69F5FAE3A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C9A52801EF88483BB604BD79;
+			remoteInfo = workload_autogen;
+		};
+		81C59702C3A5408DAEC2B747 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0D0207A4C58245D69F5FAE3A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 324A15BFFEE94E94BA16B115;
+			remoteInfo = ZERO_CHECK;
+		};
+		8C1851DE84E544B39FCA6CB0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0D0207A4C58245D69F5FAE3A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E91F769E938F47D3A74AB7B7;
+			remoteInfo = task;
+		};
+		9215C316E9A04F799F983D01 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0D0207A4C58245D69F5FAE3A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EC7358D97DFB4AB0AF8A20EB;
+			remoteInfo = ALL_BUILD;
+		};
+		A22BAC8AF42F42B6966DD420 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0D0207A4C58245D69F5FAE3A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8D57798453994B4D90A25EE1;
+			remoteInfo = bullet;
+		};
+		A35A009D06E14C688E03AD54 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0D0207A4C58245D69F5FAE3A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E91F769E938F47D3A74AB7B7;
+			remoteInfo = task;
+		};
+		AB798F709D034544BB4927A6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0D0207A4C58245D69F5FAE3A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D695DA5E07244EFFBC0ADA9C;
+			remoteInfo = workload;
+		};
+		C7876AA838B849B3B67CB958 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0D0207A4C58245D69F5FAE3A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E91F769E938F47D3A74AB7B7;
+			remoteInfo = task;
+		};
+		D50DE40027CB4CAD941D2E16 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0D0207A4C58245D69F5FAE3A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F1EAB527104D44D2BE752E8D;
+			remoteInfo = physics_autogen;
+		};
+		DFCAAB666F91424AA17C6494 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0D0207A4C58245D69F5FAE3A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8D57798453994B4D90A25EE1;
+			remoteInfo = bullet;
+		};
+		F19127AC067A4B2E847F1A59 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0D0207A4C58245D69F5FAE3A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EC7358D97DFB4AB0AF8A20EB;
+			remoteInfo = ALL_BUILD;
+		};
+		F23C888DA2A5410D974DEF19 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0D0207A4C58245D69F5FAE3A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 324A15BFFEE94E94BA16B115;
+			remoteInfo = ZERO_CHECK;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		002EF4091AAD4F6EAA116A6F /* /Users/kevinhouyang/Development/hifi/libraries/physics/src/BulletUtil.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = BulletUtil.h; path = src/BulletUtil.h; sourceTree = SOURCE_ROOT; };
+		00399162E36F4421A606BCF4 /* /Users/kevinhouyang/Development/hifi/libraries/physics/src/ObjectConstraintBallSocket.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = ObjectConstraintBallSocket.cpp; path = src/ObjectConstraintBallSocket.cpp; sourceTree = SOURCE_ROOT; };
+		041217ABF91F41D9B8D6E16B /* /Users/kevinhouyang/Development/hifi/build/libraries/workload/workload_autogen/mocs_compilation.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = mocs_compilation.cpp; path = ../../build/libraries/workload/workload_autogen/mocs_compilation.cpp; sourceTree = SOURCE_ROOT; };
+		04CAA3E080604526B47F72D3 /* /Users/kevinhouyang/Development/hifi/libraries/physics/src/ShapeManager.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = ShapeManager.cpp; path = src/ShapeManager.cpp; sourceTree = SOURCE_ROOT; };
+		065E556F444140DDA6A20FCB /* /Users/kevinhouyang/Development/hifi/libraries/physics/src/ObjectConstraintSlider.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = ObjectConstraintSlider.cpp; path = src/ObjectConstraintSlider.cpp; sourceTree = SOURCE_ROOT; };
+		0674737F620744C2B78D5EFB /* /Users/kevinhouyang/Development/hifi/libraries/physics/CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; name = CMakeLists.txt; path = CMakeLists.txt; sourceTree = SOURCE_ROOT; };
+		108942020FDB46D291F53B25 /* /Users/kevinhouyang/Development/hifi/libraries/physics/src/ObjectConstraintHinge.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = ObjectConstraintHinge.h; path = src/ObjectConstraintHinge.h; sourceTree = SOURCE_ROOT; };
+		119AA31B8586481CB8BDBB86 /* /Users/kevinhouyang/Development/hifi/libraries/physics/src/ObjectConstraintBallSocket.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = ObjectConstraintBallSocket.h; path = src/ObjectConstraintBallSocket.h; sourceTree = SOURCE_ROOT; };
+		11ABB6A5ADFA4282A47B4D88 /* /Users/kevinhouyang/Development/hifi/libraries/physics/src/MeshMassProperties.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = MeshMassProperties.h; path = src/MeshMassProperties.h; sourceTree = SOURCE_ROOT; };
+		12A6B74C793344FB902897D2 /* /Users/kevinhouyang/Development/hifi/libraries/workload/CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; name = CMakeLists.txt; path = ../workload/CMakeLists.txt; sourceTree = SOURCE_ROOT; };
+		16709BAF3F7649C486D6ABDB /* /Users/kevinhouyang/Development/hifi/libraries/physics/src/ObjectConstraintSlider.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = ObjectConstraintSlider.h; path = src/ObjectConstraintSlider.h; sourceTree = SOURCE_ROOT; };
+		16BC95AABD6A48AC88E887A7 /* /Users/kevinhouyang/Development/hifi/libraries/physics/src/ObjectDynamic.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = ObjectDynamic.h; path = src/ObjectDynamic.h; sourceTree = SOURCE_ROOT; };
+		1C585AC2171846DD9A9C8855 /* /Users/kevinhouyang/Development/hifi/libraries/physics/src/ObjectMotionState.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = ObjectMotionState.h; path = src/ObjectMotionState.h; sourceTree = SOURCE_ROOT; };
+		1E96F04DC1AD468EAB406420 /* /Users/kevinhouyang/Development/hifi/libraries/physics/src/CharacterRayResult.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = CharacterRayResult.cpp; path = src/CharacterRayResult.cpp; sourceTree = SOURCE_ROOT; };
+		1F59DB7A245D4082B6706CCA /* /Users/kevinhouyang/Development/hifi/libraries/physics/src/CharacterGhostObject.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = CharacterGhostObject.cpp; path = src/CharacterGhostObject.cpp; sourceTree = SOURCE_ROOT; };
+		284A57B15ACD48AAAFC6BC3F /* /Users/kevinhouyang/Development/hifi/libraries/physics/src/CharacterSweepResult.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = CharacterSweepResult.cpp; path = src/CharacterSweepResult.cpp; sourceTree = SOURCE_ROOT; };
+		286FBFFE6AFB46F1B7287644 /* /Users/kevinhouyang/Development/hifi/libraries/physics/src/ContactInfo.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = ContactInfo.h; path = src/ContactInfo.h; sourceTree = SOURCE_ROOT; };
+		292468CB88084D089B73D6FE /* /Users/kevinhouyang/Development/hifi/libraries/workload/src/workload/Engine.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = Engine.cpp; path = ../workload/src/workload/Engine.cpp; sourceTree = SOURCE_ROOT; };
+		314EEE946CAA466D98A32196 /* /Users/kevinhouyang/Development/hifi/libraries/physics/src/ObjectMotionState.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = ObjectMotionState.cpp; path = src/ObjectMotionState.cpp; sourceTree = SOURCE_ROOT; };
+		328BDCE335A74D9589B968B2 /* /Users/kevinhouyang/Development/hifi/libraries/physics/src/ObjectAction.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = ObjectAction.cpp; path = src/ObjectAction.cpp; sourceTree = SOURCE_ROOT; };
+		33A0912EDDDD43FFB37C1871 /* /Users/kevinhouyang/Development/hifi/libraries/physics/src/PhysicsEngine.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = PhysicsEngine.h; path = src/PhysicsEngine.h; sourceTree = SOURCE_ROOT; };
+		36090B7C8CBF4386AB879C87 /* /Users/kevinhouyang/Development/hifi/libraries/workload/src/workload/Transaction.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = Transaction.cpp; path = ../workload/src/workload/Transaction.cpp; sourceTree = SOURCE_ROOT; };
+		3BD45296686D47109CF01127 /* /Users/kevinhouyang/Development/hifi/libraries/physics/src/CharacterRayResult.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = CharacterRayResult.h; path = src/CharacterRayResult.h; sourceTree = SOURCE_ROOT; };
+		3DC9553E79F649CCB87EE07D /* /Users/kevinhouyang/Development/hifi/libraries/workload/src/workload/ViewTask.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = ViewTask.cpp; path = ../workload/src/workload/ViewTask.cpp; sourceTree = SOURCE_ROOT; };
+		4472C6E54F2B474CA8651149 /* /Users/kevinhouyang/Development/hifi/libraries/workload/src/workload/ViewTask.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = ViewTask.h; path = ../workload/src/workload/ViewTask.h; sourceTree = SOURCE_ROOT; };
+		45E431153EDE4B7E8C205C95 /* task */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libtask.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		46877740563543508096FC74 /* /Users/kevinhouyang/Development/hifi/libraries/workload/src/workload/RegionTracker.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = RegionTracker.h; path = ../workload/src/workload/RegionTracker.h; sourceTree = SOURCE_ROOT; };
+		473910D466F24105908DD96E /* /Users/kevinhouyang/Development/hifi/libraries/workload/src/workload/RegionState.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = RegionState.h; path = ../workload/src/workload/RegionState.h; sourceTree = SOURCE_ROOT; };
+		4A8B3CA3944A4C51A7597BBC /* /Users/kevinhouyang/Development/hifi/libraries/physics/src/PhysicsLogging.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = PhysicsLogging.h; path = src/PhysicsLogging.h; sourceTree = SOURCE_ROOT; };
+		4F42B251AD034EEAA58B1BC5 /* /Users/kevinhouyang/Development/hifi/libraries/workload/src/workload/Engine.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = Engine.h; path = ../workload/src/workload/Engine.h; sourceTree = SOURCE_ROOT; };
+		4FA53C5A58A44E80AFEE4E83 /* /Users/kevinhouyang/Development/hifi/libraries/physics/src/ObjectConstraintHinge.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = ObjectConstraintHinge.cpp; path = src/ObjectConstraintHinge.cpp; sourceTree = SOURCE_ROOT; };
+		4FED440B90FF4AC5BCD38FB4 /* /Users/kevinhouyang/Development/hifi/libraries/physics/src/ObjectActionTractor.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = ObjectActionTractor.h; path = src/ObjectActionTractor.h; sourceTree = SOURCE_ROOT; };
+		51C84C66D02D42EBA9756C9D /* /Users/kevinhouyang/Development/hifi/libraries/workload/src/workload/RegionState.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = RegionState.cpp; path = ../workload/src/workload/RegionState.cpp; sourceTree = SOURCE_ROOT; };
+		5467BC67C2C64E9DA477960D /* /Users/kevinhouyang/Development/hifi/libraries/physics/src/CharacterGhostShape.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = CharacterGhostShape.h; path = src/CharacterGhostShape.h; sourceTree = SOURCE_ROOT; };
+		5D50CBC8D3AA4643B5E5EC12 /* /Users/kevinhouyang/Development/hifi/libraries/physics/src/PhysicsEngine.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = PhysicsEngine.cpp; path = src/PhysicsEngine.cpp; sourceTree = SOURCE_ROOT; };
+		5D50CF6CE60544098DD53A49 /* /Users/kevinhouyang/Development/hifi/libraries/physics/src/CharacterController.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = CharacterController.cpp; path = src/CharacterController.cpp; sourceTree = SOURCE_ROOT; };
+		60272C2F176F4F6B950475CB /* /Users/kevinhouyang/Development/hifi/libraries/task/src/task/Config.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = Config.cpp; path = ../task/src/task/Config.cpp; sourceTree = SOURCE_ROOT; };
+		63535797C12D422E93EBFCFD /* /Users/kevinhouyang/Development/hifi/libraries/physics/src/ObjectActionTractor.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = ObjectActionTractor.cpp; path = src/ObjectActionTractor.cpp; sourceTree = SOURCE_ROOT; };
+		643EF8F509E44CAB8F7845B2 /* /Users/kevinhouyang/Development/hifi/libraries/workload/src/workload/Transaction.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = Transaction.h; path = ../workload/src/workload/Transaction.h; sourceTree = SOURCE_ROOT; };
+		669A4D2E9BD040DE94983388 /* /Users/kevinhouyang/Development/hifi/libraries/physics/src/ObjectConstraint.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = ObjectConstraint.h; path = src/ObjectConstraint.h; sourceTree = SOURCE_ROOT; };
+		6858AD26AE0047A682A99584 /* /Users/kevinhouyang/Development/hifi/libraries/physics/src/ShapeManager.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = ShapeManager.h; path = src/ShapeManager.h; sourceTree = SOURCE_ROOT; };
+		68832829C9B444B990FC8A08 /* /Users/kevinhouyang/Development/hifi/libraries/physics/src/ObjectActionTravelOriented.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = ObjectActionTravelOriented.cpp; path = src/ObjectActionTravelOriented.cpp; sourceTree = SOURCE_ROOT; };
+		6A2C271E552F41F995578310 /* /Users/kevinhouyang/Development/hifi/build/libraries/task/task_autogen/mocs_compilation.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = mocs_compilation.cpp; path = ../../build/libraries/task/task_autogen/mocs_compilation.cpp; sourceTree = SOURCE_ROOT; };
+		6BB180B10CE946C8B0DCBC4B /* /Users/kevinhouyang/Development/hifi/libraries/physics/src/ObjectActionOffset.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = ObjectActionOffset.h; path = src/ObjectActionOffset.h; sourceTree = SOURCE_ROOT; };
+		6D914B0943ED402BA393737A /* /Users/kevinhouyang/Development/hifi/libraries/physics/src/ObjectConstraintConeTwist.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = ObjectConstraintConeTwist.cpp; path = src/ObjectConstraintConeTwist.cpp; sourceTree = SOURCE_ROOT; };
+		6DB69504D99C48489CAA3800 /* /Users/kevinhouyang/Development/hifi/libraries/physics/src/MeshMassProperties.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = MeshMassProperties.cpp; path = src/MeshMassProperties.cpp; sourceTree = SOURCE_ROOT; };
+		6ECB336B68AD491D91AD490B /* /Users/kevinhouyang/Development/hifi/libraries/workload/src/workload/RegionTracker.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = RegionTracker.cpp; path = ../workload/src/workload/RegionTracker.cpp; sourceTree = SOURCE_ROOT; };
+		713B9E311B734764BCF114BA /* /Users/kevinhouyang/Development/hifi/libraries/physics/src/ObjectDynamic.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = ObjectDynamic.cpp; path = src/ObjectDynamic.cpp; sourceTree = SOURCE_ROOT; };
+		71605F0A8B0C4EDE94FB1368 /* /Users/kevinhouyang/Development/hifi/libraries/workload/src/workload/View.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = View.h; path = ../workload/src/workload/View.h; sourceTree = SOURCE_ROOT; };
+		7278C40F5E064903873044D5 /* /Users/kevinhouyang/Development/hifi/libraries/physics/src/ContactInfo.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = ContactInfo.cpp; path = src/ContactInfo.cpp; sourceTree = SOURCE_ROOT; };
+		72975825D2AA43D4A018F161 /* /Users/kevinhouyang/Development/hifi/libraries/workload/src/workload/Space.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = Space.h; path = ../workload/src/workload/Space.h; sourceTree = SOURCE_ROOT; };
+		751DD8C6388244E2A96AF0F4 /* /Users/kevinhouyang/Development/hifi/libraries/physics/src/ObjectConstraint.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = ObjectConstraint.cpp; path = src/ObjectConstraint.cpp; sourceTree = SOURCE_ROOT; };
+		7629035EEFEE423C938B7073 /* /Users/kevinhouyang/Development/hifi/libraries/workload/src/workload/SpaceClassifier.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = SpaceClassifier.h; path = ../workload/src/workload/SpaceClassifier.h; sourceTree = SOURCE_ROOT; };
+		797939A8EDE54DBBB2555968 /* /Users/kevinhouyang/Development/hifi/libraries/physics/src/CharacterGhostShape.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = CharacterGhostShape.cpp; path = src/CharacterGhostShape.cpp; sourceTree = SOURCE_ROOT; };
+		7F70678F3C6F496F851E2064 /* /Users/kevinhouyang/Development/hifi/libraries/physics/src/PhysicalEntitySimulation.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = PhysicalEntitySimulation.h; path = src/PhysicalEntitySimulation.h; sourceTree = SOURCE_ROOT; };
+		82A6AA5D86C14016A101BD00 /* /Users/kevinhouyang/Development/hifi/libraries/physics/src/CharacterSweepResult.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = CharacterSweepResult.h; path = src/CharacterSweepResult.h; sourceTree = SOURCE_ROOT; };
+		8D4E3A46BEBE49C48833AA13 /* /Users/kevinhouyang/Development/hifi/libraries/physics/src/ThreadSafeDynamicsWorld.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = ThreadSafeDynamicsWorld.h; path = src/ThreadSafeDynamicsWorld.h; sourceTree = SOURCE_ROOT; };
+		90B810B889DF47B1A0B0D026 /* /Users/kevinhouyang/Development/hifi/cmake/externals/bullet/CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; name = CMakeLists.txt; path = ../../cmake/externals/bullet/CMakeLists.txt; sourceTree = SOURCE_ROOT; };
+		958B5BD8845E4FB1AADECED6 /* /Users/kevinhouyang/Development/hifi/libraries/task/CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; name = CMakeLists.txt; path = ../task/CMakeLists.txt; sourceTree = SOURCE_ROOT; };
+		9819CAC4FBB140F0B7D8FF08 /* /Users/kevinhouyang/Development/hifi/libraries/physics/src/ShapeFactory.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = ShapeFactory.cpp; path = src/ShapeFactory.cpp; sourceTree = SOURCE_ROOT; };
+		A153DC940B264B93B8D28F23 /* /Users/kevinhouyang/Development/hifi/libraries/workload/src/workload/Region.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = Region.h; path = ../workload/src/workload/Region.h; sourceTree = SOURCE_ROOT; };
+		A754510B7E8348AA8D115608 /* /Users/kevinhouyang/Development/hifi/libraries/physics/src/EntityMotionState.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = EntityMotionState.h; path = src/EntityMotionState.h; sourceTree = SOURCE_ROOT; };
+		A7AE65C1BB2A4218815FD572 /* /Users/kevinhouyang/Development/hifi/libraries/task/src/task/Task.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = Task.h; path = ../task/src/task/Task.h; sourceTree = SOURCE_ROOT; };
+		A9C8EEEDC5834DACB131A688 /* /Users/kevinhouyang/Development/hifi/libraries/physics/src/ThreadSafeDynamicsWorld.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = ThreadSafeDynamicsWorld.cpp; path = src/ThreadSafeDynamicsWorld.cpp; sourceTree = SOURCE_ROOT; };
+		AFC44C7946314FD9972107AE /* /Users/kevinhouyang/Development/hifi/libraries/workload/src/workload/View.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = View.cpp; path = ../workload/src/workload/View.cpp; sourceTree = SOURCE_ROOT; };
+		B0857F17CCAD402B8945CD76 /* /Users/kevinhouyang/Development/hifi/libraries/task/src/task/Task.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = Task.cpp; path = ../task/src/task/Task.cpp; sourceTree = SOURCE_ROOT; };
+		B6BB46BCD74A4CFD8F18F501 /* /Users/kevinhouyang/Development/hifi/libraries/physics/src/PhysicalEntitySimulation.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = PhysicalEntitySimulation.cpp; path = src/PhysicalEntitySimulation.cpp; sourceTree = SOURCE_ROOT; };
+		B8F2DFEA63A44C55B9AED94B /* /Users/kevinhouyang/Development/hifi/libraries/workload/CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; name = CMakeLists.txt; path = ../workload/CMakeLists.txt; sourceTree = SOURCE_ROOT; };
+		BA2AF2EBA2C546B0A46FE2EF /* /Users/kevinhouyang/Development/hifi/libraries/physics/src/ObjectActionTravelOriented.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = ObjectActionTravelOriented.h; path = src/ObjectActionTravelOriented.h; sourceTree = SOURCE_ROOT; };
+		BB45D229B8DA4939A18F44D8 /* /Users/kevinhouyang/Development/hifi/libraries/physics/src/PhysicsDebugDraw.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = PhysicsDebugDraw.cpp; path = src/PhysicsDebugDraw.cpp; sourceTree = SOURCE_ROOT; };
+		BD50882042404923A2B1E90C /* /Users/kevinhouyang/Development/hifi/libraries/physics/src/ObjectAction.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = ObjectAction.h; path = src/ObjectAction.h; sourceTree = SOURCE_ROOT; };
+		BDBE34D2C6B44707AF3D4847 /* /Users/kevinhouyang/Development/hifi/libraries/physics/CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; name = CMakeLists.txt; path = CMakeLists.txt; sourceTree = SOURCE_ROOT; };
+		BF72DB53DA624C5B8038FADE /* /Users/kevinhouyang/Development/hifi/libraries/workload/src/workload/Space.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = Space.cpp; path = ../workload/src/workload/Space.cpp; sourceTree = SOURCE_ROOT; };
+		BFD79B58FB9345BF8098C2C9 /* /Users/kevinhouyang/Development/hifi/libraries/physics/src/EntityMotionState.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = EntityMotionState.cpp; path = src/EntityMotionState.cpp; sourceTree = SOURCE_ROOT; };
+		C24990B97BDD44F9984BBF1E /* /Users/kevinhouyang/Development/hifi/libraries/task/CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; name = CMakeLists.txt; path = ../task/CMakeLists.txt; sourceTree = SOURCE_ROOT; };
+		CF0B8A0A0CCC4CA1925E4A86 /* workload */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libworkload.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		D00B2A1089CF41B8B70A3FDD /* /Users/kevinhouyang/Development/hifi/libraries/workload/src/workload/SpaceClassifier.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = SpaceClassifier.cpp; path = ../workload/src/workload/SpaceClassifier.cpp; sourceTree = SOURCE_ROOT; };
+		D039CB75688F4DBB961E4C99 /* /Users/kevinhouyang/Development/hifi/libraries/physics/src/ObjectConstraintConeTwist.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = ObjectConstraintConeTwist.h; path = src/ObjectConstraintConeTwist.h; sourceTree = SOURCE_ROOT; };
+		D3658B12A894417E99D98D3A /* /Users/kevinhouyang/Development/hifi/libraries/physics/src/ShapeFactory.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = ShapeFactory.h; path = src/ShapeFactory.h; sourceTree = SOURCE_ROOT; };
+		D5021795D1944AC98DE053A2 /* /Users/kevinhouyang/Development/hifi/libraries/task/src/task/Config.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = Config.h; path = ../task/src/task/Config.h; sourceTree = SOURCE_ROOT; };
+		D583110467A84D1CA661816E /* /Users/kevinhouyang/Development/hifi/libraries/workload/src/workload/Proxy.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = Proxy.h; path = ../workload/src/workload/Proxy.h; sourceTree = SOURCE_ROOT; };
+		D91DC864159B46FA80363A20 /* /Users/kevinhouyang/Development/hifi/libraries/physics/src/PhysicsLogging.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = PhysicsLogging.cpp; path = src/PhysicsLogging.cpp; sourceTree = SOURCE_ROOT; };
+		DA265627950645988C75AECE /* /Users/kevinhouyang/Development/hifi/libraries/physics/src/CharacterGhostObject.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = CharacterGhostObject.h; path = src/CharacterGhostObject.h; sourceTree = SOURCE_ROOT; };
+		E376CF06F17D4290A7207E06 /* physics */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libphysics.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		E9D436CA65DE49FDAD9545FB /* /Users/kevinhouyang/Development/hifi/libraries/physics/src/PhysicsDebugDraw.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = PhysicsDebugDraw.h; path = src/PhysicsDebugDraw.h; sourceTree = SOURCE_ROOT; };
+		F2AFB5323F154C319EFCCF3B /* /Users/kevinhouyang/Development/hifi/libraries/physics/CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; name = CMakeLists.txt; path = CMakeLists.txt; sourceTree = SOURCE_ROOT; };
+		F480B7166B0847BE8F3B3EFF /* /Users/kevinhouyang/Development/hifi/libraries/task/src/task/Varying.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = Varying.h; path = ../task/src/task/Varying.h; sourceTree = SOURCE_ROOT; };
+		F8206CCD96DD449FB2C07383 /* /Users/kevinhouyang/Development/hifi/build/libraries/physics/physics_autogen/mocs_compilation.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = mocs_compilation.cpp; path = ../../build/libraries/physics/physics_autogen/mocs_compilation.cpp; sourceTree = SOURCE_ROOT; };
+		FC8F97A92EC14C6DB9B89E73 /* /Users/kevinhouyang/Development/hifi/libraries/physics/src/ObjectActionOffset.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = ObjectActionOffset.cpp; path = src/ObjectActionOffset.cpp; sourceTree = SOURCE_ROOT; };
+		FECA2046F56D4255B45ED6FF /* /Users/kevinhouyang/Development/hifi/libraries/physics/src/CharacterController.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = CharacterController.h; path = src/CharacterController.h; sourceTree = SOURCE_ROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXGroup section */
+		07417B7CF1BB4B5492DD95A2 /* workload */ = {
+			isa = PBXGroup;
+			children = (
+				1D7BA853412D44219090E9FD /* Source Files */,
+				CAE64AB3A7124638BEA95AE0 /* Header Files */,
+				B8F2DFEA63A44C55B9AED94B /* /Users/kevinhouyang/Development/hifi/libraries/workload/CMakeLists.txt */,
+			);
+			name = workload;
+			sourceTree = "<group>";
+		};
+		09AFBA2E93DF47B786659066 /* CMake Rules */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "CMake Rules";
+			sourceTree = "<group>";
+		};
+		0BA115CCCFEA459F97CD9A12 /* physics */ = {
+			isa = PBXGroup;
+			children = (
+				828E2D8E73F045BC8D7C2E40 /* Header Files */,
+				A97542D6A02042D483CE62CF /* Source Files */,
+				BDBE34D2C6B44707AF3D4847 /* /Users/kevinhouyang/Development/hifi/libraries/physics/CMakeLists.txt */,
+			);
+			name = physics;
+			sourceTree = "<group>";
+		};
+		120F73F7D3364AD295CEFABC /* Source Files */ = {
+			isa = PBXGroup;
+			children = (
+				6A2C271E552F41F995578310 /* /Users/kevinhouyang/Development/hifi/build/libraries/task/task_autogen/mocs_compilation.cpp */,
+				60272C2F176F4F6B950475CB /* /Users/kevinhouyang/Development/hifi/libraries/task/src/task/Config.cpp */,
+				B0857F17CCAD402B8945CD76 /* /Users/kevinhouyang/Development/hifi/libraries/task/src/task/Task.cpp */,
+			);
+			name = "Source Files";
+			sourceTree = "<group>";
+		};
+		1D7BA853412D44219090E9FD /* Source Files */ = {
+			isa = PBXGroup;
+			children = (
+				041217ABF91F41D9B8D6E16B /* /Users/kevinhouyang/Development/hifi/build/libraries/workload/workload_autogen/mocs_compilation.cpp */,
+				292468CB88084D089B73D6FE /* /Users/kevinhouyang/Development/hifi/libraries/workload/src/workload/Engine.cpp */,
+				51C84C66D02D42EBA9756C9D /* /Users/kevinhouyang/Development/hifi/libraries/workload/src/workload/RegionState.cpp */,
+				6ECB336B68AD491D91AD490B /* /Users/kevinhouyang/Development/hifi/libraries/workload/src/workload/RegionTracker.cpp */,
+				BF72DB53DA624C5B8038FADE /* /Users/kevinhouyang/Development/hifi/libraries/workload/src/workload/Space.cpp */,
+				D00B2A1089CF41B8B70A3FDD /* /Users/kevinhouyang/Development/hifi/libraries/workload/src/workload/SpaceClassifier.cpp */,
+				36090B7C8CBF4386AB879C87 /* /Users/kevinhouyang/Development/hifi/libraries/workload/src/workload/Transaction.cpp */,
+				AFC44C7946314FD9972107AE /* /Users/kevinhouyang/Development/hifi/libraries/workload/src/workload/View.cpp */,
+				3DC9553E79F649CCB87EE07D /* /Users/kevinhouyang/Development/hifi/libraries/workload/src/workload/ViewTask.cpp */,
+			);
+			name = "Source Files";
+			sourceTree = "<group>";
+		};
+		3A3222E15FA046A9B44577AF /* physics_autogen */ = {
+			isa = PBXGroup;
+			children = (
+				6878FCF92B314FDF89DDF0C9 /* CMake Rules */,
+				F2AFB5323F154C319EFCCF3B /* /Users/kevinhouyang/Development/hifi/libraries/physics/CMakeLists.txt */,
+			);
+			name = physics_autogen;
+			sourceTree = "<group>";
+		};
+		498D69392FD64846A0567D35 /* task_autogen */ = {
+			isa = PBXGroup;
+			children = (
+				EBFB33AAFF2343F3841C6D08 /* CMake Rules */,
+				C24990B97BDD44F9984BBF1E /* /Users/kevinhouyang/Development/hifi/libraries/task/CMakeLists.txt */,
+			);
+			name = task_autogen;
+			sourceTree = "<group>";
+		};
+		5E136EE89EBC41DFB3940444 /* Libraries */ = {
+			isa = PBXGroup;
+			children = (
+				0BA115CCCFEA459F97CD9A12 /* physics */,
+				3A3222E15FA046A9B44577AF /* physics_autogen */,
+				77DA0FDCB93B4522A06E5F40 /* task */,
+				498D69392FD64846A0567D35 /* task_autogen */,
+				07417B7CF1BB4B5492DD95A2 /* workload */,
+				A662413986244D5DB5095705 /* workload_autogen */,
+			);
+			name = Libraries;
+			sourceTree = "<group>";
+		};
+		6878FCF92B314FDF89DDF0C9 /* CMake Rules */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "CMake Rules";
+			sourceTree = "<group>";
+		};
+		77DA0FDCB93B4522A06E5F40 /* task */ = {
+			isa = PBXGroup;
+			children = (
+				120F73F7D3364AD295CEFABC /* Source Files */,
+				7F679F3A50A2463490201BD5 /* Header Files */,
+				958B5BD8845E4FB1AADECED6 /* /Users/kevinhouyang/Development/hifi/libraries/task/CMakeLists.txt */,
+			);
+			name = task;
+			sourceTree = "<group>";
+		};
+		7A105CF5D0CF42BFA06256A4 /* bullet */ = {
+			isa = PBXGroup;
+			children = (
+				BB141845B58549F298BFFE64 /* CMake Rules */,
+				90B810B889DF47B1A0B0D026 /* /Users/kevinhouyang/Development/hifi/cmake/externals/bullet/CMakeLists.txt */,
+			);
+			name = bullet;
+			sourceTree = "<group>";
+		};
+		7F679F3A50A2463490201BD5 /* Header Files */ = {
+			isa = PBXGroup;
+			children = (
+				D5021795D1944AC98DE053A2 /* /Users/kevinhouyang/Development/hifi/libraries/task/src/task/Config.h */,
+				A7AE65C1BB2A4218815FD572 /* /Users/kevinhouyang/Development/hifi/libraries/task/src/task/Task.h */,
+				F480B7166B0847BE8F3B3EFF /* /Users/kevinhouyang/Development/hifi/libraries/task/src/task/Varying.h */,
+			);
+			name = "Header Files";
+			sourceTree = "<group>";
+		};
+		828E2D8E73F045BC8D7C2E40 /* Header Files */ = {
+			isa = PBXGroup;
+			children = (
+				002EF4091AAD4F6EAA116A6F /* /Users/kevinhouyang/Development/hifi/libraries/physics/src/BulletUtil.h */,
+				FECA2046F56D4255B45ED6FF /* /Users/kevinhouyang/Development/hifi/libraries/physics/src/CharacterController.h */,
+				DA265627950645988C75AECE /* /Users/kevinhouyang/Development/hifi/libraries/physics/src/CharacterGhostObject.h */,
+				5467BC67C2C64E9DA477960D /* /Users/kevinhouyang/Development/hifi/libraries/physics/src/CharacterGhostShape.h */,
+				3BD45296686D47109CF01127 /* /Users/kevinhouyang/Development/hifi/libraries/physics/src/CharacterRayResult.h */,
+				82A6AA5D86C14016A101BD00 /* /Users/kevinhouyang/Development/hifi/libraries/physics/src/CharacterSweepResult.h */,
+				286FBFFE6AFB46F1B7287644 /* /Users/kevinhouyang/Development/hifi/libraries/physics/src/ContactInfo.h */,
+				A754510B7E8348AA8D115608 /* /Users/kevinhouyang/Development/hifi/libraries/physics/src/EntityMotionState.h */,
+				11ABB6A5ADFA4282A47B4D88 /* /Users/kevinhouyang/Development/hifi/libraries/physics/src/MeshMassProperties.h */,
+				BD50882042404923A2B1E90C /* /Users/kevinhouyang/Development/hifi/libraries/physics/src/ObjectAction.h */,
+				6BB180B10CE946C8B0DCBC4B /* /Users/kevinhouyang/Development/hifi/libraries/physics/src/ObjectActionOffset.h */,
+				4FED440B90FF4AC5BCD38FB4 /* /Users/kevinhouyang/Development/hifi/libraries/physics/src/ObjectActionTractor.h */,
+				BA2AF2EBA2C546B0A46FE2EF /* /Users/kevinhouyang/Development/hifi/libraries/physics/src/ObjectActionTravelOriented.h */,
+				669A4D2E9BD040DE94983388 /* /Users/kevinhouyang/Development/hifi/libraries/physics/src/ObjectConstraint.h */,
+				119AA31B8586481CB8BDBB86 /* /Users/kevinhouyang/Development/hifi/libraries/physics/src/ObjectConstraintBallSocket.h */,
+				D039CB75688F4DBB961E4C99 /* /Users/kevinhouyang/Development/hifi/libraries/physics/src/ObjectConstraintConeTwist.h */,
+				108942020FDB46D291F53B25 /* /Users/kevinhouyang/Development/hifi/libraries/physics/src/ObjectConstraintHinge.h */,
+				16709BAF3F7649C486D6ABDB /* /Users/kevinhouyang/Development/hifi/libraries/physics/src/ObjectConstraintSlider.h */,
+				16BC95AABD6A48AC88E887A7 /* /Users/kevinhouyang/Development/hifi/libraries/physics/src/ObjectDynamic.h */,
+				1C585AC2171846DD9A9C8855 /* /Users/kevinhouyang/Development/hifi/libraries/physics/src/ObjectMotionState.h */,
+				7F70678F3C6F496F851E2064 /* /Users/kevinhouyang/Development/hifi/libraries/physics/src/PhysicalEntitySimulation.h */,
+				E9D436CA65DE49FDAD9545FB /* /Users/kevinhouyang/Development/hifi/libraries/physics/src/PhysicsDebugDraw.h */,
+				33A0912EDDDD43FFB37C1871 /* /Users/kevinhouyang/Development/hifi/libraries/physics/src/PhysicsEngine.h */,
+				4A8B3CA3944A4C51A7597BBC /* /Users/kevinhouyang/Development/hifi/libraries/physics/src/PhysicsLogging.h */,
+				D3658B12A894417E99D98D3A /* /Users/kevinhouyang/Development/hifi/libraries/physics/src/ShapeFactory.h */,
+				6858AD26AE0047A682A99584 /* /Users/kevinhouyang/Development/hifi/libraries/physics/src/ShapeManager.h */,
+				8D4E3A46BEBE49C48833AA13 /* /Users/kevinhouyang/Development/hifi/libraries/physics/src/ThreadSafeDynamicsWorld.h */,
+			);
+			name = "Header Files";
+			sourceTree = "<group>";
+		};
+		878AC14308FF4DC2B081E0DA /* ALL_BUILD */ = {
+			isa = PBXGroup;
+			children = (
+				09AFBA2E93DF47B786659066 /* CMake Rules */,
+				0674737F620744C2B78D5EFB /* /Users/kevinhouyang/Development/hifi/libraries/physics/CMakeLists.txt */,
+			);
+			name = ALL_BUILD;
+			sourceTree = "<group>";
+		};
+		8F5A376CF0D1454689A90525 /* externals */ = {
+			isa = PBXGroup;
+			children = (
+				7A105CF5D0CF42BFA06256A4 /* bullet */,
+			);
+			name = externals;
+			sourceTree = "<group>";
+		};
+		8F8E36C5C2BD451A9BC99744 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E376CF06F17D4290A7207E06 /* physics */,
+				45E431153EDE4B7E8C205C95 /* task */,
+				CF0B8A0A0CCC4CA1925E4A86 /* workload */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		92AC237648424F67A6E588D9 /* CMake Rules */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "CMake Rules";
+			sourceTree = "<group>";
+		};
+		A231A3C009C2472FBD2E9BA9 /* hidden */ = {
+			isa = PBXGroup;
+			children = (
+				8F5A376CF0D1454689A90525 /* externals */,
+			);
+			name = hidden;
+			sourceTree = "<group>";
+		};
+		A662413986244D5DB5095705 /* workload_autogen */ = {
+			isa = PBXGroup;
+			children = (
+				92AC237648424F67A6E588D9 /* CMake Rules */,
+				12A6B74C793344FB902897D2 /* /Users/kevinhouyang/Development/hifi/libraries/workload/CMakeLists.txt */,
+			);
+			name = workload_autogen;
+			sourceTree = "<group>";
+		};
+		A97542D6A02042D483CE62CF /* Source Files */ = {
+			isa = PBXGroup;
+			children = (
+				F8206CCD96DD449FB2C07383 /* /Users/kevinhouyang/Development/hifi/build/libraries/physics/physics_autogen/mocs_compilation.cpp */,
+				5D50CF6CE60544098DD53A49 /* /Users/kevinhouyang/Development/hifi/libraries/physics/src/CharacterController.cpp */,
+				1F59DB7A245D4082B6706CCA /* /Users/kevinhouyang/Development/hifi/libraries/physics/src/CharacterGhostObject.cpp */,
+				797939A8EDE54DBBB2555968 /* /Users/kevinhouyang/Development/hifi/libraries/physics/src/CharacterGhostShape.cpp */,
+				1E96F04DC1AD468EAB406420 /* /Users/kevinhouyang/Development/hifi/libraries/physics/src/CharacterRayResult.cpp */,
+				284A57B15ACD48AAAFC6BC3F /* /Users/kevinhouyang/Development/hifi/libraries/physics/src/CharacterSweepResult.cpp */,
+				7278C40F5E064903873044D5 /* /Users/kevinhouyang/Development/hifi/libraries/physics/src/ContactInfo.cpp */,
+				BFD79B58FB9345BF8098C2C9 /* /Users/kevinhouyang/Development/hifi/libraries/physics/src/EntityMotionState.cpp */,
+				6DB69504D99C48489CAA3800 /* /Users/kevinhouyang/Development/hifi/libraries/physics/src/MeshMassProperties.cpp */,
+				328BDCE335A74D9589B968B2 /* /Users/kevinhouyang/Development/hifi/libraries/physics/src/ObjectAction.cpp */,
+				FC8F97A92EC14C6DB9B89E73 /* /Users/kevinhouyang/Development/hifi/libraries/physics/src/ObjectActionOffset.cpp */,
+				63535797C12D422E93EBFCFD /* /Users/kevinhouyang/Development/hifi/libraries/physics/src/ObjectActionTractor.cpp */,
+				68832829C9B444B990FC8A08 /* /Users/kevinhouyang/Development/hifi/libraries/physics/src/ObjectActionTravelOriented.cpp */,
+				751DD8C6388244E2A96AF0F4 /* /Users/kevinhouyang/Development/hifi/libraries/physics/src/ObjectConstraint.cpp */,
+				00399162E36F4421A606BCF4 /* /Users/kevinhouyang/Development/hifi/libraries/physics/src/ObjectConstraintBallSocket.cpp */,
+				6D914B0943ED402BA393737A /* /Users/kevinhouyang/Development/hifi/libraries/physics/src/ObjectConstraintConeTwist.cpp */,
+				4FA53C5A58A44E80AFEE4E83 /* /Users/kevinhouyang/Development/hifi/libraries/physics/src/ObjectConstraintHinge.cpp */,
+				065E556F444140DDA6A20FCB /* /Users/kevinhouyang/Development/hifi/libraries/physics/src/ObjectConstraintSlider.cpp */,
+				713B9E311B734764BCF114BA /* /Users/kevinhouyang/Development/hifi/libraries/physics/src/ObjectDynamic.cpp */,
+				314EEE946CAA466D98A32196 /* /Users/kevinhouyang/Development/hifi/libraries/physics/src/ObjectMotionState.cpp */,
+				B6BB46BCD74A4CFD8F18F501 /* /Users/kevinhouyang/Development/hifi/libraries/physics/src/PhysicalEntitySimulation.cpp */,
+				BB45D229B8DA4939A18F44D8 /* /Users/kevinhouyang/Development/hifi/libraries/physics/src/PhysicsDebugDraw.cpp */,
+				5D50CBC8D3AA4643B5E5EC12 /* /Users/kevinhouyang/Development/hifi/libraries/physics/src/PhysicsEngine.cpp */,
+				D91DC864159B46FA80363A20 /* /Users/kevinhouyang/Development/hifi/libraries/physics/src/PhysicsLogging.cpp */,
+				9819CAC4FBB140F0B7D8FF08 /* /Users/kevinhouyang/Development/hifi/libraries/physics/src/ShapeFactory.cpp */,
+				04CAA3E080604526B47F72D3 /* /Users/kevinhouyang/Development/hifi/libraries/physics/src/ShapeManager.cpp */,
+				A9C8EEEDC5834DACB131A688 /* /Users/kevinhouyang/Development/hifi/libraries/physics/src/ThreadSafeDynamicsWorld.cpp */,
+			);
+			name = "Source Files";
+			sourceTree = "<group>";
+		};
+		B8E3450839CD41F5B519940B = {
+			isa = PBXGroup;
+			children = (
+				5E136EE89EBC41DFB3940444 /* Libraries */,
+				878AC14308FF4DC2B081E0DA /* ALL_BUILD */,
+				A231A3C009C2472FBD2E9BA9 /* hidden */,
+				8F8E36C5C2BD451A9BC99744 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		BB141845B58549F298BFFE64 /* CMake Rules */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "CMake Rules";
+			sourceTree = "<group>";
+		};
+		CAE64AB3A7124638BEA95AE0 /* Header Files */ = {
+			isa = PBXGroup;
+			children = (
+				4F42B251AD034EEAA58B1BC5 /* /Users/kevinhouyang/Development/hifi/libraries/workload/src/workload/Engine.h */,
+				D583110467A84D1CA661816E /* /Users/kevinhouyang/Development/hifi/libraries/workload/src/workload/Proxy.h */,
+				A153DC940B264B93B8D28F23 /* /Users/kevinhouyang/Development/hifi/libraries/workload/src/workload/Region.h */,
+				473910D466F24105908DD96E /* /Users/kevinhouyang/Development/hifi/libraries/workload/src/workload/RegionState.h */,
+				46877740563543508096FC74 /* /Users/kevinhouyang/Development/hifi/libraries/workload/src/workload/RegionTracker.h */,
+				72975825D2AA43D4A018F161 /* /Users/kevinhouyang/Development/hifi/libraries/workload/src/workload/Space.h */,
+				7629035EEFEE423C938B7073 /* /Users/kevinhouyang/Development/hifi/libraries/workload/src/workload/SpaceClassifier.h */,
+				643EF8F509E44CAB8F7845B2 /* /Users/kevinhouyang/Development/hifi/libraries/workload/src/workload/Transaction.h */,
+				71605F0A8B0C4EDE94FB1368 /* /Users/kevinhouyang/Development/hifi/libraries/workload/src/workload/View.h */,
+				4472C6E54F2B474CA8651149 /* /Users/kevinhouyang/Development/hifi/libraries/workload/src/workload/ViewTask.h */,
+			);
+			name = "Header Files";
+			sourceTree = "<group>";
+		};
+		EBFB33AAFF2343F3841C6D08 /* CMake Rules */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "CMake Rules";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		6903A256FC7A439396139BEA /* physics */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 958096830E87471CA2579269 /* Build configuration list for PBXNativeTarget "physics" */;
+			buildPhases = (
+				FA23B6CC763D4718B2EA6288 /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				046CE5B3C44B49C9B48189B9 /* PBXTargetDependency */,
+				23D35ED447EE444AA70897D2 /* PBXTargetDependency */,
+				F2986D8F97A44D94BD856324 /* PBXTargetDependency */,
+				D27C90EE5A414EBAA29FC4EA /* PBXTargetDependency */,
+				9EF90403EAB34E26B336D418 /* PBXTargetDependency */,
+			);
+			name = physics;
+			productName = physics;
+			productReference = E376CF06F17D4290A7207E06 /* physics */;
+			productType = "com.apple.product-type.library.static";
+		};
+		D695DA5E07244EFFBC0ADA9C /* workload */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7B1836A5CE2C4E4995022D88 /* Build configuration list for PBXNativeTarget "workload" */;
+			buildPhases = (
+				05DE7E651EC945698BECF797 /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B75A69003CC149E184DB87D2 /* PBXTargetDependency */,
+				024D25B0EDFC4316A7BF603A /* PBXTargetDependency */,
+			);
+			name = workload;
+			productName = workload;
+			productReference = CF0B8A0A0CCC4CA1925E4A86 /* workload */;
+			productType = "com.apple.product-type.library.static";
+		};
+		E91F769E938F47D3A74AB7B7 /* task */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A590284609934BA591F03E48 /* Build configuration list for PBXNativeTarget "task" */;
+			buildPhases = (
+				84DEA8A681764D7483F1FBF6 /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D5748078015446DF89355472 /* PBXTargetDependency */,
+			);
+			name = task;
+			productName = task;
+			productReference = 45E431153EDE4B7E8C205C95 /* task */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		0D0207A4C58245D69F5FAE3A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = YES;
+				LastUpgradeCheck = 0930;
+			};
+			buildConfigurationList = 82E7B917B49A46489BC57A81 /* Build configuration list for PBXProject "physics" */;
+			buildSettings = {
+			};
+			buildStyles = (
+				EF003E416E684ED7986CA366 /* Debug */,
+				9877FFF5686B4CC78F5B29A3 /* Release */,
+				C4D60C9573C34348BFFF0062 /* MinSizeRel */,
+				706CC9EB1FCB42C18D387969 /* RelWithDebInfo */,
+			);
+			compatibilityVersion = "Xcode 3.2";
+			hasScannedForEncodings = 0;
+			mainGroup = B8E3450839CD41F5B519940B;
+			projectDirPath = ../../../libraries/physics;
+			projectRoot = "";
+			targets = (
+				EC7358D97DFB4AB0AF8A20EB /* ALL_BUILD */,
+				76BBA07C604F4D0E89A822F7 /* RUN_TESTS */,
+				324A15BFFEE94E94BA16B115 /* ZERO_CHECK */,
+				7A7E10E72F85450A98FB2D43 /* install */,
+				A0EF40283FD3451D881D67E2 /* package */,
+				6903A256FC7A439396139BEA /* physics */,
+				F1EAB527104D44D2BE752E8D /* physics_autogen */,
+				E91F769E938F47D3A74AB7B7 /* task */,
+				706F62AD7D3F40C28305D80F /* task_autogen */,
+				D695DA5E07244EFFBC0ADA9C /* workload */,
+				C9A52801EF88483BB604BD79 /* workload_autogen */,
+				8D57798453994B4D90A25EE1 /* bullet */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		13C5AB2A2DDA4CC186113597 = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# shell script goes here
+exit 0";
+			showEnvVarsInLog = 0;
+		};
+		191D98B256FF45C1935D73A3 /* CMake Rules */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			name = "CMake Rules";
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "make -C /Users/kevinhouyang/Development/hifi/build/libraries/physics -f /Users/kevinhouyang/Development/hifi/build/libraries/physics/CMakeScripts/ALL_BUILD_cmakeRulesBuildPhase.make$CONFIGURATION all";
+			showEnvVarsInLog = 0;
+		};
+		2F83FBA6F0104604BDD3A0E5 = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# shell script goes here
+exit 0";
+			showEnvVarsInLog = 0;
+		};
+		327AA210F2E9435A90A1CEFC = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# shell script goes here
+exit 0";
+			showEnvVarsInLog = 0;
+		};
+		37C73E23C3CC4559AD32EC30 = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# shell script goes here
+exit 0";
+			showEnvVarsInLog = 0;
+		};
+		3EFEA31244204132AD42129A = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# shell script goes here
+exit 0";
+			showEnvVarsInLog = 0;
+		};
+		432CBDE84FD44A5CA6B66504 /* CMake PostBuild Rules */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			name = "CMake PostBuild Rules";
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "make -C /Users/kevinhouyang/Development/hifi/build/libraries/physics -f /Users/kevinhouyang/Development/hifi/build/libraries/physics/CMakeScripts/RUN_TESTS_postBuildPhase.make$CONFIGURATION all";
+			showEnvVarsInLog = 0;
+		};
+		448AE0D86D72472789340B4E /* CMake Rules */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			name = "CMake Rules";
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "make -C /Users/kevinhouyang/Development/hifi/build/libraries/physics -f /Users/kevinhouyang/Development/hifi/build/libraries/physics/CMakeScripts/physics_autogen_cmakeRulesBuildPhase.make$CONFIGURATION all";
+			showEnvVarsInLog = 0;
+		};
+		524F1A2CC8734D629B3942A7 /* CMake PostBuild Rules */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			name = "CMake PostBuild Rules";
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "make -C /Users/kevinhouyang/Development/hifi/build/libraries/physics -f /Users/kevinhouyang/Development/hifi/build/libraries/physics/CMakeScripts/install_postBuildPhase.make$CONFIGURATION all";
+			showEnvVarsInLog = 0;
+		};
+		730B797515B14475A07D5B6F /* CMake Rules */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			name = "CMake Rules";
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "make -C /Users/kevinhouyang/Development/hifi/build/ext/Xcode/bullet -f /Users/kevinhouyang/Development/hifi/build/ext/Xcode/bullet/CMakeScripts/bullet_cmakeRulesBuildPhase.make$CONFIGURATION all";
+			showEnvVarsInLog = 0;
+		};
+		84D3C2A9C695493DBC47E39A = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# shell script goes here
+exit 0";
+			showEnvVarsInLog = 0;
+		};
+		922C07C3CF444AABAF7E7092 /* CMake PostBuild Rules */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			name = "CMake PostBuild Rules";
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "make -C /Users/kevinhouyang/Development/hifi/build/libraries/physics -f /Users/kevinhouyang/Development/hifi/build/libraries/physics/CMakeScripts/package_postBuildPhase.make$CONFIGURATION all";
+			showEnvVarsInLog = 0;
+		};
+		95DE46EA768C4824B127D3C3 /* CMake Rules */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			name = "CMake Rules";
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "make -C /Users/kevinhouyang/Development/hifi/build/libraries/task -f /Users/kevinhouyang/Development/hifi/build/libraries/task/CMakeScripts/task_autogen_cmakeRulesBuildPhase.make$CONFIGURATION all";
+			showEnvVarsInLog = 0;
+		};
+		A3E58CD47BB34275AD8F4BA5 = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# shell script goes here
+exit 0";
+			showEnvVarsInLog = 0;
+		};
+		C1E1374BA49A48358E87DCA1 /* CMake Rules */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			name = "CMake Rules";
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "make -C /Users/kevinhouyang/Development/hifi/build/libraries/physics -f /Users/kevinhouyang/Development/hifi/build/libraries/physics/CMakeScripts/ZERO_CHECK_cmakeRulesBuildPhase.make$CONFIGURATION all";
+			showEnvVarsInLog = 0;
+		};
+		C5D39D0487E84129B53BB9AC = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# shell script goes here
+exit 0";
+			showEnvVarsInLog = 0;
+		};
+		CE581E9F79B24A8EBE3F51F9 = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# shell script goes here
+exit 0";
+			showEnvVarsInLog = 0;
+		};
+		E38C2886395848D28424F86C /* CMake Rules */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			name = "CMake Rules";
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "make -C /Users/kevinhouyang/Development/hifi/build/libraries/workload -f /Users/kevinhouyang/Development/hifi/build/libraries/workload/CMakeScripts/workload_autogen_cmakeRulesBuildPhase.make$CONFIGURATION all";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		05DE7E651EC945698BECF797 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E70A92FA691A428F9A0D5256 /* /Users/kevinhouyang/Development/hifi/build/libraries/workload/workload_autogen/mocs_compilation.cpp */,
+				E72EAE7A4FAF4559948EB0A3 /* /Users/kevinhouyang/Development/hifi/libraries/workload/src/workload/Engine.cpp */,
+				BB59D335B17D459FB0E240A7 /* /Users/kevinhouyang/Development/hifi/libraries/workload/src/workload/RegionState.cpp */,
+				79A445828F9F4CF3AD9AD703 /* /Users/kevinhouyang/Development/hifi/libraries/workload/src/workload/RegionTracker.cpp */,
+				925C332A029F4BB0B0059FD2 /* /Users/kevinhouyang/Development/hifi/libraries/workload/src/workload/Space.cpp */,
+				6AAB1FC4F2A9486EBAB21884 /* /Users/kevinhouyang/Development/hifi/libraries/workload/src/workload/SpaceClassifier.cpp */,
+				845D5AFD805D4CB69EA6B756 /* /Users/kevinhouyang/Development/hifi/libraries/workload/src/workload/Transaction.cpp */,
+				5123C5E5AEEA4B7BAB98CA32 /* /Users/kevinhouyang/Development/hifi/libraries/workload/src/workload/View.cpp */,
+				B7D00F34F2EB4052A7FEE2F4 /* /Users/kevinhouyang/Development/hifi/libraries/workload/src/workload/ViewTask.cpp */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		84DEA8A681764D7483F1FBF6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D20E6982D9D34F7FAD5D1A74 /* /Users/kevinhouyang/Development/hifi/build/libraries/task/task_autogen/mocs_compilation.cpp */,
+				F48355CAE8114D13AE1FD32C /* /Users/kevinhouyang/Development/hifi/libraries/task/src/task/Config.cpp */,
+				DA1CD2C0D3A04424A63CCADA /* /Users/kevinhouyang/Development/hifi/libraries/task/src/task/Task.cpp */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FA23B6CC763D4718B2EA6288 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5ADE1B91585E43258BD4936E /* /Users/kevinhouyang/Development/hifi/build/libraries/physics/physics_autogen/mocs_compilation.cpp */,
+				34A5A41E71BB4521AA62CCFC /* /Users/kevinhouyang/Development/hifi/libraries/physics/src/CharacterController.cpp */,
+				3001CC8B37D64DEA8175E36B /* /Users/kevinhouyang/Development/hifi/libraries/physics/src/CharacterGhostObject.cpp */,
+				11DE51F02B13476C9F748E97 /* /Users/kevinhouyang/Development/hifi/libraries/physics/src/CharacterGhostShape.cpp */,
+				BF3E7D2C1DB446ECA2BA301B /* /Users/kevinhouyang/Development/hifi/libraries/physics/src/CharacterRayResult.cpp */,
+				55F7E5C3EDE1409389B9F140 /* /Users/kevinhouyang/Development/hifi/libraries/physics/src/CharacterSweepResult.cpp */,
+				4B0C9035376E48769264517F /* /Users/kevinhouyang/Development/hifi/libraries/physics/src/ContactInfo.cpp */,
+				C01EAAAD3CDE4F04A13043BB /* /Users/kevinhouyang/Development/hifi/libraries/physics/src/EntityMotionState.cpp */,
+				FE06B40F42B14D8EA0DB628F /* /Users/kevinhouyang/Development/hifi/libraries/physics/src/MeshMassProperties.cpp */,
+				1A78538A22F74A58B2BC31E0 /* /Users/kevinhouyang/Development/hifi/libraries/physics/src/ObjectAction.cpp */,
+				A4640E49DA47469284CECD2D /* /Users/kevinhouyang/Development/hifi/libraries/physics/src/ObjectActionOffset.cpp */,
+				2D7C26AF6D9F4F69BA43636C /* /Users/kevinhouyang/Development/hifi/libraries/physics/src/ObjectActionTractor.cpp */,
+				1FA7FDCC1BC74A428B963D65 /* /Users/kevinhouyang/Development/hifi/libraries/physics/src/ObjectActionTravelOriented.cpp */,
+				17AC60A596FB46B09B93FED0 /* /Users/kevinhouyang/Development/hifi/libraries/physics/src/ObjectConstraint.cpp */,
+				A231FBD2EE284897B31D6A48 /* /Users/kevinhouyang/Development/hifi/libraries/physics/src/ObjectConstraintBallSocket.cpp */,
+				9D4F4B7407194811A534F66A /* /Users/kevinhouyang/Development/hifi/libraries/physics/src/ObjectConstraintConeTwist.cpp */,
+				5CBB11D13C3E44299B70EFD4 /* /Users/kevinhouyang/Development/hifi/libraries/physics/src/ObjectConstraintHinge.cpp */,
+				E2E4DD3184714724B4F6170F /* /Users/kevinhouyang/Development/hifi/libraries/physics/src/ObjectConstraintSlider.cpp */,
+				FBB06231E4834293BFE90D99 /* /Users/kevinhouyang/Development/hifi/libraries/physics/src/ObjectDynamic.cpp */,
+				96736546020D43A8B74B4477 /* /Users/kevinhouyang/Development/hifi/libraries/physics/src/ObjectMotionState.cpp */,
+				D2BC9345F9484849A08C3BBB /* /Users/kevinhouyang/Development/hifi/libraries/physics/src/PhysicalEntitySimulation.cpp */,
+				6BA7CDE222814890A03EAD9E /* /Users/kevinhouyang/Development/hifi/libraries/physics/src/PhysicsDebugDraw.cpp */,
+				FFAB5D834E1D4F899F7C22B0 /* /Users/kevinhouyang/Development/hifi/libraries/physics/src/PhysicsEngine.cpp */,
+				07B42DC2AF974AF88B8CA29D /* /Users/kevinhouyang/Development/hifi/libraries/physics/src/PhysicsLogging.cpp */,
+				0659177522064C278405C356 /* /Users/kevinhouyang/Development/hifi/libraries/physics/src/ShapeFactory.cpp */,
+				140648DF5FE849A6BC4692AA /* /Users/kevinhouyang/Development/hifi/libraries/physics/src/ShapeManager.cpp */,
+				6FAE3F0498624D058A313567 /* /Users/kevinhouyang/Development/hifi/libraries/physics/src/ThreadSafeDynamicsWorld.cpp */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		024D25B0EDFC4316A7BF603A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C9A52801EF88483BB604BD79 /* workload_autogen */;
+			targetProxy = 70C3441EA5424CD2961280D9 /* PBXContainerItemProxy */;
+		};
+		046CE5B3C44B49C9B48189B9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 324A15BFFEE94E94BA16B115 /* ZERO_CHECK */;
+			targetProxy = 81C59702C3A5408DAEC2B747 /* PBXContainerItemProxy */;
+		};
+		05F0C5C0E9C943D391473D9A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8D57798453994B4D90A25EE1 /* bullet */;
+			targetProxy = DFCAAB666F91424AA17C6494 /* PBXContainerItemProxy */;
+		};
+		08BCA4824646401F92E4597E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 324A15BFFEE94E94BA16B115 /* ZERO_CHECK */;
+			targetProxy = 4CA3907AFD524A0B8BD30ABC /* PBXContainerItemProxy */;
+		};
+		1C1DD46394644E0FA1DF616B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E91F769E938F47D3A74AB7B7 /* task */;
+			targetProxy = 8C1851DE84E544B39FCA6CB0 /* PBXContainerItemProxy */;
+		};
+		23D35ED447EE444AA70897D2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F1EAB527104D44D2BE752E8D /* physics_autogen */;
+			targetProxy = D50DE40027CB4CAD941D2E16 /* PBXContainerItemProxy */;
+		};
+		34000D2F0D7E4D2186AD2439 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6903A256FC7A439396139BEA /* physics */;
+			targetProxy = 2425B3B8415440EDAD9EEA0A /* PBXContainerItemProxy */;
+		};
+		5F9D2BC3ED224809AE3C3F7D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8D57798453994B4D90A25EE1 /* bullet */;
+			targetProxy = A22BAC8AF42F42B6966DD420 /* PBXContainerItemProxy */;
+		};
+		92C0B46372F94F549B55F44A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 324A15BFFEE94E94BA16B115 /* ZERO_CHECK */;
+			targetProxy = F23C888DA2A5410D974DEF19 /* PBXContainerItemProxy */;
+		};
+		9CF8B69C99F34FF882017D4D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E91F769E938F47D3A74AB7B7 /* task */;
+			targetProxy = 4F26D7040E264E91BDA8088B /* PBXContainerItemProxy */;
+		};
+		9EF90403EAB34E26B336D418 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8D57798453994B4D90A25EE1 /* bullet */;
+			targetProxy = 488FA93DBE3648378BC7AB0F /* PBXContainerItemProxy */;
+		};
+		B75A69003CC149E184DB87D2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E91F769E938F47D3A74AB7B7 /* task */;
+			targetProxy = 556F0D6B1D9945CA8AB81E1B /* PBXContainerItemProxy */;
+		};
+		D27C90EE5A414EBAA29FC4EA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D695DA5E07244EFFBC0ADA9C /* workload */;
+			targetProxy = AB798F709D034544BB4927A6 /* PBXContainerItemProxy */;
+		};
+		D5748078015446DF89355472 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 706F62AD7D3F40C28305D80F /* task_autogen */;
+			targetProxy = 11DD6D535ED346169FFF1790 /* PBXContainerItemProxy */;
+		};
+		DA5540306068460EB3646E5D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EC7358D97DFB4AB0AF8A20EB /* ALL_BUILD */;
+			targetProxy = 9215C316E9A04F799F983D01 /* PBXContainerItemProxy */;
+		};
+		E3941807DC7A4A7A901E1ECD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D695DA5E07244EFFBC0ADA9C /* workload */;
+			targetProxy = 03F27DD13A734653950022DF /* PBXContainerItemProxy */;
+		};
+		E6A4692B375740EE8AB7AA57 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EC7358D97DFB4AB0AF8A20EB /* ALL_BUILD */;
+			targetProxy = F19127AC067A4B2E847F1A59 /* PBXContainerItemProxy */;
+		};
+		F2986D8F97A44D94BD856324 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E91F769E938F47D3A74AB7B7 /* task */;
+			targetProxy = A35A009D06E14C688E03AD54 /* PBXContainerItemProxy */;
+		};
+		FC3D7CDE0BFB4BD48436D0CB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E91F769E938F47D3A74AB7B7 /* task */;
+			targetProxy = C7876AA838B849B3B67CB958 /* PBXContainerItemProxy */;
+		};
+		FED25012458546DEB757D9CA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D695DA5E07244EFFBC0ADA9C /* workload */;
+			targetProxy = 2C151080C45C49979B55DC49 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		06F945B993C04F4590950FFD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = package;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/kevinhouyang/Development/hifi/build/libraries/physics;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = Release;
+		};
+		09190B9D4AC04BC68D91D2A7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = task_autogen;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/kevinhouyang/Development/hifi/build/libraries/task;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = Debug;
+		};
+		0B1D9EA21B064361AED12890 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .a;
+				FRAMEWORK_SEARCH_PATHS = (/usr/local/Cellar/qt/5.11.2/lib);
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",GLM_FORCE_RADIANS,DEV_BUILD,QT_CORE_LIB,QT_GUI_LIB,QT_NETWORK_LIB,QT_SCRIPT_LIB,QT_WIDGETS_LIB,QT_QML_LIB,QT_QUICK_LIB);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (/Users/kevinhouyang/Development/hifi/build/libraries/physics,/Users/kevinhouyang/Development/hifi/libraries/physics,/Users/kevinhouyang/Development/hifi/build/libraries/physics/physics_autogen/include_Debug,/Users/kevinhouyang/Development/hifi/build/includes,/Users/kevinhouyang/Development/hifi/build/ext/Xcode/glm/project/include,/Users/kevinhouyang/Development/hifi/libraries/shared/src,/Users/kevinhouyang/Development/hifi/build/libraries/shared,/Users/kevinhouyang/Development/hifi/libraries/task/src,/Users/kevinhouyang/Development/hifi/build/libraries/task,/Users/kevinhouyang/Development/hifi/libraries/workload/src,/Users/kevinhouyang/Development/hifi/build/libraries/workload,/Users/kevinhouyang/Development/hifi/libraries/fbx/src,/Users/kevinhouyang/Development/hifi/build/libraries/fbx,/Users/kevinhouyang/Development/hifi/libraries/entities/src,/Users/kevinhouyang/Development/hifi/build/libraries/entities,/Users/kevinhouyang/Development/hifi/libraries/graphics/src,/Users/kevinhouyang/Development/hifi/build/libraries/graphics,/Users/kevinhouyang/Development/hifi/libraries/networking/src,/Users/kevinhouyang/Development/hifi/libraries/gpu/src,/Users/kevinhouyang/Development/hifi/libraries/avatars/src,/Users/kevinhouyang/Development/hifi/libraries/audio/src,/Users/kevinhouyang/Development/hifi/libraries/octree/src,/Users/kevinhouyang/Development/hifi/libraries/animation/src,/Users/kevinhouyang/Development/hifi/build/ext/Xcode/json/project/src/json,/Users/kevinhouyang/Development/hifi/build/ext/Xcode/glad45/project/include);
+				INSTALL_PATH = "";
+				LIBRARY_STYLE = STATIC;
+				OTHER_CPLUSPLUSFLAGS = " -Wall -Wextra -fno-strict-aliasing -Wno-unused-parameter --stdlib=libc++    -isystem /Users/kevinhouyang/Development/hifi/build/ext/Xcode/bullet/project/include/bullet    -DDEBUG -fPIC '-std=gnu++14'  ";
+				OTHER_LIBTOOLFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = physics;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/kevinhouyang/Development/hifi/build/libraries/physics;
+				SYSTEM_HEADER_SEARCH_PATHS = (/usr/local/Cellar/qt/5.11.2/lib/QtCore.framework/Headers,"/usr/local/Cellar/qt/5.11.2/./mkspecs/macx-clang",/usr/local/Cellar/qt/5.11.2/lib/QtGui.framework/Headers,/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk/System/Library/Frameworks/OpenGL.framework/Headers,/usr/local/Cellar/qt/5.11.2/lib/QtNetwork.framework/Headers,/usr/local/Cellar/qt/5.11.2/lib/QtScript.framework/Headers,/usr/local/Cellar/qt/5.11.2/lib/QtWidgets.framework/Headers,/usr/local/Cellar/qt/5.11.2/lib/QtQml.framework/Headers,/usr/local/Cellar/qt/5.11.2/lib/QtQuick.framework/Headers,/Users/kevinhouyang/Development/hifi/build/ext/Xcode/tbb/project/src/tbb/include);
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = Debug;
+		};
+		0E2AAAA982A94FE89F850251 /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = package;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/kevinhouyang/Development/hifi/build/libraries/physics;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = MinSizeRel;
+		};
+		0F248CA7DCA54EBC81E355D9 /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .a;
+				FRAMEWORK_SEARCH_PATHS = (/usr/local/Cellar/qt/5.11.2/lib);
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 2;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",GLM_FORCE_RADIANS,DEV_BUILD,QT_CORE_LIB,QT_NO_DEBUG,QT_GUI_LIB,QT_NETWORK_LIB,QT_SCRIPT_LIB);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (/Users/kevinhouyang/Development/hifi/build/libraries/task,/Users/kevinhouyang/Development/hifi/libraries/task,/Users/kevinhouyang/Development/hifi/build/libraries/task/task_autogen/include_RelWithDebInfo,/Users/kevinhouyang/Development/hifi/build/includes,/Users/kevinhouyang/Development/hifi/build/ext/Xcode/glm/project/include,/Users/kevinhouyang/Development/hifi/libraries/shared/src,/Users/kevinhouyang/Development/hifi/build/libraries/shared);
+				INSTALL_PATH = "";
+				LIBRARY_STYLE = STATIC;
+				OTHER_CPLUSPLUSFLAGS = " -Wall -Wextra -fno-strict-aliasing -Wno-unused-parameter --stdlib=libc++           -DNDEBUG -fPIC '-std=gnu++14'  ";
+				OTHER_LIBTOOLFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = task;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/kevinhouyang/Development/hifi/build/libraries/task;
+				SYSTEM_HEADER_SEARCH_PATHS = (/usr/local/Cellar/qt/5.11.2/lib/QtCore.framework/Headers,"/usr/local/Cellar/qt/5.11.2/./mkspecs/macx-clang",/usr/local/Cellar/qt/5.11.2/lib/QtGui.framework/Headers,/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk/System/Library/Frameworks/OpenGL.framework/Headers,/usr/local/Cellar/qt/5.11.2/lib/QtNetwork.framework/Headers,/usr/local/Cellar/qt/5.11.2/lib/QtScript.framework/Headers);
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = RelWithDebInfo;
+		};
+		0F7AA3DCC97C421DA5C6D703 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = bullet;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/kevinhouyang/Development/hifi/build/ext/Xcode/bullet;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = Debug;
+		};
+		12CA52DB861745F3B381832D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = physics_autogen;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/kevinhouyang/Development/hifi/build/libraries/physics;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = Debug;
+		};
+		1428042BE3EC41F4B5DED811 /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ALL_BUILD;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/kevinhouyang/Development/hifi/build/libraries/physics;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = MinSizeRel;
+		};
+		1E4D6B74F3B64200BCB711A4 /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = workload_autogen;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/kevinhouyang/Development/hifi/build/libraries/workload;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = RelWithDebInfo;
+		};
+		202A8D0647FD419BB57B46A5 /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = install;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/kevinhouyang/Development/hifi/build/libraries/physics;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = RelWithDebInfo;
+		};
+		2076075A0FA14D4386BD7EB6 /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = bullet;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/kevinhouyang/Development/hifi/build/ext/Xcode/bullet;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = MinSizeRel;
+		};
+		219FEEE45CD34A7A841EF51A /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = RUN_TESTS;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/kevinhouyang/Development/hifi/build/libraries/physics;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = RelWithDebInfo;
+		};
+		27E149CA307742E0AE8BEEC2 /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "c++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk;
+				SYMROOT = /Users/kevinhouyang/Development/hifi/build/libraries/physics/build;
+			};
+			name = MinSizeRel;
+		};
+		3DA5783C03F44813B1DD6045 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "c++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk;
+				SYMROOT = /Users/kevinhouyang/Development/hifi/build/libraries/physics/build;
+			};
+			name = Debug;
+		};
+		3EA18590625E4A84AE882518 /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = package;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/kevinhouyang/Development/hifi/build/libraries/physics;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = RelWithDebInfo;
+		};
+		4087C776A5904795A72ACA90 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = package;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/kevinhouyang/Development/hifi/build/libraries/physics;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = Debug;
+		};
+		46ADE511EB3A4CD8BF14C8E2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = RUN_TESTS;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/kevinhouyang/Development/hifi/build/libraries/physics;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = Release;
+		};
+		5803E944D4D2411190FA4D51 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = workload_autogen;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/kevinhouyang/Development/hifi/build/libraries/workload;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = Debug;
+		};
+		583281349CE74D8F84BEEB27 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ZERO_CHECK;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/kevinhouyang/Development/hifi/build/libraries/physics;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = Debug;
+		};
+		59E3C39782494571B55ECB54 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = install;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/kevinhouyang/Development/hifi/build/libraries/physics;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = Release;
+		};
+		5A4DB0AF7D9B4FB79A8F40EE /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "c++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk;
+				SYMROOT = /Users/kevinhouyang/Development/hifi/build/libraries/physics/build;
+			};
+			name = RelWithDebInfo;
+		};
+		5D8E8B145E664B21B1B80F62 /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = workload_autogen;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/kevinhouyang/Development/hifi/build/libraries/workload;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = MinSizeRel;
+		};
+		6C72D1B51EA84FDFB882BAAF /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = physics_autogen;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/kevinhouyang/Development/hifi/build/libraries/physics;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = MinSizeRel;
+		};
+		6D69E2EC76DB46968024CD4A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = workload_autogen;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/kevinhouyang/Development/hifi/build/libraries/workload;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = Release;
+		};
+		82E42C3A14AC4663991BECAE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ALL_BUILD;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/kevinhouyang/Development/hifi/build/libraries/physics;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = Release;
+		};
+		846486C3D6B14D58BA601B9F /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ZERO_CHECK;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/kevinhouyang/Development/hifi/build/libraries/physics;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = RelWithDebInfo;
+		};
+		8730249FBD89490F9960B601 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = RUN_TESTS;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/kevinhouyang/Development/hifi/build/libraries/physics;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = Debug;
+		};
+		88857FC610DE481E99C94554 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .a;
+				FRAMEWORK_SEARCH_PATHS = (/usr/local/Cellar/qt/5.11.2/lib);
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 3;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",GLM_FORCE_RADIANS,DEV_BUILD,QT_CORE_LIB,QT_NO_DEBUG,QT_GUI_LIB,QT_NETWORK_LIB,QT_SCRIPT_LIB);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (/Users/kevinhouyang/Development/hifi/build/libraries/task,/Users/kevinhouyang/Development/hifi/libraries/task,/Users/kevinhouyang/Development/hifi/build/libraries/task/task_autogen/include_Release,/Users/kevinhouyang/Development/hifi/build/includes,/Users/kevinhouyang/Development/hifi/build/ext/Xcode/glm/project/include,/Users/kevinhouyang/Development/hifi/libraries/shared/src,/Users/kevinhouyang/Development/hifi/build/libraries/shared);
+				INSTALL_PATH = "";
+				LIBRARY_STYLE = STATIC;
+				OTHER_CPLUSPLUSFLAGS = " -Wall -Wextra -fno-strict-aliasing -Wno-unused-parameter --stdlib=libc++        -DNDEBUG -fPIC '-std=gnu++14'  ";
+				OTHER_LIBTOOLFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = task;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/kevinhouyang/Development/hifi/build/libraries/task;
+				SYSTEM_HEADER_SEARCH_PATHS = (/usr/local/Cellar/qt/5.11.2/lib/QtCore.framework/Headers,"/usr/local/Cellar/qt/5.11.2/./mkspecs/macx-clang",/usr/local/Cellar/qt/5.11.2/lib/QtGui.framework/Headers,/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk/System/Library/Frameworks/OpenGL.framework/Headers,/usr/local/Cellar/qt/5.11.2/lib/QtNetwork.framework/Headers,/usr/local/Cellar/qt/5.11.2/lib/QtScript.framework/Headers);
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = Release;
+		};
+		89E7E265EC654F23BCB527AB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .a;
+				FRAMEWORK_SEARCH_PATHS = (/usr/local/Cellar/qt/5.11.2/lib);
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",GLM_FORCE_RADIANS,DEV_BUILD,QT_CORE_LIB,QT_GUI_LIB,QT_NETWORK_LIB,QT_SCRIPT_LIB);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (/Users/kevinhouyang/Development/hifi/build/libraries/workload,/Users/kevinhouyang/Development/hifi/libraries/workload,/Users/kevinhouyang/Development/hifi/build/libraries/workload/workload_autogen/include_Debug,/Users/kevinhouyang/Development/hifi/build/includes,/Users/kevinhouyang/Development/hifi/build/ext/Xcode/glm/project/include,/Users/kevinhouyang/Development/hifi/libraries/shared/src,/Users/kevinhouyang/Development/hifi/build/libraries/shared,/Users/kevinhouyang/Development/hifi/libraries/task/src,/Users/kevinhouyang/Development/hifi/build/libraries/task);
+				INSTALL_PATH = "";
+				LIBRARY_STYLE = STATIC;
+				OTHER_CPLUSPLUSFLAGS = " -Wall -Wextra -fno-strict-aliasing -Wno-unused-parameter --stdlib=libc++       -DDEBUG -fPIC '-std=gnu++14'  ";
+				OTHER_LIBTOOLFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = workload;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/kevinhouyang/Development/hifi/build/libraries/workload;
+				SYSTEM_HEADER_SEARCH_PATHS = (/usr/local/Cellar/qt/5.11.2/lib/QtCore.framework/Headers,"/usr/local/Cellar/qt/5.11.2/./mkspecs/macx-clang",/usr/local/Cellar/qt/5.11.2/lib/QtGui.framework/Headers,/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk/System/Library/Frameworks/OpenGL.framework/Headers,/usr/local/Cellar/qt/5.11.2/lib/QtNetwork.framework/Headers,/usr/local/Cellar/qt/5.11.2/lib/QtScript.framework/Headers);
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = Debug;
+		};
+		904150D07C1D4A17948CB586 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ALL_BUILD;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/kevinhouyang/Development/hifi/build/libraries/physics;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = Debug;
+		};
+		986E080753BA468E86FFE1D1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .a;
+				FRAMEWORK_SEARCH_PATHS = (/usr/local/Cellar/qt/5.11.2/lib);
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",GLM_FORCE_RADIANS,DEV_BUILD,QT_CORE_LIB,QT_GUI_LIB,QT_NETWORK_LIB,QT_SCRIPT_LIB);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (/Users/kevinhouyang/Development/hifi/build/libraries/task,/Users/kevinhouyang/Development/hifi/libraries/task,/Users/kevinhouyang/Development/hifi/build/libraries/task/task_autogen/include_Debug,/Users/kevinhouyang/Development/hifi/build/includes,/Users/kevinhouyang/Development/hifi/build/ext/Xcode/glm/project/include,/Users/kevinhouyang/Development/hifi/libraries/shared/src,/Users/kevinhouyang/Development/hifi/build/libraries/shared);
+				INSTALL_PATH = "";
+				LIBRARY_STYLE = STATIC;
+				OTHER_CPLUSPLUSFLAGS = " -Wall -Wextra -fno-strict-aliasing -Wno-unused-parameter --stdlib=libc++       -DDEBUG -fPIC '-std=gnu++14'  ";
+				OTHER_LIBTOOLFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = task;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/kevinhouyang/Development/hifi/build/libraries/task;
+				SYSTEM_HEADER_SEARCH_PATHS = (/usr/local/Cellar/qt/5.11.2/lib/QtCore.framework/Headers,"/usr/local/Cellar/qt/5.11.2/./mkspecs/macx-clang",/usr/local/Cellar/qt/5.11.2/lib/QtGui.framework/Headers,/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk/System/Library/Frameworks/OpenGL.framework/Headers,/usr/local/Cellar/qt/5.11.2/lib/QtNetwork.framework/Headers,/usr/local/Cellar/qt/5.11.2/lib/QtScript.framework/Headers);
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = Debug;
+		};
+		A124E895DB0D45E2A0F97486 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .a;
+				FRAMEWORK_SEARCH_PATHS = (/usr/local/Cellar/qt/5.11.2/lib);
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 3;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",GLM_FORCE_RADIANS,DEV_BUILD,QT_CORE_LIB,QT_NO_DEBUG,QT_GUI_LIB,QT_NETWORK_LIB,QT_SCRIPT_LIB,QT_WIDGETS_LIB,QT_QML_LIB,QT_QUICK_LIB);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (/Users/kevinhouyang/Development/hifi/build/libraries/physics,/Users/kevinhouyang/Development/hifi/libraries/physics,/Users/kevinhouyang/Development/hifi/build/libraries/physics/physics_autogen/include_Release,/Users/kevinhouyang/Development/hifi/build/includes,/Users/kevinhouyang/Development/hifi/build/ext/Xcode/glm/project/include,/Users/kevinhouyang/Development/hifi/libraries/shared/src,/Users/kevinhouyang/Development/hifi/build/libraries/shared,/Users/kevinhouyang/Development/hifi/libraries/task/src,/Users/kevinhouyang/Development/hifi/build/libraries/task,/Users/kevinhouyang/Development/hifi/libraries/workload/src,/Users/kevinhouyang/Development/hifi/build/libraries/workload,/Users/kevinhouyang/Development/hifi/libraries/fbx/src,/Users/kevinhouyang/Development/hifi/build/libraries/fbx,/Users/kevinhouyang/Development/hifi/libraries/entities/src,/Users/kevinhouyang/Development/hifi/build/libraries/entities,/Users/kevinhouyang/Development/hifi/libraries/graphics/src,/Users/kevinhouyang/Development/hifi/build/libraries/graphics,/Users/kevinhouyang/Development/hifi/libraries/networking/src,/Users/kevinhouyang/Development/hifi/libraries/gpu/src,/Users/kevinhouyang/Development/hifi/libraries/avatars/src,/Users/kevinhouyang/Development/hifi/libraries/audio/src,/Users/kevinhouyang/Development/hifi/libraries/octree/src,/Users/kevinhouyang/Development/hifi/libraries/animation/src,/Users/kevinhouyang/Development/hifi/build/ext/Xcode/json/project/src/json,/Users/kevinhouyang/Development/hifi/build/ext/Xcode/glad45/project/include);
+				INSTALL_PATH = "";
+				LIBRARY_STYLE = STATIC;
+				OTHER_CPLUSPLUSFLAGS = " -Wall -Wextra -fno-strict-aliasing -Wno-unused-parameter --stdlib=libc++    -isystem /Users/kevinhouyang/Development/hifi/build/ext/Xcode/bullet/project/include/bullet     -DNDEBUG -fPIC '-std=gnu++14'  ";
+				OTHER_LIBTOOLFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = physics;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/kevinhouyang/Development/hifi/build/libraries/physics;
+				SYSTEM_HEADER_SEARCH_PATHS = (/usr/local/Cellar/qt/5.11.2/lib/QtCore.framework/Headers,"/usr/local/Cellar/qt/5.11.2/./mkspecs/macx-clang",/usr/local/Cellar/qt/5.11.2/lib/QtGui.framework/Headers,/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk/System/Library/Frameworks/OpenGL.framework/Headers,/usr/local/Cellar/qt/5.11.2/lib/QtNetwork.framework/Headers,/usr/local/Cellar/qt/5.11.2/lib/QtScript.framework/Headers,/usr/local/Cellar/qt/5.11.2/lib/QtWidgets.framework/Headers,/usr/local/Cellar/qt/5.11.2/lib/QtQml.framework/Headers,/usr/local/Cellar/qt/5.11.2/lib/QtQuick.framework/Headers,/Users/kevinhouyang/Development/hifi/build/ext/Xcode/tbb/project/src/tbb/include);
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = Release;
+		};
+		A294F81607CB46148C2163CD /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = physics_autogen;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/kevinhouyang/Development/hifi/build/libraries/physics;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = RelWithDebInfo;
+		};
+		A4221AE803C74528B2DC60ED /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .a;
+				FRAMEWORK_SEARCH_PATHS = (/usr/local/Cellar/qt/5.11.2/lib);
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = s;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",GLM_FORCE_RADIANS,DEV_BUILD,QT_CORE_LIB,QT_NO_DEBUG,QT_GUI_LIB,QT_NETWORK_LIB,QT_SCRIPT_LIB);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (/Users/kevinhouyang/Development/hifi/build/libraries/workload,/Users/kevinhouyang/Development/hifi/libraries/workload,/Users/kevinhouyang/Development/hifi/build/libraries/workload/workload_autogen/include_MinSizeRel,/Users/kevinhouyang/Development/hifi/build/includes,/Users/kevinhouyang/Development/hifi/build/ext/Xcode/glm/project/include,/Users/kevinhouyang/Development/hifi/libraries/shared/src,/Users/kevinhouyang/Development/hifi/build/libraries/shared,/Users/kevinhouyang/Development/hifi/libraries/task/src,/Users/kevinhouyang/Development/hifi/build/libraries/task);
+				INSTALL_PATH = "";
+				LIBRARY_STYLE = STATIC;
+				OTHER_CPLUSPLUSFLAGS = " -Wall -Wextra -fno-strict-aliasing -Wno-unused-parameter --stdlib=libc++        -DNDEBUG -fPIC '-std=gnu++14'  ";
+				OTHER_LIBTOOLFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = workload;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/kevinhouyang/Development/hifi/build/libraries/workload;
+				SYSTEM_HEADER_SEARCH_PATHS = (/usr/local/Cellar/qt/5.11.2/lib/QtCore.framework/Headers,"/usr/local/Cellar/qt/5.11.2/./mkspecs/macx-clang",/usr/local/Cellar/qt/5.11.2/lib/QtGui.framework/Headers,/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk/System/Library/Frameworks/OpenGL.framework/Headers,/usr/local/Cellar/qt/5.11.2/lib/QtNetwork.framework/Headers,/usr/local/Cellar/qt/5.11.2/lib/QtScript.framework/Headers);
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = MinSizeRel;
+		};
+		B14C2655992C4AEBA9FF371A /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = task_autogen;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/kevinhouyang/Development/hifi/build/libraries/task;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = RelWithDebInfo;
+		};
+		B4E903CB319849A5BD935A24 /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = task_autogen;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/kevinhouyang/Development/hifi/build/libraries/task;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = MinSizeRel;
+		};
+		B7728847B4C5404EA00AFDAE /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ZERO_CHECK;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/kevinhouyang/Development/hifi/build/libraries/physics;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = MinSizeRel;
+		};
+		BAE16F5764384D9AA051A841 /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = bullet;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/kevinhouyang/Development/hifi/build/ext/Xcode/bullet;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = RelWithDebInfo;
+		};
+		BB973D41442345F3B2781A66 /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .a;
+				FRAMEWORK_SEARCH_PATHS = (/usr/local/Cellar/qt/5.11.2/lib);
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 2;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",GLM_FORCE_RADIANS,DEV_BUILD,QT_CORE_LIB,QT_NO_DEBUG,QT_GUI_LIB,QT_NETWORK_LIB,QT_SCRIPT_LIB,QT_WIDGETS_LIB,QT_QML_LIB,QT_QUICK_LIB);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (/Users/kevinhouyang/Development/hifi/build/libraries/physics,/Users/kevinhouyang/Development/hifi/libraries/physics,/Users/kevinhouyang/Development/hifi/build/libraries/physics/physics_autogen/include_RelWithDebInfo,/Users/kevinhouyang/Development/hifi/build/includes,/Users/kevinhouyang/Development/hifi/build/ext/Xcode/glm/project/include,/Users/kevinhouyang/Development/hifi/libraries/shared/src,/Users/kevinhouyang/Development/hifi/build/libraries/shared,/Users/kevinhouyang/Development/hifi/libraries/task/src,/Users/kevinhouyang/Development/hifi/build/libraries/task,/Users/kevinhouyang/Development/hifi/libraries/workload/src,/Users/kevinhouyang/Development/hifi/build/libraries/workload,/Users/kevinhouyang/Development/hifi/libraries/fbx/src,/Users/kevinhouyang/Development/hifi/build/libraries/fbx,/Users/kevinhouyang/Development/hifi/libraries/entities/src,/Users/kevinhouyang/Development/hifi/build/libraries/entities,/Users/kevinhouyang/Development/hifi/libraries/graphics/src,/Users/kevinhouyang/Development/hifi/build/libraries/graphics,/Users/kevinhouyang/Development/hifi/libraries/networking/src,/Users/kevinhouyang/Development/hifi/libraries/gpu/src,/Users/kevinhouyang/Development/hifi/libraries/avatars/src,/Users/kevinhouyang/Development/hifi/libraries/audio/src,/Users/kevinhouyang/Development/hifi/libraries/octree/src,/Users/kevinhouyang/Development/hifi/libraries/animation/src,/Users/kevinhouyang/Development/hifi/build/ext/Xcode/json/project/src/json,/Users/kevinhouyang/Development/hifi/build/ext/Xcode/glad45/project/include);
+				INSTALL_PATH = "";
+				LIBRARY_STYLE = STATIC;
+				OTHER_CPLUSPLUSFLAGS = " -Wall -Wextra -fno-strict-aliasing -Wno-unused-parameter --stdlib=libc++    -isystem /Users/kevinhouyang/Development/hifi/build/ext/Xcode/bullet/project/include/bullet        -DNDEBUG -fPIC '-std=gnu++14'  ";
+				OTHER_LIBTOOLFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = physics;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/kevinhouyang/Development/hifi/build/libraries/physics;
+				SYSTEM_HEADER_SEARCH_PATHS = (/usr/local/Cellar/qt/5.11.2/lib/QtCore.framework/Headers,"/usr/local/Cellar/qt/5.11.2/./mkspecs/macx-clang",/usr/local/Cellar/qt/5.11.2/lib/QtGui.framework/Headers,/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk/System/Library/Frameworks/OpenGL.framework/Headers,/usr/local/Cellar/qt/5.11.2/lib/QtNetwork.framework/Headers,/usr/local/Cellar/qt/5.11.2/lib/QtScript.framework/Headers,/usr/local/Cellar/qt/5.11.2/lib/QtWidgets.framework/Headers,/usr/local/Cellar/qt/5.11.2/lib/QtQml.framework/Headers,/usr/local/Cellar/qt/5.11.2/lib/QtQuick.framework/Headers,/Users/kevinhouyang/Development/hifi/build/ext/Xcode/tbb/project/src/tbb/include);
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = RelWithDebInfo;
+		};
+		BDC66AF2A162435DA71FB690 /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .a;
+				FRAMEWORK_SEARCH_PATHS = (/usr/local/Cellar/qt/5.11.2/lib);
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 2;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",GLM_FORCE_RADIANS,DEV_BUILD,QT_CORE_LIB,QT_NO_DEBUG,QT_GUI_LIB,QT_NETWORK_LIB,QT_SCRIPT_LIB);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (/Users/kevinhouyang/Development/hifi/build/libraries/workload,/Users/kevinhouyang/Development/hifi/libraries/workload,/Users/kevinhouyang/Development/hifi/build/libraries/workload/workload_autogen/include_RelWithDebInfo,/Users/kevinhouyang/Development/hifi/build/includes,/Users/kevinhouyang/Development/hifi/build/ext/Xcode/glm/project/include,/Users/kevinhouyang/Development/hifi/libraries/shared/src,/Users/kevinhouyang/Development/hifi/build/libraries/shared,/Users/kevinhouyang/Development/hifi/libraries/task/src,/Users/kevinhouyang/Development/hifi/build/libraries/task);
+				INSTALL_PATH = "";
+				LIBRARY_STYLE = STATIC;
+				OTHER_CPLUSPLUSFLAGS = " -Wall -Wextra -fno-strict-aliasing -Wno-unused-parameter --stdlib=libc++           -DNDEBUG -fPIC '-std=gnu++14'  ";
+				OTHER_LIBTOOLFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = workload;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/kevinhouyang/Development/hifi/build/libraries/workload;
+				SYSTEM_HEADER_SEARCH_PATHS = (/usr/local/Cellar/qt/5.11.2/lib/QtCore.framework/Headers,"/usr/local/Cellar/qt/5.11.2/./mkspecs/macx-clang",/usr/local/Cellar/qt/5.11.2/lib/QtGui.framework/Headers,/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk/System/Library/Frameworks/OpenGL.framework/Headers,/usr/local/Cellar/qt/5.11.2/lib/QtNetwork.framework/Headers,/usr/local/Cellar/qt/5.11.2/lib/QtScript.framework/Headers);
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = RelWithDebInfo;
+		};
+		BF7350A3BADF4FD48281854B /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ALL_BUILD;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/kevinhouyang/Development/hifi/build/libraries/physics;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = RelWithDebInfo;
+		};
+		C3C39A4EC8B34B1D9F2D43A6 /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = install;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/kevinhouyang/Development/hifi/build/libraries/physics;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = MinSizeRel;
+		};
+		C697DD4DEF614658A230012B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .a;
+				FRAMEWORK_SEARCH_PATHS = (/usr/local/Cellar/qt/5.11.2/lib);
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 3;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",GLM_FORCE_RADIANS,DEV_BUILD,QT_CORE_LIB,QT_NO_DEBUG,QT_GUI_LIB,QT_NETWORK_LIB,QT_SCRIPT_LIB);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (/Users/kevinhouyang/Development/hifi/build/libraries/workload,/Users/kevinhouyang/Development/hifi/libraries/workload,/Users/kevinhouyang/Development/hifi/build/libraries/workload/workload_autogen/include_Release,/Users/kevinhouyang/Development/hifi/build/includes,/Users/kevinhouyang/Development/hifi/build/ext/Xcode/glm/project/include,/Users/kevinhouyang/Development/hifi/libraries/shared/src,/Users/kevinhouyang/Development/hifi/build/libraries/shared,/Users/kevinhouyang/Development/hifi/libraries/task/src,/Users/kevinhouyang/Development/hifi/build/libraries/task);
+				INSTALL_PATH = "";
+				LIBRARY_STYLE = STATIC;
+				OTHER_CPLUSPLUSFLAGS = " -Wall -Wextra -fno-strict-aliasing -Wno-unused-parameter --stdlib=libc++        -DNDEBUG -fPIC '-std=gnu++14'  ";
+				OTHER_LIBTOOLFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = workload;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/kevinhouyang/Development/hifi/build/libraries/workload;
+				SYSTEM_HEADER_SEARCH_PATHS = (/usr/local/Cellar/qt/5.11.2/lib/QtCore.framework/Headers,"/usr/local/Cellar/qt/5.11.2/./mkspecs/macx-clang",/usr/local/Cellar/qt/5.11.2/lib/QtGui.framework/Headers,/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk/System/Library/Frameworks/OpenGL.framework/Headers,/usr/local/Cellar/qt/5.11.2/lib/QtNetwork.framework/Headers,/usr/local/Cellar/qt/5.11.2/lib/QtScript.framework/Headers);
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = Release;
+		};
+		C7C3A7F332734F5AA6156230 /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .a;
+				FRAMEWORK_SEARCH_PATHS = (/usr/local/Cellar/qt/5.11.2/lib);
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = s;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",GLM_FORCE_RADIANS,DEV_BUILD,QT_CORE_LIB,QT_NO_DEBUG,QT_GUI_LIB,QT_NETWORK_LIB,QT_SCRIPT_LIB);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (/Users/kevinhouyang/Development/hifi/build/libraries/task,/Users/kevinhouyang/Development/hifi/libraries/task,/Users/kevinhouyang/Development/hifi/build/libraries/task/task_autogen/include_MinSizeRel,/Users/kevinhouyang/Development/hifi/build/includes,/Users/kevinhouyang/Development/hifi/build/ext/Xcode/glm/project/include,/Users/kevinhouyang/Development/hifi/libraries/shared/src,/Users/kevinhouyang/Development/hifi/build/libraries/shared);
+				INSTALL_PATH = "";
+				LIBRARY_STYLE = STATIC;
+				OTHER_CPLUSPLUSFLAGS = " -Wall -Wextra -fno-strict-aliasing -Wno-unused-parameter --stdlib=libc++        -DNDEBUG -fPIC '-std=gnu++14'  ";
+				OTHER_LIBTOOLFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = task;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/kevinhouyang/Development/hifi/build/libraries/task;
+				SYSTEM_HEADER_SEARCH_PATHS = (/usr/local/Cellar/qt/5.11.2/lib/QtCore.framework/Headers,"/usr/local/Cellar/qt/5.11.2/./mkspecs/macx-clang",/usr/local/Cellar/qt/5.11.2/lib/QtGui.framework/Headers,/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk/System/Library/Frameworks/OpenGL.framework/Headers,/usr/local/Cellar/qt/5.11.2/lib/QtNetwork.framework/Headers,/usr/local/Cellar/qt/5.11.2/lib/QtScript.framework/Headers);
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = MinSizeRel;
+		};
+		C9643260B8A342B8B81F3940 /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = RUN_TESTS;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/kevinhouyang/Development/hifi/build/libraries/physics;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = MinSizeRel;
+		};
+		CFF05CAFFA534D7A8C245E84 /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .a;
+				FRAMEWORK_SEARCH_PATHS = (/usr/local/Cellar/qt/5.11.2/lib);
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = s;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",GLM_FORCE_RADIANS,DEV_BUILD,QT_CORE_LIB,QT_NO_DEBUG,QT_GUI_LIB,QT_NETWORK_LIB,QT_SCRIPT_LIB,QT_WIDGETS_LIB,QT_QML_LIB,QT_QUICK_LIB);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (/Users/kevinhouyang/Development/hifi/build/libraries/physics,/Users/kevinhouyang/Development/hifi/libraries/physics,/Users/kevinhouyang/Development/hifi/build/libraries/physics/physics_autogen/include_MinSizeRel,/Users/kevinhouyang/Development/hifi/build/includes,/Users/kevinhouyang/Development/hifi/build/ext/Xcode/glm/project/include,/Users/kevinhouyang/Development/hifi/libraries/shared/src,/Users/kevinhouyang/Development/hifi/build/libraries/shared,/Users/kevinhouyang/Development/hifi/libraries/task/src,/Users/kevinhouyang/Development/hifi/build/libraries/task,/Users/kevinhouyang/Development/hifi/libraries/workload/src,/Users/kevinhouyang/Development/hifi/build/libraries/workload,/Users/kevinhouyang/Development/hifi/libraries/fbx/src,/Users/kevinhouyang/Development/hifi/build/libraries/fbx,/Users/kevinhouyang/Development/hifi/libraries/entities/src,/Users/kevinhouyang/Development/hifi/build/libraries/entities,/Users/kevinhouyang/Development/hifi/libraries/graphics/src,/Users/kevinhouyang/Development/hifi/build/libraries/graphics,/Users/kevinhouyang/Development/hifi/libraries/networking/src,/Users/kevinhouyang/Development/hifi/libraries/gpu/src,/Users/kevinhouyang/Development/hifi/libraries/avatars/src,/Users/kevinhouyang/Development/hifi/libraries/audio/src,/Users/kevinhouyang/Development/hifi/libraries/octree/src,/Users/kevinhouyang/Development/hifi/libraries/animation/src,/Users/kevinhouyang/Development/hifi/build/ext/Xcode/json/project/src/json,/Users/kevinhouyang/Development/hifi/build/ext/Xcode/glad45/project/include);
+				INSTALL_PATH = "";
+				LIBRARY_STYLE = STATIC;
+				OTHER_CPLUSPLUSFLAGS = " -Wall -Wextra -fno-strict-aliasing -Wno-unused-parameter --stdlib=libc++    -isystem /Users/kevinhouyang/Development/hifi/build/ext/Xcode/bullet/project/include/bullet     -DNDEBUG -fPIC '-std=gnu++14'  ";
+				OTHER_LIBTOOLFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = physics;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/kevinhouyang/Development/hifi/build/libraries/physics;
+				SYSTEM_HEADER_SEARCH_PATHS = (/usr/local/Cellar/qt/5.11.2/lib/QtCore.framework/Headers,"/usr/local/Cellar/qt/5.11.2/./mkspecs/macx-clang",/usr/local/Cellar/qt/5.11.2/lib/QtGui.framework/Headers,/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk/System/Library/Frameworks/OpenGL.framework/Headers,/usr/local/Cellar/qt/5.11.2/lib/QtNetwork.framework/Headers,/usr/local/Cellar/qt/5.11.2/lib/QtScript.framework/Headers,/usr/local/Cellar/qt/5.11.2/lib/QtWidgets.framework/Headers,/usr/local/Cellar/qt/5.11.2/lib/QtQml.framework/Headers,/usr/local/Cellar/qt/5.11.2/lib/QtQuick.framework/Headers,/Users/kevinhouyang/Development/hifi/build/ext/Xcode/tbb/project/src/tbb/include);
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = MinSizeRel;
+		};
+		D782730B565E421BBAA81817 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "c++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEPLOYMENT_POSTPROCESSING = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk;
+				SYMROOT = /Users/kevinhouyang/Development/hifi/build/libraries/physics/build;
+			};
+			name = Release;
+		};
+		DA141C88877942AC81C5EF0A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = physics_autogen;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/kevinhouyang/Development/hifi/build/libraries/physics;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = Release;
+		};
+		DE70E20D50274E9895548114 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = bullet;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/kevinhouyang/Development/hifi/build/ext/Xcode/bullet;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = Release;
+		};
+		E784E0CD505A402DB1F69E9F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ZERO_CHECK;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/kevinhouyang/Development/hifi/build/libraries/physics;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = Release;
+		};
+		EB92F079840A4A6FA89ED846 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = install;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/kevinhouyang/Development/hifi/build/libraries/physics;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = Debug;
+		};
+		FAE05D7C28894B9C890610AE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = task_autogen;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/kevinhouyang/Development/hifi/build/libraries/task;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		170DB3047B934EA884A376EB /* Build configuration list for PBXAggregateTarget "physics_autogen" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				12CA52DB861745F3B381832D /* Debug */,
+				DA141C88877942AC81C5EF0A /* Release */,
+				6C72D1B51EA84FDFB882BAAF /* MinSizeRel */,
+				A294F81607CB46148C2163CD /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		33AEA145F9FC4EEEB7B6DE63 /* Build configuration list for PBXAggregateTarget "ZERO_CHECK" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				583281349CE74D8F84BEEB27 /* Debug */,
+				E784E0CD505A402DB1F69E9F /* Release */,
+				B7728847B4C5404EA00AFDAE /* MinSizeRel */,
+				846486C3D6B14D58BA601B9F /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		3828C244FC1E493E9CA20DAD /* Build configuration list for PBXAggregateTarget "package" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4087C776A5904795A72ACA90 /* Debug */,
+				06F945B993C04F4590950FFD /* Release */,
+				0E2AAAA982A94FE89F850251 /* MinSizeRel */,
+				3EA18590625E4A84AE882518 /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		45C1C00188084498A9EB1FFC /* Build configuration list for PBXAggregateTarget "ALL_BUILD" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				904150D07C1D4A17948CB586 /* Debug */,
+				82E42C3A14AC4663991BECAE /* Release */,
+				1428042BE3EC41F4B5DED811 /* MinSizeRel */,
+				BF7350A3BADF4FD48281854B /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		61B4EBF7470C44DCA3522C78 /* Build configuration list for PBXAggregateTarget "workload_autogen" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5803E944D4D2411190FA4D51 /* Debug */,
+				6D69E2EC76DB46968024CD4A /* Release */,
+				5D8E8B145E664B21B1B80F62 /* MinSizeRel */,
+				1E4D6B74F3B64200BCB711A4 /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		70400F728DEC4E03A829FDEC /* Build configuration list for PBXAggregateTarget "task_autogen" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				09190B9D4AC04BC68D91D2A7 /* Debug */,
+				FAE05D7C28894B9C890610AE /* Release */,
+				B4E903CB319849A5BD935A24 /* MinSizeRel */,
+				B14C2655992C4AEBA9FF371A /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		7B1836A5CE2C4E4995022D88 /* Build configuration list for PBXNativeTarget "workload" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				89E7E265EC654F23BCB527AB /* Debug */,
+				C697DD4DEF614658A230012B /* Release */,
+				A4221AE803C74528B2DC60ED /* MinSizeRel */,
+				BDC66AF2A162435DA71FB690 /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		82E7B917B49A46489BC57A81 /* Build configuration list for PBXProject "physics" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3DA5783C03F44813B1DD6045 /* Debug */,
+				D782730B565E421BBAA81817 /* Release */,
+				27E149CA307742E0AE8BEEC2 /* MinSizeRel */,
+				5A4DB0AF7D9B4FB79A8F40EE /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		958096830E87471CA2579269 /* Build configuration list for PBXNativeTarget "physics" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0B1D9EA21B064361AED12890 /* Debug */,
+				A124E895DB0D45E2A0F97486 /* Release */,
+				CFF05CAFFA534D7A8C245E84 /* MinSizeRel */,
+				BB973D41442345F3B2781A66 /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		A590284609934BA591F03E48 /* Build configuration list for PBXNativeTarget "task" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				986E080753BA468E86FFE1D1 /* Debug */,
+				88857FC610DE481E99C94554 /* Release */,
+				C7C3A7F332734F5AA6156230 /* MinSizeRel */,
+				0F248CA7DCA54EBC81E355D9 /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		B515830665CB498AA6A0CCAC /* Build configuration list for PBXAggregateTarget "RUN_TESTS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8730249FBD89490F9960B601 /* Debug */,
+				46ADE511EB3A4CD8BF14C8E2 /* Release */,
+				C9643260B8A342B8B81F3940 /* MinSizeRel */,
+				219FEEE45CD34A7A841EF51A /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		C2C3E209413F4717A3E33F55 /* Build configuration list for PBXAggregateTarget "install" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EB92F079840A4A6FA89ED846 /* Debug */,
+				59E3C39782494571B55ECB54 /* Release */,
+				C3C39A4EC8B34B1D9F2D43A6 /* MinSizeRel */,
+				202A8D0647FD419BB57B46A5 /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		E1565C471E114DDDB9210314 /* Build configuration list for PBXAggregateTarget "bullet" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0F7AA3DCC97C421DA5C6D703 /* Debug */,
+				DE70E20D50274E9895548114 /* Release */,
+				2076075A0FA14D4386BD7EB6 /* MinSizeRel */,
+				BAE16F5764384D9AA051A841 /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 0D0207A4C58245D69F5FAE3A /* Project object */;
+}

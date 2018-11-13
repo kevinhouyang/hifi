@@ -1,0 +1,13 @@
+# Target labels
+ LibOVR
+# Source files and their labels
+/Users/kevinhouyang/Development/hifi/build/ext/Xcode/LibOVR/CMakeFiles/LibOVR
+/Users/kevinhouyang/Development/hifi/build/ext/Xcode/LibOVR/CMakeFiles/LibOVR.rule
+/Users/kevinhouyang/Development/hifi/build/ext/Xcode/LibOVR/CMakeFiles/CMakeFiles/LibOVR-complete.rule
+/Users/kevinhouyang/Development/hifi/build/ext/Xcode/LibOVR/project/src/LibOVR-stamp/CMakeFiles/LibOVR-install.rule
+/Users/kevinhouyang/Development/hifi/build/ext/Xcode/LibOVR/project/src/LibOVR-stamp/CMakeFiles/LibOVR-mkdir.rule
+/Users/kevinhouyang/Development/hifi/build/ext/Xcode/LibOVR/project/src/LibOVR-stamp/CMakeFiles/LibOVR-download.rule
+/Users/kevinhouyang/Development/hifi/build/ext/Xcode/LibOVR/project/src/LibOVR-stamp/CMakeFiles/LibOVR-update.rule
+/Users/kevinhouyang/Development/hifi/build/ext/Xcode/LibOVR/project/src/LibOVR-stamp/CMakeFiles/LibOVR-patch.rule
+/Users/kevinhouyang/Development/hifi/build/ext/Xcode/LibOVR/project/src/LibOVR-stamp/CMakeFiles/LibOVR-configure.rule
+/Users/kevinhouyang/Development/hifi/build/ext/Xcode/LibOVR/project/src/LibOVR-stamp/CMakeFiles/LibOVR-build.rule

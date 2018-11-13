@@ -1,0 +1,43 @@
+{
+	"sources" : 
+	[
+		{
+			"file" : "/Users/kevinhouyang/Development/hifi/build/ext/Xcode/neuron/CMakeFiles/neuron"
+		},
+		{
+			"file" : "/Users/kevinhouyang/Development/hifi/build/ext/Xcode/neuron/CMakeFiles/neuron.rule"
+		},
+		{
+			"file" : "/Users/kevinhouyang/Development/hifi/build/ext/Xcode/neuron/CMakeFiles/CMakeFiles/neuron-complete.rule"
+		},
+		{
+			"file" : "/Users/kevinhouyang/Development/hifi/build/ext/Xcode/neuron/project/src/neuron-stamp/CMakeFiles/neuron-install.rule"
+		},
+		{
+			"file" : "/Users/kevinhouyang/Development/hifi/build/ext/Xcode/neuron/project/src/neuron-stamp/CMakeFiles/neuron-mkdir.rule"
+		},
+		{
+			"file" : "/Users/kevinhouyang/Development/hifi/build/ext/Xcode/neuron/project/src/neuron-stamp/CMakeFiles/neuron-download.rule"
+		},
+		{
+			"file" : "/Users/kevinhouyang/Development/hifi/build/ext/Xcode/neuron/project/src/neuron-stamp/CMakeFiles/neuron-update.rule"
+		},
+		{
+			"file" : "/Users/kevinhouyang/Development/hifi/build/ext/Xcode/neuron/project/src/neuron-stamp/CMakeFiles/neuron-patch.rule"
+		},
+		{
+			"file" : "/Users/kevinhouyang/Development/hifi/build/ext/Xcode/neuron/project/src/neuron-stamp/CMakeFiles/neuron-configure.rule"
+		},
+		{
+			"file" : "/Users/kevinhouyang/Development/hifi/build/ext/Xcode/neuron/project/src/neuron-stamp/CMakeFiles/neuron-build.rule"
+		}
+	],
+	"target" : 
+	{
+		"labels" : 
+		[
+			"neuron"
+		],
+		"name" : "neuron"
+	}
+}

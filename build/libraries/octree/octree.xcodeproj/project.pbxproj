@@ -1,0 +1,1367 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXAggregateTarget section */
+		324A15BFFEE94E94BA16B115 /* ZERO_CHECK */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 74F3D1A07FEC49AB90C18B28 /* Build configuration list for PBXAggregateTarget "ZERO_CHECK" */;
+			buildPhases = (
+				9949163585974A9DA819956A /* CMake Rules */,
+			);
+			dependencies = (
+			);
+			name = ZERO_CHECK;
+			productName = ZERO_CHECK;
+		};
+		690CB309771449DC8E1F838D /* octree_autogen */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 48A3441BC8A84FC194FADE84 /* Build configuration list for PBXAggregateTarget "octree_autogen" */;
+			buildPhases = (
+				ECE615703A4F41FDA01DDA5C /* CMake Rules */,
+			);
+			dependencies = (
+				1A78111BD8944DE0803D5CE2 /* PBXTargetDependency */,
+			);
+			name = octree_autogen;
+			productName = octree_autogen;
+		};
+		76BBA07C604F4D0E89A822F7 /* RUN_TESTS */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 9AD3CEFBB87B4B1480D9EE51 /* Build configuration list for PBXAggregateTarget "RUN_TESTS" */;
+			buildPhases = (
+				E128BC9E10DE4395BC222EE4 /* CMake PostBuild Rules */,
+			);
+			dependencies = (
+			);
+			name = RUN_TESTS;
+			productName = RUN_TESTS;
+		};
+		7A7E10E72F85450A98FB2D43 /* install */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = B51CD644019D46748E5D1492 /* Build configuration list for PBXAggregateTarget "install" */;
+			buildPhases = (
+				71B34D93FF194E1D92DF4989 /* CMake PostBuild Rules */,
+			);
+			dependencies = (
+				1FB36560C6994DAC898C5661 /* PBXTargetDependency */,
+			);
+			name = install;
+			productName = install;
+		};
+		A0EF40283FD3451D881D67E2 /* package */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = E793BA1CAC0546949BEADCBD /* Build configuration list for PBXAggregateTarget "package" */;
+			buildPhases = (
+				BF97CFD7812C4CAE8418948A /* CMake PostBuild Rules */,
+			);
+			dependencies = (
+				21C2C871429744BF9B9EB63F /* PBXTargetDependency */,
+			);
+			name = package;
+			productName = package;
+		};
+		EC7358D97DFB4AB0AF8A20EB /* ALL_BUILD */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 09AC152FF51046C8861F77E8 /* Build configuration list for PBXAggregateTarget "ALL_BUILD" */;
+			buildPhases = (
+				7860A5E9D8D2467DB0716E9E /* CMake Rules */,
+			);
+			dependencies = (
+				AA8F0834B1F84412827E3AC9 /* PBXTargetDependency */,
+				590339DA2E6B4E459D26806F /* PBXTargetDependency */,
+			);
+			name = ALL_BUILD;
+			productName = ALL_BUILD;
+		};
+/* End PBXAggregateTarget section */
+
+/* Begin PBXBuildFile section */
+		0204CC6C72C64E9ABC11C51D /* /Users/kevinhouyang/Development/hifi/libraries/octree/src/OctreeSceneStats.h */ = {isa = PBXBuildFile; fileRef = 8406C702A0494C1BB56C6C11 /* /Users/kevinhouyang/Development/hifi/libraries/octree/src/OctreeSceneStats.h */; };
+		062C1114938F40718CC06FFD /* /Users/kevinhouyang/Development/hifi/libraries/octree/src/OctreeQueryNode.h */ = {isa = PBXBuildFile; fileRef = FB723239496C42F6BBABE8F5 /* /Users/kevinhouyang/Development/hifi/libraries/octree/src/OctreeQueryNode.h */; };
+		06FE35E1476A430EA3B25720 /* /Users/kevinhouyang/Development/hifi/libraries/octree/src/OctreeQueryNode.cpp */ = {isa = PBXBuildFile; fileRef = 5A5C5F78F5A349289151BA34 /* /Users/kevinhouyang/Development/hifi/libraries/octree/src/OctreeQueryNode.cpp */; };
+		0E01EE7BD95E4ACAA6991785 /* /Users/kevinhouyang/Development/hifi/libraries/octree/src/Logging.h */ = {isa = PBXBuildFile; fileRef = B9E20FD163F943E29E5B9ECA /* /Users/kevinhouyang/Development/hifi/libraries/octree/src/Logging.h */; };
+		149738725875450E88CD2970 /* /Users/kevinhouyang/Development/hifi/libraries/octree/src/Octree.cpp */ = {isa = PBXBuildFile; fileRef = 4F2A984AB9FF4F6C9AC46197 /* /Users/kevinhouyang/Development/hifi/libraries/octree/src/Octree.cpp */; };
+		339DFBECE67744189209DB79 /* /Users/kevinhouyang/Development/hifi/libraries/octree/src/OctreeElement.cpp */ = {isa = PBXBuildFile; fileRef = BC2A1921E93A4A70B8907AF6 /* /Users/kevinhouyang/Development/hifi/libraries/octree/src/OctreeElement.cpp */; };
+		3594262C68944395B7531EBF /* /Users/kevinhouyang/Development/hifi/libraries/octree/src/OctreeScriptingInterface.h */ = {isa = PBXBuildFile; fileRef = 1866AFAE5D304B329975FB05 /* /Users/kevinhouyang/Development/hifi/libraries/octree/src/OctreeScriptingInterface.h */; };
+		3A2C8C9504B640439BC685BD /* /Users/kevinhouyang/Development/hifi/libraries/octree/src/OctreeElement.h */ = {isa = PBXBuildFile; fileRef = B143C6B490BC444596A112E3 /* /Users/kevinhouyang/Development/hifi/libraries/octree/src/OctreeElement.h */; };
+		436F5EB6161D4874B92BD04D /* /Users/kevinhouyang/Development/hifi/libraries/octree/src/OctreePacketData.h */ = {isa = PBXBuildFile; fileRef = 5C012CF00EEF4C159F6E42B0 /* /Users/kevinhouyang/Development/hifi/libraries/octree/src/OctreePacketData.h */; };
+		4EEA4C498CE44FA79750DC3F /* /Users/kevinhouyang/Development/hifi/libraries/octree/src/OctreeLogging.cpp */ = {isa = PBXBuildFile; fileRef = A00661CAE5FA4C01AF0CFDD2 /* /Users/kevinhouyang/Development/hifi/libraries/octree/src/OctreeLogging.cpp */; };
+		50824D04F2CF4902BF49F8ED /* /Users/kevinhouyang/Development/hifi/libraries/octree/src/OctreeLogging.h */ = {isa = PBXBuildFile; fileRef = 3FD400545156493AA34E133A /* /Users/kevinhouyang/Development/hifi/libraries/octree/src/OctreeLogging.h */; };
+		53C84ADC5B47466BAFEDC622 /* /Users/kevinhouyang/Development/hifi/libraries/octree/src/OctreeScriptingInterface.cpp */ = {isa = PBXBuildFile; fileRef = ADEB6879BC15456FA387433E /* /Users/kevinhouyang/Development/hifi/libraries/octree/src/OctreeScriptingInterface.cpp */; };
+		574623F873504914A98974D4 /* /Users/kevinhouyang/Development/hifi/libraries/octree/src/Octree.h */ = {isa = PBXBuildFile; fileRef = BB7195B6F04A4F5891BF5838 /* /Users/kevinhouyang/Development/hifi/libraries/octree/src/Octree.h */; };
+		616EFB1BB50644C18D619269 /* /Users/kevinhouyang/Development/hifi/libraries/octree/src/OctreeDataUtils.h */ = {isa = PBXBuildFile; fileRef = 48191D6B931040DF925317A2 /* /Users/kevinhouyang/Development/hifi/libraries/octree/src/OctreeDataUtils.h */; };
+		6A2F91A480EB405FB8A9EEFB /* /Users/kevinhouyang/Development/hifi/libraries/octree/src/OctreeSceneStats.cpp */ = {isa = PBXBuildFile; fileRef = 76B78DE702194CE7B6724283 /* /Users/kevinhouyang/Development/hifi/libraries/octree/src/OctreeSceneStats.cpp */; };
+		7ECDCCBE24F6486E92FE6EF1 /* /Users/kevinhouyang/Development/hifi/libraries/octree/src/OctreeElementBag.h */ = {isa = PBXBuildFile; fileRef = 07C5E35BC89E4184A2AE8880 /* /Users/kevinhouyang/Development/hifi/libraries/octree/src/OctreeElementBag.h */; };
+		82A142C6A05645818D81B21E /* /Users/kevinhouyang/Development/hifi/libraries/octree/src/OctreeProcessor.h */ = {isa = PBXBuildFile; fileRef = A65F4BDC79814B529308D1DF /* /Users/kevinhouyang/Development/hifi/libraries/octree/src/OctreeProcessor.h */; };
+		8778B449239E457C83373B40 /* /Users/kevinhouyang/Development/hifi/libraries/octree/src/OctreePersistThread.h */ = {isa = PBXBuildFile; fileRef = 0770DF07B807449196E470C5 /* /Users/kevinhouyang/Development/hifi/libraries/octree/src/OctreePersistThread.h */; };
+		8C81ED1FDE6B4CF7AD6E6FB3 /* /Users/kevinhouyang/Development/hifi/libraries/octree/src/OctreeQuery.h */ = {isa = PBXBuildFile; fileRef = 2E3D179DCA064D1CBD0FA50E /* /Users/kevinhouyang/Development/hifi/libraries/octree/src/OctreeQuery.h */; };
+		AFA2B34B7D9D46F1AE3BE0FF /* /Users/kevinhouyang/Development/hifi/libraries/octree/src/OctreeUtils.h */ = {isa = PBXBuildFile; fileRef = 23242159C5484E97B383C8D8 /* /Users/kevinhouyang/Development/hifi/libraries/octree/src/OctreeUtils.h */; };
+		BB955267FB27416EA032501C /* /Users/kevinhouyang/Development/hifi/libraries/octree/src/OctreeQuery.cpp */ = {isa = PBXBuildFile; fileRef = 62FE4461D32B42DA8EDF4018 /* /Users/kevinhouyang/Development/hifi/libraries/octree/src/OctreeQuery.cpp */; };
+		CBE8342C215345CC83500A69 /* /Users/kevinhouyang/Development/hifi/libraries/octree/CMakeLists.txt */ = {isa = PBXBuildFile; fileRef = 13B2BB7D5C464634889F7E76 /* /Users/kevinhouyang/Development/hifi/libraries/octree/CMakeLists.txt */; };
+		D32F158ECAAF49CE804D7C42 /* /Users/kevinhouyang/Development/hifi/libraries/octree/src/OctreeConstants.h */ = {isa = PBXBuildFile; fileRef = 8C82FE076E884492926640D1 /* /Users/kevinhouyang/Development/hifi/libraries/octree/src/OctreeConstants.h */; };
+		D5C4B4B248A3403B8D96461E /* /Users/kevinhouyang/Development/hifi/libraries/octree/src/OctreePersistThread.cpp */ = {isa = PBXBuildFile; fileRef = 6154E30A1274459CB7D352ED /* /Users/kevinhouyang/Development/hifi/libraries/octree/src/OctreePersistThread.cpp */; };
+		D608C1DCAD8847C7BD94283E /* /Users/kevinhouyang/Development/hifi/libraries/octree/src/OctreeEditPacketSender.cpp */ = {isa = PBXBuildFile; fileRef = 9793DB1A0170483FAB232D3B /* /Users/kevinhouyang/Development/hifi/libraries/octree/src/OctreeEditPacketSender.cpp */; };
+		D7FC4CC507444EC5B5ACBFB3 /* /Users/kevinhouyang/Development/hifi/libraries/octree/src/OctreeProcessor.cpp */ = {isa = PBXBuildFile; fileRef = F40CAB3AFC9941F3940F1514 /* /Users/kevinhouyang/Development/hifi/libraries/octree/src/OctreeProcessor.cpp */; };
+		D8B308635C324FF0A7DBD7EF /* /Users/kevinhouyang/Development/hifi/libraries/octree/src/DirtyOctreeElementOperator.h */ = {isa = PBXBuildFile; fileRef = C19A3B3991A44ACD8C85AF30 /* /Users/kevinhouyang/Development/hifi/libraries/octree/src/DirtyOctreeElementOperator.h */; };
+		DF23C624E07A40768C1A8702 /* /Users/kevinhouyang/Development/hifi/libraries/octree/src/DirtyOctreeElementOperator.cpp */ = {isa = PBXBuildFile; fileRef = F16098E3852341BA9960E4C1 /* /Users/kevinhouyang/Development/hifi/libraries/octree/src/DirtyOctreeElementOperator.cpp */; };
+		E447E11775CF42FFBAA6412C /* /Users/kevinhouyang/Development/hifi/libraries/octree/src/OctreePacketData.cpp */ = {isa = PBXBuildFile; fileRef = 4686268329B04A2F9CCE2333 /* /Users/kevinhouyang/Development/hifi/libraries/octree/src/OctreePacketData.cpp */; };
+		E841ED3BD3584813880C63D4 /* /Users/kevinhouyang/Development/hifi/libraries/octree/src/OctreeUtils.cpp */ = {isa = PBXBuildFile; fileRef = DEAAEE5B3FCF45AD9A6CFDCE /* /Users/kevinhouyang/Development/hifi/libraries/octree/src/OctreeUtils.cpp */; };
+		EF9B11DCD647462CBC70D04B /* /Users/kevinhouyang/Development/hifi/build/libraries/octree/octree_autogen/mocs_compilation.cpp */ = {isa = PBXBuildFile; fileRef = 84F44E4D5C084669987B32CB /* /Users/kevinhouyang/Development/hifi/build/libraries/octree/octree_autogen/mocs_compilation.cpp */; };
+		F604C41C2E97434A9A819B67 /* /Users/kevinhouyang/Development/hifi/libraries/octree/src/OctreeDataUtils.cpp */ = {isa = PBXBuildFile; fileRef = A6A5BBF7AEEC427E8046F44E /* /Users/kevinhouyang/Development/hifi/libraries/octree/src/OctreeDataUtils.cpp */; };
+		F8B9F2522CE44181A755BA03 /* /Users/kevinhouyang/Development/hifi/libraries/octree/src/OctreeEditPacketSender.h */ = {isa = PBXBuildFile; fileRef = 1377CBE2E8AD4FBEA6E52187 /* /Users/kevinhouyang/Development/hifi/libraries/octree/src/OctreeEditPacketSender.h */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXBuildStyle section */
+		13ECFB2CF98C4158B17EA8BA /* Release */ = {
+			isa = PBXBuildStyle;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+			};
+			name = Release;
+		};
+		D62560A4718C43AEBBD4EAC7 /* MinSizeRel */ = {
+			isa = PBXBuildStyle;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+			};
+			name = MinSizeRel;
+		};
+		DDA45637A2164B3C8A8C53AD /* RelWithDebInfo */ = {
+			isa = PBXBuildStyle;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+			};
+			name = RelWithDebInfo;
+		};
+		FC9DD7CA8D0A4F4C9CD3CD90 /* Debug */ = {
+			isa = PBXBuildStyle;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+			};
+			name = Debug;
+		};
+/* End PBXBuildStyle section */
+
+/* Begin PBXContainerItemProxy section */
+		32A582D534D04550B1A8A534 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 50EDEA9A0A8D4BD48A33894D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 324A15BFFEE94E94BA16B115;
+			remoteInfo = ZERO_CHECK;
+		};
+		686ECABD95C74703978BBCCE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 50EDEA9A0A8D4BD48A33894D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 324A15BFFEE94E94BA16B115;
+			remoteInfo = ZERO_CHECK;
+		};
+		9210365A54CC4812A973B533 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 50EDEA9A0A8D4BD48A33894D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EC7358D97DFB4AB0AF8A20EB;
+			remoteInfo = ALL_BUILD;
+		};
+		A8E60182027E4858918A96A3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 50EDEA9A0A8D4BD48A33894D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 324A15BFFEE94E94BA16B115;
+			remoteInfo = ZERO_CHECK;
+		};
+		AC4303CA4B33448EB09E0587 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 50EDEA9A0A8D4BD48A33894D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 196B8FB6C42E47F1AC553C48;
+			remoteInfo = octree;
+		};
+		CBFDAF5BE6E34A1689ABD942 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 50EDEA9A0A8D4BD48A33894D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 690CB309771449DC8E1F838D;
+			remoteInfo = octree_autogen;
+		};
+		E0938A454B8B49FEB6B15EA6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 50EDEA9A0A8D4BD48A33894D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EC7358D97DFB4AB0AF8A20EB;
+			remoteInfo = ALL_BUILD;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0770DF07B807449196E470C5 /* /Users/kevinhouyang/Development/hifi/libraries/octree/src/OctreePersistThread.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = OctreePersistThread.h; path = src/OctreePersistThread.h; sourceTree = SOURCE_ROOT; };
+		07C5E35BC89E4184A2AE8880 /* /Users/kevinhouyang/Development/hifi/libraries/octree/src/OctreeElementBag.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = OctreeElementBag.h; path = src/OctreeElementBag.h; sourceTree = SOURCE_ROOT; };
+		1377CBE2E8AD4FBEA6E52187 /* /Users/kevinhouyang/Development/hifi/libraries/octree/src/OctreeEditPacketSender.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = OctreeEditPacketSender.h; path = src/OctreeEditPacketSender.h; sourceTree = SOURCE_ROOT; };
+		13B2BB7D5C464634889F7E76 /* /Users/kevinhouyang/Development/hifi/libraries/octree/CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; name = CMakeLists.txt; path = CMakeLists.txt; sourceTree = SOURCE_ROOT; };
+		1866AFAE5D304B329975FB05 /* /Users/kevinhouyang/Development/hifi/libraries/octree/src/OctreeScriptingInterface.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = OctreeScriptingInterface.h; path = src/OctreeScriptingInterface.h; sourceTree = SOURCE_ROOT; };
+		23242159C5484E97B383C8D8 /* /Users/kevinhouyang/Development/hifi/libraries/octree/src/OctreeUtils.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = OctreeUtils.h; path = src/OctreeUtils.h; sourceTree = SOURCE_ROOT; };
+		2E3D179DCA064D1CBD0FA50E /* /Users/kevinhouyang/Development/hifi/libraries/octree/src/OctreeQuery.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = OctreeQuery.h; path = src/OctreeQuery.h; sourceTree = SOURCE_ROOT; };
+		3FD400545156493AA34E133A /* /Users/kevinhouyang/Development/hifi/libraries/octree/src/OctreeLogging.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = OctreeLogging.h; path = src/OctreeLogging.h; sourceTree = SOURCE_ROOT; };
+		4686268329B04A2F9CCE2333 /* /Users/kevinhouyang/Development/hifi/libraries/octree/src/OctreePacketData.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = OctreePacketData.cpp; path = src/OctreePacketData.cpp; sourceTree = SOURCE_ROOT; };
+		46A5A4E17488461BBBF66784 /* /Users/kevinhouyang/Development/hifi/libraries/octree/CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; name = CMakeLists.txt; path = CMakeLists.txt; sourceTree = SOURCE_ROOT; };
+		48191D6B931040DF925317A2 /* /Users/kevinhouyang/Development/hifi/libraries/octree/src/OctreeDataUtils.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = OctreeDataUtils.h; path = src/OctreeDataUtils.h; sourceTree = SOURCE_ROOT; };
+		4F2A984AB9FF4F6C9AC46197 /* /Users/kevinhouyang/Development/hifi/libraries/octree/src/Octree.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = Octree.cpp; path = src/Octree.cpp; sourceTree = SOURCE_ROOT; };
+		5A5C5F78F5A349289151BA34 /* /Users/kevinhouyang/Development/hifi/libraries/octree/src/OctreeQueryNode.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = OctreeQueryNode.cpp; path = src/OctreeQueryNode.cpp; sourceTree = SOURCE_ROOT; };
+		5B1224E9A3F64253A39EDE19 /* /Users/kevinhouyang/Development/hifi/libraries/octree/CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; name = CMakeLists.txt; path = CMakeLists.txt; sourceTree = SOURCE_ROOT; };
+		5C012CF00EEF4C159F6E42B0 /* /Users/kevinhouyang/Development/hifi/libraries/octree/src/OctreePacketData.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = OctreePacketData.h; path = src/OctreePacketData.h; sourceTree = SOURCE_ROOT; };
+		6154E30A1274459CB7D352ED /* /Users/kevinhouyang/Development/hifi/libraries/octree/src/OctreePersistThread.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = OctreePersistThread.cpp; path = src/OctreePersistThread.cpp; sourceTree = SOURCE_ROOT; };
+		62FE4461D32B42DA8EDF4018 /* /Users/kevinhouyang/Development/hifi/libraries/octree/src/OctreeQuery.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = OctreeQuery.cpp; path = src/OctreeQuery.cpp; sourceTree = SOURCE_ROOT; };
+		76B78DE702194CE7B6724283 /* /Users/kevinhouyang/Development/hifi/libraries/octree/src/OctreeSceneStats.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = OctreeSceneStats.cpp; path = src/OctreeSceneStats.cpp; sourceTree = SOURCE_ROOT; };
+		8406C702A0494C1BB56C6C11 /* /Users/kevinhouyang/Development/hifi/libraries/octree/src/OctreeSceneStats.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = OctreeSceneStats.h; path = src/OctreeSceneStats.h; sourceTree = SOURCE_ROOT; };
+		84F44E4D5C084669987B32CB /* /Users/kevinhouyang/Development/hifi/build/libraries/octree/octree_autogen/mocs_compilation.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = mocs_compilation.cpp; path = ../../build/libraries/octree/octree_autogen/mocs_compilation.cpp; sourceTree = SOURCE_ROOT; };
+		8C82FE076E884492926640D1 /* /Users/kevinhouyang/Development/hifi/libraries/octree/src/OctreeConstants.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = OctreeConstants.h; path = src/OctreeConstants.h; sourceTree = SOURCE_ROOT; };
+		9793DB1A0170483FAB232D3B /* /Users/kevinhouyang/Development/hifi/libraries/octree/src/OctreeEditPacketSender.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = OctreeEditPacketSender.cpp; path = src/OctreeEditPacketSender.cpp; sourceTree = SOURCE_ROOT; };
+		A00661CAE5FA4C01AF0CFDD2 /* /Users/kevinhouyang/Development/hifi/libraries/octree/src/OctreeLogging.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = OctreeLogging.cpp; path = src/OctreeLogging.cpp; sourceTree = SOURCE_ROOT; };
+		A65F4BDC79814B529308D1DF /* /Users/kevinhouyang/Development/hifi/libraries/octree/src/OctreeProcessor.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = OctreeProcessor.h; path = src/OctreeProcessor.h; sourceTree = SOURCE_ROOT; };
+		A6A5BBF7AEEC427E8046F44E /* /Users/kevinhouyang/Development/hifi/libraries/octree/src/OctreeDataUtils.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = OctreeDataUtils.cpp; path = src/OctreeDataUtils.cpp; sourceTree = SOURCE_ROOT; };
+		ADEB6879BC15456FA387433E /* /Users/kevinhouyang/Development/hifi/libraries/octree/src/OctreeScriptingInterface.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = OctreeScriptingInterface.cpp; path = src/OctreeScriptingInterface.cpp; sourceTree = SOURCE_ROOT; };
+		B143C6B490BC444596A112E3 /* /Users/kevinhouyang/Development/hifi/libraries/octree/src/OctreeElement.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = OctreeElement.h; path = src/OctreeElement.h; sourceTree = SOURCE_ROOT; };
+		B9E20FD163F943E29E5B9ECA /* /Users/kevinhouyang/Development/hifi/libraries/octree/src/Logging.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = Logging.h; path = src/Logging.h; sourceTree = SOURCE_ROOT; };
+		BB7195B6F04A4F5891BF5838 /* /Users/kevinhouyang/Development/hifi/libraries/octree/src/Octree.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = Octree.h; path = src/Octree.h; sourceTree = SOURCE_ROOT; };
+		BC2A1921E93A4A70B8907AF6 /* /Users/kevinhouyang/Development/hifi/libraries/octree/src/OctreeElement.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = OctreeElement.cpp; path = src/OctreeElement.cpp; sourceTree = SOURCE_ROOT; };
+		C19A3B3991A44ACD8C85AF30 /* /Users/kevinhouyang/Development/hifi/libraries/octree/src/DirtyOctreeElementOperator.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = DirtyOctreeElementOperator.h; path = src/DirtyOctreeElementOperator.h; sourceTree = SOURCE_ROOT; };
+		CED4C54E8DA2434DA70B3E48 /* octree */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = liboctree.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		DEAAEE5B3FCF45AD9A6CFDCE /* /Users/kevinhouyang/Development/hifi/libraries/octree/src/OctreeUtils.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = OctreeUtils.cpp; path = src/OctreeUtils.cpp; sourceTree = SOURCE_ROOT; };
+		F16098E3852341BA9960E4C1 /* /Users/kevinhouyang/Development/hifi/libraries/octree/src/DirtyOctreeElementOperator.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = DirtyOctreeElementOperator.cpp; path = src/DirtyOctreeElementOperator.cpp; sourceTree = SOURCE_ROOT; };
+		F40CAB3AFC9941F3940F1514 /* /Users/kevinhouyang/Development/hifi/libraries/octree/src/OctreeProcessor.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = OctreeProcessor.cpp; path = src/OctreeProcessor.cpp; sourceTree = SOURCE_ROOT; };
+		FB723239496C42F6BBABE8F5 /* /Users/kevinhouyang/Development/hifi/libraries/octree/src/OctreeQueryNode.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = OctreeQueryNode.h; path = src/OctreeQueryNode.h; sourceTree = SOURCE_ROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXGroup section */
+		0C91C2A485494729B79C0338 /* octree */ = {
+			isa = PBXGroup;
+			children = (
+				20DDA176B41A4095A91ABF4F /* Source Files */,
+				402B807660474164A4215FDB /* Header Files */,
+				13B2BB7D5C464634889F7E76 /* /Users/kevinhouyang/Development/hifi/libraries/octree/CMakeLists.txt */,
+			);
+			name = octree;
+			sourceTree = "<group>";
+		};
+		19C221CCD016471D8C926270 /* ALL_BUILD */ = {
+			isa = PBXGroup;
+			children = (
+				B8270412A8CA4CAFB9570EC0 /* CMake Rules */,
+				5B1224E9A3F64253A39EDE19 /* /Users/kevinhouyang/Development/hifi/libraries/octree/CMakeLists.txt */,
+			);
+			name = ALL_BUILD;
+			sourceTree = "<group>";
+		};
+		20DDA176B41A4095A91ABF4F /* Source Files */ = {
+			isa = PBXGroup;
+			children = (
+				84F44E4D5C084669987B32CB /* /Users/kevinhouyang/Development/hifi/build/libraries/octree/octree_autogen/mocs_compilation.cpp */,
+				F16098E3852341BA9960E4C1 /* /Users/kevinhouyang/Development/hifi/libraries/octree/src/DirtyOctreeElementOperator.cpp */,
+				4F2A984AB9FF4F6C9AC46197 /* /Users/kevinhouyang/Development/hifi/libraries/octree/src/Octree.cpp */,
+				A6A5BBF7AEEC427E8046F44E /* /Users/kevinhouyang/Development/hifi/libraries/octree/src/OctreeDataUtils.cpp */,
+				9793DB1A0170483FAB232D3B /* /Users/kevinhouyang/Development/hifi/libraries/octree/src/OctreeEditPacketSender.cpp */,
+				BC2A1921E93A4A70B8907AF6 /* /Users/kevinhouyang/Development/hifi/libraries/octree/src/OctreeElement.cpp */,
+				A00661CAE5FA4C01AF0CFDD2 /* /Users/kevinhouyang/Development/hifi/libraries/octree/src/OctreeLogging.cpp */,
+				4686268329B04A2F9CCE2333 /* /Users/kevinhouyang/Development/hifi/libraries/octree/src/OctreePacketData.cpp */,
+				6154E30A1274459CB7D352ED /* /Users/kevinhouyang/Development/hifi/libraries/octree/src/OctreePersistThread.cpp */,
+				F40CAB3AFC9941F3940F1514 /* /Users/kevinhouyang/Development/hifi/libraries/octree/src/OctreeProcessor.cpp */,
+				62FE4461D32B42DA8EDF4018 /* /Users/kevinhouyang/Development/hifi/libraries/octree/src/OctreeQuery.cpp */,
+				5A5C5F78F5A349289151BA34 /* /Users/kevinhouyang/Development/hifi/libraries/octree/src/OctreeQueryNode.cpp */,
+				76B78DE702194CE7B6724283 /* /Users/kevinhouyang/Development/hifi/libraries/octree/src/OctreeSceneStats.cpp */,
+				ADEB6879BC15456FA387433E /* /Users/kevinhouyang/Development/hifi/libraries/octree/src/OctreeScriptingInterface.cpp */,
+				DEAAEE5B3FCF45AD9A6CFDCE /* /Users/kevinhouyang/Development/hifi/libraries/octree/src/OctreeUtils.cpp */,
+			);
+			name = "Source Files";
+			sourceTree = "<group>";
+		};
+		402B807660474164A4215FDB /* Header Files */ = {
+			isa = PBXGroup;
+			children = (
+				C19A3B3991A44ACD8C85AF30 /* /Users/kevinhouyang/Development/hifi/libraries/octree/src/DirtyOctreeElementOperator.h */,
+				B9E20FD163F943E29E5B9ECA /* /Users/kevinhouyang/Development/hifi/libraries/octree/src/Logging.h */,
+				BB7195B6F04A4F5891BF5838 /* /Users/kevinhouyang/Development/hifi/libraries/octree/src/Octree.h */,
+				8C82FE076E884492926640D1 /* /Users/kevinhouyang/Development/hifi/libraries/octree/src/OctreeConstants.h */,
+				48191D6B931040DF925317A2 /* /Users/kevinhouyang/Development/hifi/libraries/octree/src/OctreeDataUtils.h */,
+				1377CBE2E8AD4FBEA6E52187 /* /Users/kevinhouyang/Development/hifi/libraries/octree/src/OctreeEditPacketSender.h */,
+				B143C6B490BC444596A112E3 /* /Users/kevinhouyang/Development/hifi/libraries/octree/src/OctreeElement.h */,
+				07C5E35BC89E4184A2AE8880 /* /Users/kevinhouyang/Development/hifi/libraries/octree/src/OctreeElementBag.h */,
+				3FD400545156493AA34E133A /* /Users/kevinhouyang/Development/hifi/libraries/octree/src/OctreeLogging.h */,
+				5C012CF00EEF4C159F6E42B0 /* /Users/kevinhouyang/Development/hifi/libraries/octree/src/OctreePacketData.h */,
+				0770DF07B807449196E470C5 /* /Users/kevinhouyang/Development/hifi/libraries/octree/src/OctreePersistThread.h */,
+				A65F4BDC79814B529308D1DF /* /Users/kevinhouyang/Development/hifi/libraries/octree/src/OctreeProcessor.h */,
+				2E3D179DCA064D1CBD0FA50E /* /Users/kevinhouyang/Development/hifi/libraries/octree/src/OctreeQuery.h */,
+				FB723239496C42F6BBABE8F5 /* /Users/kevinhouyang/Development/hifi/libraries/octree/src/OctreeQueryNode.h */,
+				8406C702A0494C1BB56C6C11 /* /Users/kevinhouyang/Development/hifi/libraries/octree/src/OctreeSceneStats.h */,
+				1866AFAE5D304B329975FB05 /* /Users/kevinhouyang/Development/hifi/libraries/octree/src/OctreeScriptingInterface.h */,
+				23242159C5484E97B383C8D8 /* /Users/kevinhouyang/Development/hifi/libraries/octree/src/OctreeUtils.h */,
+			);
+			name = "Header Files";
+			sourceTree = "<group>";
+		};
+		49639A658504420FAB974A0E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CED4C54E8DA2434DA70B3E48 /* octree */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		8655F6F2642C407B84B9B8E0 = {
+			isa = PBXGroup;
+			children = (
+				B8CDC8A11561475791630AA4 /* Libraries */,
+				19C221CCD016471D8C926270 /* ALL_BUILD */,
+				49639A658504420FAB974A0E /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		9DCC12EAE35548C9BEA200F5 /* octree_autogen */ = {
+			isa = PBXGroup;
+			children = (
+				C8CD495756B84AC398314F08 /* CMake Rules */,
+				46A5A4E17488461BBBF66784 /* /Users/kevinhouyang/Development/hifi/libraries/octree/CMakeLists.txt */,
+			);
+			name = octree_autogen;
+			sourceTree = "<group>";
+		};
+		B8270412A8CA4CAFB9570EC0 /* CMake Rules */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "CMake Rules";
+			sourceTree = "<group>";
+		};
+		B8CDC8A11561475791630AA4 /* Libraries */ = {
+			isa = PBXGroup;
+			children = (
+				0C91C2A485494729B79C0338 /* octree */,
+				9DCC12EAE35548C9BEA200F5 /* octree_autogen */,
+			);
+			name = Libraries;
+			sourceTree = "<group>";
+		};
+		C8CD495756B84AC398314F08 /* CMake Rules */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "CMake Rules";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		196B8FB6C42E47F1AC553C48 /* octree */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3B207D3C4CA84E9C8934DFD5 /* Build configuration list for PBXNativeTarget "octree" */;
+			buildPhases = (
+				ECA3501951F04F599824F67E /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				909CC73CE87C4397BE6093E3 /* PBXTargetDependency */,
+				A2F476D11E8449CDB6FCD1BC /* PBXTargetDependency */,
+			);
+			name = octree;
+			productName = octree;
+			productReference = CED4C54E8DA2434DA70B3E48 /* octree */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		50EDEA9A0A8D4BD48A33894D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = YES;
+				LastUpgradeCheck = 0930;
+			};
+			buildConfigurationList = 102932980A664C5B8C33C6C4 /* Build configuration list for PBXProject "octree" */;
+			buildSettings = {
+			};
+			buildStyles = (
+				FC9DD7CA8D0A4F4C9CD3CD90 /* Debug */,
+				13ECFB2CF98C4158B17EA8BA /* Release */,
+				D62560A4718C43AEBBD4EAC7 /* MinSizeRel */,
+				DDA45637A2164B3C8A8C53AD /* RelWithDebInfo */,
+			);
+			compatibilityVersion = "Xcode 3.2";
+			hasScannedForEncodings = 0;
+			mainGroup = 8655F6F2642C407B84B9B8E0;
+			projectDirPath = ../../../libraries/octree;
+			projectRoot = "";
+			targets = (
+				EC7358D97DFB4AB0AF8A20EB /* ALL_BUILD */,
+				76BBA07C604F4D0E89A822F7 /* RUN_TESTS */,
+				324A15BFFEE94E94BA16B115 /* ZERO_CHECK */,
+				7A7E10E72F85450A98FB2D43 /* install */,
+				196B8FB6C42E47F1AC553C48 /* octree */,
+				690CB309771449DC8E1F838D /* octree_autogen */,
+				A0EF40283FD3451D881D67E2 /* package */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		20BCAE231AE6458D9C049019 = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# shell script goes here
+exit 0";
+			showEnvVarsInLog = 0;
+		};
+		2E1A3147DDE34A4C8D3050B0 = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# shell script goes here
+exit 0";
+			showEnvVarsInLog = 0;
+		};
+		5313E03C2AD64723A70C1C50 = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# shell script goes here
+exit 0";
+			showEnvVarsInLog = 0;
+		};
+		5D12E906AC7741AC9A13F418 = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# shell script goes here
+exit 0";
+			showEnvVarsInLog = 0;
+		};
+		71B34D93FF194E1D92DF4989 /* CMake PostBuild Rules */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			name = "CMake PostBuild Rules";
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "make -C /Users/kevinhouyang/Development/hifi/build/libraries/octree -f /Users/kevinhouyang/Development/hifi/build/libraries/octree/CMakeScripts/install_postBuildPhase.make$CONFIGURATION all";
+			showEnvVarsInLog = 0;
+		};
+		7860A5E9D8D2467DB0716E9E /* CMake Rules */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			name = "CMake Rules";
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "make -C /Users/kevinhouyang/Development/hifi/build/libraries/octree -f /Users/kevinhouyang/Development/hifi/build/libraries/octree/CMakeScripts/ALL_BUILD_cmakeRulesBuildPhase.make$CONFIGURATION all";
+			showEnvVarsInLog = 0;
+		};
+		9949163585974A9DA819956A /* CMake Rules */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			name = "CMake Rules";
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "make -C /Users/kevinhouyang/Development/hifi/build/libraries/octree -f /Users/kevinhouyang/Development/hifi/build/libraries/octree/CMakeScripts/ZERO_CHECK_cmakeRulesBuildPhase.make$CONFIGURATION all";
+			showEnvVarsInLog = 0;
+		};
+		BF97CFD7812C4CAE8418948A /* CMake PostBuild Rules */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			name = "CMake PostBuild Rules";
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "make -C /Users/kevinhouyang/Development/hifi/build/libraries/octree -f /Users/kevinhouyang/Development/hifi/build/libraries/octree/CMakeScripts/package_postBuildPhase.make$CONFIGURATION all";
+			showEnvVarsInLog = 0;
+		};
+		D48C6A19D3724E73848B5EEA = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# shell script goes here
+exit 0";
+			showEnvVarsInLog = 0;
+		};
+		E128BC9E10DE4395BC222EE4 /* CMake PostBuild Rules */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			name = "CMake PostBuild Rules";
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "make -C /Users/kevinhouyang/Development/hifi/build/libraries/octree -f /Users/kevinhouyang/Development/hifi/build/libraries/octree/CMakeScripts/RUN_TESTS_postBuildPhase.make$CONFIGURATION all";
+			showEnvVarsInLog = 0;
+		};
+		ECE615703A4F41FDA01DDA5C /* CMake Rules */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			name = "CMake Rules";
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "make -C /Users/kevinhouyang/Development/hifi/build/libraries/octree -f /Users/kevinhouyang/Development/hifi/build/libraries/octree/CMakeScripts/octree_autogen_cmakeRulesBuildPhase.make$CONFIGURATION all";
+			showEnvVarsInLog = 0;
+		};
+		EFD12238E27D4D55BEF26EF1 = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# shell script goes here
+exit 0";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		ECA3501951F04F599824F67E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EF9B11DCD647462CBC70D04B /* /Users/kevinhouyang/Development/hifi/build/libraries/octree/octree_autogen/mocs_compilation.cpp */,
+				DF23C624E07A40768C1A8702 /* /Users/kevinhouyang/Development/hifi/libraries/octree/src/DirtyOctreeElementOperator.cpp */,
+				149738725875450E88CD2970 /* /Users/kevinhouyang/Development/hifi/libraries/octree/src/Octree.cpp */,
+				F604C41C2E97434A9A819B67 /* /Users/kevinhouyang/Development/hifi/libraries/octree/src/OctreeDataUtils.cpp */,
+				D608C1DCAD8847C7BD94283E /* /Users/kevinhouyang/Development/hifi/libraries/octree/src/OctreeEditPacketSender.cpp */,
+				339DFBECE67744189209DB79 /* /Users/kevinhouyang/Development/hifi/libraries/octree/src/OctreeElement.cpp */,
+				4EEA4C498CE44FA79750DC3F /* /Users/kevinhouyang/Development/hifi/libraries/octree/src/OctreeLogging.cpp */,
+				E447E11775CF42FFBAA6412C /* /Users/kevinhouyang/Development/hifi/libraries/octree/src/OctreePacketData.cpp */,
+				D5C4B4B248A3403B8D96461E /* /Users/kevinhouyang/Development/hifi/libraries/octree/src/OctreePersistThread.cpp */,
+				D7FC4CC507444EC5B5ACBFB3 /* /Users/kevinhouyang/Development/hifi/libraries/octree/src/OctreeProcessor.cpp */,
+				BB955267FB27416EA032501C /* /Users/kevinhouyang/Development/hifi/libraries/octree/src/OctreeQuery.cpp */,
+				06FE35E1476A430EA3B25720 /* /Users/kevinhouyang/Development/hifi/libraries/octree/src/OctreeQueryNode.cpp */,
+				6A2F91A480EB405FB8A9EEFB /* /Users/kevinhouyang/Development/hifi/libraries/octree/src/OctreeSceneStats.cpp */,
+				53C84ADC5B47466BAFEDC622 /* /Users/kevinhouyang/Development/hifi/libraries/octree/src/OctreeScriptingInterface.cpp */,
+				E841ED3BD3584813880C63D4 /* /Users/kevinhouyang/Development/hifi/libraries/octree/src/OctreeUtils.cpp */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		1A78111BD8944DE0803D5CE2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 324A15BFFEE94E94BA16B115 /* ZERO_CHECK */;
+			targetProxy = 686ECABD95C74703978BBCCE /* PBXContainerItemProxy */;
+		};
+		1FB36560C6994DAC898C5661 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EC7358D97DFB4AB0AF8A20EB /* ALL_BUILD */;
+			targetProxy = E0938A454B8B49FEB6B15EA6 /* PBXContainerItemProxy */;
+		};
+		21C2C871429744BF9B9EB63F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EC7358D97DFB4AB0AF8A20EB /* ALL_BUILD */;
+			targetProxy = 9210365A54CC4812A973B533 /* PBXContainerItemProxy */;
+		};
+		590339DA2E6B4E459D26806F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 196B8FB6C42E47F1AC553C48 /* octree */;
+			targetProxy = AC4303CA4B33448EB09E0587 /* PBXContainerItemProxy */;
+		};
+		909CC73CE87C4397BE6093E3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 324A15BFFEE94E94BA16B115 /* ZERO_CHECK */;
+			targetProxy = A8E60182027E4858918A96A3 /* PBXContainerItemProxy */;
+		};
+		A2F476D11E8449CDB6FCD1BC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 690CB309771449DC8E1F838D /* octree_autogen */;
+			targetProxy = CBFDAF5BE6E34A1689ABD942 /* PBXContainerItemProxy */;
+		};
+		AA8F0834B1F84412827E3AC9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 324A15BFFEE94E94BA16B115 /* ZERO_CHECK */;
+			targetProxy = 32A582D534D04550B1A8A534 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		05F246D6C07B4297AF181FBB /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = octree_autogen;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/kevinhouyang/Development/hifi/build/libraries/octree;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = RelWithDebInfo;
+		};
+		0A399066950543EE8BC8C395 /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ALL_BUILD;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/kevinhouyang/Development/hifi/build/libraries/octree;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = MinSizeRel;
+		};
+		170577A178774445BF149BF4 /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = package;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/kevinhouyang/Development/hifi/build/libraries/octree;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = MinSizeRel;
+		};
+		1B6587E02CA44EAA9ED85E17 /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = package;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/kevinhouyang/Development/hifi/build/libraries/octree;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = RelWithDebInfo;
+		};
+		28A240E52791422B8EB72E20 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ALL_BUILD;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/kevinhouyang/Development/hifi/build/libraries/octree;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = Release;
+		};
+		357C7A688AC64817B88B96C9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ALL_BUILD;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/kevinhouyang/Development/hifi/build/libraries/octree;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = Debug;
+		};
+		473DE8646D22471CB8BB4275 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = RUN_TESTS;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/kevinhouyang/Development/hifi/build/libraries/octree;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = Release;
+		};
+		478325A1510D4EC4A6D732C4 /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .a;
+				FRAMEWORK_SEARCH_PATHS = (/usr/local/Cellar/qt/5.11.2/lib);
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = s;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",GLM_FORCE_RADIANS,DEV_BUILD,QT_CORE_LIB,QT_NO_DEBUG,QT_GUI_LIB,QT_NETWORK_LIB,QT_SCRIPT_LIB);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (/Users/kevinhouyang/Development/hifi/build/libraries/octree,/Users/kevinhouyang/Development/hifi/libraries/octree,/Users/kevinhouyang/Development/hifi/build/libraries/octree/octree_autogen/include_MinSizeRel,/Users/kevinhouyang/Development/hifi/build/includes,/Users/kevinhouyang/Development/hifi/build/ext/Xcode/glm/project/include,/Users/kevinhouyang/Development/hifi/libraries/shared/src,/Users/kevinhouyang/Development/hifi/build/libraries/shared,/Users/kevinhouyang/Development/hifi/libraries/networking/src,/Users/kevinhouyang/Development/hifi/build/libraries/networking);
+				INSTALL_PATH = "";
+				LIBRARY_STYLE = STATIC;
+				OTHER_CPLUSPLUSFLAGS = " -Wall -Wextra -fno-strict-aliasing -Wno-unused-parameter --stdlib=libc++        -DNDEBUG -fPIC '-std=gnu++14'  ";
+				OTHER_LIBTOOLFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = octree;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/kevinhouyang/Development/hifi/build/libraries/octree;
+				SYSTEM_HEADER_SEARCH_PATHS = (/usr/local/Cellar/qt/5.11.2/lib/QtCore.framework/Headers,"/usr/local/Cellar/qt/5.11.2/./mkspecs/macx-clang",/usr/local/Cellar/qt/5.11.2/lib/QtGui.framework/Headers,/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk/System/Library/Frameworks/OpenGL.framework/Headers,/usr/local/Cellar/qt/5.11.2/lib/QtNetwork.framework/Headers,/usr/local/Cellar/qt/5.11.2/lib/QtScript.framework/Headers,/Users/kevinhouyang/Development/hifi/build/ext/Xcode/tbb/project/src/tbb/include);
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = MinSizeRel;
+		};
+		4AFB4EFB602848EEA43D353A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = install;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/kevinhouyang/Development/hifi/build/libraries/octree;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = Release;
+		};
+		4B10312526CA47C3B9AE1442 /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = RUN_TESTS;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/kevinhouyang/Development/hifi/build/libraries/octree;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = MinSizeRel;
+		};
+		4C8A49A93B004D88BE9063DE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .a;
+				FRAMEWORK_SEARCH_PATHS = (/usr/local/Cellar/qt/5.11.2/lib);
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",GLM_FORCE_RADIANS,DEV_BUILD,QT_CORE_LIB,QT_GUI_LIB,QT_NETWORK_LIB,QT_SCRIPT_LIB);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (/Users/kevinhouyang/Development/hifi/build/libraries/octree,/Users/kevinhouyang/Development/hifi/libraries/octree,/Users/kevinhouyang/Development/hifi/build/libraries/octree/octree_autogen/include_Debug,/Users/kevinhouyang/Development/hifi/build/includes,/Users/kevinhouyang/Development/hifi/build/ext/Xcode/glm/project/include,/Users/kevinhouyang/Development/hifi/libraries/shared/src,/Users/kevinhouyang/Development/hifi/build/libraries/shared,/Users/kevinhouyang/Development/hifi/libraries/networking/src,/Users/kevinhouyang/Development/hifi/build/libraries/networking);
+				INSTALL_PATH = "";
+				LIBRARY_STYLE = STATIC;
+				OTHER_CPLUSPLUSFLAGS = " -Wall -Wextra -fno-strict-aliasing -Wno-unused-parameter --stdlib=libc++       -DDEBUG -fPIC '-std=gnu++14'  ";
+				OTHER_LIBTOOLFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = octree;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/kevinhouyang/Development/hifi/build/libraries/octree;
+				SYSTEM_HEADER_SEARCH_PATHS = (/usr/local/Cellar/qt/5.11.2/lib/QtCore.framework/Headers,"/usr/local/Cellar/qt/5.11.2/./mkspecs/macx-clang",/usr/local/Cellar/qt/5.11.2/lib/QtGui.framework/Headers,/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk/System/Library/Frameworks/OpenGL.framework/Headers,/usr/local/Cellar/qt/5.11.2/lib/QtNetwork.framework/Headers,/usr/local/Cellar/qt/5.11.2/lib/QtScript.framework/Headers,/Users/kevinhouyang/Development/hifi/build/ext/Xcode/tbb/project/src/tbb/include);
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = Debug;
+		};
+		583FF7510A694A9A9E5A7682 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "c++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEPLOYMENT_POSTPROCESSING = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk;
+				SYMROOT = /Users/kevinhouyang/Development/hifi/build/libraries/octree/build;
+			};
+			name = Release;
+		};
+		5A2C88A93BDF442C8C777774 /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ZERO_CHECK;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/kevinhouyang/Development/hifi/build/libraries/octree;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = RelWithDebInfo;
+		};
+		5BAC8A785C8742BCA67D7738 /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ALL_BUILD;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/kevinhouyang/Development/hifi/build/libraries/octree;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = RelWithDebInfo;
+		};
+		5CB5E69554474B979E985136 /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = install;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/kevinhouyang/Development/hifi/build/libraries/octree;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = RelWithDebInfo;
+		};
+		5F14FB63CE5443C18D66A0AE /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "c++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk;
+				SYMROOT = /Users/kevinhouyang/Development/hifi/build/libraries/octree/build;
+			};
+			name = RelWithDebInfo;
+		};
+		6049DFC7003D456EBCBD1D0A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ZERO_CHECK;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/kevinhouyang/Development/hifi/build/libraries/octree;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = Debug;
+		};
+		625067CEF4B54076BFB8525F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ZERO_CHECK;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/kevinhouyang/Development/hifi/build/libraries/octree;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = Release;
+		};
+		655DF1240F57427F8F4FAC2C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = octree_autogen;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/kevinhouyang/Development/hifi/build/libraries/octree;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = Release;
+		};
+		65A0C15344DD4889A95098D9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = install;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/kevinhouyang/Development/hifi/build/libraries/octree;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = Debug;
+		};
+		6660803D01374D7082051932 /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ZERO_CHECK;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/kevinhouyang/Development/hifi/build/libraries/octree;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = MinSizeRel;
+		};
+		6BAD0EE3091944F694C6A12A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = package;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/kevinhouyang/Development/hifi/build/libraries/octree;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = Release;
+		};
+		8A63693E77F9460498CE950B /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .a;
+				FRAMEWORK_SEARCH_PATHS = (/usr/local/Cellar/qt/5.11.2/lib);
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 2;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",GLM_FORCE_RADIANS,DEV_BUILD,QT_CORE_LIB,QT_NO_DEBUG,QT_GUI_LIB,QT_NETWORK_LIB,QT_SCRIPT_LIB);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (/Users/kevinhouyang/Development/hifi/build/libraries/octree,/Users/kevinhouyang/Development/hifi/libraries/octree,/Users/kevinhouyang/Development/hifi/build/libraries/octree/octree_autogen/include_RelWithDebInfo,/Users/kevinhouyang/Development/hifi/build/includes,/Users/kevinhouyang/Development/hifi/build/ext/Xcode/glm/project/include,/Users/kevinhouyang/Development/hifi/libraries/shared/src,/Users/kevinhouyang/Development/hifi/build/libraries/shared,/Users/kevinhouyang/Development/hifi/libraries/networking/src,/Users/kevinhouyang/Development/hifi/build/libraries/networking);
+				INSTALL_PATH = "";
+				LIBRARY_STYLE = STATIC;
+				OTHER_CPLUSPLUSFLAGS = " -Wall -Wextra -fno-strict-aliasing -Wno-unused-parameter --stdlib=libc++           -DNDEBUG -fPIC '-std=gnu++14'  ";
+				OTHER_LIBTOOLFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = octree;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/kevinhouyang/Development/hifi/build/libraries/octree;
+				SYSTEM_HEADER_SEARCH_PATHS = (/usr/local/Cellar/qt/5.11.2/lib/QtCore.framework/Headers,"/usr/local/Cellar/qt/5.11.2/./mkspecs/macx-clang",/usr/local/Cellar/qt/5.11.2/lib/QtGui.framework/Headers,/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk/System/Library/Frameworks/OpenGL.framework/Headers,/usr/local/Cellar/qt/5.11.2/lib/QtNetwork.framework/Headers,/usr/local/Cellar/qt/5.11.2/lib/QtScript.framework/Headers,/Users/kevinhouyang/Development/hifi/build/ext/Xcode/tbb/project/src/tbb/include);
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = RelWithDebInfo;
+		};
+		913C51479B024D2B881C34F7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = package;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/kevinhouyang/Development/hifi/build/libraries/octree;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = Debug;
+		};
+		940A4B1187424EFBB8D9CB5F /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = install;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/kevinhouyang/Development/hifi/build/libraries/octree;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = MinSizeRel;
+		};
+		958A1385E9544B6882B75808 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "c++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk;
+				SYMROOT = /Users/kevinhouyang/Development/hifi/build/libraries/octree/build;
+			};
+			name = Debug;
+		};
+		B582F23957504832A2A8E59E /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "c++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk;
+				SYMROOT = /Users/kevinhouyang/Development/hifi/build/libraries/octree/build;
+			};
+			name = MinSizeRel;
+		};
+		B842FCB72A9A464DA2F5FA49 /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = octree_autogen;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/kevinhouyang/Development/hifi/build/libraries/octree;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = MinSizeRel;
+		};
+		C1971E6C11394006AA1EF0D1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .a;
+				FRAMEWORK_SEARCH_PATHS = (/usr/local/Cellar/qt/5.11.2/lib);
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 3;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",GLM_FORCE_RADIANS,DEV_BUILD,QT_CORE_LIB,QT_NO_DEBUG,QT_GUI_LIB,QT_NETWORK_LIB,QT_SCRIPT_LIB);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (/Users/kevinhouyang/Development/hifi/build/libraries/octree,/Users/kevinhouyang/Development/hifi/libraries/octree,/Users/kevinhouyang/Development/hifi/build/libraries/octree/octree_autogen/include_Release,/Users/kevinhouyang/Development/hifi/build/includes,/Users/kevinhouyang/Development/hifi/build/ext/Xcode/glm/project/include,/Users/kevinhouyang/Development/hifi/libraries/shared/src,/Users/kevinhouyang/Development/hifi/build/libraries/shared,/Users/kevinhouyang/Development/hifi/libraries/networking/src,/Users/kevinhouyang/Development/hifi/build/libraries/networking);
+				INSTALL_PATH = "";
+				LIBRARY_STYLE = STATIC;
+				OTHER_CPLUSPLUSFLAGS = " -Wall -Wextra -fno-strict-aliasing -Wno-unused-parameter --stdlib=libc++        -DNDEBUG -fPIC '-std=gnu++14'  ";
+				OTHER_LIBTOOLFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = octree;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/kevinhouyang/Development/hifi/build/libraries/octree;
+				SYSTEM_HEADER_SEARCH_PATHS = (/usr/local/Cellar/qt/5.11.2/lib/QtCore.framework/Headers,"/usr/local/Cellar/qt/5.11.2/./mkspecs/macx-clang",/usr/local/Cellar/qt/5.11.2/lib/QtGui.framework/Headers,/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk/System/Library/Frameworks/OpenGL.framework/Headers,/usr/local/Cellar/qt/5.11.2/lib/QtNetwork.framework/Headers,/usr/local/Cellar/qt/5.11.2/lib/QtScript.framework/Headers,/Users/kevinhouyang/Development/hifi/build/ext/Xcode/tbb/project/src/tbb/include);
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = Release;
+		};
+		D3F7CF14335E4E2FB16B53E3 /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = RUN_TESTS;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/kevinhouyang/Development/hifi/build/libraries/octree;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = RelWithDebInfo;
+		};
+		D7EC7C4B1AE14029AD227270 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = RUN_TESTS;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/kevinhouyang/Development/hifi/build/libraries/octree;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = Debug;
+		};
+		F16D4B1851A1413BAAEC357D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = octree_autogen;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/kevinhouyang/Development/hifi/build/libraries/octree;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		09AC152FF51046C8861F77E8 /* Build configuration list for PBXAggregateTarget "ALL_BUILD" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				357C7A688AC64817B88B96C9 /* Debug */,
+				28A240E52791422B8EB72E20 /* Release */,
+				0A399066950543EE8BC8C395 /* MinSizeRel */,
+				5BAC8A785C8742BCA67D7738 /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		102932980A664C5B8C33C6C4 /* Build configuration list for PBXProject "octree" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				958A1385E9544B6882B75808 /* Debug */,
+				583FF7510A694A9A9E5A7682 /* Release */,
+				B582F23957504832A2A8E59E /* MinSizeRel */,
+				5F14FB63CE5443C18D66A0AE /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		3B207D3C4CA84E9C8934DFD5 /* Build configuration list for PBXNativeTarget "octree" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4C8A49A93B004D88BE9063DE /* Debug */,
+				C1971E6C11394006AA1EF0D1 /* Release */,
+				478325A1510D4EC4A6D732C4 /* MinSizeRel */,
+				8A63693E77F9460498CE950B /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		48A3441BC8A84FC194FADE84 /* Build configuration list for PBXAggregateTarget "octree_autogen" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F16D4B1851A1413BAAEC357D /* Debug */,
+				655DF1240F57427F8F4FAC2C /* Release */,
+				B842FCB72A9A464DA2F5FA49 /* MinSizeRel */,
+				05F246D6C07B4297AF181FBB /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		74F3D1A07FEC49AB90C18B28 /* Build configuration list for PBXAggregateTarget "ZERO_CHECK" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6049DFC7003D456EBCBD1D0A /* Debug */,
+				625067CEF4B54076BFB8525F /* Release */,
+				6660803D01374D7082051932 /* MinSizeRel */,
+				5A2C88A93BDF442C8C777774 /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		9AD3CEFBB87B4B1480D9EE51 /* Build configuration list for PBXAggregateTarget "RUN_TESTS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D7EC7C4B1AE14029AD227270 /* Debug */,
+				473DE8646D22471CB8BB4275 /* Release */,
+				4B10312526CA47C3B9AE1442 /* MinSizeRel */,
+				D3F7CF14335E4E2FB16B53E3 /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		B51CD644019D46748E5D1492 /* Build configuration list for PBXAggregateTarget "install" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				65A0C15344DD4889A95098D9 /* Debug */,
+				4AFB4EFB602848EEA43D353A /* Release */,
+				940A4B1187424EFBB8D9CB5F /* MinSizeRel */,
+				5CB5E69554474B979E985136 /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		E793BA1CAC0546949BEADCBD /* Build configuration list for PBXAggregateTarget "package" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				913C51479B024D2B881C34F7 /* Debug */,
+				6BAD0EE3091944F694C6A12A /* Release */,
+				170577A178774445BF149BF4 /* MinSizeRel */,
+				1B6587E02CA44EAA9ED85E17 /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 50EDEA9A0A8D4BD48A33894D /* Project object */;
+}

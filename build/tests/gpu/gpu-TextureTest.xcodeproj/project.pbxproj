@@ -1,0 +1,1898 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXAggregateTarget section */
+		0BF5F482171649B4A5201D28 /* gpu-ShaderLoadTest_autogen */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = D19AB405FB054DEDADD3930D /* Build configuration list for PBXAggregateTarget "gpu-ShaderLoadTest_autogen" */;
+			buildPhases = (
+				5EFE42E7243D4031BF1DEF95 /* CMake Rules */,
+			);
+			dependencies = (
+				E81FC27190104516B99E137D /* PBXTargetDependency */,
+			);
+			name = "gpu-ShaderLoadTest_autogen";
+			productName = "gpu-ShaderLoadTest_autogen";
+		};
+		324A15BFFEE94E94BA16B115 /* ZERO_CHECK */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 1E379F38A29341C3888A4F4C /* Build configuration list for PBXAggregateTarget "ZERO_CHECK" */;
+			buildPhases = (
+				6C93AA8410D34887828A7FD6 /* CMake Rules */,
+			);
+			dependencies = (
+			);
+			name = ZERO_CHECK;
+			productName = ZERO_CHECK;
+		};
+		6613041F77164E809730BFCC /* gpu-tests */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 4DF24369309145798E65438A /* Build configuration list for PBXAggregateTarget "gpu-tests" */;
+			buildPhases = (
+				26A15780272E4F0EA3CF529A /* CMake Rules */,
+			);
+			dependencies = (
+				209848F91ECE487D9D2CD028 /* PBXTargetDependency */,
+				7E65A0840B46435AA56984CB /* PBXTargetDependency */,
+				07189BDB698C42DFA40C09F7 /* PBXTargetDependency */,
+			);
+			name = "gpu-tests";
+			productName = "gpu-tests";
+		};
+		76BBA07C604F4D0E89A822F7 /* RUN_TESTS */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = E436987693CF4A25A00B679C /* Build configuration list for PBXAggregateTarget "RUN_TESTS" */;
+			buildPhases = (
+				31CFB33254E843308E15C37B /* CMake PostBuild Rules */,
+			);
+			dependencies = (
+			);
+			name = RUN_TESTS;
+			productName = RUN_TESTS;
+		};
+		7A7E10E72F85450A98FB2D43 /* install */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 3DEA57BE5D5B4E4393E9D3D6 /* Build configuration list for PBXAggregateTarget "install" */;
+			buildPhases = (
+				1CDA8297CDD5463684DABD61 /* CMake PostBuild Rules */,
+			);
+			dependencies = (
+				90D876B839084F168D3834B3 /* PBXTargetDependency */,
+			);
+			name = install;
+			productName = install;
+		};
+		A0EF40283FD3451D881D67E2 /* package */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 584DF8F05A474B78BB5C0B9C /* Build configuration list for PBXAggregateTarget "package" */;
+			buildPhases = (
+				09873D88E723454288EB3F4C /* CMake PostBuild Rules */,
+			);
+			dependencies = (
+				D423186D372047E082217604 /* PBXTargetDependency */,
+			);
+			name = package;
+			productName = package;
+		};
+		C4718E12FD22421DAD1C0638 /* gpu-TextureTest_autogen */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 1E80550C13904C088DF34CBD /* Build configuration list for PBXAggregateTarget "gpu-TextureTest_autogen" */;
+			buildPhases = (
+				7E645F8BD32043D2BAADE4D1 /* CMake Rules */,
+			);
+			dependencies = (
+				41168A8A1DE74289AD6915F8 /* PBXTargetDependency */,
+			);
+			name = "gpu-TextureTest_autogen";
+			productName = "gpu-TextureTest_autogen";
+		};
+		EC7358D97DFB4AB0AF8A20EB /* ALL_BUILD */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = B25D3BD188F141C99F37643E /* Build configuration list for PBXAggregateTarget "ALL_BUILD" */;
+			buildPhases = (
+				380B488280114EE6932E0D24 /* CMake Rules */,
+			);
+			dependencies = (
+				748AFCEEFACD4B59A986A49C /* PBXTargetDependency */,
+			);
+			name = ALL_BUILD;
+			productName = ALL_BUILD;
+		};
+/* End PBXAggregateTarget section */
+
+/* Begin PBXBuildFile section */
+		041277BBF06D41B8BB0F13B7 /* /Users/kevinhouyang/Development/hifi/tests/gpu/src/data.qrc */ = {isa = PBXBuildFile; fileRef = E093626A108B47E8B1DBDCA5 /* /Users/kevinhouyang/Development/hifi/tests/gpu/src/data.qrc */; };
+		1447DC26EFB049AF9859C09B /* /Users/kevinhouyang/Development/hifi/tests/gpu/src/ShaderLoadTest.cpp */ = {isa = PBXBuildFile; fileRef = 03728E5079E748BDA6D6AFF6 /* /Users/kevinhouyang/Development/hifi/tests/gpu/src/ShaderLoadTest.cpp */; };
+		2022703ACDEE41B889477FA1 /* /Users/kevinhouyang/Development/hifi/tests/gpu/CMakeLists.txt */ = {isa = PBXBuildFile; fileRef = 07DD3712C8E84C81AE5404E0 /* /Users/kevinhouyang/Development/hifi/tests/gpu/CMakeLists.txt */; };
+		28BD7036658C487487FF23DA /* /Users/kevinhouyang/Development/hifi/build/tests/gpu/gpu-TextureTest_autogen/UVLADIE3JM/qrc_data.cpp.rule */ = {isa = PBXBuildFile; fileRef = 3E623BD044FF426B9FA8A5B9 /* /Users/kevinhouyang/Development/hifi/build/tests/gpu/gpu-TextureTest_autogen/UVLADIE3JM/qrc_data.cpp.rule */; };
+		2F5A81A4510E4E85ABC60DE6 /* /Users/kevinhouyang/Development/hifi/build/tests/gpu/gpu-ShaderLoadTest_autogen/UVLADIE3JM/qrc_data.cpp.rule */ = {isa = PBXBuildFile; fileRef = 6DBD34AFA5354F3EB0A7F83C /* /Users/kevinhouyang/Development/hifi/build/tests/gpu/gpu-ShaderLoadTest_autogen/UVLADIE3JM/qrc_data.cpp.rule */; };
+		45543953714A4ED182EA147D /* /Users/kevinhouyang/Development/hifi/build/tests/gpu/gpu-TextureTest_autogen/UVLADIE3JM/qrc_data.cpp */ = {isa = PBXBuildFile; fileRef = 138C38EE73AA401F91E3D467 /* /Users/kevinhouyang/Development/hifi/build/tests/gpu/gpu-TextureTest_autogen/UVLADIE3JM/qrc_data.cpp */; };
+		52051039F0C048FFB782579E /* /Users/kevinhouyang/Development/hifi/build/tests/gpu/gpu-ShaderLoadTest_autogen/mocs_compilation.cpp */ = {isa = PBXBuildFile; fileRef = D545BB959645407482148BAD /* /Users/kevinhouyang/Development/hifi/build/tests/gpu/gpu-ShaderLoadTest_autogen/mocs_compilation.cpp */; };
+		5F0E344567C5456C95B90A37 /* /Users/kevinhouyang/Development/hifi/tests/gpu/CMakeLists.txt */ = {isa = PBXBuildFile; fileRef = 87C67CD1437D4CE18094D4C6 /* /Users/kevinhouyang/Development/hifi/tests/gpu/CMakeLists.txt */; };
+		7210265E6F8140CB97AAAE2C /* /Users/kevinhouyang/Development/hifi/tests/gpu/src/data.qrc */ = {isa = PBXBuildFile; fileRef = 335DDA5ABD184CD4889D71ED /* /Users/kevinhouyang/Development/hifi/tests/gpu/src/data.qrc */; };
+		9D8BE50BB0C54940B7684B83 /* /Users/kevinhouyang/Development/hifi/tests/gpu/src/TextureTest.cpp */ = {isa = PBXBuildFile; fileRef = 02B4E62A81C7428094C0D7E8 /* /Users/kevinhouyang/Development/hifi/tests/gpu/src/TextureTest.cpp */; };
+		BA63734C24DE41EEB5DAE501 /* /Users/kevinhouyang/Development/hifi/build/tests/gpu/gpu-ShaderLoadTest_autogen/UVLADIE3JM/qrc_data.cpp */ = {isa = PBXBuildFile; fileRef = C139E0E4FA3F4402A320D759 /* /Users/kevinhouyang/Development/hifi/build/tests/gpu/gpu-ShaderLoadTest_autogen/UVLADIE3JM/qrc_data.cpp */; };
+		D0BF03ACECD744B48F7258A3 /* /Users/kevinhouyang/Development/hifi/build/tests/gpu/gpu-TextureTest_autogen/mocs_compilation.cpp */ = {isa = PBXBuildFile; fileRef = 291D159F9F4446938696BD2D /* /Users/kevinhouyang/Development/hifi/build/tests/gpu/gpu-TextureTest_autogen/mocs_compilation.cpp */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXBuildStyle section */
+		845A9DD333D5457A84831FE3 /* Release */ = {
+			isa = PBXBuildStyle;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+			};
+			name = Release;
+		};
+		D61B29C77BE04E868C378569 /* Debug */ = {
+			isa = PBXBuildStyle;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+			};
+			name = Debug;
+		};
+		FC2D5DA3AB50451D8385DD0A /* MinSizeRel */ = {
+			isa = PBXBuildStyle;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+			};
+			name = MinSizeRel;
+		};
+		FE80B49429F845B08BB4F7DA /* RelWithDebInfo */ = {
+			isa = PBXBuildStyle;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+			};
+			name = RelWithDebInfo;
+		};
+/* End PBXBuildStyle section */
+
+/* Begin PBXContainerItemProxy section */
+		02DD3CB8AC5447898C473875 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F9CDB3DCCAFF4EC1892B265D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 324A15BFFEE94E94BA16B115;
+			remoteInfo = ZERO_CHECK;
+		};
+		2874131C9B39424CAF5590F6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F9CDB3DCCAFF4EC1892B265D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B50D753F65164B0AA94BE95C;
+			remoteInfo = "gpu-TextureTest";
+		};
+		500A337029C040988FC137A2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F9CDB3DCCAFF4EC1892B265D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EC7358D97DFB4AB0AF8A20EB;
+			remoteInfo = ALL_BUILD;
+		};
+		6290F77A29664BCE93C24D10 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F9CDB3DCCAFF4EC1892B265D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 45EBA59DF80D46E4B2EA8172;
+			remoteInfo = "gpu-ShaderLoadTest";
+		};
+		6FFE4FCF1C75486F8BBD8096 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F9CDB3DCCAFF4EC1892B265D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C4718E12FD22421DAD1C0638;
+			remoteInfo = "gpu-TextureTest_autogen";
+		};
+		8C1AD6FC62884EBF9E6E080E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F9CDB3DCCAFF4EC1892B265D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EC7358D97DFB4AB0AF8A20EB;
+			remoteInfo = ALL_BUILD;
+		};
+		8C42C07B8AEC4DC184C36FAE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F9CDB3DCCAFF4EC1892B265D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 324A15BFFEE94E94BA16B115;
+			remoteInfo = ZERO_CHECK;
+		};
+		97A72114FDF04B7493755A85 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F9CDB3DCCAFF4EC1892B265D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 324A15BFFEE94E94BA16B115;
+			remoteInfo = ZERO_CHECK;
+		};
+		A0576964C40F4700BF45188E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F9CDB3DCCAFF4EC1892B265D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0BF5F482171649B4A5201D28;
+			remoteInfo = "gpu-ShaderLoadTest_autogen";
+		};
+		B48F74348B9D4D53B8F38215 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F9CDB3DCCAFF4EC1892B265D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 324A15BFFEE94E94BA16B115;
+			remoteInfo = ZERO_CHECK;
+		};
+		E6AF656D4FDE413F865FADDC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F9CDB3DCCAFF4EC1892B265D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 324A15BFFEE94E94BA16B115;
+			remoteInfo = ZERO_CHECK;
+		};
+		E862B08EF3354A0D869C8C43 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F9CDB3DCCAFF4EC1892B265D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 324A15BFFEE94E94BA16B115;
+			remoteInfo = ZERO_CHECK;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		02B4E62A81C7428094C0D7E8 /* /Users/kevinhouyang/Development/hifi/tests/gpu/src/TextureTest.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = TextureTest.cpp; path = src/TextureTest.cpp; sourceTree = SOURCE_ROOT; };
+		03728E5079E748BDA6D6AFF6 /* /Users/kevinhouyang/Development/hifi/tests/gpu/src/ShaderLoadTest.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = ShaderLoadTest.cpp; path = src/ShaderLoadTest.cpp; sourceTree = SOURCE_ROOT; };
+		07DD3712C8E84C81AE5404E0 /* /Users/kevinhouyang/Development/hifi/tests/gpu/CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; name = CMakeLists.txt; path = CMakeLists.txt; sourceTree = SOURCE_ROOT; };
+		138C38EE73AA401F91E3D467 /* /Users/kevinhouyang/Development/hifi/build/tests/gpu/gpu-TextureTest_autogen/UVLADIE3JM/qrc_data.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = qrc_data.cpp; path = "../../build/tests/gpu/gpu-TextureTest_autogen/UVLADIE3JM/qrc_data.cpp"; sourceTree = SOURCE_ROOT; };
+		291D159F9F4446938696BD2D /* /Users/kevinhouyang/Development/hifi/build/tests/gpu/gpu-TextureTest_autogen/mocs_compilation.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = mocs_compilation.cpp; path = "../../build/tests/gpu/gpu-TextureTest_autogen/mocs_compilation.cpp"; sourceTree = SOURCE_ROOT; };
+		2C7FF85C2D784D89A2185CFC /* /Users/kevinhouyang/Development/hifi/tests/gpu/CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; name = CMakeLists.txt; path = CMakeLists.txt; sourceTree = SOURCE_ROOT; };
+		335DDA5ABD184CD4889D71ED /* /Users/kevinhouyang/Development/hifi/tests/gpu/src/data.qrc */ = {isa = PBXFileReference; explicitFileType = sourcecode; fileEncoding = 4; name = data.qrc; path = src/data.qrc; sourceTree = SOURCE_ROOT; };
+		362F5F92910844F89131913D /* gpu-TextureTest */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; path = "gpu-TextureTest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3E623BD044FF426B9FA8A5B9 /* /Users/kevinhouyang/Development/hifi/build/tests/gpu/gpu-TextureTest_autogen/UVLADIE3JM/qrc_data.cpp.rule */ = {isa = PBXFileReference; explicitFileType = sourcecode; fileEncoding = 4; name = qrc_data.cpp.rule; path = "../../build/tests/gpu/gpu-TextureTest_autogen/UVLADIE3JM/qrc_data.cpp.rule"; sourceTree = SOURCE_ROOT; };
+		45038783E0164C80BDE6CA33 /* /Users/kevinhouyang/Development/hifi/tests/gpu/src/data.qrc */ = {isa = PBXFileReference; explicitFileType = sourcecode; fileEncoding = 4; name = data.qrc; path = src/data.qrc; sourceTree = SOURCE_ROOT; };
+		4C14BC9FA4664C14AC877A7E /* /Users/kevinhouyang/Development/hifi/tests/gpu/src/cache.json */ = {isa = PBXFileReference; explicitFileType = sourcecode; fileEncoding = 4; name = cache.json; path = src/cache.json; sourceTree = SOURCE_ROOT; };
+		56F3B7CA34A44E11B0935A52 /* /Users/kevinhouyang/Development/hifi/tests/gpu/src/TextureTest.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = TextureTest.cpp; path = src/TextureTest.cpp; sourceTree = SOURCE_ROOT; };
+		59E767EF32D34C8BA2A8355B /* /Users/kevinhouyang/Development/hifi/tests/gpu/src/ShaderLoadTest.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = ShaderLoadTest.h; path = src/ShaderLoadTest.h; sourceTree = SOURCE_ROOT; };
+		62D86B82340648F680F1CA7F /* /Users/kevinhouyang/Development/hifi/tests/gpu/CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; name = CMakeLists.txt; path = CMakeLists.txt; sourceTree = SOURCE_ROOT; };
+		6B238870B347401EA8060438 /* /Users/kevinhouyang/Development/hifi/tests/gpu/src/TextureTest.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = TextureTest.h; path = src/TextureTest.h; sourceTree = SOURCE_ROOT; };
+		6DBD34AFA5354F3EB0A7F83C /* /Users/kevinhouyang/Development/hifi/build/tests/gpu/gpu-ShaderLoadTest_autogen/UVLADIE3JM/qrc_data.cpp.rule */ = {isa = PBXFileReference; explicitFileType = sourcecode; fileEncoding = 4; name = qrc_data.cpp.rule; path = "../../build/tests/gpu/gpu-ShaderLoadTest_autogen/UVLADIE3JM/qrc_data.cpp.rule"; sourceTree = SOURCE_ROOT; };
+		711E6A1972754460811B5485 /* /Users/kevinhouyang/Development/hifi/tests/gpu/CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; name = CMakeLists.txt; path = CMakeLists.txt; sourceTree = SOURCE_ROOT; };
+		87C67CD1437D4CE18094D4C6 /* /Users/kevinhouyang/Development/hifi/tests/gpu/CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; name = CMakeLists.txt; path = CMakeLists.txt; sourceTree = SOURCE_ROOT; };
+		95D84376552947239ADFBB16 /* /Users/kevinhouyang/Development/hifi/tests/gpu/CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; name = CMakeLists.txt; path = CMakeLists.txt; sourceTree = SOURCE_ROOT; };
+		B3FFD2C39E5F47BDBA4F3FB5 /* /Users/kevinhouyang/Development/hifi/tests/gpu/src/ShaderLoadTest.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = ShaderLoadTest.cpp; path = src/ShaderLoadTest.cpp; sourceTree = SOURCE_ROOT; };
+		C139E0E4FA3F4402A320D759 /* /Users/kevinhouyang/Development/hifi/build/tests/gpu/gpu-ShaderLoadTest_autogen/UVLADIE3JM/qrc_data.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = qrc_data.cpp; path = "../../build/tests/gpu/gpu-ShaderLoadTest_autogen/UVLADIE3JM/qrc_data.cpp"; sourceTree = SOURCE_ROOT; };
+		D545BB959645407482148BAD /* /Users/kevinhouyang/Development/hifi/build/tests/gpu/gpu-ShaderLoadTest_autogen/mocs_compilation.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = mocs_compilation.cpp; path = "../../build/tests/gpu/gpu-ShaderLoadTest_autogen/mocs_compilation.cpp"; sourceTree = SOURCE_ROOT; };
+		E093626A108B47E8B1DBDCA5 /* /Users/kevinhouyang/Development/hifi/tests/gpu/src/data.qrc */ = {isa = PBXFileReference; explicitFileType = sourcecode; fileEncoding = 4; name = data.qrc; path = src/data.qrc; sourceTree = SOURCE_ROOT; };
+		E0D6386AEA564A9184C0EEE3 /* gpu-ShaderLoadTest */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; path = "gpu-ShaderLoadTest"; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXGroup section */
+		0D9CB3AF425840E7894B9F89 /* gpu-ShaderLoadTest_autogen */ = {
+			isa = PBXGroup;
+			children = (
+				8EC62474C5C24ABCBF1DD779 /* CMake Rules */,
+				62D86B82340648F680F1CA7F /* /Users/kevinhouyang/Development/hifi/tests/gpu/CMakeLists.txt */,
+			);
+			name = "gpu-ShaderLoadTest_autogen";
+			sourceTree = "<group>";
+		};
+		106D1930A1FD41CEB4F5071A /* CMake Rules */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "CMake Rules";
+			sourceTree = "<group>";
+		};
+		199A1C92312F4BA68C02450F /* Tests */ = {
+			isa = PBXGroup;
+			children = (
+				F8C4106A00F246F1A14EF70E /* gpu-tests */,
+			);
+			name = Tests;
+			sourceTree = "<group>";
+		};
+		276FB6333C5B47C5A5159E79 /* hidden */ = {
+			isa = PBXGroup;
+			children = (
+				3607014FA2CD468FBF0B26DC /* test-executables */,
+			);
+			name = hidden;
+			sourceTree = "<group>";
+		};
+		2B66170AABBD4C85B9125BAD /* CMake Rules */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "CMake Rules";
+			sourceTree = "<group>";
+		};
+		3607014FA2CD468FBF0B26DC /* test-executables */ = {
+			isa = PBXGroup;
+			children = (
+				929C5A5B237645579BB2B981 /* gpu-ShaderLoadTest */,
+				AE11AC1AB58A4E778DA594AC /* gpu-TextureTest */,
+				0D9CB3AF425840E7894B9F89 /* gpu-ShaderLoadTest_autogen */,
+				CB58BB25437143E9A6CBB933 /* gpu-TextureTest_autogen */,
+			);
+			name = "test-executables";
+			sourceTree = "<group>";
+		};
+		38CEE01BAFC34162A161A110 /* CMake Rules */ = {
+			isa = PBXGroup;
+			children = (
+				3E623BD044FF426B9FA8A5B9 /* /Users/kevinhouyang/Development/hifi/build/tests/gpu/gpu-TextureTest_autogen/UVLADIE3JM/qrc_data.cpp.rule */,
+			);
+			name = "CMake Rules";
+			sourceTree = "<group>";
+		};
+		551DCAA424404C669CF3BEFC /* Source Files */ = {
+			isa = PBXGroup;
+			children = (
+				138C38EE73AA401F91E3D467 /* /Users/kevinhouyang/Development/hifi/build/tests/gpu/gpu-TextureTest_autogen/UVLADIE3JM/qrc_data.cpp */,
+				291D159F9F4446938696BD2D /* /Users/kevinhouyang/Development/hifi/build/tests/gpu/gpu-TextureTest_autogen/mocs_compilation.cpp */,
+				02B4E62A81C7428094C0D7E8 /* /Users/kevinhouyang/Development/hifi/tests/gpu/src/TextureTest.cpp */,
+			);
+			name = "Source Files";
+			sourceTree = "<group>";
+		};
+		7514269A98A84663BDE09C71 /* CMake Rules */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "CMake Rules";
+			sourceTree = "<group>";
+		};
+		7C78D91B7DC44704A5CF5D6E /* Source Files */ = {
+			isa = PBXGroup;
+			children = (
+				C139E0E4FA3F4402A320D759 /* /Users/kevinhouyang/Development/hifi/build/tests/gpu/gpu-ShaderLoadTest_autogen/UVLADIE3JM/qrc_data.cpp */,
+				D545BB959645407482148BAD /* /Users/kevinhouyang/Development/hifi/build/tests/gpu/gpu-ShaderLoadTest_autogen/mocs_compilation.cpp */,
+				03728E5079E748BDA6D6AFF6 /* /Users/kevinhouyang/Development/hifi/tests/gpu/src/ShaderLoadTest.cpp */,
+			);
+			name = "Source Files";
+			sourceTree = "<group>";
+		};
+		8A9AE3E5466F433BA0752477 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E0D6386AEA564A9184C0EEE3 /* gpu-ShaderLoadTest */,
+				362F5F92910844F89131913D /* gpu-TextureTest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		8E157A315A264259988A3F48 = {
+			isa = PBXGroup;
+			children = (
+				276FB6333C5B47C5A5159E79 /* hidden */,
+				199A1C92312F4BA68C02450F /* Tests */,
+				DC0B49A3D6C34CFFABCC9A2B /* ALL_BUILD */,
+				8A9AE3E5466F433BA0752477 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		8EC62474C5C24ABCBF1DD779 /* CMake Rules */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "CMake Rules";
+			sourceTree = "<group>";
+		};
+		929C5A5B237645579BB2B981 /* gpu-ShaderLoadTest */ = {
+			isa = PBXGroup;
+			children = (
+				7C78D91B7DC44704A5CF5D6E /* Source Files */,
+				9F16F5D3A9E84A08958C7DEE /* CMake Rules */,
+				07DD3712C8E84C81AE5404E0 /* /Users/kevinhouyang/Development/hifi/tests/gpu/CMakeLists.txt */,
+				335DDA5ABD184CD4889D71ED /* /Users/kevinhouyang/Development/hifi/tests/gpu/src/data.qrc */,
+			);
+			name = "gpu-ShaderLoadTest";
+			sourceTree = "<group>";
+		};
+		9F16F5D3A9E84A08958C7DEE /* CMake Rules */ = {
+			isa = PBXGroup;
+			children = (
+				6DBD34AFA5354F3EB0A7F83C /* /Users/kevinhouyang/Development/hifi/build/tests/gpu/gpu-ShaderLoadTest_autogen/UVLADIE3JM/qrc_data.cpp.rule */,
+			);
+			name = "CMake Rules";
+			sourceTree = "<group>";
+		};
+		AE11AC1AB58A4E778DA594AC /* gpu-TextureTest */ = {
+			isa = PBXGroup;
+			children = (
+				551DCAA424404C669CF3BEFC /* Source Files */,
+				38CEE01BAFC34162A161A110 /* CMake Rules */,
+				87C67CD1437D4CE18094D4C6 /* /Users/kevinhouyang/Development/hifi/tests/gpu/CMakeLists.txt */,
+				E093626A108B47E8B1DBDCA5 /* /Users/kevinhouyang/Development/hifi/tests/gpu/src/data.qrc */,
+			);
+			name = "gpu-TextureTest";
+			sourceTree = "<group>";
+		};
+		CB58BB25437143E9A6CBB933 /* gpu-TextureTest_autogen */ = {
+			isa = PBXGroup;
+			children = (
+				7514269A98A84663BDE09C71 /* CMake Rules */,
+				711E6A1972754460811B5485 /* /Users/kevinhouyang/Development/hifi/tests/gpu/CMakeLists.txt */,
+			);
+			name = "gpu-TextureTest_autogen";
+			sourceTree = "<group>";
+		};
+		D1BA30A3091B482BBEE563DD /* Header Files */ = {
+			isa = PBXGroup;
+			children = (
+				59E767EF32D34C8BA2A8355B /* /Users/kevinhouyang/Development/hifi/tests/gpu/src/ShaderLoadTest.h */,
+				6B238870B347401EA8060438 /* /Users/kevinhouyang/Development/hifi/tests/gpu/src/TextureTest.h */,
+			);
+			name = "Header Files";
+			sourceTree = "<group>";
+		};
+		DC0B49A3D6C34CFFABCC9A2B /* ALL_BUILD */ = {
+			isa = PBXGroup;
+			children = (
+				2B66170AABBD4C85B9125BAD /* CMake Rules */,
+				2C7FF85C2D784D89A2185CFC /* /Users/kevinhouyang/Development/hifi/tests/gpu/CMakeLists.txt */,
+			);
+			name = ALL_BUILD;
+			sourceTree = "<group>";
+		};
+		F8790A94293F45578AB2FDD7 /* Source Files */ = {
+			isa = PBXGroup;
+			children = (
+				B3FFD2C39E5F47BDBA4F3FB5 /* /Users/kevinhouyang/Development/hifi/tests/gpu/src/ShaderLoadTest.cpp */,
+				56F3B7CA34A44E11B0935A52 /* /Users/kevinhouyang/Development/hifi/tests/gpu/src/TextureTest.cpp */,
+			);
+			name = "Source Files";
+			sourceTree = "<group>";
+		};
+		F8C4106A00F246F1A14EF70E /* gpu-tests */ = {
+			isa = PBXGroup;
+			children = (
+				F8790A94293F45578AB2FDD7 /* Source Files */,
+				D1BA30A3091B482BBEE563DD /* Header Files */,
+				106D1930A1FD41CEB4F5071A /* CMake Rules */,
+				4C14BC9FA4664C14AC877A7E /* /Users/kevinhouyang/Development/hifi/tests/gpu/src/cache.json */,
+				45038783E0164C80BDE6CA33 /* /Users/kevinhouyang/Development/hifi/tests/gpu/src/data.qrc */,
+				95D84376552947239ADFBB16 /* /Users/kevinhouyang/Development/hifi/tests/gpu/CMakeLists.txt */,
+			);
+			name = "gpu-tests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		45EBA59DF80D46E4B2EA8172 /* gpu-ShaderLoadTest */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E6281AC5806D4DD6BAEA09AB /* Build configuration list for PBXNativeTarget "gpu-ShaderLoadTest" */;
+			buildPhases = (
+				90700006485B42239C628998 /* CMake Rules */,
+				14F5366BB4934F81983056D8 /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F03B979AC39C48B19CABE8EE /* PBXTargetDependency */,
+				DC014D8D620E4F4C9AD1C0E6 /* PBXTargetDependency */,
+			);
+			name = "gpu-ShaderLoadTest";
+			productName = "gpu-ShaderLoadTest";
+			productReference = E0D6386AEA564A9184C0EEE3 /* gpu-ShaderLoadTest */;
+			productType = "com.apple.product-type.tool";
+		};
+		B50D753F65164B0AA94BE95C /* gpu-TextureTest */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D59AB08EC8334A4AB624E18C /* Build configuration list for PBXNativeTarget "gpu-TextureTest" */;
+			buildPhases = (
+				063D014813F94C86A48EBA26 /* CMake Rules */,
+				BC4BD47A6FD041A4A926E1A5 /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4D659310150C4780A5B2B9E3 /* PBXTargetDependency */,
+				13E3F4A07ADB401BBAB2C2EE /* PBXTargetDependency */,
+			);
+			name = "gpu-TextureTest";
+			productName = "gpu-TextureTest";
+			productReference = 362F5F92910844F89131913D /* gpu-TextureTest */;
+			productType = "com.apple.product-type.tool";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F9CDB3DCCAFF4EC1892B265D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = YES;
+				LastUpgradeCheck = 0930;
+			};
+			buildConfigurationList = BFC54D33CAD844748B4F5C20 /* Build configuration list for PBXProject "gpu-TextureTest" */;
+			buildSettings = {
+			};
+			buildStyles = (
+				D61B29C77BE04E868C378569 /* Debug */,
+				845A9DD333D5457A84831FE3 /* Release */,
+				FC2D5DA3AB50451D8385DD0A /* MinSizeRel */,
+				FE80B49429F845B08BB4F7DA /* RelWithDebInfo */,
+			);
+			compatibilityVersion = "Xcode 3.2";
+			hasScannedForEncodings = 0;
+			mainGroup = 8E157A315A264259988A3F48;
+			projectDirPath = ../../../tests/gpu;
+			projectRoot = "";
+			targets = (
+				EC7358D97DFB4AB0AF8A20EB /* ALL_BUILD */,
+				76BBA07C604F4D0E89A822F7 /* RUN_TESTS */,
+				324A15BFFEE94E94BA16B115 /* ZERO_CHECK */,
+				45EBA59DF80D46E4B2EA8172 /* gpu-ShaderLoadTest */,
+				0BF5F482171649B4A5201D28 /* gpu-ShaderLoadTest_autogen */,
+				B50D753F65164B0AA94BE95C /* gpu-TextureTest */,
+				C4718E12FD22421DAD1C0638 /* gpu-TextureTest_autogen */,
+				6613041F77164E809730BFCC /* gpu-tests */,
+				7A7E10E72F85450A98FB2D43 /* install */,
+				A0EF40283FD3451D881D67E2 /* package */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0086080A6C304195A47F9B66 = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# shell script goes here
+exit 0";
+			showEnvVarsInLog = 0;
+		};
+		063D014813F94C86A48EBA26 /* CMake Rules */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			name = "CMake Rules";
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "make -C /Users/kevinhouyang/Development/hifi/build/tests/gpu -f /Users/kevinhouyang/Development/hifi/build/tests/gpu/CMakeScripts/gpu-TextureTest_cmakeRulesBuildPhase.make$CONFIGURATION all";
+			showEnvVarsInLog = 0;
+		};
+		09873D88E723454288EB3F4C /* CMake PostBuild Rules */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			name = "CMake PostBuild Rules";
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "make -C /Users/kevinhouyang/Development/hifi/build/tests/gpu -f /Users/kevinhouyang/Development/hifi/build/tests/gpu/CMakeScripts/package_postBuildPhase.make$CONFIGURATION all";
+			showEnvVarsInLog = 0;
+		};
+		0A7B52F04D684FA0A420E0CF = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# shell script goes here
+exit 0";
+			showEnvVarsInLog = 0;
+		};
+		1CDA8297CDD5463684DABD61 /* CMake PostBuild Rules */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			name = "CMake PostBuild Rules";
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "make -C /Users/kevinhouyang/Development/hifi/build/tests/gpu -f /Users/kevinhouyang/Development/hifi/build/tests/gpu/CMakeScripts/install_postBuildPhase.make$CONFIGURATION all";
+			showEnvVarsInLog = 0;
+		};
+		26A15780272E4F0EA3CF529A /* CMake Rules */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			name = "CMake Rules";
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "make -C /Users/kevinhouyang/Development/hifi/build/tests/gpu -f /Users/kevinhouyang/Development/hifi/build/tests/gpu/CMakeScripts/gpu-tests_cmakeRulesBuildPhase.make$CONFIGURATION all";
+			showEnvVarsInLog = 0;
+		};
+		31CFB33254E843308E15C37B /* CMake PostBuild Rules */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			name = "CMake PostBuild Rules";
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "make -C /Users/kevinhouyang/Development/hifi/build/tests/gpu -f /Users/kevinhouyang/Development/hifi/build/tests/gpu/CMakeScripts/RUN_TESTS_postBuildPhase.make$CONFIGURATION all";
+			showEnvVarsInLog = 0;
+		};
+		380B488280114EE6932E0D24 /* CMake Rules */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			name = "CMake Rules";
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "make -C /Users/kevinhouyang/Development/hifi/build/tests/gpu -f /Users/kevinhouyang/Development/hifi/build/tests/gpu/CMakeScripts/ALL_BUILD_cmakeRulesBuildPhase.make$CONFIGURATION all";
+			showEnvVarsInLog = 0;
+		};
+		4FBA2B45962049A7AA31342D = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# shell script goes here
+exit 0";
+			showEnvVarsInLog = 0;
+		};
+		560C7AF1F8244834AC7B90E8 = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# shell script goes here
+exit 0";
+			showEnvVarsInLog = 0;
+		};
+		589F59E586D0487E8C1D5727 = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# shell script goes here
+exit 0";
+			showEnvVarsInLog = 0;
+		};
+		5EFE42E7243D4031BF1DEF95 /* CMake Rules */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			name = "CMake Rules";
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "make -C /Users/kevinhouyang/Development/hifi/build/tests/gpu -f /Users/kevinhouyang/Development/hifi/build/tests/gpu/CMakeScripts/gpu-ShaderLoadTest_autogen_cmakeRulesBuildPhase.make$CONFIGURATION all";
+			showEnvVarsInLog = 0;
+		};
+		6C93AA8410D34887828A7FD6 /* CMake Rules */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			name = "CMake Rules";
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "make -C /Users/kevinhouyang/Development/hifi/build/tests/gpu -f /Users/kevinhouyang/Development/hifi/build/tests/gpu/CMakeScripts/ZERO_CHECK_cmakeRulesBuildPhase.make$CONFIGURATION all";
+			showEnvVarsInLog = 0;
+		};
+		7E645F8BD32043D2BAADE4D1 /* CMake Rules */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			name = "CMake Rules";
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "make -C /Users/kevinhouyang/Development/hifi/build/tests/gpu -f /Users/kevinhouyang/Development/hifi/build/tests/gpu/CMakeScripts/gpu-TextureTest_autogen_cmakeRulesBuildPhase.make$CONFIGURATION all";
+			showEnvVarsInLog = 0;
+		};
+		8E323AF81EB5465685060BB6 = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# shell script goes here
+exit 0";
+			showEnvVarsInLog = 0;
+		};
+		90700006485B42239C628998 /* CMake Rules */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			name = "CMake Rules";
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "make -C /Users/kevinhouyang/Development/hifi/build/tests/gpu -f /Users/kevinhouyang/Development/hifi/build/tests/gpu/CMakeScripts/gpu-ShaderLoadTest_cmakeRulesBuildPhase.make$CONFIGURATION all";
+			showEnvVarsInLog = 0;
+		};
+		E035964B401E49A5B3F7B44B = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# shell script goes here
+exit 0";
+			showEnvVarsInLog = 0;
+		};
+		E7C44F3079A0473A8340DAF3 = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# shell script goes here
+exit 0";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		14F5366BB4934F81983056D8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BA63734C24DE41EEB5DAE501 /* /Users/kevinhouyang/Development/hifi/build/tests/gpu/gpu-ShaderLoadTest_autogen/UVLADIE3JM/qrc_data.cpp */,
+				52051039F0C048FFB782579E /* /Users/kevinhouyang/Development/hifi/build/tests/gpu/gpu-ShaderLoadTest_autogen/mocs_compilation.cpp */,
+				1447DC26EFB049AF9859C09B /* /Users/kevinhouyang/Development/hifi/tests/gpu/src/ShaderLoadTest.cpp */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BC4BD47A6FD041A4A926E1A5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				45543953714A4ED182EA147D /* /Users/kevinhouyang/Development/hifi/build/tests/gpu/gpu-TextureTest_autogen/UVLADIE3JM/qrc_data.cpp */,
+				D0BF03ACECD744B48F7258A3 /* /Users/kevinhouyang/Development/hifi/build/tests/gpu/gpu-TextureTest_autogen/mocs_compilation.cpp */,
+				9D8BE50BB0C54940B7684B83 /* /Users/kevinhouyang/Development/hifi/tests/gpu/src/TextureTest.cpp */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		07189BDB698C42DFA40C09F7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 324A15BFFEE94E94BA16B115 /* ZERO_CHECK */;
+			targetProxy = 97A72114FDF04B7493755A85 /* PBXContainerItemProxy */;
+		};
+		13E3F4A07ADB401BBAB2C2EE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 324A15BFFEE94E94BA16B115 /* ZERO_CHECK */;
+			targetProxy = E862B08EF3354A0D869C8C43 /* PBXContainerItemProxy */;
+		};
+		209848F91ECE487D9D2CD028 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 45EBA59DF80D46E4B2EA8172 /* gpu-ShaderLoadTest */;
+			targetProxy = 6290F77A29664BCE93C24D10 /* PBXContainerItemProxy */;
+		};
+		41168A8A1DE74289AD6915F8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 324A15BFFEE94E94BA16B115 /* ZERO_CHECK */;
+			targetProxy = 02DD3CB8AC5447898C473875 /* PBXContainerItemProxy */;
+		};
+		4D659310150C4780A5B2B9E3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C4718E12FD22421DAD1C0638 /* gpu-TextureTest_autogen */;
+			targetProxy = 6FFE4FCF1C75486F8BBD8096 /* PBXContainerItemProxy */;
+		};
+		748AFCEEFACD4B59A986A49C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 324A15BFFEE94E94BA16B115 /* ZERO_CHECK */;
+			targetProxy = B48F74348B9D4D53B8F38215 /* PBXContainerItemProxy */;
+		};
+		7E65A0840B46435AA56984CB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B50D753F65164B0AA94BE95C /* gpu-TextureTest */;
+			targetProxy = 2874131C9B39424CAF5590F6 /* PBXContainerItemProxy */;
+		};
+		90D876B839084F168D3834B3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EC7358D97DFB4AB0AF8A20EB /* ALL_BUILD */;
+			targetProxy = 500A337029C040988FC137A2 /* PBXContainerItemProxy */;
+		};
+		D423186D372047E082217604 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EC7358D97DFB4AB0AF8A20EB /* ALL_BUILD */;
+			targetProxy = 8C1AD6FC62884EBF9E6E080E /* PBXContainerItemProxy */;
+		};
+		DC014D8D620E4F4C9AD1C0E6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 324A15BFFEE94E94BA16B115 /* ZERO_CHECK */;
+			targetProxy = E6AF656D4FDE413F865FADDC /* PBXContainerItemProxy */;
+		};
+		E81FC27190104516B99E137D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 324A15BFFEE94E94BA16B115 /* ZERO_CHECK */;
+			targetProxy = 8C42C07B8AEC4DC184C36FAE /* PBXContainerItemProxy */;
+		};
+		F03B979AC39C48B19CABE8EE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 0BF5F482171649B4A5201D28 /* gpu-ShaderLoadTest_autogen */;
+			targetProxy = A0576964C40F4700BF45188E /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		0E77F301DDD74A1DB39E6842 /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = install;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/kevinhouyang/Development/hifi/build/tests/gpu;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = MinSizeRel;
+		};
+		106A0F5CC98E40B995644C6E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = install;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/kevinhouyang/Development/hifi/build/tests/gpu;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = Release;
+		};
+		1655B1CCC65B43BE801E9091 /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ALL_BUILD;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/kevinhouyang/Development/hifi/build/tests/gpu;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = MinSizeRel;
+		};
+		1C97AFC88E63409DAFF305C0 /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = package;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/kevinhouyang/Development/hifi/build/tests/gpu;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = RelWithDebInfo;
+		};
+		2170B9BCF8D142C7BF9BFE4F /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ALL_BUILD;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/kevinhouyang/Development/hifi/build/tests/gpu;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = RelWithDebInfo;
+		};
+		22C6FBB12333480496E979C3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = "gpu-TextureTest_autogen";
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/kevinhouyang/Development/hifi/build/tests/gpu;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = Release;
+		};
+		2C101B73906447D5B24F4F05 /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = "gpu-ShaderLoadTest_autogen";
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/kevinhouyang/Development/hifi/build/tests/gpu;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = RelWithDebInfo;
+		};
+		359246110E8F447681A3525D /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = "gpu-ShaderLoadTest_autogen";
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/kevinhouyang/Development/hifi/build/tests/gpu;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = MinSizeRel;
+		};
+		44AEA30EE3B04855A8C4CDD5 /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = RUN_TESTS;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/kevinhouyang/Development/hifi/build/tests/gpu;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = RelWithDebInfo;
+		};
+		4DCB0F7F7B6B403382B8F819 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ALL_BUILD;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/kevinhouyang/Development/hifi/build/tests/gpu;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = Release;
+		};
+		4F82632BF1764984BA9FCDAB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = "gpu-ShaderLoadTest_autogen";
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/kevinhouyang/Development/hifi/build/tests/gpu;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = Release;
+		};
+		560DB7F75F5049A88AD432C7 /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				FRAMEWORK_SEARCH_PATHS = (/usr/local/Cellar/qt/5.11.2/lib);
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 2;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",GLM_FORCE_RADIANS,DEV_BUILD,QT_CORE_LIB,QT_NO_DEBUG,QT_TESTLIB_LIB,"'QT_TESTCASE_BUILDDIR=\"/Users/kevinhouyang/Development/hifi/build\"'",QT_GUI_LIB,QT_NETWORK_LIB,QT_SCRIPT_LIB,QT_WIDGETS_LIB,QT_QML_LIB,QT_QUICK_LIB,QT_CONCURRENT_LIB);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (/Users/kevinhouyang/Development/hifi/build/tests/gpu,/Users/kevinhouyang/Development/hifi/tests/gpu,"/Users/kevinhouyang/Development/hifi/build/tests/gpu/gpu-TextureTest_autogen/include_RelWithDebInfo",/Users/kevinhouyang/Development/hifi/build/includes,/Users/kevinhouyang/Development/hifi/libraries/shared/src,/Users/kevinhouyang/Development/hifi/build/libraries/shared,"/Users/kevinhouyang/Development/hifi/libraries/test-utils/src","/Users/kevinhouyang/Development/hifi/build/libraries/test-utils",/Users/kevinhouyang/Development/hifi/libraries/ktx/src,/Users/kevinhouyang/Development/hifi/build/libraries/ktx,/Users/kevinhouyang/Development/hifi/libraries/gpu/src,/Users/kevinhouyang/Development/hifi/build/libraries/gpu,/Users/kevinhouyang/Development/hifi/libraries/gl/src,/Users/kevinhouyang/Development/hifi/build/libraries/gl,"/Users/kevinhouyang/Development/hifi/libraries/gpu-gl-common/src","/Users/kevinhouyang/Development/hifi/build/libraries/gpu-gl-common","/Users/kevinhouyang/Development/hifi/libraries/gpu-gl/src","/Users/kevinhouyang/Development/hifi/build/libraries/gpu-gl",/Users/kevinhouyang/Development/hifi/build/ext/Xcode/glad45/project/include,/Users/kevinhouyang/Development/hifi/build/ext/Xcode/glm/project/include,/Users/kevinhouyang/Development/hifi/build/ext/Xcode/json/project/src/json);
+				INSTALL_PATH = "";
+				LIBRARY_SEARCH_PATHS = "";
+				OTHER_CPLUSPLUSFLAGS = " -Wall -Wextra -fno-strict-aliasing -Wno-unused-parameter --stdlib=libc++           -DNDEBUG -fPIC '-std=gnu++14'  ";
+				OTHER_LDFLAGS = " -Wl,-search_paths_first -Wl,-headerpad_max_install_names  /usr/local/Cellar/qt/5.11.2/lib/QtTest.framework/QtTest /Users/kevinhouyang/Development/hifi/build/libraries/shared/RelWithDebInfo/libshared.a /Users/kevinhouyang/Development/hifi/build/libraries/test-utils/RelWithDebInfo/libtest-utils.a /Users/kevinhouyang/Development/hifi/build/libraries/ktx/RelWithDebInfo/libktx.a /Users/kevinhouyang/Development/hifi/build/libraries/gpu/RelWithDebInfo/libgpu.a /Users/kevinhouyang/Development/hifi/build/libraries/gl/RelWithDebInfo/libgl.a /Users/kevinhouyang/Development/hifi/build/libraries/gpu-gl-common/RelWithDebInfo/libgpu-gl-common.a /Users/kevinhouyang/Development/hifi/build/libraries/gpu-gl/RelWithDebInfo/libgpu-gl.a /Users/kevinhouyang/Development/hifi/build/ext/Xcode/glad45/project/lib/libglad.a -framework OpenGL -framework OpenGL -ldl -framework OpenGL -framework OpenGL -ldl /usr/lib/libz.dylib /Users/kevinhouyang/Development/hifi/build/ext/Xcode/quazip/project/lib/libquazip5.1.0.0.dylib /Users/kevinhouyang/Development/hifi/build/libraries/gpu-gl-common/RelWithDebInfo/libgpu-gl-common.a /Users/kevinhouyang/Development/hifi/build/libraries/gpu/RelWithDebInfo/libgpu.a /Users/kevinhouyang/Development/hifi/build/libraries/ktx/RelWithDebInfo/libktx.a /Users/kevinhouyang/Development/hifi/build/libraries/shaders/RelWithDebInfo/libshaders.a /Users/kevinhouyang/Development/hifi/build/libraries/gl/RelWithDebInfo/libgl.a /Users/kevinhouyang/Development/hifi/build/libraries/shared/RelWithDebInfo/libshared.a /usr/lib/libz.dylib /usr/local/Cellar/qt/5.11.2/lib/QtScript.framework/QtScript /usr/local/Cellar/qt/5.11.2/lib/QtWidgets.framework/QtWidgets /usr/local/Cellar/qt/5.11.2/lib/QtQuick.framework/QtQuick /usr/local/Cellar/qt/5.11.2/lib/QtQml.framework/QtQml /usr/local/Cellar/qt/5.11.2/lib/QtNetwork.framework/QtNetwork /usr/local/Cellar/qt/5.11.2/lib/QtGui.framework/QtGui /usr/local/Cellar/qt/5.11.2/lib/QtConcurrent.framework/QtConcurrent /usr/local/Cellar/qt/5.11.2/lib/QtCore.framework/QtCore -lpthread /Users/kevinhouyang/Development/hifi/build/ext/Xcode/glad45/project/lib/libglad.a -framework OpenGL -ldl";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = "gpu-TextureTest";
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/kevinhouyang/Development/hifi/build/tests/gpu;
+				SYSTEM_HEADER_SEARCH_PATHS = (/Users/kevinhouyang/Development/hifi/build/ext/Xcode/quazip/project/include,/usr/local/Cellar/qt/5.11.2/lib/QtCore.framework/Headers,"/usr/local/Cellar/qt/5.11.2/./mkspecs/macx-clang",/usr/local/Cellar/qt/5.11.2/lib/QtTest.framework/Headers,/usr/local/Cellar/qt/5.11.2/lib/QtGui.framework/Headers,/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk/System/Library/Frameworks/OpenGL.framework/Headers,/usr/local/Cellar/qt/5.11.2/lib/QtNetwork.framework/Headers,/usr/local/Cellar/qt/5.11.2/lib/QtScript.framework/Headers,/usr/local/Cellar/qt/5.11.2/lib/QtWidgets.framework/Headers,/usr/local/Cellar/qt/5.11.2/lib/QtQml.framework/Headers,/usr/local/Cellar/qt/5.11.2/lib/QtQuick.framework/Headers,/usr/local/Cellar/qt/5.11.2/lib/QtConcurrent.framework/Headers);
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = RelWithDebInfo;
+		};
+		5B2285428C93434D80742CF9 /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ZERO_CHECK;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/kevinhouyang/Development/hifi/build/tests/gpu;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = RelWithDebInfo;
+		};
+		61F33B6F845E413B913C208D /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = s;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",GLM_FORCE_RADIANS,DEV_BUILD);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (/Users/kevinhouyang/Development/hifi/build/tests/gpu,/Users/kevinhouyang/Development/hifi/tests/gpu,/Users/kevinhouyang/Development/hifi/build/includes,/Users/kevinhouyang/Development/hifi/libraries/shared/src,/Users/kevinhouyang/Development/hifi/build/libraries/shared,"/Users/kevinhouyang/Development/hifi/libraries/test-utils/src","/Users/kevinhouyang/Development/hifi/build/libraries/test-utils",/Users/kevinhouyang/Development/hifi/libraries/ktx/src,/Users/kevinhouyang/Development/hifi/build/libraries/ktx,/Users/kevinhouyang/Development/hifi/libraries/gpu/src,/Users/kevinhouyang/Development/hifi/build/libraries/gpu,/Users/kevinhouyang/Development/hifi/libraries/gl/src,/Users/kevinhouyang/Development/hifi/build/libraries/gl,"/Users/kevinhouyang/Development/hifi/libraries/gpu-gl-common/src","/Users/kevinhouyang/Development/hifi/build/libraries/gpu-gl-common","/Users/kevinhouyang/Development/hifi/libraries/gpu-gl/src","/Users/kevinhouyang/Development/hifi/build/libraries/gpu-gl");
+				INSTALL_PATH = "";
+				OTHER_CPLUSPLUSFLAGS = " -Wall -Wextra -fno-strict-aliasing -Wno-unused-parameter --stdlib=libc++        -DNDEBUG  ";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = "gpu-tests";
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/kevinhouyang/Development/hifi/build/tests/gpu;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = MinSizeRel;
+		};
+		63B569BC6DE34C2CAD0A6406 /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ZERO_CHECK;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/kevinhouyang/Development/hifi/build/tests/gpu;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = MinSizeRel;
+		};
+		65971C386B3740A38E2FEFDC /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = install;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/kevinhouyang/Development/hifi/build/tests/gpu;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = RelWithDebInfo;
+		};
+		67D1013FE2EB4D918052A136 /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				FRAMEWORK_SEARCH_PATHS = (/usr/local/Cellar/qt/5.11.2/lib);
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = s;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",GLM_FORCE_RADIANS,DEV_BUILD,QT_CORE_LIB,QT_NO_DEBUG,QT_TESTLIB_LIB,"'QT_TESTCASE_BUILDDIR=\"/Users/kevinhouyang/Development/hifi/build\"'",QT_GUI_LIB,QT_NETWORK_LIB,QT_SCRIPT_LIB,QT_WIDGETS_LIB,QT_QML_LIB,QT_QUICK_LIB,QT_CONCURRENT_LIB);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (/Users/kevinhouyang/Development/hifi/build/tests/gpu,/Users/kevinhouyang/Development/hifi/tests/gpu,"/Users/kevinhouyang/Development/hifi/build/tests/gpu/gpu-TextureTest_autogen/include_MinSizeRel",/Users/kevinhouyang/Development/hifi/build/includes,/Users/kevinhouyang/Development/hifi/libraries/shared/src,/Users/kevinhouyang/Development/hifi/build/libraries/shared,"/Users/kevinhouyang/Development/hifi/libraries/test-utils/src","/Users/kevinhouyang/Development/hifi/build/libraries/test-utils",/Users/kevinhouyang/Development/hifi/libraries/ktx/src,/Users/kevinhouyang/Development/hifi/build/libraries/ktx,/Users/kevinhouyang/Development/hifi/libraries/gpu/src,/Users/kevinhouyang/Development/hifi/build/libraries/gpu,/Users/kevinhouyang/Development/hifi/libraries/gl/src,/Users/kevinhouyang/Development/hifi/build/libraries/gl,"/Users/kevinhouyang/Development/hifi/libraries/gpu-gl-common/src","/Users/kevinhouyang/Development/hifi/build/libraries/gpu-gl-common","/Users/kevinhouyang/Development/hifi/libraries/gpu-gl/src","/Users/kevinhouyang/Development/hifi/build/libraries/gpu-gl",/Users/kevinhouyang/Development/hifi/build/ext/Xcode/glad45/project/include,/Users/kevinhouyang/Development/hifi/build/ext/Xcode/glm/project/include,/Users/kevinhouyang/Development/hifi/build/ext/Xcode/json/project/src/json);
+				INSTALL_PATH = "";
+				LIBRARY_SEARCH_PATHS = "";
+				OTHER_CPLUSPLUSFLAGS = " -Wall -Wextra -fno-strict-aliasing -Wno-unused-parameter --stdlib=libc++        -DNDEBUG -fPIC '-std=gnu++14'  ";
+				OTHER_LDFLAGS = " -Wl,-search_paths_first -Wl,-headerpad_max_install_names  /usr/local/Cellar/qt/5.11.2/lib/QtTest.framework/QtTest /Users/kevinhouyang/Development/hifi/build/libraries/shared/MinSizeRel/libshared.a /Users/kevinhouyang/Development/hifi/build/libraries/test-utils/MinSizeRel/libtest-utils.a /Users/kevinhouyang/Development/hifi/build/libraries/ktx/MinSizeRel/libktx.a /Users/kevinhouyang/Development/hifi/build/libraries/gpu/MinSizeRel/libgpu.a /Users/kevinhouyang/Development/hifi/build/libraries/gl/MinSizeRel/libgl.a /Users/kevinhouyang/Development/hifi/build/libraries/gpu-gl-common/MinSizeRel/libgpu-gl-common.a /Users/kevinhouyang/Development/hifi/build/libraries/gpu-gl/MinSizeRel/libgpu-gl.a /Users/kevinhouyang/Development/hifi/build/ext/Xcode/glad45/project/lib/libglad.a -framework OpenGL -framework OpenGL -ldl -framework OpenGL -framework OpenGL -ldl /usr/lib/libz.dylib /Users/kevinhouyang/Development/hifi/build/ext/Xcode/quazip/project/lib/libquazip5.1.0.0.dylib /Users/kevinhouyang/Development/hifi/build/libraries/gpu-gl-common/MinSizeRel/libgpu-gl-common.a /Users/kevinhouyang/Development/hifi/build/libraries/gpu/MinSizeRel/libgpu.a /Users/kevinhouyang/Development/hifi/build/libraries/ktx/MinSizeRel/libktx.a /Users/kevinhouyang/Development/hifi/build/libraries/shaders/MinSizeRel/libshaders.a /Users/kevinhouyang/Development/hifi/build/libraries/gl/MinSizeRel/libgl.a /Users/kevinhouyang/Development/hifi/build/libraries/shared/MinSizeRel/libshared.a /usr/lib/libz.dylib /usr/local/Cellar/qt/5.11.2/lib/QtScript.framework/QtScript /usr/local/Cellar/qt/5.11.2/lib/QtWidgets.framework/QtWidgets /usr/local/Cellar/qt/5.11.2/lib/QtQuick.framework/QtQuick /usr/local/Cellar/qt/5.11.2/lib/QtQml.framework/QtQml /usr/local/Cellar/qt/5.11.2/lib/QtNetwork.framework/QtNetwork /usr/local/Cellar/qt/5.11.2/lib/QtGui.framework/QtGui /usr/local/Cellar/qt/5.11.2/lib/QtConcurrent.framework/QtConcurrent /usr/local/Cellar/qt/5.11.2/lib/QtCore.framework/QtCore -lpthread /Users/kevinhouyang/Development/hifi/build/ext/Xcode/glad45/project/lib/libglad.a -framework OpenGL -ldl";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = "gpu-TextureTest";
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/kevinhouyang/Development/hifi/build/tests/gpu;
+				SYSTEM_HEADER_SEARCH_PATHS = (/Users/kevinhouyang/Development/hifi/build/ext/Xcode/quazip/project/include,/usr/local/Cellar/qt/5.11.2/lib/QtCore.framework/Headers,"/usr/local/Cellar/qt/5.11.2/./mkspecs/macx-clang",/usr/local/Cellar/qt/5.11.2/lib/QtTest.framework/Headers,/usr/local/Cellar/qt/5.11.2/lib/QtGui.framework/Headers,/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk/System/Library/Frameworks/OpenGL.framework/Headers,/usr/local/Cellar/qt/5.11.2/lib/QtNetwork.framework/Headers,/usr/local/Cellar/qt/5.11.2/lib/QtScript.framework/Headers,/usr/local/Cellar/qt/5.11.2/lib/QtWidgets.framework/Headers,/usr/local/Cellar/qt/5.11.2/lib/QtQml.framework/Headers,/usr/local/Cellar/qt/5.11.2/lib/QtQuick.framework/Headers,/usr/local/Cellar/qt/5.11.2/lib/QtConcurrent.framework/Headers);
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = MinSizeRel;
+		};
+		69EE1860FBC04BF08CC9517E /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				FRAMEWORK_SEARCH_PATHS = (/usr/local/Cellar/qt/5.11.2/lib);
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = s;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",GLM_FORCE_RADIANS,DEV_BUILD,QT_CORE_LIB,QT_NO_DEBUG,QT_TESTLIB_LIB,"'QT_TESTCASE_BUILDDIR=\"/Users/kevinhouyang/Development/hifi/build\"'",QT_GUI_LIB,QT_NETWORK_LIB,QT_SCRIPT_LIB,QT_WIDGETS_LIB,QT_QML_LIB,QT_QUICK_LIB,QT_CONCURRENT_LIB);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (/Users/kevinhouyang/Development/hifi/build/tests/gpu,/Users/kevinhouyang/Development/hifi/tests/gpu,"/Users/kevinhouyang/Development/hifi/build/tests/gpu/gpu-ShaderLoadTest_autogen/include_MinSizeRel",/Users/kevinhouyang/Development/hifi/build/includes,/Users/kevinhouyang/Development/hifi/libraries/shared/src,/Users/kevinhouyang/Development/hifi/build/libraries/shared,"/Users/kevinhouyang/Development/hifi/libraries/test-utils/src","/Users/kevinhouyang/Development/hifi/build/libraries/test-utils",/Users/kevinhouyang/Development/hifi/libraries/ktx/src,/Users/kevinhouyang/Development/hifi/build/libraries/ktx,/Users/kevinhouyang/Development/hifi/libraries/gpu/src,/Users/kevinhouyang/Development/hifi/build/libraries/gpu,/Users/kevinhouyang/Development/hifi/libraries/gl/src,/Users/kevinhouyang/Development/hifi/build/libraries/gl,"/Users/kevinhouyang/Development/hifi/libraries/gpu-gl-common/src","/Users/kevinhouyang/Development/hifi/build/libraries/gpu-gl-common","/Users/kevinhouyang/Development/hifi/libraries/gpu-gl/src","/Users/kevinhouyang/Development/hifi/build/libraries/gpu-gl",/Users/kevinhouyang/Development/hifi/build/ext/Xcode/glad45/project/include,/Users/kevinhouyang/Development/hifi/build/ext/Xcode/glm/project/include,/Users/kevinhouyang/Development/hifi/build/ext/Xcode/json/project/src/json);
+				INSTALL_PATH = "";
+				LIBRARY_SEARCH_PATHS = "";
+				OTHER_CPLUSPLUSFLAGS = " -Wall -Wextra -fno-strict-aliasing -Wno-unused-parameter --stdlib=libc++        -DNDEBUG -fPIC '-std=gnu++14'  ";
+				OTHER_LDFLAGS = " -Wl,-search_paths_first -Wl,-headerpad_max_install_names  /usr/local/Cellar/qt/5.11.2/lib/QtTest.framework/QtTest /Users/kevinhouyang/Development/hifi/build/libraries/shared/MinSizeRel/libshared.a /Users/kevinhouyang/Development/hifi/build/libraries/test-utils/MinSizeRel/libtest-utils.a /Users/kevinhouyang/Development/hifi/build/libraries/ktx/MinSizeRel/libktx.a /Users/kevinhouyang/Development/hifi/build/libraries/gpu/MinSizeRel/libgpu.a /Users/kevinhouyang/Development/hifi/build/libraries/gl/MinSizeRel/libgl.a /Users/kevinhouyang/Development/hifi/build/libraries/gpu-gl-common/MinSizeRel/libgpu-gl-common.a /Users/kevinhouyang/Development/hifi/build/libraries/gpu-gl/MinSizeRel/libgpu-gl.a /Users/kevinhouyang/Development/hifi/build/ext/Xcode/glad45/project/lib/libglad.a -framework OpenGL -framework OpenGL -ldl /usr/lib/libz.dylib /Users/kevinhouyang/Development/hifi/build/ext/Xcode/quazip/project/lib/libquazip5.1.0.0.dylib /Users/kevinhouyang/Development/hifi/build/libraries/gpu-gl-common/MinSizeRel/libgpu-gl-common.a /Users/kevinhouyang/Development/hifi/build/libraries/gpu/MinSizeRel/libgpu.a /Users/kevinhouyang/Development/hifi/build/libraries/ktx/MinSizeRel/libktx.a /Users/kevinhouyang/Development/hifi/build/libraries/shaders/MinSizeRel/libshaders.a /Users/kevinhouyang/Development/hifi/build/libraries/gl/MinSizeRel/libgl.a /Users/kevinhouyang/Development/hifi/build/libraries/shared/MinSizeRel/libshared.a /usr/lib/libz.dylib /usr/local/Cellar/qt/5.11.2/lib/QtScript.framework/QtScript /usr/local/Cellar/qt/5.11.2/lib/QtWidgets.framework/QtWidgets /usr/local/Cellar/qt/5.11.2/lib/QtQuick.framework/QtQuick /usr/local/Cellar/qt/5.11.2/lib/QtQml.framework/QtQml /usr/local/Cellar/qt/5.11.2/lib/QtNetwork.framework/QtNetwork /usr/local/Cellar/qt/5.11.2/lib/QtGui.framework/QtGui /usr/local/Cellar/qt/5.11.2/lib/QtConcurrent.framework/QtConcurrent /usr/local/Cellar/qt/5.11.2/lib/QtCore.framework/QtCore -lpthread /Users/kevinhouyang/Development/hifi/build/ext/Xcode/glad45/project/lib/libglad.a -framework OpenGL -ldl";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = "gpu-ShaderLoadTest";
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/kevinhouyang/Development/hifi/build/tests/gpu;
+				SYSTEM_HEADER_SEARCH_PATHS = (/Users/kevinhouyang/Development/hifi/build/ext/Xcode/quazip/project/include,/usr/local/Cellar/qt/5.11.2/lib/QtCore.framework/Headers,"/usr/local/Cellar/qt/5.11.2/./mkspecs/macx-clang",/usr/local/Cellar/qt/5.11.2/lib/QtTest.framework/Headers,/usr/local/Cellar/qt/5.11.2/lib/QtGui.framework/Headers,/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk/System/Library/Frameworks/OpenGL.framework/Headers,/usr/local/Cellar/qt/5.11.2/lib/QtNetwork.framework/Headers,/usr/local/Cellar/qt/5.11.2/lib/QtScript.framework/Headers,/usr/local/Cellar/qt/5.11.2/lib/QtWidgets.framework/Headers,/usr/local/Cellar/qt/5.11.2/lib/QtQml.framework/Headers,/usr/local/Cellar/qt/5.11.2/lib/QtQuick.framework/Headers,/usr/local/Cellar/qt/5.11.2/lib/QtConcurrent.framework/Headers);
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = MinSizeRel;
+		};
+		7440C54DF8B34396935A7964 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "c++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEPLOYMENT_POSTPROCESSING = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk;
+				SYMROOT = /Users/kevinhouyang/Development/hifi/build/tests/gpu/build;
+			};
+			name = Release;
+		};
+		76FDA6D31CED4A1190282C0D /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "c++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk;
+				SYMROOT = /Users/kevinhouyang/Development/hifi/build/tests/gpu/build;
+			};
+			name = MinSizeRel;
+		};
+		7775E1CB7457453B9FDEEC38 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ZERO_CHECK;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/kevinhouyang/Development/hifi/build/tests/gpu;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = Release;
+		};
+		7D5BBAA792E641FC81706D19 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = "gpu-TextureTest_autogen";
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/kevinhouyang/Development/hifi/build/tests/gpu;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = Debug;
+		};
+		7F6B775CAB1249FDBE0AB1E7 /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				FRAMEWORK_SEARCH_PATHS = (/usr/local/Cellar/qt/5.11.2/lib);
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 2;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",GLM_FORCE_RADIANS,DEV_BUILD,QT_CORE_LIB,QT_NO_DEBUG,QT_TESTLIB_LIB,"'QT_TESTCASE_BUILDDIR=\"/Users/kevinhouyang/Development/hifi/build\"'",QT_GUI_LIB,QT_NETWORK_LIB,QT_SCRIPT_LIB,QT_WIDGETS_LIB,QT_QML_LIB,QT_QUICK_LIB,QT_CONCURRENT_LIB);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (/Users/kevinhouyang/Development/hifi/build/tests/gpu,/Users/kevinhouyang/Development/hifi/tests/gpu,"/Users/kevinhouyang/Development/hifi/build/tests/gpu/gpu-ShaderLoadTest_autogen/include_RelWithDebInfo",/Users/kevinhouyang/Development/hifi/build/includes,/Users/kevinhouyang/Development/hifi/libraries/shared/src,/Users/kevinhouyang/Development/hifi/build/libraries/shared,"/Users/kevinhouyang/Development/hifi/libraries/test-utils/src","/Users/kevinhouyang/Development/hifi/build/libraries/test-utils",/Users/kevinhouyang/Development/hifi/libraries/ktx/src,/Users/kevinhouyang/Development/hifi/build/libraries/ktx,/Users/kevinhouyang/Development/hifi/libraries/gpu/src,/Users/kevinhouyang/Development/hifi/build/libraries/gpu,/Users/kevinhouyang/Development/hifi/libraries/gl/src,/Users/kevinhouyang/Development/hifi/build/libraries/gl,"/Users/kevinhouyang/Development/hifi/libraries/gpu-gl-common/src","/Users/kevinhouyang/Development/hifi/build/libraries/gpu-gl-common","/Users/kevinhouyang/Development/hifi/libraries/gpu-gl/src","/Users/kevinhouyang/Development/hifi/build/libraries/gpu-gl",/Users/kevinhouyang/Development/hifi/build/ext/Xcode/glad45/project/include,/Users/kevinhouyang/Development/hifi/build/ext/Xcode/glm/project/include,/Users/kevinhouyang/Development/hifi/build/ext/Xcode/json/project/src/json);
+				INSTALL_PATH = "";
+				LIBRARY_SEARCH_PATHS = "";
+				OTHER_CPLUSPLUSFLAGS = " -Wall -Wextra -fno-strict-aliasing -Wno-unused-parameter --stdlib=libc++           -DNDEBUG -fPIC '-std=gnu++14'  ";
+				OTHER_LDFLAGS = " -Wl,-search_paths_first -Wl,-headerpad_max_install_names  /usr/local/Cellar/qt/5.11.2/lib/QtTest.framework/QtTest /Users/kevinhouyang/Development/hifi/build/libraries/shared/RelWithDebInfo/libshared.a /Users/kevinhouyang/Development/hifi/build/libraries/test-utils/RelWithDebInfo/libtest-utils.a /Users/kevinhouyang/Development/hifi/build/libraries/ktx/RelWithDebInfo/libktx.a /Users/kevinhouyang/Development/hifi/build/libraries/gpu/RelWithDebInfo/libgpu.a /Users/kevinhouyang/Development/hifi/build/libraries/gl/RelWithDebInfo/libgl.a /Users/kevinhouyang/Development/hifi/build/libraries/gpu-gl-common/RelWithDebInfo/libgpu-gl-common.a /Users/kevinhouyang/Development/hifi/build/libraries/gpu-gl/RelWithDebInfo/libgpu-gl.a /Users/kevinhouyang/Development/hifi/build/ext/Xcode/glad45/project/lib/libglad.a -framework OpenGL -framework OpenGL -ldl /usr/lib/libz.dylib /Users/kevinhouyang/Development/hifi/build/ext/Xcode/quazip/project/lib/libquazip5.1.0.0.dylib /Users/kevinhouyang/Development/hifi/build/libraries/gpu-gl-common/RelWithDebInfo/libgpu-gl-common.a /Users/kevinhouyang/Development/hifi/build/libraries/gpu/RelWithDebInfo/libgpu.a /Users/kevinhouyang/Development/hifi/build/libraries/ktx/RelWithDebInfo/libktx.a /Users/kevinhouyang/Development/hifi/build/libraries/shaders/RelWithDebInfo/libshaders.a /Users/kevinhouyang/Development/hifi/build/libraries/gl/RelWithDebInfo/libgl.a /Users/kevinhouyang/Development/hifi/build/libraries/shared/RelWithDebInfo/libshared.a /usr/lib/libz.dylib /usr/local/Cellar/qt/5.11.2/lib/QtScript.framework/QtScript /usr/local/Cellar/qt/5.11.2/lib/QtWidgets.framework/QtWidgets /usr/local/Cellar/qt/5.11.2/lib/QtQuick.framework/QtQuick /usr/local/Cellar/qt/5.11.2/lib/QtQml.framework/QtQml /usr/local/Cellar/qt/5.11.2/lib/QtNetwork.framework/QtNetwork /usr/local/Cellar/qt/5.11.2/lib/QtGui.framework/QtGui /usr/local/Cellar/qt/5.11.2/lib/QtConcurrent.framework/QtConcurrent /usr/local/Cellar/qt/5.11.2/lib/QtCore.framework/QtCore -lpthread /Users/kevinhouyang/Development/hifi/build/ext/Xcode/glad45/project/lib/libglad.a -framework OpenGL -ldl";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = "gpu-ShaderLoadTest";
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/kevinhouyang/Development/hifi/build/tests/gpu;
+				SYSTEM_HEADER_SEARCH_PATHS = (/Users/kevinhouyang/Development/hifi/build/ext/Xcode/quazip/project/include,/usr/local/Cellar/qt/5.11.2/lib/QtCore.framework/Headers,"/usr/local/Cellar/qt/5.11.2/./mkspecs/macx-clang",/usr/local/Cellar/qt/5.11.2/lib/QtTest.framework/Headers,/usr/local/Cellar/qt/5.11.2/lib/QtGui.framework/Headers,/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk/System/Library/Frameworks/OpenGL.framework/Headers,/usr/local/Cellar/qt/5.11.2/lib/QtNetwork.framework/Headers,/usr/local/Cellar/qt/5.11.2/lib/QtScript.framework/Headers,/usr/local/Cellar/qt/5.11.2/lib/QtWidgets.framework/Headers,/usr/local/Cellar/qt/5.11.2/lib/QtQml.framework/Headers,/usr/local/Cellar/qt/5.11.2/lib/QtQuick.framework/Headers,/usr/local/Cellar/qt/5.11.2/lib/QtConcurrent.framework/Headers);
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = RelWithDebInfo;
+		};
+		825C964057F34FF08947F699 /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = "gpu-TextureTest_autogen";
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/kevinhouyang/Development/hifi/build/tests/gpu;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = RelWithDebInfo;
+		};
+		8C0E4E020B3B497C998AB43B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = package;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/kevinhouyang/Development/hifi/build/tests/gpu;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = Release;
+		};
+		8C95633432934DAE89106B05 /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 2;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",GLM_FORCE_RADIANS,DEV_BUILD);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (/Users/kevinhouyang/Development/hifi/build/tests/gpu,/Users/kevinhouyang/Development/hifi/tests/gpu,/Users/kevinhouyang/Development/hifi/build/includes,/Users/kevinhouyang/Development/hifi/libraries/shared/src,/Users/kevinhouyang/Development/hifi/build/libraries/shared,"/Users/kevinhouyang/Development/hifi/libraries/test-utils/src","/Users/kevinhouyang/Development/hifi/build/libraries/test-utils",/Users/kevinhouyang/Development/hifi/libraries/ktx/src,/Users/kevinhouyang/Development/hifi/build/libraries/ktx,/Users/kevinhouyang/Development/hifi/libraries/gpu/src,/Users/kevinhouyang/Development/hifi/build/libraries/gpu,/Users/kevinhouyang/Development/hifi/libraries/gl/src,/Users/kevinhouyang/Development/hifi/build/libraries/gl,"/Users/kevinhouyang/Development/hifi/libraries/gpu-gl-common/src","/Users/kevinhouyang/Development/hifi/build/libraries/gpu-gl-common","/Users/kevinhouyang/Development/hifi/libraries/gpu-gl/src","/Users/kevinhouyang/Development/hifi/build/libraries/gpu-gl");
+				INSTALL_PATH = "";
+				OTHER_CPLUSPLUSFLAGS = " -Wall -Wextra -fno-strict-aliasing -Wno-unused-parameter --stdlib=libc++           -DNDEBUG  ";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = "gpu-tests";
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/kevinhouyang/Development/hifi/build/tests/gpu;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = RelWithDebInfo;
+		};
+		8CE25005A87648748FC14423 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				FRAMEWORK_SEARCH_PATHS = (/usr/local/Cellar/qt/5.11.2/lib);
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",GLM_FORCE_RADIANS,DEV_BUILD,QT_CORE_LIB,QT_TESTLIB_LIB,"'QT_TESTCASE_BUILDDIR=\"/Users/kevinhouyang/Development/hifi/build\"'",QT_GUI_LIB,QT_NETWORK_LIB,QT_SCRIPT_LIB,QT_WIDGETS_LIB,QT_QML_LIB,QT_QUICK_LIB,QT_CONCURRENT_LIB);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (/Users/kevinhouyang/Development/hifi/build/tests/gpu,/Users/kevinhouyang/Development/hifi/tests/gpu,"/Users/kevinhouyang/Development/hifi/build/tests/gpu/gpu-ShaderLoadTest_autogen/include_Debug",/Users/kevinhouyang/Development/hifi/build/includes,/Users/kevinhouyang/Development/hifi/libraries/shared/src,/Users/kevinhouyang/Development/hifi/build/libraries/shared,"/Users/kevinhouyang/Development/hifi/libraries/test-utils/src","/Users/kevinhouyang/Development/hifi/build/libraries/test-utils",/Users/kevinhouyang/Development/hifi/libraries/ktx/src,/Users/kevinhouyang/Development/hifi/build/libraries/ktx,/Users/kevinhouyang/Development/hifi/libraries/gpu/src,/Users/kevinhouyang/Development/hifi/build/libraries/gpu,/Users/kevinhouyang/Development/hifi/libraries/gl/src,/Users/kevinhouyang/Development/hifi/build/libraries/gl,"/Users/kevinhouyang/Development/hifi/libraries/gpu-gl-common/src","/Users/kevinhouyang/Development/hifi/build/libraries/gpu-gl-common","/Users/kevinhouyang/Development/hifi/libraries/gpu-gl/src","/Users/kevinhouyang/Development/hifi/build/libraries/gpu-gl",/Users/kevinhouyang/Development/hifi/build/ext/Xcode/glad45/project/include,/Users/kevinhouyang/Development/hifi/build/ext/Xcode/glm/project/include,/Users/kevinhouyang/Development/hifi/build/ext/Xcode/json/project/src/json);
+				INSTALL_PATH = "";
+				LIBRARY_SEARCH_PATHS = "";
+				OTHER_CPLUSPLUSFLAGS = " -Wall -Wextra -fno-strict-aliasing -Wno-unused-parameter --stdlib=libc++       -DDEBUG -fPIC '-std=gnu++14'  ";
+				OTHER_LDFLAGS = " -Wl,-search_paths_first -Wl,-headerpad_max_install_names  /usr/local/Cellar/qt/5.11.2/lib/QtTest.framework/QtTest /Users/kevinhouyang/Development/hifi/build/libraries/shared/Debug/libshared.a /Users/kevinhouyang/Development/hifi/build/libraries/test-utils/Debug/libtest-utils.a /Users/kevinhouyang/Development/hifi/build/libraries/ktx/Debug/libktx.a /Users/kevinhouyang/Development/hifi/build/libraries/gpu/Debug/libgpu.a /Users/kevinhouyang/Development/hifi/build/libraries/gl/Debug/libgl.a /Users/kevinhouyang/Development/hifi/build/libraries/gpu-gl-common/Debug/libgpu-gl-common.a /Users/kevinhouyang/Development/hifi/build/libraries/gpu-gl/Debug/libgpu-gl.a /Users/kevinhouyang/Development/hifi/build/ext/Xcode/glad45/project/lib/libglad_d.a -framework OpenGL -framework OpenGL -ldl /usr/lib/libz.dylib /Users/kevinhouyang/Development/hifi/build/ext/Xcode/quazip/project/lib/libquazip5d.1.0.0.dylib /Users/kevinhouyang/Development/hifi/build/libraries/gpu-gl-common/Debug/libgpu-gl-common.a /Users/kevinhouyang/Development/hifi/build/libraries/gpu/Debug/libgpu.a /Users/kevinhouyang/Development/hifi/build/libraries/ktx/Debug/libktx.a /Users/kevinhouyang/Development/hifi/build/libraries/shaders/Debug/libshaders.a /Users/kevinhouyang/Development/hifi/build/libraries/gl/Debug/libgl.a /Users/kevinhouyang/Development/hifi/build/libraries/shared/Debug/libshared.a /usr/lib/libz.dylib /usr/local/Cellar/qt/5.11.2/lib/QtScript.framework/QtScript /usr/local/Cellar/qt/5.11.2/lib/QtWidgets.framework/QtWidgets /usr/local/Cellar/qt/5.11.2/lib/QtQuick.framework/QtQuick /usr/local/Cellar/qt/5.11.2/lib/QtQml.framework/QtQml /usr/local/Cellar/qt/5.11.2/lib/QtNetwork.framework/QtNetwork /usr/local/Cellar/qt/5.11.2/lib/QtGui.framework/QtGui /usr/local/Cellar/qt/5.11.2/lib/QtConcurrent.framework/QtConcurrent /usr/local/Cellar/qt/5.11.2/lib/QtCore.framework/QtCore -lpthread /Users/kevinhouyang/Development/hifi/build/ext/Xcode/glad45/project/lib/libglad_d.a -framework OpenGL -ldl";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = "gpu-ShaderLoadTest";
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/kevinhouyang/Development/hifi/build/tests/gpu;
+				SYSTEM_HEADER_SEARCH_PATHS = (/Users/kevinhouyang/Development/hifi/build/ext/Xcode/quazip/project/include,/usr/local/Cellar/qt/5.11.2/lib/QtCore.framework/Headers,"/usr/local/Cellar/qt/5.11.2/./mkspecs/macx-clang",/usr/local/Cellar/qt/5.11.2/lib/QtTest.framework/Headers,/usr/local/Cellar/qt/5.11.2/lib/QtGui.framework/Headers,/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk/System/Library/Frameworks/OpenGL.framework/Headers,/usr/local/Cellar/qt/5.11.2/lib/QtNetwork.framework/Headers,/usr/local/Cellar/qt/5.11.2/lib/QtScript.framework/Headers,/usr/local/Cellar/qt/5.11.2/lib/QtWidgets.framework/Headers,/usr/local/Cellar/qt/5.11.2/lib/QtQml.framework/Headers,/usr/local/Cellar/qt/5.11.2/lib/QtQuick.framework/Headers,/usr/local/Cellar/qt/5.11.2/lib/QtConcurrent.framework/Headers);
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = Debug;
+		};
+		8D8E636F43BE477597474752 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",GLM_FORCE_RADIANS,DEV_BUILD);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (/Users/kevinhouyang/Development/hifi/build/tests/gpu,/Users/kevinhouyang/Development/hifi/tests/gpu,/Users/kevinhouyang/Development/hifi/build/includes,/Users/kevinhouyang/Development/hifi/libraries/shared/src,/Users/kevinhouyang/Development/hifi/build/libraries/shared,"/Users/kevinhouyang/Development/hifi/libraries/test-utils/src","/Users/kevinhouyang/Development/hifi/build/libraries/test-utils",/Users/kevinhouyang/Development/hifi/libraries/ktx/src,/Users/kevinhouyang/Development/hifi/build/libraries/ktx,/Users/kevinhouyang/Development/hifi/libraries/gpu/src,/Users/kevinhouyang/Development/hifi/build/libraries/gpu,/Users/kevinhouyang/Development/hifi/libraries/gl/src,/Users/kevinhouyang/Development/hifi/build/libraries/gl,"/Users/kevinhouyang/Development/hifi/libraries/gpu-gl-common/src","/Users/kevinhouyang/Development/hifi/build/libraries/gpu-gl-common","/Users/kevinhouyang/Development/hifi/libraries/gpu-gl/src","/Users/kevinhouyang/Development/hifi/build/libraries/gpu-gl");
+				INSTALL_PATH = "";
+				OTHER_CPLUSPLUSFLAGS = " -Wall -Wextra -fno-strict-aliasing -Wno-unused-parameter --stdlib=libc++       -DDEBUG  ";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = "gpu-tests";
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/kevinhouyang/Development/hifi/build/tests/gpu;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = Debug;
+		};
+		9396435578A84A53B1450A90 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ALL_BUILD;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/kevinhouyang/Development/hifi/build/tests/gpu;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = Debug;
+		};
+		9411DBA71B1B45D3B8C24E67 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 3;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",GLM_FORCE_RADIANS,DEV_BUILD);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (/Users/kevinhouyang/Development/hifi/build/tests/gpu,/Users/kevinhouyang/Development/hifi/tests/gpu,/Users/kevinhouyang/Development/hifi/build/includes,/Users/kevinhouyang/Development/hifi/libraries/shared/src,/Users/kevinhouyang/Development/hifi/build/libraries/shared,"/Users/kevinhouyang/Development/hifi/libraries/test-utils/src","/Users/kevinhouyang/Development/hifi/build/libraries/test-utils",/Users/kevinhouyang/Development/hifi/libraries/ktx/src,/Users/kevinhouyang/Development/hifi/build/libraries/ktx,/Users/kevinhouyang/Development/hifi/libraries/gpu/src,/Users/kevinhouyang/Development/hifi/build/libraries/gpu,/Users/kevinhouyang/Development/hifi/libraries/gl/src,/Users/kevinhouyang/Development/hifi/build/libraries/gl,"/Users/kevinhouyang/Development/hifi/libraries/gpu-gl-common/src","/Users/kevinhouyang/Development/hifi/build/libraries/gpu-gl-common","/Users/kevinhouyang/Development/hifi/libraries/gpu-gl/src","/Users/kevinhouyang/Development/hifi/build/libraries/gpu-gl");
+				INSTALL_PATH = "";
+				OTHER_CPLUSPLUSFLAGS = " -Wall -Wextra -fno-strict-aliasing -Wno-unused-parameter --stdlib=libc++        -DNDEBUG  ";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = "gpu-tests";
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/kevinhouyang/Development/hifi/build/tests/gpu;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = Release;
+		};
+		96E40A821DD04FD38E34758C /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = package;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/kevinhouyang/Development/hifi/build/tests/gpu;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = MinSizeRel;
+		};
+		9CDB0E6C3EE64F70807ABFE3 /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = "gpu-TextureTest_autogen";
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/kevinhouyang/Development/hifi/build/tests/gpu;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = MinSizeRel;
+		};
+		AC07378596BB440B88F2C635 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = install;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/kevinhouyang/Development/hifi/build/tests/gpu;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = Debug;
+		};
+		B1C843832B4C4491B4828261 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				FRAMEWORK_SEARCH_PATHS = (/usr/local/Cellar/qt/5.11.2/lib);
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",GLM_FORCE_RADIANS,DEV_BUILD,QT_CORE_LIB,QT_TESTLIB_LIB,"'QT_TESTCASE_BUILDDIR=\"/Users/kevinhouyang/Development/hifi/build\"'",QT_GUI_LIB,QT_NETWORK_LIB,QT_SCRIPT_LIB,QT_WIDGETS_LIB,QT_QML_LIB,QT_QUICK_LIB,QT_CONCURRENT_LIB);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (/Users/kevinhouyang/Development/hifi/build/tests/gpu,/Users/kevinhouyang/Development/hifi/tests/gpu,"/Users/kevinhouyang/Development/hifi/build/tests/gpu/gpu-TextureTest_autogen/include_Debug",/Users/kevinhouyang/Development/hifi/build/includes,/Users/kevinhouyang/Development/hifi/libraries/shared/src,/Users/kevinhouyang/Development/hifi/build/libraries/shared,"/Users/kevinhouyang/Development/hifi/libraries/test-utils/src","/Users/kevinhouyang/Development/hifi/build/libraries/test-utils",/Users/kevinhouyang/Development/hifi/libraries/ktx/src,/Users/kevinhouyang/Development/hifi/build/libraries/ktx,/Users/kevinhouyang/Development/hifi/libraries/gpu/src,/Users/kevinhouyang/Development/hifi/build/libraries/gpu,/Users/kevinhouyang/Development/hifi/libraries/gl/src,/Users/kevinhouyang/Development/hifi/build/libraries/gl,"/Users/kevinhouyang/Development/hifi/libraries/gpu-gl-common/src","/Users/kevinhouyang/Development/hifi/build/libraries/gpu-gl-common","/Users/kevinhouyang/Development/hifi/libraries/gpu-gl/src","/Users/kevinhouyang/Development/hifi/build/libraries/gpu-gl",/Users/kevinhouyang/Development/hifi/build/ext/Xcode/glad45/project/include,/Users/kevinhouyang/Development/hifi/build/ext/Xcode/glm/project/include,/Users/kevinhouyang/Development/hifi/build/ext/Xcode/json/project/src/json);
+				INSTALL_PATH = "";
+				LIBRARY_SEARCH_PATHS = "";
+				OTHER_CPLUSPLUSFLAGS = " -Wall -Wextra -fno-strict-aliasing -Wno-unused-parameter --stdlib=libc++       -DDEBUG -fPIC '-std=gnu++14'  ";
+				OTHER_LDFLAGS = " -Wl,-search_paths_first -Wl,-headerpad_max_install_names  /usr/local/Cellar/qt/5.11.2/lib/QtTest.framework/QtTest /Users/kevinhouyang/Development/hifi/build/libraries/shared/Debug/libshared.a /Users/kevinhouyang/Development/hifi/build/libraries/test-utils/Debug/libtest-utils.a /Users/kevinhouyang/Development/hifi/build/libraries/ktx/Debug/libktx.a /Users/kevinhouyang/Development/hifi/build/libraries/gpu/Debug/libgpu.a /Users/kevinhouyang/Development/hifi/build/libraries/gl/Debug/libgl.a /Users/kevinhouyang/Development/hifi/build/libraries/gpu-gl-common/Debug/libgpu-gl-common.a /Users/kevinhouyang/Development/hifi/build/libraries/gpu-gl/Debug/libgpu-gl.a /Users/kevinhouyang/Development/hifi/build/ext/Xcode/glad45/project/lib/libglad_d.a -framework OpenGL -framework OpenGL -ldl -framework OpenGL -framework OpenGL -ldl /usr/lib/libz.dylib /Users/kevinhouyang/Development/hifi/build/ext/Xcode/quazip/project/lib/libquazip5d.1.0.0.dylib /Users/kevinhouyang/Development/hifi/build/libraries/gpu-gl-common/Debug/libgpu-gl-common.a /Users/kevinhouyang/Development/hifi/build/libraries/gpu/Debug/libgpu.a /Users/kevinhouyang/Development/hifi/build/libraries/ktx/Debug/libktx.a /Users/kevinhouyang/Development/hifi/build/libraries/shaders/Debug/libshaders.a /Users/kevinhouyang/Development/hifi/build/libraries/gl/Debug/libgl.a /Users/kevinhouyang/Development/hifi/build/libraries/shared/Debug/libshared.a /usr/lib/libz.dylib /usr/local/Cellar/qt/5.11.2/lib/QtScript.framework/QtScript /usr/local/Cellar/qt/5.11.2/lib/QtWidgets.framework/QtWidgets /usr/local/Cellar/qt/5.11.2/lib/QtQuick.framework/QtQuick /usr/local/Cellar/qt/5.11.2/lib/QtQml.framework/QtQml /usr/local/Cellar/qt/5.11.2/lib/QtNetwork.framework/QtNetwork /usr/local/Cellar/qt/5.11.2/lib/QtGui.framework/QtGui /usr/local/Cellar/qt/5.11.2/lib/QtConcurrent.framework/QtConcurrent /usr/local/Cellar/qt/5.11.2/lib/QtCore.framework/QtCore -lpthread /Users/kevinhouyang/Development/hifi/build/ext/Xcode/glad45/project/lib/libglad_d.a -framework OpenGL -ldl";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = "gpu-TextureTest";
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/kevinhouyang/Development/hifi/build/tests/gpu;
+				SYSTEM_HEADER_SEARCH_PATHS = (/Users/kevinhouyang/Development/hifi/build/ext/Xcode/quazip/project/include,/usr/local/Cellar/qt/5.11.2/lib/QtCore.framework/Headers,"/usr/local/Cellar/qt/5.11.2/./mkspecs/macx-clang",/usr/local/Cellar/qt/5.11.2/lib/QtTest.framework/Headers,/usr/local/Cellar/qt/5.11.2/lib/QtGui.framework/Headers,/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk/System/Library/Frameworks/OpenGL.framework/Headers,/usr/local/Cellar/qt/5.11.2/lib/QtNetwork.framework/Headers,/usr/local/Cellar/qt/5.11.2/lib/QtScript.framework/Headers,/usr/local/Cellar/qt/5.11.2/lib/QtWidgets.framework/Headers,/usr/local/Cellar/qt/5.11.2/lib/QtQml.framework/Headers,/usr/local/Cellar/qt/5.11.2/lib/QtQuick.framework/Headers,/usr/local/Cellar/qt/5.11.2/lib/QtConcurrent.framework/Headers);
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = Debug;
+		};
+		BEAC21DDF2664765BC1C1884 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = RUN_TESTS;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/kevinhouyang/Development/hifi/build/tests/gpu;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = Debug;
+		};
+		C101E36C79954C7187B4D937 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = package;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/kevinhouyang/Development/hifi/build/tests/gpu;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = Debug;
+		};
+		CE7F0A8139EE4F52BA46D9F5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				FRAMEWORK_SEARCH_PATHS = (/usr/local/Cellar/qt/5.11.2/lib);
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 3;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",GLM_FORCE_RADIANS,DEV_BUILD,QT_CORE_LIB,QT_NO_DEBUG,QT_TESTLIB_LIB,"'QT_TESTCASE_BUILDDIR=\"/Users/kevinhouyang/Development/hifi/build\"'",QT_GUI_LIB,QT_NETWORK_LIB,QT_SCRIPT_LIB,QT_WIDGETS_LIB,QT_QML_LIB,QT_QUICK_LIB,QT_CONCURRENT_LIB);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (/Users/kevinhouyang/Development/hifi/build/tests/gpu,/Users/kevinhouyang/Development/hifi/tests/gpu,"/Users/kevinhouyang/Development/hifi/build/tests/gpu/gpu-TextureTest_autogen/include_Release",/Users/kevinhouyang/Development/hifi/build/includes,/Users/kevinhouyang/Development/hifi/libraries/shared/src,/Users/kevinhouyang/Development/hifi/build/libraries/shared,"/Users/kevinhouyang/Development/hifi/libraries/test-utils/src","/Users/kevinhouyang/Development/hifi/build/libraries/test-utils",/Users/kevinhouyang/Development/hifi/libraries/ktx/src,/Users/kevinhouyang/Development/hifi/build/libraries/ktx,/Users/kevinhouyang/Development/hifi/libraries/gpu/src,/Users/kevinhouyang/Development/hifi/build/libraries/gpu,/Users/kevinhouyang/Development/hifi/libraries/gl/src,/Users/kevinhouyang/Development/hifi/build/libraries/gl,"/Users/kevinhouyang/Development/hifi/libraries/gpu-gl-common/src","/Users/kevinhouyang/Development/hifi/build/libraries/gpu-gl-common","/Users/kevinhouyang/Development/hifi/libraries/gpu-gl/src","/Users/kevinhouyang/Development/hifi/build/libraries/gpu-gl",/Users/kevinhouyang/Development/hifi/build/ext/Xcode/glad45/project/include,/Users/kevinhouyang/Development/hifi/build/ext/Xcode/glm/project/include,/Users/kevinhouyang/Development/hifi/build/ext/Xcode/json/project/src/json);
+				INSTALL_PATH = "";
+				LIBRARY_SEARCH_PATHS = "";
+				OTHER_CPLUSPLUSFLAGS = " -Wall -Wextra -fno-strict-aliasing -Wno-unused-parameter --stdlib=libc++        -DNDEBUG -fPIC '-std=gnu++14'  ";
+				OTHER_LDFLAGS = " -Wl,-search_paths_first -Wl,-headerpad_max_install_names  /usr/local/Cellar/qt/5.11.2/lib/QtTest.framework/QtTest /Users/kevinhouyang/Development/hifi/build/libraries/shared/Release/libshared.a /Users/kevinhouyang/Development/hifi/build/libraries/test-utils/Release/libtest-utils.a /Users/kevinhouyang/Development/hifi/build/libraries/ktx/Release/libktx.a /Users/kevinhouyang/Development/hifi/build/libraries/gpu/Release/libgpu.a /Users/kevinhouyang/Development/hifi/build/libraries/gl/Release/libgl.a /Users/kevinhouyang/Development/hifi/build/libraries/gpu-gl-common/Release/libgpu-gl-common.a /Users/kevinhouyang/Development/hifi/build/libraries/gpu-gl/Release/libgpu-gl.a /Users/kevinhouyang/Development/hifi/build/ext/Xcode/glad45/project/lib/libglad.a -framework OpenGL -framework OpenGL -ldl -framework OpenGL -framework OpenGL -ldl /usr/lib/libz.dylib /Users/kevinhouyang/Development/hifi/build/ext/Xcode/quazip/project/lib/libquazip5.1.0.0.dylib /Users/kevinhouyang/Development/hifi/build/libraries/gpu-gl-common/Release/libgpu-gl-common.a /Users/kevinhouyang/Development/hifi/build/libraries/gpu/Release/libgpu.a /Users/kevinhouyang/Development/hifi/build/libraries/ktx/Release/libktx.a /Users/kevinhouyang/Development/hifi/build/libraries/shaders/Release/libshaders.a /Users/kevinhouyang/Development/hifi/build/libraries/gl/Release/libgl.a /Users/kevinhouyang/Development/hifi/build/libraries/shared/Release/libshared.a /usr/lib/libz.dylib /usr/local/Cellar/qt/5.11.2/lib/QtScript.framework/QtScript /usr/local/Cellar/qt/5.11.2/lib/QtWidgets.framework/QtWidgets /usr/local/Cellar/qt/5.11.2/lib/QtQuick.framework/QtQuick /usr/local/Cellar/qt/5.11.2/lib/QtQml.framework/QtQml /usr/local/Cellar/qt/5.11.2/lib/QtNetwork.framework/QtNetwork /usr/local/Cellar/qt/5.11.2/lib/QtGui.framework/QtGui /usr/local/Cellar/qt/5.11.2/lib/QtConcurrent.framework/QtConcurrent /usr/local/Cellar/qt/5.11.2/lib/QtCore.framework/QtCore -lpthread /Users/kevinhouyang/Development/hifi/build/ext/Xcode/glad45/project/lib/libglad.a -framework OpenGL -ldl";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = "gpu-TextureTest";
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/kevinhouyang/Development/hifi/build/tests/gpu;
+				SYSTEM_HEADER_SEARCH_PATHS = (/Users/kevinhouyang/Development/hifi/build/ext/Xcode/quazip/project/include,/usr/local/Cellar/qt/5.11.2/lib/QtCore.framework/Headers,"/usr/local/Cellar/qt/5.11.2/./mkspecs/macx-clang",/usr/local/Cellar/qt/5.11.2/lib/QtTest.framework/Headers,/usr/local/Cellar/qt/5.11.2/lib/QtGui.framework/Headers,/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk/System/Library/Frameworks/OpenGL.framework/Headers,/usr/local/Cellar/qt/5.11.2/lib/QtNetwork.framework/Headers,/usr/local/Cellar/qt/5.11.2/lib/QtScript.framework/Headers,/usr/local/Cellar/qt/5.11.2/lib/QtWidgets.framework/Headers,/usr/local/Cellar/qt/5.11.2/lib/QtQml.framework/Headers,/usr/local/Cellar/qt/5.11.2/lib/QtQuick.framework/Headers,/usr/local/Cellar/qt/5.11.2/lib/QtConcurrent.framework/Headers);
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = Release;
+		};
+		CEAE18C82E20485EBF88B76C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = "gpu-ShaderLoadTest_autogen";
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/kevinhouyang/Development/hifi/build/tests/gpu;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = Debug;
+		};
+		D69CAAAE81B345DA8E33A91E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "c++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk;
+				SYMROOT = /Users/kevinhouyang/Development/hifi/build/tests/gpu/build;
+			};
+			name = Debug;
+		};
+		D747611FA4BE42769B5C5CA8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				FRAMEWORK_SEARCH_PATHS = (/usr/local/Cellar/qt/5.11.2/lib);
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 3;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",GLM_FORCE_RADIANS,DEV_BUILD,QT_CORE_LIB,QT_NO_DEBUG,QT_TESTLIB_LIB,"'QT_TESTCASE_BUILDDIR=\"/Users/kevinhouyang/Development/hifi/build\"'",QT_GUI_LIB,QT_NETWORK_LIB,QT_SCRIPT_LIB,QT_WIDGETS_LIB,QT_QML_LIB,QT_QUICK_LIB,QT_CONCURRENT_LIB);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (/Users/kevinhouyang/Development/hifi/build/tests/gpu,/Users/kevinhouyang/Development/hifi/tests/gpu,"/Users/kevinhouyang/Development/hifi/build/tests/gpu/gpu-ShaderLoadTest_autogen/include_Release",/Users/kevinhouyang/Development/hifi/build/includes,/Users/kevinhouyang/Development/hifi/libraries/shared/src,/Users/kevinhouyang/Development/hifi/build/libraries/shared,"/Users/kevinhouyang/Development/hifi/libraries/test-utils/src","/Users/kevinhouyang/Development/hifi/build/libraries/test-utils",/Users/kevinhouyang/Development/hifi/libraries/ktx/src,/Users/kevinhouyang/Development/hifi/build/libraries/ktx,/Users/kevinhouyang/Development/hifi/libraries/gpu/src,/Users/kevinhouyang/Development/hifi/build/libraries/gpu,/Users/kevinhouyang/Development/hifi/libraries/gl/src,/Users/kevinhouyang/Development/hifi/build/libraries/gl,"/Users/kevinhouyang/Development/hifi/libraries/gpu-gl-common/src","/Users/kevinhouyang/Development/hifi/build/libraries/gpu-gl-common","/Users/kevinhouyang/Development/hifi/libraries/gpu-gl/src","/Users/kevinhouyang/Development/hifi/build/libraries/gpu-gl",/Users/kevinhouyang/Development/hifi/build/ext/Xcode/glad45/project/include,/Users/kevinhouyang/Development/hifi/build/ext/Xcode/glm/project/include,/Users/kevinhouyang/Development/hifi/build/ext/Xcode/json/project/src/json);
+				INSTALL_PATH = "";
+				LIBRARY_SEARCH_PATHS = "";
+				OTHER_CPLUSPLUSFLAGS = " -Wall -Wextra -fno-strict-aliasing -Wno-unused-parameter --stdlib=libc++        -DNDEBUG -fPIC '-std=gnu++14'  ";
+				OTHER_LDFLAGS = " -Wl,-search_paths_first -Wl,-headerpad_max_install_names  /usr/local/Cellar/qt/5.11.2/lib/QtTest.framework/QtTest /Users/kevinhouyang/Development/hifi/build/libraries/shared/Release/libshared.a /Users/kevinhouyang/Development/hifi/build/libraries/test-utils/Release/libtest-utils.a /Users/kevinhouyang/Development/hifi/build/libraries/ktx/Release/libktx.a /Users/kevinhouyang/Development/hifi/build/libraries/gpu/Release/libgpu.a /Users/kevinhouyang/Development/hifi/build/libraries/gl/Release/libgl.a /Users/kevinhouyang/Development/hifi/build/libraries/gpu-gl-common/Release/libgpu-gl-common.a /Users/kevinhouyang/Development/hifi/build/libraries/gpu-gl/Release/libgpu-gl.a /Users/kevinhouyang/Development/hifi/build/ext/Xcode/glad45/project/lib/libglad.a -framework OpenGL -framework OpenGL -ldl /usr/lib/libz.dylib /Users/kevinhouyang/Development/hifi/build/ext/Xcode/quazip/project/lib/libquazip5.1.0.0.dylib /Users/kevinhouyang/Development/hifi/build/libraries/gpu-gl-common/Release/libgpu-gl-common.a /Users/kevinhouyang/Development/hifi/build/libraries/gpu/Release/libgpu.a /Users/kevinhouyang/Development/hifi/build/libraries/ktx/Release/libktx.a /Users/kevinhouyang/Development/hifi/build/libraries/shaders/Release/libshaders.a /Users/kevinhouyang/Development/hifi/build/libraries/gl/Release/libgl.a /Users/kevinhouyang/Development/hifi/build/libraries/shared/Release/libshared.a /usr/lib/libz.dylib /usr/local/Cellar/qt/5.11.2/lib/QtScript.framework/QtScript /usr/local/Cellar/qt/5.11.2/lib/QtWidgets.framework/QtWidgets /usr/local/Cellar/qt/5.11.2/lib/QtQuick.framework/QtQuick /usr/local/Cellar/qt/5.11.2/lib/QtQml.framework/QtQml /usr/local/Cellar/qt/5.11.2/lib/QtNetwork.framework/QtNetwork /usr/local/Cellar/qt/5.11.2/lib/QtGui.framework/QtGui /usr/local/Cellar/qt/5.11.2/lib/QtConcurrent.framework/QtConcurrent /usr/local/Cellar/qt/5.11.2/lib/QtCore.framework/QtCore -lpthread /Users/kevinhouyang/Development/hifi/build/ext/Xcode/glad45/project/lib/libglad.a -framework OpenGL -ldl";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = "gpu-ShaderLoadTest";
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/kevinhouyang/Development/hifi/build/tests/gpu;
+				SYSTEM_HEADER_SEARCH_PATHS = (/Users/kevinhouyang/Development/hifi/build/ext/Xcode/quazip/project/include,/usr/local/Cellar/qt/5.11.2/lib/QtCore.framework/Headers,"/usr/local/Cellar/qt/5.11.2/./mkspecs/macx-clang",/usr/local/Cellar/qt/5.11.2/lib/QtTest.framework/Headers,/usr/local/Cellar/qt/5.11.2/lib/QtGui.framework/Headers,/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk/System/Library/Frameworks/OpenGL.framework/Headers,/usr/local/Cellar/qt/5.11.2/lib/QtNetwork.framework/Headers,/usr/local/Cellar/qt/5.11.2/lib/QtScript.framework/Headers,/usr/local/Cellar/qt/5.11.2/lib/QtWidgets.framework/Headers,/usr/local/Cellar/qt/5.11.2/lib/QtQml.framework/Headers,/usr/local/Cellar/qt/5.11.2/lib/QtQuick.framework/Headers,/usr/local/Cellar/qt/5.11.2/lib/QtConcurrent.framework/Headers);
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = Release;
+		};
+		EA8A8507512F4BFE920DADFD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ZERO_CHECK;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/kevinhouyang/Development/hifi/build/tests/gpu;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = Debug;
+		};
+		F47C362AF39842F68C4D458E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = RUN_TESTS;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/kevinhouyang/Development/hifi/build/tests/gpu;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = Release;
+		};
+		F5B1A2336AB24EFAA565AF7C /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "c++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk;
+				SYMROOT = /Users/kevinhouyang/Development/hifi/build/tests/gpu/build;
+			};
+			name = RelWithDebInfo;
+		};
+		F829DB13404B4FDFB3C75FF9 /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = RUN_TESTS;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/kevinhouyang/Development/hifi/build/tests/gpu;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = MinSizeRel;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1E379F38A29341C3888A4F4C /* Build configuration list for PBXAggregateTarget "ZERO_CHECK" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EA8A8507512F4BFE920DADFD /* Debug */,
+				7775E1CB7457453B9FDEEC38 /* Release */,
+				63B569BC6DE34C2CAD0A6406 /* MinSizeRel */,
+				5B2285428C93434D80742CF9 /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		1E80550C13904C088DF34CBD /* Build configuration list for PBXAggregateTarget "gpu-TextureTest_autogen" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7D5BBAA792E641FC81706D19 /* Debug */,
+				22C6FBB12333480496E979C3 /* Release */,
+				9CDB0E6C3EE64F70807ABFE3 /* MinSizeRel */,
+				825C964057F34FF08947F699 /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		3DEA57BE5D5B4E4393E9D3D6 /* Build configuration list for PBXAggregateTarget "install" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AC07378596BB440B88F2C635 /* Debug */,
+				106A0F5CC98E40B995644C6E /* Release */,
+				0E77F301DDD74A1DB39E6842 /* MinSizeRel */,
+				65971C386B3740A38E2FEFDC /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		4DF24369309145798E65438A /* Build configuration list for PBXAggregateTarget "gpu-tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8D8E636F43BE477597474752 /* Debug */,
+				9411DBA71B1B45D3B8C24E67 /* Release */,
+				61F33B6F845E413B913C208D /* MinSizeRel */,
+				8C95633432934DAE89106B05 /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		584DF8F05A474B78BB5C0B9C /* Build configuration list for PBXAggregateTarget "package" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C101E36C79954C7187B4D937 /* Debug */,
+				8C0E4E020B3B497C998AB43B /* Release */,
+				96E40A821DD04FD38E34758C /* MinSizeRel */,
+				1C97AFC88E63409DAFF305C0 /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		B25D3BD188F141C99F37643E /* Build configuration list for PBXAggregateTarget "ALL_BUILD" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9396435578A84A53B1450A90 /* Debug */,
+				4DCB0F7F7B6B403382B8F819 /* Release */,
+				1655B1CCC65B43BE801E9091 /* MinSizeRel */,
+				2170B9BCF8D142C7BF9BFE4F /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		BFC54D33CAD844748B4F5C20 /* Build configuration list for PBXProject "gpu-TextureTest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D69CAAAE81B345DA8E33A91E /* Debug */,
+				7440C54DF8B34396935A7964 /* Release */,
+				76FDA6D31CED4A1190282C0D /* MinSizeRel */,
+				F5B1A2336AB24EFAA565AF7C /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		D19AB405FB054DEDADD3930D /* Build configuration list for PBXAggregateTarget "gpu-ShaderLoadTest_autogen" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CEAE18C82E20485EBF88B76C /* Debug */,
+				4F82632BF1764984BA9FCDAB /* Release */,
+				359246110E8F447681A3525D /* MinSizeRel */,
+				2C101B73906447D5B24F4F05 /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		D59AB08EC8334A4AB624E18C /* Build configuration list for PBXNativeTarget "gpu-TextureTest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B1C843832B4C4491B4828261 /* Debug */,
+				CE7F0A8139EE4F52BA46D9F5 /* Release */,
+				67D1013FE2EB4D918052A136 /* MinSizeRel */,
+				560DB7F75F5049A88AD432C7 /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		E436987693CF4A25A00B679C /* Build configuration list for PBXAggregateTarget "RUN_TESTS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BEAC21DDF2664765BC1C1884 /* Debug */,
+				F47C362AF39842F68C4D458E /* Release */,
+				F829DB13404B4FDFB3C75FF9 /* MinSizeRel */,
+				44AEA30EE3B04855A8C4CDD5 /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		E6281AC5806D4DD6BAEA09AB /* Build configuration list for PBXNativeTarget "gpu-ShaderLoadTest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8CE25005A87648748FC14423 /* Debug */,
+				D747611FA4BE42769B5C5CA8 /* Release */,
+				69EE1860FBC04BF08CC9517E /* MinSizeRel */,
+				7F6B775CAB1249FDBE0AB1E7 /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F9CDB3DCCAFF4EC1892B265D /* Project object */;
+}

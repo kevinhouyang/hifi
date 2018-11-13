@@ -1,0 +1,46 @@
+{
+	"sources" : 
+	[
+		{
+			"file" : "/Users/kevinhouyang/Development/hifi/build/ext/Xcode/steamworks/CMakeFiles/steamworks"
+		},
+		{
+			"file" : "/Users/kevinhouyang/Development/hifi/build/ext/Xcode/steamworks/CMakeFiles/steamworks.rule"
+		},
+		{
+			"file" : "/Users/kevinhouyang/Development/hifi/build/ext/Xcode/steamworks/CMakeFiles/CMakeFiles/steamworks-complete.rule"
+		},
+		{
+			"file" : "/Users/kevinhouyang/Development/hifi/build/ext/Xcode/steamworks/project/src/steamworks-stamp/CMakeFiles/steamworks-install.rule"
+		},
+		{
+			"file" : "/Users/kevinhouyang/Development/hifi/build/ext/Xcode/steamworks/project/src/steamworks-stamp/CMakeFiles/steamworks-mkdir.rule"
+		},
+		{
+			"file" : "/Users/kevinhouyang/Development/hifi/build/ext/Xcode/steamworks/project/src/steamworks-stamp/CMakeFiles/steamworks-download.rule"
+		},
+		{
+			"file" : "/Users/kevinhouyang/Development/hifi/build/ext/Xcode/steamworks/project/src/steamworks-stamp/CMakeFiles/steamworks-update.rule"
+		},
+		{
+			"file" : "/Users/kevinhouyang/Development/hifi/build/ext/Xcode/steamworks/project/src/steamworks-stamp/CMakeFiles/steamworks-patch.rule"
+		},
+		{
+			"file" : "/Users/kevinhouyang/Development/hifi/build/ext/Xcode/steamworks/project/src/steamworks-stamp/CMakeFiles/steamworks-configure.rule"
+		},
+		{
+			"file" : "/Users/kevinhouyang/Development/hifi/build/ext/Xcode/steamworks/project/src/steamworks-stamp/CMakeFiles/steamworks-build.rule"
+		},
+		{
+			"file" : "/Users/kevinhouyang/Development/hifi/build/ext/Xcode/steamworks/project/src/steamworks-stamp/CMakeFiles/steamworks-change-install-name.rule"
+		}
+	],
+	"target" : 
+	{
+		"labels" : 
+		[
+			"steamworks"
+		],
+		"name" : "steamworks"
+	}
+}

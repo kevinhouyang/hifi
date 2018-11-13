@@ -1,0 +1,3 @@
+repository='external project URL'
+module='https://public.highfidelity.com/dependencies/codecSDK-mac-2.0.zip'
+tag='MD5=21649881e7d5dc94f922179be96f76ba'

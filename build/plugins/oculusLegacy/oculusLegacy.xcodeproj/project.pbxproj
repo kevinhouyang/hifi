@@ -1,0 +1,1504 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXAggregateTarget section */
+		0AE2B473D26C4806ACCD56E7 /* LibOVR */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 41B9C93E40E349AC951468C1 /* Build configuration list for PBXAggregateTarget "LibOVR" */;
+			buildPhases = (
+				C62BF172048F4A70A6BBA715 /* CMake Rules */,
+			);
+			dependencies = (
+			);
+			name = LibOVR;
+			productName = LibOVR;
+		};
+		324A15BFFEE94E94BA16B115 /* ZERO_CHECK */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = D75DB8739E37436085B0D906 /* Build configuration list for PBXAggregateTarget "ZERO_CHECK" */;
+			buildPhases = (
+				E5F6E88AB25244DFA5E8C8F0 /* CMake Rules */,
+			);
+			dependencies = (
+			);
+			name = ZERO_CHECK;
+			productName = ZERO_CHECK;
+		};
+		76BBA07C604F4D0E89A822F7 /* RUN_TESTS */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 5936121434FD436CBE90381B /* Build configuration list for PBXAggregateTarget "RUN_TESTS" */;
+			buildPhases = (
+				C98046966BB14F9780D731FD /* CMake PostBuild Rules */,
+			);
+			dependencies = (
+			);
+			name = RUN_TESTS;
+			productName = RUN_TESTS;
+		};
+		7A7E10E72F85450A98FB2D43 /* install */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 2E3A6DC3D6C74D71BC8E642D /* Build configuration list for PBXAggregateTarget "install" */;
+			buildPhases = (
+				4AD22663BE8D42C283B444C7 /* CMake PostBuild Rules */,
+			);
+			dependencies = (
+				88AA47D1A1D34DFD8B51AB80 /* PBXTargetDependency */,
+			);
+			name = install;
+			productName = install;
+		};
+		A0EF40283FD3451D881D67E2 /* package */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 7273656E41074187890731AC /* Build configuration list for PBXAggregateTarget "package" */;
+			buildPhases = (
+				F0AD2F537F234549BD413C27 /* CMake PostBuild Rules */,
+			);
+			dependencies = (
+				DD3F7D5F8E7846C3B2D6266A /* PBXTargetDependency */,
+			);
+			name = package;
+			productName = package;
+		};
+		EC7358D97DFB4AB0AF8A20EB /* ALL_BUILD */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 50A3FF9999774963B70D5BB4 /* Build configuration list for PBXAggregateTarget "ALL_BUILD" */;
+			buildPhases = (
+				F86C4941CD2F4C7DBD7D5BD0 /* CMake Rules */,
+			);
+			dependencies = (
+				843BED4CE85C4D11B3B0F27A /* PBXTargetDependency */,
+				E8DAD4584CA74E3599264806 /* PBXTargetDependency */,
+				C96772B0FA90452E92EB70CA /* PBXTargetDependency */,
+			);
+			name = ALL_BUILD;
+			productName = ALL_BUILD;
+		};
+		FE864B51E9F3488EAB6960A4 /* oculusLegacy_autogen */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = A217EFE8F9AE495381FCB139 /* Build configuration list for PBXAggregateTarget "oculusLegacy_autogen" */;
+			buildPhases = (
+				F7BE6AD0F67543148F02E76E /* CMake Rules */,
+			);
+			dependencies = (
+				5B4DDE2D8A734EBD8FED7CDC /* PBXTargetDependency */,
+				A86E14A29E994079A05A822D /* PBXTargetDependency */,
+			);
+			name = oculusLegacy_autogen;
+			productName = oculusLegacy_autogen;
+		};
+/* End PBXAggregateTarget section */
+
+/* Begin PBXBuildFile section */
+		25DCF4C9313A43F681B4CBAC /* /Users/kevinhouyang/Development/hifi/plugins/oculusLegacy/src/OculusProvider.cpp */ = {isa = PBXBuildFile; fileRef = C033F6828D7E47579E82F7A9 /* /Users/kevinhouyang/Development/hifi/plugins/oculusLegacy/src/OculusProvider.cpp */; };
+		2EC14A1497F442B8B7F42467 /* /Users/kevinhouyang/Development/hifi/plugins/oculusLegacy/src/OculusHelpers.cpp */ = {isa = PBXBuildFile; fileRef = 57C2B6E941514ABDB1A37D78 /* /Users/kevinhouyang/Development/hifi/plugins/oculusLegacy/src/OculusHelpers.cpp */; };
+		89E7A0A9C4AE405A82408A47 /* /Users/kevinhouyang/Development/hifi/plugins/oculusLegacy/CMakeLists.txt */ = {isa = PBXBuildFile; fileRef = DD6217F50521463FA92BB4EE /* /Users/kevinhouyang/Development/hifi/plugins/oculusLegacy/CMakeLists.txt */; };
+		A99736ED19FD4A51BDAB0E7B /* /Users/kevinhouyang/Development/hifi/plugins/oculusLegacy/src/OculusLegacyDisplayPlugin.h */ = {isa = PBXBuildFile; fileRef = 9E2180CAEBBA4766A35C45CE /* /Users/kevinhouyang/Development/hifi/plugins/oculusLegacy/src/OculusLegacyDisplayPlugin.h */; };
+		B72967ABAE4545DEA6EBB857 /* /Users/kevinhouyang/Development/hifi/build/plugins/oculusLegacy/oculusLegacy_autogen/mocs_compilation.cpp */ = {isa = PBXBuildFile; fileRef = 56BC7356D4424F05A12453B1 /* /Users/kevinhouyang/Development/hifi/build/plugins/oculusLegacy/oculusLegacy_autogen/mocs_compilation.cpp */; };
+		E7D71276859F46098311F372 /* /Users/kevinhouyang/Development/hifi/plugins/oculusLegacy/src/OculusLegacyDisplayPlugin.cpp */ = {isa = PBXBuildFile; fileRef = D16A94A7B58241C2A559EB7D /* /Users/kevinhouyang/Development/hifi/plugins/oculusLegacy/src/OculusLegacyDisplayPlugin.cpp */; };
+		EB88CE6A8F304B04826F85EF /* /Users/kevinhouyang/Development/hifi/plugins/oculusLegacy/src/OculusHelpers.h */ = {isa = PBXBuildFile; fileRef = 2B1E43E0BDB54E0CB5DFCC00 /* /Users/kevinhouyang/Development/hifi/plugins/oculusLegacy/src/OculusHelpers.h */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXBuildStyle section */
+		22E9DE6FBFDB44CF850395F8 /* Release */ = {
+			isa = PBXBuildStyle;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+			};
+			name = Release;
+		};
+		2F6B2B437C3C46A8AF561257 /* MinSizeRel */ = {
+			isa = PBXBuildStyle;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+			};
+			name = MinSizeRel;
+		};
+		7A80A6D1FBFC4782805BCF1A /* Debug */ = {
+			isa = PBXBuildStyle;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+			};
+			name = Debug;
+		};
+		EE753B98C5C44F8ABE36D18B /* RelWithDebInfo */ = {
+			isa = PBXBuildStyle;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+			};
+			name = RelWithDebInfo;
+		};
+/* End PBXBuildStyle section */
+
+/* Begin PBXContainerItemProxy section */
+		15193FE1F2824C43AC1F8D88 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B5FE46AFEA44443EA6094631 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0AE2B473D26C4806ACCD56E7;
+			remoteInfo = LibOVR;
+		};
+		17AFC14BECBE44EABC887860 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B5FE46AFEA44443EA6094631 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0AE2B473D26C4806ACCD56E7;
+			remoteInfo = LibOVR;
+		};
+		3A37B2AE543548759B5CFC10 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B5FE46AFEA44443EA6094631 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 324A15BFFEE94E94BA16B115;
+			remoteInfo = ZERO_CHECK;
+		};
+		6AAE055E18214B34BB461DDC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B5FE46AFEA44443EA6094631 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0AE2B473D26C4806ACCD56E7;
+			remoteInfo = LibOVR;
+		};
+		762FCDFF887B4A2D9C07398D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B5FE46AFEA44443EA6094631 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 324A15BFFEE94E94BA16B115;
+			remoteInfo = ZERO_CHECK;
+		};
+		799D6F4E57724C62B3195400 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B5FE46AFEA44443EA6094631 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EC7358D97DFB4AB0AF8A20EB;
+			remoteInfo = ALL_BUILD;
+		};
+		862A094E6D3747629E91912A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B5FE46AFEA44443EA6094631 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FE864B51E9F3488EAB6960A4;
+			remoteInfo = oculusLegacy_autogen;
+		};
+		8665057557004EFD882E90E8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B5FE46AFEA44443EA6094631 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A50932280C9A4891BED603B0;
+			remoteInfo = oculusLegacy;
+		};
+		BB84F766D5404E5E9146837D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B5FE46AFEA44443EA6094631 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EC7358D97DFB4AB0AF8A20EB;
+			remoteInfo = ALL_BUILD;
+		};
+		F8F565C57D564371B2692166 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B5FE46AFEA44443EA6094631 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 324A15BFFEE94E94BA16B115;
+			remoteInfo = ZERO_CHECK;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		110C501389EE463BAAFD40D8 /* /Users/kevinhouyang/Development/hifi/cmake/externals/LibOVR/CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; name = CMakeLists.txt; path = ../../cmake/externals/LibOVR/CMakeLists.txt; sourceTree = SOURCE_ROOT; };
+		2B1E43E0BDB54E0CB5DFCC00 /* /Users/kevinhouyang/Development/hifi/plugins/oculusLegacy/src/OculusHelpers.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = OculusHelpers.h; path = src/OculusHelpers.h; sourceTree = SOURCE_ROOT; };
+		505AF8837B25466681DD20B2 /* /Users/kevinhouyang/Development/hifi/plugins/oculusLegacy/CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; name = CMakeLists.txt; path = CMakeLists.txt; sourceTree = SOURCE_ROOT; };
+		56BC7356D4424F05A12453B1 /* /Users/kevinhouyang/Development/hifi/build/plugins/oculusLegacy/oculusLegacy_autogen/mocs_compilation.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = mocs_compilation.cpp; path = ../../build/plugins/oculusLegacy/oculusLegacy_autogen/mocs_compilation.cpp; sourceTree = SOURCE_ROOT; };
+		57C2B6E941514ABDB1A37D78 /* /Users/kevinhouyang/Development/hifi/plugins/oculusLegacy/src/OculusHelpers.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = OculusHelpers.cpp; path = src/OculusHelpers.cpp; sourceTree = SOURCE_ROOT; };
+		8EAE4B34CABE4FF7A4CDE711 /* /Users/kevinhouyang/Development/hifi/plugins/oculusLegacy/CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; name = CMakeLists.txt; path = CMakeLists.txt; sourceTree = SOURCE_ROOT; };
+		9E2180CAEBBA4766A35C45CE /* /Users/kevinhouyang/Development/hifi/plugins/oculusLegacy/src/OculusLegacyDisplayPlugin.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = OculusLegacyDisplayPlugin.h; path = src/OculusLegacyDisplayPlugin.h; sourceTree = SOURCE_ROOT; };
+		B5E224CF23F94009AF152E7E /* oculusLegacy */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.dylib"; path = liboculusLegacy.dylib; sourceTree = BUILT_PRODUCTS_DIR; };
+		C033F6828D7E47579E82F7A9 /* /Users/kevinhouyang/Development/hifi/plugins/oculusLegacy/src/OculusProvider.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = OculusProvider.cpp; path = src/OculusProvider.cpp; sourceTree = SOURCE_ROOT; };
+		D16A94A7B58241C2A559EB7D /* /Users/kevinhouyang/Development/hifi/plugins/oculusLegacy/src/OculusLegacyDisplayPlugin.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = OculusLegacyDisplayPlugin.cpp; path = src/OculusLegacyDisplayPlugin.cpp; sourceTree = SOURCE_ROOT; };
+		DD6217F50521463FA92BB4EE /* /Users/kevinhouyang/Development/hifi/plugins/oculusLegacy/CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; name = CMakeLists.txt; path = CMakeLists.txt; sourceTree = SOURCE_ROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXGroup section */
+		3BDEB3DE40724740AA999FF7 /* LibOVR */ = {
+			isa = PBXGroup;
+			children = (
+				B1D0A272E7974D87A03983AE /* CMake Rules */,
+				110C501389EE463BAAFD40D8 /* /Users/kevinhouyang/Development/hifi/cmake/externals/LibOVR/CMakeLists.txt */,
+			);
+			name = LibOVR;
+			sourceTree = "<group>";
+		};
+		3C68A432C4D14B6B97B9F7EA /* Plugins */ = {
+			isa = PBXGroup;
+			children = (
+				FC11F30BC864403193CA93CC /* oculusLegacy */,
+				E0445E379B0240FC943A8B69 /* oculusLegacy_autogen */,
+			);
+			name = Plugins;
+			sourceTree = "<group>";
+		};
+		68302F4B2AFB471398E1ACE0 /* ALL_BUILD */ = {
+			isa = PBXGroup;
+			children = (
+				C7970C0CC6244C069F49C913 /* CMake Rules */,
+				8EAE4B34CABE4FF7A4CDE711 /* /Users/kevinhouyang/Development/hifi/plugins/oculusLegacy/CMakeLists.txt */,
+			);
+			name = ALL_BUILD;
+			sourceTree = "<group>";
+		};
+		B1D0A272E7974D87A03983AE /* CMake Rules */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "CMake Rules";
+			sourceTree = "<group>";
+		};
+		B524764CCCEA48E1BAC62FF7 /* externals */ = {
+			isa = PBXGroup;
+			children = (
+				3BDEB3DE40724740AA999FF7 /* LibOVR */,
+			);
+			name = externals;
+			sourceTree = "<group>";
+		};
+		C02B9532E64442D99D330B7E /* Header Files */ = {
+			isa = PBXGroup;
+			children = (
+				2B1E43E0BDB54E0CB5DFCC00 /* /Users/kevinhouyang/Development/hifi/plugins/oculusLegacy/src/OculusHelpers.h */,
+				9E2180CAEBBA4766A35C45CE /* /Users/kevinhouyang/Development/hifi/plugins/oculusLegacy/src/OculusLegacyDisplayPlugin.h */,
+			);
+			name = "Header Files";
+			sourceTree = "<group>";
+		};
+		C7970C0CC6244C069F49C913 /* CMake Rules */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "CMake Rules";
+			sourceTree = "<group>";
+		};
+		DCA6E1B837B547D58340656F = {
+			isa = PBXGroup;
+			children = (
+				3C68A432C4D14B6B97B9F7EA /* Plugins */,
+				68302F4B2AFB471398E1ACE0 /* ALL_BUILD */,
+				E8E50FE702704B43B2DE468E /* hidden */,
+				EEE310073382432B8F1AE041 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		E0445E379B0240FC943A8B69 /* oculusLegacy_autogen */ = {
+			isa = PBXGroup;
+			children = (
+				E8A4BE2C2DF143C79E6CBDA1 /* CMake Rules */,
+				505AF8837B25466681DD20B2 /* /Users/kevinhouyang/Development/hifi/plugins/oculusLegacy/CMakeLists.txt */,
+			);
+			name = oculusLegacy_autogen;
+			sourceTree = "<group>";
+		};
+		E297431C5D5A40FB8EC23E2F /* Source Files */ = {
+			isa = PBXGroup;
+			children = (
+				56BC7356D4424F05A12453B1 /* /Users/kevinhouyang/Development/hifi/build/plugins/oculusLegacy/oculusLegacy_autogen/mocs_compilation.cpp */,
+				57C2B6E941514ABDB1A37D78 /* /Users/kevinhouyang/Development/hifi/plugins/oculusLegacy/src/OculusHelpers.cpp */,
+				D16A94A7B58241C2A559EB7D /* /Users/kevinhouyang/Development/hifi/plugins/oculusLegacy/src/OculusLegacyDisplayPlugin.cpp */,
+				C033F6828D7E47579E82F7A9 /* /Users/kevinhouyang/Development/hifi/plugins/oculusLegacy/src/OculusProvider.cpp */,
+			);
+			name = "Source Files";
+			sourceTree = "<group>";
+		};
+		E8A4BE2C2DF143C79E6CBDA1 /* CMake Rules */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "CMake Rules";
+			sourceTree = "<group>";
+		};
+		E8E50FE702704B43B2DE468E /* hidden */ = {
+			isa = PBXGroup;
+			children = (
+				B524764CCCEA48E1BAC62FF7 /* externals */,
+			);
+			name = hidden;
+			sourceTree = "<group>";
+		};
+		EEE310073382432B8F1AE041 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B5E224CF23F94009AF152E7E /* oculusLegacy */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FC11F30BC864403193CA93CC /* oculusLegacy */ = {
+			isa = PBXGroup;
+			children = (
+				E297431C5D5A40FB8EC23E2F /* Source Files */,
+				C02B9532E64442D99D330B7E /* Header Files */,
+				DD6217F50521463FA92BB4EE /* /Users/kevinhouyang/Development/hifi/plugins/oculusLegacy/CMakeLists.txt */,
+			);
+			name = oculusLegacy;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A50932280C9A4891BED603B0 /* oculusLegacy */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3BA7B8787CBF4100B0FBBCB4 /* Build configuration list for PBXNativeTarget "oculusLegacy" */;
+			buildPhases = (
+				C3B6148E37C940BFBAE6294C /* Sources */,
+				AC1B2C9F9D794510A79FAB14 /* CMake PostBuild Rules */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				55AD6FABF33940DF92CDCFFC /* PBXTargetDependency */,
+				9C633884BD424829B140BF79 /* PBXTargetDependency */,
+				57C24E5FBBB6444F86432A63 /* PBXTargetDependency */,
+			);
+			name = oculusLegacy;
+			productName = oculusLegacy;
+			productReference = B5E224CF23F94009AF152E7E /* oculusLegacy */;
+			productType = "com.apple.product-type.library.dynamic";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B5FE46AFEA44443EA6094631 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = YES;
+				LastUpgradeCheck = 0930;
+			};
+			buildConfigurationList = 672A7F5AA5AD4931AEE82F0F /* Build configuration list for PBXProject "oculusLegacy" */;
+			buildSettings = {
+			};
+			buildStyles = (
+				7A80A6D1FBFC4782805BCF1A /* Debug */,
+				22E9DE6FBFDB44CF850395F8 /* Release */,
+				2F6B2B437C3C46A8AF561257 /* MinSizeRel */,
+				EE753B98C5C44F8ABE36D18B /* RelWithDebInfo */,
+			);
+			compatibilityVersion = "Xcode 3.2";
+			hasScannedForEncodings = 0;
+			mainGroup = DCA6E1B837B547D58340656F;
+			projectDirPath = ../../../plugins/oculusLegacy;
+			projectRoot = "";
+			targets = (
+				EC7358D97DFB4AB0AF8A20EB /* ALL_BUILD */,
+				76BBA07C604F4D0E89A822F7 /* RUN_TESTS */,
+				324A15BFFEE94E94BA16B115 /* ZERO_CHECK */,
+				7A7E10E72F85450A98FB2D43 /* install */,
+				A50932280C9A4891BED603B0 /* oculusLegacy */,
+				FE864B51E9F3488EAB6960A4 /* oculusLegacy_autogen */,
+				A0EF40283FD3451D881D67E2 /* package */,
+				0AE2B473D26C4806ACCD56E7 /* LibOVR */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		05BBD79DB88A4656B12A319E = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# shell script goes here
+exit 0";
+			showEnvVarsInLog = 0;
+		};
+		09E8EE241E5E402DA8A24ABA = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# shell script goes here
+exit 0";
+			showEnvVarsInLog = 0;
+		};
+		3659448EDDFB44A89FF27708 = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# shell script goes here
+exit 0";
+			showEnvVarsInLog = 0;
+		};
+		4AD22663BE8D42C283B444C7 /* CMake PostBuild Rules */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			name = "CMake PostBuild Rules";
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "make -C /Users/kevinhouyang/Development/hifi/build/plugins/oculusLegacy -f /Users/kevinhouyang/Development/hifi/build/plugins/oculusLegacy/CMakeScripts/install_postBuildPhase.make$CONFIGURATION all";
+			showEnvVarsInLog = 0;
+		};
+		AC1B2C9F9D794510A79FAB14 /* CMake PostBuild Rules */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			name = "CMake PostBuild Rules";
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "make -C /Users/kevinhouyang/Development/hifi/build/plugins/oculusLegacy -f /Users/kevinhouyang/Development/hifi/build/plugins/oculusLegacy/CMakeScripts/oculusLegacy_postBuildPhase.make$CONFIGURATION all";
+			showEnvVarsInLog = 0;
+		};
+		C186EE6E5F7642A88F86213C = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# shell script goes here
+exit 0";
+			showEnvVarsInLog = 0;
+		};
+		C62BF172048F4A70A6BBA715 /* CMake Rules */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			name = "CMake Rules";
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "make -C /Users/kevinhouyang/Development/hifi/build/ext/Xcode/LibOVR -f /Users/kevinhouyang/Development/hifi/build/ext/Xcode/LibOVR/CMakeScripts/LibOVR_cmakeRulesBuildPhase.make$CONFIGURATION all";
+			showEnvVarsInLog = 0;
+		};
+		C98046966BB14F9780D731FD /* CMake PostBuild Rules */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			name = "CMake PostBuild Rules";
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "make -C /Users/kevinhouyang/Development/hifi/build/plugins/oculusLegacy -f /Users/kevinhouyang/Development/hifi/build/plugins/oculusLegacy/CMakeScripts/RUN_TESTS_postBuildPhase.make$CONFIGURATION all";
+			showEnvVarsInLog = 0;
+		};
+		CDA9A594D5734B00883AAF7C = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# shell script goes here
+exit 0";
+			showEnvVarsInLog = 0;
+		};
+		E5F6E88AB25244DFA5E8C8F0 /* CMake Rules */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			name = "CMake Rules";
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "make -C /Users/kevinhouyang/Development/hifi/build/plugins/oculusLegacy -f /Users/kevinhouyang/Development/hifi/build/plugins/oculusLegacy/CMakeScripts/ZERO_CHECK_cmakeRulesBuildPhase.make$CONFIGURATION all";
+			showEnvVarsInLog = 0;
+		};
+		F0AD2F537F234549BD413C27 /* CMake PostBuild Rules */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			name = "CMake PostBuild Rules";
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "make -C /Users/kevinhouyang/Development/hifi/build/plugins/oculusLegacy -f /Users/kevinhouyang/Development/hifi/build/plugins/oculusLegacy/CMakeScripts/package_postBuildPhase.make$CONFIGURATION all";
+			showEnvVarsInLog = 0;
+		};
+		F5306CD1D98841CAA7FD199F = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# shell script goes here
+exit 0";
+			showEnvVarsInLog = 0;
+		};
+		F7BE6AD0F67543148F02E76E /* CMake Rules */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			name = "CMake Rules";
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "make -C /Users/kevinhouyang/Development/hifi/build/plugins/oculusLegacy -f /Users/kevinhouyang/Development/hifi/build/plugins/oculusLegacy/CMakeScripts/oculusLegacy_autogen_cmakeRulesBuildPhase.make$CONFIGURATION all";
+			showEnvVarsInLog = 0;
+		};
+		F86C4941CD2F4C7DBD7D5BD0 /* CMake Rules */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			name = "CMake Rules";
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "make -C /Users/kevinhouyang/Development/hifi/build/plugins/oculusLegacy -f /Users/kevinhouyang/Development/hifi/build/plugins/oculusLegacy/CMakeScripts/ALL_BUILD_cmakeRulesBuildPhase.make$CONFIGURATION all";
+			showEnvVarsInLog = 0;
+		};
+		FC90332E4F6F45D28ABEA043 = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# shell script goes here
+exit 0";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C3B6148E37C940BFBAE6294C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B72967ABAE4545DEA6EBB857 /* /Users/kevinhouyang/Development/hifi/build/plugins/oculusLegacy/oculusLegacy_autogen/mocs_compilation.cpp */,
+				2EC14A1497F442B8B7F42467 /* /Users/kevinhouyang/Development/hifi/plugins/oculusLegacy/src/OculusHelpers.cpp */,
+				E7D71276859F46098311F372 /* /Users/kevinhouyang/Development/hifi/plugins/oculusLegacy/src/OculusLegacyDisplayPlugin.cpp */,
+				25DCF4C9313A43F681B4CBAC /* /Users/kevinhouyang/Development/hifi/plugins/oculusLegacy/src/OculusProvider.cpp */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		55AD6FABF33940DF92CDCFFC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 324A15BFFEE94E94BA16B115 /* ZERO_CHECK */;
+			targetProxy = 3A37B2AE543548759B5CFC10 /* PBXContainerItemProxy */;
+		};
+		57C24E5FBBB6444F86432A63 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FE864B51E9F3488EAB6960A4 /* oculusLegacy_autogen */;
+			targetProxy = 862A094E6D3747629E91912A /* PBXContainerItemProxy */;
+		};
+		5B4DDE2D8A734EBD8FED7CDC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 324A15BFFEE94E94BA16B115 /* ZERO_CHECK */;
+			targetProxy = F8F565C57D564371B2692166 /* PBXContainerItemProxy */;
+		};
+		843BED4CE85C4D11B3B0F27A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 324A15BFFEE94E94BA16B115 /* ZERO_CHECK */;
+			targetProxy = 762FCDFF887B4A2D9C07398D /* PBXContainerItemProxy */;
+		};
+		88AA47D1A1D34DFD8B51AB80 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EC7358D97DFB4AB0AF8A20EB /* ALL_BUILD */;
+			targetProxy = 799D6F4E57724C62B3195400 /* PBXContainerItemProxy */;
+		};
+		9C633884BD424829B140BF79 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 0AE2B473D26C4806ACCD56E7 /* LibOVR */;
+			targetProxy = 15193FE1F2824C43AC1F8D88 /* PBXContainerItemProxy */;
+		};
+		A86E14A29E994079A05A822D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 0AE2B473D26C4806ACCD56E7 /* LibOVR */;
+			targetProxy = 17AFC14BECBE44EABC887860 /* PBXContainerItemProxy */;
+		};
+		C96772B0FA90452E92EB70CA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 0AE2B473D26C4806ACCD56E7 /* LibOVR */;
+			targetProxy = 6AAE055E18214B34BB461DDC /* PBXContainerItemProxy */;
+		};
+		DD3F7D5F8E7846C3B2D6266A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EC7358D97DFB4AB0AF8A20EB /* ALL_BUILD */;
+			targetProxy = BB84F766D5404E5E9146837D /* PBXContainerItemProxy */;
+		};
+		E8DAD4584CA74E3599264806 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A50932280C9A4891BED603B0 /* oculusLegacy */;
+			targetProxy = 8665057557004EFD882E90E8 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		087FBA9292D54135B0FD033B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "c++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEPLOYMENT_POSTPROCESSING = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk;
+				SYMROOT = /Users/kevinhouyang/Development/hifi/build/plugins/oculusLegacy/build;
+			};
+			name = Release;
+		};
+		14B5E459B235465BAD20072A /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ALL_BUILD;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/kevinhouyang/Development/hifi/build/plugins/oculusLegacy;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = RelWithDebInfo;
+		};
+		19156C9F9E9845DCA310F514 /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ZERO_CHECK;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/kevinhouyang/Development/hifi/build/plugins/oculusLegacy;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = RelWithDebInfo;
+		};
+		3D938233E82847A598FD7DA9 /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = oculusLegacy_autogen;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/kevinhouyang/Development/hifi/build/plugins/oculusLegacy;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = RelWithDebInfo;
+		};
+		41BC914A568048EBAF9C039C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = package;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/kevinhouyang/Development/hifi/build/plugins/oculusLegacy;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = Release;
+		};
+		496DC34C4B4942F3A594072E /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = package;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/kevinhouyang/Development/hifi/build/plugins/oculusLegacy;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = RelWithDebInfo;
+		};
+		4EBD7613EE1448C8B7338DA4 /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "c++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk;
+				SYMROOT = /Users/kevinhouyang/Development/hifi/build/plugins/oculusLegacy/build;
+			};
+			name = RelWithDebInfo;
+		};
+		518214FE8F014DD6BB53567C /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = oculusLegacy_autogen;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/kevinhouyang/Development/hifi/build/plugins/oculusLegacy;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = MinSizeRel;
+		};
+		55BE831A27ED4E96A4B58444 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = package;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/kevinhouyang/Development/hifi/build/plugins/oculusLegacy;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = Debug;
+		};
+		55E1F161E390406D8DCB843E /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = package;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/kevinhouyang/Development/hifi/build/plugins/oculusLegacy;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = MinSizeRel;
+		};
+		57422F772A3544B08E22E520 /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = LibOVR;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/kevinhouyang/Development/hifi/build/ext/Xcode/LibOVR;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = MinSizeRel;
+		};
+		6059ED8548C449A9AA19FB7C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ALL_BUILD;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/kevinhouyang/Development/hifi/build/plugins/oculusLegacy;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = Debug;
+		};
+		61455194A70641D384D50404 /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				DYLIB_COMPATIBILITY_VERSION = "";
+				DYLIB_CURRENT_VERSION = "";
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .dylib;
+				FRAMEWORK_SEARCH_PATHS = (/Users/kevinhouyang/Development/hifi/build/ext/Xcode/LibOVR/project/src/LibOVR/LibOVR/Lib/Mac/Release,/usr/local/Cellar/qt/5.11.2/lib);
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 2;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",oculusLegacy_EXPORTS,GLM_FORCE_RADIANS,DEV_BUILD,QT_CORE_LIB,QT_NO_DEBUG,QT_GUI_LIB,QT_NETWORK_LIB,QT_SCRIPT_LIB,QT_WIDGETS_LIB,QT_QML_LIB,QT_QUICK_LIB,QT_OPENGL_LIB,QT_MULTIMEDIA_LIB,QT_WEBCHANNEL_LIB,QT_WEBSOCKETS_LIB,QT_XMLPATTERNS_LIB,QT_WEBENGINE_LIB,QT_WEBENGINECORE_LIB,QT_POSITIONING_LIB,QT_SCRIPTTOOLS_LIB,QT_CONCURRENT_LIB);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (/Users/kevinhouyang/Development/hifi/build/plugins/oculusLegacy,/Users/kevinhouyang/Development/hifi/plugins/oculusLegacy,/Users/kevinhouyang/Development/hifi/build/plugins/oculusLegacy/oculusLegacy_autogen/include_RelWithDebInfo,/Users/kevinhouyang/Development/hifi/build/includes,/Users/kevinhouyang/Development/hifi/build/ext/Xcode/glm/project/include,/Users/kevinhouyang/Development/hifi/libraries/shared/src,/Users/kevinhouyang/Development/hifi/build/libraries/shared,/Users/kevinhouyang/Development/hifi/libraries/shaders/src,/Users/kevinhouyang/Development/hifi/build/libraries/shaders,/Users/kevinhouyang/Development/hifi/libraries/gl/src,/Users/kevinhouyang/Development/hifi/build/libraries/gl,/Users/kevinhouyang/Development/hifi/libraries/gpu/src,/Users/kevinhouyang/Development/hifi/build/libraries/gpu,/Users/kevinhouyang/Development/hifi/libraries/plugins/src,/Users/kevinhouyang/Development/hifi/build/libraries/plugins,/Users/kevinhouyang/Development/hifi/libraries/ui/src,/Users/kevinhouyang/Development/hifi/build/libraries/ui,"/Users/kevinhouyang/Development/hifi/libraries/ui-plugins/src","/Users/kevinhouyang/Development/hifi/build/libraries/ui-plugins","/Users/kevinhouyang/Development/hifi/libraries/display-plugins/src","/Users/kevinhouyang/Development/hifi/build/libraries/display-plugins","/Users/kevinhouyang/Development/hifi/libraries/input-plugins/src","/Users/kevinhouyang/Development/hifi/build/libraries/input-plugins",/Users/kevinhouyang/Development/hifi/libraries/midi/src,/Users/kevinhouyang/Development/hifi/build/libraries/midi,"/Users/kevinhouyang/Development/hifi/libraries/gpu-gl-common/src","/Users/kevinhouyang/Development/hifi/build/libraries/gpu-gl-common","/Users/kevinhouyang/Development/hifi/libraries/gpu-gl/src","/Users/kevinhouyang/Development/hifi/build/libraries/gpu-gl",/Users/kevinhouyang/Development/hifi/libraries/octree/src,/Users/kevinhouyang/Development/hifi/build/ext/Xcode/LibOVR/project/src/LibOVR/LibOVR/Include,/Users/kevinhouyang/Development/hifi/build/ext/Xcode/json/project/src/json,/Users/kevinhouyang/Development/hifi/build/ext/Xcode/glad45/project/include,/Users/kevinhouyang/Development/hifi/libraries/audio/src);
+				INSTALL_PATH = "@rpath";
+				LIBRARY_SEARCH_PATHS = "";
+				LIBRARY_STYLE = DYNAMIC;
+				OTHER_CPLUSPLUSFLAGS = " -Wall -Wextra -fno-strict-aliasing -Wno-unused-parameter --stdlib=libc++           -DNDEBUG -fPIC -fPIC '-std=gnu++14'  ";
+				OTHER_LDFLAGS = " -dynamiclib -Wl,-headerpad_max_install_names  /Users/kevinhouyang/Development/hifi/build/libraries/shared/RelWithDebInfo/libshared.a /Users/kevinhouyang/Development/hifi/build/libraries/shaders/RelWithDebInfo/libshaders.a /Users/kevinhouyang/Development/hifi/build/libraries/gl/RelWithDebInfo/libgl.a /Users/kevinhouyang/Development/hifi/build/libraries/gpu/RelWithDebInfo/libgpu.a /Users/kevinhouyang/Development/hifi/build/libraries/plugins/RelWithDebInfo/libplugins.a /Users/kevinhouyang/Development/hifi/build/libraries/ui/RelWithDebInfo/libui.a /Users/kevinhouyang/Development/hifi/build/libraries/ui-plugins/RelWithDebInfo/libui-plugins.a /Users/kevinhouyang/Development/hifi/build/libraries/display-plugins/RelWithDebInfo/libdisplay-plugins.a /Users/kevinhouyang/Development/hifi/build/libraries/input-plugins/RelWithDebInfo/libinput-plugins.a /Users/kevinhouyang/Development/hifi/build/libraries/midi/RelWithDebInfo/libmidi.a /Users/kevinhouyang/Development/hifi/build/libraries/gpu-gl-common/RelWithDebInfo/libgpu-gl-common.a /Users/kevinhouyang/Development/hifi/build/libraries/gpu-gl/RelWithDebInfo/libgpu-gl.a /Users/kevinhouyang/Development/hifi/build/ext/Xcode/LibOVR/project/src/LibOVR/LibOVR/Lib/Mac/Release/LibOVR.framework/LibOVR -framework Cocoa -framework IOKit /Users/kevinhouyang/Development/hifi/build/libraries/gpu-gl-common/RelWithDebInfo/libgpu-gl-common.a /usr/local/Cellar/qt/5.11.2/lib/QtConcurrent.framework/QtConcurrent -lpthread /Users/kevinhouyang/Development/hifi/build/libraries/render-utils/RelWithDebInfo/librender-utils.a /Users/kevinhouyang/Development/hifi/build/libraries/graphics-scripting/RelWithDebInfo/libgraphics-scripting.a /Users/kevinhouyang/Development/hifi/build/libraries/script-engine/RelWithDebInfo/libscript-engine.a /Users/kevinhouyang/Development/hifi/build/libraries/midi/RelWithDebInfo/libmidi.a /usr/local/Cellar/qt/5.11.2/lib/QtScriptTools.framework/QtScriptTools /Users/kevinhouyang/Development/hifi/build/ext/Xcode/quazip/project/lib/libquazip5.1.0.0.dylib /Users/kevinhouyang/Development/hifi/build/libraries/recording/RelWithDebInfo/librecording.a /Users/kevinhouyang/Development/hifi/build/libraries/physics/RelWithDebInfo/libphysics.a /Users/kevinhouyang/Development/hifi/build/libraries/entities/RelWithDebInfo/libentities.a /Users/kevinhouyang/Development/hifi/build/libraries/avatars/RelWithDebInfo/libavatars.a /Users/kevinhouyang/Development/hifi/build/libraries/workload/RelWithDebInfo/libworkload.a /Users/kevinhouyang/Development/hifi/build/ext/Xcode/bullet/project/lib/libBulletDynamics.dylib /Users/kevinhouyang/Development/hifi/build/ext/Xcode/bullet/project/lib/libBulletCollision.dylib /Users/kevinhouyang/Development/hifi/build/ext/Xcode/bullet/project/lib/libLinearMath.dylib /Users/kevinhouyang/Development/hifi/build/ext/Xcode/bullet/project/lib/libBulletSoftBody.dylib /Users/kevinhouyang/Development/hifi/build/libraries/render/RelWithDebInfo/librender.a /Users/kevinhouyang/Development/hifi/build/libraries/task/RelWithDebInfo/libtask.a /Users/kevinhouyang/Development/hifi/build/libraries/octree/RelWithDebInfo/liboctree.a /Users/kevinhouyang/Development/hifi/build/libraries/animation/RelWithDebInfo/libanimation.a /Users/kevinhouyang/Development/hifi/build/libraries/procedural/RelWithDebInfo/libprocedural.a /Users/kevinhouyang/Development/hifi/build/libraries/model-networking/RelWithDebInfo/libmodel-networking.a /Users/kevinhouyang/Development/hifi/build/libraries/fbx/RelWithDebInfo/libfbx.a /Users/kevinhouyang/Development/hifi/build/libraries/graphics/RelWithDebInfo/libgraphics.a /Users/kevinhouyang/Development/hifi/build/ext/Xcode/draco/project-RelWithDebInfo/lib/libdraco.a /Users/kevinhouyang/Development/hifi/build/ext/Xcode/draco/project-RelWithDebInfo/lib/libdracoenc.a /Users/kevinhouyang/Development/hifi/build/libraries/image/RelWithDebInfo/libimage.a /Users/kevinhouyang/Development/hifi/build/libraries/gpu/RelWithDebInfo/libgpu.a /Users/kevinhouyang/Development/hifi/build/libraries/shaders/RelWithDebInfo/libshaders.a /Users/kevinhouyang/Development/hifi/build/libraries/ktx/RelWithDebInfo/libktx.a /Users/kevinhouyang/Development/hifi/build/ext/Xcode/nvtt/project/lib/libnvtt.dylib /Users/kevinhouyang/Development/hifi/build/ext/Xcode/etc2comp/project/build/EtcLib/RelWithDebInfo/libEtcLib.a /Users/kevinhouyang/Development/hifi/build/libraries/ui-plugins/RelWithDebInfo/libui-plugins.a /Users/kevinhouyang/Development/hifi/build/libraries/ui/RelWithDebInfo/libui.a /usr/local/Cellar/qt/5.11.2/lib/QtOpenGL.framework/QtOpenGL /usr/local/Cellar/qt/5.11.2/lib/QtXmlPatterns.framework/QtXmlPatterns /Users/kevinhouyang/Development/hifi/build/libraries/qml/RelWithDebInfo/libqml.a /Users/kevinhouyang/Development/hifi/build/libraries/gl/RelWithDebInfo/libgl.a /usr/local/Cellar/qt/5.11.2/lib/QtWidgets.framework/QtWidgets /Users/kevinhouyang/Development/hifi/build/ext/Xcode/glad45/project/lib/libglad.a -framework OpenGL -ldl /usr/local/Cellar/qt/5.11.2/lib/QtWebSockets.framework/QtWebSockets /Users/kevinhouyang/Development/hifi/build/libraries/audio-client/RelWithDebInfo/libaudio-client.a /usr/local/Cellar/qt/5.11.2/lib/QtMultimedia.framework/QtMultimedia /usr/local/Cellar/qt/5.11.2/lib/QtWebEngine.framework/QtWebEngine /usr/local/Cellar/qt/5.11.2/lib/QtWebEngineCore.framework/QtWebEngineCore /usr/local/Cellar/qt/5.11.2/lib/QtQuick.framework/QtQuick /usr/local/Cellar/qt/5.11.2/lib/QtWebChannel.framework/QtWebChannel /usr/local/Cellar/qt/5.11.2/lib/QtPositioning.framework/QtPositioning /Users/kevinhouyang/Development/hifi/build/libraries/audio/RelWithDebInfo/libaudio.a /Users/kevinhouyang/Development/hifi/build/libraries/plugins/RelWithDebInfo/libplugins.a /Users/kevinhouyang/Development/hifi/build/libraries/networking/RelWithDebInfo/libnetworking.a /usr/local/Cellar/openssl/1.0.2p/lib/libssl.dylib /usr/local/Cellar/openssl/1.0.2p/lib/libcrypto.dylib /Users/kevinhouyang/Development/hifi/build/ext/Xcode/tbb/project/src/tbb/lib/libtbb.dylib /Users/kevinhouyang/Development/hifi/build/ext/Xcode/tbb/project/src/tbb/lib/libtbbmalloc.dylib -framework CoreAudio -framework CoreFoundation /Users/kevinhouyang/Development/hifi/build/libraries/pointers/RelWithDebInfo/libpointers.a /Users/kevinhouyang/Development/hifi/build/libraries/controllers/RelWithDebInfo/libcontrollers.a /Users/kevinhouyang/Development/hifi/build/libraries/shared/RelWithDebInfo/libshared.a /usr/local/Cellar/qt/5.11.2/lib/QtGui.framework/QtGui /usr/lib/libz.dylib /usr/local/Cellar/qt/5.11.2/lib/QtScript.framework/QtScript /usr/local/Cellar/qt/5.11.2/lib/QtQml.framework/QtQml /usr/local/Cellar/qt/5.11.2/lib/QtNetwork.framework/QtNetwork /usr/local/Cellar/qt/5.11.2/lib/QtCore.framework/QtCore -framework IOKit";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = oculusLegacy;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/kevinhouyang/Development/hifi/build/plugins/oculusLegacy;
+				SYSTEM_HEADER_SEARCH_PATHS = (/usr/local/Cellar/qt/5.11.2/lib/QtCore.framework/Headers,"/usr/local/Cellar/qt/5.11.2/./mkspecs/macx-clang",/usr/local/Cellar/qt/5.11.2/lib/QtGui.framework/Headers,/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk/System/Library/Frameworks/OpenGL.framework/Headers,/usr/local/Cellar/qt/5.11.2/lib/QtNetwork.framework/Headers,/usr/local/Cellar/qt/5.11.2/lib/QtScript.framework/Headers,/usr/local/Cellar/qt/5.11.2/lib/QtWidgets.framework/Headers,/usr/local/Cellar/qt/5.11.2/lib/QtQml.framework/Headers,/usr/local/Cellar/qt/5.11.2/lib/QtQuick.framework/Headers,/Users/kevinhouyang/Development/hifi/build/ext/Xcode/tbb/project/src/tbb/include,/usr/local/Cellar/qt/5.11.2/lib/QtOpenGL.framework/Headers,/usr/local/Cellar/qt/5.11.2/lib/QtMultimedia.framework/Headers,/usr/local/Cellar/qt/5.11.2/lib/QtWebChannel.framework/Headers,/usr/local/Cellar/qt/5.11.2/lib/QtWebSockets.framework/Headers,/usr/local/Cellar/qt/5.11.2/lib/QtXmlPatterns.framework/Headers,/usr/local/Cellar/qt/5.11.2/lib/QtWebEngine.framework/Headers,/usr/local/Cellar/qt/5.11.2/lib/QtWebEngineCore.framework/Headers,/usr/local/Cellar/qt/5.11.2/lib/QtPositioning.framework/Headers,/Users/kevinhouyang/Development/hifi/build/ext/Xcode/quazip/project/include,/usr/local/Cellar/qt/5.11.2/lib/QtScriptTools.framework/Headers,/usr/local/Cellar/qt/5.11.2/lib/QtConcurrent.framework/Headers);
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = RelWithDebInfo;
+		};
+		635E7707440A4B87AED5A690 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = LibOVR;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/kevinhouyang/Development/hifi/build/ext/Xcode/LibOVR;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = Debug;
+		};
+		66990E08EC1C409EB0C9E36E /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				DYLIB_COMPATIBILITY_VERSION = "";
+				DYLIB_CURRENT_VERSION = "";
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .dylib;
+				FRAMEWORK_SEARCH_PATHS = (/Users/kevinhouyang/Development/hifi/build/ext/Xcode/LibOVR/project/src/LibOVR/LibOVR/Lib/Mac/Release,/usr/local/Cellar/qt/5.11.2/lib);
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = s;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",oculusLegacy_EXPORTS,GLM_FORCE_RADIANS,DEV_BUILD,QT_CORE_LIB,QT_NO_DEBUG,QT_GUI_LIB,QT_NETWORK_LIB,QT_SCRIPT_LIB,QT_WIDGETS_LIB,QT_QML_LIB,QT_QUICK_LIB,QT_OPENGL_LIB,QT_MULTIMEDIA_LIB,QT_WEBCHANNEL_LIB,QT_WEBSOCKETS_LIB,QT_XMLPATTERNS_LIB,QT_WEBENGINE_LIB,QT_WEBENGINECORE_LIB,QT_POSITIONING_LIB,QT_SCRIPTTOOLS_LIB,QT_CONCURRENT_LIB);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (/Users/kevinhouyang/Development/hifi/build/plugins/oculusLegacy,/Users/kevinhouyang/Development/hifi/plugins/oculusLegacy,/Users/kevinhouyang/Development/hifi/build/plugins/oculusLegacy/oculusLegacy_autogen/include_MinSizeRel,/Users/kevinhouyang/Development/hifi/build/includes,/Users/kevinhouyang/Development/hifi/build/ext/Xcode/glm/project/include,/Users/kevinhouyang/Development/hifi/libraries/shared/src,/Users/kevinhouyang/Development/hifi/build/libraries/shared,/Users/kevinhouyang/Development/hifi/libraries/shaders/src,/Users/kevinhouyang/Development/hifi/build/libraries/shaders,/Users/kevinhouyang/Development/hifi/libraries/gl/src,/Users/kevinhouyang/Development/hifi/build/libraries/gl,/Users/kevinhouyang/Development/hifi/libraries/gpu/src,/Users/kevinhouyang/Development/hifi/build/libraries/gpu,/Users/kevinhouyang/Development/hifi/libraries/plugins/src,/Users/kevinhouyang/Development/hifi/build/libraries/plugins,/Users/kevinhouyang/Development/hifi/libraries/ui/src,/Users/kevinhouyang/Development/hifi/build/libraries/ui,"/Users/kevinhouyang/Development/hifi/libraries/ui-plugins/src","/Users/kevinhouyang/Development/hifi/build/libraries/ui-plugins","/Users/kevinhouyang/Development/hifi/libraries/display-plugins/src","/Users/kevinhouyang/Development/hifi/build/libraries/display-plugins","/Users/kevinhouyang/Development/hifi/libraries/input-plugins/src","/Users/kevinhouyang/Development/hifi/build/libraries/input-plugins",/Users/kevinhouyang/Development/hifi/libraries/midi/src,/Users/kevinhouyang/Development/hifi/build/libraries/midi,"/Users/kevinhouyang/Development/hifi/libraries/gpu-gl-common/src","/Users/kevinhouyang/Development/hifi/build/libraries/gpu-gl-common","/Users/kevinhouyang/Development/hifi/libraries/gpu-gl/src","/Users/kevinhouyang/Development/hifi/build/libraries/gpu-gl",/Users/kevinhouyang/Development/hifi/libraries/octree/src,/Users/kevinhouyang/Development/hifi/build/ext/Xcode/LibOVR/project/src/LibOVR/LibOVR/Include,/Users/kevinhouyang/Development/hifi/build/ext/Xcode/json/project/src/json,/Users/kevinhouyang/Development/hifi/build/ext/Xcode/glad45/project/include,/Users/kevinhouyang/Development/hifi/libraries/audio/src);
+				INSTALL_PATH = "@rpath";
+				LIBRARY_SEARCH_PATHS = "";
+				LIBRARY_STYLE = DYNAMIC;
+				OTHER_CPLUSPLUSFLAGS = " -Wall -Wextra -fno-strict-aliasing -Wno-unused-parameter --stdlib=libc++        -DNDEBUG -fPIC -fPIC '-std=gnu++14'  ";
+				OTHER_LDFLAGS = " -dynamiclib -Wl,-headerpad_max_install_names  /Users/kevinhouyang/Development/hifi/build/libraries/shared/MinSizeRel/libshared.a /Users/kevinhouyang/Development/hifi/build/libraries/shaders/MinSizeRel/libshaders.a /Users/kevinhouyang/Development/hifi/build/libraries/gl/MinSizeRel/libgl.a /Users/kevinhouyang/Development/hifi/build/libraries/gpu/MinSizeRel/libgpu.a /Users/kevinhouyang/Development/hifi/build/libraries/plugins/MinSizeRel/libplugins.a /Users/kevinhouyang/Development/hifi/build/libraries/ui/MinSizeRel/libui.a /Users/kevinhouyang/Development/hifi/build/libraries/ui-plugins/MinSizeRel/libui-plugins.a /Users/kevinhouyang/Development/hifi/build/libraries/display-plugins/MinSizeRel/libdisplay-plugins.a /Users/kevinhouyang/Development/hifi/build/libraries/input-plugins/MinSizeRel/libinput-plugins.a /Users/kevinhouyang/Development/hifi/build/libraries/midi/MinSizeRel/libmidi.a /Users/kevinhouyang/Development/hifi/build/libraries/gpu-gl-common/MinSizeRel/libgpu-gl-common.a /Users/kevinhouyang/Development/hifi/build/libraries/gpu-gl/MinSizeRel/libgpu-gl.a /Users/kevinhouyang/Development/hifi/build/ext/Xcode/LibOVR/project/src/LibOVR/LibOVR/Lib/Mac/Release/LibOVR.framework/LibOVR -framework Cocoa -framework IOKit /Users/kevinhouyang/Development/hifi/build/libraries/gpu-gl-common/MinSizeRel/libgpu-gl-common.a /usr/local/Cellar/qt/5.11.2/lib/QtConcurrent.framework/QtConcurrent -lpthread /Users/kevinhouyang/Development/hifi/build/libraries/render-utils/MinSizeRel/librender-utils.a /Users/kevinhouyang/Development/hifi/build/libraries/graphics-scripting/MinSizeRel/libgraphics-scripting.a /Users/kevinhouyang/Development/hifi/build/libraries/script-engine/MinSizeRel/libscript-engine.a /Users/kevinhouyang/Development/hifi/build/libraries/midi/MinSizeRel/libmidi.a /usr/local/Cellar/qt/5.11.2/lib/QtScriptTools.framework/QtScriptTools /Users/kevinhouyang/Development/hifi/build/ext/Xcode/quazip/project/lib/libquazip5.1.0.0.dylib /Users/kevinhouyang/Development/hifi/build/libraries/recording/MinSizeRel/librecording.a /Users/kevinhouyang/Development/hifi/build/libraries/physics/MinSizeRel/libphysics.a /Users/kevinhouyang/Development/hifi/build/libraries/entities/MinSizeRel/libentities.a /Users/kevinhouyang/Development/hifi/build/libraries/avatars/MinSizeRel/libavatars.a /Users/kevinhouyang/Development/hifi/build/libraries/workload/MinSizeRel/libworkload.a /Users/kevinhouyang/Development/hifi/build/ext/Xcode/bullet/project/lib/libBulletDynamics.dylib /Users/kevinhouyang/Development/hifi/build/ext/Xcode/bullet/project/lib/libBulletCollision.dylib /Users/kevinhouyang/Development/hifi/build/ext/Xcode/bullet/project/lib/libLinearMath.dylib /Users/kevinhouyang/Development/hifi/build/ext/Xcode/bullet/project/lib/libBulletSoftBody.dylib /Users/kevinhouyang/Development/hifi/build/libraries/render/MinSizeRel/librender.a /Users/kevinhouyang/Development/hifi/build/libraries/task/MinSizeRel/libtask.a /Users/kevinhouyang/Development/hifi/build/libraries/octree/MinSizeRel/liboctree.a /Users/kevinhouyang/Development/hifi/build/libraries/animation/MinSizeRel/libanimation.a /Users/kevinhouyang/Development/hifi/build/libraries/procedural/MinSizeRel/libprocedural.a /Users/kevinhouyang/Development/hifi/build/libraries/model-networking/MinSizeRel/libmodel-networking.a /Users/kevinhouyang/Development/hifi/build/libraries/fbx/MinSizeRel/libfbx.a /Users/kevinhouyang/Development/hifi/build/libraries/graphics/MinSizeRel/libgraphics.a /Users/kevinhouyang/Development/hifi/build/ext/Xcode/draco/project-MinSizeRel/lib/libdraco.a /Users/kevinhouyang/Development/hifi/build/ext/Xcode/draco/project-MinSizeRel/lib/libdracoenc.a /Users/kevinhouyang/Development/hifi/build/libraries/image/MinSizeRel/libimage.a /Users/kevinhouyang/Development/hifi/build/libraries/gpu/MinSizeRel/libgpu.a /Users/kevinhouyang/Development/hifi/build/libraries/shaders/MinSizeRel/libshaders.a /Users/kevinhouyang/Development/hifi/build/libraries/ktx/MinSizeRel/libktx.a /Users/kevinhouyang/Development/hifi/build/ext/Xcode/nvtt/project/lib/libnvtt.dylib /Users/kevinhouyang/Development/hifi/build/ext/Xcode/etc2comp/project/build/EtcLib/MinSizeRel/libEtcLib.a /Users/kevinhouyang/Development/hifi/build/libraries/ui-plugins/MinSizeRel/libui-plugins.a /Users/kevinhouyang/Development/hifi/build/libraries/ui/MinSizeRel/libui.a /usr/local/Cellar/qt/5.11.2/lib/QtOpenGL.framework/QtOpenGL /usr/local/Cellar/qt/5.11.2/lib/QtXmlPatterns.framework/QtXmlPatterns /Users/kevinhouyang/Development/hifi/build/libraries/qml/MinSizeRel/libqml.a /Users/kevinhouyang/Development/hifi/build/libraries/gl/MinSizeRel/libgl.a /usr/local/Cellar/qt/5.11.2/lib/QtWidgets.framework/QtWidgets /Users/kevinhouyang/Development/hifi/build/ext/Xcode/glad45/project/lib/libglad.a -framework OpenGL -ldl /usr/local/Cellar/qt/5.11.2/lib/QtWebSockets.framework/QtWebSockets /Users/kevinhouyang/Development/hifi/build/libraries/audio-client/MinSizeRel/libaudio-client.a /usr/local/Cellar/qt/5.11.2/lib/QtMultimedia.framework/QtMultimedia /usr/local/Cellar/qt/5.11.2/lib/QtWebEngine.framework/QtWebEngine /usr/local/Cellar/qt/5.11.2/lib/QtWebEngineCore.framework/QtWebEngineCore /usr/local/Cellar/qt/5.11.2/lib/QtQuick.framework/QtQuick /usr/local/Cellar/qt/5.11.2/lib/QtWebChannel.framework/QtWebChannel /usr/local/Cellar/qt/5.11.2/lib/QtPositioning.framework/QtPositioning /Users/kevinhouyang/Development/hifi/build/libraries/audio/MinSizeRel/libaudio.a /Users/kevinhouyang/Development/hifi/build/libraries/plugins/MinSizeRel/libplugins.a /Users/kevinhouyang/Development/hifi/build/libraries/networking/MinSizeRel/libnetworking.a /usr/local/Cellar/openssl/1.0.2p/lib/libssl.dylib /usr/local/Cellar/openssl/1.0.2p/lib/libcrypto.dylib /Users/kevinhouyang/Development/hifi/build/ext/Xcode/tbb/project/src/tbb/lib/libtbb.dylib /Users/kevinhouyang/Development/hifi/build/ext/Xcode/tbb/project/src/tbb/lib/libtbbmalloc.dylib -framework CoreAudio -framework CoreFoundation /Users/kevinhouyang/Development/hifi/build/libraries/pointers/MinSizeRel/libpointers.a /Users/kevinhouyang/Development/hifi/build/libraries/controllers/MinSizeRel/libcontrollers.a /Users/kevinhouyang/Development/hifi/build/libraries/shared/MinSizeRel/libshared.a /usr/local/Cellar/qt/5.11.2/lib/QtGui.framework/QtGui /usr/lib/libz.dylib /usr/local/Cellar/qt/5.11.2/lib/QtScript.framework/QtScript /usr/local/Cellar/qt/5.11.2/lib/QtQml.framework/QtQml /usr/local/Cellar/qt/5.11.2/lib/QtNetwork.framework/QtNetwork /usr/local/Cellar/qt/5.11.2/lib/QtCore.framework/QtCore -framework IOKit";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = oculusLegacy;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/kevinhouyang/Development/hifi/build/plugins/oculusLegacy;
+				SYSTEM_HEADER_SEARCH_PATHS = (/usr/local/Cellar/qt/5.11.2/lib/QtCore.framework/Headers,"/usr/local/Cellar/qt/5.11.2/./mkspecs/macx-clang",/usr/local/Cellar/qt/5.11.2/lib/QtGui.framework/Headers,/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk/System/Library/Frameworks/OpenGL.framework/Headers,/usr/local/Cellar/qt/5.11.2/lib/QtNetwork.framework/Headers,/usr/local/Cellar/qt/5.11.2/lib/QtScript.framework/Headers,/usr/local/Cellar/qt/5.11.2/lib/QtWidgets.framework/Headers,/usr/local/Cellar/qt/5.11.2/lib/QtQml.framework/Headers,/usr/local/Cellar/qt/5.11.2/lib/QtQuick.framework/Headers,/Users/kevinhouyang/Development/hifi/build/ext/Xcode/tbb/project/src/tbb/include,/usr/local/Cellar/qt/5.11.2/lib/QtOpenGL.framework/Headers,/usr/local/Cellar/qt/5.11.2/lib/QtMultimedia.framework/Headers,/usr/local/Cellar/qt/5.11.2/lib/QtWebChannel.framework/Headers,/usr/local/Cellar/qt/5.11.2/lib/QtWebSockets.framework/Headers,/usr/local/Cellar/qt/5.11.2/lib/QtXmlPatterns.framework/Headers,/usr/local/Cellar/qt/5.11.2/lib/QtWebEngine.framework/Headers,/usr/local/Cellar/qt/5.11.2/lib/QtWebEngineCore.framework/Headers,/usr/local/Cellar/qt/5.11.2/lib/QtPositioning.framework/Headers,/Users/kevinhouyang/Development/hifi/build/ext/Xcode/quazip/project/include,/usr/local/Cellar/qt/5.11.2/lib/QtScriptTools.framework/Headers,/usr/local/Cellar/qt/5.11.2/lib/QtConcurrent.framework/Headers);
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = MinSizeRel;
+		};
+		696BEA4F1CBD4B9782F31237 /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "c++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk;
+				SYMROOT = /Users/kevinhouyang/Development/hifi/build/plugins/oculusLegacy/build;
+			};
+			name = MinSizeRel;
+		};
+		6EAB440C806A4452804B7744 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = RUN_TESTS;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/kevinhouyang/Development/hifi/build/plugins/oculusLegacy;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = Release;
+		};
+		6EC1B3AC86E9443CBC3651C2 /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ZERO_CHECK;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/kevinhouyang/Development/hifi/build/plugins/oculusLegacy;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = MinSizeRel;
+		};
+		72E24CED615C4268AF0AD173 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = LibOVR;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/kevinhouyang/Development/hifi/build/ext/Xcode/LibOVR;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = Release;
+		};
+		8397E828518742689C67091C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ZERO_CHECK;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/kevinhouyang/Development/hifi/build/plugins/oculusLegacy;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = Debug;
+		};
+		85BBB365D3A445549783B3B4 /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = LibOVR;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/kevinhouyang/Development/hifi/build/ext/Xcode/LibOVR;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = RelWithDebInfo;
+		};
+		889513E9461945F69310ED9B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				DYLIB_COMPATIBILITY_VERSION = "";
+				DYLIB_CURRENT_VERSION = "";
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .dylib;
+				FRAMEWORK_SEARCH_PATHS = (/Users/kevinhouyang/Development/hifi/build/ext/Xcode/LibOVR/project/src/LibOVR/LibOVR/Lib/Mac/Release,/usr/local/Cellar/qt/5.11.2/lib);
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 3;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",oculusLegacy_EXPORTS,GLM_FORCE_RADIANS,DEV_BUILD,QT_CORE_LIB,QT_NO_DEBUG,QT_GUI_LIB,QT_NETWORK_LIB,QT_SCRIPT_LIB,QT_WIDGETS_LIB,QT_QML_LIB,QT_QUICK_LIB,QT_OPENGL_LIB,QT_MULTIMEDIA_LIB,QT_WEBCHANNEL_LIB,QT_WEBSOCKETS_LIB,QT_XMLPATTERNS_LIB,QT_WEBENGINE_LIB,QT_WEBENGINECORE_LIB,QT_POSITIONING_LIB,QT_SCRIPTTOOLS_LIB,QT_CONCURRENT_LIB);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (/Users/kevinhouyang/Development/hifi/build/plugins/oculusLegacy,/Users/kevinhouyang/Development/hifi/plugins/oculusLegacy,/Users/kevinhouyang/Development/hifi/build/plugins/oculusLegacy/oculusLegacy_autogen/include_Release,/Users/kevinhouyang/Development/hifi/build/includes,/Users/kevinhouyang/Development/hifi/build/ext/Xcode/glm/project/include,/Users/kevinhouyang/Development/hifi/libraries/shared/src,/Users/kevinhouyang/Development/hifi/build/libraries/shared,/Users/kevinhouyang/Development/hifi/libraries/shaders/src,/Users/kevinhouyang/Development/hifi/build/libraries/shaders,/Users/kevinhouyang/Development/hifi/libraries/gl/src,/Users/kevinhouyang/Development/hifi/build/libraries/gl,/Users/kevinhouyang/Development/hifi/libraries/gpu/src,/Users/kevinhouyang/Development/hifi/build/libraries/gpu,/Users/kevinhouyang/Development/hifi/libraries/plugins/src,/Users/kevinhouyang/Development/hifi/build/libraries/plugins,/Users/kevinhouyang/Development/hifi/libraries/ui/src,/Users/kevinhouyang/Development/hifi/build/libraries/ui,"/Users/kevinhouyang/Development/hifi/libraries/ui-plugins/src","/Users/kevinhouyang/Development/hifi/build/libraries/ui-plugins","/Users/kevinhouyang/Development/hifi/libraries/display-plugins/src","/Users/kevinhouyang/Development/hifi/build/libraries/display-plugins","/Users/kevinhouyang/Development/hifi/libraries/input-plugins/src","/Users/kevinhouyang/Development/hifi/build/libraries/input-plugins",/Users/kevinhouyang/Development/hifi/libraries/midi/src,/Users/kevinhouyang/Development/hifi/build/libraries/midi,"/Users/kevinhouyang/Development/hifi/libraries/gpu-gl-common/src","/Users/kevinhouyang/Development/hifi/build/libraries/gpu-gl-common","/Users/kevinhouyang/Development/hifi/libraries/gpu-gl/src","/Users/kevinhouyang/Development/hifi/build/libraries/gpu-gl",/Users/kevinhouyang/Development/hifi/libraries/octree/src,/Users/kevinhouyang/Development/hifi/build/ext/Xcode/LibOVR/project/src/LibOVR/LibOVR/Include,/Users/kevinhouyang/Development/hifi/build/ext/Xcode/json/project/src/json,/Users/kevinhouyang/Development/hifi/build/ext/Xcode/glad45/project/include,/Users/kevinhouyang/Development/hifi/libraries/audio/src);
+				INSTALL_PATH = "@rpath";
+				LIBRARY_SEARCH_PATHS = "";
+				LIBRARY_STYLE = DYNAMIC;
+				OTHER_CPLUSPLUSFLAGS = " -Wall -Wextra -fno-strict-aliasing -Wno-unused-parameter --stdlib=libc++        -DNDEBUG -fPIC -fPIC '-std=gnu++14'  ";
+				OTHER_LDFLAGS = " -dynamiclib -Wl,-headerpad_max_install_names  /Users/kevinhouyang/Development/hifi/build/libraries/shared/Release/libshared.a /Users/kevinhouyang/Development/hifi/build/libraries/shaders/Release/libshaders.a /Users/kevinhouyang/Development/hifi/build/libraries/gl/Release/libgl.a /Users/kevinhouyang/Development/hifi/build/libraries/gpu/Release/libgpu.a /Users/kevinhouyang/Development/hifi/build/libraries/plugins/Release/libplugins.a /Users/kevinhouyang/Development/hifi/build/libraries/ui/Release/libui.a /Users/kevinhouyang/Development/hifi/build/libraries/ui-plugins/Release/libui-plugins.a /Users/kevinhouyang/Development/hifi/build/libraries/display-plugins/Release/libdisplay-plugins.a /Users/kevinhouyang/Development/hifi/build/libraries/input-plugins/Release/libinput-plugins.a /Users/kevinhouyang/Development/hifi/build/libraries/midi/Release/libmidi.a /Users/kevinhouyang/Development/hifi/build/libraries/gpu-gl-common/Release/libgpu-gl-common.a /Users/kevinhouyang/Development/hifi/build/libraries/gpu-gl/Release/libgpu-gl.a /Users/kevinhouyang/Development/hifi/build/ext/Xcode/LibOVR/project/src/LibOVR/LibOVR/Lib/Mac/Release/LibOVR.framework/LibOVR -framework Cocoa -framework IOKit /Users/kevinhouyang/Development/hifi/build/libraries/gpu-gl-common/Release/libgpu-gl-common.a /usr/local/Cellar/qt/5.11.2/lib/QtConcurrent.framework/QtConcurrent -lpthread /Users/kevinhouyang/Development/hifi/build/libraries/render-utils/Release/librender-utils.a /Users/kevinhouyang/Development/hifi/build/libraries/graphics-scripting/Release/libgraphics-scripting.a /Users/kevinhouyang/Development/hifi/build/libraries/script-engine/Release/libscript-engine.a /Users/kevinhouyang/Development/hifi/build/libraries/midi/Release/libmidi.a /usr/local/Cellar/qt/5.11.2/lib/QtScriptTools.framework/QtScriptTools /Users/kevinhouyang/Development/hifi/build/ext/Xcode/quazip/project/lib/libquazip5.1.0.0.dylib /Users/kevinhouyang/Development/hifi/build/libraries/recording/Release/librecording.a /Users/kevinhouyang/Development/hifi/build/libraries/physics/Release/libphysics.a /Users/kevinhouyang/Development/hifi/build/libraries/entities/Release/libentities.a /Users/kevinhouyang/Development/hifi/build/libraries/avatars/Release/libavatars.a /Users/kevinhouyang/Development/hifi/build/libraries/workload/Release/libworkload.a /Users/kevinhouyang/Development/hifi/build/ext/Xcode/bullet/project/lib/libBulletDynamics.dylib /Users/kevinhouyang/Development/hifi/build/ext/Xcode/bullet/project/lib/libBulletCollision.dylib /Users/kevinhouyang/Development/hifi/build/ext/Xcode/bullet/project/lib/libLinearMath.dylib /Users/kevinhouyang/Development/hifi/build/ext/Xcode/bullet/project/lib/libBulletSoftBody.dylib /Users/kevinhouyang/Development/hifi/build/libraries/render/Release/librender.a /Users/kevinhouyang/Development/hifi/build/libraries/task/Release/libtask.a /Users/kevinhouyang/Development/hifi/build/libraries/octree/Release/liboctree.a /Users/kevinhouyang/Development/hifi/build/libraries/animation/Release/libanimation.a /Users/kevinhouyang/Development/hifi/build/libraries/procedural/Release/libprocedural.a /Users/kevinhouyang/Development/hifi/build/libraries/model-networking/Release/libmodel-networking.a /Users/kevinhouyang/Development/hifi/build/libraries/fbx/Release/libfbx.a /Users/kevinhouyang/Development/hifi/build/libraries/graphics/Release/libgraphics.a /Users/kevinhouyang/Development/hifi/build/ext/Xcode/draco/project-Release/lib/libdraco.a /Users/kevinhouyang/Development/hifi/build/ext/Xcode/draco/project-Release/lib/libdracoenc.a /Users/kevinhouyang/Development/hifi/build/libraries/image/Release/libimage.a /Users/kevinhouyang/Development/hifi/build/libraries/gpu/Release/libgpu.a /Users/kevinhouyang/Development/hifi/build/libraries/shaders/Release/libshaders.a /Users/kevinhouyang/Development/hifi/build/libraries/ktx/Release/libktx.a /Users/kevinhouyang/Development/hifi/build/ext/Xcode/nvtt/project/lib/libnvtt.dylib /Users/kevinhouyang/Development/hifi/build/ext/Xcode/etc2comp/project/build/EtcLib/Release/libEtcLib.a /Users/kevinhouyang/Development/hifi/build/libraries/ui-plugins/Release/libui-plugins.a /Users/kevinhouyang/Development/hifi/build/libraries/ui/Release/libui.a /usr/local/Cellar/qt/5.11.2/lib/QtOpenGL.framework/QtOpenGL /usr/local/Cellar/qt/5.11.2/lib/QtXmlPatterns.framework/QtXmlPatterns /Users/kevinhouyang/Development/hifi/build/libraries/qml/Release/libqml.a /Users/kevinhouyang/Development/hifi/build/libraries/gl/Release/libgl.a /usr/local/Cellar/qt/5.11.2/lib/QtWidgets.framework/QtWidgets /Users/kevinhouyang/Development/hifi/build/ext/Xcode/glad45/project/lib/libglad.a -framework OpenGL -ldl /usr/local/Cellar/qt/5.11.2/lib/QtWebSockets.framework/QtWebSockets /Users/kevinhouyang/Development/hifi/build/libraries/audio-client/Release/libaudio-client.a /usr/local/Cellar/qt/5.11.2/lib/QtMultimedia.framework/QtMultimedia /usr/local/Cellar/qt/5.11.2/lib/QtWebEngine.framework/QtWebEngine /usr/local/Cellar/qt/5.11.2/lib/QtWebEngineCore.framework/QtWebEngineCore /usr/local/Cellar/qt/5.11.2/lib/QtQuick.framework/QtQuick /usr/local/Cellar/qt/5.11.2/lib/QtWebChannel.framework/QtWebChannel /usr/local/Cellar/qt/5.11.2/lib/QtPositioning.framework/QtPositioning /Users/kevinhouyang/Development/hifi/build/libraries/audio/Release/libaudio.a /Users/kevinhouyang/Development/hifi/build/libraries/plugins/Release/libplugins.a /Users/kevinhouyang/Development/hifi/build/libraries/networking/Release/libnetworking.a /usr/local/Cellar/openssl/1.0.2p/lib/libssl.dylib /usr/local/Cellar/openssl/1.0.2p/lib/libcrypto.dylib /Users/kevinhouyang/Development/hifi/build/ext/Xcode/tbb/project/src/tbb/lib/libtbb.dylib /Users/kevinhouyang/Development/hifi/build/ext/Xcode/tbb/project/src/tbb/lib/libtbbmalloc.dylib -framework CoreAudio -framework CoreFoundation /Users/kevinhouyang/Development/hifi/build/libraries/pointers/Release/libpointers.a /Users/kevinhouyang/Development/hifi/build/libraries/controllers/Release/libcontrollers.a /Users/kevinhouyang/Development/hifi/build/libraries/shared/Release/libshared.a /usr/local/Cellar/qt/5.11.2/lib/QtGui.framework/QtGui /usr/lib/libz.dylib /usr/local/Cellar/qt/5.11.2/lib/QtScript.framework/QtScript /usr/local/Cellar/qt/5.11.2/lib/QtQml.framework/QtQml /usr/local/Cellar/qt/5.11.2/lib/QtNetwork.framework/QtNetwork /usr/local/Cellar/qt/5.11.2/lib/QtCore.framework/QtCore -framework IOKit";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = oculusLegacy;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/kevinhouyang/Development/hifi/build/plugins/oculusLegacy;
+				SYSTEM_HEADER_SEARCH_PATHS = (/usr/local/Cellar/qt/5.11.2/lib/QtCore.framework/Headers,"/usr/local/Cellar/qt/5.11.2/./mkspecs/macx-clang",/usr/local/Cellar/qt/5.11.2/lib/QtGui.framework/Headers,/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk/System/Library/Frameworks/OpenGL.framework/Headers,/usr/local/Cellar/qt/5.11.2/lib/QtNetwork.framework/Headers,/usr/local/Cellar/qt/5.11.2/lib/QtScript.framework/Headers,/usr/local/Cellar/qt/5.11.2/lib/QtWidgets.framework/Headers,/usr/local/Cellar/qt/5.11.2/lib/QtQml.framework/Headers,/usr/local/Cellar/qt/5.11.2/lib/QtQuick.framework/Headers,/Users/kevinhouyang/Development/hifi/build/ext/Xcode/tbb/project/src/tbb/include,/usr/local/Cellar/qt/5.11.2/lib/QtOpenGL.framework/Headers,/usr/local/Cellar/qt/5.11.2/lib/QtMultimedia.framework/Headers,/usr/local/Cellar/qt/5.11.2/lib/QtWebChannel.framework/Headers,/usr/local/Cellar/qt/5.11.2/lib/QtWebSockets.framework/Headers,/usr/local/Cellar/qt/5.11.2/lib/QtXmlPatterns.framework/Headers,/usr/local/Cellar/qt/5.11.2/lib/QtWebEngine.framework/Headers,/usr/local/Cellar/qt/5.11.2/lib/QtWebEngineCore.framework/Headers,/usr/local/Cellar/qt/5.11.2/lib/QtPositioning.framework/Headers,/Users/kevinhouyang/Development/hifi/build/ext/Xcode/quazip/project/include,/usr/local/Cellar/qt/5.11.2/lib/QtScriptTools.framework/Headers,/usr/local/Cellar/qt/5.11.2/lib/QtConcurrent.framework/Headers);
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = Release;
+		};
+		8C6B33DD8A5D446380D86DAA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ALL_BUILD;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/kevinhouyang/Development/hifi/build/plugins/oculusLegacy;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = Release;
+		};
+		9152CF6E3E1B43B3939EB0B1 /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = install;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/kevinhouyang/Development/hifi/build/plugins/oculusLegacy;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = RelWithDebInfo;
+		};
+		AEBFC331AE744E68930BAB72 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = oculusLegacy_autogen;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/kevinhouyang/Development/hifi/build/plugins/oculusLegacy;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = Debug;
+		};
+		B260B50A1DF44F5D8713D565 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = install;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/kevinhouyang/Development/hifi/build/plugins/oculusLegacy;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = Debug;
+		};
+		B77027DB614946D4B905CA59 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = install;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/kevinhouyang/Development/hifi/build/plugins/oculusLegacy;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = Release;
+		};
+		BA36959F7DF143FBA76CEB32 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				DYLIB_COMPATIBILITY_VERSION = "";
+				DYLIB_CURRENT_VERSION = "";
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .dylib;
+				FRAMEWORK_SEARCH_PATHS = (/Users/kevinhouyang/Development/hifi/build/ext/Xcode/LibOVR/project/src/LibOVR/LibOVR/Lib/Mac/Release,/usr/local/Cellar/qt/5.11.2/lib);
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",oculusLegacy_EXPORTS,GLM_FORCE_RADIANS,DEV_BUILD,QT_CORE_LIB,QT_GUI_LIB,QT_NETWORK_LIB,QT_SCRIPT_LIB,QT_WIDGETS_LIB,QT_QML_LIB,QT_QUICK_LIB,QT_OPENGL_LIB,QT_MULTIMEDIA_LIB,QT_WEBCHANNEL_LIB,QT_WEBSOCKETS_LIB,QT_XMLPATTERNS_LIB,QT_WEBENGINE_LIB,QT_WEBENGINECORE_LIB,QT_POSITIONING_LIB,QT_SCRIPTTOOLS_LIB,QT_CONCURRENT_LIB);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (/Users/kevinhouyang/Development/hifi/build/plugins/oculusLegacy,/Users/kevinhouyang/Development/hifi/plugins/oculusLegacy,/Users/kevinhouyang/Development/hifi/build/plugins/oculusLegacy/oculusLegacy_autogen/include_Debug,/Users/kevinhouyang/Development/hifi/build/includes,/Users/kevinhouyang/Development/hifi/build/ext/Xcode/glm/project/include,/Users/kevinhouyang/Development/hifi/libraries/shared/src,/Users/kevinhouyang/Development/hifi/build/libraries/shared,/Users/kevinhouyang/Development/hifi/libraries/shaders/src,/Users/kevinhouyang/Development/hifi/build/libraries/shaders,/Users/kevinhouyang/Development/hifi/libraries/gl/src,/Users/kevinhouyang/Development/hifi/build/libraries/gl,/Users/kevinhouyang/Development/hifi/libraries/gpu/src,/Users/kevinhouyang/Development/hifi/build/libraries/gpu,/Users/kevinhouyang/Development/hifi/libraries/plugins/src,/Users/kevinhouyang/Development/hifi/build/libraries/plugins,/Users/kevinhouyang/Development/hifi/libraries/ui/src,/Users/kevinhouyang/Development/hifi/build/libraries/ui,"/Users/kevinhouyang/Development/hifi/libraries/ui-plugins/src","/Users/kevinhouyang/Development/hifi/build/libraries/ui-plugins","/Users/kevinhouyang/Development/hifi/libraries/display-plugins/src","/Users/kevinhouyang/Development/hifi/build/libraries/display-plugins","/Users/kevinhouyang/Development/hifi/libraries/input-plugins/src","/Users/kevinhouyang/Development/hifi/build/libraries/input-plugins",/Users/kevinhouyang/Development/hifi/libraries/midi/src,/Users/kevinhouyang/Development/hifi/build/libraries/midi,"/Users/kevinhouyang/Development/hifi/libraries/gpu-gl-common/src","/Users/kevinhouyang/Development/hifi/build/libraries/gpu-gl-common","/Users/kevinhouyang/Development/hifi/libraries/gpu-gl/src","/Users/kevinhouyang/Development/hifi/build/libraries/gpu-gl",/Users/kevinhouyang/Development/hifi/libraries/octree/src,/Users/kevinhouyang/Development/hifi/build/ext/Xcode/LibOVR/project/src/LibOVR/LibOVR/Include,/Users/kevinhouyang/Development/hifi/build/ext/Xcode/json/project/src/json,/Users/kevinhouyang/Development/hifi/build/ext/Xcode/glad45/project/include,/Users/kevinhouyang/Development/hifi/libraries/audio/src);
+				INSTALL_PATH = "@rpath";
+				LIBRARY_SEARCH_PATHS = "";
+				LIBRARY_STYLE = DYNAMIC;
+				OTHER_CPLUSPLUSFLAGS = " -Wall -Wextra -fno-strict-aliasing -Wno-unused-parameter --stdlib=libc++       -DDEBUG -fPIC -fPIC '-std=gnu++14'  ";
+				OTHER_LDFLAGS = " -dynamiclib -Wl,-headerpad_max_install_names  /Users/kevinhouyang/Development/hifi/build/libraries/shared/Debug/libshared.a /Users/kevinhouyang/Development/hifi/build/libraries/shaders/Debug/libshaders.a /Users/kevinhouyang/Development/hifi/build/libraries/gl/Debug/libgl.a /Users/kevinhouyang/Development/hifi/build/libraries/gpu/Debug/libgpu.a /Users/kevinhouyang/Development/hifi/build/libraries/plugins/Debug/libplugins.a /Users/kevinhouyang/Development/hifi/build/libraries/ui/Debug/libui.a /Users/kevinhouyang/Development/hifi/build/libraries/ui-plugins/Debug/libui-plugins.a /Users/kevinhouyang/Development/hifi/build/libraries/display-plugins/Debug/libdisplay-plugins.a /Users/kevinhouyang/Development/hifi/build/libraries/input-plugins/Debug/libinput-plugins.a /Users/kevinhouyang/Development/hifi/build/libraries/midi/Debug/libmidi.a /Users/kevinhouyang/Development/hifi/build/libraries/gpu-gl-common/Debug/libgpu-gl-common.a /Users/kevinhouyang/Development/hifi/build/libraries/gpu-gl/Debug/libgpu-gl.a /Users/kevinhouyang/Development/hifi/build/ext/Xcode/LibOVR/project/src/LibOVR/LibOVR/Lib/Mac/Release/LibOVR.framework/LibOVR -framework Cocoa -framework IOKit /Users/kevinhouyang/Development/hifi/build/libraries/gpu-gl-common/Debug/libgpu-gl-common.a /usr/local/Cellar/qt/5.11.2/lib/QtConcurrent.framework/QtConcurrent -lpthread /Users/kevinhouyang/Development/hifi/build/libraries/render-utils/Debug/librender-utils.a /Users/kevinhouyang/Development/hifi/build/libraries/graphics-scripting/Debug/libgraphics-scripting.a /Users/kevinhouyang/Development/hifi/build/libraries/script-engine/Debug/libscript-engine.a /Users/kevinhouyang/Development/hifi/build/libraries/midi/Debug/libmidi.a /usr/local/Cellar/qt/5.11.2/lib/QtScriptTools.framework/QtScriptTools /Users/kevinhouyang/Development/hifi/build/ext/Xcode/quazip/project/lib/libquazip5d.1.0.0.dylib /Users/kevinhouyang/Development/hifi/build/libraries/recording/Debug/librecording.a /Users/kevinhouyang/Development/hifi/build/libraries/physics/Debug/libphysics.a /Users/kevinhouyang/Development/hifi/build/libraries/entities/Debug/libentities.a /Users/kevinhouyang/Development/hifi/build/libraries/avatars/Debug/libavatars.a /Users/kevinhouyang/Development/hifi/build/libraries/workload/Debug/libworkload.a /Users/kevinhouyang/Development/hifi/build/ext/Xcode/bullet/project/lib/libBulletDynamics.dylib /Users/kevinhouyang/Development/hifi/build/ext/Xcode/bullet/project/lib/libBulletCollision.dylib /Users/kevinhouyang/Development/hifi/build/ext/Xcode/bullet/project/lib/libLinearMath.dylib /Users/kevinhouyang/Development/hifi/build/ext/Xcode/bullet/project/lib/libBulletSoftBody.dylib /Users/kevinhouyang/Development/hifi/build/libraries/render/Debug/librender.a /Users/kevinhouyang/Development/hifi/build/libraries/task/Debug/libtask.a /Users/kevinhouyang/Development/hifi/build/libraries/octree/Debug/liboctree.a /Users/kevinhouyang/Development/hifi/build/libraries/animation/Debug/libanimation.a /Users/kevinhouyang/Development/hifi/build/libraries/procedural/Debug/libprocedural.a /Users/kevinhouyang/Development/hifi/build/libraries/model-networking/Debug/libmodel-networking.a /Users/kevinhouyang/Development/hifi/build/libraries/fbx/Debug/libfbx.a /Users/kevinhouyang/Development/hifi/build/libraries/graphics/Debug/libgraphics.a /Users/kevinhouyang/Development/hifi/build/ext/Xcode/draco/project-Debug/lib/libdraco.a /Users/kevinhouyang/Development/hifi/build/ext/Xcode/draco/project-Debug/lib/libdracoenc.a /Users/kevinhouyang/Development/hifi/build/libraries/image/Debug/libimage.a /Users/kevinhouyang/Development/hifi/build/libraries/gpu/Debug/libgpu.a /Users/kevinhouyang/Development/hifi/build/libraries/shaders/Debug/libshaders.a /Users/kevinhouyang/Development/hifi/build/libraries/ktx/Debug/libktx.a /Users/kevinhouyang/Development/hifi/build/ext/Xcode/nvtt/project/lib/libnvtt.dylib /Users/kevinhouyang/Development/hifi/build/ext/Xcode/etc2comp/project/build/EtcLib/Debug/libEtcLib.a /Users/kevinhouyang/Development/hifi/build/libraries/ui-plugins/Debug/libui-plugins.a /Users/kevinhouyang/Development/hifi/build/libraries/ui/Debug/libui.a /usr/local/Cellar/qt/5.11.2/lib/QtOpenGL.framework/QtOpenGL /usr/local/Cellar/qt/5.11.2/lib/QtXmlPatterns.framework/QtXmlPatterns /Users/kevinhouyang/Development/hifi/build/libraries/qml/Debug/libqml.a /Users/kevinhouyang/Development/hifi/build/libraries/gl/Debug/libgl.a /usr/local/Cellar/qt/5.11.2/lib/QtWidgets.framework/QtWidgets /Users/kevinhouyang/Development/hifi/build/ext/Xcode/glad45/project/lib/libglad_d.a -framework OpenGL -ldl /usr/local/Cellar/qt/5.11.2/lib/QtWebSockets.framework/QtWebSockets /Users/kevinhouyang/Development/hifi/build/libraries/audio-client/Debug/libaudio-client.a /usr/local/Cellar/qt/5.11.2/lib/QtMultimedia.framework/QtMultimedia /usr/local/Cellar/qt/5.11.2/lib/QtWebEngine.framework/QtWebEngine /usr/local/Cellar/qt/5.11.2/lib/QtWebEngineCore.framework/QtWebEngineCore /usr/local/Cellar/qt/5.11.2/lib/QtQuick.framework/QtQuick /usr/local/Cellar/qt/5.11.2/lib/QtWebChannel.framework/QtWebChannel /usr/local/Cellar/qt/5.11.2/lib/QtPositioning.framework/QtPositioning /Users/kevinhouyang/Development/hifi/build/libraries/audio/Debug/libaudio.a /Users/kevinhouyang/Development/hifi/build/libraries/plugins/Debug/libplugins.a /Users/kevinhouyang/Development/hifi/build/libraries/networking/Debug/libnetworking.a /usr/local/Cellar/openssl/1.0.2p/lib/libssl.dylib /usr/local/Cellar/openssl/1.0.2p/lib/libcrypto.dylib /Users/kevinhouyang/Development/hifi/build/ext/Xcode/tbb/project/src/tbb/lib/libtbb_debug.dylib /Users/kevinhouyang/Development/hifi/build/ext/Xcode/tbb/project/src/tbb/lib/libtbbmalloc_debug.dylib -framework CoreAudio -framework CoreFoundation /Users/kevinhouyang/Development/hifi/build/libraries/pointers/Debug/libpointers.a /Users/kevinhouyang/Development/hifi/build/libraries/controllers/Debug/libcontrollers.a /Users/kevinhouyang/Development/hifi/build/libraries/shared/Debug/libshared.a /usr/local/Cellar/qt/5.11.2/lib/QtGui.framework/QtGui /usr/lib/libz.dylib /usr/local/Cellar/qt/5.11.2/lib/QtScript.framework/QtScript /usr/local/Cellar/qt/5.11.2/lib/QtQml.framework/QtQml /usr/local/Cellar/qt/5.11.2/lib/QtNetwork.framework/QtNetwork /usr/local/Cellar/qt/5.11.2/lib/QtCore.framework/QtCore -framework IOKit";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = oculusLegacy;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/kevinhouyang/Development/hifi/build/plugins/oculusLegacy;
+				SYSTEM_HEADER_SEARCH_PATHS = (/usr/local/Cellar/qt/5.11.2/lib/QtCore.framework/Headers,"/usr/local/Cellar/qt/5.11.2/./mkspecs/macx-clang",/usr/local/Cellar/qt/5.11.2/lib/QtGui.framework/Headers,/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk/System/Library/Frameworks/OpenGL.framework/Headers,/usr/local/Cellar/qt/5.11.2/lib/QtNetwork.framework/Headers,/usr/local/Cellar/qt/5.11.2/lib/QtScript.framework/Headers,/usr/local/Cellar/qt/5.11.2/lib/QtWidgets.framework/Headers,/usr/local/Cellar/qt/5.11.2/lib/QtQml.framework/Headers,/usr/local/Cellar/qt/5.11.2/lib/QtQuick.framework/Headers,/Users/kevinhouyang/Development/hifi/build/ext/Xcode/tbb/project/src/tbb/include,/usr/local/Cellar/qt/5.11.2/lib/QtOpenGL.framework/Headers,/usr/local/Cellar/qt/5.11.2/lib/QtMultimedia.framework/Headers,/usr/local/Cellar/qt/5.11.2/lib/QtWebChannel.framework/Headers,/usr/local/Cellar/qt/5.11.2/lib/QtWebSockets.framework/Headers,/usr/local/Cellar/qt/5.11.2/lib/QtXmlPatterns.framework/Headers,/usr/local/Cellar/qt/5.11.2/lib/QtWebEngine.framework/Headers,/usr/local/Cellar/qt/5.11.2/lib/QtWebEngineCore.framework/Headers,/usr/local/Cellar/qt/5.11.2/lib/QtPositioning.framework/Headers,/Users/kevinhouyang/Development/hifi/build/ext/Xcode/quazip/project/include,/usr/local/Cellar/qt/5.11.2/lib/QtScriptTools.framework/Headers,/usr/local/Cellar/qt/5.11.2/lib/QtConcurrent.framework/Headers);
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = Debug;
+		};
+		C6CF2C82CF73465DBCAFDFBC /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = RUN_TESTS;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/kevinhouyang/Development/hifi/build/plugins/oculusLegacy;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = MinSizeRel;
+		};
+		DA973F0A6D484CF6B27AADF0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ZERO_CHECK;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/kevinhouyang/Development/hifi/build/plugins/oculusLegacy;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = Release;
+		};
+		E211EBBBDBED443EA14362D1 /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = install;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/kevinhouyang/Development/hifi/build/plugins/oculusLegacy;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = MinSizeRel;
+		};
+		E2CD287304B34C179C20B786 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "c++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk;
+				SYMROOT = /Users/kevinhouyang/Development/hifi/build/plugins/oculusLegacy/build;
+			};
+			name = Debug;
+		};
+		E2D39D7C473340608543D432 /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = RUN_TESTS;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/kevinhouyang/Development/hifi/build/plugins/oculusLegacy;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = RelWithDebInfo;
+		};
+		E7763EA53081474AABF75AB7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = RUN_TESTS;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/kevinhouyang/Development/hifi/build/plugins/oculusLegacy;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = Debug;
+		};
+		ED44B2B9B2DC4E6F9C58C413 /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ALL_BUILD;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/kevinhouyang/Development/hifi/build/plugins/oculusLegacy;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = MinSizeRel;
+		};
+		F8602C65386B443189F1590C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = oculusLegacy_autogen;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/kevinhouyang/Development/hifi/build/plugins/oculusLegacy;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2E3A6DC3D6C74D71BC8E642D /* Build configuration list for PBXAggregateTarget "install" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B260B50A1DF44F5D8713D565 /* Debug */,
+				B77027DB614946D4B905CA59 /* Release */,
+				E211EBBBDBED443EA14362D1 /* MinSizeRel */,
+				9152CF6E3E1B43B3939EB0B1 /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		3BA7B8787CBF4100B0FBBCB4 /* Build configuration list for PBXNativeTarget "oculusLegacy" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BA36959F7DF143FBA76CEB32 /* Debug */,
+				889513E9461945F69310ED9B /* Release */,
+				66990E08EC1C409EB0C9E36E /* MinSizeRel */,
+				61455194A70641D384D50404 /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		41B9C93E40E349AC951468C1 /* Build configuration list for PBXAggregateTarget "LibOVR" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				635E7707440A4B87AED5A690 /* Debug */,
+				72E24CED615C4268AF0AD173 /* Release */,
+				57422F772A3544B08E22E520 /* MinSizeRel */,
+				85BBB365D3A445549783B3B4 /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		50A3FF9999774963B70D5BB4 /* Build configuration list for PBXAggregateTarget "ALL_BUILD" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6059ED8548C449A9AA19FB7C /* Debug */,
+				8C6B33DD8A5D446380D86DAA /* Release */,
+				ED44B2B9B2DC4E6F9C58C413 /* MinSizeRel */,
+				14B5E459B235465BAD20072A /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		5936121434FD436CBE90381B /* Build configuration list for PBXAggregateTarget "RUN_TESTS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E7763EA53081474AABF75AB7 /* Debug */,
+				6EAB440C806A4452804B7744 /* Release */,
+				C6CF2C82CF73465DBCAFDFBC /* MinSizeRel */,
+				E2D39D7C473340608543D432 /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		672A7F5AA5AD4931AEE82F0F /* Build configuration list for PBXProject "oculusLegacy" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E2CD287304B34C179C20B786 /* Debug */,
+				087FBA9292D54135B0FD033B /* Release */,
+				696BEA4F1CBD4B9782F31237 /* MinSizeRel */,
+				4EBD7613EE1448C8B7338DA4 /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		7273656E41074187890731AC /* Build configuration list for PBXAggregateTarget "package" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				55BE831A27ED4E96A4B58444 /* Debug */,
+				41BC914A568048EBAF9C039C /* Release */,
+				55E1F161E390406D8DCB843E /* MinSizeRel */,
+				496DC34C4B4942F3A594072E /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		A217EFE8F9AE495381FCB139 /* Build configuration list for PBXAggregateTarget "oculusLegacy_autogen" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AEBFC331AE744E68930BAB72 /* Debug */,
+				F8602C65386B443189F1590C /* Release */,
+				518214FE8F014DD6BB53567C /* MinSizeRel */,
+				3D938233E82847A598FD7DA9 /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		D75DB8739E37436085B0D906 /* Build configuration list for PBXAggregateTarget "ZERO_CHECK" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8397E828518742689C67091C /* Debug */,
+				DA973F0A6D484CF6B27AADF0 /* Release */,
+				6EC1B3AC86E9443CBC3651C2 /* MinSizeRel */,
+				19156C9F9E9845DCA310F514 /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = B5FE46AFEA44443EA6094631 /* Project object */;
+}

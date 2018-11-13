@@ -1,0 +1,1275 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXAggregateTarget section */
+		20A2BAEA9C924736BA4001B8 /* render-perf-test_autogen */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = FA709305E68648D2826F664F /* Build configuration list for PBXAggregateTarget "render-perf-test_autogen" */;
+			buildPhases = (
+				B048D6F8B99B4348B7148440 /* CMake Rules */,
+			);
+			dependencies = (
+				00AA234FEB7642909306C36C /* PBXTargetDependency */,
+			);
+			name = "render-perf-test_autogen";
+			productName = "render-perf-test_autogen";
+		};
+		324A15BFFEE94E94BA16B115 /* ZERO_CHECK */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 4075A536BC7140638272240C /* Build configuration list for PBXAggregateTarget "ZERO_CHECK" */;
+			buildPhases = (
+				391E5C30A76C4A50A1EEBEBA /* CMake Rules */,
+			);
+			dependencies = (
+			);
+			name = ZERO_CHECK;
+			productName = ZERO_CHECK;
+		};
+		76BBA07C604F4D0E89A822F7 /* RUN_TESTS */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 72834F6613B541F1ADD19359 /* Build configuration list for PBXAggregateTarget "RUN_TESTS" */;
+			buildPhases = (
+				30F419A49AA74CF3BF746DBA /* CMake PostBuild Rules */,
+			);
+			dependencies = (
+			);
+			name = RUN_TESTS;
+			productName = RUN_TESTS;
+		};
+		7A7E10E72F85450A98FB2D43 /* install */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = AA0248B4DBB84B98A65F2629 /* Build configuration list for PBXAggregateTarget "install" */;
+			buildPhases = (
+				42B97BE305424A51A711AA30 /* CMake PostBuild Rules */,
+			);
+			dependencies = (
+				1132CFAB20DF49D78C2D0888 /* PBXTargetDependency */,
+			);
+			name = install;
+			productName = install;
+		};
+		A0EF40283FD3451D881D67E2 /* package */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 18CEC7121C9647A680D5FE6D /* Build configuration list for PBXAggregateTarget "package" */;
+			buildPhases = (
+				3C06A6AA9EE3449B820223EA /* CMake PostBuild Rules */,
+			);
+			dependencies = (
+				87FFEBD546FF435D89DDB420 /* PBXTargetDependency */,
+			);
+			name = package;
+			productName = package;
+		};
+		EC7358D97DFB4AB0AF8A20EB /* ALL_BUILD */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 2F93DC362FB04D53874B8545 /* Build configuration list for PBXAggregateTarget "ALL_BUILD" */;
+			buildPhases = (
+				312F403A550940E1A4E1D1A0 /* CMake Rules */,
+			);
+			dependencies = (
+				D8223882699E4198AB07FD1B /* PBXTargetDependency */,
+				31D08FF9EC7E49A188950084 /* PBXTargetDependency */,
+			);
+			name = ALL_BUILD;
+			productName = ALL_BUILD;
+		};
+/* End PBXAggregateTarget section */
+
+/* Begin PBXBuildFile section */
+		3940B2F48FED4F79993BE68E /* /Users/kevinhouyang/Development/hifi/tests-manual/render-perf/src/main.cpp */ = {isa = PBXBuildFile; fileRef = 3952E437686B42FFA550C82D /* /Users/kevinhouyang/Development/hifi/tests-manual/render-perf/src/main.cpp */; };
+		7ED8D473BD3249C7B50CD12B /* /Users/kevinhouyang/Development/hifi/tests-manual/render-perf/CMakeLists.txt */ = {isa = PBXBuildFile; fileRef = A9245757A8F241899B86033B /* /Users/kevinhouyang/Development/hifi/tests-manual/render-perf/CMakeLists.txt */; };
+		BF7D27C6D3184E64B89AF98E /* /Users/kevinhouyang/Development/hifi/tests-manual/render-perf/src/Camera.hpp */ = {isa = PBXBuildFile; fileRef = 0048871D067F44BC9331C15A /* /Users/kevinhouyang/Development/hifi/tests-manual/render-perf/src/Camera.hpp */; };
+		EF17C4178D0743A2BEE6DDD4 /* /Users/kevinhouyang/Development/hifi/build/tests-manual/render-perf/render-perf-test_autogen/mocs_compilation.cpp */ = {isa = PBXBuildFile; fileRef = 3301DBEF239F467E8969550A /* /Users/kevinhouyang/Development/hifi/build/tests-manual/render-perf/render-perf-test_autogen/mocs_compilation.cpp */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXBuildStyle section */
+		47FB555755FE43B89C371678 /* Release */ = {
+			isa = PBXBuildStyle;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+			};
+			name = Release;
+		};
+		5CF1E3F2827841D68E336358 /* MinSizeRel */ = {
+			isa = PBXBuildStyle;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+			};
+			name = MinSizeRel;
+		};
+		BD494032D59F4A7CBD4FD548 /* Debug */ = {
+			isa = PBXBuildStyle;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+			};
+			name = Debug;
+		};
+		D2F6F43941594F10883208AD /* RelWithDebInfo */ = {
+			isa = PBXBuildStyle;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+			};
+			name = RelWithDebInfo;
+		};
+/* End PBXBuildStyle section */
+
+/* Begin PBXContainerItemProxy section */
+		16C387148809411791172FC9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FC31F8B19690492196281F23 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 324A15BFFEE94E94BA16B115;
+			remoteInfo = ZERO_CHECK;
+		};
+		44A432321FFA41F9BE2962EA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FC31F8B19690492196281F23 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 324A15BFFEE94E94BA16B115;
+			remoteInfo = ZERO_CHECK;
+		};
+		5D959079B7284C00ABFED6A7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FC31F8B19690492196281F23 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 324A15BFFEE94E94BA16B115;
+			remoteInfo = ZERO_CHECK;
+		};
+		5FAD939C673349E8831C5232 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FC31F8B19690492196281F23 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EC7358D97DFB4AB0AF8A20EB;
+			remoteInfo = ALL_BUILD;
+		};
+		7679C558CEF7484DB05F0B5C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FC31F8B19690492196281F23 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E4F5F73C7BDD4514A0E2BC86;
+			remoteInfo = "render-perf-test";
+		};
+		928AFCD7FFB34EA5B8008ECB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FC31F8B19690492196281F23 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EC7358D97DFB4AB0AF8A20EB;
+			remoteInfo = ALL_BUILD;
+		};
+		A6D4A193A94F4C439CB916E1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FC31F8B19690492196281F23 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 20A2BAEA9C924736BA4001B8;
+			remoteInfo = "render-perf-test_autogen";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0048871D067F44BC9331C15A /* /Users/kevinhouyang/Development/hifi/tests-manual/render-perf/src/Camera.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.h; fileEncoding = 4; name = Camera.hpp; path = src/Camera.hpp; sourceTree = SOURCE_ROOT; };
+		3301DBEF239F467E8969550A /* /Users/kevinhouyang/Development/hifi/build/tests-manual/render-perf/render-perf-test_autogen/mocs_compilation.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = mocs_compilation.cpp; path = "../../build/tests-manual/render-perf/render-perf-test_autogen/mocs_compilation.cpp"; sourceTree = SOURCE_ROOT; };
+		3952E437686B42FFA550C82D /* /Users/kevinhouyang/Development/hifi/tests-manual/render-perf/src/main.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = main.cpp; path = src/main.cpp; sourceTree = SOURCE_ROOT; };
+		A9245757A8F241899B86033B /* /Users/kevinhouyang/Development/hifi/tests-manual/render-perf/CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; name = CMakeLists.txt; path = CMakeLists.txt; sourceTree = SOURCE_ROOT; };
+		B8F6D51E85ED48B2AF01695A /* /Users/kevinhouyang/Development/hifi/tests-manual/render-perf/CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; name = CMakeLists.txt; path = CMakeLists.txt; sourceTree = SOURCE_ROOT; };
+		C94F12A5BB484237B8B1CFB5 /* /Users/kevinhouyang/Development/hifi/tests-manual/render-perf/CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; name = CMakeLists.txt; path = CMakeLists.txt; sourceTree = SOURCE_ROOT; };
+		DCF33BE0CAFE4520B9EB2582 /* render-perf-test */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; path = "render-perf-test"; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXGroup section */
+		0F9F909218344469A4BBDEFE /* render-perf-test */ = {
+			isa = PBXGroup;
+			children = (
+				3889CAEAEA3345578DF2976A /* Header Files */,
+				23FAD79A81AA4EAE9067FCFE /* Source Files */,
+				A9245757A8F241899B86033B /* /Users/kevinhouyang/Development/hifi/tests-manual/render-perf/CMakeLists.txt */,
+			);
+			name = "render-perf-test";
+			sourceTree = "<group>";
+		};
+		200974D59E374B3FB6696BA3 /* Tests */ = {
+			isa = PBXGroup;
+			children = (
+				F134C212842E44C595026E6F /* manual-tests */,
+			);
+			name = Tests;
+			sourceTree = "<group>";
+		};
+		235CBDCAE2C045348631CB30 /* render-perf-test_autogen */ = {
+			isa = PBXGroup;
+			children = (
+				48554DD55CE34FCC95D096F9 /* CMake Rules */,
+				C94F12A5BB484237B8B1CFB5 /* /Users/kevinhouyang/Development/hifi/tests-manual/render-perf/CMakeLists.txt */,
+			);
+			name = "render-perf-test_autogen";
+			sourceTree = "<group>";
+		};
+		23FAD79A81AA4EAE9067FCFE /* Source Files */ = {
+			isa = PBXGroup;
+			children = (
+				3301DBEF239F467E8969550A /* /Users/kevinhouyang/Development/hifi/build/tests-manual/render-perf/render-perf-test_autogen/mocs_compilation.cpp */,
+				3952E437686B42FFA550C82D /* /Users/kevinhouyang/Development/hifi/tests-manual/render-perf/src/main.cpp */,
+			);
+			name = "Source Files";
+			sourceTree = "<group>";
+		};
+		2A2B9640EB914B60B96EAC0F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DCF33BE0CAFE4520B9EB2582 /* render-perf-test */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		38330311D5E94B919377E3D8 /* CMake Rules */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "CMake Rules";
+			sourceTree = "<group>";
+		};
+		3889CAEAEA3345578DF2976A /* Header Files */ = {
+			isa = PBXGroup;
+			children = (
+				0048871D067F44BC9331C15A /* /Users/kevinhouyang/Development/hifi/tests-manual/render-perf/src/Camera.hpp */,
+			);
+			name = "Header Files";
+			sourceTree = "<group>";
+		};
+		48554DD55CE34FCC95D096F9 /* CMake Rules */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "CMake Rules";
+			sourceTree = "<group>";
+		};
+		7F2F82B046F74EE2B4627886 = {
+			isa = PBXGroup;
+			children = (
+				200974D59E374B3FB6696BA3 /* Tests */,
+				D631B5ABA62F44F59AF2F329 /* ALL_BUILD */,
+				2A2B9640EB914B60B96EAC0F /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		D631B5ABA62F44F59AF2F329 /* ALL_BUILD */ = {
+			isa = PBXGroup;
+			children = (
+				38330311D5E94B919377E3D8 /* CMake Rules */,
+				B8F6D51E85ED48B2AF01695A /* /Users/kevinhouyang/Development/hifi/tests-manual/render-perf/CMakeLists.txt */,
+			);
+			name = ALL_BUILD;
+			sourceTree = "<group>";
+		};
+		F134C212842E44C595026E6F /* manual-tests */ = {
+			isa = PBXGroup;
+			children = (
+				0F9F909218344469A4BBDEFE /* render-perf-test */,
+				235CBDCAE2C045348631CB30 /* render-perf-test_autogen */,
+			);
+			name = "manual-tests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		E4F5F73C7BDD4514A0E2BC86 /* render-perf-test */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D449756353DE4CF785760705 /* Build configuration list for PBXNativeTarget "render-perf-test" */;
+			buildPhases = (
+				1AC3A85185984C20941FFA3B /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3D448438654E48F3A17157DB /* PBXTargetDependency */,
+				B130855E54E64776AAFFC0F1 /* PBXTargetDependency */,
+			);
+			name = "render-perf-test";
+			productName = "render-perf-test";
+			productReference = DCF33BE0CAFE4520B9EB2582 /* render-perf-test */;
+			productType = "com.apple.product-type.tool";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FC31F8B19690492196281F23 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = YES;
+				LastUpgradeCheck = 0930;
+			};
+			buildConfigurationList = 41422F2A40634FC1980F703C /* Build configuration list for PBXProject "render-perf-test" */;
+			buildSettings = {
+			};
+			buildStyles = (
+				BD494032D59F4A7CBD4FD548 /* Debug */,
+				47FB555755FE43B89C371678 /* Release */,
+				5CF1E3F2827841D68E336358 /* MinSizeRel */,
+				D2F6F43941594F10883208AD /* RelWithDebInfo */,
+			);
+			compatibilityVersion = "Xcode 3.2";
+			hasScannedForEncodings = 0;
+			mainGroup = 7F2F82B046F74EE2B4627886;
+			projectDirPath = "../../../tests-manual/render-perf";
+			projectRoot = "";
+			targets = (
+				EC7358D97DFB4AB0AF8A20EB /* ALL_BUILD */,
+				76BBA07C604F4D0E89A822F7 /* RUN_TESTS */,
+				324A15BFFEE94E94BA16B115 /* ZERO_CHECK */,
+				7A7E10E72F85450A98FB2D43 /* install */,
+				A0EF40283FD3451D881D67E2 /* package */,
+				E4F5F73C7BDD4514A0E2BC86 /* render-perf-test */,
+				20A2BAEA9C924736BA4001B8 /* render-perf-test_autogen */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		13981C048FFE4EE0B20A20C5 = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# shell script goes here
+exit 0";
+			showEnvVarsInLog = 0;
+		};
+		30F419A49AA74CF3BF746DBA /* CMake PostBuild Rules */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			name = "CMake PostBuild Rules";
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "make -C /Users/kevinhouyang/Development/hifi/build/tests-manual/render-perf -f /Users/kevinhouyang/Development/hifi/build/tests-manual/render-perf/CMakeScripts/RUN_TESTS_postBuildPhase.make$CONFIGURATION all";
+			showEnvVarsInLog = 0;
+		};
+		312F403A550940E1A4E1D1A0 /* CMake Rules */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			name = "CMake Rules";
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "make -C /Users/kevinhouyang/Development/hifi/build/tests-manual/render-perf -f /Users/kevinhouyang/Development/hifi/build/tests-manual/render-perf/CMakeScripts/ALL_BUILD_cmakeRulesBuildPhase.make$CONFIGURATION all";
+			showEnvVarsInLog = 0;
+		};
+		391E5C30A76C4A50A1EEBEBA /* CMake Rules */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			name = "CMake Rules";
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "make -C /Users/kevinhouyang/Development/hifi/build/tests-manual/render-perf -f /Users/kevinhouyang/Development/hifi/build/tests-manual/render-perf/CMakeScripts/ZERO_CHECK_cmakeRulesBuildPhase.make$CONFIGURATION all";
+			showEnvVarsInLog = 0;
+		};
+		3C06A6AA9EE3449B820223EA /* CMake PostBuild Rules */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			name = "CMake PostBuild Rules";
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "make -C /Users/kevinhouyang/Development/hifi/build/tests-manual/render-perf -f /Users/kevinhouyang/Development/hifi/build/tests-manual/render-perf/CMakeScripts/package_postBuildPhase.make$CONFIGURATION all";
+			showEnvVarsInLog = 0;
+		};
+		42B97BE305424A51A711AA30 /* CMake PostBuild Rules */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			name = "CMake PostBuild Rules";
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "make -C /Users/kevinhouyang/Development/hifi/build/tests-manual/render-perf -f /Users/kevinhouyang/Development/hifi/build/tests-manual/render-perf/CMakeScripts/install_postBuildPhase.make$CONFIGURATION all";
+			showEnvVarsInLog = 0;
+		};
+		49E40604053441B7AECFFF66 = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# shell script goes here
+exit 0";
+			showEnvVarsInLog = 0;
+		};
+		541DFCF2D5EF4D3BBF8337A0 = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# shell script goes here
+exit 0";
+			showEnvVarsInLog = 0;
+		};
+		550B60CEC51C4694A15DCE9E = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# shell script goes here
+exit 0";
+			showEnvVarsInLog = 0;
+		};
+		68001597F1424FD8B8B1AC9C = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# shell script goes here
+exit 0";
+			showEnvVarsInLog = 0;
+		};
+		813CA2E2E3B4401A8AC26B7B = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# shell script goes here
+exit 0";
+			showEnvVarsInLog = 0;
+		};
+		B048D6F8B99B4348B7148440 /* CMake Rules */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			name = "CMake Rules";
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "make -C /Users/kevinhouyang/Development/hifi/build/tests-manual/render-perf -f /Users/kevinhouyang/Development/hifi/build/tests-manual/render-perf/CMakeScripts/render-perf-test_autogen_cmakeRulesBuildPhase.make$CONFIGURATION all";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1AC3A85185984C20941FFA3B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EF17C4178D0743A2BEE6DDD4 /* /Users/kevinhouyang/Development/hifi/build/tests-manual/render-perf/render-perf-test_autogen/mocs_compilation.cpp */,
+				3940B2F48FED4F79993BE68E /* /Users/kevinhouyang/Development/hifi/tests-manual/render-perf/src/main.cpp */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		00AA234FEB7642909306C36C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 324A15BFFEE94E94BA16B115 /* ZERO_CHECK */;
+			targetProxy = 5D959079B7284C00ABFED6A7 /* PBXContainerItemProxy */;
+		};
+		1132CFAB20DF49D78C2D0888 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EC7358D97DFB4AB0AF8A20EB /* ALL_BUILD */;
+			targetProxy = 928AFCD7FFB34EA5B8008ECB /* PBXContainerItemProxy */;
+		};
+		31D08FF9EC7E49A188950084 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E4F5F73C7BDD4514A0E2BC86 /* render-perf-test */;
+			targetProxy = 7679C558CEF7484DB05F0B5C /* PBXContainerItemProxy */;
+		};
+		3D448438654E48F3A17157DB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 324A15BFFEE94E94BA16B115 /* ZERO_CHECK */;
+			targetProxy = 44A432321FFA41F9BE2962EA /* PBXContainerItemProxy */;
+		};
+		87FFEBD546FF435D89DDB420 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EC7358D97DFB4AB0AF8A20EB /* ALL_BUILD */;
+			targetProxy = 5FAD939C673349E8831C5232 /* PBXContainerItemProxy */;
+		};
+		B130855E54E64776AAFFC0F1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 20A2BAEA9C924736BA4001B8 /* render-perf-test_autogen */;
+			targetProxy = A6D4A193A94F4C439CB916E1 /* PBXContainerItemProxy */;
+		};
+		D8223882699E4198AB07FD1B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 324A15BFFEE94E94BA16B115 /* ZERO_CHECK */;
+			targetProxy = 16C387148809411791172FC9 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		07D5932F5B9D47C0A37BA5BD /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ZERO_CHECK;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/kevinhouyang/Development/hifi/build/tests-manual/render-perf";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = MinSizeRel;
+		};
+		13C04C6B063A4A9E8B0719F2 /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = RUN_TESTS;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/kevinhouyang/Development/hifi/build/tests-manual/render-perf";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = RelWithDebInfo;
+		};
+		1A609F34244349B1A2267C21 /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = "render-perf-test_autogen";
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/kevinhouyang/Development/hifi/build/tests-manual/render-perf";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = RelWithDebInfo;
+		};
+		1E10AFF9743E4E8DAC9FFA59 /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = package;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/kevinhouyang/Development/hifi/build/tests-manual/render-perf";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = MinSizeRel;
+		};
+		2D14E85F05594B38A548A8F1 /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				FRAMEWORK_SEARCH_PATHS = (/usr/local/Cellar/qt/5.11.2/lib);
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = s;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",GLM_FORCE_RADIANS,DEV_BUILD,QT_QUICK_LIB,QT_GUI_LIB,QT_CORE_LIB,QT_NO_DEBUG,QT_QML_LIB,QT_NETWORK_LIB,QT_SCRIPT_LIB,QT_WIDGETS_LIB,QT_CONCURRENT_LIB,QT_SCRIPTTOOLS_LIB,QT_WEBSOCKETS_LIB,QT_MULTIMEDIA_LIB,QT_WEBCHANNEL_LIB,QT_WEBENGINE_LIB,QT_WEBENGINECORE_LIB,QT_POSITIONING_LIB,QT_OPENGL_LIB,QT_XMLPATTERNS_LIB);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = ("/Users/kevinhouyang/Development/hifi/build/tests-manual/render-perf","/Users/kevinhouyang/Development/hifi/tests-manual/render-perf","/Users/kevinhouyang/Development/hifi/build/tests-manual/render-perf/render-perf-test_autogen/include_MinSizeRel",/Users/kevinhouyang/Development/hifi/build/includes,/Users/kevinhouyang/Development/hifi/build/ext/Xcode/glm/project/include,/Users/kevinhouyang/Development/hifi/libraries/shared/src,/Users/kevinhouyang/Development/hifi/build/libraries/shared,/Users/kevinhouyang/Development/hifi/libraries/task/src,/Users/kevinhouyang/Development/hifi/build/libraries/task,/Users/kevinhouyang/Development/hifi/libraries/workload/src,/Users/kevinhouyang/Development/hifi/build/libraries/workload,/Users/kevinhouyang/Development/hifi/libraries/networking/src,/Users/kevinhouyang/Development/hifi/build/libraries/networking,/Users/kevinhouyang/Development/hifi/libraries/animation/src,/Users/kevinhouyang/Development/hifi/build/libraries/animation,/Users/kevinhouyang/Development/hifi/libraries/ktx/src,/Users/kevinhouyang/Development/hifi/build/libraries/ktx,/Users/kevinhouyang/Development/hifi/libraries/image/src,/Users/kevinhouyang/Development/hifi/build/libraries/image,/Users/kevinhouyang/Development/hifi/libraries/octree/src,/Users/kevinhouyang/Development/hifi/build/libraries/octree,/Users/kevinhouyang/Development/hifi/libraries/shaders/src,/Users/kevinhouyang/Development/hifi/build/libraries/shaders,/Users/kevinhouyang/Development/hifi/libraries/gl/src,/Users/kevinhouyang/Development/hifi/build/libraries/gl,/Users/kevinhouyang/Development/hifi/libraries/gpu/src,/Users/kevinhouyang/Development/hifi/build/libraries/gpu,"/Users/kevinhouyang/Development/hifi/libraries/gpu-gl-common/src","/Users/kevinhouyang/Development/hifi/build/libraries/gpu-gl-common","/Users/kevinhouyang/Development/hifi/libraries/gpu-gl/src","/Users/kevinhouyang/Development/hifi/build/libraries/gpu-gl",/Users/kevinhouyang/Development/hifi/libraries/render/src,/Users/kevinhouyang/Development/hifi/build/libraries/render,"/Users/kevinhouyang/Development/hifi/libraries/render-utils/src","/Users/kevinhouyang/Development/hifi/build/libraries/render-utils",/Users/kevinhouyang/Development/hifi/libraries/graphics/src,/Users/kevinhouyang/Development/hifi/build/libraries/graphics,/Users/kevinhouyang/Development/hifi/libraries/fbx/src,/Users/kevinhouyang/Development/hifi/build/libraries/fbx,"/Users/kevinhouyang/Development/hifi/libraries/model-networking/src","/Users/kevinhouyang/Development/hifi/build/libraries/model-networking","/Users/kevinhouyang/Development/hifi/libraries/graphics-scripting/src","/Users/kevinhouyang/Development/hifi/build/libraries/graphics-scripting",/Users/kevinhouyang/Development/hifi/libraries/entities/src,/Users/kevinhouyang/Development/hifi/build/libraries/entities,"/Users/kevinhouyang/Development/hifi/libraries/entities-renderer/src","/Users/kevinhouyang/Development/hifi/build/libraries/entities-renderer",/Users/kevinhouyang/Development/hifi/libraries/audio/src,/Users/kevinhouyang/Development/hifi/build/libraries/audio,/Users/kevinhouyang/Development/hifi/libraries/avatars/src,/Users/kevinhouyang/Development/hifi/build/libraries/avatars,"/Users/kevinhouyang/Development/hifi/libraries/script-engine/src","/Users/kevinhouyang/Development/hifi/build/libraries/script-engine",/Users/kevinhouyang/Development/hifi/libraries/physics/src,/Users/kevinhouyang/Development/hifi/build/libraries/physics,/Users/kevinhouyang/Development/hifi/libraries/procedural/src,/Users/kevinhouyang/Development/hifi/build/libraries/procedural,/Users/kevinhouyang/Development/hifi/libraries/midi/src,/Users/kevinhouyang/Development/hifi/build/libraries/midi,/Users/kevinhouyang/Development/hifi/libraries/qml/src,/Users/kevinhouyang/Development/hifi/build/libraries/qml,/Users/kevinhouyang/Development/hifi/libraries/ui/src,/Users/kevinhouyang/Development/hifi/build/libraries/ui,/Users/kevinhouyang/Development/hifi/build/ext/Xcode/json/project/src/json,/Users/kevinhouyang/Development/hifi/build/ext/Xcode/glad45/project/include);
+				INSTALL_PATH = "";
+				LIBRARY_SEARCH_PATHS = "";
+				OTHER_CPLUSPLUSFLAGS = " -Wall -Wextra -fno-strict-aliasing -Wno-unused-parameter --stdlib=libc++    -isystem /Users/kevinhouyang/Development/hifi/build/ext/Xcode/bullet/project/include/bullet     -DNDEBUG -fPIC '-std=gnu++14'  ";
+				OTHER_LDFLAGS = " -Wl,-search_paths_first -Wl,-headerpad_max_install_names  /Users/kevinhouyang/Development/hifi/build/libraries/shared/MinSizeRel/libshared.a /Users/kevinhouyang/Development/hifi/build/libraries/task/MinSizeRel/libtask.a /Users/kevinhouyang/Development/hifi/build/libraries/workload/MinSizeRel/libworkload.a /Users/kevinhouyang/Development/hifi/build/libraries/networking/MinSizeRel/libnetworking.a /Users/kevinhouyang/Development/hifi/build/libraries/animation/MinSizeRel/libanimation.a /Users/kevinhouyang/Development/hifi/build/libraries/ktx/MinSizeRel/libktx.a /Users/kevinhouyang/Development/hifi/build/libraries/image/MinSizeRel/libimage.a /Users/kevinhouyang/Development/hifi/build/libraries/octree/MinSizeRel/liboctree.a /Users/kevinhouyang/Development/hifi/build/libraries/shaders/MinSizeRel/libshaders.a /Users/kevinhouyang/Development/hifi/build/libraries/gl/MinSizeRel/libgl.a /Users/kevinhouyang/Development/hifi/build/libraries/gpu/MinSizeRel/libgpu.a /Users/kevinhouyang/Development/hifi/build/libraries/gpu-gl-common/MinSizeRel/libgpu-gl-common.a /Users/kevinhouyang/Development/hifi/build/libraries/gpu-gl/MinSizeRel/libgpu-gl.a /Users/kevinhouyang/Development/hifi/build/libraries/render/MinSizeRel/librender.a /Users/kevinhouyang/Development/hifi/build/libraries/render-utils/MinSizeRel/librender-utils.a /Users/kevinhouyang/Development/hifi/build/libraries/graphics/MinSizeRel/libgraphics.a /Users/kevinhouyang/Development/hifi/build/libraries/fbx/MinSizeRel/libfbx.a /Users/kevinhouyang/Development/hifi/build/libraries/model-networking/MinSizeRel/libmodel-networking.a /Users/kevinhouyang/Development/hifi/build/libraries/graphics-scripting/MinSizeRel/libgraphics-scripting.a /Users/kevinhouyang/Development/hifi/build/libraries/entities/MinSizeRel/libentities.a /Users/kevinhouyang/Development/hifi/build/libraries/entities-renderer/MinSizeRel/libentities-renderer.a /Users/kevinhouyang/Development/hifi/build/libraries/audio/MinSizeRel/libaudio.a /Users/kevinhouyang/Development/hifi/build/libraries/avatars/MinSizeRel/libavatars.a /Users/kevinhouyang/Development/hifi/build/libraries/script-engine/MinSizeRel/libscript-engine.a /Users/kevinhouyang/Development/hifi/build/libraries/physics/MinSizeRel/libphysics.a /Users/kevinhouyang/Development/hifi/build/libraries/procedural/MinSizeRel/libprocedural.a /Users/kevinhouyang/Development/hifi/build/libraries/midi/MinSizeRel/libmidi.a /Users/kevinhouyang/Development/hifi/build/libraries/qml/MinSizeRel/libqml.a /Users/kevinhouyang/Development/hifi/build/libraries/ui/MinSizeRel/libui.a /Users/kevinhouyang/Development/hifi/build/libraries/gpu-gl-common/MinSizeRel/libgpu-gl-common.a /Users/kevinhouyang/Development/hifi/build/libraries/gpu-gl/MinSizeRel/libgpu-gl.a /Users/kevinhouyang/Development/hifi/build/ext/Xcode/bullet/project/lib/libBulletDynamics.dylib /Users/kevinhouyang/Development/hifi/build/ext/Xcode/bullet/project/lib/libBulletCollision.dylib /Users/kevinhouyang/Development/hifi/build/ext/Xcode/bullet/project/lib/libLinearMath.dylib /Users/kevinhouyang/Development/hifi/build/ext/Xcode/bullet/project/lib/libBulletSoftBody.dylib /Users/kevinhouyang/Development/hifi/build/libraries/gpu-gl-common/MinSizeRel/libgpu-gl-common.a /usr/local/Cellar/qt/5.11.2/lib/QtConcurrent.framework/QtConcurrent -lpthread /Users/kevinhouyang/Development/hifi/build/libraries/render-utils/MinSizeRel/librender-utils.a /Users/kevinhouyang/Development/hifi/build/libraries/render/MinSizeRel/librender.a /Users/kevinhouyang/Development/hifi/build/libraries/graphics-scripting/MinSizeRel/libgraphics-scripting.a /Users/kevinhouyang/Development/hifi/build/libraries/script-engine/MinSizeRel/libscript-engine.a /Users/kevinhouyang/Development/hifi/build/libraries/animation/MinSizeRel/libanimation.a /Users/kevinhouyang/Development/hifi/build/libraries/physics/MinSizeRel/libphysics.a /Users/kevinhouyang/Development/hifi/build/libraries/workload/MinSizeRel/libworkload.a /Users/kevinhouyang/Development/hifi/build/libraries/task/MinSizeRel/libtask.a /Users/kevinhouyang/Development/hifi/build/libraries/entities/MinSizeRel/libentities.a /Users/kevinhouyang/Development/hifi/build/libraries/octree/MinSizeRel/liboctree.a /Users/kevinhouyang/Development/hifi/build/libraries/avatars/MinSizeRel/libavatars.a /Users/kevinhouyang/Development/hifi/build/libraries/midi/MinSizeRel/libmidi.a /usr/local/Cellar/qt/5.11.2/lib/QtScriptTools.framework/QtScriptTools /Users/kevinhouyang/Development/hifi/build/ext/Xcode/quazip/project/lib/libquazip5.1.0.0.dylib /Users/kevinhouyang/Development/hifi/build/libraries/recording/MinSizeRel/librecording.a /Users/kevinhouyang/Development/hifi/build/libraries/procedural/MinSizeRel/libprocedural.a /Users/kevinhouyang/Development/hifi/build/libraries/model-networking/MinSizeRel/libmodel-networking.a /Users/kevinhouyang/Development/hifi/build/libraries/fbx/MinSizeRel/libfbx.a /Users/kevinhouyang/Development/hifi/build/libraries/graphics/MinSizeRel/libgraphics.a /Users/kevinhouyang/Development/hifi/build/libraries/image/MinSizeRel/libimage.a /Users/kevinhouyang/Development/hifi/build/ext/Xcode/nvtt/project/lib/libnvtt.dylib /Users/kevinhouyang/Development/hifi/build/ext/Xcode/etc2comp/project/build/EtcLib/MinSizeRel/libEtcLib.a /Users/kevinhouyang/Development/hifi/build/libraries/gpu/MinSizeRel/libgpu.a /Users/kevinhouyang/Development/hifi/build/libraries/ktx/MinSizeRel/libktx.a /Users/kevinhouyang/Development/hifi/build/libraries/shaders/MinSizeRel/libshaders.a /Users/kevinhouyang/Development/hifi/build/ext/Xcode/draco/project-MinSizeRel/lib/libdraco.a /Users/kevinhouyang/Development/hifi/build/ext/Xcode/draco/project-MinSizeRel/lib/libdracoenc.a /Users/kevinhouyang/Development/hifi/build/libraries/qml/MinSizeRel/libqml.a /Users/kevinhouyang/Development/hifi/build/libraries/gl/MinSizeRel/libgl.a /Users/kevinhouyang/Development/hifi/build/ext/Xcode/glad45/project/lib/libglad.a -framework OpenGL -ldl /usr/local/Cellar/qt/5.11.2/lib/QtWebSockets.framework/QtWebSockets /usr/local/Cellar/qt/5.11.2/lib/QtOpenGL.framework/QtOpenGL /usr/local/Cellar/qt/5.11.2/lib/QtWidgets.framework/QtWidgets /usr/local/Cellar/qt/5.11.2/lib/QtXmlPatterns.framework/QtXmlPatterns /Users/kevinhouyang/Development/hifi/build/libraries/audio-client/MinSizeRel/libaudio-client.a /Users/kevinhouyang/Development/hifi/build/libraries/audio/MinSizeRel/libaudio.a /Users/kevinhouyang/Development/hifi/build/libraries/plugins/MinSizeRel/libplugins.a /Users/kevinhouyang/Development/hifi/build/libraries/networking/MinSizeRel/libnetworking.a /usr/local/Cellar/openssl/1.0.2p/lib/libssl.dylib /usr/local/Cellar/openssl/1.0.2p/lib/libcrypto.dylib /Users/kevinhouyang/Development/hifi/build/ext/Xcode/tbb/project/src/tbb/lib/libtbb.dylib /Users/kevinhouyang/Development/hifi/build/ext/Xcode/tbb/project/src/tbb/lib/libtbbmalloc.dylib -framework IOKit /usr/local/Cellar/qt/5.11.2/lib/QtMultimedia.framework/QtMultimedia /usr/local/Cellar/qt/5.11.2/lib/QtWebEngine.framework/QtWebEngine /usr/local/Cellar/qt/5.11.2/lib/QtWebEngineCore.framework/QtWebEngineCore /usr/local/Cellar/qt/5.11.2/lib/QtQuick.framework/QtQuick /usr/local/Cellar/qt/5.11.2/lib/QtWebChannel.framework/QtWebChannel /usr/local/Cellar/qt/5.11.2/lib/QtPositioning.framework/QtPositioning -framework CoreAudio -framework CoreFoundation /Users/kevinhouyang/Development/hifi/build/ext/Xcode/bullet/project/lib/libBulletDynamics.dylib /Users/kevinhouyang/Development/hifi/build/ext/Xcode/bullet/project/lib/libBulletCollision.dylib /Users/kevinhouyang/Development/hifi/build/ext/Xcode/bullet/project/lib/libLinearMath.dylib /Users/kevinhouyang/Development/hifi/build/ext/Xcode/bullet/project/lib/libBulletSoftBody.dylib /Users/kevinhouyang/Development/hifi/build/libraries/pointers/MinSizeRel/libpointers.a /Users/kevinhouyang/Development/hifi/build/libraries/controllers/MinSizeRel/libcontrollers.a /Users/kevinhouyang/Development/hifi/build/libraries/shared/MinSizeRel/libshared.a /usr/local/Cellar/qt/5.11.2/lib/QtGui.framework/QtGui /usr/lib/libz.dylib /usr/local/Cellar/qt/5.11.2/lib/QtQml.framework/QtQml /usr/local/Cellar/qt/5.11.2/lib/QtNetwork.framework/QtNetwork /usr/local/Cellar/qt/5.11.2/lib/QtScript.framework/QtScript /usr/local/Cellar/qt/5.11.2/lib/QtCore.framework/QtCore /Users/kevinhouyang/Development/hifi/build/ext/Xcode/polyvox/project/lib/Release/libPolyVoxCore.dylib";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = "render-perf-test";
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/kevinhouyang/Development/hifi/build/tests-manual/render-perf";
+				SYSTEM_HEADER_SEARCH_PATHS = (/usr/local/Cellar/qt/5.11.2/lib/QtQuick.framework/Headers,/usr/local/Cellar/qt/5.11.2/lib/QtGui.framework/Headers,/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk/System/Library/Frameworks/OpenGL.framework/Headers,/usr/local/Cellar/qt/5.11.2/lib/QtCore.framework/Headers,"/usr/local/Cellar/qt/5.11.2/./mkspecs/macx-clang",/usr/local/Cellar/qt/5.11.2/lib/QtQml.framework/Headers,/usr/local/Cellar/qt/5.11.2/lib/QtNetwork.framework/Headers,/usr/local/Cellar/qt/5.11.2/lib/QtScript.framework/Headers,/Users/kevinhouyang/Development/hifi/build/ext/Xcode/tbb/project/src/tbb/include,/usr/local/Cellar/qt/5.11.2/lib/QtWidgets.framework/Headers,/usr/local/Cellar/qt/5.11.2/lib/QtConcurrent.framework/Headers,/Users/kevinhouyang/Development/hifi/build/ext/Xcode/quazip/project/include,/usr/local/Cellar/qt/5.11.2/lib/QtScriptTools.framework/Headers,/usr/local/Cellar/qt/5.11.2/lib/QtWebSockets.framework/Headers,/Users/kevinhouyang/Development/hifi/build/ext/Xcode/polyvox/project/include/PolyVoxCore,/usr/local/Cellar/qt/5.11.2/lib/QtMultimedia.framework/Headers,/usr/local/Cellar/qt/5.11.2/lib/QtWebChannel.framework/Headers,/usr/local/Cellar/qt/5.11.2/lib/QtWebEngine.framework/Headers,/usr/local/Cellar/qt/5.11.2/lib/QtWebEngineCore.framework/Headers,/usr/local/Cellar/qt/5.11.2/lib/QtPositioning.framework/Headers,/usr/local/Cellar/qt/5.11.2/lib/QtOpenGL.framework/Headers,/usr/local/Cellar/qt/5.11.2/lib/QtXmlPatterns.framework/Headers);
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = MinSizeRel;
+		};
+		3CC78226E542485AA5A4CF49 /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = install;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/kevinhouyang/Development/hifi/build/tests-manual/render-perf";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = RelWithDebInfo;
+		};
+		3FC601C0365B4CAF917BD3AF /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = package;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/kevinhouyang/Development/hifi/build/tests-manual/render-perf";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = RelWithDebInfo;
+		};
+		47BA19A791FD442E8673A25C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = install;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/kevinhouyang/Development/hifi/build/tests-manual/render-perf";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = Release;
+		};
+		51A03DCBFC1849E9ABD10885 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = RUN_TESTS;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/kevinhouyang/Development/hifi/build/tests-manual/render-perf";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = Release;
+		};
+		53E1E465C0854AFDAD2640E3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = package;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/kevinhouyang/Development/hifi/build/tests-manual/render-perf";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = Release;
+		};
+		56A1FED9541040EAA36C3B41 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = RUN_TESTS;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/kevinhouyang/Development/hifi/build/tests-manual/render-perf";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = Debug;
+		};
+		679B0D70C5A84B52ACC57D0F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = install;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/kevinhouyang/Development/hifi/build/tests-manual/render-perf";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = Debug;
+		};
+		6F5B97D638024388B2AC0536 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				FRAMEWORK_SEARCH_PATHS = (/usr/local/Cellar/qt/5.11.2/lib);
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",GLM_FORCE_RADIANS,DEV_BUILD,QT_QUICK_LIB,QT_GUI_LIB,QT_CORE_LIB,QT_QML_LIB,QT_NETWORK_LIB,QT_SCRIPT_LIB,QT_WIDGETS_LIB,QT_CONCURRENT_LIB,QT_SCRIPTTOOLS_LIB,QT_WEBSOCKETS_LIB,QT_MULTIMEDIA_LIB,QT_WEBCHANNEL_LIB,QT_WEBENGINE_LIB,QT_WEBENGINECORE_LIB,QT_POSITIONING_LIB,QT_OPENGL_LIB,QT_XMLPATTERNS_LIB);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = ("/Users/kevinhouyang/Development/hifi/build/tests-manual/render-perf","/Users/kevinhouyang/Development/hifi/tests-manual/render-perf","/Users/kevinhouyang/Development/hifi/build/tests-manual/render-perf/render-perf-test_autogen/include_Debug",/Users/kevinhouyang/Development/hifi/build/includes,/Users/kevinhouyang/Development/hifi/build/ext/Xcode/glm/project/include,/Users/kevinhouyang/Development/hifi/libraries/shared/src,/Users/kevinhouyang/Development/hifi/build/libraries/shared,/Users/kevinhouyang/Development/hifi/libraries/task/src,/Users/kevinhouyang/Development/hifi/build/libraries/task,/Users/kevinhouyang/Development/hifi/libraries/workload/src,/Users/kevinhouyang/Development/hifi/build/libraries/workload,/Users/kevinhouyang/Development/hifi/libraries/networking/src,/Users/kevinhouyang/Development/hifi/build/libraries/networking,/Users/kevinhouyang/Development/hifi/libraries/animation/src,/Users/kevinhouyang/Development/hifi/build/libraries/animation,/Users/kevinhouyang/Development/hifi/libraries/ktx/src,/Users/kevinhouyang/Development/hifi/build/libraries/ktx,/Users/kevinhouyang/Development/hifi/libraries/image/src,/Users/kevinhouyang/Development/hifi/build/libraries/image,/Users/kevinhouyang/Development/hifi/libraries/octree/src,/Users/kevinhouyang/Development/hifi/build/libraries/octree,/Users/kevinhouyang/Development/hifi/libraries/shaders/src,/Users/kevinhouyang/Development/hifi/build/libraries/shaders,/Users/kevinhouyang/Development/hifi/libraries/gl/src,/Users/kevinhouyang/Development/hifi/build/libraries/gl,/Users/kevinhouyang/Development/hifi/libraries/gpu/src,/Users/kevinhouyang/Development/hifi/build/libraries/gpu,"/Users/kevinhouyang/Development/hifi/libraries/gpu-gl-common/src","/Users/kevinhouyang/Development/hifi/build/libraries/gpu-gl-common","/Users/kevinhouyang/Development/hifi/libraries/gpu-gl/src","/Users/kevinhouyang/Development/hifi/build/libraries/gpu-gl",/Users/kevinhouyang/Development/hifi/libraries/render/src,/Users/kevinhouyang/Development/hifi/build/libraries/render,"/Users/kevinhouyang/Development/hifi/libraries/render-utils/src","/Users/kevinhouyang/Development/hifi/build/libraries/render-utils",/Users/kevinhouyang/Development/hifi/libraries/graphics/src,/Users/kevinhouyang/Development/hifi/build/libraries/graphics,/Users/kevinhouyang/Development/hifi/libraries/fbx/src,/Users/kevinhouyang/Development/hifi/build/libraries/fbx,"/Users/kevinhouyang/Development/hifi/libraries/model-networking/src","/Users/kevinhouyang/Development/hifi/build/libraries/model-networking","/Users/kevinhouyang/Development/hifi/libraries/graphics-scripting/src","/Users/kevinhouyang/Development/hifi/build/libraries/graphics-scripting",/Users/kevinhouyang/Development/hifi/libraries/entities/src,/Users/kevinhouyang/Development/hifi/build/libraries/entities,"/Users/kevinhouyang/Development/hifi/libraries/entities-renderer/src","/Users/kevinhouyang/Development/hifi/build/libraries/entities-renderer",/Users/kevinhouyang/Development/hifi/libraries/audio/src,/Users/kevinhouyang/Development/hifi/build/libraries/audio,/Users/kevinhouyang/Development/hifi/libraries/avatars/src,/Users/kevinhouyang/Development/hifi/build/libraries/avatars,"/Users/kevinhouyang/Development/hifi/libraries/script-engine/src","/Users/kevinhouyang/Development/hifi/build/libraries/script-engine",/Users/kevinhouyang/Development/hifi/libraries/physics/src,/Users/kevinhouyang/Development/hifi/build/libraries/physics,/Users/kevinhouyang/Development/hifi/libraries/procedural/src,/Users/kevinhouyang/Development/hifi/build/libraries/procedural,/Users/kevinhouyang/Development/hifi/libraries/midi/src,/Users/kevinhouyang/Development/hifi/build/libraries/midi,/Users/kevinhouyang/Development/hifi/libraries/qml/src,/Users/kevinhouyang/Development/hifi/build/libraries/qml,/Users/kevinhouyang/Development/hifi/libraries/ui/src,/Users/kevinhouyang/Development/hifi/build/libraries/ui,/Users/kevinhouyang/Development/hifi/build/ext/Xcode/json/project/src/json,/Users/kevinhouyang/Development/hifi/build/ext/Xcode/glad45/project/include);
+				INSTALL_PATH = "";
+				LIBRARY_SEARCH_PATHS = "";
+				OTHER_CPLUSPLUSFLAGS = " -Wall -Wextra -fno-strict-aliasing -Wno-unused-parameter --stdlib=libc++    -isystem /Users/kevinhouyang/Development/hifi/build/ext/Xcode/bullet/project/include/bullet    -DDEBUG -fPIC '-std=gnu++14'  ";
+				OTHER_LDFLAGS = " -Wl,-search_paths_first -Wl,-headerpad_max_install_names  /Users/kevinhouyang/Development/hifi/build/libraries/shared/Debug/libshared.a /Users/kevinhouyang/Development/hifi/build/libraries/task/Debug/libtask.a /Users/kevinhouyang/Development/hifi/build/libraries/workload/Debug/libworkload.a /Users/kevinhouyang/Development/hifi/build/libraries/networking/Debug/libnetworking.a /Users/kevinhouyang/Development/hifi/build/libraries/animation/Debug/libanimation.a /Users/kevinhouyang/Development/hifi/build/libraries/ktx/Debug/libktx.a /Users/kevinhouyang/Development/hifi/build/libraries/image/Debug/libimage.a /Users/kevinhouyang/Development/hifi/build/libraries/octree/Debug/liboctree.a /Users/kevinhouyang/Development/hifi/build/libraries/shaders/Debug/libshaders.a /Users/kevinhouyang/Development/hifi/build/libraries/gl/Debug/libgl.a /Users/kevinhouyang/Development/hifi/build/libraries/gpu/Debug/libgpu.a /Users/kevinhouyang/Development/hifi/build/libraries/gpu-gl-common/Debug/libgpu-gl-common.a /Users/kevinhouyang/Development/hifi/build/libraries/gpu-gl/Debug/libgpu-gl.a /Users/kevinhouyang/Development/hifi/build/libraries/render/Debug/librender.a /Users/kevinhouyang/Development/hifi/build/libraries/render-utils/Debug/librender-utils.a /Users/kevinhouyang/Development/hifi/build/libraries/graphics/Debug/libgraphics.a /Users/kevinhouyang/Development/hifi/build/libraries/fbx/Debug/libfbx.a /Users/kevinhouyang/Development/hifi/build/libraries/model-networking/Debug/libmodel-networking.a /Users/kevinhouyang/Development/hifi/build/libraries/graphics-scripting/Debug/libgraphics-scripting.a /Users/kevinhouyang/Development/hifi/build/libraries/entities/Debug/libentities.a /Users/kevinhouyang/Development/hifi/build/libraries/entities-renderer/Debug/libentities-renderer.a /Users/kevinhouyang/Development/hifi/build/libraries/audio/Debug/libaudio.a /Users/kevinhouyang/Development/hifi/build/libraries/avatars/Debug/libavatars.a /Users/kevinhouyang/Development/hifi/build/libraries/script-engine/Debug/libscript-engine.a /Users/kevinhouyang/Development/hifi/build/libraries/physics/Debug/libphysics.a /Users/kevinhouyang/Development/hifi/build/libraries/procedural/Debug/libprocedural.a /Users/kevinhouyang/Development/hifi/build/libraries/midi/Debug/libmidi.a /Users/kevinhouyang/Development/hifi/build/libraries/qml/Debug/libqml.a /Users/kevinhouyang/Development/hifi/build/libraries/ui/Debug/libui.a /Users/kevinhouyang/Development/hifi/build/libraries/gpu-gl-common/Debug/libgpu-gl-common.a /Users/kevinhouyang/Development/hifi/build/libraries/gpu-gl/Debug/libgpu-gl.a /Users/kevinhouyang/Development/hifi/build/ext/Xcode/bullet/project/lib/libBulletDynamics.dylib /Users/kevinhouyang/Development/hifi/build/ext/Xcode/bullet/project/lib/libBulletCollision.dylib /Users/kevinhouyang/Development/hifi/build/ext/Xcode/bullet/project/lib/libLinearMath.dylib /Users/kevinhouyang/Development/hifi/build/ext/Xcode/bullet/project/lib/libBulletSoftBody.dylib /Users/kevinhouyang/Development/hifi/build/libraries/gpu-gl-common/Debug/libgpu-gl-common.a /usr/local/Cellar/qt/5.11.2/lib/QtConcurrent.framework/QtConcurrent -lpthread /Users/kevinhouyang/Development/hifi/build/libraries/render-utils/Debug/librender-utils.a /Users/kevinhouyang/Development/hifi/build/libraries/render/Debug/librender.a /Users/kevinhouyang/Development/hifi/build/libraries/graphics-scripting/Debug/libgraphics-scripting.a /Users/kevinhouyang/Development/hifi/build/libraries/script-engine/Debug/libscript-engine.a /Users/kevinhouyang/Development/hifi/build/libraries/animation/Debug/libanimation.a /Users/kevinhouyang/Development/hifi/build/libraries/physics/Debug/libphysics.a /Users/kevinhouyang/Development/hifi/build/libraries/workload/Debug/libworkload.a /Users/kevinhouyang/Development/hifi/build/libraries/task/Debug/libtask.a /Users/kevinhouyang/Development/hifi/build/libraries/entities/Debug/libentities.a /Users/kevinhouyang/Development/hifi/build/libraries/octree/Debug/liboctree.a /Users/kevinhouyang/Development/hifi/build/libraries/avatars/Debug/libavatars.a /Users/kevinhouyang/Development/hifi/build/libraries/midi/Debug/libmidi.a /usr/local/Cellar/qt/5.11.2/lib/QtScriptTools.framework/QtScriptTools /Users/kevinhouyang/Development/hifi/build/ext/Xcode/quazip/project/lib/libquazip5d.1.0.0.dylib /Users/kevinhouyang/Development/hifi/build/libraries/recording/Debug/librecording.a /Users/kevinhouyang/Development/hifi/build/libraries/procedural/Debug/libprocedural.a /Users/kevinhouyang/Development/hifi/build/libraries/model-networking/Debug/libmodel-networking.a /Users/kevinhouyang/Development/hifi/build/libraries/fbx/Debug/libfbx.a /Users/kevinhouyang/Development/hifi/build/libraries/graphics/Debug/libgraphics.a /Users/kevinhouyang/Development/hifi/build/libraries/image/Debug/libimage.a /Users/kevinhouyang/Development/hifi/build/ext/Xcode/nvtt/project/lib/libnvtt.dylib /Users/kevinhouyang/Development/hifi/build/ext/Xcode/etc2comp/project/build/EtcLib/Debug/libEtcLib.a /Users/kevinhouyang/Development/hifi/build/libraries/gpu/Debug/libgpu.a /Users/kevinhouyang/Development/hifi/build/libraries/ktx/Debug/libktx.a /Users/kevinhouyang/Development/hifi/build/libraries/shaders/Debug/libshaders.a /Users/kevinhouyang/Development/hifi/build/ext/Xcode/draco/project-Debug/lib/libdraco.a /Users/kevinhouyang/Development/hifi/build/ext/Xcode/draco/project-Debug/lib/libdracoenc.a /Users/kevinhouyang/Development/hifi/build/libraries/qml/Debug/libqml.a /Users/kevinhouyang/Development/hifi/build/libraries/gl/Debug/libgl.a /Users/kevinhouyang/Development/hifi/build/ext/Xcode/glad45/project/lib/libglad_d.a -framework OpenGL -ldl /usr/local/Cellar/qt/5.11.2/lib/QtWebSockets.framework/QtWebSockets /usr/local/Cellar/qt/5.11.2/lib/QtOpenGL.framework/QtOpenGL /usr/local/Cellar/qt/5.11.2/lib/QtWidgets.framework/QtWidgets /usr/local/Cellar/qt/5.11.2/lib/QtXmlPatterns.framework/QtXmlPatterns /Users/kevinhouyang/Development/hifi/build/libraries/audio-client/Debug/libaudio-client.a /Users/kevinhouyang/Development/hifi/build/libraries/audio/Debug/libaudio.a /Users/kevinhouyang/Development/hifi/build/libraries/plugins/Debug/libplugins.a /Users/kevinhouyang/Development/hifi/build/libraries/networking/Debug/libnetworking.a /usr/local/Cellar/openssl/1.0.2p/lib/libssl.dylib /usr/local/Cellar/openssl/1.0.2p/lib/libcrypto.dylib /Users/kevinhouyang/Development/hifi/build/ext/Xcode/tbb/project/src/tbb/lib/libtbb_debug.dylib /Users/kevinhouyang/Development/hifi/build/ext/Xcode/tbb/project/src/tbb/lib/libtbbmalloc_debug.dylib -framework IOKit /usr/local/Cellar/qt/5.11.2/lib/QtMultimedia.framework/QtMultimedia /usr/local/Cellar/qt/5.11.2/lib/QtWebEngine.framework/QtWebEngine /usr/local/Cellar/qt/5.11.2/lib/QtWebEngineCore.framework/QtWebEngineCore /usr/local/Cellar/qt/5.11.2/lib/QtQuick.framework/QtQuick /usr/local/Cellar/qt/5.11.2/lib/QtWebChannel.framework/QtWebChannel /usr/local/Cellar/qt/5.11.2/lib/QtPositioning.framework/QtPositioning -framework CoreAudio -framework CoreFoundation /Users/kevinhouyang/Development/hifi/build/ext/Xcode/bullet/project/lib/libBulletDynamics.dylib /Users/kevinhouyang/Development/hifi/build/ext/Xcode/bullet/project/lib/libBulletCollision.dylib /Users/kevinhouyang/Development/hifi/build/ext/Xcode/bullet/project/lib/libLinearMath.dylib /Users/kevinhouyang/Development/hifi/build/ext/Xcode/bullet/project/lib/libBulletSoftBody.dylib /Users/kevinhouyang/Development/hifi/build/libraries/pointers/Debug/libpointers.a /Users/kevinhouyang/Development/hifi/build/libraries/controllers/Debug/libcontrollers.a /Users/kevinhouyang/Development/hifi/build/libraries/shared/Debug/libshared.a /usr/local/Cellar/qt/5.11.2/lib/QtGui.framework/QtGui /usr/lib/libz.dylib /usr/local/Cellar/qt/5.11.2/lib/QtQml.framework/QtQml /usr/local/Cellar/qt/5.11.2/lib/QtNetwork.framework/QtNetwork /usr/local/Cellar/qt/5.11.2/lib/QtScript.framework/QtScript /usr/local/Cellar/qt/5.11.2/lib/QtCore.framework/QtCore /Users/kevinhouyang/Development/hifi/build/ext/Xcode/polyvox/project/lib/Debug/libPolyVoxCore.dylib";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = "render-perf-test";
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/kevinhouyang/Development/hifi/build/tests-manual/render-perf";
+				SYSTEM_HEADER_SEARCH_PATHS = (/usr/local/Cellar/qt/5.11.2/lib/QtQuick.framework/Headers,/usr/local/Cellar/qt/5.11.2/lib/QtGui.framework/Headers,/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk/System/Library/Frameworks/OpenGL.framework/Headers,/usr/local/Cellar/qt/5.11.2/lib/QtCore.framework/Headers,"/usr/local/Cellar/qt/5.11.2/./mkspecs/macx-clang",/usr/local/Cellar/qt/5.11.2/lib/QtQml.framework/Headers,/usr/local/Cellar/qt/5.11.2/lib/QtNetwork.framework/Headers,/usr/local/Cellar/qt/5.11.2/lib/QtScript.framework/Headers,/Users/kevinhouyang/Development/hifi/build/ext/Xcode/tbb/project/src/tbb/include,/usr/local/Cellar/qt/5.11.2/lib/QtWidgets.framework/Headers,/usr/local/Cellar/qt/5.11.2/lib/QtConcurrent.framework/Headers,/Users/kevinhouyang/Development/hifi/build/ext/Xcode/quazip/project/include,/usr/local/Cellar/qt/5.11.2/lib/QtScriptTools.framework/Headers,/usr/local/Cellar/qt/5.11.2/lib/QtWebSockets.framework/Headers,/Users/kevinhouyang/Development/hifi/build/ext/Xcode/polyvox/project/include/PolyVoxCore,/usr/local/Cellar/qt/5.11.2/lib/QtMultimedia.framework/Headers,/usr/local/Cellar/qt/5.11.2/lib/QtWebChannel.framework/Headers,/usr/local/Cellar/qt/5.11.2/lib/QtWebEngine.framework/Headers,/usr/local/Cellar/qt/5.11.2/lib/QtWebEngineCore.framework/Headers,/usr/local/Cellar/qt/5.11.2/lib/QtPositioning.framework/Headers,/usr/local/Cellar/qt/5.11.2/lib/QtOpenGL.framework/Headers,/usr/local/Cellar/qt/5.11.2/lib/QtXmlPatterns.framework/Headers);
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = Debug;
+		};
+		7289B2866C4544BFBACDC2A4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = "render-perf-test_autogen";
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/kevinhouyang/Development/hifi/build/tests-manual/render-perf";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = Release;
+		};
+		81A9795AABD84706AB46233F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "c++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEPLOYMENT_POSTPROCESSING = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk;
+				SYMROOT = "/Users/kevinhouyang/Development/hifi/build/tests-manual/render-perf/build";
+			};
+			name = Release;
+		};
+		88BFB25893994E77BB52CE22 /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				FRAMEWORK_SEARCH_PATHS = (/usr/local/Cellar/qt/5.11.2/lib);
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 2;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",GLM_FORCE_RADIANS,DEV_BUILD,QT_QUICK_LIB,QT_GUI_LIB,QT_CORE_LIB,QT_NO_DEBUG,QT_QML_LIB,QT_NETWORK_LIB,QT_SCRIPT_LIB,QT_WIDGETS_LIB,QT_CONCURRENT_LIB,QT_SCRIPTTOOLS_LIB,QT_WEBSOCKETS_LIB,QT_MULTIMEDIA_LIB,QT_WEBCHANNEL_LIB,QT_WEBENGINE_LIB,QT_WEBENGINECORE_LIB,QT_POSITIONING_LIB,QT_OPENGL_LIB,QT_XMLPATTERNS_LIB);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = ("/Users/kevinhouyang/Development/hifi/build/tests-manual/render-perf","/Users/kevinhouyang/Development/hifi/tests-manual/render-perf","/Users/kevinhouyang/Development/hifi/build/tests-manual/render-perf/render-perf-test_autogen/include_RelWithDebInfo",/Users/kevinhouyang/Development/hifi/build/includes,/Users/kevinhouyang/Development/hifi/build/ext/Xcode/glm/project/include,/Users/kevinhouyang/Development/hifi/libraries/shared/src,/Users/kevinhouyang/Development/hifi/build/libraries/shared,/Users/kevinhouyang/Development/hifi/libraries/task/src,/Users/kevinhouyang/Development/hifi/build/libraries/task,/Users/kevinhouyang/Development/hifi/libraries/workload/src,/Users/kevinhouyang/Development/hifi/build/libraries/workload,/Users/kevinhouyang/Development/hifi/libraries/networking/src,/Users/kevinhouyang/Development/hifi/build/libraries/networking,/Users/kevinhouyang/Development/hifi/libraries/animation/src,/Users/kevinhouyang/Development/hifi/build/libraries/animation,/Users/kevinhouyang/Development/hifi/libraries/ktx/src,/Users/kevinhouyang/Development/hifi/build/libraries/ktx,/Users/kevinhouyang/Development/hifi/libraries/image/src,/Users/kevinhouyang/Development/hifi/build/libraries/image,/Users/kevinhouyang/Development/hifi/libraries/octree/src,/Users/kevinhouyang/Development/hifi/build/libraries/octree,/Users/kevinhouyang/Development/hifi/libraries/shaders/src,/Users/kevinhouyang/Development/hifi/build/libraries/shaders,/Users/kevinhouyang/Development/hifi/libraries/gl/src,/Users/kevinhouyang/Development/hifi/build/libraries/gl,/Users/kevinhouyang/Development/hifi/libraries/gpu/src,/Users/kevinhouyang/Development/hifi/build/libraries/gpu,"/Users/kevinhouyang/Development/hifi/libraries/gpu-gl-common/src","/Users/kevinhouyang/Development/hifi/build/libraries/gpu-gl-common","/Users/kevinhouyang/Development/hifi/libraries/gpu-gl/src","/Users/kevinhouyang/Development/hifi/build/libraries/gpu-gl",/Users/kevinhouyang/Development/hifi/libraries/render/src,/Users/kevinhouyang/Development/hifi/build/libraries/render,"/Users/kevinhouyang/Development/hifi/libraries/render-utils/src","/Users/kevinhouyang/Development/hifi/build/libraries/render-utils",/Users/kevinhouyang/Development/hifi/libraries/graphics/src,/Users/kevinhouyang/Development/hifi/build/libraries/graphics,/Users/kevinhouyang/Development/hifi/libraries/fbx/src,/Users/kevinhouyang/Development/hifi/build/libraries/fbx,"/Users/kevinhouyang/Development/hifi/libraries/model-networking/src","/Users/kevinhouyang/Development/hifi/build/libraries/model-networking","/Users/kevinhouyang/Development/hifi/libraries/graphics-scripting/src","/Users/kevinhouyang/Development/hifi/build/libraries/graphics-scripting",/Users/kevinhouyang/Development/hifi/libraries/entities/src,/Users/kevinhouyang/Development/hifi/build/libraries/entities,"/Users/kevinhouyang/Development/hifi/libraries/entities-renderer/src","/Users/kevinhouyang/Development/hifi/build/libraries/entities-renderer",/Users/kevinhouyang/Development/hifi/libraries/audio/src,/Users/kevinhouyang/Development/hifi/build/libraries/audio,/Users/kevinhouyang/Development/hifi/libraries/avatars/src,/Users/kevinhouyang/Development/hifi/build/libraries/avatars,"/Users/kevinhouyang/Development/hifi/libraries/script-engine/src","/Users/kevinhouyang/Development/hifi/build/libraries/script-engine",/Users/kevinhouyang/Development/hifi/libraries/physics/src,/Users/kevinhouyang/Development/hifi/build/libraries/physics,/Users/kevinhouyang/Development/hifi/libraries/procedural/src,/Users/kevinhouyang/Development/hifi/build/libraries/procedural,/Users/kevinhouyang/Development/hifi/libraries/midi/src,/Users/kevinhouyang/Development/hifi/build/libraries/midi,/Users/kevinhouyang/Development/hifi/libraries/qml/src,/Users/kevinhouyang/Development/hifi/build/libraries/qml,/Users/kevinhouyang/Development/hifi/libraries/ui/src,/Users/kevinhouyang/Development/hifi/build/libraries/ui,/Users/kevinhouyang/Development/hifi/build/ext/Xcode/json/project/src/json,/Users/kevinhouyang/Development/hifi/build/ext/Xcode/glad45/project/include);
+				INSTALL_PATH = "";
+				LIBRARY_SEARCH_PATHS = "";
+				OTHER_CPLUSPLUSFLAGS = " -Wall -Wextra -fno-strict-aliasing -Wno-unused-parameter --stdlib=libc++    -isystem /Users/kevinhouyang/Development/hifi/build/ext/Xcode/bullet/project/include/bullet        -DNDEBUG -fPIC '-std=gnu++14'  ";
+				OTHER_LDFLAGS = " -Wl,-search_paths_first -Wl,-headerpad_max_install_names  /Users/kevinhouyang/Development/hifi/build/libraries/shared/RelWithDebInfo/libshared.a /Users/kevinhouyang/Development/hifi/build/libraries/task/RelWithDebInfo/libtask.a /Users/kevinhouyang/Development/hifi/build/libraries/workload/RelWithDebInfo/libworkload.a /Users/kevinhouyang/Development/hifi/build/libraries/networking/RelWithDebInfo/libnetworking.a /Users/kevinhouyang/Development/hifi/build/libraries/animation/RelWithDebInfo/libanimation.a /Users/kevinhouyang/Development/hifi/build/libraries/ktx/RelWithDebInfo/libktx.a /Users/kevinhouyang/Development/hifi/build/libraries/image/RelWithDebInfo/libimage.a /Users/kevinhouyang/Development/hifi/build/libraries/octree/RelWithDebInfo/liboctree.a /Users/kevinhouyang/Development/hifi/build/libraries/shaders/RelWithDebInfo/libshaders.a /Users/kevinhouyang/Development/hifi/build/libraries/gl/RelWithDebInfo/libgl.a /Users/kevinhouyang/Development/hifi/build/libraries/gpu/RelWithDebInfo/libgpu.a /Users/kevinhouyang/Development/hifi/build/libraries/gpu-gl-common/RelWithDebInfo/libgpu-gl-common.a /Users/kevinhouyang/Development/hifi/build/libraries/gpu-gl/RelWithDebInfo/libgpu-gl.a /Users/kevinhouyang/Development/hifi/build/libraries/render/RelWithDebInfo/librender.a /Users/kevinhouyang/Development/hifi/build/libraries/render-utils/RelWithDebInfo/librender-utils.a /Users/kevinhouyang/Development/hifi/build/libraries/graphics/RelWithDebInfo/libgraphics.a /Users/kevinhouyang/Development/hifi/build/libraries/fbx/RelWithDebInfo/libfbx.a /Users/kevinhouyang/Development/hifi/build/libraries/model-networking/RelWithDebInfo/libmodel-networking.a /Users/kevinhouyang/Development/hifi/build/libraries/graphics-scripting/RelWithDebInfo/libgraphics-scripting.a /Users/kevinhouyang/Development/hifi/build/libraries/entities/RelWithDebInfo/libentities.a /Users/kevinhouyang/Development/hifi/build/libraries/entities-renderer/RelWithDebInfo/libentities-renderer.a /Users/kevinhouyang/Development/hifi/build/libraries/audio/RelWithDebInfo/libaudio.a /Users/kevinhouyang/Development/hifi/build/libraries/avatars/RelWithDebInfo/libavatars.a /Users/kevinhouyang/Development/hifi/build/libraries/script-engine/RelWithDebInfo/libscript-engine.a /Users/kevinhouyang/Development/hifi/build/libraries/physics/RelWithDebInfo/libphysics.a /Users/kevinhouyang/Development/hifi/build/libraries/procedural/RelWithDebInfo/libprocedural.a /Users/kevinhouyang/Development/hifi/build/libraries/midi/RelWithDebInfo/libmidi.a /Users/kevinhouyang/Development/hifi/build/libraries/qml/RelWithDebInfo/libqml.a /Users/kevinhouyang/Development/hifi/build/libraries/ui/RelWithDebInfo/libui.a /Users/kevinhouyang/Development/hifi/build/libraries/gpu-gl-common/RelWithDebInfo/libgpu-gl-common.a /Users/kevinhouyang/Development/hifi/build/libraries/gpu-gl/RelWithDebInfo/libgpu-gl.a /Users/kevinhouyang/Development/hifi/build/ext/Xcode/bullet/project/lib/libBulletDynamics.dylib /Users/kevinhouyang/Development/hifi/build/ext/Xcode/bullet/project/lib/libBulletCollision.dylib /Users/kevinhouyang/Development/hifi/build/ext/Xcode/bullet/project/lib/libLinearMath.dylib /Users/kevinhouyang/Development/hifi/build/ext/Xcode/bullet/project/lib/libBulletSoftBody.dylib /Users/kevinhouyang/Development/hifi/build/libraries/gpu-gl-common/RelWithDebInfo/libgpu-gl-common.a /usr/local/Cellar/qt/5.11.2/lib/QtConcurrent.framework/QtConcurrent -lpthread /Users/kevinhouyang/Development/hifi/build/libraries/render-utils/RelWithDebInfo/librender-utils.a /Users/kevinhouyang/Development/hifi/build/libraries/render/RelWithDebInfo/librender.a /Users/kevinhouyang/Development/hifi/build/libraries/graphics-scripting/RelWithDebInfo/libgraphics-scripting.a /Users/kevinhouyang/Development/hifi/build/libraries/script-engine/RelWithDebInfo/libscript-engine.a /Users/kevinhouyang/Development/hifi/build/libraries/animation/RelWithDebInfo/libanimation.a /Users/kevinhouyang/Development/hifi/build/libraries/physics/RelWithDebInfo/libphysics.a /Users/kevinhouyang/Development/hifi/build/libraries/workload/RelWithDebInfo/libworkload.a /Users/kevinhouyang/Development/hifi/build/libraries/task/RelWithDebInfo/libtask.a /Users/kevinhouyang/Development/hifi/build/libraries/entities/RelWithDebInfo/libentities.a /Users/kevinhouyang/Development/hifi/build/libraries/octree/RelWithDebInfo/liboctree.a /Users/kevinhouyang/Development/hifi/build/libraries/avatars/RelWithDebInfo/libavatars.a /Users/kevinhouyang/Development/hifi/build/libraries/midi/RelWithDebInfo/libmidi.a /usr/local/Cellar/qt/5.11.2/lib/QtScriptTools.framework/QtScriptTools /Users/kevinhouyang/Development/hifi/build/ext/Xcode/quazip/project/lib/libquazip5.1.0.0.dylib /Users/kevinhouyang/Development/hifi/build/libraries/recording/RelWithDebInfo/librecording.a /Users/kevinhouyang/Development/hifi/build/libraries/procedural/RelWithDebInfo/libprocedural.a /Users/kevinhouyang/Development/hifi/build/libraries/model-networking/RelWithDebInfo/libmodel-networking.a /Users/kevinhouyang/Development/hifi/build/libraries/fbx/RelWithDebInfo/libfbx.a /Users/kevinhouyang/Development/hifi/build/libraries/graphics/RelWithDebInfo/libgraphics.a /Users/kevinhouyang/Development/hifi/build/libraries/image/RelWithDebInfo/libimage.a /Users/kevinhouyang/Development/hifi/build/ext/Xcode/nvtt/project/lib/libnvtt.dylib /Users/kevinhouyang/Development/hifi/build/ext/Xcode/etc2comp/project/build/EtcLib/RelWithDebInfo/libEtcLib.a /Users/kevinhouyang/Development/hifi/build/libraries/gpu/RelWithDebInfo/libgpu.a /Users/kevinhouyang/Development/hifi/build/libraries/ktx/RelWithDebInfo/libktx.a /Users/kevinhouyang/Development/hifi/build/libraries/shaders/RelWithDebInfo/libshaders.a /Users/kevinhouyang/Development/hifi/build/ext/Xcode/draco/project-RelWithDebInfo/lib/libdraco.a /Users/kevinhouyang/Development/hifi/build/ext/Xcode/draco/project-RelWithDebInfo/lib/libdracoenc.a /Users/kevinhouyang/Development/hifi/build/libraries/qml/RelWithDebInfo/libqml.a /Users/kevinhouyang/Development/hifi/build/libraries/gl/RelWithDebInfo/libgl.a /Users/kevinhouyang/Development/hifi/build/ext/Xcode/glad45/project/lib/libglad.a -framework OpenGL -ldl /usr/local/Cellar/qt/5.11.2/lib/QtWebSockets.framework/QtWebSockets /usr/local/Cellar/qt/5.11.2/lib/QtOpenGL.framework/QtOpenGL /usr/local/Cellar/qt/5.11.2/lib/QtWidgets.framework/QtWidgets /usr/local/Cellar/qt/5.11.2/lib/QtXmlPatterns.framework/QtXmlPatterns /Users/kevinhouyang/Development/hifi/build/libraries/audio-client/RelWithDebInfo/libaudio-client.a /Users/kevinhouyang/Development/hifi/build/libraries/audio/RelWithDebInfo/libaudio.a /Users/kevinhouyang/Development/hifi/build/libraries/plugins/RelWithDebInfo/libplugins.a /Users/kevinhouyang/Development/hifi/build/libraries/networking/RelWithDebInfo/libnetworking.a /usr/local/Cellar/openssl/1.0.2p/lib/libssl.dylib /usr/local/Cellar/openssl/1.0.2p/lib/libcrypto.dylib /Users/kevinhouyang/Development/hifi/build/ext/Xcode/tbb/project/src/tbb/lib/libtbb.dylib /Users/kevinhouyang/Development/hifi/build/ext/Xcode/tbb/project/src/tbb/lib/libtbbmalloc.dylib -framework IOKit /usr/local/Cellar/qt/5.11.2/lib/QtMultimedia.framework/QtMultimedia /usr/local/Cellar/qt/5.11.2/lib/QtWebEngine.framework/QtWebEngine /usr/local/Cellar/qt/5.11.2/lib/QtWebEngineCore.framework/QtWebEngineCore /usr/local/Cellar/qt/5.11.2/lib/QtQuick.framework/QtQuick /usr/local/Cellar/qt/5.11.2/lib/QtWebChannel.framework/QtWebChannel /usr/local/Cellar/qt/5.11.2/lib/QtPositioning.framework/QtPositioning -framework CoreAudio -framework CoreFoundation /Users/kevinhouyang/Development/hifi/build/ext/Xcode/bullet/project/lib/libBulletDynamics.dylib /Users/kevinhouyang/Development/hifi/build/ext/Xcode/bullet/project/lib/libBulletCollision.dylib /Users/kevinhouyang/Development/hifi/build/ext/Xcode/bullet/project/lib/libLinearMath.dylib /Users/kevinhouyang/Development/hifi/build/ext/Xcode/bullet/project/lib/libBulletSoftBody.dylib /Users/kevinhouyang/Development/hifi/build/libraries/pointers/RelWithDebInfo/libpointers.a /Users/kevinhouyang/Development/hifi/build/libraries/controllers/RelWithDebInfo/libcontrollers.a /Users/kevinhouyang/Development/hifi/build/libraries/shared/RelWithDebInfo/libshared.a /usr/local/Cellar/qt/5.11.2/lib/QtGui.framework/QtGui /usr/lib/libz.dylib /usr/local/Cellar/qt/5.11.2/lib/QtQml.framework/QtQml /usr/local/Cellar/qt/5.11.2/lib/QtNetwork.framework/QtNetwork /usr/local/Cellar/qt/5.11.2/lib/QtScript.framework/QtScript /usr/local/Cellar/qt/5.11.2/lib/QtCore.framework/QtCore /Users/kevinhouyang/Development/hifi/build/ext/Xcode/polyvox/project/lib/Release/libPolyVoxCore.dylib";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = "render-perf-test";
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/kevinhouyang/Development/hifi/build/tests-manual/render-perf";
+				SYSTEM_HEADER_SEARCH_PATHS = (/usr/local/Cellar/qt/5.11.2/lib/QtQuick.framework/Headers,/usr/local/Cellar/qt/5.11.2/lib/QtGui.framework/Headers,/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk/System/Library/Frameworks/OpenGL.framework/Headers,/usr/local/Cellar/qt/5.11.2/lib/QtCore.framework/Headers,"/usr/local/Cellar/qt/5.11.2/./mkspecs/macx-clang",/usr/local/Cellar/qt/5.11.2/lib/QtQml.framework/Headers,/usr/local/Cellar/qt/5.11.2/lib/QtNetwork.framework/Headers,/usr/local/Cellar/qt/5.11.2/lib/QtScript.framework/Headers,/Users/kevinhouyang/Development/hifi/build/ext/Xcode/tbb/project/src/tbb/include,/usr/local/Cellar/qt/5.11.2/lib/QtWidgets.framework/Headers,/usr/local/Cellar/qt/5.11.2/lib/QtConcurrent.framework/Headers,/Users/kevinhouyang/Development/hifi/build/ext/Xcode/quazip/project/include,/usr/local/Cellar/qt/5.11.2/lib/QtScriptTools.framework/Headers,/usr/local/Cellar/qt/5.11.2/lib/QtWebSockets.framework/Headers,/Users/kevinhouyang/Development/hifi/build/ext/Xcode/polyvox/project/include/PolyVoxCore,/usr/local/Cellar/qt/5.11.2/lib/QtMultimedia.framework/Headers,/usr/local/Cellar/qt/5.11.2/lib/QtWebChannel.framework/Headers,/usr/local/Cellar/qt/5.11.2/lib/QtWebEngine.framework/Headers,/usr/local/Cellar/qt/5.11.2/lib/QtWebEngineCore.framework/Headers,/usr/local/Cellar/qt/5.11.2/lib/QtPositioning.framework/Headers,/usr/local/Cellar/qt/5.11.2/lib/QtOpenGL.framework/Headers,/usr/local/Cellar/qt/5.11.2/lib/QtXmlPatterns.framework/Headers);
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = RelWithDebInfo;
+		};
+		94BE5C1390964F1E8D62B3ED /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ZERO_CHECK;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/kevinhouyang/Development/hifi/build/tests-manual/render-perf";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = RelWithDebInfo;
+		};
+		98D7DFA180464C728D856B76 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ZERO_CHECK;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/kevinhouyang/Development/hifi/build/tests-manual/render-perf";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = Debug;
+		};
+		9ACD302AF1CF4F8FBC3CE57E /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "c++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk;
+				SYMROOT = "/Users/kevinhouyang/Development/hifi/build/tests-manual/render-perf/build";
+			};
+			name = RelWithDebInfo;
+		};
+		A55F43FF6FC5468A85257868 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ZERO_CHECK;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/kevinhouyang/Development/hifi/build/tests-manual/render-perf";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = Release;
+		};
+		A76874567D85477FADF0D234 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "c++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk;
+				SYMROOT = "/Users/kevinhouyang/Development/hifi/build/tests-manual/render-perf/build";
+			};
+			name = Debug;
+		};
+		B452BB43FB8D4F058CD4AD3A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = "render-perf-test_autogen";
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/kevinhouyang/Development/hifi/build/tests-manual/render-perf";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = Debug;
+		};
+		BBAC1E392B9A4E91AA9F0850 /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = install;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/kevinhouyang/Development/hifi/build/tests-manual/render-perf";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = MinSizeRel;
+		};
+		CACFADF6EE3244AEAC2A7A0E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				FRAMEWORK_SEARCH_PATHS = (/usr/local/Cellar/qt/5.11.2/lib);
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 3;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",GLM_FORCE_RADIANS,DEV_BUILD,QT_QUICK_LIB,QT_GUI_LIB,QT_CORE_LIB,QT_NO_DEBUG,QT_QML_LIB,QT_NETWORK_LIB,QT_SCRIPT_LIB,QT_WIDGETS_LIB,QT_CONCURRENT_LIB,QT_SCRIPTTOOLS_LIB,QT_WEBSOCKETS_LIB,QT_MULTIMEDIA_LIB,QT_WEBCHANNEL_LIB,QT_WEBENGINE_LIB,QT_WEBENGINECORE_LIB,QT_POSITIONING_LIB,QT_OPENGL_LIB,QT_XMLPATTERNS_LIB);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = ("/Users/kevinhouyang/Development/hifi/build/tests-manual/render-perf","/Users/kevinhouyang/Development/hifi/tests-manual/render-perf","/Users/kevinhouyang/Development/hifi/build/tests-manual/render-perf/render-perf-test_autogen/include_Release",/Users/kevinhouyang/Development/hifi/build/includes,/Users/kevinhouyang/Development/hifi/build/ext/Xcode/glm/project/include,/Users/kevinhouyang/Development/hifi/libraries/shared/src,/Users/kevinhouyang/Development/hifi/build/libraries/shared,/Users/kevinhouyang/Development/hifi/libraries/task/src,/Users/kevinhouyang/Development/hifi/build/libraries/task,/Users/kevinhouyang/Development/hifi/libraries/workload/src,/Users/kevinhouyang/Development/hifi/build/libraries/workload,/Users/kevinhouyang/Development/hifi/libraries/networking/src,/Users/kevinhouyang/Development/hifi/build/libraries/networking,/Users/kevinhouyang/Development/hifi/libraries/animation/src,/Users/kevinhouyang/Development/hifi/build/libraries/animation,/Users/kevinhouyang/Development/hifi/libraries/ktx/src,/Users/kevinhouyang/Development/hifi/build/libraries/ktx,/Users/kevinhouyang/Development/hifi/libraries/image/src,/Users/kevinhouyang/Development/hifi/build/libraries/image,/Users/kevinhouyang/Development/hifi/libraries/octree/src,/Users/kevinhouyang/Development/hifi/build/libraries/octree,/Users/kevinhouyang/Development/hifi/libraries/shaders/src,/Users/kevinhouyang/Development/hifi/build/libraries/shaders,/Users/kevinhouyang/Development/hifi/libraries/gl/src,/Users/kevinhouyang/Development/hifi/build/libraries/gl,/Users/kevinhouyang/Development/hifi/libraries/gpu/src,/Users/kevinhouyang/Development/hifi/build/libraries/gpu,"/Users/kevinhouyang/Development/hifi/libraries/gpu-gl-common/src","/Users/kevinhouyang/Development/hifi/build/libraries/gpu-gl-common","/Users/kevinhouyang/Development/hifi/libraries/gpu-gl/src","/Users/kevinhouyang/Development/hifi/build/libraries/gpu-gl",/Users/kevinhouyang/Development/hifi/libraries/render/src,/Users/kevinhouyang/Development/hifi/build/libraries/render,"/Users/kevinhouyang/Development/hifi/libraries/render-utils/src","/Users/kevinhouyang/Development/hifi/build/libraries/render-utils",/Users/kevinhouyang/Development/hifi/libraries/graphics/src,/Users/kevinhouyang/Development/hifi/build/libraries/graphics,/Users/kevinhouyang/Development/hifi/libraries/fbx/src,/Users/kevinhouyang/Development/hifi/build/libraries/fbx,"/Users/kevinhouyang/Development/hifi/libraries/model-networking/src","/Users/kevinhouyang/Development/hifi/build/libraries/model-networking","/Users/kevinhouyang/Development/hifi/libraries/graphics-scripting/src","/Users/kevinhouyang/Development/hifi/build/libraries/graphics-scripting",/Users/kevinhouyang/Development/hifi/libraries/entities/src,/Users/kevinhouyang/Development/hifi/build/libraries/entities,"/Users/kevinhouyang/Development/hifi/libraries/entities-renderer/src","/Users/kevinhouyang/Development/hifi/build/libraries/entities-renderer",/Users/kevinhouyang/Development/hifi/libraries/audio/src,/Users/kevinhouyang/Development/hifi/build/libraries/audio,/Users/kevinhouyang/Development/hifi/libraries/avatars/src,/Users/kevinhouyang/Development/hifi/build/libraries/avatars,"/Users/kevinhouyang/Development/hifi/libraries/script-engine/src","/Users/kevinhouyang/Development/hifi/build/libraries/script-engine",/Users/kevinhouyang/Development/hifi/libraries/physics/src,/Users/kevinhouyang/Development/hifi/build/libraries/physics,/Users/kevinhouyang/Development/hifi/libraries/procedural/src,/Users/kevinhouyang/Development/hifi/build/libraries/procedural,/Users/kevinhouyang/Development/hifi/libraries/midi/src,/Users/kevinhouyang/Development/hifi/build/libraries/midi,/Users/kevinhouyang/Development/hifi/libraries/qml/src,/Users/kevinhouyang/Development/hifi/build/libraries/qml,/Users/kevinhouyang/Development/hifi/libraries/ui/src,/Users/kevinhouyang/Development/hifi/build/libraries/ui,/Users/kevinhouyang/Development/hifi/build/ext/Xcode/json/project/src/json,/Users/kevinhouyang/Development/hifi/build/ext/Xcode/glad45/project/include);
+				INSTALL_PATH = "";
+				LIBRARY_SEARCH_PATHS = "";
+				OTHER_CPLUSPLUSFLAGS = " -Wall -Wextra -fno-strict-aliasing -Wno-unused-parameter --stdlib=libc++    -isystem /Users/kevinhouyang/Development/hifi/build/ext/Xcode/bullet/project/include/bullet     -DNDEBUG -fPIC '-std=gnu++14'  ";
+				OTHER_LDFLAGS = " -Wl,-search_paths_first -Wl,-headerpad_max_install_names  /Users/kevinhouyang/Development/hifi/build/libraries/shared/Release/libshared.a /Users/kevinhouyang/Development/hifi/build/libraries/task/Release/libtask.a /Users/kevinhouyang/Development/hifi/build/libraries/workload/Release/libworkload.a /Users/kevinhouyang/Development/hifi/build/libraries/networking/Release/libnetworking.a /Users/kevinhouyang/Development/hifi/build/libraries/animation/Release/libanimation.a /Users/kevinhouyang/Development/hifi/build/libraries/ktx/Release/libktx.a /Users/kevinhouyang/Development/hifi/build/libraries/image/Release/libimage.a /Users/kevinhouyang/Development/hifi/build/libraries/octree/Release/liboctree.a /Users/kevinhouyang/Development/hifi/build/libraries/shaders/Release/libshaders.a /Users/kevinhouyang/Development/hifi/build/libraries/gl/Release/libgl.a /Users/kevinhouyang/Development/hifi/build/libraries/gpu/Release/libgpu.a /Users/kevinhouyang/Development/hifi/build/libraries/gpu-gl-common/Release/libgpu-gl-common.a /Users/kevinhouyang/Development/hifi/build/libraries/gpu-gl/Release/libgpu-gl.a /Users/kevinhouyang/Development/hifi/build/libraries/render/Release/librender.a /Users/kevinhouyang/Development/hifi/build/libraries/render-utils/Release/librender-utils.a /Users/kevinhouyang/Development/hifi/build/libraries/graphics/Release/libgraphics.a /Users/kevinhouyang/Development/hifi/build/libraries/fbx/Release/libfbx.a /Users/kevinhouyang/Development/hifi/build/libraries/model-networking/Release/libmodel-networking.a /Users/kevinhouyang/Development/hifi/build/libraries/graphics-scripting/Release/libgraphics-scripting.a /Users/kevinhouyang/Development/hifi/build/libraries/entities/Release/libentities.a /Users/kevinhouyang/Development/hifi/build/libraries/entities-renderer/Release/libentities-renderer.a /Users/kevinhouyang/Development/hifi/build/libraries/audio/Release/libaudio.a /Users/kevinhouyang/Development/hifi/build/libraries/avatars/Release/libavatars.a /Users/kevinhouyang/Development/hifi/build/libraries/script-engine/Release/libscript-engine.a /Users/kevinhouyang/Development/hifi/build/libraries/physics/Release/libphysics.a /Users/kevinhouyang/Development/hifi/build/libraries/procedural/Release/libprocedural.a /Users/kevinhouyang/Development/hifi/build/libraries/midi/Release/libmidi.a /Users/kevinhouyang/Development/hifi/build/libraries/qml/Release/libqml.a /Users/kevinhouyang/Development/hifi/build/libraries/ui/Release/libui.a /Users/kevinhouyang/Development/hifi/build/libraries/gpu-gl-common/Release/libgpu-gl-common.a /Users/kevinhouyang/Development/hifi/build/libraries/gpu-gl/Release/libgpu-gl.a /Users/kevinhouyang/Development/hifi/build/ext/Xcode/bullet/project/lib/libBulletDynamics.dylib /Users/kevinhouyang/Development/hifi/build/ext/Xcode/bullet/project/lib/libBulletCollision.dylib /Users/kevinhouyang/Development/hifi/build/ext/Xcode/bullet/project/lib/libLinearMath.dylib /Users/kevinhouyang/Development/hifi/build/ext/Xcode/bullet/project/lib/libBulletSoftBody.dylib /Users/kevinhouyang/Development/hifi/build/libraries/gpu-gl-common/Release/libgpu-gl-common.a /usr/local/Cellar/qt/5.11.2/lib/QtConcurrent.framework/QtConcurrent -lpthread /Users/kevinhouyang/Development/hifi/build/libraries/render-utils/Release/librender-utils.a /Users/kevinhouyang/Development/hifi/build/libraries/render/Release/librender.a /Users/kevinhouyang/Development/hifi/build/libraries/graphics-scripting/Release/libgraphics-scripting.a /Users/kevinhouyang/Development/hifi/build/libraries/script-engine/Release/libscript-engine.a /Users/kevinhouyang/Development/hifi/build/libraries/animation/Release/libanimation.a /Users/kevinhouyang/Development/hifi/build/libraries/physics/Release/libphysics.a /Users/kevinhouyang/Development/hifi/build/libraries/workload/Release/libworkload.a /Users/kevinhouyang/Development/hifi/build/libraries/task/Release/libtask.a /Users/kevinhouyang/Development/hifi/build/libraries/entities/Release/libentities.a /Users/kevinhouyang/Development/hifi/build/libraries/octree/Release/liboctree.a /Users/kevinhouyang/Development/hifi/build/libraries/avatars/Release/libavatars.a /Users/kevinhouyang/Development/hifi/build/libraries/midi/Release/libmidi.a /usr/local/Cellar/qt/5.11.2/lib/QtScriptTools.framework/QtScriptTools /Users/kevinhouyang/Development/hifi/build/ext/Xcode/quazip/project/lib/libquazip5.1.0.0.dylib /Users/kevinhouyang/Development/hifi/build/libraries/recording/Release/librecording.a /Users/kevinhouyang/Development/hifi/build/libraries/procedural/Release/libprocedural.a /Users/kevinhouyang/Development/hifi/build/libraries/model-networking/Release/libmodel-networking.a /Users/kevinhouyang/Development/hifi/build/libraries/fbx/Release/libfbx.a /Users/kevinhouyang/Development/hifi/build/libraries/graphics/Release/libgraphics.a /Users/kevinhouyang/Development/hifi/build/libraries/image/Release/libimage.a /Users/kevinhouyang/Development/hifi/build/ext/Xcode/nvtt/project/lib/libnvtt.dylib /Users/kevinhouyang/Development/hifi/build/ext/Xcode/etc2comp/project/build/EtcLib/Release/libEtcLib.a /Users/kevinhouyang/Development/hifi/build/libraries/gpu/Release/libgpu.a /Users/kevinhouyang/Development/hifi/build/libraries/ktx/Release/libktx.a /Users/kevinhouyang/Development/hifi/build/libraries/shaders/Release/libshaders.a /Users/kevinhouyang/Development/hifi/build/ext/Xcode/draco/project-Release/lib/libdraco.a /Users/kevinhouyang/Development/hifi/build/ext/Xcode/draco/project-Release/lib/libdracoenc.a /Users/kevinhouyang/Development/hifi/build/libraries/qml/Release/libqml.a /Users/kevinhouyang/Development/hifi/build/libraries/gl/Release/libgl.a /Users/kevinhouyang/Development/hifi/build/ext/Xcode/glad45/project/lib/libglad.a -framework OpenGL -ldl /usr/local/Cellar/qt/5.11.2/lib/QtWebSockets.framework/QtWebSockets /usr/local/Cellar/qt/5.11.2/lib/QtOpenGL.framework/QtOpenGL /usr/local/Cellar/qt/5.11.2/lib/QtWidgets.framework/QtWidgets /usr/local/Cellar/qt/5.11.2/lib/QtXmlPatterns.framework/QtXmlPatterns /Users/kevinhouyang/Development/hifi/build/libraries/audio-client/Release/libaudio-client.a /Users/kevinhouyang/Development/hifi/build/libraries/audio/Release/libaudio.a /Users/kevinhouyang/Development/hifi/build/libraries/plugins/Release/libplugins.a /Users/kevinhouyang/Development/hifi/build/libraries/networking/Release/libnetworking.a /usr/local/Cellar/openssl/1.0.2p/lib/libssl.dylib /usr/local/Cellar/openssl/1.0.2p/lib/libcrypto.dylib /Users/kevinhouyang/Development/hifi/build/ext/Xcode/tbb/project/src/tbb/lib/libtbb.dylib /Users/kevinhouyang/Development/hifi/build/ext/Xcode/tbb/project/src/tbb/lib/libtbbmalloc.dylib -framework IOKit /usr/local/Cellar/qt/5.11.2/lib/QtMultimedia.framework/QtMultimedia /usr/local/Cellar/qt/5.11.2/lib/QtWebEngine.framework/QtWebEngine /usr/local/Cellar/qt/5.11.2/lib/QtWebEngineCore.framework/QtWebEngineCore /usr/local/Cellar/qt/5.11.2/lib/QtQuick.framework/QtQuick /usr/local/Cellar/qt/5.11.2/lib/QtWebChannel.framework/QtWebChannel /usr/local/Cellar/qt/5.11.2/lib/QtPositioning.framework/QtPositioning -framework CoreAudio -framework CoreFoundation /Users/kevinhouyang/Development/hifi/build/ext/Xcode/bullet/project/lib/libBulletDynamics.dylib /Users/kevinhouyang/Development/hifi/build/ext/Xcode/bullet/project/lib/libBulletCollision.dylib /Users/kevinhouyang/Development/hifi/build/ext/Xcode/bullet/project/lib/libLinearMath.dylib /Users/kevinhouyang/Development/hifi/build/ext/Xcode/bullet/project/lib/libBulletSoftBody.dylib /Users/kevinhouyang/Development/hifi/build/libraries/pointers/Release/libpointers.a /Users/kevinhouyang/Development/hifi/build/libraries/controllers/Release/libcontrollers.a /Users/kevinhouyang/Development/hifi/build/libraries/shared/Release/libshared.a /usr/local/Cellar/qt/5.11.2/lib/QtGui.framework/QtGui /usr/lib/libz.dylib /usr/local/Cellar/qt/5.11.2/lib/QtQml.framework/QtQml /usr/local/Cellar/qt/5.11.2/lib/QtNetwork.framework/QtNetwork /usr/local/Cellar/qt/5.11.2/lib/QtScript.framework/QtScript /usr/local/Cellar/qt/5.11.2/lib/QtCore.framework/QtCore /Users/kevinhouyang/Development/hifi/build/ext/Xcode/polyvox/project/lib/Release/libPolyVoxCore.dylib";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = "render-perf-test";
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/kevinhouyang/Development/hifi/build/tests-manual/render-perf";
+				SYSTEM_HEADER_SEARCH_PATHS = (/usr/local/Cellar/qt/5.11.2/lib/QtQuick.framework/Headers,/usr/local/Cellar/qt/5.11.2/lib/QtGui.framework/Headers,/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk/System/Library/Frameworks/OpenGL.framework/Headers,/usr/local/Cellar/qt/5.11.2/lib/QtCore.framework/Headers,"/usr/local/Cellar/qt/5.11.2/./mkspecs/macx-clang",/usr/local/Cellar/qt/5.11.2/lib/QtQml.framework/Headers,/usr/local/Cellar/qt/5.11.2/lib/QtNetwork.framework/Headers,/usr/local/Cellar/qt/5.11.2/lib/QtScript.framework/Headers,/Users/kevinhouyang/Development/hifi/build/ext/Xcode/tbb/project/src/tbb/include,/usr/local/Cellar/qt/5.11.2/lib/QtWidgets.framework/Headers,/usr/local/Cellar/qt/5.11.2/lib/QtConcurrent.framework/Headers,/Users/kevinhouyang/Development/hifi/build/ext/Xcode/quazip/project/include,/usr/local/Cellar/qt/5.11.2/lib/QtScriptTools.framework/Headers,/usr/local/Cellar/qt/5.11.2/lib/QtWebSockets.framework/Headers,/Users/kevinhouyang/Development/hifi/build/ext/Xcode/polyvox/project/include/PolyVoxCore,/usr/local/Cellar/qt/5.11.2/lib/QtMultimedia.framework/Headers,/usr/local/Cellar/qt/5.11.2/lib/QtWebChannel.framework/Headers,/usr/local/Cellar/qt/5.11.2/lib/QtWebEngine.framework/Headers,/usr/local/Cellar/qt/5.11.2/lib/QtWebEngineCore.framework/Headers,/usr/local/Cellar/qt/5.11.2/lib/QtPositioning.framework/Headers,/usr/local/Cellar/qt/5.11.2/lib/QtOpenGL.framework/Headers,/usr/local/Cellar/qt/5.11.2/lib/QtXmlPatterns.framework/Headers);
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = Release;
+		};
+		CF202B28C7174876A7053403 /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = "render-perf-test_autogen";
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/kevinhouyang/Development/hifi/build/tests-manual/render-perf";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = MinSizeRel;
+		};
+		D2B25C72768A4618AE8DFF43 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ALL_BUILD;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/kevinhouyang/Development/hifi/build/tests-manual/render-perf";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = Debug;
+		};
+		DA56463E4CC64349B7940F20 /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ALL_BUILD;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/kevinhouyang/Development/hifi/build/tests-manual/render-perf";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = MinSizeRel;
+		};
+		DDAB6CD650484A19BCBD79DD /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "c++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk;
+				SYMROOT = "/Users/kevinhouyang/Development/hifi/build/tests-manual/render-perf/build";
+			};
+			name = MinSizeRel;
+		};
+		DE02E6C2F2D840C6B1656B55 /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ALL_BUILD;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/kevinhouyang/Development/hifi/build/tests-manual/render-perf";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = RelWithDebInfo;
+		};
+		E658B1D841974D47922CE43F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = package;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/kevinhouyang/Development/hifi/build/tests-manual/render-perf";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = Debug;
+		};
+		EE368165AB0B4F468597DBE9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ALL_BUILD;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/kevinhouyang/Development/hifi/build/tests-manual/render-perf";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = Release;
+		};
+		F777FFFDAFD74B729678007B /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = RUN_TESTS;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/kevinhouyang/Development/hifi/build/tests-manual/render-perf";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = MinSizeRel;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		18CEC7121C9647A680D5FE6D /* Build configuration list for PBXAggregateTarget "package" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E658B1D841974D47922CE43F /* Debug */,
+				53E1E465C0854AFDAD2640E3 /* Release */,
+				1E10AFF9743E4E8DAC9FFA59 /* MinSizeRel */,
+				3FC601C0365B4CAF917BD3AF /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		2F93DC362FB04D53874B8545 /* Build configuration list for PBXAggregateTarget "ALL_BUILD" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D2B25C72768A4618AE8DFF43 /* Debug */,
+				EE368165AB0B4F468597DBE9 /* Release */,
+				DA56463E4CC64349B7940F20 /* MinSizeRel */,
+				DE02E6C2F2D840C6B1656B55 /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		4075A536BC7140638272240C /* Build configuration list for PBXAggregateTarget "ZERO_CHECK" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				98D7DFA180464C728D856B76 /* Debug */,
+				A55F43FF6FC5468A85257868 /* Release */,
+				07D5932F5B9D47C0A37BA5BD /* MinSizeRel */,
+				94BE5C1390964F1E8D62B3ED /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		41422F2A40634FC1980F703C /* Build configuration list for PBXProject "render-perf-test" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A76874567D85477FADF0D234 /* Debug */,
+				81A9795AABD84706AB46233F /* Release */,
+				DDAB6CD650484A19BCBD79DD /* MinSizeRel */,
+				9ACD302AF1CF4F8FBC3CE57E /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		72834F6613B541F1ADD19359 /* Build configuration list for PBXAggregateTarget "RUN_TESTS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				56A1FED9541040EAA36C3B41 /* Debug */,
+				51A03DCBFC1849E9ABD10885 /* Release */,
+				F777FFFDAFD74B729678007B /* MinSizeRel */,
+				13C04C6B063A4A9E8B0719F2 /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		AA0248B4DBB84B98A65F2629 /* Build configuration list for PBXAggregateTarget "install" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				679B0D70C5A84B52ACC57D0F /* Debug */,
+				47BA19A791FD442E8673A25C /* Release */,
+				BBAC1E392B9A4E91AA9F0850 /* MinSizeRel */,
+				3CC78226E542485AA5A4CF49 /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		D449756353DE4CF785760705 /* Build configuration list for PBXNativeTarget "render-perf-test" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6F5B97D638024388B2AC0536 /* Debug */,
+				CACFADF6EE3244AEAC2A7A0E /* Release */,
+				2D14E85F05594B38A548A8F1 /* MinSizeRel */,
+				88BFB25893994E77BB52CE22 /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		FA709305E68648D2826F664F /* Build configuration list for PBXAggregateTarget "render-perf-test_autogen" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B452BB43FB8D4F058CD4AD3A /* Debug */,
+				7289B2866C4544BFBACDC2A4 /* Release */,
+				CF202B28C7174876A7053403 /* MinSizeRel */,
+				1A609F34244349B1A2267C21 /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = FC31F8B19690492196281F23 /* Project object */;
+}

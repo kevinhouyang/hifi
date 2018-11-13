@@ -1,0 +1,43 @@
+{
+	"sources" : 
+	[
+		{
+			"file" : "/Users/kevinhouyang/Development/hifi/build/ext/Xcode/spirv_binaries/CMakeFiles/spirv_binaries"
+		},
+		{
+			"file" : "/Users/kevinhouyang/Development/hifi/build/ext/Xcode/spirv_binaries/CMakeFiles/spirv_binaries.rule"
+		},
+		{
+			"file" : "/Users/kevinhouyang/Development/hifi/build/ext/Xcode/spirv_binaries/CMakeFiles/CMakeFiles/spirv_binaries-complete.rule"
+		},
+		{
+			"file" : "/Users/kevinhouyang/Development/hifi/build/ext/Xcode/spirv_binaries/project/src/spirv_binaries-stamp/CMakeFiles/spirv_binaries-install.rule"
+		},
+		{
+			"file" : "/Users/kevinhouyang/Development/hifi/build/ext/Xcode/spirv_binaries/project/src/spirv_binaries-stamp/CMakeFiles/spirv_binaries-mkdir.rule"
+		},
+		{
+			"file" : "/Users/kevinhouyang/Development/hifi/build/ext/Xcode/spirv_binaries/project/src/spirv_binaries-stamp/CMakeFiles/spirv_binaries-download.rule"
+		},
+		{
+			"file" : "/Users/kevinhouyang/Development/hifi/build/ext/Xcode/spirv_binaries/project/src/spirv_binaries-stamp/CMakeFiles/spirv_binaries-update.rule"
+		},
+		{
+			"file" : "/Users/kevinhouyang/Development/hifi/build/ext/Xcode/spirv_binaries/project/src/spirv_binaries-stamp/CMakeFiles/spirv_binaries-patch.rule"
+		},
+		{
+			"file" : "/Users/kevinhouyang/Development/hifi/build/ext/Xcode/spirv_binaries/project/src/spirv_binaries-stamp/CMakeFiles/spirv_binaries-configure.rule"
+		},
+		{
+			"file" : "/Users/kevinhouyang/Development/hifi/build/ext/Xcode/spirv_binaries/project/src/spirv_binaries-stamp/CMakeFiles/spirv_binaries-build.rule"
+		}
+	],
+	"target" : 
+	{
+		"labels" : 
+		[
+			"spirv_binaries"
+		],
+		"name" : "spirv_binaries"
+	}
+}

@@ -1,0 +1,1497 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXAggregateTarget section */
+		324A15BFFEE94E94BA16B115 /* ZERO_CHECK */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 53CE9C28BC964BBA928F8787 /* Build configuration list for PBXAggregateTarget "ZERO_CHECK" */;
+			buildPhases = (
+				DE99DE0735AA4D0AAC9FE14B /* CMake Rules */,
+			);
+			dependencies = (
+			);
+			name = ZERO_CHECK;
+			productName = ZERO_CHECK;
+		};
+		42947DD9F1EF4015A72C7884 /* hifiNeuron_autogen */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 290ECC5C7C9341588ACB2827 /* Build configuration list for PBXAggregateTarget "hifiNeuron_autogen" */;
+			buildPhases = (
+				3EFDD6BC78E84B86A98DDEDB /* CMake Rules */,
+			);
+			dependencies = (
+				0BDCFBF97144490291F1DB95 /* PBXTargetDependency */,
+				F78E37599C8C4A00960FE683 /* PBXTargetDependency */,
+			);
+			name = hifiNeuron_autogen;
+			productName = hifiNeuron_autogen;
+		};
+		76BBA07C604F4D0E89A822F7 /* RUN_TESTS */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 8A900490E3734660AF08B68D /* Build configuration list for PBXAggregateTarget "RUN_TESTS" */;
+			buildPhases = (
+				E77A8571A31E47AF89B1B93C /* CMake PostBuild Rules */,
+			);
+			dependencies = (
+			);
+			name = RUN_TESTS;
+			productName = RUN_TESTS;
+		};
+		7A7E10E72F85450A98FB2D43 /* install */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 0EDFC59F75474164BCE6863C /* Build configuration list for PBXAggregateTarget "install" */;
+			buildPhases = (
+				7157973E718C4B5886915151 /* CMake PostBuild Rules */,
+			);
+			dependencies = (
+				94AE648DB7964AF099CE4334 /* PBXTargetDependency */,
+			);
+			name = install;
+			productName = install;
+		};
+		95C4C80F00A24216A3D15193 /* neuron */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 9403BD712A1C42B99981689E /* Build configuration list for PBXAggregateTarget "neuron" */;
+			buildPhases = (
+				3C4B1B8CE700418595896CCE /* CMake Rules */,
+			);
+			dependencies = (
+			);
+			name = neuron;
+			productName = neuron;
+		};
+		A0EF40283FD3451D881D67E2 /* package */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 372B1E6CC2A548908BEC6337 /* Build configuration list for PBXAggregateTarget "package" */;
+			buildPhases = (
+				DB05186D986046C582C5F07C /* CMake PostBuild Rules */,
+			);
+			dependencies = (
+				CFD2007444404569A2E6FCCD /* PBXTargetDependency */,
+			);
+			name = package;
+			productName = package;
+		};
+		EC7358D97DFB4AB0AF8A20EB /* ALL_BUILD */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 4D6F4B32176E4DBA91E3654B /* Build configuration list for PBXAggregateTarget "ALL_BUILD" */;
+			buildPhases = (
+				EA07413BCDA04E1EBDC0797C /* CMake Rules */,
+			);
+			dependencies = (
+				DDA47B8D10EE49DD92F12453 /* PBXTargetDependency */,
+				3E5B9BE6342F4C5A842C36A9 /* PBXTargetDependency */,
+				C84A7227E472483EBFC72EDC /* PBXTargetDependency */,
+			);
+			name = ALL_BUILD;
+			productName = ALL_BUILD;
+		};
+/* End PBXAggregateTarget section */
+
+/* Begin PBXBuildFile section */
+		6F881517DD8144E9B3495C70 /* /Users/kevinhouyang/Development/hifi/plugins/hifiNeuron/src/NeuronProvider.cpp */ = {isa = PBXBuildFile; fileRef = 3FD726445A184C2F864D52CA /* /Users/kevinhouyang/Development/hifi/plugins/hifiNeuron/src/NeuronProvider.cpp */; };
+		AA19EC450BC343F6BC5378FE /* /Users/kevinhouyang/Development/hifi/build/plugins/hifiNeuron/hifiNeuron_autogen/mocs_compilation.cpp */ = {isa = PBXBuildFile; fileRef = E0F32FC3D240431D968E1E6C /* /Users/kevinhouyang/Development/hifi/build/plugins/hifiNeuron/hifiNeuron_autogen/mocs_compilation.cpp */; };
+		AB848E8D0BC447BEAEFAB802 /* /Users/kevinhouyang/Development/hifi/plugins/hifiNeuron/src/NeuronPlugin.h */ = {isa = PBXBuildFile; fileRef = C1BD51C44E8A41CB9604F308 /* /Users/kevinhouyang/Development/hifi/plugins/hifiNeuron/src/NeuronPlugin.h */; };
+		AE911BCEC25745B88EB21980 /* /Users/kevinhouyang/Development/hifi/plugins/hifiNeuron/CMakeLists.txt */ = {isa = PBXBuildFile; fileRef = FE23523D18DC43B580B1D9E1 /* /Users/kevinhouyang/Development/hifi/plugins/hifiNeuron/CMakeLists.txt */; };
+		F1A994C1CC514C0E82DC47A6 /* /Users/kevinhouyang/Development/hifi/plugins/hifiNeuron/src/NeuronPlugin.cpp */ = {isa = PBXBuildFile; fileRef = FC27C8F26D8F4222AD84974D /* /Users/kevinhouyang/Development/hifi/plugins/hifiNeuron/src/NeuronPlugin.cpp */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXBuildStyle section */
+		5A8758A936554C218DB0A136 /* Release */ = {
+			isa = PBXBuildStyle;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+			};
+			name = Release;
+		};
+		8DAB5D609AE24B0C99E037A9 /* MinSizeRel */ = {
+			isa = PBXBuildStyle;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+			};
+			name = MinSizeRel;
+		};
+		DEB7E858460548108DB5F38A /* RelWithDebInfo */ = {
+			isa = PBXBuildStyle;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+			};
+			name = RelWithDebInfo;
+		};
+		E0937CC6AA3A4D6F873068B5 /* Debug */ = {
+			isa = PBXBuildStyle;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+			};
+			name = Debug;
+		};
+/* End PBXBuildStyle section */
+
+/* Begin PBXContainerItemProxy section */
+		065C90C9D6DC4AFD93C0485A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A3BF240009A8441982009E6F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 95C4C80F00A24216A3D15193;
+			remoteInfo = neuron;
+		};
+		19D1CC0B20594A8F8956C833 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A3BF240009A8441982009E6F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EC7358D97DFB4AB0AF8A20EB;
+			remoteInfo = ALL_BUILD;
+		};
+		1D27E45BBFF64D1D804392AC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A3BF240009A8441982009E6F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 324A15BFFEE94E94BA16B115;
+			remoteInfo = ZERO_CHECK;
+		};
+		2FB0A2BD60B6464EB4ED82C7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A3BF240009A8441982009E6F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 216CD090352449F0999FEBC0;
+			remoteInfo = hifiNeuron;
+		};
+		3875C99F887A47ADAFAA2971 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A3BF240009A8441982009E6F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 324A15BFFEE94E94BA16B115;
+			remoteInfo = ZERO_CHECK;
+		};
+		45F1D210774B4DAA81146E5D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A3BF240009A8441982009E6F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EC7358D97DFB4AB0AF8A20EB;
+			remoteInfo = ALL_BUILD;
+		};
+		537CF377552543938A40689A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A3BF240009A8441982009E6F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 324A15BFFEE94E94BA16B115;
+			remoteInfo = ZERO_CHECK;
+		};
+		A5BC3CAF809C4EE19B5FDC4C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A3BF240009A8441982009E6F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 95C4C80F00A24216A3D15193;
+			remoteInfo = neuron;
+		};
+		F01C046DFDFF4A3F839B02D9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A3BF240009A8441982009E6F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 95C4C80F00A24216A3D15193;
+			remoteInfo = neuron;
+		};
+		FD4F4B924DF1452DBD7D972D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A3BF240009A8441982009E6F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 42947DD9F1EF4015A72C7884;
+			remoteInfo = hifiNeuron_autogen;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		3FD726445A184C2F864D52CA /* /Users/kevinhouyang/Development/hifi/plugins/hifiNeuron/src/NeuronProvider.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = NeuronProvider.cpp; path = src/NeuronProvider.cpp; sourceTree = SOURCE_ROOT; };
+		68B2295A2B82445988E833A7 /* hifiNeuron */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.dylib"; path = libhifiNeuron.dylib; sourceTree = BUILT_PRODUCTS_DIR; };
+		B8EF57F7B95B4FF6A3893813 /* /Users/kevinhouyang/Development/hifi/cmake/externals/neuron/CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; name = CMakeLists.txt; path = ../../cmake/externals/neuron/CMakeLists.txt; sourceTree = SOURCE_ROOT; };
+		C0C6B1EBAF924289AA3ADD97 /* /Users/kevinhouyang/Development/hifi/plugins/hifiNeuron/CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; name = CMakeLists.txt; path = CMakeLists.txt; sourceTree = SOURCE_ROOT; };
+		C1BD51C44E8A41CB9604F308 /* /Users/kevinhouyang/Development/hifi/plugins/hifiNeuron/src/NeuronPlugin.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = NeuronPlugin.h; path = src/NeuronPlugin.h; sourceTree = SOURCE_ROOT; };
+		C4EED76A2498421893D20483 /* /Users/kevinhouyang/Development/hifi/plugins/hifiNeuron/CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; name = CMakeLists.txt; path = CMakeLists.txt; sourceTree = SOURCE_ROOT; };
+		E0F32FC3D240431D968E1E6C /* /Users/kevinhouyang/Development/hifi/build/plugins/hifiNeuron/hifiNeuron_autogen/mocs_compilation.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = mocs_compilation.cpp; path = ../../build/plugins/hifiNeuron/hifiNeuron_autogen/mocs_compilation.cpp; sourceTree = SOURCE_ROOT; };
+		FC27C8F26D8F4222AD84974D /* /Users/kevinhouyang/Development/hifi/plugins/hifiNeuron/src/NeuronPlugin.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = NeuronPlugin.cpp; path = src/NeuronPlugin.cpp; sourceTree = SOURCE_ROOT; };
+		FE23523D18DC43B580B1D9E1 /* /Users/kevinhouyang/Development/hifi/plugins/hifiNeuron/CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; name = CMakeLists.txt; path = CMakeLists.txt; sourceTree = SOURCE_ROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXGroup section */
+		012F8E3324AD46E08C223F79 = {
+			isa = PBXGroup;
+			children = (
+				10F54EB10D474FCDA9911D6E /* Plugins */,
+				B5ACAFD753A74895BCADBDAC /* ALL_BUILD */,
+				5CFCE54D14A644A7AFC21984 /* hidden */,
+				0816579EBA3B4DBCB0B51088 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		0816579EBA3B4DBCB0B51088 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				68B2295A2B82445988E833A7 /* hifiNeuron */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		10F54EB10D474FCDA9911D6E /* Plugins */ = {
+			isa = PBXGroup;
+			children = (
+				C5C88DAB647147BBB8D7AE33 /* hifiNeuron */,
+				D8A1A33FB83646B3949D7D32 /* hifiNeuron_autogen */,
+			);
+			name = Plugins;
+			sourceTree = "<group>";
+		};
+		1782783E289C4FD8A851573B /* CMake Rules */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "CMake Rules";
+			sourceTree = "<group>";
+		};
+		19C66B12E6A24DD6A05BDAC0 /* neuron */ = {
+			isa = PBXGroup;
+			children = (
+				1782783E289C4FD8A851573B /* CMake Rules */,
+				B8EF57F7B95B4FF6A3893813 /* /Users/kevinhouyang/Development/hifi/cmake/externals/neuron/CMakeLists.txt */,
+			);
+			name = neuron;
+			sourceTree = "<group>";
+		};
+		1E6BED0E0CA3478885F71AF9 /* CMake Rules */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "CMake Rules";
+			sourceTree = "<group>";
+		};
+		4F39B07FA7934697B60536F3 /* CMake Rules */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "CMake Rules";
+			sourceTree = "<group>";
+		};
+		5CFCE54D14A644A7AFC21984 /* hidden */ = {
+			isa = PBXGroup;
+			children = (
+				720C2BA83EF24641BEC35AC0 /* externals */,
+			);
+			name = hidden;
+			sourceTree = "<group>";
+		};
+		720C2BA83EF24641BEC35AC0 /* externals */ = {
+			isa = PBXGroup;
+			children = (
+				19C66B12E6A24DD6A05BDAC0 /* neuron */,
+			);
+			name = externals;
+			sourceTree = "<group>";
+		};
+		812B95802A4143FF8C125A2B /* Header Files */ = {
+			isa = PBXGroup;
+			children = (
+				C1BD51C44E8A41CB9604F308 /* /Users/kevinhouyang/Development/hifi/plugins/hifiNeuron/src/NeuronPlugin.h */,
+			);
+			name = "Header Files";
+			sourceTree = "<group>";
+		};
+		B5ACAFD753A74895BCADBDAC /* ALL_BUILD */ = {
+			isa = PBXGroup;
+			children = (
+				4F39B07FA7934697B60536F3 /* CMake Rules */,
+				C0C6B1EBAF924289AA3ADD97 /* /Users/kevinhouyang/Development/hifi/plugins/hifiNeuron/CMakeLists.txt */,
+			);
+			name = ALL_BUILD;
+			sourceTree = "<group>";
+		};
+		C5C88DAB647147BBB8D7AE33 /* hifiNeuron */ = {
+			isa = PBXGroup;
+			children = (
+				FD387A8B2F924F0A80398831 /* Source Files */,
+				812B95802A4143FF8C125A2B /* Header Files */,
+				FE23523D18DC43B580B1D9E1 /* /Users/kevinhouyang/Development/hifi/plugins/hifiNeuron/CMakeLists.txt */,
+			);
+			name = hifiNeuron;
+			sourceTree = "<group>";
+		};
+		D8A1A33FB83646B3949D7D32 /* hifiNeuron_autogen */ = {
+			isa = PBXGroup;
+			children = (
+				1E6BED0E0CA3478885F71AF9 /* CMake Rules */,
+				C4EED76A2498421893D20483 /* /Users/kevinhouyang/Development/hifi/plugins/hifiNeuron/CMakeLists.txt */,
+			);
+			name = hifiNeuron_autogen;
+			sourceTree = "<group>";
+		};
+		FD387A8B2F924F0A80398831 /* Source Files */ = {
+			isa = PBXGroup;
+			children = (
+				E0F32FC3D240431D968E1E6C /* /Users/kevinhouyang/Development/hifi/build/plugins/hifiNeuron/hifiNeuron_autogen/mocs_compilation.cpp */,
+				FC27C8F26D8F4222AD84974D /* /Users/kevinhouyang/Development/hifi/plugins/hifiNeuron/src/NeuronPlugin.cpp */,
+				3FD726445A184C2F864D52CA /* /Users/kevinhouyang/Development/hifi/plugins/hifiNeuron/src/NeuronProvider.cpp */,
+			);
+			name = "Source Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		216CD090352449F0999FEBC0 /* hifiNeuron */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5D141C4DCD434ED2B66827BE /* Build configuration list for PBXNativeTarget "hifiNeuron" */;
+			buildPhases = (
+				FD465D013A8C4604B80AF1F0 /* Sources */,
+				F3203EEAFDA64C4281FE19B0 /* CMake PostBuild Rules */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				35622E63557C4882B5CF3012 /* PBXTargetDependency */,
+				E76AD5F7545C47DCAABF0BFB /* PBXTargetDependency */,
+				5015E3C8A0584D4F9358C42B /* PBXTargetDependency */,
+			);
+			name = hifiNeuron;
+			productName = hifiNeuron;
+			productReference = 68B2295A2B82445988E833A7 /* hifiNeuron */;
+			productType = "com.apple.product-type.library.dynamic";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A3BF240009A8441982009E6F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = YES;
+				LastUpgradeCheck = 0930;
+			};
+			buildConfigurationList = 712D0BFF2CB644BABA16D5CD /* Build configuration list for PBXProject "hifiNeuron" */;
+			buildSettings = {
+			};
+			buildStyles = (
+				E0937CC6AA3A4D6F873068B5 /* Debug */,
+				5A8758A936554C218DB0A136 /* Release */,
+				8DAB5D609AE24B0C99E037A9 /* MinSizeRel */,
+				DEB7E858460548108DB5F38A /* RelWithDebInfo */,
+			);
+			compatibilityVersion = "Xcode 3.2";
+			hasScannedForEncodings = 0;
+			mainGroup = 012F8E3324AD46E08C223F79;
+			projectDirPath = ../../../plugins/hifiNeuron;
+			projectRoot = "";
+			targets = (
+				EC7358D97DFB4AB0AF8A20EB /* ALL_BUILD */,
+				76BBA07C604F4D0E89A822F7 /* RUN_TESTS */,
+				324A15BFFEE94E94BA16B115 /* ZERO_CHECK */,
+				216CD090352449F0999FEBC0 /* hifiNeuron */,
+				42947DD9F1EF4015A72C7884 /* hifiNeuron_autogen */,
+				7A7E10E72F85450A98FB2D43 /* install */,
+				A0EF40283FD3451D881D67E2 /* package */,
+				95C4C80F00A24216A3D15193 /* neuron */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0035EE92D1F64D0A8C8D7C78 = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# shell script goes here
+exit 0";
+			showEnvVarsInLog = 0;
+		};
+		3C4B1B8CE700418595896CCE /* CMake Rules */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			name = "CMake Rules";
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "make -C /Users/kevinhouyang/Development/hifi/build/ext/Xcode/neuron -f /Users/kevinhouyang/Development/hifi/build/ext/Xcode/neuron/CMakeScripts/neuron_cmakeRulesBuildPhase.make$CONFIGURATION all";
+			showEnvVarsInLog = 0;
+		};
+		3EFDD6BC78E84B86A98DDEDB /* CMake Rules */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			name = "CMake Rules";
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "make -C /Users/kevinhouyang/Development/hifi/build/plugins/hifiNeuron -f /Users/kevinhouyang/Development/hifi/build/plugins/hifiNeuron/CMakeScripts/hifiNeuron_autogen_cmakeRulesBuildPhase.make$CONFIGURATION all";
+			showEnvVarsInLog = 0;
+		};
+		67773DF559464EFAA9A3BA5B = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# shell script goes here
+exit 0";
+			showEnvVarsInLog = 0;
+		};
+		6CA254229E664CAA850A480A = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# shell script goes here
+exit 0";
+			showEnvVarsInLog = 0;
+		};
+		6E13BE41D8C74659B51F785F = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# shell script goes here
+exit 0";
+			showEnvVarsInLog = 0;
+		};
+		7157973E718C4B5886915151 /* CMake PostBuild Rules */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			name = "CMake PostBuild Rules";
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "make -C /Users/kevinhouyang/Development/hifi/build/plugins/hifiNeuron -f /Users/kevinhouyang/Development/hifi/build/plugins/hifiNeuron/CMakeScripts/install_postBuildPhase.make$CONFIGURATION all";
+			showEnvVarsInLog = 0;
+		};
+		7D8BB9ABD4C64BAE861C8493 = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# shell script goes here
+exit 0";
+			showEnvVarsInLog = 0;
+		};
+		B9048577832C434683C417A1 = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# shell script goes here
+exit 0";
+			showEnvVarsInLog = 0;
+		};
+		C48DB438A9584AF191CE55DF = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# shell script goes here
+exit 0";
+			showEnvVarsInLog = 0;
+		};
+		DB05186D986046C582C5F07C /* CMake PostBuild Rules */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			name = "CMake PostBuild Rules";
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "make -C /Users/kevinhouyang/Development/hifi/build/plugins/hifiNeuron -f /Users/kevinhouyang/Development/hifi/build/plugins/hifiNeuron/CMakeScripts/package_postBuildPhase.make$CONFIGURATION all";
+			showEnvVarsInLog = 0;
+		};
+		DE99DE0735AA4D0AAC9FE14B /* CMake Rules */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			name = "CMake Rules";
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "make -C /Users/kevinhouyang/Development/hifi/build/plugins/hifiNeuron -f /Users/kevinhouyang/Development/hifi/build/plugins/hifiNeuron/CMakeScripts/ZERO_CHECK_cmakeRulesBuildPhase.make$CONFIGURATION all";
+			showEnvVarsInLog = 0;
+		};
+		E77A8571A31E47AF89B1B93C /* CMake PostBuild Rules */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			name = "CMake PostBuild Rules";
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "make -C /Users/kevinhouyang/Development/hifi/build/plugins/hifiNeuron -f /Users/kevinhouyang/Development/hifi/build/plugins/hifiNeuron/CMakeScripts/RUN_TESTS_postBuildPhase.make$CONFIGURATION all";
+			showEnvVarsInLog = 0;
+		};
+		EA07413BCDA04E1EBDC0797C /* CMake Rules */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			name = "CMake Rules";
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "make -C /Users/kevinhouyang/Development/hifi/build/plugins/hifiNeuron -f /Users/kevinhouyang/Development/hifi/build/plugins/hifiNeuron/CMakeScripts/ALL_BUILD_cmakeRulesBuildPhase.make$CONFIGURATION all";
+			showEnvVarsInLog = 0;
+		};
+		F3203EEAFDA64C4281FE19B0 /* CMake PostBuild Rules */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			name = "CMake PostBuild Rules";
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "make -C /Users/kevinhouyang/Development/hifi/build/plugins/hifiNeuron -f /Users/kevinhouyang/Development/hifi/build/plugins/hifiNeuron/CMakeScripts/hifiNeuron_postBuildPhase.make$CONFIGURATION all";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FD465D013A8C4604B80AF1F0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AA19EC450BC343F6BC5378FE /* /Users/kevinhouyang/Development/hifi/build/plugins/hifiNeuron/hifiNeuron_autogen/mocs_compilation.cpp */,
+				F1A994C1CC514C0E82DC47A6 /* /Users/kevinhouyang/Development/hifi/plugins/hifiNeuron/src/NeuronPlugin.cpp */,
+				6F881517DD8144E9B3495C70 /* /Users/kevinhouyang/Development/hifi/plugins/hifiNeuron/src/NeuronProvider.cpp */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		0BDCFBF97144490291F1DB95 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 95C4C80F00A24216A3D15193 /* neuron */;
+			targetProxy = 065C90C9D6DC4AFD93C0485A /* PBXContainerItemProxy */;
+		};
+		35622E63557C4882B5CF3012 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 42947DD9F1EF4015A72C7884 /* hifiNeuron_autogen */;
+			targetProxy = FD4F4B924DF1452DBD7D972D /* PBXContainerItemProxy */;
+		};
+		3E5B9BE6342F4C5A842C36A9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 95C4C80F00A24216A3D15193 /* neuron */;
+			targetProxy = F01C046DFDFF4A3F839B02D9 /* PBXContainerItemProxy */;
+		};
+		5015E3C8A0584D4F9358C42B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 324A15BFFEE94E94BA16B115 /* ZERO_CHECK */;
+			targetProxy = 3875C99F887A47ADAFAA2971 /* PBXContainerItemProxy */;
+		};
+		94AE648DB7964AF099CE4334 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EC7358D97DFB4AB0AF8A20EB /* ALL_BUILD */;
+			targetProxy = 19D1CC0B20594A8F8956C833 /* PBXContainerItemProxy */;
+		};
+		C84A7227E472483EBFC72EDC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 324A15BFFEE94E94BA16B115 /* ZERO_CHECK */;
+			targetProxy = 1D27E45BBFF64D1D804392AC /* PBXContainerItemProxy */;
+		};
+		CFD2007444404569A2E6FCCD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EC7358D97DFB4AB0AF8A20EB /* ALL_BUILD */;
+			targetProxy = 45F1D210774B4DAA81146E5D /* PBXContainerItemProxy */;
+		};
+		DDA47B8D10EE49DD92F12453 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 216CD090352449F0999FEBC0 /* hifiNeuron */;
+			targetProxy = 2FB0A2BD60B6464EB4ED82C7 /* PBXContainerItemProxy */;
+		};
+		E76AD5F7545C47DCAABF0BFB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 95C4C80F00A24216A3D15193 /* neuron */;
+			targetProxy = A5BC3CAF809C4EE19B5FDC4C /* PBXContainerItemProxy */;
+		};
+		F78E37599C8C4A00960FE683 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 324A15BFFEE94E94BA16B115 /* ZERO_CHECK */;
+			targetProxy = 537CF377552543938A40689A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		04F49329D51B42A98CDE639E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = hifiNeuron_autogen;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/kevinhouyang/Development/hifi/build/plugins/hifiNeuron;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = Release;
+		};
+		0652EAE787394CA69761ACCE /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = package;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/kevinhouyang/Development/hifi/build/plugins/hifiNeuron;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = MinSizeRel;
+		};
+		102D04E2EA07406CA7EE3B58 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = neuron;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/kevinhouyang/Development/hifi/build/ext/Xcode/neuron;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = Debug;
+		};
+		1098365C670942159C1A46A4 /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = hifiNeuron_autogen;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/kevinhouyang/Development/hifi/build/plugins/hifiNeuron;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = MinSizeRel;
+		};
+		1743D0F28DD041D0ABE3C751 /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ZERO_CHECK;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/kevinhouyang/Development/hifi/build/plugins/hifiNeuron;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = RelWithDebInfo;
+		};
+		19A6821FA426416CA6A18AC7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				DYLIB_COMPATIBILITY_VERSION = "";
+				DYLIB_CURRENT_VERSION = "";
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .dylib;
+				FRAMEWORK_SEARCH_PATHS = (/usr/local/Cellar/qt/5.11.2/lib);
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",hifiNeuron_EXPORTS,GLM_FORCE_RADIANS,DEV_BUILD,HAVE_NEURON,QT_QML_LIB,QT_NETWORK_LIB,QT_CORE_LIB,QT_GUI_LIB,QT_SCRIPT_LIB,QT_MULTIMEDIA_LIB,QT_QUICK_LIB,QT_WEBCHANNEL_LIB,QT_WEBSOCKETS_LIB,QT_WEBENGINE_LIB,QT_WEBENGINECORE_LIB,QT_POSITIONING_LIB,QT_WIDGETS_LIB,QT_OPENGL_LIB,QT_XMLPATTERNS_LIB);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (/Users/kevinhouyang/Development/hifi/build/plugins/hifiNeuron,/Users/kevinhouyang/Development/hifi/plugins/hifiNeuron,/Users/kevinhouyang/Development/hifi/build/plugins/hifiNeuron/hifiNeuron_autogen/include_Debug,/Users/kevinhouyang/Development/hifi/build/includes,/Users/kevinhouyang/Development/hifi/build/ext/Xcode/glm/project/include,/Users/kevinhouyang/Development/hifi/libraries/shared/src,/Users/kevinhouyang/Development/hifi/build/libraries/shared,/Users/kevinhouyang/Development/hifi/libraries/controllers/src,/Users/kevinhouyang/Development/hifi/build/libraries/controllers,/Users/kevinhouyang/Development/hifi/libraries/qml/src,/Users/kevinhouyang/Development/hifi/build/libraries/qml,/Users/kevinhouyang/Development/hifi/libraries/ui/src,/Users/kevinhouyang/Development/hifi/build/libraries/ui,/Users/kevinhouyang/Development/hifi/libraries/plugins/src,/Users/kevinhouyang/Development/hifi/build/libraries/plugins,"/Users/kevinhouyang/Development/hifi/libraries/input-plugins/src","/Users/kevinhouyang/Development/hifi/build/libraries/input-plugins",/Users/kevinhouyang/Development/hifi/build/ext/Xcode/neuron/project/src/neuron/NeuronDataReader_Mac/include,/Users/kevinhouyang/Development/hifi/build/ext/Xcode/glad45/project/include,/Users/kevinhouyang/Development/hifi/libraries/audio/src);
+				INSTALL_PATH = "@rpath";
+				LIBRARY_SEARCH_PATHS = "";
+				LIBRARY_STYLE = DYNAMIC;
+				OTHER_CPLUSPLUSFLAGS = " -Wall -Wextra -fno-strict-aliasing -Wno-unused-parameter --stdlib=libc++       -DDEBUG -fPIC -fPIC '-std=gnu++14'  ";
+				OTHER_LDFLAGS = " -dynamiclib -Wl,-headerpad_max_install_names  /Users/kevinhouyang/Development/hifi/build/libraries/shared/Debug/libshared.a /Users/kevinhouyang/Development/hifi/build/libraries/controllers/Debug/libcontrollers.a /Users/kevinhouyang/Development/hifi/build/libraries/qml/Debug/libqml.a /Users/kevinhouyang/Development/hifi/build/libraries/ui/Debug/libui.a /Users/kevinhouyang/Development/hifi/build/libraries/plugins/Debug/libplugins.a /Users/kevinhouyang/Development/hifi/build/libraries/input-plugins/Debug/libinput-plugins.a /Users/kevinhouyang/Development/hifi/build/ext/Xcode/neuron/project/src/neuron/NeuronDataReader_Mac/dylib/NeuronDataReader.dylib /Users/kevinhouyang/Development/hifi/build/libraries/ui-plugins/Debug/libui-plugins.a /Users/kevinhouyang/Development/hifi/build/libraries/ui/Debug/libui.a /Users/kevinhouyang/Development/hifi/build/libraries/qml/Debug/libqml.a /usr/local/Cellar/qt/5.11.2/lib/QtWebSockets.framework/QtWebSockets /Users/kevinhouyang/Development/hifi/build/libraries/gl/Debug/libgl.a /Users/kevinhouyang/Development/hifi/build/ext/Xcode/glad45/project/lib/libglad_d.a -framework OpenGL -ldl /usr/local/Cellar/qt/5.11.2/lib/QtOpenGL.framework/QtOpenGL /usr/local/Cellar/qt/5.11.2/lib/QtWidgets.framework/QtWidgets /usr/local/Cellar/qt/5.11.2/lib/QtXmlPatterns.framework/QtXmlPatterns /Users/kevinhouyang/Development/hifi/build/libraries/audio-client/Debug/libaudio-client.a /usr/local/Cellar/qt/5.11.2/lib/QtMultimedia.framework/QtMultimedia /usr/local/Cellar/qt/5.11.2/lib/QtWebEngine.framework/QtWebEngine /usr/local/Cellar/qt/5.11.2/lib/QtWebEngineCore.framework/QtWebEngineCore /usr/local/Cellar/qt/5.11.2/lib/QtQuick.framework/QtQuick /usr/local/Cellar/qt/5.11.2/lib/QtWebChannel.framework/QtWebChannel /usr/local/Cellar/qt/5.11.2/lib/QtPositioning.framework/QtPositioning /Users/kevinhouyang/Development/hifi/build/libraries/audio/Debug/libaudio.a -framework CoreAudio /Users/kevinhouyang/Development/hifi/build/libraries/pointers/Debug/libpointers.a /Users/kevinhouyang/Development/hifi/build/libraries/controllers/Debug/libcontrollers.a /usr/local/Cellar/qt/5.11.2/lib/QtQml.framework/QtQml /Users/kevinhouyang/Development/hifi/build/libraries/plugins/Debug/libplugins.a /Users/kevinhouyang/Development/hifi/build/libraries/networking/Debug/libnetworking.a /Users/kevinhouyang/Development/hifi/build/libraries/shared/Debug/libshared.a /usr/local/Cellar/qt/5.11.2/lib/QtScript.framework/QtScript /usr/lib/libz.dylib /usr/local/Cellar/qt/5.11.2/lib/QtNetwork.framework/QtNetwork /usr/local/Cellar/openssl/1.0.2p/lib/libssl.dylib /usr/local/Cellar/openssl/1.0.2p/lib/libcrypto.dylib /Users/kevinhouyang/Development/hifi/build/ext/Xcode/tbb/project/src/tbb/lib/libtbb_debug.dylib /Users/kevinhouyang/Development/hifi/build/ext/Xcode/tbb/project/src/tbb/lib/libtbbmalloc_debug.dylib -framework IOKit -framework CoreFoundation /usr/local/Cellar/qt/5.11.2/lib/QtGui.framework/QtGui /usr/local/Cellar/qt/5.11.2/lib/QtCore.framework/QtCore";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = hifiNeuron;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/kevinhouyang/Development/hifi/build/plugins/hifiNeuron;
+				SYSTEM_HEADER_SEARCH_PATHS = (/usr/local/Cellar/qt/5.11.2/lib/QtQml.framework/Headers,/usr/local/Cellar/qt/5.11.2/lib/QtNetwork.framework/Headers,/usr/local/Cellar/qt/5.11.2/lib/QtCore.framework/Headers,"/usr/local/Cellar/qt/5.11.2/./mkspecs/macx-clang",/usr/local/Cellar/qt/5.11.2/lib/QtGui.framework/Headers,/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk/System/Library/Frameworks/OpenGL.framework/Headers,/usr/local/Cellar/qt/5.11.2/lib/QtScript.framework/Headers,/usr/local/Cellar/qt/5.11.2/lib/QtMultimedia.framework/Headers,/usr/local/Cellar/qt/5.11.2/lib/QtQuick.framework/Headers,/usr/local/Cellar/qt/5.11.2/lib/QtWebChannel.framework/Headers,/usr/local/Cellar/qt/5.11.2/lib/QtWebSockets.framework/Headers,/usr/local/Cellar/qt/5.11.2/lib/QtWebEngine.framework/Headers,/usr/local/Cellar/qt/5.11.2/lib/QtWebEngineCore.framework/Headers,/usr/local/Cellar/qt/5.11.2/lib/QtPositioning.framework/Headers,/Users/kevinhouyang/Development/hifi/build/ext/Xcode/tbb/project/src/tbb/include,/usr/local/Cellar/qt/5.11.2/lib/QtWidgets.framework/Headers,/usr/local/Cellar/qt/5.11.2/lib/QtOpenGL.framework/Headers,/usr/local/Cellar/qt/5.11.2/lib/QtXmlPatterns.framework/Headers);
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = Debug;
+		};
+		2583F2B4AC1F4C47AB3E410B /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = neuron;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/kevinhouyang/Development/hifi/build/ext/Xcode/neuron;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = MinSizeRel;
+		};
+		34CF9D34AC0949CB8F826B74 /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				DYLIB_COMPATIBILITY_VERSION = "";
+				DYLIB_CURRENT_VERSION = "";
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .dylib;
+				FRAMEWORK_SEARCH_PATHS = (/usr/local/Cellar/qt/5.11.2/lib);
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = s;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",hifiNeuron_EXPORTS,GLM_FORCE_RADIANS,DEV_BUILD,HAVE_NEURON,QT_QML_LIB,QT_NETWORK_LIB,QT_CORE_LIB,QT_NO_DEBUG,QT_GUI_LIB,QT_SCRIPT_LIB,QT_MULTIMEDIA_LIB,QT_QUICK_LIB,QT_WEBCHANNEL_LIB,QT_WEBSOCKETS_LIB,QT_WEBENGINE_LIB,QT_WEBENGINECORE_LIB,QT_POSITIONING_LIB,QT_WIDGETS_LIB,QT_OPENGL_LIB,QT_XMLPATTERNS_LIB);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (/Users/kevinhouyang/Development/hifi/build/plugins/hifiNeuron,/Users/kevinhouyang/Development/hifi/plugins/hifiNeuron,/Users/kevinhouyang/Development/hifi/build/plugins/hifiNeuron/hifiNeuron_autogen/include_MinSizeRel,/Users/kevinhouyang/Development/hifi/build/includes,/Users/kevinhouyang/Development/hifi/build/ext/Xcode/glm/project/include,/Users/kevinhouyang/Development/hifi/libraries/shared/src,/Users/kevinhouyang/Development/hifi/build/libraries/shared,/Users/kevinhouyang/Development/hifi/libraries/controllers/src,/Users/kevinhouyang/Development/hifi/build/libraries/controllers,/Users/kevinhouyang/Development/hifi/libraries/qml/src,/Users/kevinhouyang/Development/hifi/build/libraries/qml,/Users/kevinhouyang/Development/hifi/libraries/ui/src,/Users/kevinhouyang/Development/hifi/build/libraries/ui,/Users/kevinhouyang/Development/hifi/libraries/plugins/src,/Users/kevinhouyang/Development/hifi/build/libraries/plugins,"/Users/kevinhouyang/Development/hifi/libraries/input-plugins/src","/Users/kevinhouyang/Development/hifi/build/libraries/input-plugins",/Users/kevinhouyang/Development/hifi/build/ext/Xcode/neuron/project/src/neuron/NeuronDataReader_Mac/include,/Users/kevinhouyang/Development/hifi/build/ext/Xcode/glad45/project/include,/Users/kevinhouyang/Development/hifi/libraries/audio/src);
+				INSTALL_PATH = "@rpath";
+				LIBRARY_SEARCH_PATHS = "";
+				LIBRARY_STYLE = DYNAMIC;
+				OTHER_CPLUSPLUSFLAGS = " -Wall -Wextra -fno-strict-aliasing -Wno-unused-parameter --stdlib=libc++        -DNDEBUG -fPIC -fPIC '-std=gnu++14'  ";
+				OTHER_LDFLAGS = " -dynamiclib -Wl,-headerpad_max_install_names  /Users/kevinhouyang/Development/hifi/build/libraries/shared/MinSizeRel/libshared.a /Users/kevinhouyang/Development/hifi/build/libraries/controllers/MinSizeRel/libcontrollers.a /Users/kevinhouyang/Development/hifi/build/libraries/qml/MinSizeRel/libqml.a /Users/kevinhouyang/Development/hifi/build/libraries/ui/MinSizeRel/libui.a /Users/kevinhouyang/Development/hifi/build/libraries/plugins/MinSizeRel/libplugins.a /Users/kevinhouyang/Development/hifi/build/libraries/input-plugins/MinSizeRel/libinput-plugins.a /Users/kevinhouyang/Development/hifi/build/ext/Xcode/neuron/project/src/neuron/NeuronDataReader_Mac/dylib/NeuronDataReader.dylib /Users/kevinhouyang/Development/hifi/build/libraries/ui-plugins/MinSizeRel/libui-plugins.a /Users/kevinhouyang/Development/hifi/build/libraries/ui/MinSizeRel/libui.a /Users/kevinhouyang/Development/hifi/build/libraries/qml/MinSizeRel/libqml.a /usr/local/Cellar/qt/5.11.2/lib/QtWebSockets.framework/QtWebSockets /Users/kevinhouyang/Development/hifi/build/libraries/gl/MinSizeRel/libgl.a /Users/kevinhouyang/Development/hifi/build/ext/Xcode/glad45/project/lib/libglad.a -framework OpenGL -ldl /usr/local/Cellar/qt/5.11.2/lib/QtOpenGL.framework/QtOpenGL /usr/local/Cellar/qt/5.11.2/lib/QtWidgets.framework/QtWidgets /usr/local/Cellar/qt/5.11.2/lib/QtXmlPatterns.framework/QtXmlPatterns /Users/kevinhouyang/Development/hifi/build/libraries/audio-client/MinSizeRel/libaudio-client.a /usr/local/Cellar/qt/5.11.2/lib/QtMultimedia.framework/QtMultimedia /usr/local/Cellar/qt/5.11.2/lib/QtWebEngine.framework/QtWebEngine /usr/local/Cellar/qt/5.11.2/lib/QtWebEngineCore.framework/QtWebEngineCore /usr/local/Cellar/qt/5.11.2/lib/QtQuick.framework/QtQuick /usr/local/Cellar/qt/5.11.2/lib/QtWebChannel.framework/QtWebChannel /usr/local/Cellar/qt/5.11.2/lib/QtPositioning.framework/QtPositioning /Users/kevinhouyang/Development/hifi/build/libraries/audio/MinSizeRel/libaudio.a -framework CoreAudio /Users/kevinhouyang/Development/hifi/build/libraries/pointers/MinSizeRel/libpointers.a /Users/kevinhouyang/Development/hifi/build/libraries/controllers/MinSizeRel/libcontrollers.a /usr/local/Cellar/qt/5.11.2/lib/QtQml.framework/QtQml /Users/kevinhouyang/Development/hifi/build/libraries/plugins/MinSizeRel/libplugins.a /Users/kevinhouyang/Development/hifi/build/libraries/networking/MinSizeRel/libnetworking.a /Users/kevinhouyang/Development/hifi/build/libraries/shared/MinSizeRel/libshared.a /usr/local/Cellar/qt/5.11.2/lib/QtScript.framework/QtScript /usr/lib/libz.dylib /usr/local/Cellar/qt/5.11.2/lib/QtNetwork.framework/QtNetwork /usr/local/Cellar/openssl/1.0.2p/lib/libssl.dylib /usr/local/Cellar/openssl/1.0.2p/lib/libcrypto.dylib /Users/kevinhouyang/Development/hifi/build/ext/Xcode/tbb/project/src/tbb/lib/libtbb.dylib /Users/kevinhouyang/Development/hifi/build/ext/Xcode/tbb/project/src/tbb/lib/libtbbmalloc.dylib -framework IOKit -framework CoreFoundation /usr/local/Cellar/qt/5.11.2/lib/QtGui.framework/QtGui /usr/local/Cellar/qt/5.11.2/lib/QtCore.framework/QtCore";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = hifiNeuron;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/kevinhouyang/Development/hifi/build/plugins/hifiNeuron;
+				SYSTEM_HEADER_SEARCH_PATHS = (/usr/local/Cellar/qt/5.11.2/lib/QtQml.framework/Headers,/usr/local/Cellar/qt/5.11.2/lib/QtNetwork.framework/Headers,/usr/local/Cellar/qt/5.11.2/lib/QtCore.framework/Headers,"/usr/local/Cellar/qt/5.11.2/./mkspecs/macx-clang",/usr/local/Cellar/qt/5.11.2/lib/QtGui.framework/Headers,/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk/System/Library/Frameworks/OpenGL.framework/Headers,/usr/local/Cellar/qt/5.11.2/lib/QtScript.framework/Headers,/usr/local/Cellar/qt/5.11.2/lib/QtMultimedia.framework/Headers,/usr/local/Cellar/qt/5.11.2/lib/QtQuick.framework/Headers,/usr/local/Cellar/qt/5.11.2/lib/QtWebChannel.framework/Headers,/usr/local/Cellar/qt/5.11.2/lib/QtWebSockets.framework/Headers,/usr/local/Cellar/qt/5.11.2/lib/QtWebEngine.framework/Headers,/usr/local/Cellar/qt/5.11.2/lib/QtWebEngineCore.framework/Headers,/usr/local/Cellar/qt/5.11.2/lib/QtPositioning.framework/Headers,/Users/kevinhouyang/Development/hifi/build/ext/Xcode/tbb/project/src/tbb/include,/usr/local/Cellar/qt/5.11.2/lib/QtWidgets.framework/Headers,/usr/local/Cellar/qt/5.11.2/lib/QtOpenGL.framework/Headers,/usr/local/Cellar/qt/5.11.2/lib/QtXmlPatterns.framework/Headers);
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = MinSizeRel;
+		};
+		3E226AE47B2A489686D1106F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ZERO_CHECK;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/kevinhouyang/Development/hifi/build/plugins/hifiNeuron;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = Release;
+		};
+		4894609FEA5B49D7B15B15BF /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = RUN_TESTS;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/kevinhouyang/Development/hifi/build/plugins/hifiNeuron;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = MinSizeRel;
+		};
+		528EC42A91E44148AE893AC6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "c++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk;
+				SYMROOT = /Users/kevinhouyang/Development/hifi/build/plugins/hifiNeuron/build;
+			};
+			name = Debug;
+		};
+		5617D9BC61F7469B9EC34E35 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = hifiNeuron_autogen;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/kevinhouyang/Development/hifi/build/plugins/hifiNeuron;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = Debug;
+		};
+		5704353EFCE946C59CE596A7 /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "c++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk;
+				SYMROOT = /Users/kevinhouyang/Development/hifi/build/plugins/hifiNeuron/build;
+			};
+			name = RelWithDebInfo;
+		};
+		57F4D1FB334344AD8213A92D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = install;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/kevinhouyang/Development/hifi/build/plugins/hifiNeuron;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = Release;
+		};
+		5BC5790FD35745909F40942D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ALL_BUILD;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/kevinhouyang/Development/hifi/build/plugins/hifiNeuron;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = Debug;
+		};
+		60528C8CB6C74EC28BEA2CFD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = package;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/kevinhouyang/Development/hifi/build/plugins/hifiNeuron;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = Debug;
+		};
+		70599D209B0D4FDEA061C1A2 /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "c++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk;
+				SYMROOT = /Users/kevinhouyang/Development/hifi/build/plugins/hifiNeuron/build;
+			};
+			name = MinSizeRel;
+		};
+		78FA950C6F2047E0856C197E /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = neuron;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/kevinhouyang/Development/hifi/build/ext/Xcode/neuron;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = RelWithDebInfo;
+		};
+		84C46977CE654C188AB01E29 /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = hifiNeuron_autogen;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/kevinhouyang/Development/hifi/build/plugins/hifiNeuron;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = RelWithDebInfo;
+		};
+		98D8ACC5A8834DBCB5BD2770 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ALL_BUILD;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/kevinhouyang/Development/hifi/build/plugins/hifiNeuron;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = Release;
+		};
+		9AEFAD6CE18744A79849B242 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = neuron;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/kevinhouyang/Development/hifi/build/ext/Xcode/neuron;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = Release;
+		};
+		9B9DD58BE23C498C9F74B2F9 /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ALL_BUILD;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/kevinhouyang/Development/hifi/build/plugins/hifiNeuron;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = RelWithDebInfo;
+		};
+		9C9CDED3F61941248D99CED5 /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = RUN_TESTS;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/kevinhouyang/Development/hifi/build/plugins/hifiNeuron;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = RelWithDebInfo;
+		};
+		A1A6541AF2EA4FEBAEA65E96 /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = install;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/kevinhouyang/Development/hifi/build/plugins/hifiNeuron;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = MinSizeRel;
+		};
+		A25ABFD515B741AABF346D19 /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = install;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/kevinhouyang/Development/hifi/build/plugins/hifiNeuron;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = RelWithDebInfo;
+		};
+		A59573241ED041E88FBD6F86 /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				DYLIB_COMPATIBILITY_VERSION = "";
+				DYLIB_CURRENT_VERSION = "";
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .dylib;
+				FRAMEWORK_SEARCH_PATHS = (/usr/local/Cellar/qt/5.11.2/lib);
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 2;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",hifiNeuron_EXPORTS,GLM_FORCE_RADIANS,DEV_BUILD,HAVE_NEURON,QT_QML_LIB,QT_NETWORK_LIB,QT_CORE_LIB,QT_NO_DEBUG,QT_GUI_LIB,QT_SCRIPT_LIB,QT_MULTIMEDIA_LIB,QT_QUICK_LIB,QT_WEBCHANNEL_LIB,QT_WEBSOCKETS_LIB,QT_WEBENGINE_LIB,QT_WEBENGINECORE_LIB,QT_POSITIONING_LIB,QT_WIDGETS_LIB,QT_OPENGL_LIB,QT_XMLPATTERNS_LIB);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (/Users/kevinhouyang/Development/hifi/build/plugins/hifiNeuron,/Users/kevinhouyang/Development/hifi/plugins/hifiNeuron,/Users/kevinhouyang/Development/hifi/build/plugins/hifiNeuron/hifiNeuron_autogen/include_RelWithDebInfo,/Users/kevinhouyang/Development/hifi/build/includes,/Users/kevinhouyang/Development/hifi/build/ext/Xcode/glm/project/include,/Users/kevinhouyang/Development/hifi/libraries/shared/src,/Users/kevinhouyang/Development/hifi/build/libraries/shared,/Users/kevinhouyang/Development/hifi/libraries/controllers/src,/Users/kevinhouyang/Development/hifi/build/libraries/controllers,/Users/kevinhouyang/Development/hifi/libraries/qml/src,/Users/kevinhouyang/Development/hifi/build/libraries/qml,/Users/kevinhouyang/Development/hifi/libraries/ui/src,/Users/kevinhouyang/Development/hifi/build/libraries/ui,/Users/kevinhouyang/Development/hifi/libraries/plugins/src,/Users/kevinhouyang/Development/hifi/build/libraries/plugins,"/Users/kevinhouyang/Development/hifi/libraries/input-plugins/src","/Users/kevinhouyang/Development/hifi/build/libraries/input-plugins",/Users/kevinhouyang/Development/hifi/build/ext/Xcode/neuron/project/src/neuron/NeuronDataReader_Mac/include,/Users/kevinhouyang/Development/hifi/build/ext/Xcode/glad45/project/include,/Users/kevinhouyang/Development/hifi/libraries/audio/src);
+				INSTALL_PATH = "@rpath";
+				LIBRARY_SEARCH_PATHS = "";
+				LIBRARY_STYLE = DYNAMIC;
+				OTHER_CPLUSPLUSFLAGS = " -Wall -Wextra -fno-strict-aliasing -Wno-unused-parameter --stdlib=libc++           -DNDEBUG -fPIC -fPIC '-std=gnu++14'  ";
+				OTHER_LDFLAGS = " -dynamiclib -Wl,-headerpad_max_install_names  /Users/kevinhouyang/Development/hifi/build/libraries/shared/RelWithDebInfo/libshared.a /Users/kevinhouyang/Development/hifi/build/libraries/controllers/RelWithDebInfo/libcontrollers.a /Users/kevinhouyang/Development/hifi/build/libraries/qml/RelWithDebInfo/libqml.a /Users/kevinhouyang/Development/hifi/build/libraries/ui/RelWithDebInfo/libui.a /Users/kevinhouyang/Development/hifi/build/libraries/plugins/RelWithDebInfo/libplugins.a /Users/kevinhouyang/Development/hifi/build/libraries/input-plugins/RelWithDebInfo/libinput-plugins.a /Users/kevinhouyang/Development/hifi/build/ext/Xcode/neuron/project/src/neuron/NeuronDataReader_Mac/dylib/NeuronDataReader.dylib /Users/kevinhouyang/Development/hifi/build/libraries/ui-plugins/RelWithDebInfo/libui-plugins.a /Users/kevinhouyang/Development/hifi/build/libraries/ui/RelWithDebInfo/libui.a /Users/kevinhouyang/Development/hifi/build/libraries/qml/RelWithDebInfo/libqml.a /usr/local/Cellar/qt/5.11.2/lib/QtWebSockets.framework/QtWebSockets /Users/kevinhouyang/Development/hifi/build/libraries/gl/RelWithDebInfo/libgl.a /Users/kevinhouyang/Development/hifi/build/ext/Xcode/glad45/project/lib/libglad.a -framework OpenGL -ldl /usr/local/Cellar/qt/5.11.2/lib/QtOpenGL.framework/QtOpenGL /usr/local/Cellar/qt/5.11.2/lib/QtWidgets.framework/QtWidgets /usr/local/Cellar/qt/5.11.2/lib/QtXmlPatterns.framework/QtXmlPatterns /Users/kevinhouyang/Development/hifi/build/libraries/audio-client/RelWithDebInfo/libaudio-client.a /usr/local/Cellar/qt/5.11.2/lib/QtMultimedia.framework/QtMultimedia /usr/local/Cellar/qt/5.11.2/lib/QtWebEngine.framework/QtWebEngine /usr/local/Cellar/qt/5.11.2/lib/QtWebEngineCore.framework/QtWebEngineCore /usr/local/Cellar/qt/5.11.2/lib/QtQuick.framework/QtQuick /usr/local/Cellar/qt/5.11.2/lib/QtWebChannel.framework/QtWebChannel /usr/local/Cellar/qt/5.11.2/lib/QtPositioning.framework/QtPositioning /Users/kevinhouyang/Development/hifi/build/libraries/audio/RelWithDebInfo/libaudio.a -framework CoreAudio /Users/kevinhouyang/Development/hifi/build/libraries/pointers/RelWithDebInfo/libpointers.a /Users/kevinhouyang/Development/hifi/build/libraries/controllers/RelWithDebInfo/libcontrollers.a /usr/local/Cellar/qt/5.11.2/lib/QtQml.framework/QtQml /Users/kevinhouyang/Development/hifi/build/libraries/plugins/RelWithDebInfo/libplugins.a /Users/kevinhouyang/Development/hifi/build/libraries/networking/RelWithDebInfo/libnetworking.a /Users/kevinhouyang/Development/hifi/build/libraries/shared/RelWithDebInfo/libshared.a /usr/local/Cellar/qt/5.11.2/lib/QtScript.framework/QtScript /usr/lib/libz.dylib /usr/local/Cellar/qt/5.11.2/lib/QtNetwork.framework/QtNetwork /usr/local/Cellar/openssl/1.0.2p/lib/libssl.dylib /usr/local/Cellar/openssl/1.0.2p/lib/libcrypto.dylib /Users/kevinhouyang/Development/hifi/build/ext/Xcode/tbb/project/src/tbb/lib/libtbb.dylib /Users/kevinhouyang/Development/hifi/build/ext/Xcode/tbb/project/src/tbb/lib/libtbbmalloc.dylib -framework IOKit -framework CoreFoundation /usr/local/Cellar/qt/5.11.2/lib/QtGui.framework/QtGui /usr/local/Cellar/qt/5.11.2/lib/QtCore.framework/QtCore";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = hifiNeuron;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/kevinhouyang/Development/hifi/build/plugins/hifiNeuron;
+				SYSTEM_HEADER_SEARCH_PATHS = (/usr/local/Cellar/qt/5.11.2/lib/QtQml.framework/Headers,/usr/local/Cellar/qt/5.11.2/lib/QtNetwork.framework/Headers,/usr/local/Cellar/qt/5.11.2/lib/QtCore.framework/Headers,"/usr/local/Cellar/qt/5.11.2/./mkspecs/macx-clang",/usr/local/Cellar/qt/5.11.2/lib/QtGui.framework/Headers,/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk/System/Library/Frameworks/OpenGL.framework/Headers,/usr/local/Cellar/qt/5.11.2/lib/QtScript.framework/Headers,/usr/local/Cellar/qt/5.11.2/lib/QtMultimedia.framework/Headers,/usr/local/Cellar/qt/5.11.2/lib/QtQuick.framework/Headers,/usr/local/Cellar/qt/5.11.2/lib/QtWebChannel.framework/Headers,/usr/local/Cellar/qt/5.11.2/lib/QtWebSockets.framework/Headers,/usr/local/Cellar/qt/5.11.2/lib/QtWebEngine.framework/Headers,/usr/local/Cellar/qt/5.11.2/lib/QtWebEngineCore.framework/Headers,/usr/local/Cellar/qt/5.11.2/lib/QtPositioning.framework/Headers,/Users/kevinhouyang/Development/hifi/build/ext/Xcode/tbb/project/src/tbb/include,/usr/local/Cellar/qt/5.11.2/lib/QtWidgets.framework/Headers,/usr/local/Cellar/qt/5.11.2/lib/QtOpenGL.framework/Headers,/usr/local/Cellar/qt/5.11.2/lib/QtXmlPatterns.framework/Headers);
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = RelWithDebInfo;
+		};
+		AD8525E5C890495F87763EBB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = package;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/kevinhouyang/Development/hifi/build/plugins/hifiNeuron;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = Release;
+		};
+		BAAAB77A45F04B1E82AAFCC7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = RUN_TESTS;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/kevinhouyang/Development/hifi/build/plugins/hifiNeuron;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = Debug;
+		};
+		BCDC7AEFAC9B41D897A6AFEA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				DYLIB_COMPATIBILITY_VERSION = "";
+				DYLIB_CURRENT_VERSION = "";
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .dylib;
+				FRAMEWORK_SEARCH_PATHS = (/usr/local/Cellar/qt/5.11.2/lib);
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 3;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",hifiNeuron_EXPORTS,GLM_FORCE_RADIANS,DEV_BUILD,HAVE_NEURON,QT_QML_LIB,QT_NETWORK_LIB,QT_CORE_LIB,QT_NO_DEBUG,QT_GUI_LIB,QT_SCRIPT_LIB,QT_MULTIMEDIA_LIB,QT_QUICK_LIB,QT_WEBCHANNEL_LIB,QT_WEBSOCKETS_LIB,QT_WEBENGINE_LIB,QT_WEBENGINECORE_LIB,QT_POSITIONING_LIB,QT_WIDGETS_LIB,QT_OPENGL_LIB,QT_XMLPATTERNS_LIB);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (/Users/kevinhouyang/Development/hifi/build/plugins/hifiNeuron,/Users/kevinhouyang/Development/hifi/plugins/hifiNeuron,/Users/kevinhouyang/Development/hifi/build/plugins/hifiNeuron/hifiNeuron_autogen/include_Release,/Users/kevinhouyang/Development/hifi/build/includes,/Users/kevinhouyang/Development/hifi/build/ext/Xcode/glm/project/include,/Users/kevinhouyang/Development/hifi/libraries/shared/src,/Users/kevinhouyang/Development/hifi/build/libraries/shared,/Users/kevinhouyang/Development/hifi/libraries/controllers/src,/Users/kevinhouyang/Development/hifi/build/libraries/controllers,/Users/kevinhouyang/Development/hifi/libraries/qml/src,/Users/kevinhouyang/Development/hifi/build/libraries/qml,/Users/kevinhouyang/Development/hifi/libraries/ui/src,/Users/kevinhouyang/Development/hifi/build/libraries/ui,/Users/kevinhouyang/Development/hifi/libraries/plugins/src,/Users/kevinhouyang/Development/hifi/build/libraries/plugins,"/Users/kevinhouyang/Development/hifi/libraries/input-plugins/src","/Users/kevinhouyang/Development/hifi/build/libraries/input-plugins",/Users/kevinhouyang/Development/hifi/build/ext/Xcode/neuron/project/src/neuron/NeuronDataReader_Mac/include,/Users/kevinhouyang/Development/hifi/build/ext/Xcode/glad45/project/include,/Users/kevinhouyang/Development/hifi/libraries/audio/src);
+				INSTALL_PATH = "@rpath";
+				LIBRARY_SEARCH_PATHS = "";
+				LIBRARY_STYLE = DYNAMIC;
+				OTHER_CPLUSPLUSFLAGS = " -Wall -Wextra -fno-strict-aliasing -Wno-unused-parameter --stdlib=libc++        -DNDEBUG -fPIC -fPIC '-std=gnu++14'  ";
+				OTHER_LDFLAGS = " -dynamiclib -Wl,-headerpad_max_install_names  /Users/kevinhouyang/Development/hifi/build/libraries/shared/Release/libshared.a /Users/kevinhouyang/Development/hifi/build/libraries/controllers/Release/libcontrollers.a /Users/kevinhouyang/Development/hifi/build/libraries/qml/Release/libqml.a /Users/kevinhouyang/Development/hifi/build/libraries/ui/Release/libui.a /Users/kevinhouyang/Development/hifi/build/libraries/plugins/Release/libplugins.a /Users/kevinhouyang/Development/hifi/build/libraries/input-plugins/Release/libinput-plugins.a /Users/kevinhouyang/Development/hifi/build/ext/Xcode/neuron/project/src/neuron/NeuronDataReader_Mac/dylib/NeuronDataReader.dylib /Users/kevinhouyang/Development/hifi/build/libraries/ui-plugins/Release/libui-plugins.a /Users/kevinhouyang/Development/hifi/build/libraries/ui/Release/libui.a /Users/kevinhouyang/Development/hifi/build/libraries/qml/Release/libqml.a /usr/local/Cellar/qt/5.11.2/lib/QtWebSockets.framework/QtWebSockets /Users/kevinhouyang/Development/hifi/build/libraries/gl/Release/libgl.a /Users/kevinhouyang/Development/hifi/build/ext/Xcode/glad45/project/lib/libglad.a -framework OpenGL -ldl /usr/local/Cellar/qt/5.11.2/lib/QtOpenGL.framework/QtOpenGL /usr/local/Cellar/qt/5.11.2/lib/QtWidgets.framework/QtWidgets /usr/local/Cellar/qt/5.11.2/lib/QtXmlPatterns.framework/QtXmlPatterns /Users/kevinhouyang/Development/hifi/build/libraries/audio-client/Release/libaudio-client.a /usr/local/Cellar/qt/5.11.2/lib/QtMultimedia.framework/QtMultimedia /usr/local/Cellar/qt/5.11.2/lib/QtWebEngine.framework/QtWebEngine /usr/local/Cellar/qt/5.11.2/lib/QtWebEngineCore.framework/QtWebEngineCore /usr/local/Cellar/qt/5.11.2/lib/QtQuick.framework/QtQuick /usr/local/Cellar/qt/5.11.2/lib/QtWebChannel.framework/QtWebChannel /usr/local/Cellar/qt/5.11.2/lib/QtPositioning.framework/QtPositioning /Users/kevinhouyang/Development/hifi/build/libraries/audio/Release/libaudio.a -framework CoreAudio /Users/kevinhouyang/Development/hifi/build/libraries/pointers/Release/libpointers.a /Users/kevinhouyang/Development/hifi/build/libraries/controllers/Release/libcontrollers.a /usr/local/Cellar/qt/5.11.2/lib/QtQml.framework/QtQml /Users/kevinhouyang/Development/hifi/build/libraries/plugins/Release/libplugins.a /Users/kevinhouyang/Development/hifi/build/libraries/networking/Release/libnetworking.a /Users/kevinhouyang/Development/hifi/build/libraries/shared/Release/libshared.a /usr/local/Cellar/qt/5.11.2/lib/QtScript.framework/QtScript /usr/lib/libz.dylib /usr/local/Cellar/qt/5.11.2/lib/QtNetwork.framework/QtNetwork /usr/local/Cellar/openssl/1.0.2p/lib/libssl.dylib /usr/local/Cellar/openssl/1.0.2p/lib/libcrypto.dylib /Users/kevinhouyang/Development/hifi/build/ext/Xcode/tbb/project/src/tbb/lib/libtbb.dylib /Users/kevinhouyang/Development/hifi/build/ext/Xcode/tbb/project/src/tbb/lib/libtbbmalloc.dylib -framework IOKit -framework CoreFoundation /usr/local/Cellar/qt/5.11.2/lib/QtGui.framework/QtGui /usr/local/Cellar/qt/5.11.2/lib/QtCore.framework/QtCore";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = hifiNeuron;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/kevinhouyang/Development/hifi/build/plugins/hifiNeuron;
+				SYSTEM_HEADER_SEARCH_PATHS = (/usr/local/Cellar/qt/5.11.2/lib/QtQml.framework/Headers,/usr/local/Cellar/qt/5.11.2/lib/QtNetwork.framework/Headers,/usr/local/Cellar/qt/5.11.2/lib/QtCore.framework/Headers,"/usr/local/Cellar/qt/5.11.2/./mkspecs/macx-clang",/usr/local/Cellar/qt/5.11.2/lib/QtGui.framework/Headers,/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk/System/Library/Frameworks/OpenGL.framework/Headers,/usr/local/Cellar/qt/5.11.2/lib/QtScript.framework/Headers,/usr/local/Cellar/qt/5.11.2/lib/QtMultimedia.framework/Headers,/usr/local/Cellar/qt/5.11.2/lib/QtQuick.framework/Headers,/usr/local/Cellar/qt/5.11.2/lib/QtWebChannel.framework/Headers,/usr/local/Cellar/qt/5.11.2/lib/QtWebSockets.framework/Headers,/usr/local/Cellar/qt/5.11.2/lib/QtWebEngine.framework/Headers,/usr/local/Cellar/qt/5.11.2/lib/QtWebEngineCore.framework/Headers,/usr/local/Cellar/qt/5.11.2/lib/QtPositioning.framework/Headers,/Users/kevinhouyang/Development/hifi/build/ext/Xcode/tbb/project/src/tbb/include,/usr/local/Cellar/qt/5.11.2/lib/QtWidgets.framework/Headers,/usr/local/Cellar/qt/5.11.2/lib/QtOpenGL.framework/Headers,/usr/local/Cellar/qt/5.11.2/lib/QtXmlPatterns.framework/Headers);
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = Release;
+		};
+		C05D87AA316E4D83AA112044 /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = package;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/kevinhouyang/Development/hifi/build/plugins/hifiNeuron;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = RelWithDebInfo;
+		};
+		C9F0FACFD28344DFA07BC76C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "c++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEPLOYMENT_POSTPROCESSING = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk;
+				SYMROOT = /Users/kevinhouyang/Development/hifi/build/plugins/hifiNeuron/build;
+			};
+			name = Release;
+		};
+		CF8A9516EF644490832DC365 /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ALL_BUILD;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/kevinhouyang/Development/hifi/build/plugins/hifiNeuron;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = MinSizeRel;
+		};
+		CFD04A39CF6641828B43F696 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = install;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/kevinhouyang/Development/hifi/build/plugins/hifiNeuron;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = Debug;
+		};
+		DD40D2C36FDE4A82BC7F4420 /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ZERO_CHECK;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/kevinhouyang/Development/hifi/build/plugins/hifiNeuron;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = MinSizeRel;
+		};
+		E5291649CEEB48BEB5481B3E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ZERO_CHECK;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/kevinhouyang/Development/hifi/build/plugins/hifiNeuron;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = Debug;
+		};
+		E8483DB01CA743B2BD1C9F57 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = RUN_TESTS;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/kevinhouyang/Development/hifi/build/plugins/hifiNeuron;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		0EDFC59F75474164BCE6863C /* Build configuration list for PBXAggregateTarget "install" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CFD04A39CF6641828B43F696 /* Debug */,
+				57F4D1FB334344AD8213A92D /* Release */,
+				A1A6541AF2EA4FEBAEA65E96 /* MinSizeRel */,
+				A25ABFD515B741AABF346D19 /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		290ECC5C7C9341588ACB2827 /* Build configuration list for PBXAggregateTarget "hifiNeuron_autogen" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5617D9BC61F7469B9EC34E35 /* Debug */,
+				04F49329D51B42A98CDE639E /* Release */,
+				1098365C670942159C1A46A4 /* MinSizeRel */,
+				84C46977CE654C188AB01E29 /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		372B1E6CC2A548908BEC6337 /* Build configuration list for PBXAggregateTarget "package" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				60528C8CB6C74EC28BEA2CFD /* Debug */,
+				AD8525E5C890495F87763EBB /* Release */,
+				0652EAE787394CA69761ACCE /* MinSizeRel */,
+				C05D87AA316E4D83AA112044 /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		4D6F4B32176E4DBA91E3654B /* Build configuration list for PBXAggregateTarget "ALL_BUILD" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5BC5790FD35745909F40942D /* Debug */,
+				98D8ACC5A8834DBCB5BD2770 /* Release */,
+				CF8A9516EF644490832DC365 /* MinSizeRel */,
+				9B9DD58BE23C498C9F74B2F9 /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		53CE9C28BC964BBA928F8787 /* Build configuration list for PBXAggregateTarget "ZERO_CHECK" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E5291649CEEB48BEB5481B3E /* Debug */,
+				3E226AE47B2A489686D1106F /* Release */,
+				DD40D2C36FDE4A82BC7F4420 /* MinSizeRel */,
+				1743D0F28DD041D0ABE3C751 /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		5D141C4DCD434ED2B66827BE /* Build configuration list for PBXNativeTarget "hifiNeuron" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				19A6821FA426416CA6A18AC7 /* Debug */,
+				BCDC7AEFAC9B41D897A6AFEA /* Release */,
+				34CF9D34AC0949CB8F826B74 /* MinSizeRel */,
+				A59573241ED041E88FBD6F86 /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		712D0BFF2CB644BABA16D5CD /* Build configuration list for PBXProject "hifiNeuron" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				528EC42A91E44148AE893AC6 /* Debug */,
+				C9F0FACFD28344DFA07BC76C /* Release */,
+				70599D209B0D4FDEA061C1A2 /* MinSizeRel */,
+				5704353EFCE946C59CE596A7 /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		8A900490E3734660AF08B68D /* Build configuration list for PBXAggregateTarget "RUN_TESTS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BAAAB77A45F04B1E82AAFCC7 /* Debug */,
+				E8483DB01CA743B2BD1C9F57 /* Release */,
+				4894609FEA5B49D7B15B15BF /* MinSizeRel */,
+				9C9CDED3F61941248D99CED5 /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		9403BD712A1C42B99981689E /* Build configuration list for PBXAggregateTarget "neuron" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				102D04E2EA07406CA7EE3B58 /* Debug */,
+				9AEFAD6CE18744A79849B242 /* Release */,
+				2583F2B4AC1F4C47AB3E410B /* MinSizeRel */,
+				78FA950C6F2047E0856C197E /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A3BF240009A8441982009E6F /* Project object */;
+}

@@ -1,0 +1,43 @@
+{
+	"sources" : 
+	[
+		{
+			"file" : "/Users/kevinhouyang/Development/hifi/build/ext/Xcode/quazip/CMakeFiles/quazip"
+		},
+		{
+			"file" : "/Users/kevinhouyang/Development/hifi/build/ext/Xcode/quazip/CMakeFiles/quazip.rule"
+		},
+		{
+			"file" : "/Users/kevinhouyang/Development/hifi/build/ext/Xcode/quazip/CMakeFiles/CMakeFiles/quazip-complete.rule"
+		},
+		{
+			"file" : "/Users/kevinhouyang/Development/hifi/build/ext/Xcode/quazip/project/src/quazip-stamp/CMakeFiles/quazip-install.rule"
+		},
+		{
+			"file" : "/Users/kevinhouyang/Development/hifi/build/ext/Xcode/quazip/project/src/quazip-stamp/CMakeFiles/quazip-mkdir.rule"
+		},
+		{
+			"file" : "/Users/kevinhouyang/Development/hifi/build/ext/Xcode/quazip/project/src/quazip-stamp/CMakeFiles/quazip-download.rule"
+		},
+		{
+			"file" : "/Users/kevinhouyang/Development/hifi/build/ext/Xcode/quazip/project/src/quazip-stamp/CMakeFiles/quazip-update.rule"
+		},
+		{
+			"file" : "/Users/kevinhouyang/Development/hifi/build/ext/Xcode/quazip/project/src/quazip-stamp/CMakeFiles/quazip-patch.rule"
+		},
+		{
+			"file" : "/Users/kevinhouyang/Development/hifi/build/ext/Xcode/quazip/project/src/quazip-stamp/CMakeFiles/quazip-configure.rule"
+		},
+		{
+			"file" : "/Users/kevinhouyang/Development/hifi/build/ext/Xcode/quazip/project/src/quazip-stamp/CMakeFiles/quazip-build.rule"
+		}
+	],
+	"target" : 
+	{
+		"labels" : 
+		[
+			"quazip"
+		],
+		"name" : "quazip"
+	}
+}

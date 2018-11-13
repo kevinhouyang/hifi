@@ -1,0 +1,43 @@
+{
+	"sources" : 
+	[
+		{
+			"file" : "/Users/kevinhouyang/Development/hifi/build/ext/Xcode/json/CMakeFiles/json"
+		},
+		{
+			"file" : "/Users/kevinhouyang/Development/hifi/build/ext/Xcode/json/CMakeFiles/json.rule"
+		},
+		{
+			"file" : "/Users/kevinhouyang/Development/hifi/build/ext/Xcode/json/CMakeFiles/CMakeFiles/json-complete.rule"
+		},
+		{
+			"file" : "/Users/kevinhouyang/Development/hifi/build/ext/Xcode/json/project/src/json-stamp/CMakeFiles/json-install.rule"
+		},
+		{
+			"file" : "/Users/kevinhouyang/Development/hifi/build/ext/Xcode/json/project/src/json-stamp/CMakeFiles/json-mkdir.rule"
+		},
+		{
+			"file" : "/Users/kevinhouyang/Development/hifi/build/ext/Xcode/json/project/src/json-stamp/CMakeFiles/json-download.rule"
+		},
+		{
+			"file" : "/Users/kevinhouyang/Development/hifi/build/ext/Xcode/json/project/src/json-stamp/CMakeFiles/json-update.rule"
+		},
+		{
+			"file" : "/Users/kevinhouyang/Development/hifi/build/ext/Xcode/json/project/src/json-stamp/CMakeFiles/json-patch.rule"
+		},
+		{
+			"file" : "/Users/kevinhouyang/Development/hifi/build/ext/Xcode/json/project/src/json-stamp/CMakeFiles/json-configure.rule"
+		},
+		{
+			"file" : "/Users/kevinhouyang/Development/hifi/build/ext/Xcode/json/project/src/json-stamp/CMakeFiles/json-build.rule"
+		}
+	],
+	"target" : 
+	{
+		"labels" : 
+		[
+			"json"
+		],
+		"name" : "json"
+	}
+}

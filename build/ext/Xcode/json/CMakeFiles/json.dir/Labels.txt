@@ -1,0 +1,13 @@
+# Target labels
+ json
+# Source files and their labels
+/Users/kevinhouyang/Development/hifi/build/ext/Xcode/json/CMakeFiles/json
+/Users/kevinhouyang/Development/hifi/build/ext/Xcode/json/CMakeFiles/json.rule
+/Users/kevinhouyang/Development/hifi/build/ext/Xcode/json/CMakeFiles/CMakeFiles/json-complete.rule
+/Users/kevinhouyang/Development/hifi/build/ext/Xcode/json/project/src/json-stamp/CMakeFiles/json-install.rule
+/Users/kevinhouyang/Development/hifi/build/ext/Xcode/json/project/src/json-stamp/CMakeFiles/json-mkdir.rule
+/Users/kevinhouyang/Development/hifi/build/ext/Xcode/json/project/src/json-stamp/CMakeFiles/json-download.rule
+/Users/kevinhouyang/Development/hifi/build/ext/Xcode/json/project/src/json-stamp/CMakeFiles/json-update.rule
+/Users/kevinhouyang/Development/hifi/build/ext/Xcode/json/project/src/json-stamp/CMakeFiles/json-patch.rule
+/Users/kevinhouyang/Development/hifi/build/ext/Xcode/json/project/src/json-stamp/CMakeFiles/json-configure.rule
+/Users/kevinhouyang/Development/hifi/build/ext/Xcode/json/project/src/json-stamp/CMakeFiles/json-build.rule

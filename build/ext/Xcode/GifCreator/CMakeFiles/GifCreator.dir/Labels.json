@@ -1,0 +1,43 @@
+{
+	"sources" : 
+	[
+		{
+			"file" : "/Users/kevinhouyang/Development/hifi/build/ext/Xcode/GifCreator/CMakeFiles/GifCreator"
+		},
+		{
+			"file" : "/Users/kevinhouyang/Development/hifi/build/ext/Xcode/GifCreator/CMakeFiles/GifCreator.rule"
+		},
+		{
+			"file" : "/Users/kevinhouyang/Development/hifi/build/ext/Xcode/GifCreator/CMakeFiles/CMakeFiles/GifCreator-complete.rule"
+		},
+		{
+			"file" : "/Users/kevinhouyang/Development/hifi/build/ext/Xcode/GifCreator/project/src/GifCreator-stamp/CMakeFiles/GifCreator-install.rule"
+		},
+		{
+			"file" : "/Users/kevinhouyang/Development/hifi/build/ext/Xcode/GifCreator/project/src/GifCreator-stamp/CMakeFiles/GifCreator-mkdir.rule"
+		},
+		{
+			"file" : "/Users/kevinhouyang/Development/hifi/build/ext/Xcode/GifCreator/project/src/GifCreator-stamp/CMakeFiles/GifCreator-download.rule"
+		},
+		{
+			"file" : "/Users/kevinhouyang/Development/hifi/build/ext/Xcode/GifCreator/project/src/GifCreator-stamp/CMakeFiles/GifCreator-update.rule"
+		},
+		{
+			"file" : "/Users/kevinhouyang/Development/hifi/build/ext/Xcode/GifCreator/project/src/GifCreator-stamp/CMakeFiles/GifCreator-patch.rule"
+		},
+		{
+			"file" : "/Users/kevinhouyang/Development/hifi/build/ext/Xcode/GifCreator/project/src/GifCreator-stamp/CMakeFiles/GifCreator-configure.rule"
+		},
+		{
+			"file" : "/Users/kevinhouyang/Development/hifi/build/ext/Xcode/GifCreator/project/src/GifCreator-stamp/CMakeFiles/GifCreator-build.rule"
+		}
+	],
+	"target" : 
+	{
+		"labels" : 
+		[
+			"GifCreator"
+		],
+		"name" : "GifCreator"
+	}
+}

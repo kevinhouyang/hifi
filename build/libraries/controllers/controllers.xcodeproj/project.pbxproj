@@ -1,0 +1,1576 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXAggregateTarget section */
+		324A15BFFEE94E94BA16B115 /* ZERO_CHECK */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = F1F2E4AA06A14D5DBE1DE54F /* Build configuration list for PBXAggregateTarget "ZERO_CHECK" */;
+			buildPhases = (
+				A4114F9CDDAC40DE93244FC5 /* CMake Rules */,
+			);
+			dependencies = (
+			);
+			name = ZERO_CHECK;
+			productName = ZERO_CHECK;
+		};
+		76BBA07C604F4D0E89A822F7 /* RUN_TESTS */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = BDDE3ACE6D154658A0B13922 /* Build configuration list for PBXAggregateTarget "RUN_TESTS" */;
+			buildPhases = (
+				9768E22FDE4D4FC6AED7E814 /* CMake PostBuild Rules */,
+			);
+			dependencies = (
+			);
+			name = RUN_TESTS;
+			productName = RUN_TESTS;
+		};
+		7A7E10E72F85450A98FB2D43 /* install */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = FCB01C7B44CD41A0AFE77C4C /* Build configuration list for PBXAggregateTarget "install" */;
+			buildPhases = (
+				3E67292C498E44A498348F84 /* CMake PostBuild Rules */,
+			);
+			dependencies = (
+				C8727B045F9B4CA7B51038D0 /* PBXTargetDependency */,
+			);
+			name = install;
+			productName = install;
+		};
+		A0EF40283FD3451D881D67E2 /* package */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 308DF4EF1548486187975C3C /* Build configuration list for PBXAggregateTarget "package" */;
+			buildPhases = (
+				30B4FA456EF041F1BE459C95 /* CMake PostBuild Rules */,
+			);
+			dependencies = (
+				5E007730B2FD46AE9898F014 /* PBXTargetDependency */,
+			);
+			name = package;
+			productName = package;
+		};
+		B9FE216284A2435384E49A92 /* controllers_autogen */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 51F6848FC3634274BC223A63 /* Build configuration list for PBXAggregateTarget "controllers_autogen" */;
+			buildPhases = (
+				1379C5645FE645DCB5671969 /* CMake Rules */,
+			);
+			dependencies = (
+				635646E9FD164DC08FA1A309 /* PBXTargetDependency */,
+			);
+			name = controllers_autogen;
+			productName = controllers_autogen;
+		};
+		EC7358D97DFB4AB0AF8A20EB /* ALL_BUILD */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = DF2DF8A4D0774D9298861F70 /* Build configuration list for PBXAggregateTarget "ALL_BUILD" */;
+			buildPhases = (
+				F0F914168BE34A4CB1677536 /* CMake Rules */,
+			);
+			dependencies = (
+				4D8D78E2FA754539A10D278C /* PBXTargetDependency */,
+				BBE4473286D14EEEBC89109A /* PBXTargetDependency */,
+			);
+			name = ALL_BUILD;
+			productName = ALL_BUILD;
+		};
+/* End PBXAggregateTarget section */
+
+/* Begin PBXBuildFile section */
+		00A0CB9D349D4A35B13B8F0C /* /Users/kevinhouyang/Development/hifi/libraries/controllers/src/controllers/Actions.cpp */ = {isa = PBXBuildFile; fileRef = 1B4591B1DC864B63AC651BB4 /* /Users/kevinhouyang/Development/hifi/libraries/controllers/src/controllers/Actions.cpp */; };
+		02D6073042744408A97D8D86 /* /Users/kevinhouyang/Development/hifi/libraries/controllers/src/controllers/Pose.cpp */ = {isa = PBXBuildFile; fileRef = EAB6BDFC23BC4356B3BBE336 /* /Users/kevinhouyang/Development/hifi/libraries/controllers/src/controllers/Pose.cpp */; };
+		052D8AF1733C427A9BCB20AB /* /Users/kevinhouyang/Development/hifi/libraries/controllers/src/controllers/impl/endpoints/ArrayEndpoint.h */ = {isa = PBXBuildFile; fileRef = 420A3889421A40E8B45F0DC9 /* /Users/kevinhouyang/Development/hifi/libraries/controllers/src/controllers/impl/endpoints/ArrayEndpoint.h */; };
+		0763618171144F4BA258DBB5 /* /Users/kevinhouyang/Development/hifi/libraries/controllers/src/controllers/InputDevice.cpp */ = {isa = PBXBuildFile; fileRef = 408D239CA8E246C3AC79D10D /* /Users/kevinhouyang/Development/hifi/libraries/controllers/src/controllers/InputDevice.cpp */; };
+		0A1CB0C213564274AE29135E /* /Users/kevinhouyang/Development/hifi/libraries/controllers/src/controllers/impl/filters/ConstrainToIntegerFilter.h */ = {isa = PBXBuildFile; fileRef = 35DE7C148CDA49C1BEFDFD2C /* /Users/kevinhouyang/Development/hifi/libraries/controllers/src/controllers/impl/filters/ConstrainToIntegerFilter.h */; };
+		0C4BBF83250A4D10A979762B /* /Users/kevinhouyang/Development/hifi/libraries/controllers/src/controllers/InputRecorder.h */ = {isa = PBXBuildFile; fileRef = 46C8DD4BD1FF498F8C0F5FDC /* /Users/kevinhouyang/Development/hifi/libraries/controllers/src/controllers/InputRecorder.h */; };
+		0C6104C716084A428DAE6B31 /* /Users/kevinhouyang/Development/hifi/libraries/controllers/src/controllers/impl/conditionals/AndConditional.h */ = {isa = PBXBuildFile; fileRef = 109DD0F8740C41E9A2A4CCA6 /* /Users/kevinhouyang/Development/hifi/libraries/controllers/src/controllers/impl/conditionals/AndConditional.h */; };
+		13B67BC0DA8249CFA9B44C2F /* /Users/kevinhouyang/Development/hifi/libraries/controllers/src/controllers/StateController.h */ = {isa = PBXBuildFile; fileRef = 3A4D6DF1F67448A5BF90E1BA /* /Users/kevinhouyang/Development/hifi/libraries/controllers/src/controllers/StateController.h */; };
+		157ADF63F4074A9CB113BA5D /* /Users/kevinhouyang/Development/hifi/libraries/controllers/src/controllers/Pose.h */ = {isa = PBXBuildFile; fileRef = EAABE9BF94DA434DB04CA89F /* /Users/kevinhouyang/Development/hifi/libraries/controllers/src/controllers/Pose.h */; };
+		15958F3763FC4EBEA33E3332 /* /Users/kevinhouyang/Development/hifi/libraries/controllers/src/controllers/impl/Filter.h */ = {isa = PBXBuildFile; fileRef = 7AE3F8BABC0847C0967385AE /* /Users/kevinhouyang/Development/hifi/libraries/controllers/src/controllers/impl/Filter.h */; };
+		177BF33B0DB24104AE322FE6 /* /Users/kevinhouyang/Development/hifi/libraries/controllers/src/controllers/impl/endpoints/ActionEndpoint.h */ = {isa = PBXBuildFile; fileRef = 6E1A6758A8AE48E4BE3F0E86 /* /Users/kevinhouyang/Development/hifi/libraries/controllers/src/controllers/impl/endpoints/ActionEndpoint.h */; };
+		183690EBAF794AD3BE23FC11 /* /Users/kevinhouyang/Development/hifi/libraries/controllers/src/controllers/impl/Mapping.h */ = {isa = PBXBuildFile; fileRef = 62E7E371A27347C88241EB5F /* /Users/kevinhouyang/Development/hifi/libraries/controllers/src/controllers/impl/Mapping.h */; };
+		1A6AD0442C504D278256CEF0 /* /Users/kevinhouyang/Development/hifi/libraries/controllers/src/controllers/StandardControls.h */ = {isa = PBXBuildFile; fileRef = F785324F4664487BAE8AC7DB /* /Users/kevinhouyang/Development/hifi/libraries/controllers/src/controllers/StandardControls.h */; };
+		1C2EBB17D4A54ED89A8EA6E1 /* /Users/kevinhouyang/Development/hifi/libraries/controllers/src/controllers/impl/filters/NotFilter.h */ = {isa = PBXBuildFile; fileRef = B5BA5F6A471F47C2AA18C4B0 /* /Users/kevinhouyang/Development/hifi/libraries/controllers/src/controllers/impl/filters/NotFilter.h */; };
+		1E1E531BF0834837A7540FB6 /* /Users/kevinhouyang/Development/hifi/libraries/controllers/src/controllers/Actions.h */ = {isa = PBXBuildFile; fileRef = BAFEF5719DBC44E5A7C2D4B5 /* /Users/kevinhouyang/Development/hifi/libraries/controllers/src/controllers/Actions.h */; };
+		1E96A4C054364427B065D0A3 /* /Users/kevinhouyang/Development/hifi/libraries/controllers/src/controllers/impl/conditionals/AndConditional.cpp */ = {isa = PBXBuildFile; fileRef = 105E821A6E83493E85D24801 /* /Users/kevinhouyang/Development/hifi/libraries/controllers/src/controllers/impl/conditionals/AndConditional.cpp */; };
+		1ED7E0E92A234BF89D390573 /* /Users/kevinhouyang/Development/hifi/libraries/controllers/src/controllers/impl/filters/ClampFilter.h */ = {isa = PBXBuildFile; fileRef = 4133655232574741B65F991A /* /Users/kevinhouyang/Development/hifi/libraries/controllers/src/controllers/impl/filters/ClampFilter.h */; };
+		1EE66759EDEC4B45B39C686D /* /Users/kevinhouyang/Development/hifi/libraries/controllers/src/controllers/Logging.h */ = {isa = PBXBuildFile; fileRef = CB7C4FB7022A45E69CCE42C9 /* /Users/kevinhouyang/Development/hifi/libraries/controllers/src/controllers/Logging.h */; };
+		1FB700346FE141FBAA3E0F70 /* /Users/kevinhouyang/Development/hifi/libraries/controllers/src/controllers/impl/endpoints/StandardEndpoint.h */ = {isa = PBXBuildFile; fileRef = FAFC4B24D9844EC8A958124D /* /Users/kevinhouyang/Development/hifi/libraries/controllers/src/controllers/impl/endpoints/StandardEndpoint.h */; };
+		28B0134CBBEE42AF9181B8F9 /* /Users/kevinhouyang/Development/hifi/build/libraries/controllers/controllers_autogen/mocs_compilation.cpp */ = {isa = PBXBuildFile; fileRef = 43A4577AC45643359926BA44 /* /Users/kevinhouyang/Development/hifi/build/libraries/controllers/controllers_autogen/mocs_compilation.cpp */; };
+		2BB7CA7E50DB4617894CFD7E /* /Users/kevinhouyang/Development/hifi/libraries/controllers/src/controllers/impl/filters/ExponentialSmoothingFilter.h */ = {isa = PBXBuildFile; fileRef = 6D60526BB5FA469A932397A7 /* /Users/kevinhouyang/Development/hifi/libraries/controllers/src/controllers/impl/filters/ExponentialSmoothingFilter.h */; };
+		2D49225CD4D74D1AACCE1AAE /* /Users/kevinhouyang/Development/hifi/libraries/controllers/src/controllers/Input.cpp */ = {isa = PBXBuildFile; fileRef = 6236167BA6034F7D8B4870D3 /* /Users/kevinhouyang/Development/hifi/libraries/controllers/src/controllers/Input.cpp */; };
+		2F86AB508C3C485AB6463319 /* /Users/kevinhouyang/Development/hifi/libraries/controllers/src/controllers/impl/endpoints/ScriptEndpoint.h */ = {isa = PBXBuildFile; fileRef = 8C64127C1B5D468C952AA17A /* /Users/kevinhouyang/Development/hifi/libraries/controllers/src/controllers/impl/endpoints/ScriptEndpoint.h */; };
+		3108330B858E44B3BF45901D /* /Users/kevinhouyang/Development/hifi/libraries/controllers/src/controllers/impl/MappingBuilderProxy.cpp */ = {isa = PBXBuildFile; fileRef = EBBEDC602AF44DC9AB690A3D /* /Users/kevinhouyang/Development/hifi/libraries/controllers/src/controllers/impl/MappingBuilderProxy.cpp */; };
+		38CCBD908531418AB2C4E244 /* /Users/kevinhouyang/Development/hifi/libraries/controllers/src/controllers/impl/endpoints/ScriptEndpoint.cpp */ = {isa = PBXBuildFile; fileRef = E6E9614064524116902E0F97 /* /Users/kevinhouyang/Development/hifi/libraries/controllers/src/controllers/impl/endpoints/ScriptEndpoint.cpp */; };
+		3E00F2C6462A4656B5B05E7E /* /Users/kevinhouyang/Development/hifi/libraries/controllers/src/controllers/DeviceProxy.h */ = {isa = PBXBuildFile; fileRef = 26EEEE64CC604B588E47023A /* /Users/kevinhouyang/Development/hifi/libraries/controllers/src/controllers/DeviceProxy.h */; };
+		3EB77018ADA542E38DD14D6F /* /Users/kevinhouyang/Development/hifi/libraries/controllers/src/controllers/impl/endpoints/AnyEndpoint.cpp */ = {isa = PBXBuildFile; fileRef = 21904B27C1194A489941B19A /* /Users/kevinhouyang/Development/hifi/libraries/controllers/src/controllers/impl/endpoints/AnyEndpoint.cpp */; };
+		3F5A976D17144D039D1F221A /* /Users/kevinhouyang/Development/hifi/libraries/controllers/src/controllers/impl/endpoints/JSEndpoint.h */ = {isa = PBXBuildFile; fileRef = E2713E35708A491D9A7FBAB9 /* /Users/kevinhouyang/Development/hifi/libraries/controllers/src/controllers/impl/endpoints/JSEndpoint.h */; };
+		4486C8D9BC9E4BC5A4F2D64A /* /Users/kevinhouyang/Development/hifi/libraries/controllers/src/controllers/impl/Conditional.h */ = {isa = PBXBuildFile; fileRef = 31E11977A4BF49F2AA606844 /* /Users/kevinhouyang/Development/hifi/libraries/controllers/src/controllers/impl/Conditional.h */; };
+		4663E1DFFF074C4D9BD90C04 /* /Users/kevinhouyang/Development/hifi/libraries/controllers/src/controllers/impl/Conditional.cpp */ = {isa = PBXBuildFile; fileRef = 41FB394BB3B9418FA0CC9458 /* /Users/kevinhouyang/Development/hifi/libraries/controllers/src/controllers/impl/Conditional.cpp */; };
+		49B5C83B56674F22BFDD52F2 /* /Users/kevinhouyang/Development/hifi/libraries/controllers/src/controllers/impl/endpoints/JSEndpoint.cpp */ = {isa = PBXBuildFile; fileRef = 8865DE84BBFD4183BB225E7D /* /Users/kevinhouyang/Development/hifi/libraries/controllers/src/controllers/impl/endpoints/JSEndpoint.cpp */; };
+		4CC08F3A264145C7811D4530 /* /Users/kevinhouyang/Development/hifi/libraries/controllers/src/controllers/impl/filters/ExponentialSmoothingFilter.cpp */ = {isa = PBXBuildFile; fileRef = D46B53C5CB544F56BDF8C27D /* /Users/kevinhouyang/Development/hifi/libraries/controllers/src/controllers/impl/filters/ExponentialSmoothingFilter.cpp */; };
+		502A9067E5DB46E9938D079C /* /Users/kevinhouyang/Development/hifi/libraries/controllers/src/controllers/impl/filters/TransformFilter.h */ = {isa = PBXBuildFile; fileRef = 0CC07B0BD77642129ABEF678 /* /Users/kevinhouyang/Development/hifi/libraries/controllers/src/controllers/impl/filters/TransformFilter.h */; };
+		563BA3743FA7433C9D456B74 /* /Users/kevinhouyang/Development/hifi/libraries/controllers/src/controllers/impl/filters/ScaleFilter.cpp */ = {isa = PBXBuildFile; fileRef = 6A3FF5B26D0F4F0B95DC6B8B /* /Users/kevinhouyang/Development/hifi/libraries/controllers/src/controllers/impl/filters/ScaleFilter.cpp */; };
+		5877D7A183A34795B1989258 /* /Users/kevinhouyang/Development/hifi/libraries/controllers/src/controllers/impl/conditionals/NotConditional.cpp */ = {isa = PBXBuildFile; fileRef = 0136FD4300C3480BB77B1D91 /* /Users/kevinhouyang/Development/hifi/libraries/controllers/src/controllers/impl/conditionals/NotConditional.cpp */; };
+		59EB815BDFFF4A79A23BA859 /* /Users/kevinhouyang/Development/hifi/libraries/controllers/src/controllers/UserInputMapper.h */ = {isa = PBXBuildFile; fileRef = 15C0247E96984FFA926490D7 /* /Users/kevinhouyang/Development/hifi/libraries/controllers/src/controllers/UserInputMapper.h */; };
+		5AFD2E7F7AD4457C9C1B3D2E /* /Users/kevinhouyang/Development/hifi/libraries/controllers/src/controllers/ScriptingInterface.cpp */ = {isa = PBXBuildFile; fileRef = 089438AE280D4F9B92B4A958 /* /Users/kevinhouyang/Development/hifi/libraries/controllers/src/controllers/ScriptingInterface.cpp */; };
+		5F530CD948134348A890F41A /* /Users/kevinhouyang/Development/hifi/libraries/controllers/src/controllers/impl/filters/AccelerationLimiterFilter.h */ = {isa = PBXBuildFile; fileRef = 8516B31048FE48EAAB88C2E2 /* /Users/kevinhouyang/Development/hifi/libraries/controllers/src/controllers/impl/filters/AccelerationLimiterFilter.h */; };
+		6292025B115941828A2845FF /* /Users/kevinhouyang/Development/hifi/libraries/controllers/src/controllers/StandardController.h */ = {isa = PBXBuildFile; fileRef = 522D79928D56405C91288B02 /* /Users/kevinhouyang/Development/hifi/libraries/controllers/src/controllers/StandardController.h */; };
+		6647E109A3254914B6C994FC /* /Users/kevinhouyang/Development/hifi/libraries/controllers/src/controllers/impl/endpoints/AnyEndpoint.h */ = {isa = PBXBuildFile; fileRef = 41E08A5755C6492ABD6D32F8 /* /Users/kevinhouyang/Development/hifi/libraries/controllers/src/controllers/impl/endpoints/AnyEndpoint.h */; };
+		6AF5838ED95C454FA385A93E /* /Users/kevinhouyang/Development/hifi/libraries/controllers/src/controllers/impl/endpoints/InputEndpoint.cpp */ = {isa = PBXBuildFile; fileRef = 802F6C70025C483C9931242A /* /Users/kevinhouyang/Development/hifi/libraries/controllers/src/controllers/impl/endpoints/InputEndpoint.cpp */; };
+		6B5CC0627AEF451AB12F62AD /* /Users/kevinhouyang/Development/hifi/libraries/controllers/src/controllers/impl/filters/HysteresisFilter.h */ = {isa = PBXBuildFile; fileRef = 15F1E279B0244CB8BE4F045F /* /Users/kevinhouyang/Development/hifi/libraries/controllers/src/controllers/impl/filters/HysteresisFilter.h */; };
+		6BBA953FF27C4F508B1FAF64 /* /Users/kevinhouyang/Development/hifi/libraries/controllers/src/controllers/UserInputMapper.cpp */ = {isa = PBXBuildFile; fileRef = 13BCF48C027A430D8D109AC3 /* /Users/kevinhouyang/Development/hifi/libraries/controllers/src/controllers/UserInputMapper.cpp */; };
+		75A13812AE7D4416A7EAAE87 /* /Users/kevinhouyang/Development/hifi/libraries/controllers/src/controllers/impl/Endpoint.cpp */ = {isa = PBXBuildFile; fileRef = 5088A83D563E49FAB788116E /* /Users/kevinhouyang/Development/hifi/libraries/controllers/src/controllers/impl/Endpoint.cpp */; };
+		75E0B4205E454A99A77B3520 /* /Users/kevinhouyang/Development/hifi/libraries/controllers/src/controllers/impl/filters/PulseFilter.cpp */ = {isa = PBXBuildFile; fileRef = 1004C0397AB34279968E323B /* /Users/kevinhouyang/Development/hifi/libraries/controllers/src/controllers/impl/filters/PulseFilter.cpp */; };
+		76D7B6E51E1743238AF9FF51 /* /Users/kevinhouyang/Development/hifi/libraries/controllers/src/controllers/StandardController.cpp */ = {isa = PBXBuildFile; fileRef = 07AF73CA15384DD59CC7FC8E /* /Users/kevinhouyang/Development/hifi/libraries/controllers/src/controllers/StandardController.cpp */; };
+		82687351F35547DBAB12265E /* /Users/kevinhouyang/Development/hifi/libraries/controllers/src/controllers/impl/filters/ScaleFilter.h */ = {isa = PBXBuildFile; fileRef = 8A2227896C804765844B204A /* /Users/kevinhouyang/Development/hifi/libraries/controllers/src/controllers/impl/filters/ScaleFilter.h */; };
+		853A095B5C8F4C9DAF07A763 /* /Users/kevinhouyang/Development/hifi/libraries/controllers/src/controllers/impl/endpoints/CompositeEndpoint.cpp */ = {isa = PBXBuildFile; fileRef = 55C636651E9F45F29EA40FCB /* /Users/kevinhouyang/Development/hifi/libraries/controllers/src/controllers/impl/endpoints/CompositeEndpoint.cpp */; };
+		854CD52FF3784548B82E0787 /* /Users/kevinhouyang/Development/hifi/libraries/controllers/src/controllers/impl/Endpoint.h */ = {isa = PBXBuildFile; fileRef = 7E800BCA8409494C95C057D5 /* /Users/kevinhouyang/Development/hifi/libraries/controllers/src/controllers/impl/Endpoint.h */; };
+		894036C90A2B4F9A9811826A /* /Users/kevinhouyang/Development/hifi/libraries/controllers/src/controllers/impl/filters/DeadZoneFilter.cpp */ = {isa = PBXBuildFile; fileRef = 2B2DB55A5A614EDAA17891BB /* /Users/kevinhouyang/Development/hifi/libraries/controllers/src/controllers/impl/filters/DeadZoneFilter.cpp */; };
+		89866D08A7C2465B86BEBD21 /* /Users/kevinhouyang/Development/hifi/libraries/controllers/src/controllers/InputDevice.h */ = {isa = PBXBuildFile; fileRef = 33D678D5D855455FA9C2A641 /* /Users/kevinhouyang/Development/hifi/libraries/controllers/src/controllers/InputDevice.h */; };
+		8FE41CC51B184444887014F1 /* /Users/kevinhouyang/Development/hifi/libraries/controllers/src/controllers/impl/RouteBuilderProxy.h */ = {isa = PBXBuildFile; fileRef = 2461CE8D77E44AF3A59A902F /* /Users/kevinhouyang/Development/hifi/libraries/controllers/src/controllers/impl/RouteBuilderProxy.h */; };
+		945F6AF18D54449989C3F1F6 /* /Users/kevinhouyang/Development/hifi/libraries/controllers/src/controllers/ScriptingInterface.h */ = {isa = PBXBuildFile; fileRef = 0C8F965932F14A4C819E2BCC /* /Users/kevinhouyang/Development/hifi/libraries/controllers/src/controllers/ScriptingInterface.h */; };
+		992AE48BCA8242788C82BA46 /* /Users/kevinhouyang/Development/hifi/libraries/controllers/src/controllers/impl/endpoints/InputEndpoint.h */ = {isa = PBXBuildFile; fileRef = DDAA02755A1F4E31B952E4EA /* /Users/kevinhouyang/Development/hifi/libraries/controllers/src/controllers/impl/endpoints/InputEndpoint.h */; };
+		9E51BA91E5DB4394BD8068E6 /* /Users/kevinhouyang/Development/hifi/libraries/controllers/src/controllers/impl/filters/NotFilter.cpp */ = {isa = PBXBuildFile; fileRef = 93472718997B4234B85600FF /* /Users/kevinhouyang/Development/hifi/libraries/controllers/src/controllers/impl/filters/NotFilter.cpp */; };
+		9F3593CF56BA415A8E60D69A /* /Users/kevinhouyang/Development/hifi/libraries/controllers/src/controllers/impl/filters/PostTransformFilter.h */ = {isa = PBXBuildFile; fileRef = 920FF679C6374145BDDA355A /* /Users/kevinhouyang/Development/hifi/libraries/controllers/src/controllers/impl/filters/PostTransformFilter.h */; };
+		AE285AE2AD3D4437ABFBDFE6 /* /Users/kevinhouyang/Development/hifi/libraries/controllers/src/controllers/impl/filters/LowVelocityFilter.h */ = {isa = PBXBuildFile; fileRef = A17328F0224A44CE96E8D347 /* /Users/kevinhouyang/Development/hifi/libraries/controllers/src/controllers/impl/filters/LowVelocityFilter.h */; };
+		AE3731123F6047B2A2AC59DD /* /Users/kevinhouyang/Development/hifi/libraries/controllers/src/controllers/impl/conditionals/ScriptConditional.h */ = {isa = PBXBuildFile; fileRef = A22A5C7E58AF452F981F2248 /* /Users/kevinhouyang/Development/hifi/libraries/controllers/src/controllers/impl/conditionals/ScriptConditional.h */; };
+		B186E40CE29C49709B0EF385 /* /Users/kevinhouyang/Development/hifi/libraries/controllers/CMakeLists.txt */ = {isa = PBXBuildFile; fileRef = 62BF17BB7AEE443886654FB3 /* /Users/kevinhouyang/Development/hifi/libraries/controllers/CMakeLists.txt */; };
+		B9FCFDEB4D4C414F8A7F6743 /* /Users/kevinhouyang/Development/hifi/libraries/controllers/src/controllers/impl/filters/ClampFilter.cpp */ = {isa = PBXBuildFile; fileRef = 9F6570D921C646FDB065543C /* /Users/kevinhouyang/Development/hifi/libraries/controllers/src/controllers/impl/filters/ClampFilter.cpp */; };
+		BB6ADC23F9014DCAA876E0C3 /* /Users/kevinhouyang/Development/hifi/libraries/controllers/src/controllers/impl/RouteBuilderProxy.cpp */ = {isa = PBXBuildFile; fileRef = ACB517106FFB4CC0837D1205 /* /Users/kevinhouyang/Development/hifi/libraries/controllers/src/controllers/impl/RouteBuilderProxy.cpp */; };
+		BC9AD411BCD14BECAB3BC97B /* /Users/kevinhouyang/Development/hifi/libraries/controllers/src/controllers/InputRecorder.cpp */ = {isa = PBXBuildFile; fileRef = 999487A7EA8F4F5998EE2313 /* /Users/kevinhouyang/Development/hifi/libraries/controllers/src/controllers/InputRecorder.cpp */; };
+		C49F02CEB72849FD990629C7 /* /Users/kevinhouyang/Development/hifi/libraries/controllers/src/controllers/impl/endpoints/CompositeEndpoint.h */ = {isa = PBXBuildFile; fileRef = 9F514724594D46C087BFC7D0 /* /Users/kevinhouyang/Development/hifi/libraries/controllers/src/controllers/impl/endpoints/CompositeEndpoint.h */; };
+		C77C8B2E3DDA4FB7887E04DB /* /Users/kevinhouyang/Development/hifi/libraries/controllers/src/controllers/impl/Filter.cpp */ = {isa = PBXBuildFile; fileRef = 60695D9F3C9A452BAEAFC049 /* /Users/kevinhouyang/Development/hifi/libraries/controllers/src/controllers/impl/Filter.cpp */; };
+		C90F32ABAA4E484BA0DA7EB5 /* /Users/kevinhouyang/Development/hifi/libraries/controllers/src/controllers/impl/conditionals/EndpointConditional.h */ = {isa = PBXBuildFile; fileRef = F9BBEFDF557A4D0692C5A5B0 /* /Users/kevinhouyang/Development/hifi/libraries/controllers/src/controllers/impl/conditionals/EndpointConditional.h */; };
+		CA4321D83D364223875F3219 /* /Users/kevinhouyang/Development/hifi/libraries/controllers/src/controllers/impl/filters/DeadZoneFilter.h */ = {isa = PBXBuildFile; fileRef = 4CE1B86C510A42D2A2873841 /* /Users/kevinhouyang/Development/hifi/libraries/controllers/src/controllers/impl/filters/DeadZoneFilter.h */; };
+		CAFD84C7326C451CAB01ABAB /* /Users/kevinhouyang/Development/hifi/libraries/controllers/src/controllers/impl/filters/LowVelocityFilter.cpp */ = {isa = PBXBuildFile; fileRef = BB323AB3BCB7477BBB8332E0 /* /Users/kevinhouyang/Development/hifi/libraries/controllers/src/controllers/impl/filters/LowVelocityFilter.cpp */; };
+		D0298C4B91624B0691304192 /* /Users/kevinhouyang/Development/hifi/libraries/controllers/src/controllers/impl/filters/PulseFilter.h */ = {isa = PBXBuildFile; fileRef = 9C76D856037D4F6F854189B8 /* /Users/kevinhouyang/Development/hifi/libraries/controllers/src/controllers/impl/filters/PulseFilter.h */; };
+		D2AF72500F814208AA3CD8BE /* /Users/kevinhouyang/Development/hifi/libraries/controllers/src/controllers/impl/filters/AccelerationLimiterFilter.cpp */ = {isa = PBXBuildFile; fileRef = CABDEE5A9B644268AE6DE4B7 /* /Users/kevinhouyang/Development/hifi/libraries/controllers/src/controllers/impl/filters/AccelerationLimiterFilter.cpp */; };
+		D834022C7CF241C8BA15371B /* /Users/kevinhouyang/Development/hifi/libraries/controllers/src/controllers/impl/filters/ConstrainToPositiveIntegerFilter.h */ = {isa = PBXBuildFile; fileRef = D681CFE8C95F4A49A454B3B4 /* /Users/kevinhouyang/Development/hifi/libraries/controllers/src/controllers/impl/filters/ConstrainToPositiveIntegerFilter.h */; };
+		DD74583A3AC74345B0623DBF /* /Users/kevinhouyang/Development/hifi/libraries/controllers/src/controllers/impl/MappingBuilderProxy.h */ = {isa = PBXBuildFile; fileRef = A220FDBCCC4249DBA640CF99 /* /Users/kevinhouyang/Development/hifi/libraries/controllers/src/controllers/impl/MappingBuilderProxy.h */; };
+		DE5F521F3E15496C98D5110B /* /Users/kevinhouyang/Development/hifi/libraries/controllers/src/controllers/impl/Route.h */ = {isa = PBXBuildFile; fileRef = 3147F934A9194DB1B25CD65E /* /Users/kevinhouyang/Development/hifi/libraries/controllers/src/controllers/impl/Route.h */; };
+		E068422F3784486A8856269B /* /Users/kevinhouyang/Development/hifi/libraries/controllers/src/controllers/impl/filters/HysteresisFilter.cpp */ = {isa = PBXBuildFile; fileRef = C51D17647AE8405BA5B1E962 /* /Users/kevinhouyang/Development/hifi/libraries/controllers/src/controllers/impl/filters/HysteresisFilter.cpp */; };
+		E3155D59C09B484A912F1332 /* /Users/kevinhouyang/Development/hifi/libraries/controllers/src/controllers/Forward.h */ = {isa = PBXBuildFile; fileRef = 798625C358FB4098B7581619 /* /Users/kevinhouyang/Development/hifi/libraries/controllers/src/controllers/Forward.h */; };
+		E58D0CCBF6BB48C2A27789C0 /* /Users/kevinhouyang/Development/hifi/libraries/controllers/src/controllers/Logging.cpp */ = {isa = PBXBuildFile; fileRef = 299E51325EDF43DAB0A14FFD /* /Users/kevinhouyang/Development/hifi/libraries/controllers/src/controllers/Logging.cpp */; };
+		E61533A5E49F411CA4F8E2F8 /* /Users/kevinhouyang/Development/hifi/libraries/controllers/src/controllers/impl/conditionals/ScriptConditional.cpp */ = {isa = PBXBuildFile; fileRef = 50D34C082DEE4A93B871AE8A /* /Users/kevinhouyang/Development/hifi/libraries/controllers/src/controllers/impl/conditionals/ScriptConditional.cpp */; };
+		E63B848ECA004CB3B6A2C2D7 /* /Users/kevinhouyang/Development/hifi/libraries/controllers/src/controllers/impl/filters/TranslateFilter.h */ = {isa = PBXBuildFile; fileRef = 4E8B469CEE0D4AF6BBD2DE27 /* /Users/kevinhouyang/Development/hifi/libraries/controllers/src/controllers/impl/filters/TranslateFilter.h */; };
+		EA44EA27FB3147F18EF81C69 /* /Users/kevinhouyang/Development/hifi/libraries/controllers/src/controllers/impl/filters/RotateFilter.h */ = {isa = PBXBuildFile; fileRef = 2AB312C8B385474685942BA1 /* /Users/kevinhouyang/Development/hifi/libraries/controllers/src/controllers/impl/filters/RotateFilter.h */; };
+		EEEF82E17ECA4056B5C3A6A5 /* /Users/kevinhouyang/Development/hifi/libraries/controllers/src/controllers/Input.h */ = {isa = PBXBuildFile; fileRef = 09302D5C1346458B9931D1CC /* /Users/kevinhouyang/Development/hifi/libraries/controllers/src/controllers/Input.h */; };
+		F2E4D570E901460EB352E01F /* /Users/kevinhouyang/Development/hifi/libraries/controllers/src/controllers/StateController.cpp */ = {isa = PBXBuildFile; fileRef = 172D5CD7418F466EBFDA9E6B /* /Users/kevinhouyang/Development/hifi/libraries/controllers/src/controllers/StateController.cpp */; };
+		F61C8ACCAAE44A978DFB91E8 /* /Users/kevinhouyang/Development/hifi/libraries/controllers/src/controllers/impl/filters/InvertFilter.h */ = {isa = PBXBuildFile; fileRef = 4B11FA55C72D41118789F732 /* /Users/kevinhouyang/Development/hifi/libraries/controllers/src/controllers/impl/filters/InvertFilter.h */; };
+		F8C0FC9F6E3E44F7BF0E2DAC /* /Users/kevinhouyang/Development/hifi/libraries/controllers/src/controllers/impl/conditionals/NotConditional.h */ = {isa = PBXBuildFile; fileRef = CE4BE54298DA4B75959A88F6 /* /Users/kevinhouyang/Development/hifi/libraries/controllers/src/controllers/impl/conditionals/NotConditional.h */; };
+		FDD630BAA7234B72A1E3924C /* /Users/kevinhouyang/Development/hifi/libraries/controllers/src/controllers/impl/endpoints/ActionEndpoint.cpp */ = {isa = PBXBuildFile; fileRef = BDD84F1AF9CC4201BAB3D26E /* /Users/kevinhouyang/Development/hifi/libraries/controllers/src/controllers/impl/endpoints/ActionEndpoint.cpp */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXBuildStyle section */
+		0DB988F40AD542379AC85997 /* Release */ = {
+			isa = PBXBuildStyle;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+			};
+			name = Release;
+		};
+		3E960660B79E41CF8554B328 /* MinSizeRel */ = {
+			isa = PBXBuildStyle;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+			};
+			name = MinSizeRel;
+		};
+		5DEE770A85AB4E7FBFF46FAB /* Debug */ = {
+			isa = PBXBuildStyle;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+			};
+			name = Debug;
+		};
+		875552952821449C880E8A19 /* RelWithDebInfo */ = {
+			isa = PBXBuildStyle;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+			};
+			name = RelWithDebInfo;
+		};
+/* End PBXBuildStyle section */
+
+/* Begin PBXContainerItemProxy section */
+		25935D925E3B4A26AE8980EE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E10DB2B95DF44C24A2AE4327 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EC7358D97DFB4AB0AF8A20EB;
+			remoteInfo = ALL_BUILD;
+		};
+		2FA7EC593346455B8D77161D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E10DB2B95DF44C24A2AE4327 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 324A15BFFEE94E94BA16B115;
+			remoteInfo = ZERO_CHECK;
+		};
+		6E6B0FE372E045F1BE802F07 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E10DB2B95DF44C24A2AE4327 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B64DE74200FC4A09ABCC7758;
+			remoteInfo = controllers;
+		};
+		D96F138791B348A9AA830C48 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E10DB2B95DF44C24A2AE4327 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EC7358D97DFB4AB0AF8A20EB;
+			remoteInfo = ALL_BUILD;
+		};
+		E5272A355E144324905E0D4D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E10DB2B95DF44C24A2AE4327 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B9FE216284A2435384E49A92;
+			remoteInfo = controllers_autogen;
+		};
+		ED70C22BCE5B4149957AA6F3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E10DB2B95DF44C24A2AE4327 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 324A15BFFEE94E94BA16B115;
+			remoteInfo = ZERO_CHECK;
+		};
+		F96870522DE4485D9AC3111B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E10DB2B95DF44C24A2AE4327 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 324A15BFFEE94E94BA16B115;
+			remoteInfo = ZERO_CHECK;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0136FD4300C3480BB77B1D91 /* /Users/kevinhouyang/Development/hifi/libraries/controllers/src/controllers/impl/conditionals/NotConditional.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = NotConditional.cpp; path = src/controllers/impl/conditionals/NotConditional.cpp; sourceTree = SOURCE_ROOT; };
+		02412C725F7A49A8A6978CEA /* controllers */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libcontrollers.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		07AF73CA15384DD59CC7FC8E /* /Users/kevinhouyang/Development/hifi/libraries/controllers/src/controllers/StandardController.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = StandardController.cpp; path = src/controllers/StandardController.cpp; sourceTree = SOURCE_ROOT; };
+		089438AE280D4F9B92B4A958 /* /Users/kevinhouyang/Development/hifi/libraries/controllers/src/controllers/ScriptingInterface.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = ScriptingInterface.cpp; path = src/controllers/ScriptingInterface.cpp; sourceTree = SOURCE_ROOT; };
+		09302D5C1346458B9931D1CC /* /Users/kevinhouyang/Development/hifi/libraries/controllers/src/controllers/Input.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = Input.h; path = src/controllers/Input.h; sourceTree = SOURCE_ROOT; };
+		0A9A977765FC4FCD8E61C230 /* /Users/kevinhouyang/Development/hifi/libraries/controllers/CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; name = CMakeLists.txt; path = CMakeLists.txt; sourceTree = SOURCE_ROOT; };
+		0C8F965932F14A4C819E2BCC /* /Users/kevinhouyang/Development/hifi/libraries/controllers/src/controllers/ScriptingInterface.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = ScriptingInterface.h; path = src/controllers/ScriptingInterface.h; sourceTree = SOURCE_ROOT; };
+		0CC07B0BD77642129ABEF678 /* /Users/kevinhouyang/Development/hifi/libraries/controllers/src/controllers/impl/filters/TransformFilter.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = TransformFilter.h; path = src/controllers/impl/filters/TransformFilter.h; sourceTree = SOURCE_ROOT; };
+		1004C0397AB34279968E323B /* /Users/kevinhouyang/Development/hifi/libraries/controllers/src/controllers/impl/filters/PulseFilter.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = PulseFilter.cpp; path = src/controllers/impl/filters/PulseFilter.cpp; sourceTree = SOURCE_ROOT; };
+		105E821A6E83493E85D24801 /* /Users/kevinhouyang/Development/hifi/libraries/controllers/src/controllers/impl/conditionals/AndConditional.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = AndConditional.cpp; path = src/controllers/impl/conditionals/AndConditional.cpp; sourceTree = SOURCE_ROOT; };
+		109DD0F8740C41E9A2A4CCA6 /* /Users/kevinhouyang/Development/hifi/libraries/controllers/src/controllers/impl/conditionals/AndConditional.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = AndConditional.h; path = src/controllers/impl/conditionals/AndConditional.h; sourceTree = SOURCE_ROOT; };
+		13BCF48C027A430D8D109AC3 /* /Users/kevinhouyang/Development/hifi/libraries/controllers/src/controllers/UserInputMapper.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = UserInputMapper.cpp; path = src/controllers/UserInputMapper.cpp; sourceTree = SOURCE_ROOT; };
+		15C0247E96984FFA926490D7 /* /Users/kevinhouyang/Development/hifi/libraries/controllers/src/controllers/UserInputMapper.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = UserInputMapper.h; path = src/controllers/UserInputMapper.h; sourceTree = SOURCE_ROOT; };
+		15F1E279B0244CB8BE4F045F /* /Users/kevinhouyang/Development/hifi/libraries/controllers/src/controllers/impl/filters/HysteresisFilter.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = HysteresisFilter.h; path = src/controllers/impl/filters/HysteresisFilter.h; sourceTree = SOURCE_ROOT; };
+		172D5CD7418F466EBFDA9E6B /* /Users/kevinhouyang/Development/hifi/libraries/controllers/src/controllers/StateController.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = StateController.cpp; path = src/controllers/StateController.cpp; sourceTree = SOURCE_ROOT; };
+		1B4591B1DC864B63AC651BB4 /* /Users/kevinhouyang/Development/hifi/libraries/controllers/src/controllers/Actions.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = Actions.cpp; path = src/controllers/Actions.cpp; sourceTree = SOURCE_ROOT; };
+		21904B27C1194A489941B19A /* /Users/kevinhouyang/Development/hifi/libraries/controllers/src/controllers/impl/endpoints/AnyEndpoint.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = AnyEndpoint.cpp; path = src/controllers/impl/endpoints/AnyEndpoint.cpp; sourceTree = SOURCE_ROOT; };
+		2461CE8D77E44AF3A59A902F /* /Users/kevinhouyang/Development/hifi/libraries/controllers/src/controllers/impl/RouteBuilderProxy.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = RouteBuilderProxy.h; path = src/controllers/impl/RouteBuilderProxy.h; sourceTree = SOURCE_ROOT; };
+		26EEEE64CC604B588E47023A /* /Users/kevinhouyang/Development/hifi/libraries/controllers/src/controllers/DeviceProxy.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = DeviceProxy.h; path = src/controllers/DeviceProxy.h; sourceTree = SOURCE_ROOT; };
+		299E51325EDF43DAB0A14FFD /* /Users/kevinhouyang/Development/hifi/libraries/controllers/src/controllers/Logging.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = Logging.cpp; path = src/controllers/Logging.cpp; sourceTree = SOURCE_ROOT; };
+		2AB312C8B385474685942BA1 /* /Users/kevinhouyang/Development/hifi/libraries/controllers/src/controllers/impl/filters/RotateFilter.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = RotateFilter.h; path = src/controllers/impl/filters/RotateFilter.h; sourceTree = SOURCE_ROOT; };
+		2B2DB55A5A614EDAA17891BB /* /Users/kevinhouyang/Development/hifi/libraries/controllers/src/controllers/impl/filters/DeadZoneFilter.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = DeadZoneFilter.cpp; path = src/controllers/impl/filters/DeadZoneFilter.cpp; sourceTree = SOURCE_ROOT; };
+		3147F934A9194DB1B25CD65E /* /Users/kevinhouyang/Development/hifi/libraries/controllers/src/controllers/impl/Route.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = Route.h; path = src/controllers/impl/Route.h; sourceTree = SOURCE_ROOT; };
+		31E11977A4BF49F2AA606844 /* /Users/kevinhouyang/Development/hifi/libraries/controllers/src/controllers/impl/Conditional.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = Conditional.h; path = src/controllers/impl/Conditional.h; sourceTree = SOURCE_ROOT; };
+		33D678D5D855455FA9C2A641 /* /Users/kevinhouyang/Development/hifi/libraries/controllers/src/controllers/InputDevice.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = InputDevice.h; path = src/controllers/InputDevice.h; sourceTree = SOURCE_ROOT; };
+		35DE7C148CDA49C1BEFDFD2C /* /Users/kevinhouyang/Development/hifi/libraries/controllers/src/controllers/impl/filters/ConstrainToIntegerFilter.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = ConstrainToIntegerFilter.h; path = src/controllers/impl/filters/ConstrainToIntegerFilter.h; sourceTree = SOURCE_ROOT; };
+		3A4D6DF1F67448A5BF90E1BA /* /Users/kevinhouyang/Development/hifi/libraries/controllers/src/controllers/StateController.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = StateController.h; path = src/controllers/StateController.h; sourceTree = SOURCE_ROOT; };
+		408D239CA8E246C3AC79D10D /* /Users/kevinhouyang/Development/hifi/libraries/controllers/src/controllers/InputDevice.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = InputDevice.cpp; path = src/controllers/InputDevice.cpp; sourceTree = SOURCE_ROOT; };
+		4133655232574741B65F991A /* /Users/kevinhouyang/Development/hifi/libraries/controllers/src/controllers/impl/filters/ClampFilter.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = ClampFilter.h; path = src/controllers/impl/filters/ClampFilter.h; sourceTree = SOURCE_ROOT; };
+		41E08A5755C6492ABD6D32F8 /* /Users/kevinhouyang/Development/hifi/libraries/controllers/src/controllers/impl/endpoints/AnyEndpoint.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = AnyEndpoint.h; path = src/controllers/impl/endpoints/AnyEndpoint.h; sourceTree = SOURCE_ROOT; };
+		41FB394BB3B9418FA0CC9458 /* /Users/kevinhouyang/Development/hifi/libraries/controllers/src/controllers/impl/Conditional.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = Conditional.cpp; path = src/controllers/impl/Conditional.cpp; sourceTree = SOURCE_ROOT; };
+		420A3889421A40E8B45F0DC9 /* /Users/kevinhouyang/Development/hifi/libraries/controllers/src/controllers/impl/endpoints/ArrayEndpoint.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = ArrayEndpoint.h; path = src/controllers/impl/endpoints/ArrayEndpoint.h; sourceTree = SOURCE_ROOT; };
+		43A4577AC45643359926BA44 /* /Users/kevinhouyang/Development/hifi/build/libraries/controllers/controllers_autogen/mocs_compilation.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = mocs_compilation.cpp; path = ../../build/libraries/controllers/controllers_autogen/mocs_compilation.cpp; sourceTree = SOURCE_ROOT; };
+		46C8DD4BD1FF498F8C0F5FDC /* /Users/kevinhouyang/Development/hifi/libraries/controllers/src/controllers/InputRecorder.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = InputRecorder.h; path = src/controllers/InputRecorder.h; sourceTree = SOURCE_ROOT; };
+		4B11FA55C72D41118789F732 /* /Users/kevinhouyang/Development/hifi/libraries/controllers/src/controllers/impl/filters/InvertFilter.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = InvertFilter.h; path = src/controllers/impl/filters/InvertFilter.h; sourceTree = SOURCE_ROOT; };
+		4CE1B86C510A42D2A2873841 /* /Users/kevinhouyang/Development/hifi/libraries/controllers/src/controllers/impl/filters/DeadZoneFilter.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = DeadZoneFilter.h; path = src/controllers/impl/filters/DeadZoneFilter.h; sourceTree = SOURCE_ROOT; };
+		4E10821F7C6F4834A1BE0915 /* /Users/kevinhouyang/Development/hifi/libraries/controllers/CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; name = CMakeLists.txt; path = CMakeLists.txt; sourceTree = SOURCE_ROOT; };
+		4E8B469CEE0D4AF6BBD2DE27 /* /Users/kevinhouyang/Development/hifi/libraries/controllers/src/controllers/impl/filters/TranslateFilter.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = TranslateFilter.h; path = src/controllers/impl/filters/TranslateFilter.h; sourceTree = SOURCE_ROOT; };
+		5088A83D563E49FAB788116E /* /Users/kevinhouyang/Development/hifi/libraries/controllers/src/controllers/impl/Endpoint.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = Endpoint.cpp; path = src/controllers/impl/Endpoint.cpp; sourceTree = SOURCE_ROOT; };
+		50D34C082DEE4A93B871AE8A /* /Users/kevinhouyang/Development/hifi/libraries/controllers/src/controllers/impl/conditionals/ScriptConditional.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = ScriptConditional.cpp; path = src/controllers/impl/conditionals/ScriptConditional.cpp; sourceTree = SOURCE_ROOT; };
+		522D79928D56405C91288B02 /* /Users/kevinhouyang/Development/hifi/libraries/controllers/src/controllers/StandardController.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = StandardController.h; path = src/controllers/StandardController.h; sourceTree = SOURCE_ROOT; };
+		55C636651E9F45F29EA40FCB /* /Users/kevinhouyang/Development/hifi/libraries/controllers/src/controllers/impl/endpoints/CompositeEndpoint.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = CompositeEndpoint.cpp; path = src/controllers/impl/endpoints/CompositeEndpoint.cpp; sourceTree = SOURCE_ROOT; };
+		60695D9F3C9A452BAEAFC049 /* /Users/kevinhouyang/Development/hifi/libraries/controllers/src/controllers/impl/Filter.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = Filter.cpp; path = src/controllers/impl/Filter.cpp; sourceTree = SOURCE_ROOT; };
+		6236167BA6034F7D8B4870D3 /* /Users/kevinhouyang/Development/hifi/libraries/controllers/src/controllers/Input.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = Input.cpp; path = src/controllers/Input.cpp; sourceTree = SOURCE_ROOT; };
+		62BF17BB7AEE443886654FB3 /* /Users/kevinhouyang/Development/hifi/libraries/controllers/CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; name = CMakeLists.txt; path = CMakeLists.txt; sourceTree = SOURCE_ROOT; };
+		62E7E371A27347C88241EB5F /* /Users/kevinhouyang/Development/hifi/libraries/controllers/src/controllers/impl/Mapping.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = Mapping.h; path = src/controllers/impl/Mapping.h; sourceTree = SOURCE_ROOT; };
+		6A3FF5B26D0F4F0B95DC6B8B /* /Users/kevinhouyang/Development/hifi/libraries/controllers/src/controllers/impl/filters/ScaleFilter.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = ScaleFilter.cpp; path = src/controllers/impl/filters/ScaleFilter.cpp; sourceTree = SOURCE_ROOT; };
+		6D60526BB5FA469A932397A7 /* /Users/kevinhouyang/Development/hifi/libraries/controllers/src/controllers/impl/filters/ExponentialSmoothingFilter.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = ExponentialSmoothingFilter.h; path = src/controllers/impl/filters/ExponentialSmoothingFilter.h; sourceTree = SOURCE_ROOT; };
+		6E1A6758A8AE48E4BE3F0E86 /* /Users/kevinhouyang/Development/hifi/libraries/controllers/src/controllers/impl/endpoints/ActionEndpoint.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = ActionEndpoint.h; path = src/controllers/impl/endpoints/ActionEndpoint.h; sourceTree = SOURCE_ROOT; };
+		798625C358FB4098B7581619 /* /Users/kevinhouyang/Development/hifi/libraries/controllers/src/controllers/Forward.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = Forward.h; path = src/controllers/Forward.h; sourceTree = SOURCE_ROOT; };
+		7AE3F8BABC0847C0967385AE /* /Users/kevinhouyang/Development/hifi/libraries/controllers/src/controllers/impl/Filter.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = Filter.h; path = src/controllers/impl/Filter.h; sourceTree = SOURCE_ROOT; };
+		7E800BCA8409494C95C057D5 /* /Users/kevinhouyang/Development/hifi/libraries/controllers/src/controllers/impl/Endpoint.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = Endpoint.h; path = src/controllers/impl/Endpoint.h; sourceTree = SOURCE_ROOT; };
+		802F6C70025C483C9931242A /* /Users/kevinhouyang/Development/hifi/libraries/controllers/src/controllers/impl/endpoints/InputEndpoint.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = InputEndpoint.cpp; path = src/controllers/impl/endpoints/InputEndpoint.cpp; sourceTree = SOURCE_ROOT; };
+		8516B31048FE48EAAB88C2E2 /* /Users/kevinhouyang/Development/hifi/libraries/controllers/src/controllers/impl/filters/AccelerationLimiterFilter.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = AccelerationLimiterFilter.h; path = src/controllers/impl/filters/AccelerationLimiterFilter.h; sourceTree = SOURCE_ROOT; };
+		8865DE84BBFD4183BB225E7D /* /Users/kevinhouyang/Development/hifi/libraries/controllers/src/controllers/impl/endpoints/JSEndpoint.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = JSEndpoint.cpp; path = src/controllers/impl/endpoints/JSEndpoint.cpp; sourceTree = SOURCE_ROOT; };
+		8A2227896C804765844B204A /* /Users/kevinhouyang/Development/hifi/libraries/controllers/src/controllers/impl/filters/ScaleFilter.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = ScaleFilter.h; path = src/controllers/impl/filters/ScaleFilter.h; sourceTree = SOURCE_ROOT; };
+		8C64127C1B5D468C952AA17A /* /Users/kevinhouyang/Development/hifi/libraries/controllers/src/controllers/impl/endpoints/ScriptEndpoint.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = ScriptEndpoint.h; path = src/controllers/impl/endpoints/ScriptEndpoint.h; sourceTree = SOURCE_ROOT; };
+		920FF679C6374145BDDA355A /* /Users/kevinhouyang/Development/hifi/libraries/controllers/src/controllers/impl/filters/PostTransformFilter.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = PostTransformFilter.h; path = src/controllers/impl/filters/PostTransformFilter.h; sourceTree = SOURCE_ROOT; };
+		93472718997B4234B85600FF /* /Users/kevinhouyang/Development/hifi/libraries/controllers/src/controllers/impl/filters/NotFilter.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = NotFilter.cpp; path = src/controllers/impl/filters/NotFilter.cpp; sourceTree = SOURCE_ROOT; };
+		999487A7EA8F4F5998EE2313 /* /Users/kevinhouyang/Development/hifi/libraries/controllers/src/controllers/InputRecorder.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = InputRecorder.cpp; path = src/controllers/InputRecorder.cpp; sourceTree = SOURCE_ROOT; };
+		9C76D856037D4F6F854189B8 /* /Users/kevinhouyang/Development/hifi/libraries/controllers/src/controllers/impl/filters/PulseFilter.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = PulseFilter.h; path = src/controllers/impl/filters/PulseFilter.h; sourceTree = SOURCE_ROOT; };
+		9F514724594D46C087BFC7D0 /* /Users/kevinhouyang/Development/hifi/libraries/controllers/src/controllers/impl/endpoints/CompositeEndpoint.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = CompositeEndpoint.h; path = src/controllers/impl/endpoints/CompositeEndpoint.h; sourceTree = SOURCE_ROOT; };
+		9F6570D921C646FDB065543C /* /Users/kevinhouyang/Development/hifi/libraries/controllers/src/controllers/impl/filters/ClampFilter.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = ClampFilter.cpp; path = src/controllers/impl/filters/ClampFilter.cpp; sourceTree = SOURCE_ROOT; };
+		A17328F0224A44CE96E8D347 /* /Users/kevinhouyang/Development/hifi/libraries/controllers/src/controllers/impl/filters/LowVelocityFilter.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = LowVelocityFilter.h; path = src/controllers/impl/filters/LowVelocityFilter.h; sourceTree = SOURCE_ROOT; };
+		A220FDBCCC4249DBA640CF99 /* /Users/kevinhouyang/Development/hifi/libraries/controllers/src/controllers/impl/MappingBuilderProxy.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = MappingBuilderProxy.h; path = src/controllers/impl/MappingBuilderProxy.h; sourceTree = SOURCE_ROOT; };
+		A22A5C7E58AF452F981F2248 /* /Users/kevinhouyang/Development/hifi/libraries/controllers/src/controllers/impl/conditionals/ScriptConditional.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = ScriptConditional.h; path = src/controllers/impl/conditionals/ScriptConditional.h; sourceTree = SOURCE_ROOT; };
+		ACB517106FFB4CC0837D1205 /* /Users/kevinhouyang/Development/hifi/libraries/controllers/src/controllers/impl/RouteBuilderProxy.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = RouteBuilderProxy.cpp; path = src/controllers/impl/RouteBuilderProxy.cpp; sourceTree = SOURCE_ROOT; };
+		B5BA5F6A471F47C2AA18C4B0 /* /Users/kevinhouyang/Development/hifi/libraries/controllers/src/controllers/impl/filters/NotFilter.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = NotFilter.h; path = src/controllers/impl/filters/NotFilter.h; sourceTree = SOURCE_ROOT; };
+		BAFEF5719DBC44E5A7C2D4B5 /* /Users/kevinhouyang/Development/hifi/libraries/controllers/src/controllers/Actions.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = Actions.h; path = src/controllers/Actions.h; sourceTree = SOURCE_ROOT; };
+		BB323AB3BCB7477BBB8332E0 /* /Users/kevinhouyang/Development/hifi/libraries/controllers/src/controllers/impl/filters/LowVelocityFilter.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = LowVelocityFilter.cpp; path = src/controllers/impl/filters/LowVelocityFilter.cpp; sourceTree = SOURCE_ROOT; };
+		BDD84F1AF9CC4201BAB3D26E /* /Users/kevinhouyang/Development/hifi/libraries/controllers/src/controllers/impl/endpoints/ActionEndpoint.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = ActionEndpoint.cpp; path = src/controllers/impl/endpoints/ActionEndpoint.cpp; sourceTree = SOURCE_ROOT; };
+		C51D17647AE8405BA5B1E962 /* /Users/kevinhouyang/Development/hifi/libraries/controllers/src/controllers/impl/filters/HysteresisFilter.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = HysteresisFilter.cpp; path = src/controllers/impl/filters/HysteresisFilter.cpp; sourceTree = SOURCE_ROOT; };
+		CABDEE5A9B644268AE6DE4B7 /* /Users/kevinhouyang/Development/hifi/libraries/controllers/src/controllers/impl/filters/AccelerationLimiterFilter.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = AccelerationLimiterFilter.cpp; path = src/controllers/impl/filters/AccelerationLimiterFilter.cpp; sourceTree = SOURCE_ROOT; };
+		CB7C4FB7022A45E69CCE42C9 /* /Users/kevinhouyang/Development/hifi/libraries/controllers/src/controllers/Logging.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = Logging.h; path = src/controllers/Logging.h; sourceTree = SOURCE_ROOT; };
+		CE4BE54298DA4B75959A88F6 /* /Users/kevinhouyang/Development/hifi/libraries/controllers/src/controllers/impl/conditionals/NotConditional.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = NotConditional.h; path = src/controllers/impl/conditionals/NotConditional.h; sourceTree = SOURCE_ROOT; };
+		D46B53C5CB544F56BDF8C27D /* /Users/kevinhouyang/Development/hifi/libraries/controllers/src/controllers/impl/filters/ExponentialSmoothingFilter.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = ExponentialSmoothingFilter.cpp; path = src/controllers/impl/filters/ExponentialSmoothingFilter.cpp; sourceTree = SOURCE_ROOT; };
+		D681CFE8C95F4A49A454B3B4 /* /Users/kevinhouyang/Development/hifi/libraries/controllers/src/controllers/impl/filters/ConstrainToPositiveIntegerFilter.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = ConstrainToPositiveIntegerFilter.h; path = src/controllers/impl/filters/ConstrainToPositiveIntegerFilter.h; sourceTree = SOURCE_ROOT; };
+		DDAA02755A1F4E31B952E4EA /* /Users/kevinhouyang/Development/hifi/libraries/controllers/src/controllers/impl/endpoints/InputEndpoint.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = InputEndpoint.h; path = src/controllers/impl/endpoints/InputEndpoint.h; sourceTree = SOURCE_ROOT; };
+		E2713E35708A491D9A7FBAB9 /* /Users/kevinhouyang/Development/hifi/libraries/controllers/src/controllers/impl/endpoints/JSEndpoint.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = JSEndpoint.h; path = src/controllers/impl/endpoints/JSEndpoint.h; sourceTree = SOURCE_ROOT; };
+		E6E9614064524116902E0F97 /* /Users/kevinhouyang/Development/hifi/libraries/controllers/src/controllers/impl/endpoints/ScriptEndpoint.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = ScriptEndpoint.cpp; path = src/controllers/impl/endpoints/ScriptEndpoint.cpp; sourceTree = SOURCE_ROOT; };
+		EAABE9BF94DA434DB04CA89F /* /Users/kevinhouyang/Development/hifi/libraries/controllers/src/controllers/Pose.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = Pose.h; path = src/controllers/Pose.h; sourceTree = SOURCE_ROOT; };
+		EAB6BDFC23BC4356B3BBE336 /* /Users/kevinhouyang/Development/hifi/libraries/controllers/src/controllers/Pose.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = Pose.cpp; path = src/controllers/Pose.cpp; sourceTree = SOURCE_ROOT; };
+		EBBEDC602AF44DC9AB690A3D /* /Users/kevinhouyang/Development/hifi/libraries/controllers/src/controllers/impl/MappingBuilderProxy.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = MappingBuilderProxy.cpp; path = src/controllers/impl/MappingBuilderProxy.cpp; sourceTree = SOURCE_ROOT; };
+		F785324F4664487BAE8AC7DB /* /Users/kevinhouyang/Development/hifi/libraries/controllers/src/controllers/StandardControls.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = StandardControls.h; path = src/controllers/StandardControls.h; sourceTree = SOURCE_ROOT; };
+		F9BBEFDF557A4D0692C5A5B0 /* /Users/kevinhouyang/Development/hifi/libraries/controllers/src/controllers/impl/conditionals/EndpointConditional.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = EndpointConditional.h; path = src/controllers/impl/conditionals/EndpointConditional.h; sourceTree = SOURCE_ROOT; };
+		FAFC4B24D9844EC8A958124D /* /Users/kevinhouyang/Development/hifi/libraries/controllers/src/controllers/impl/endpoints/StandardEndpoint.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = StandardEndpoint.h; path = src/controllers/impl/endpoints/StandardEndpoint.h; sourceTree = SOURCE_ROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXGroup section */
+		0AE69621F46341738E317A97 /* src */ = {
+			isa = PBXGroup;
+			children = (
+				BE7CD2A840FA46FB9FE12DDA /* controllers */,
+			);
+			name = src;
+			sourceTree = "<group>";
+		};
+		1945D1E9635D474D892E6825 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				02412C725F7A49A8A6978CEA /* controllers */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		29D571BC5DC344F6856BF807 /* CMake Rules */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "CMake Rules";
+			sourceTree = "<group>";
+		};
+		53A3D38F59BB411E98D8F83A /* ALL_BUILD */ = {
+			isa = PBXGroup;
+			children = (
+				29D571BC5DC344F6856BF807 /* CMake Rules */,
+				0A9A977765FC4FCD8E61C230 /* /Users/kevinhouyang/Development/hifi/libraries/controllers/CMakeLists.txt */,
+			);
+			name = ALL_BUILD;
+			sourceTree = "<group>";
+		};
+		5939DE9CDA9B42318CA61A8D /* filters */ = {
+			isa = PBXGroup;
+			children = (
+				CABDEE5A9B644268AE6DE4B7 /* /Users/kevinhouyang/Development/hifi/libraries/controllers/src/controllers/impl/filters/AccelerationLimiterFilter.cpp */,
+				8516B31048FE48EAAB88C2E2 /* /Users/kevinhouyang/Development/hifi/libraries/controllers/src/controllers/impl/filters/AccelerationLimiterFilter.h */,
+				9F6570D921C646FDB065543C /* /Users/kevinhouyang/Development/hifi/libraries/controllers/src/controllers/impl/filters/ClampFilter.cpp */,
+				4133655232574741B65F991A /* /Users/kevinhouyang/Development/hifi/libraries/controllers/src/controllers/impl/filters/ClampFilter.h */,
+				35DE7C148CDA49C1BEFDFD2C /* /Users/kevinhouyang/Development/hifi/libraries/controllers/src/controllers/impl/filters/ConstrainToIntegerFilter.h */,
+				D681CFE8C95F4A49A454B3B4 /* /Users/kevinhouyang/Development/hifi/libraries/controllers/src/controllers/impl/filters/ConstrainToPositiveIntegerFilter.h */,
+				2B2DB55A5A614EDAA17891BB /* /Users/kevinhouyang/Development/hifi/libraries/controllers/src/controllers/impl/filters/DeadZoneFilter.cpp */,
+				4CE1B86C510A42D2A2873841 /* /Users/kevinhouyang/Development/hifi/libraries/controllers/src/controllers/impl/filters/DeadZoneFilter.h */,
+				D46B53C5CB544F56BDF8C27D /* /Users/kevinhouyang/Development/hifi/libraries/controllers/src/controllers/impl/filters/ExponentialSmoothingFilter.cpp */,
+				6D60526BB5FA469A932397A7 /* /Users/kevinhouyang/Development/hifi/libraries/controllers/src/controllers/impl/filters/ExponentialSmoothingFilter.h */,
+				C51D17647AE8405BA5B1E962 /* /Users/kevinhouyang/Development/hifi/libraries/controllers/src/controllers/impl/filters/HysteresisFilter.cpp */,
+				15F1E279B0244CB8BE4F045F /* /Users/kevinhouyang/Development/hifi/libraries/controllers/src/controllers/impl/filters/HysteresisFilter.h */,
+				4B11FA55C72D41118789F732 /* /Users/kevinhouyang/Development/hifi/libraries/controllers/src/controllers/impl/filters/InvertFilter.h */,
+				BB323AB3BCB7477BBB8332E0 /* /Users/kevinhouyang/Development/hifi/libraries/controllers/src/controllers/impl/filters/LowVelocityFilter.cpp */,
+				A17328F0224A44CE96E8D347 /* /Users/kevinhouyang/Development/hifi/libraries/controllers/src/controllers/impl/filters/LowVelocityFilter.h */,
+				93472718997B4234B85600FF /* /Users/kevinhouyang/Development/hifi/libraries/controllers/src/controllers/impl/filters/NotFilter.cpp */,
+				B5BA5F6A471F47C2AA18C4B0 /* /Users/kevinhouyang/Development/hifi/libraries/controllers/src/controllers/impl/filters/NotFilter.h */,
+				920FF679C6374145BDDA355A /* /Users/kevinhouyang/Development/hifi/libraries/controllers/src/controllers/impl/filters/PostTransformFilter.h */,
+				1004C0397AB34279968E323B /* /Users/kevinhouyang/Development/hifi/libraries/controllers/src/controllers/impl/filters/PulseFilter.cpp */,
+				9C76D856037D4F6F854189B8 /* /Users/kevinhouyang/Development/hifi/libraries/controllers/src/controllers/impl/filters/PulseFilter.h */,
+				2AB312C8B385474685942BA1 /* /Users/kevinhouyang/Development/hifi/libraries/controllers/src/controllers/impl/filters/RotateFilter.h */,
+				6A3FF5B26D0F4F0B95DC6B8B /* /Users/kevinhouyang/Development/hifi/libraries/controllers/src/controllers/impl/filters/ScaleFilter.cpp */,
+				8A2227896C804765844B204A /* /Users/kevinhouyang/Development/hifi/libraries/controllers/src/controllers/impl/filters/ScaleFilter.h */,
+				0CC07B0BD77642129ABEF678 /* /Users/kevinhouyang/Development/hifi/libraries/controllers/src/controllers/impl/filters/TransformFilter.h */,
+				4E8B469CEE0D4AF6BBD2DE27 /* /Users/kevinhouyang/Development/hifi/libraries/controllers/src/controllers/impl/filters/TranslateFilter.h */,
+			);
+			name = filters;
+			sourceTree = "<group>";
+		};
+		7A9E252011614F519860BC78 /* controllers_autogen */ = {
+			isa = PBXGroup;
+			children = (
+				C563BCCEAA7B4E0A97F4C156 /* CMake Rules */,
+				4E10821F7C6F4834A1BE0915 /* /Users/kevinhouyang/Development/hifi/libraries/controllers/CMakeLists.txt */,
+			);
+			name = controllers_autogen;
+			sourceTree = "<group>";
+		};
+		7B3938B1CE8E474BA55B0891 /* controllers */ = {
+			isa = PBXGroup;
+			children = (
+				0AE69621F46341738E317A97 /* src */,
+				E548DDB38FE24A569661D9D1 /* Source Files */,
+				62BF17BB7AEE443886654FB3 /* /Users/kevinhouyang/Development/hifi/libraries/controllers/CMakeLists.txt */,
+			);
+			name = controllers;
+			sourceTree = "<group>";
+		};
+		8BFB824B58A54E6E99A170BC /* Libraries */ = {
+			isa = PBXGroup;
+			children = (
+				7B3938B1CE8E474BA55B0891 /* controllers */,
+				7A9E252011614F519860BC78 /* controllers_autogen */,
+			);
+			name = Libraries;
+			sourceTree = "<group>";
+		};
+		A70C7280009B4B7CB4EF0EFB /* endpoints */ = {
+			isa = PBXGroup;
+			children = (
+				BDD84F1AF9CC4201BAB3D26E /* /Users/kevinhouyang/Development/hifi/libraries/controllers/src/controllers/impl/endpoints/ActionEndpoint.cpp */,
+				6E1A6758A8AE48E4BE3F0E86 /* /Users/kevinhouyang/Development/hifi/libraries/controllers/src/controllers/impl/endpoints/ActionEndpoint.h */,
+				21904B27C1194A489941B19A /* /Users/kevinhouyang/Development/hifi/libraries/controllers/src/controllers/impl/endpoints/AnyEndpoint.cpp */,
+				41E08A5755C6492ABD6D32F8 /* /Users/kevinhouyang/Development/hifi/libraries/controllers/src/controllers/impl/endpoints/AnyEndpoint.h */,
+				420A3889421A40E8B45F0DC9 /* /Users/kevinhouyang/Development/hifi/libraries/controllers/src/controllers/impl/endpoints/ArrayEndpoint.h */,
+				55C636651E9F45F29EA40FCB /* /Users/kevinhouyang/Development/hifi/libraries/controllers/src/controllers/impl/endpoints/CompositeEndpoint.cpp */,
+				9F514724594D46C087BFC7D0 /* /Users/kevinhouyang/Development/hifi/libraries/controllers/src/controllers/impl/endpoints/CompositeEndpoint.h */,
+				802F6C70025C483C9931242A /* /Users/kevinhouyang/Development/hifi/libraries/controllers/src/controllers/impl/endpoints/InputEndpoint.cpp */,
+				DDAA02755A1F4E31B952E4EA /* /Users/kevinhouyang/Development/hifi/libraries/controllers/src/controllers/impl/endpoints/InputEndpoint.h */,
+				8865DE84BBFD4183BB225E7D /* /Users/kevinhouyang/Development/hifi/libraries/controllers/src/controllers/impl/endpoints/JSEndpoint.cpp */,
+				E2713E35708A491D9A7FBAB9 /* /Users/kevinhouyang/Development/hifi/libraries/controllers/src/controllers/impl/endpoints/JSEndpoint.h */,
+				E6E9614064524116902E0F97 /* /Users/kevinhouyang/Development/hifi/libraries/controllers/src/controllers/impl/endpoints/ScriptEndpoint.cpp */,
+				8C64127C1B5D468C952AA17A /* /Users/kevinhouyang/Development/hifi/libraries/controllers/src/controllers/impl/endpoints/ScriptEndpoint.h */,
+				FAFC4B24D9844EC8A958124D /* /Users/kevinhouyang/Development/hifi/libraries/controllers/src/controllers/impl/endpoints/StandardEndpoint.h */,
+			);
+			name = endpoints;
+			sourceTree = "<group>";
+		};
+		BD666DE13397478189C237C5 = {
+			isa = PBXGroup;
+			children = (
+				8BFB824B58A54E6E99A170BC /* Libraries */,
+				53A3D38F59BB411E98D8F83A /* ALL_BUILD */,
+				1945D1E9635D474D892E6825 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		BE7CD2A840FA46FB9FE12DDA /* controllers */ = {
+			isa = PBXGroup;
+			children = (
+				E5DD1411D7FD459B9B0006D4 /* impl */,
+				1B4591B1DC864B63AC651BB4 /* /Users/kevinhouyang/Development/hifi/libraries/controllers/src/controllers/Actions.cpp */,
+				BAFEF5719DBC44E5A7C2D4B5 /* /Users/kevinhouyang/Development/hifi/libraries/controllers/src/controllers/Actions.h */,
+				26EEEE64CC604B588E47023A /* /Users/kevinhouyang/Development/hifi/libraries/controllers/src/controllers/DeviceProxy.h */,
+				798625C358FB4098B7581619 /* /Users/kevinhouyang/Development/hifi/libraries/controllers/src/controllers/Forward.h */,
+				6236167BA6034F7D8B4870D3 /* /Users/kevinhouyang/Development/hifi/libraries/controllers/src/controllers/Input.cpp */,
+				09302D5C1346458B9931D1CC /* /Users/kevinhouyang/Development/hifi/libraries/controllers/src/controllers/Input.h */,
+				408D239CA8E246C3AC79D10D /* /Users/kevinhouyang/Development/hifi/libraries/controllers/src/controllers/InputDevice.cpp */,
+				33D678D5D855455FA9C2A641 /* /Users/kevinhouyang/Development/hifi/libraries/controllers/src/controllers/InputDevice.h */,
+				999487A7EA8F4F5998EE2313 /* /Users/kevinhouyang/Development/hifi/libraries/controllers/src/controllers/InputRecorder.cpp */,
+				46C8DD4BD1FF498F8C0F5FDC /* /Users/kevinhouyang/Development/hifi/libraries/controllers/src/controllers/InputRecorder.h */,
+				299E51325EDF43DAB0A14FFD /* /Users/kevinhouyang/Development/hifi/libraries/controllers/src/controllers/Logging.cpp */,
+				CB7C4FB7022A45E69CCE42C9 /* /Users/kevinhouyang/Development/hifi/libraries/controllers/src/controllers/Logging.h */,
+				EAB6BDFC23BC4356B3BBE336 /* /Users/kevinhouyang/Development/hifi/libraries/controllers/src/controllers/Pose.cpp */,
+				EAABE9BF94DA434DB04CA89F /* /Users/kevinhouyang/Development/hifi/libraries/controllers/src/controllers/Pose.h */,
+				089438AE280D4F9B92B4A958 /* /Users/kevinhouyang/Development/hifi/libraries/controllers/src/controllers/ScriptingInterface.cpp */,
+				0C8F965932F14A4C819E2BCC /* /Users/kevinhouyang/Development/hifi/libraries/controllers/src/controllers/ScriptingInterface.h */,
+				07AF73CA15384DD59CC7FC8E /* /Users/kevinhouyang/Development/hifi/libraries/controllers/src/controllers/StandardController.cpp */,
+				522D79928D56405C91288B02 /* /Users/kevinhouyang/Development/hifi/libraries/controllers/src/controllers/StandardController.h */,
+				F785324F4664487BAE8AC7DB /* /Users/kevinhouyang/Development/hifi/libraries/controllers/src/controllers/StandardControls.h */,
+				172D5CD7418F466EBFDA9E6B /* /Users/kevinhouyang/Development/hifi/libraries/controllers/src/controllers/StateController.cpp */,
+				3A4D6DF1F67448A5BF90E1BA /* /Users/kevinhouyang/Development/hifi/libraries/controllers/src/controllers/StateController.h */,
+				13BCF48C027A430D8D109AC3 /* /Users/kevinhouyang/Development/hifi/libraries/controllers/src/controllers/UserInputMapper.cpp */,
+				15C0247E96984FFA926490D7 /* /Users/kevinhouyang/Development/hifi/libraries/controllers/src/controllers/UserInputMapper.h */,
+			);
+			name = controllers;
+			sourceTree = "<group>";
+		};
+		C563BCCEAA7B4E0A97F4C156 /* CMake Rules */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "CMake Rules";
+			sourceTree = "<group>";
+		};
+		C8E256E9CA3D43D0B0F711B6 /* conditionals */ = {
+			isa = PBXGroup;
+			children = (
+				105E821A6E83493E85D24801 /* /Users/kevinhouyang/Development/hifi/libraries/controllers/src/controllers/impl/conditionals/AndConditional.cpp */,
+				109DD0F8740C41E9A2A4CCA6 /* /Users/kevinhouyang/Development/hifi/libraries/controllers/src/controllers/impl/conditionals/AndConditional.h */,
+				F9BBEFDF557A4D0692C5A5B0 /* /Users/kevinhouyang/Development/hifi/libraries/controllers/src/controllers/impl/conditionals/EndpointConditional.h */,
+				0136FD4300C3480BB77B1D91 /* /Users/kevinhouyang/Development/hifi/libraries/controllers/src/controllers/impl/conditionals/NotConditional.cpp */,
+				CE4BE54298DA4B75959A88F6 /* /Users/kevinhouyang/Development/hifi/libraries/controllers/src/controllers/impl/conditionals/NotConditional.h */,
+				50D34C082DEE4A93B871AE8A /* /Users/kevinhouyang/Development/hifi/libraries/controllers/src/controllers/impl/conditionals/ScriptConditional.cpp */,
+				A22A5C7E58AF452F981F2248 /* /Users/kevinhouyang/Development/hifi/libraries/controllers/src/controllers/impl/conditionals/ScriptConditional.h */,
+			);
+			name = conditionals;
+			sourceTree = "<group>";
+		};
+		E548DDB38FE24A569661D9D1 /* Source Files */ = {
+			isa = PBXGroup;
+			children = (
+				43A4577AC45643359926BA44 /* /Users/kevinhouyang/Development/hifi/build/libraries/controllers/controllers_autogen/mocs_compilation.cpp */,
+			);
+			name = "Source Files";
+			sourceTree = "<group>";
+		};
+		E5DD1411D7FD459B9B0006D4 /* impl */ = {
+			isa = PBXGroup;
+			children = (
+				C8E256E9CA3D43D0B0F711B6 /* conditionals */,
+				A70C7280009B4B7CB4EF0EFB /* endpoints */,
+				5939DE9CDA9B42318CA61A8D /* filters */,
+				41FB394BB3B9418FA0CC9458 /* /Users/kevinhouyang/Development/hifi/libraries/controllers/src/controllers/impl/Conditional.cpp */,
+				31E11977A4BF49F2AA606844 /* /Users/kevinhouyang/Development/hifi/libraries/controllers/src/controllers/impl/Conditional.h */,
+				5088A83D563E49FAB788116E /* /Users/kevinhouyang/Development/hifi/libraries/controllers/src/controllers/impl/Endpoint.cpp */,
+				7E800BCA8409494C95C057D5 /* /Users/kevinhouyang/Development/hifi/libraries/controllers/src/controllers/impl/Endpoint.h */,
+				60695D9F3C9A452BAEAFC049 /* /Users/kevinhouyang/Development/hifi/libraries/controllers/src/controllers/impl/Filter.cpp */,
+				7AE3F8BABC0847C0967385AE /* /Users/kevinhouyang/Development/hifi/libraries/controllers/src/controllers/impl/Filter.h */,
+				62E7E371A27347C88241EB5F /* /Users/kevinhouyang/Development/hifi/libraries/controllers/src/controllers/impl/Mapping.h */,
+				EBBEDC602AF44DC9AB690A3D /* /Users/kevinhouyang/Development/hifi/libraries/controllers/src/controllers/impl/MappingBuilderProxy.cpp */,
+				A220FDBCCC4249DBA640CF99 /* /Users/kevinhouyang/Development/hifi/libraries/controllers/src/controllers/impl/MappingBuilderProxy.h */,
+				3147F934A9194DB1B25CD65E /* /Users/kevinhouyang/Development/hifi/libraries/controllers/src/controllers/impl/Route.h */,
+				ACB517106FFB4CC0837D1205 /* /Users/kevinhouyang/Development/hifi/libraries/controllers/src/controllers/impl/RouteBuilderProxy.cpp */,
+				2461CE8D77E44AF3A59A902F /* /Users/kevinhouyang/Development/hifi/libraries/controllers/src/controllers/impl/RouteBuilderProxy.h */,
+			);
+			name = impl;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B64DE74200FC4A09ABCC7758 /* controllers */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 18F292ED6213478F9326A631 /* Build configuration list for PBXNativeTarget "controllers" */;
+			buildPhases = (
+				68C831DD87F94FEB9F1F9851 /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				580FE3BDBD7140B2B1F954C0 /* PBXTargetDependency */,
+				20C84B703AD9429B8248F310 /* PBXTargetDependency */,
+			);
+			name = controllers;
+			productName = controllers;
+			productReference = 02412C725F7A49A8A6978CEA /* controllers */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E10DB2B95DF44C24A2AE4327 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = YES;
+				LastUpgradeCheck = 0930;
+			};
+			buildConfigurationList = 0A311C2886FC41F4AD9EC413 /* Build configuration list for PBXProject "controllers" */;
+			buildSettings = {
+			};
+			buildStyles = (
+				5DEE770A85AB4E7FBFF46FAB /* Debug */,
+				0DB988F40AD542379AC85997 /* Release */,
+				3E960660B79E41CF8554B328 /* MinSizeRel */,
+				875552952821449C880E8A19 /* RelWithDebInfo */,
+			);
+			compatibilityVersion = "Xcode 3.2";
+			hasScannedForEncodings = 0;
+			mainGroup = BD666DE13397478189C237C5;
+			projectDirPath = ../../../libraries/controllers;
+			projectRoot = "";
+			targets = (
+				EC7358D97DFB4AB0AF8A20EB /* ALL_BUILD */,
+				76BBA07C604F4D0E89A822F7 /* RUN_TESTS */,
+				324A15BFFEE94E94BA16B115 /* ZERO_CHECK */,
+				B64DE74200FC4A09ABCC7758 /* controllers */,
+				B9FE216284A2435384E49A92 /* controllers_autogen */,
+				7A7E10E72F85450A98FB2D43 /* install */,
+				A0EF40283FD3451D881D67E2 /* package */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1379C5645FE645DCB5671969 /* CMake Rules */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			name = "CMake Rules";
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "make -C /Users/kevinhouyang/Development/hifi/build/libraries/controllers -f /Users/kevinhouyang/Development/hifi/build/libraries/controllers/CMakeScripts/controllers_autogen_cmakeRulesBuildPhase.make$CONFIGURATION all";
+			showEnvVarsInLog = 0;
+		};
+		30B4FA456EF041F1BE459C95 /* CMake PostBuild Rules */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			name = "CMake PostBuild Rules";
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "make -C /Users/kevinhouyang/Development/hifi/build/libraries/controllers -f /Users/kevinhouyang/Development/hifi/build/libraries/controllers/CMakeScripts/package_postBuildPhase.make$CONFIGURATION all";
+			showEnvVarsInLog = 0;
+		};
+		3E026FD0B5D944D6859C237B = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# shell script goes here
+exit 0";
+			showEnvVarsInLog = 0;
+		};
+		3E67292C498E44A498348F84 /* CMake PostBuild Rules */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			name = "CMake PostBuild Rules";
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "make -C /Users/kevinhouyang/Development/hifi/build/libraries/controllers -f /Users/kevinhouyang/Development/hifi/build/libraries/controllers/CMakeScripts/install_postBuildPhase.make$CONFIGURATION all";
+			showEnvVarsInLog = 0;
+		};
+		464F36979D1C4A288F70230A = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# shell script goes here
+exit 0";
+			showEnvVarsInLog = 0;
+		};
+		96EA1BD339FF4E82A301A6C8 = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# shell script goes here
+exit 0";
+			showEnvVarsInLog = 0;
+		};
+		9768E22FDE4D4FC6AED7E814 /* CMake PostBuild Rules */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			name = "CMake PostBuild Rules";
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "make -C /Users/kevinhouyang/Development/hifi/build/libraries/controllers -f /Users/kevinhouyang/Development/hifi/build/libraries/controllers/CMakeScripts/RUN_TESTS_postBuildPhase.make$CONFIGURATION all";
+			showEnvVarsInLog = 0;
+		};
+		9D2CB3FF883F4F2E91CD0300 = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# shell script goes here
+exit 0";
+			showEnvVarsInLog = 0;
+		};
+		A4114F9CDDAC40DE93244FC5 /* CMake Rules */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			name = "CMake Rules";
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "make -C /Users/kevinhouyang/Development/hifi/build/libraries/controllers -f /Users/kevinhouyang/Development/hifi/build/libraries/controllers/CMakeScripts/ZERO_CHECK_cmakeRulesBuildPhase.make$CONFIGURATION all";
+			showEnvVarsInLog = 0;
+		};
+		AD6DCD26617645D4902646BB = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# shell script goes here
+exit 0";
+			showEnvVarsInLog = 0;
+		};
+		B067730E5493437CB18B8DB7 = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# shell script goes here
+exit 0";
+			showEnvVarsInLog = 0;
+		};
+		F0F914168BE34A4CB1677536 /* CMake Rules */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			name = "CMake Rules";
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "make -C /Users/kevinhouyang/Development/hifi/build/libraries/controllers -f /Users/kevinhouyang/Development/hifi/build/libraries/controllers/CMakeScripts/ALL_BUILD_cmakeRulesBuildPhase.make$CONFIGURATION all";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		68C831DD87F94FEB9F1F9851 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				28B0134CBBEE42AF9181B8F9 /* /Users/kevinhouyang/Development/hifi/build/libraries/controllers/controllers_autogen/mocs_compilation.cpp */,
+				00A0CB9D349D4A35B13B8F0C /* /Users/kevinhouyang/Development/hifi/libraries/controllers/src/controllers/Actions.cpp */,
+				2D49225CD4D74D1AACCE1AAE /* /Users/kevinhouyang/Development/hifi/libraries/controllers/src/controllers/Input.cpp */,
+				0763618171144F4BA258DBB5 /* /Users/kevinhouyang/Development/hifi/libraries/controllers/src/controllers/InputDevice.cpp */,
+				BC9AD411BCD14BECAB3BC97B /* /Users/kevinhouyang/Development/hifi/libraries/controllers/src/controllers/InputRecorder.cpp */,
+				E58D0CCBF6BB48C2A27789C0 /* /Users/kevinhouyang/Development/hifi/libraries/controllers/src/controllers/Logging.cpp */,
+				02D6073042744408A97D8D86 /* /Users/kevinhouyang/Development/hifi/libraries/controllers/src/controllers/Pose.cpp */,
+				5AFD2E7F7AD4457C9C1B3D2E /* /Users/kevinhouyang/Development/hifi/libraries/controllers/src/controllers/ScriptingInterface.cpp */,
+				76D7B6E51E1743238AF9FF51 /* /Users/kevinhouyang/Development/hifi/libraries/controllers/src/controllers/StandardController.cpp */,
+				F2E4D570E901460EB352E01F /* /Users/kevinhouyang/Development/hifi/libraries/controllers/src/controllers/StateController.cpp */,
+				6BBA953FF27C4F508B1FAF64 /* /Users/kevinhouyang/Development/hifi/libraries/controllers/src/controllers/UserInputMapper.cpp */,
+				4663E1DFFF074C4D9BD90C04 /* /Users/kevinhouyang/Development/hifi/libraries/controllers/src/controllers/impl/Conditional.cpp */,
+				75A13812AE7D4416A7EAAE87 /* /Users/kevinhouyang/Development/hifi/libraries/controllers/src/controllers/impl/Endpoint.cpp */,
+				C77C8B2E3DDA4FB7887E04DB /* /Users/kevinhouyang/Development/hifi/libraries/controllers/src/controllers/impl/Filter.cpp */,
+				3108330B858E44B3BF45901D /* /Users/kevinhouyang/Development/hifi/libraries/controllers/src/controllers/impl/MappingBuilderProxy.cpp */,
+				BB6ADC23F9014DCAA876E0C3 /* /Users/kevinhouyang/Development/hifi/libraries/controllers/src/controllers/impl/RouteBuilderProxy.cpp */,
+				1E96A4C054364427B065D0A3 /* /Users/kevinhouyang/Development/hifi/libraries/controllers/src/controllers/impl/conditionals/AndConditional.cpp */,
+				5877D7A183A34795B1989258 /* /Users/kevinhouyang/Development/hifi/libraries/controllers/src/controllers/impl/conditionals/NotConditional.cpp */,
+				E61533A5E49F411CA4F8E2F8 /* /Users/kevinhouyang/Development/hifi/libraries/controllers/src/controllers/impl/conditionals/ScriptConditional.cpp */,
+				FDD630BAA7234B72A1E3924C /* /Users/kevinhouyang/Development/hifi/libraries/controllers/src/controllers/impl/endpoints/ActionEndpoint.cpp */,
+				3EB77018ADA542E38DD14D6F /* /Users/kevinhouyang/Development/hifi/libraries/controllers/src/controllers/impl/endpoints/AnyEndpoint.cpp */,
+				853A095B5C8F4C9DAF07A763 /* /Users/kevinhouyang/Development/hifi/libraries/controllers/src/controllers/impl/endpoints/CompositeEndpoint.cpp */,
+				6AF5838ED95C454FA385A93E /* /Users/kevinhouyang/Development/hifi/libraries/controllers/src/controllers/impl/endpoints/InputEndpoint.cpp */,
+				49B5C83B56674F22BFDD52F2 /* /Users/kevinhouyang/Development/hifi/libraries/controllers/src/controllers/impl/endpoints/JSEndpoint.cpp */,
+				38CCBD908531418AB2C4E244 /* /Users/kevinhouyang/Development/hifi/libraries/controllers/src/controllers/impl/endpoints/ScriptEndpoint.cpp */,
+				D2AF72500F814208AA3CD8BE /* /Users/kevinhouyang/Development/hifi/libraries/controllers/src/controllers/impl/filters/AccelerationLimiterFilter.cpp */,
+				B9FCFDEB4D4C414F8A7F6743 /* /Users/kevinhouyang/Development/hifi/libraries/controllers/src/controllers/impl/filters/ClampFilter.cpp */,
+				894036C90A2B4F9A9811826A /* /Users/kevinhouyang/Development/hifi/libraries/controllers/src/controllers/impl/filters/DeadZoneFilter.cpp */,
+				4CC08F3A264145C7811D4530 /* /Users/kevinhouyang/Development/hifi/libraries/controllers/src/controllers/impl/filters/ExponentialSmoothingFilter.cpp */,
+				E068422F3784486A8856269B /* /Users/kevinhouyang/Development/hifi/libraries/controllers/src/controllers/impl/filters/HysteresisFilter.cpp */,
+				CAFD84C7326C451CAB01ABAB /* /Users/kevinhouyang/Development/hifi/libraries/controllers/src/controllers/impl/filters/LowVelocityFilter.cpp */,
+				9E51BA91E5DB4394BD8068E6 /* /Users/kevinhouyang/Development/hifi/libraries/controllers/src/controllers/impl/filters/NotFilter.cpp */,
+				75E0B4205E454A99A77B3520 /* /Users/kevinhouyang/Development/hifi/libraries/controllers/src/controllers/impl/filters/PulseFilter.cpp */,
+				563BA3743FA7433C9D456B74 /* /Users/kevinhouyang/Development/hifi/libraries/controllers/src/controllers/impl/filters/ScaleFilter.cpp */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		20C84B703AD9429B8248F310 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B9FE216284A2435384E49A92 /* controllers_autogen */;
+			targetProxy = E5272A355E144324905E0D4D /* PBXContainerItemProxy */;
+		};
+		4D8D78E2FA754539A10D278C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 324A15BFFEE94E94BA16B115 /* ZERO_CHECK */;
+			targetProxy = ED70C22BCE5B4149957AA6F3 /* PBXContainerItemProxy */;
+		};
+		580FE3BDBD7140B2B1F954C0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 324A15BFFEE94E94BA16B115 /* ZERO_CHECK */;
+			targetProxy = 2FA7EC593346455B8D77161D /* PBXContainerItemProxy */;
+		};
+		5E007730B2FD46AE9898F014 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EC7358D97DFB4AB0AF8A20EB /* ALL_BUILD */;
+			targetProxy = 25935D925E3B4A26AE8980EE /* PBXContainerItemProxy */;
+		};
+		635646E9FD164DC08FA1A309 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 324A15BFFEE94E94BA16B115 /* ZERO_CHECK */;
+			targetProxy = F96870522DE4485D9AC3111B /* PBXContainerItemProxy */;
+		};
+		BBE4473286D14EEEBC89109A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B64DE74200FC4A09ABCC7758 /* controllers */;
+			targetProxy = 6E6B0FE372E045F1BE802F07 /* PBXContainerItemProxy */;
+		};
+		C8727B045F9B4CA7B51038D0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EC7358D97DFB4AB0AF8A20EB /* ALL_BUILD */;
+			targetProxy = D96F138791B348A9AA830C48 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		093DBCB65AC44FAC90AD7310 /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ALL_BUILD;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/kevinhouyang/Development/hifi/build/libraries/controllers;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = MinSizeRel;
+		};
+		16EA8E0C32A647E5B616D985 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = controllers_autogen;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/kevinhouyang/Development/hifi/build/libraries/controllers;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = Release;
+		};
+		1918930C2D084A91992C1A01 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = install;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/kevinhouyang/Development/hifi/build/libraries/controllers;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = Debug;
+		};
+		1C659259522D4C5B81723AE7 /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "c++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk;
+				SYMROOT = /Users/kevinhouyang/Development/hifi/build/libraries/controllers/build;
+			};
+			name = RelWithDebInfo;
+		};
+		2051E8D0D72E4FED8670D06B /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = RUN_TESTS;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/kevinhouyang/Development/hifi/build/libraries/controllers;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = RelWithDebInfo;
+		};
+		2786ABDAAE1442BF8253027A /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .a;
+				FRAMEWORK_SEARCH_PATHS = (/usr/local/Cellar/qt/5.11.2/lib);
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = s;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",GLM_FORCE_RADIANS,DEV_BUILD,QT_SCRIPT_LIB,QT_CORE_LIB,QT_NO_DEBUG,QT_QML_LIB,QT_NETWORK_LIB,QT_GUI_LIB);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (/Users/kevinhouyang/Development/hifi/build/libraries/controllers,/Users/kevinhouyang/Development/hifi/libraries/controllers,/Users/kevinhouyang/Development/hifi/build/libraries/controllers/controllers_autogen/include_MinSizeRel,/Users/kevinhouyang/Development/hifi/build/includes,/Users/kevinhouyang/Development/hifi/build/ext/Xcode/glm/project/include,/Users/kevinhouyang/Development/hifi/libraries/shared/src,/Users/kevinhouyang/Development/hifi/build/libraries/shared,/Users/kevinhouyang/Development/hifi/libraries/networking/src);
+				INSTALL_PATH = "";
+				LIBRARY_STYLE = STATIC;
+				OTHER_CPLUSPLUSFLAGS = " -Wall -Wextra -fno-strict-aliasing -Wno-unused-parameter --stdlib=libc++        -DNDEBUG -fPIC '-std=gnu++14'  ";
+				OTHER_LIBTOOLFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = controllers;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/kevinhouyang/Development/hifi/build/libraries/controllers;
+				SYSTEM_HEADER_SEARCH_PATHS = (/usr/local/Cellar/qt/5.11.2/lib/QtScript.framework/Headers,/usr/local/Cellar/qt/5.11.2/lib/QtCore.framework/Headers,"/usr/local/Cellar/qt/5.11.2/./mkspecs/macx-clang",/usr/local/Cellar/qt/5.11.2/lib/QtQml.framework/Headers,/usr/local/Cellar/qt/5.11.2/lib/QtNetwork.framework/Headers,/usr/local/Cellar/qt/5.11.2/lib/QtGui.framework/Headers,/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk/System/Library/Frameworks/OpenGL.framework/Headers);
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = MinSizeRel;
+		};
+		2F610983EADE4BCDB39FC99F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ALL_BUILD;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/kevinhouyang/Development/hifi/build/libraries/controllers;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = Release;
+		};
+		3434C258BE704A988C14EDF4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = RUN_TESTS;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/kevinhouyang/Development/hifi/build/libraries/controllers;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = Debug;
+		};
+		34FDCDED74BA4309BEAC518D /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = controllers_autogen;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/kevinhouyang/Development/hifi/build/libraries/controllers;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = MinSizeRel;
+		};
+		4897A6F0B09E48DE99A7CE0E /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = install;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/kevinhouyang/Development/hifi/build/libraries/controllers;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = MinSizeRel;
+		};
+		50BC9F7D29AA4D6785B9C4DD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ZERO_CHECK;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/kevinhouyang/Development/hifi/build/libraries/controllers;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = Release;
+		};
+		50E883950C3047BD87E81BF0 /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = package;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/kevinhouyang/Development/hifi/build/libraries/controllers;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = RelWithDebInfo;
+		};
+		69963ED95AF24E8F81BAC0C8 /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ALL_BUILD;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/kevinhouyang/Development/hifi/build/libraries/controllers;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = RelWithDebInfo;
+		};
+		71C086516D42436F843E2920 /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "c++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk;
+				SYMROOT = /Users/kevinhouyang/Development/hifi/build/libraries/controllers/build;
+			};
+			name = MinSizeRel;
+		};
+		78312C818787438CBF2CAA30 /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = package;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/kevinhouyang/Development/hifi/build/libraries/controllers;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = MinSizeRel;
+		};
+		7855A2C5EB2A40CC9B1DC38D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "c++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEPLOYMENT_POSTPROCESSING = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk;
+				SYMROOT = /Users/kevinhouyang/Development/hifi/build/libraries/controllers/build;
+			};
+			name = Release;
+		};
+		787633C73E4B41DC8E48C761 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = install;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/kevinhouyang/Development/hifi/build/libraries/controllers;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = Release;
+		};
+		819153EDAA6B414BA620956D /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ZERO_CHECK;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/kevinhouyang/Development/hifi/build/libraries/controllers;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = MinSizeRel;
+		};
+		8286C8198A5B42CFA69AA95F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = package;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/kevinhouyang/Development/hifi/build/libraries/controllers;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = Release;
+		};
+		84BEBDDC20914C71AD2708F8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = package;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/kevinhouyang/Development/hifi/build/libraries/controllers;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = Debug;
+		};
+		8BF923F5C6BD46D3BFAA9C5E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ALL_BUILD;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/kevinhouyang/Development/hifi/build/libraries/controllers;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = Debug;
+		};
+		8C2D1EB55F88413FA34328E2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ZERO_CHECK;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/kevinhouyang/Development/hifi/build/libraries/controllers;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = Debug;
+		};
+		8D7B169622B7446D9F318766 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = controllers_autogen;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/kevinhouyang/Development/hifi/build/libraries/controllers;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = Debug;
+		};
+		9313AC2941CA45FD92FC4B80 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .a;
+				FRAMEWORK_SEARCH_PATHS = (/usr/local/Cellar/qt/5.11.2/lib);
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",GLM_FORCE_RADIANS,DEV_BUILD,QT_SCRIPT_LIB,QT_CORE_LIB,QT_QML_LIB,QT_NETWORK_LIB,QT_GUI_LIB);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (/Users/kevinhouyang/Development/hifi/build/libraries/controllers,/Users/kevinhouyang/Development/hifi/libraries/controllers,/Users/kevinhouyang/Development/hifi/build/libraries/controllers/controllers_autogen/include_Debug,/Users/kevinhouyang/Development/hifi/build/includes,/Users/kevinhouyang/Development/hifi/build/ext/Xcode/glm/project/include,/Users/kevinhouyang/Development/hifi/libraries/shared/src,/Users/kevinhouyang/Development/hifi/build/libraries/shared,/Users/kevinhouyang/Development/hifi/libraries/networking/src);
+				INSTALL_PATH = "";
+				LIBRARY_STYLE = STATIC;
+				OTHER_CPLUSPLUSFLAGS = " -Wall -Wextra -fno-strict-aliasing -Wno-unused-parameter --stdlib=libc++       -DDEBUG -fPIC '-std=gnu++14'  ";
+				OTHER_LIBTOOLFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = controllers;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/kevinhouyang/Development/hifi/build/libraries/controllers;
+				SYSTEM_HEADER_SEARCH_PATHS = (/usr/local/Cellar/qt/5.11.2/lib/QtScript.framework/Headers,/usr/local/Cellar/qt/5.11.2/lib/QtCore.framework/Headers,"/usr/local/Cellar/qt/5.11.2/./mkspecs/macx-clang",/usr/local/Cellar/qt/5.11.2/lib/QtQml.framework/Headers,/usr/local/Cellar/qt/5.11.2/lib/QtNetwork.framework/Headers,/usr/local/Cellar/qt/5.11.2/lib/QtGui.framework/Headers,/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk/System/Library/Frameworks/OpenGL.framework/Headers);
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = Debug;
+		};
+		96619F7A1938438EB1248D4E /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = install;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/kevinhouyang/Development/hifi/build/libraries/controllers;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = RelWithDebInfo;
+		};
+		9F16AC8F5D8A4A698189203F /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = controllers_autogen;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/kevinhouyang/Development/hifi/build/libraries/controllers;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = RelWithDebInfo;
+		};
+		AD1F8CD160A84084925A9584 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .a;
+				FRAMEWORK_SEARCH_PATHS = (/usr/local/Cellar/qt/5.11.2/lib);
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 3;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",GLM_FORCE_RADIANS,DEV_BUILD,QT_SCRIPT_LIB,QT_CORE_LIB,QT_NO_DEBUG,QT_QML_LIB,QT_NETWORK_LIB,QT_GUI_LIB);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (/Users/kevinhouyang/Development/hifi/build/libraries/controllers,/Users/kevinhouyang/Development/hifi/libraries/controllers,/Users/kevinhouyang/Development/hifi/build/libraries/controllers/controllers_autogen/include_Release,/Users/kevinhouyang/Development/hifi/build/includes,/Users/kevinhouyang/Development/hifi/build/ext/Xcode/glm/project/include,/Users/kevinhouyang/Development/hifi/libraries/shared/src,/Users/kevinhouyang/Development/hifi/build/libraries/shared,/Users/kevinhouyang/Development/hifi/libraries/networking/src);
+				INSTALL_PATH = "";
+				LIBRARY_STYLE = STATIC;
+				OTHER_CPLUSPLUSFLAGS = " -Wall -Wextra -fno-strict-aliasing -Wno-unused-parameter --stdlib=libc++        -DNDEBUG -fPIC '-std=gnu++14'  ";
+				OTHER_LIBTOOLFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = controllers;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/kevinhouyang/Development/hifi/build/libraries/controllers;
+				SYSTEM_HEADER_SEARCH_PATHS = (/usr/local/Cellar/qt/5.11.2/lib/QtScript.framework/Headers,/usr/local/Cellar/qt/5.11.2/lib/QtCore.framework/Headers,"/usr/local/Cellar/qt/5.11.2/./mkspecs/macx-clang",/usr/local/Cellar/qt/5.11.2/lib/QtQml.framework/Headers,/usr/local/Cellar/qt/5.11.2/lib/QtNetwork.framework/Headers,/usr/local/Cellar/qt/5.11.2/lib/QtGui.framework/Headers,/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk/System/Library/Frameworks/OpenGL.framework/Headers);
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = Release;
+		};
+		B6640309F38C486193B28156 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "c++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk;
+				SYMROOT = /Users/kevinhouyang/Development/hifi/build/libraries/controllers/build;
+			};
+			name = Debug;
+		};
+		BFDCA16929784AA09353D71B /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ZERO_CHECK;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/kevinhouyang/Development/hifi/build/libraries/controllers;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = RelWithDebInfo;
+		};
+		F699F5E823474BA1B1896DF3 /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = RUN_TESTS;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/kevinhouyang/Development/hifi/build/libraries/controllers;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = MinSizeRel;
+		};
+		F703C2D139F549C6B2543B7A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = RUN_TESTS;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/kevinhouyang/Development/hifi/build/libraries/controllers;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = Release;
+		};
+		F77FC0A666E741A8AC5563F8 /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .a;
+				FRAMEWORK_SEARCH_PATHS = (/usr/local/Cellar/qt/5.11.2/lib);
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 2;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",GLM_FORCE_RADIANS,DEV_BUILD,QT_SCRIPT_LIB,QT_CORE_LIB,QT_NO_DEBUG,QT_QML_LIB,QT_NETWORK_LIB,QT_GUI_LIB);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (/Users/kevinhouyang/Development/hifi/build/libraries/controllers,/Users/kevinhouyang/Development/hifi/libraries/controllers,/Users/kevinhouyang/Development/hifi/build/libraries/controllers/controllers_autogen/include_RelWithDebInfo,/Users/kevinhouyang/Development/hifi/build/includes,/Users/kevinhouyang/Development/hifi/build/ext/Xcode/glm/project/include,/Users/kevinhouyang/Development/hifi/libraries/shared/src,/Users/kevinhouyang/Development/hifi/build/libraries/shared,/Users/kevinhouyang/Development/hifi/libraries/networking/src);
+				INSTALL_PATH = "";
+				LIBRARY_STYLE = STATIC;
+				OTHER_CPLUSPLUSFLAGS = " -Wall -Wextra -fno-strict-aliasing -Wno-unused-parameter --stdlib=libc++           -DNDEBUG -fPIC '-std=gnu++14'  ";
+				OTHER_LIBTOOLFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = controllers;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/kevinhouyang/Development/hifi/build/libraries/controllers;
+				SYSTEM_HEADER_SEARCH_PATHS = (/usr/local/Cellar/qt/5.11.2/lib/QtScript.framework/Headers,/usr/local/Cellar/qt/5.11.2/lib/QtCore.framework/Headers,"/usr/local/Cellar/qt/5.11.2/./mkspecs/macx-clang",/usr/local/Cellar/qt/5.11.2/lib/QtQml.framework/Headers,/usr/local/Cellar/qt/5.11.2/lib/QtNetwork.framework/Headers,/usr/local/Cellar/qt/5.11.2/lib/QtGui.framework/Headers,/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk/System/Library/Frameworks/OpenGL.framework/Headers);
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = RelWithDebInfo;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		0A311C2886FC41F4AD9EC413 /* Build configuration list for PBXProject "controllers" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B6640309F38C486193B28156 /* Debug */,
+				7855A2C5EB2A40CC9B1DC38D /* Release */,
+				71C086516D42436F843E2920 /* MinSizeRel */,
+				1C659259522D4C5B81723AE7 /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		18F292ED6213478F9326A631 /* Build configuration list for PBXNativeTarget "controllers" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9313AC2941CA45FD92FC4B80 /* Debug */,
+				AD1F8CD160A84084925A9584 /* Release */,
+				2786ABDAAE1442BF8253027A /* MinSizeRel */,
+				F77FC0A666E741A8AC5563F8 /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		308DF4EF1548486187975C3C /* Build configuration list for PBXAggregateTarget "package" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				84BEBDDC20914C71AD2708F8 /* Debug */,
+				8286C8198A5B42CFA69AA95F /* Release */,
+				78312C818787438CBF2CAA30 /* MinSizeRel */,
+				50E883950C3047BD87E81BF0 /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		51F6848FC3634274BC223A63 /* Build configuration list for PBXAggregateTarget "controllers_autogen" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8D7B169622B7446D9F318766 /* Debug */,
+				16EA8E0C32A647E5B616D985 /* Release */,
+				34FDCDED74BA4309BEAC518D /* MinSizeRel */,
+				9F16AC8F5D8A4A698189203F /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		BDDE3ACE6D154658A0B13922 /* Build configuration list for PBXAggregateTarget "RUN_TESTS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3434C258BE704A988C14EDF4 /* Debug */,
+				F703C2D139F549C6B2543B7A /* Release */,
+				F699F5E823474BA1B1896DF3 /* MinSizeRel */,
+				2051E8D0D72E4FED8670D06B /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		DF2DF8A4D0774D9298861F70 /* Build configuration list for PBXAggregateTarget "ALL_BUILD" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8BF923F5C6BD46D3BFAA9C5E /* Debug */,
+				2F610983EADE4BCDB39FC99F /* Release */,
+				093DBCB65AC44FAC90AD7310 /* MinSizeRel */,
+				69963ED95AF24E8F81BAC0C8 /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		F1F2E4AA06A14D5DBE1DE54F /* Build configuration list for PBXAggregateTarget "ZERO_CHECK" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8C2D1EB55F88413FA34328E2 /* Debug */,
+				50BC9F7D29AA4D6785B9C4DD /* Release */,
+				819153EDAA6B414BA620956D /* MinSizeRel */,
+				BFDCA16929784AA09353D71B /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		FCB01C7B44CD41A0AFE77C4C /* Build configuration list for PBXAggregateTarget "install" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1918930C2D084A91992C1A01 /* Debug */,
+				787633C73E4B41DC8E48C761 /* Release */,
+				4897A6F0B09E48DE99A7CE0E /* MinSizeRel */,
+				96619F7A1938438EB1248D4E /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = E10DB2B95DF44C24A2AE4327 /* Project object */;
+}

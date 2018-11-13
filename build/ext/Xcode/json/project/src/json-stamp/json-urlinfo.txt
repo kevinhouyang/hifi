@@ -1,0 +1,3 @@
+repository='external project URL'
+module='https://hifi-public.s3.amazonaws.com/dependencies/json_3.1.2.zip'
+tag='MD5=94dbf6ea25a7569ddc0ab6e20862cf16'

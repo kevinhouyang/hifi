@@ -1,0 +1,1623 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXAggregateTarget section */
+		324A15BFFEE94E94BA16B115 /* ZERO_CHECK */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 39E608F0A51A474D880F24CB /* Build configuration list for PBXAggregateTarget "ZERO_CHECK" */;
+			buildPhases = (
+				1390D6BCE19E49E2BA093FCD /* CMake Rules */,
+			);
+			dependencies = (
+			);
+			name = ZERO_CHECK;
+			productName = ZERO_CHECK;
+		};
+		76BBA07C604F4D0E89A822F7 /* RUN_TESTS */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = F9DF4E8C4D80466BB56DED82 /* Build configuration list for PBXAggregateTarget "RUN_TESTS" */;
+			buildPhases = (
+				1E09FAC6FF2F44CD839006C4 /* CMake PostBuild Rules */,
+			);
+			dependencies = (
+			);
+			name = RUN_TESTS;
+			productName = RUN_TESTS;
+		};
+		7A7E10E72F85450A98FB2D43 /* install */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 6E49934830C2485184D01BE6 /* Build configuration list for PBXAggregateTarget "install" */;
+			buildPhases = (
+				1840DF24795C4149BBBC1C12 /* CMake PostBuild Rules */,
+			);
+			dependencies = (
+				43EEC729FE05412691FD7333 /* PBXTargetDependency */,
+			);
+			name = install;
+			productName = install;
+		};
+		A0EF40283FD3451D881D67E2 /* package */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 1BA84C77B1454DBBA025B1D7 /* Build configuration list for PBXAggregateTarget "package" */;
+			buildPhases = (
+				436A6E3A2EEE46C490CF9B38 /* CMake PostBuild Rules */,
+			);
+			dependencies = (
+				9CEE5C47FC5C4B5989F66D4A /* PBXTargetDependency */,
+			);
+			name = package;
+			productName = package;
+		};
+		EC7358D97DFB4AB0AF8A20EB /* ALL_BUILD */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = EC2B1FBDD259434AAEB4C9C0 /* Build configuration list for PBXAggregateTarget "ALL_BUILD" */;
+			buildPhases = (
+				E7214F9F9D7A4B5CBFFF6A31 /* CMake Rules */,
+			);
+			dependencies = (
+				4221FBC56A16482C97F512F3 /* PBXTargetDependency */,
+				0EA4F2B9BF4140F58CEAA42E /* PBXTargetDependency */,
+			);
+			name = ALL_BUILD;
+			productName = ALL_BUILD;
+		};
+		F3D434BEFDC94EB78453FD44 /* render-utils_autogen */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 533890D362874A8AA433EA17 /* Build configuration list for PBXAggregateTarget "render-utils_autogen" */;
+			buildPhases = (
+				D209A4C178ED43E4ADB360D1 /* CMake Rules */,
+			);
+			dependencies = (
+				50E8A864885041BA83D419AF /* PBXTargetDependency */,
+			);
+			name = "render-utils_autogen";
+			productName = "render-utils_autogen";
+		};
+/* End PBXAggregateTarget section */
+
+/* Begin PBXBuildFile section */
+		00AD398B20E34B6DA54BB35F /* /Users/kevinhouyang/Development/hifi/libraries/render-utils/src/HazeStage.cpp */ = {isa = PBXBuildFile; fileRef = DE298DFE5678454189646ADA /* /Users/kevinhouyang/Development/hifi/libraries/render-utils/src/HazeStage.cpp */; };
+		00F4ED76EC9A40B29110D2CB /* /Users/kevinhouyang/Development/hifi/libraries/render-utils/src/LightingModel.h */ = {isa = PBXBuildFile; fileRef = E5464F2381CB4391AA37EB8E /* /Users/kevinhouyang/Development/hifi/libraries/render-utils/src/LightingModel.h */; };
+		013582815DD940748F090317 /* /Users/kevinhouyang/Development/hifi/libraries/render-utils/src/FadeEffectJobs.h */ = {isa = PBXBuildFile; fileRef = 7CD897E43D9A48D9A1705EBE /* /Users/kevinhouyang/Development/hifi/libraries/render-utils/src/FadeEffectJobs.h */; };
+		041CFD5F441447D6A6A1DF85 /* /Users/kevinhouyang/Development/hifi/build/libraries/render-utils/render-utils_autogen/mocs_compilation.cpp */ = {isa = PBXBuildFile; fileRef = 7788DF6513CF4349920EA314 /* /Users/kevinhouyang/Development/hifi/build/libraries/render-utils/render-utils_autogen/mocs_compilation.cpp */; };
+		09E931C638E844C5ACC0B82F /* /Users/kevinhouyang/Development/hifi/libraries/render-utils/src/StencilMaskPass.h */ = {isa = PBXBuildFile; fileRef = A9BC6A4193864ADF8AACC337 /* /Users/kevinhouyang/Development/hifi/libraries/render-utils/src/StencilMaskPass.h */; };
+		0BBEA49524674830B4EEECFC /* /Users/kevinhouyang/Development/hifi/libraries/render-utils/src/AntialiasingEffect.cpp */ = {isa = PBXBuildFile; fileRef = 8BC3B12B522142E6BBF49B16 /* /Users/kevinhouyang/Development/hifi/libraries/render-utils/src/AntialiasingEffect.cpp */; };
+		0D7B4C0ACC94482BA42F67E3 /* /Users/kevinhouyang/Development/hifi/libraries/render-utils/src/MeshPartPayload.h */ = {isa = PBXBuildFile; fileRef = F2882758CFBD4451B4D6E89D /* /Users/kevinhouyang/Development/hifi/libraries/render-utils/src/MeshPartPayload.h */; };
+		0F6A9C83F0D14D43A56A82BB /* /Users/kevinhouyang/Development/hifi/libraries/render-utils/src/DeferredLightingEffect.h */ = {isa = PBXBuildFile; fileRef = ED750F7BE8CB4813A788F135 /* /Users/kevinhouyang/Development/hifi/libraries/render-utils/src/DeferredLightingEffect.h */; };
+		10B2E7B056D2495AA0203A59 /* /Users/kevinhouyang/Development/hifi/libraries/render-utils/src/RenderUtilsLogging.h */ = {isa = PBXBuildFile; fileRef = 5EF74E31762B437A9B115290 /* /Users/kevinhouyang/Development/hifi/libraries/render-utils/src/RenderUtilsLogging.h */; };
+		14D9B9498E2749E381773E20 /* /Users/kevinhouyang/Development/hifi/libraries/render-utils/src/FramebufferCache.cpp */ = {isa = PBXBuildFile; fileRef = F227EF57DF494CB4BD5B6E54 /* /Users/kevinhouyang/Development/hifi/libraries/render-utils/src/FramebufferCache.cpp */; };
+		17F9689760C94086B3B3AF25 /* /Users/kevinhouyang/Development/hifi/libraries/render-utils/src/AnimDebugDraw.h */ = {isa = PBXBuildFile; fileRef = 8B4CB594F18241529F8EEFEF /* /Users/kevinhouyang/Development/hifi/libraries/render-utils/src/AnimDebugDraw.h */; };
+		1BFA74ACB1D344B8A166D666 /* /Users/kevinhouyang/Development/hifi/libraries/render-utils/src/Model.h */ = {isa = PBXBuildFile; fileRef = 97844A853DD049BD9261CEE2 /* /Users/kevinhouyang/Development/hifi/libraries/render-utils/src/Model.h */; };
+		1DF77C987D314F86ACC6BBE5 /* /Users/kevinhouyang/Development/hifi/libraries/render-utils/src/RenderForwardTask.h */ = {isa = PBXBuildFile; fileRef = 64894A4E56164F2D8A2D1BB6 /* /Users/kevinhouyang/Development/hifi/libraries/render-utils/src/RenderForwardTask.h */; };
+		248B4A40ADE54BF8B0B15AC0 /* /Users/kevinhouyang/Development/hifi/libraries/render-utils/src/RenderViewTask.h */ = {isa = PBXBuildFile; fileRef = 9C71996760C94A68B83C3C8F /* /Users/kevinhouyang/Development/hifi/libraries/render-utils/src/RenderViewTask.h */; };
+		26E5157410A04F77B6E07220 /* /Users/kevinhouyang/Development/hifi/libraries/render-utils/src/AmbientOcclusionEffect.cpp */ = {isa = PBXBuildFile; fileRef = 312F7B80E5BF48199AF987A0 /* /Users/kevinhouyang/Development/hifi/libraries/render-utils/src/AmbientOcclusionEffect.cpp */; };
+		28953A498443464D8A3A5726 /* /Users/kevinhouyang/Development/hifi/libraries/render-utils/src/text/FontFamilies.h */ = {isa = PBXBuildFile; fileRef = 5D83E13C3DB44BC7B929F2EB /* /Users/kevinhouyang/Development/hifi/libraries/render-utils/src/text/FontFamilies.h */; };
+		29C3093BE40845749CE8AC85 /* /Users/kevinhouyang/Development/hifi/libraries/render-utils/src/PickItemsJob.cpp */ = {isa = PBXBuildFile; fileRef = 75FC60EE0DCF4BEFBEB86815 /* /Users/kevinhouyang/Development/hifi/libraries/render-utils/src/PickItemsJob.cpp */; };
+		2BEE070DD43D4B079954E5D1 /* /Users/kevinhouyang/Development/hifi/libraries/render-utils/src/RenderShadowTask.cpp */ = {isa = PBXBuildFile; fileRef = 728E7859CF434A68B8885676 /* /Users/kevinhouyang/Development/hifi/libraries/render-utils/src/RenderShadowTask.cpp */; };
+		2C2CFC002F6E44BAAF5024C7 /* /Users/kevinhouyang/Development/hifi/build/libraries/render-utils/qrc_fonts.cpp */ = {isa = PBXBuildFile; fileRef = CD65F8C1F87F46D0B4392E28 /* /Users/kevinhouyang/Development/hifi/build/libraries/render-utils/qrc_fonts.cpp */; };
+		2EDE4D45867344FAA54C1620 /* /Users/kevinhouyang/Development/hifi/libraries/render-utils/src/BloomStage.h */ = {isa = PBXBuildFile; fileRef = 48835E2D191D4BD6B909F629 /* /Users/kevinhouyang/Development/hifi/libraries/render-utils/src/BloomStage.h */; };
+		2F5C30EB96E44EF680E4DC7C /* /Users/kevinhouyang/Development/hifi/libraries/render-utils/src/LightingModel.cpp */ = {isa = PBXBuildFile; fileRef = CCF9FAC1D16F4C439F93D89F /* /Users/kevinhouyang/Development/hifi/libraries/render-utils/src/LightingModel.cpp */; };
+		36A2344BA5AD47B0BBD3EE86 /* /Users/kevinhouyang/Development/hifi/libraries/render-utils/src/DrawHaze.cpp */ = {isa = PBXBuildFile; fileRef = 827069D03E534A6FAC3F1766 /* /Users/kevinhouyang/Development/hifi/libraries/render-utils/src/DrawHaze.cpp */; };
+		39A62D3633444B9781CF5B90 /* /Users/kevinhouyang/Development/hifi/libraries/render-utils/src/BackgroundStage.cpp */ = {isa = PBXBuildFile; fileRef = DE4B110A2B264481A37CD136 /* /Users/kevinhouyang/Development/hifi/libraries/render-utils/src/BackgroundStage.cpp */; };
+		3CD86F2446EF4C3B89847C1A /* /Users/kevinhouyang/Development/hifi/libraries/render-utils/src/render-utils/ShaderConstants.h */ = {isa = PBXBuildFile; fileRef = 3B85995D6A6C4235A6E08D2B /* /Users/kevinhouyang/Development/hifi/libraries/render-utils/src/render-utils/ShaderConstants.h */; };
+		3E3AAD31EF82455E9E577689 /* /Users/kevinhouyang/Development/hifi/libraries/render-utils/src/DeferredLightingEffect.cpp */ = {isa = PBXBuildFile; fileRef = A056C5CFE1F54880B692F790 /* /Users/kevinhouyang/Development/hifi/libraries/render-utils/src/DeferredLightingEffect.cpp */; };
+		40C125C3467C4216BAD10D9D /* /Users/kevinhouyang/Development/hifi/libraries/render-utils/src/Model.cpp */ = {isa = PBXBuildFile; fileRef = B128856426DC4E7A868D71CB /* /Users/kevinhouyang/Development/hifi/libraries/render-utils/src/Model.cpp */; };
+		40EC984D67394D8EB1ECD4F2 /* /Users/kevinhouyang/Development/hifi/libraries/render-utils/res/fonts/fonts.qrc */ = {isa = PBXBuildFile; fileRef = 00F591DF0C0A408FBF53D8EA /* /Users/kevinhouyang/Development/hifi/libraries/render-utils/res/fonts/fonts.qrc */; };
+		4589B1977F2E48F28C70C7D5 /* /Users/kevinhouyang/Development/hifi/libraries/render-utils/src/GeometryCache.h */ = {isa = PBXBuildFile; fileRef = 18B292984B5C41EB96C35C54 /* /Users/kevinhouyang/Development/hifi/libraries/render-utils/src/GeometryCache.h */; };
+		4B3069F61F2D498EA6FA7A08 /* /Users/kevinhouyang/Development/hifi/libraries/render-utils/src/BloomStage.cpp */ = {isa = PBXBuildFile; fileRef = BC1E6BEA5E214C87AFA2C18D /* /Users/kevinhouyang/Development/hifi/libraries/render-utils/src/BloomStage.cpp */; };
+		502454F120FB4A40A0097982 /* /Users/kevinhouyang/Development/hifi/libraries/render-utils/src/CauterizedMeshPartPayload.cpp */ = {isa = PBXBuildFile; fileRef = EDF03088BA59486A94EFFCAA /* /Users/kevinhouyang/Development/hifi/libraries/render-utils/src/CauterizedMeshPartPayload.cpp */; };
+		502C538BA215428EBAAECD3D /* /Users/kevinhouyang/Development/hifi/libraries/render-utils/src/RenderViewTask.cpp */ = {isa = PBXBuildFile; fileRef = 7AA0CB0AD30848158BDB1F53 /* /Users/kevinhouyang/Development/hifi/libraries/render-utils/src/RenderViewTask.cpp */; };
+		50B5E12696284619A48E76B2 /* /Users/kevinhouyang/Development/hifi/libraries/render-utils/src/PickItemsJob.h */ = {isa = PBXBuildFile; fileRef = 8F6B8D06380E4D3CBDC06A3B /* /Users/kevinhouyang/Development/hifi/libraries/render-utils/src/PickItemsJob.h */; };
+		55B97B45E061478BB3C570E7 /* /Users/kevinhouyang/Development/hifi/libraries/render-utils/src/BackgroundStage.h */ = {isa = PBXBuildFile; fileRef = 11DF9F2F306741A5A2B06D8C /* /Users/kevinhouyang/Development/hifi/libraries/render-utils/src/BackgroundStage.h */; };
+		5744A0614CF94E1A8A6F45F6 /* /Users/kevinhouyang/Development/hifi/libraries/render-utils/src/FadeEffect.cpp */ = {isa = PBXBuildFile; fileRef = 4ECC33433F374D67B7FC62EB /* /Users/kevinhouyang/Development/hifi/libraries/render-utils/src/FadeEffect.cpp */; };
+		587F1B2F7D104E828B11C846 /* /Users/kevinhouyang/Development/hifi/libraries/render-utils/src/BloomEffect.cpp */ = {isa = PBXBuildFile; fileRef = 7D120F78097F4E7DAF4AA04B /* /Users/kevinhouyang/Development/hifi/libraries/render-utils/src/BloomEffect.cpp */; };
+		60EDB0473073459F84297A27 /* /Users/kevinhouyang/Development/hifi/libraries/render-utils/src/SoftAttachmentModel.cpp */ = {isa = PBXBuildFile; fileRef = 57D57CD42F35488BBE8DFD03 /* /Users/kevinhouyang/Development/hifi/libraries/render-utils/src/SoftAttachmentModel.cpp */; };
+		6268FB8513674AAFBE2729A5 /* /Users/kevinhouyang/Development/hifi/libraries/render-utils/src/StencilMaskPass.cpp */ = {isa = PBXBuildFile; fileRef = B3CC97118E7B4B3DB61D8E26 /* /Users/kevinhouyang/Development/hifi/libraries/render-utils/src/StencilMaskPass.cpp */; };
+		635E6865F6D34FE09F2B632A /* /Users/kevinhouyang/Development/hifi/libraries/render-utils/src/RenderDeferredTask.h */ = {isa = PBXBuildFile; fileRef = E91BCE952E7349B2A70A4D23 /* /Users/kevinhouyang/Development/hifi/libraries/render-utils/src/RenderDeferredTask.h */; };
+		63A94DA4DD1946C697FE467B /* /Users/kevinhouyang/Development/hifi/libraries/render-utils/src/UpdateSceneTask.cpp */ = {isa = PBXBuildFile; fileRef = E1094229D5F9462E86093032 /* /Users/kevinhouyang/Development/hifi/libraries/render-utils/src/UpdateSceneTask.cpp */; };
+		695D3F6452D44B979BEEE37B /* /Users/kevinhouyang/Development/hifi/libraries/render-utils/src/RenderDeferredTask.cpp */ = {isa = PBXBuildFile; fileRef = 6721EE4ECB9349E394A98894 /* /Users/kevinhouyang/Development/hifi/libraries/render-utils/src/RenderDeferredTask.cpp */; };
+		6C9C0F0B9A0F48BC94EC75EA /* /Users/kevinhouyang/Development/hifi/libraries/render-utils/src/RenderCommonTask.h */ = {isa = PBXBuildFile; fileRef = B68E165AB3574C288354391E /* /Users/kevinhouyang/Development/hifi/libraries/render-utils/src/RenderCommonTask.h */; };
+		6E3B100294CD4BB3A6310F25 /* /Users/kevinhouyang/Development/hifi/libraries/render-utils/src/AmbientOcclusionEffect.h */ = {isa = PBXBuildFile; fileRef = 2A2BF1A93D7E40B194813E19 /* /Users/kevinhouyang/Development/hifi/libraries/render-utils/src/AmbientOcclusionEffect.h */; };
+		6F090D6A643245D885431BC3 /* /Users/kevinhouyang/Development/hifi/libraries/render-utils/src/CauterizedModel.h */ = {isa = PBXBuildFile; fileRef = 7A1F86CFC93746C393173229 /* /Users/kevinhouyang/Development/hifi/libraries/render-utils/src/CauterizedModel.h */; };
+		70E4BA563C7E4FE08AE11A40 /* /Users/kevinhouyang/Development/hifi/libraries/render-utils/src/VelocityBufferPass.h */ = {isa = PBXBuildFile; fileRef = CBB06CA8994846688864F84A /* /Users/kevinhouyang/Development/hifi/libraries/render-utils/src/VelocityBufferPass.h */; };
+		7225C14CF9C34073B7785FA6 /* /Users/kevinhouyang/Development/hifi/libraries/render-utils/src/TextureCache.h */ = {isa = PBXBuildFile; fileRef = A1E7D51DC09941BCA5DE2D25 /* /Users/kevinhouyang/Development/hifi/libraries/render-utils/src/TextureCache.h */; };
+		72E28AC9669945C48DBA27E2 /* /Users/kevinhouyang/Development/hifi/libraries/render-utils/src/RenderShadowTask.h */ = {isa = PBXBuildFile; fileRef = 3038A46D4371485FBF026037 /* /Users/kevinhouyang/Development/hifi/libraries/render-utils/src/RenderShadowTask.h */; };
+		79BFE7E91DB04F99974911A0 /* /Users/kevinhouyang/Development/hifi/libraries/render-utils/src/DrawHaze.h */ = {isa = PBXBuildFile; fileRef = FB2C20538D0A46D79BED8B2A /* /Users/kevinhouyang/Development/hifi/libraries/render-utils/src/DrawHaze.h */; };
+		79C6C652BF6A4897BACB275D /* /Users/kevinhouyang/Development/hifi/libraries/render-utils/src/RenderUtilsLogging.cpp */ = {isa = PBXBuildFile; fileRef = BA4A32DECACA4984835B7477 /* /Users/kevinhouyang/Development/hifi/libraries/render-utils/src/RenderUtilsLogging.cpp */; };
+		7AFCBD310D94492C83CCC264 /* /Users/kevinhouyang/Development/hifi/libraries/render-utils/src/DeferredFrameTransform.cpp */ = {isa = PBXBuildFile; fileRef = 002B7BDC621F45B98E1515CE /* /Users/kevinhouyang/Development/hifi/libraries/render-utils/src/DeferredFrameTransform.cpp */; };
+		7C15E753A68B4413B9149085 /* /Users/kevinhouyang/Development/hifi/libraries/render-utils/src/AbstractViewStateInterface.cpp */ = {isa = PBXBuildFile; fileRef = 9324695D917D4652B0FB358E /* /Users/kevinhouyang/Development/hifi/libraries/render-utils/src/AbstractViewStateInterface.cpp */; };
+		7C73ACAEFE8F4A3D8B15D7A8 /* /Users/kevinhouyang/Development/hifi/libraries/render-utils/src/DebugDeferredBuffer.cpp */ = {isa = PBXBuildFile; fileRef = 4BE95EB85D9447FA9A8502C7 /* /Users/kevinhouyang/Development/hifi/libraries/render-utils/src/DebugDeferredBuffer.cpp */; };
+		80C30AB786E9434D8305DFCE /* /Users/kevinhouyang/Development/hifi/libraries/render-utils/src/VelocityBufferPass.cpp */ = {isa = PBXBuildFile; fileRef = 5A09A76E19414D9B80C6E7A3 /* /Users/kevinhouyang/Development/hifi/libraries/render-utils/src/VelocityBufferPass.cpp */; };
+		82E728F18BEA42C1A7EC0268 /* /Users/kevinhouyang/Development/hifi/libraries/render-utils/src/HazeStage.h */ = {isa = PBXBuildFile; fileRef = 265E3A39E20D4DAEA74CEC0D /* /Users/kevinhouyang/Development/hifi/libraries/render-utils/src/HazeStage.h */; };
+		83F11C80D7844101BDFF83D4 /* /Users/kevinhouyang/Development/hifi/libraries/render-utils/src/FboCache.cpp */ = {isa = PBXBuildFile; fileRef = F53824024F8B46A39B5A2ACE /* /Users/kevinhouyang/Development/hifi/libraries/render-utils/src/FboCache.cpp */; };
+		8B5395DDBCB049499FCC9B7B /* /Users/kevinhouyang/Development/hifi/libraries/render-utils/src/DeferredFramebuffer.h */ = {isa = PBXBuildFile; fileRef = 71EC7438469A42EF92874242 /* /Users/kevinhouyang/Development/hifi/libraries/render-utils/src/DeferredFramebuffer.h */; };
+		8B8AD40BD35A4A13BE893D1D /* /Users/kevinhouyang/Development/hifi/libraries/render-utils/src/TextRenderer3D.h */ = {isa = PBXBuildFile; fileRef = E18D5531C7D84BB48C268DC2 /* /Users/kevinhouyang/Development/hifi/libraries/render-utils/src/TextRenderer3D.h */; };
+		8C1C0FDCBF1841189A199FB8 /* /Users/kevinhouyang/Development/hifi/libraries/render-utils/src/DeferredFrameTransform.h */ = {isa = PBXBuildFile; fileRef = 5B96FBFA6B0A4C3DA405CC61 /* /Users/kevinhouyang/Development/hifi/libraries/render-utils/src/DeferredFrameTransform.h */; };
+		9179E15FF7AB4BF796B4DD81 /* /Users/kevinhouyang/Development/hifi/libraries/render-utils/src/RenderCommonTask.cpp */ = {isa = PBXBuildFile; fileRef = 9E3AC381A2F148599533A8CF /* /Users/kevinhouyang/Development/hifi/libraries/render-utils/src/RenderCommonTask.cpp */; };
+		95A1B2AE0614458794EC0853 /* /Users/kevinhouyang/Development/hifi/libraries/render-utils/src/DeferredFramebuffer.cpp */ = {isa = PBXBuildFile; fileRef = F8FC6E76BD1F4E11904EDA57 /* /Users/kevinhouyang/Development/hifi/libraries/render-utils/src/DeferredFramebuffer.cpp */; };
+		95A3DFDEA0044966A0470430 /* /Users/kevinhouyang/Development/hifi/libraries/render-utils/src/RenderPipelines.h */ = {isa = PBXBuildFile; fileRef = E161AB8F99824A3C9B1A9B30 /* /Users/kevinhouyang/Development/hifi/libraries/render-utils/src/RenderPipelines.h */; };
+		973D714F4F19455B9DAA2CA0 /* /Users/kevinhouyang/Development/hifi/libraries/render-utils/src/CauterizedMeshPartPayload.h */ = {isa = PBXBuildFile; fileRef = B1D0DD7F41F04BCDB73061C4 /* /Users/kevinhouyang/Development/hifi/libraries/render-utils/src/CauterizedMeshPartPayload.h */; };
+		9795D8191F5C47F49FFF4490 /* /Users/kevinhouyang/Development/hifi/libraries/render-utils/src/HighlightEffect.cpp */ = {isa = PBXBuildFile; fileRef = 7C4C24BB3550484887AF2419 /* /Users/kevinhouyang/Development/hifi/libraries/render-utils/src/HighlightEffect.cpp */; };
+		99C5A02EB34D42CAA8052997 /* /Users/kevinhouyang/Development/hifi/libraries/render-utils/src/ToneMappingEffect.h */ = {isa = PBXBuildFile; fileRef = 88F07D481DCF40BCB2C51C4F /* /Users/kevinhouyang/Development/hifi/libraries/render-utils/src/ToneMappingEffect.h */; };
+		9C4A37E950A241AF803D87E1 /* /Users/kevinhouyang/Development/hifi/libraries/render-utils/src/LightStage.h */ = {isa = PBXBuildFile; fileRef = 7F6DCD991F91425294000475 /* /Users/kevinhouyang/Development/hifi/libraries/render-utils/src/LightStage.h */; };
+		9E16D3D40CA749E999E597EF /* /Users/kevinhouyang/Development/hifi/libraries/render-utils/src/MetaModelPayload.h */ = {isa = PBXBuildFile; fileRef = 8612A4DCAC694C2DAC4F3CAC /* /Users/kevinhouyang/Development/hifi/libraries/render-utils/src/MetaModelPayload.h */; };
+		9F40EC4B3548473DB8E101DF /* /Users/kevinhouyang/Development/hifi/libraries/render-utils/src/DebugDeferredBuffer.h */ = {isa = PBXBuildFile; fileRef = D10BBB273BC54CBB89FCA3B1 /* /Users/kevinhouyang/Development/hifi/libraries/render-utils/src/DebugDeferredBuffer.h */; };
+		A065B47D82ED41ACAE7B2FC6 /* /Users/kevinhouyang/Development/hifi/libraries/render-utils/src/SubsurfaceScattering.h */ = {isa = PBXBuildFile; fileRef = DE7D14FF0C4C4C35A30EC3A6 /* /Users/kevinhouyang/Development/hifi/libraries/render-utils/src/SubsurfaceScattering.h */; };
+		A7914A26937943A296F6F0F3 /* /Users/kevinhouyang/Development/hifi/libraries/render-utils/src/SoftAttachmentModel.h */ = {isa = PBXBuildFile; fileRef = 5DEABE6C8BDA40F09F65F989 /* /Users/kevinhouyang/Development/hifi/libraries/render-utils/src/SoftAttachmentModel.h */; };
+		A988534F41B74D69A73B9A92 /* /Users/kevinhouyang/Development/hifi/libraries/render-utils/src/text/Glyph.h */ = {isa = PBXBuildFile; fileRef = EB28034504704A3D90E25B88 /* /Users/kevinhouyang/Development/hifi/libraries/render-utils/src/text/Glyph.h */; };
+		AB92D484D3F14883936B92EF /* /Users/kevinhouyang/Development/hifi/libraries/render-utils/src/FboCache.h */ = {isa = PBXBuildFile; fileRef = 53182525C1A043B2A35A5EC7 /* /Users/kevinhouyang/Development/hifi/libraries/render-utils/src/FboCache.h */; };
+		ADEF34D805B846F8B02DC447 /* /Users/kevinhouyang/Development/hifi/libraries/render-utils/src/MetaModelPayload.cpp */ = {isa = PBXBuildFile; fileRef = 021E8BFADF3C462BB8B223AB /* /Users/kevinhouyang/Development/hifi/libraries/render-utils/src/MetaModelPayload.cpp */; };
+		AF46E7E23D85411094DA8840 /* /Users/kevinhouyang/Development/hifi/libraries/render-utils/src/ZoneRenderer.h */ = {isa = PBXBuildFile; fileRef = 7DE33E7D791B44209808EB89 /* /Users/kevinhouyang/Development/hifi/libraries/render-utils/src/ZoneRenderer.h */; };
+		B0F6763894AA422888842105 /* /Users/kevinhouyang/Development/hifi/libraries/render-utils/src/LightPayload.cpp */ = {isa = PBXBuildFile; fileRef = 67E4DBF8BBCE409D805EA095 /* /Users/kevinhouyang/Development/hifi/libraries/render-utils/src/LightPayload.cpp */; };
+		B2421D6906A6457FB32E45B0 /* /Users/kevinhouyang/Development/hifi/libraries/render-utils/src/FramebufferCache.h */ = {isa = PBXBuildFile; fileRef = 867E0FB3C49E4FDBA3E4FE10 /* /Users/kevinhouyang/Development/hifi/libraries/render-utils/src/FramebufferCache.h */; };
+		B2AA5E34751445B3A950A532 /* /Users/kevinhouyang/Development/hifi/libraries/render-utils/src/LightClusters.h */ = {isa = PBXBuildFile; fileRef = 733BAC49F1764D318EBB49EB /* /Users/kevinhouyang/Development/hifi/libraries/render-utils/src/LightClusters.h */; };
+		B6782273C00C4D4E8CA851D5 /* /Users/kevinhouyang/Development/hifi/libraries/render-utils/src/BloomEffect.h */ = {isa = PBXBuildFile; fileRef = D6C2DA7C13CF498CAE46A999 /* /Users/kevinhouyang/Development/hifi/libraries/render-utils/src/BloomEffect.h */; };
+		B7B027D49918480485B10CC7 /* /Users/kevinhouyang/Development/hifi/libraries/render-utils/src/text/EffectType.h */ = {isa = PBXBuildFile; fileRef = 5FC6A758E6AD487482894432 /* /Users/kevinhouyang/Development/hifi/libraries/render-utils/src/text/EffectType.h */; };
+		BC55CAB05B0943FA9477E5A6 /* /Users/kevinhouyang/Development/hifi/libraries/render-utils/src/text/Font.cpp */ = {isa = PBXBuildFile; fileRef = 78B9B67795744E2D8516F832 /* /Users/kevinhouyang/Development/hifi/libraries/render-utils/src/text/Font.cpp */; };
+		BD160A46B50E41EF99E046A3 /* /Users/kevinhouyang/Development/hifi/libraries/render-utils/src/text/Font.h */ = {isa = PBXBuildFile; fileRef = C86D47B6B27B4BD0B656E329 /* /Users/kevinhouyang/Development/hifi/libraries/render-utils/src/text/Font.h */; };
+		BD938C8D69FA42F494273F93 /* /Users/kevinhouyang/Development/hifi/libraries/render-utils/src/SurfaceGeometryPass.cpp */ = {isa = PBXBuildFile; fileRef = 7682399E95FD4E08B806EFAE /* /Users/kevinhouyang/Development/hifi/libraries/render-utils/src/SurfaceGeometryPass.cpp */; };
+		BE5C98BDBDC4446EB8598D29 /* /Users/kevinhouyang/Development/hifi/libraries/render-utils/CMakeLists.txt */ = {isa = PBXBuildFile; fileRef = 68EC03D2E55840268C239EC6 /* /Users/kevinhouyang/Development/hifi/libraries/render-utils/CMakeLists.txt */; };
+		C5B9328674234A4BB27AC9E2 /* /Users/kevinhouyang/Development/hifi/libraries/render-utils/src/SubsurfaceScattering.cpp */ = {isa = PBXBuildFile; fileRef = B1E5C0ED625541209AC503C4 /* /Users/kevinhouyang/Development/hifi/libraries/render-utils/src/SubsurfaceScattering.cpp */; };
+		CC6074C9FDD8491188513348 /* /Users/kevinhouyang/Development/hifi/libraries/render-utils/src/RenderForwardTask.cpp */ = {isa = PBXBuildFile; fileRef = 9FB95A174751482EB1E7D72B /* /Users/kevinhouyang/Development/hifi/libraries/render-utils/src/RenderForwardTask.cpp */; };
+		CCF007E2109D4B70B589C7F7 /* /Users/kevinhouyang/Development/hifi/libraries/render-utils/src/AbstractViewStateInterface.h */ = {isa = PBXBuildFile; fileRef = 538C5F05737E4FA7A17E559A /* /Users/kevinhouyang/Development/hifi/libraries/render-utils/src/AbstractViewStateInterface.h */; };
+		CFF9BED02277401EB67101DA /* /Users/kevinhouyang/Development/hifi/libraries/render-utils/src/HighlightEffect.h */ = {isa = PBXBuildFile; fileRef = ED3B4D62F8454EE095BA0B99 /* /Users/kevinhouyang/Development/hifi/libraries/render-utils/src/HighlightEffect.h */; };
+		D0D55C61B72542149229BD66 /* /Users/kevinhouyang/Development/hifi/libraries/render-utils/src/text/Glyph.cpp */ = {isa = PBXBuildFile; fileRef = AE3FE913590C41FDB6377B7A /* /Users/kevinhouyang/Development/hifi/libraries/render-utils/src/text/Glyph.cpp */; };
+		D44A113029A1496191128B71 /* /Users/kevinhouyang/Development/hifi/libraries/render-utils/src/AnimDebugDraw.cpp */ = {isa = PBXBuildFile; fileRef = 73A3367B163542BAB6EF94AA /* /Users/kevinhouyang/Development/hifi/libraries/render-utils/src/AnimDebugDraw.cpp */; };
+		D73D94C518E64EE2B0B90BD5 /* /Users/kevinhouyang/Development/hifi/libraries/render-utils/src/GeometryCache.cpp */ = {isa = PBXBuildFile; fileRef = B64A50F96D6A428EBCFA49A1 /* /Users/kevinhouyang/Development/hifi/libraries/render-utils/src/GeometryCache.cpp */; };
+		D7730CEE2F3249EA977B6688 /* /Users/kevinhouyang/Development/hifi/libraries/render-utils/src/ZoneRenderer.cpp */ = {isa = PBXBuildFile; fileRef = 9F73ED7D874647339CF10C1B /* /Users/kevinhouyang/Development/hifi/libraries/render-utils/src/ZoneRenderer.cpp */; };
+		DA15714F34564542A7338FB6 /* /Users/kevinhouyang/Development/hifi/libraries/render-utils/src/AntialiasingEffect.h */ = {isa = PBXBuildFile; fileRef = FD3346BCA48F43F69788E7B3 /* /Users/kevinhouyang/Development/hifi/libraries/render-utils/src/AntialiasingEffect.h */; };
+		DCC67E3B2F2F48B39261AFFC /* /Users/kevinhouyang/Development/hifi/libraries/render-utils/src/LightStage.cpp */ = {isa = PBXBuildFile; fileRef = 2E8566C7C6CC4BC8AE49356F /* /Users/kevinhouyang/Development/hifi/libraries/render-utils/src/LightStage.cpp */; };
+		E0015F806B0B4F69B8550206 /* /Users/kevinhouyang/Development/hifi/libraries/render-utils/src/RenderPipelines.cpp */ = {isa = PBXBuildFile; fileRef = BF31099BDB1147CFBFA2C308 /* /Users/kevinhouyang/Development/hifi/libraries/render-utils/src/RenderPipelines.cpp */; };
+		E0F3901186E64FBD88CEB8E7 /* /Users/kevinhouyang/Development/hifi/libraries/render-utils/src/LightPayload.h */ = {isa = PBXBuildFile; fileRef = B8E86C78662D46799E907706 /* /Users/kevinhouyang/Development/hifi/libraries/render-utils/src/LightPayload.h */; };
+		E46F87A39E89464DA7E98F6D /* /Users/kevinhouyang/Development/hifi/libraries/render-utils/src/UpdateSceneTask.h */ = {isa = PBXBuildFile; fileRef = 87CADB89A6A4452FA26B7C4D /* /Users/kevinhouyang/Development/hifi/libraries/render-utils/src/UpdateSceneTask.h */; };
+		E5A462E5F1C54CCDB376571A /* /Users/kevinhouyang/Development/hifi/libraries/render-utils/src/ToneMappingEffect.cpp */ = {isa = PBXBuildFile; fileRef = 54FE0C5C97E84495BF145134 /* /Users/kevinhouyang/Development/hifi/libraries/render-utils/src/ToneMappingEffect.cpp */; };
+		E8129F1C1564448EA646D0FD /* /Users/kevinhouyang/Development/hifi/libraries/render-utils/src/SurfaceGeometryPass.h */ = {isa = PBXBuildFile; fileRef = 00D3645F7CE64791AC521934 /* /Users/kevinhouyang/Development/hifi/libraries/render-utils/src/SurfaceGeometryPass.h */; };
+		EC124243899A40F88F5649E1 /* /Users/kevinhouyang/Development/hifi/libraries/render-utils/src/LightClusters.cpp */ = {isa = PBXBuildFile; fileRef = A0264025501E42EB9043E5D2 /* /Users/kevinhouyang/Development/hifi/libraries/render-utils/src/LightClusters.cpp */; };
+		EE4644F695C44D82A001A2FA /* /Users/kevinhouyang/Development/hifi/libraries/render-utils/src/CauterizedModel.cpp */ = {isa = PBXBuildFile; fileRef = 0203887F0A304BB8AB1CC750 /* /Users/kevinhouyang/Development/hifi/libraries/render-utils/src/CauterizedModel.cpp */; };
+		F31ECC3BFDD3463CB479A5C8 /* /Users/kevinhouyang/Development/hifi/libraries/render-utils/src/FadeEffectJobs.cpp */ = {isa = PBXBuildFile; fileRef = 8E7328538F784A37BD8D9DD5 /* /Users/kevinhouyang/Development/hifi/libraries/render-utils/src/FadeEffectJobs.cpp */; };
+		F62F90F66D12487FB9617DDA /* /Users/kevinhouyang/Development/hifi/libraries/render-utils/src/FadeEffect.h */ = {isa = PBXBuildFile; fileRef = 6D1F9655D4244390B7796469 /* /Users/kevinhouyang/Development/hifi/libraries/render-utils/src/FadeEffect.h */; };
+		FB5ED2195C3949D6B07BF33A /* /Users/kevinhouyang/Development/hifi/libraries/render-utils/src/RenderHifi.h */ = {isa = PBXBuildFile; fileRef = 17F757775F6F4B979EE1C313 /* /Users/kevinhouyang/Development/hifi/libraries/render-utils/src/RenderHifi.h */; };
+		FBD3AE13E38740F2AAF57397 /* /Users/kevinhouyang/Development/hifi/libraries/render-utils/src/MeshPartPayload.cpp */ = {isa = PBXBuildFile; fileRef = 4FEF13DE5E914ADC8EABEAC1 /* /Users/kevinhouyang/Development/hifi/libraries/render-utils/src/MeshPartPayload.cpp */; };
+		FCE27A832E3E4986A0C4982C /* /Users/kevinhouyang/Development/hifi/libraries/render-utils/src/TextRenderer3D.cpp */ = {isa = PBXBuildFile; fileRef = 7CF161B9B5074807A7E6DA56 /* /Users/kevinhouyang/Development/hifi/libraries/render-utils/src/TextRenderer3D.cpp */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXBuildStyle section */
+		701EB7D6979140AE8A6C5435 /* MinSizeRel */ = {
+			isa = PBXBuildStyle;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+			};
+			name = MinSizeRel;
+		};
+		8763CADB16D24BEF918A5937 /* Release */ = {
+			isa = PBXBuildStyle;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+			};
+			name = Release;
+		};
+		8DB08F1E977A469B93DDA275 /* Debug */ = {
+			isa = PBXBuildStyle;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+			};
+			name = Debug;
+		};
+		E696C321A20B44F0B4B559DD /* RelWithDebInfo */ = {
+			isa = PBXBuildStyle;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+			};
+			name = RelWithDebInfo;
+		};
+/* End PBXBuildStyle section */
+
+/* Begin PBXContainerItemProxy section */
+		38962EBD66A94C43A88E088C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 89F63BAA0C544A35A17A9A44 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 152A96F54ED549129B527F7B;
+			remoteInfo = "render-utils";
+		};
+		48106E5FDB13445F915F02DB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 89F63BAA0C544A35A17A9A44 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 324A15BFFEE94E94BA16B115;
+			remoteInfo = ZERO_CHECK;
+		};
+		49BD1DD45D944A5F8D681803 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 89F63BAA0C544A35A17A9A44 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 324A15BFFEE94E94BA16B115;
+			remoteInfo = ZERO_CHECK;
+		};
+		4F886F3786B9487687766F8E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 89F63BAA0C544A35A17A9A44 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F3D434BEFDC94EB78453FD44;
+			remoteInfo = "render-utils_autogen";
+		};
+		74FB5348B3394DB4AFD4DD38 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 89F63BAA0C544A35A17A9A44 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EC7358D97DFB4AB0AF8A20EB;
+			remoteInfo = ALL_BUILD;
+		};
+		A2CB5A434A44483BBB5AA17D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 89F63BAA0C544A35A17A9A44 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 324A15BFFEE94E94BA16B115;
+			remoteInfo = ZERO_CHECK;
+		};
+		E355433A4301413FA13B11D8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 89F63BAA0C544A35A17A9A44 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EC7358D97DFB4AB0AF8A20EB;
+			remoteInfo = ALL_BUILD;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		002B7BDC621F45B98E1515CE /* /Users/kevinhouyang/Development/hifi/libraries/render-utils/src/DeferredFrameTransform.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = DeferredFrameTransform.cpp; path = src/DeferredFrameTransform.cpp; sourceTree = SOURCE_ROOT; };
+		00D3645F7CE64791AC521934 /* /Users/kevinhouyang/Development/hifi/libraries/render-utils/src/SurfaceGeometryPass.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = SurfaceGeometryPass.h; path = src/SurfaceGeometryPass.h; sourceTree = SOURCE_ROOT; };
+		00F591DF0C0A408FBF53D8EA /* /Users/kevinhouyang/Development/hifi/libraries/render-utils/res/fonts/fonts.qrc */ = {isa = PBXFileReference; explicitFileType = sourcecode; fileEncoding = 4; name = fonts.qrc; path = res/fonts/fonts.qrc; sourceTree = SOURCE_ROOT; };
+		0203887F0A304BB8AB1CC750 /* /Users/kevinhouyang/Development/hifi/libraries/render-utils/src/CauterizedModel.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = CauterizedModel.cpp; path = src/CauterizedModel.cpp; sourceTree = SOURCE_ROOT; };
+		021E8BFADF3C462BB8B223AB /* /Users/kevinhouyang/Development/hifi/libraries/render-utils/src/MetaModelPayload.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = MetaModelPayload.cpp; path = src/MetaModelPayload.cpp; sourceTree = SOURCE_ROOT; };
+		11DF9F2F306741A5A2B06D8C /* /Users/kevinhouyang/Development/hifi/libraries/render-utils/src/BackgroundStage.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = BackgroundStage.h; path = src/BackgroundStage.h; sourceTree = SOURCE_ROOT; };
+		17F757775F6F4B979EE1C313 /* /Users/kevinhouyang/Development/hifi/libraries/render-utils/src/RenderHifi.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = RenderHifi.h; path = src/RenderHifi.h; sourceTree = SOURCE_ROOT; };
+		18B292984B5C41EB96C35C54 /* /Users/kevinhouyang/Development/hifi/libraries/render-utils/src/GeometryCache.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = GeometryCache.h; path = src/GeometryCache.h; sourceTree = SOURCE_ROOT; };
+		265E3A39E20D4DAEA74CEC0D /* /Users/kevinhouyang/Development/hifi/libraries/render-utils/src/HazeStage.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = HazeStage.h; path = src/HazeStage.h; sourceTree = SOURCE_ROOT; };
+		2A2BF1A93D7E40B194813E19 /* /Users/kevinhouyang/Development/hifi/libraries/render-utils/src/AmbientOcclusionEffect.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = AmbientOcclusionEffect.h; path = src/AmbientOcclusionEffect.h; sourceTree = SOURCE_ROOT; };
+		2E8566C7C6CC4BC8AE49356F /* /Users/kevinhouyang/Development/hifi/libraries/render-utils/src/LightStage.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = LightStage.cpp; path = src/LightStage.cpp; sourceTree = SOURCE_ROOT; };
+		3038A46D4371485FBF026037 /* /Users/kevinhouyang/Development/hifi/libraries/render-utils/src/RenderShadowTask.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = RenderShadowTask.h; path = src/RenderShadowTask.h; sourceTree = SOURCE_ROOT; };
+		312F7B80E5BF48199AF987A0 /* /Users/kevinhouyang/Development/hifi/libraries/render-utils/src/AmbientOcclusionEffect.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = AmbientOcclusionEffect.cpp; path = src/AmbientOcclusionEffect.cpp; sourceTree = SOURCE_ROOT; };
+		3B85995D6A6C4235A6E08D2B /* /Users/kevinhouyang/Development/hifi/libraries/render-utils/src/render-utils/ShaderConstants.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = ShaderConstants.h; path = "src/render-utils/ShaderConstants.h"; sourceTree = SOURCE_ROOT; };
+		48835E2D191D4BD6B909F629 /* /Users/kevinhouyang/Development/hifi/libraries/render-utils/src/BloomStage.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = BloomStage.h; path = src/BloomStage.h; sourceTree = SOURCE_ROOT; };
+		4BE95EB85D9447FA9A8502C7 /* /Users/kevinhouyang/Development/hifi/libraries/render-utils/src/DebugDeferredBuffer.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = DebugDeferredBuffer.cpp; path = src/DebugDeferredBuffer.cpp; sourceTree = SOURCE_ROOT; };
+		4ECC33433F374D67B7FC62EB /* /Users/kevinhouyang/Development/hifi/libraries/render-utils/src/FadeEffect.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = FadeEffect.cpp; path = src/FadeEffect.cpp; sourceTree = SOURCE_ROOT; };
+		4FEF13DE5E914ADC8EABEAC1 /* /Users/kevinhouyang/Development/hifi/libraries/render-utils/src/MeshPartPayload.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = MeshPartPayload.cpp; path = src/MeshPartPayload.cpp; sourceTree = SOURCE_ROOT; };
+		511EDAB796624BD1B17DA123 /* /Users/kevinhouyang/Development/hifi/libraries/render-utils/CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; name = CMakeLists.txt; path = CMakeLists.txt; sourceTree = SOURCE_ROOT; };
+		53182525C1A043B2A35A5EC7 /* /Users/kevinhouyang/Development/hifi/libraries/render-utils/src/FboCache.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = FboCache.h; path = src/FboCache.h; sourceTree = SOURCE_ROOT; };
+		538C5F05737E4FA7A17E559A /* /Users/kevinhouyang/Development/hifi/libraries/render-utils/src/AbstractViewStateInterface.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = AbstractViewStateInterface.h; path = src/AbstractViewStateInterface.h; sourceTree = SOURCE_ROOT; };
+		54FE0C5C97E84495BF145134 /* /Users/kevinhouyang/Development/hifi/libraries/render-utils/src/ToneMappingEffect.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = ToneMappingEffect.cpp; path = src/ToneMappingEffect.cpp; sourceTree = SOURCE_ROOT; };
+		57D57CD42F35488BBE8DFD03 /* /Users/kevinhouyang/Development/hifi/libraries/render-utils/src/SoftAttachmentModel.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = SoftAttachmentModel.cpp; path = src/SoftAttachmentModel.cpp; sourceTree = SOURCE_ROOT; };
+		5A09A76E19414D9B80C6E7A3 /* /Users/kevinhouyang/Development/hifi/libraries/render-utils/src/VelocityBufferPass.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = VelocityBufferPass.cpp; path = src/VelocityBufferPass.cpp; sourceTree = SOURCE_ROOT; };
+		5B96FBFA6B0A4C3DA405CC61 /* /Users/kevinhouyang/Development/hifi/libraries/render-utils/src/DeferredFrameTransform.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = DeferredFrameTransform.h; path = src/DeferredFrameTransform.h; sourceTree = SOURCE_ROOT; };
+		5D83E13C3DB44BC7B929F2EB /* /Users/kevinhouyang/Development/hifi/libraries/render-utils/src/text/FontFamilies.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = FontFamilies.h; path = src/text/FontFamilies.h; sourceTree = SOURCE_ROOT; };
+		5DEABE6C8BDA40F09F65F989 /* /Users/kevinhouyang/Development/hifi/libraries/render-utils/src/SoftAttachmentModel.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = SoftAttachmentModel.h; path = src/SoftAttachmentModel.h; sourceTree = SOURCE_ROOT; };
+		5EF74E31762B437A9B115290 /* /Users/kevinhouyang/Development/hifi/libraries/render-utils/src/RenderUtilsLogging.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = RenderUtilsLogging.h; path = src/RenderUtilsLogging.h; sourceTree = SOURCE_ROOT; };
+		5FC6A758E6AD487482894432 /* /Users/kevinhouyang/Development/hifi/libraries/render-utils/src/text/EffectType.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = EffectType.h; path = src/text/EffectType.h; sourceTree = SOURCE_ROOT; };
+		64894A4E56164F2D8A2D1BB6 /* /Users/kevinhouyang/Development/hifi/libraries/render-utils/src/RenderForwardTask.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = RenderForwardTask.h; path = src/RenderForwardTask.h; sourceTree = SOURCE_ROOT; };
+		6721EE4ECB9349E394A98894 /* /Users/kevinhouyang/Development/hifi/libraries/render-utils/src/RenderDeferredTask.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = RenderDeferredTask.cpp; path = src/RenderDeferredTask.cpp; sourceTree = SOURCE_ROOT; };
+		67E4DBF8BBCE409D805EA095 /* /Users/kevinhouyang/Development/hifi/libraries/render-utils/src/LightPayload.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = LightPayload.cpp; path = src/LightPayload.cpp; sourceTree = SOURCE_ROOT; };
+		68EC03D2E55840268C239EC6 /* /Users/kevinhouyang/Development/hifi/libraries/render-utils/CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; name = CMakeLists.txt; path = CMakeLists.txt; sourceTree = SOURCE_ROOT; };
+		6D1F9655D4244390B7796469 /* /Users/kevinhouyang/Development/hifi/libraries/render-utils/src/FadeEffect.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = FadeEffect.h; path = src/FadeEffect.h; sourceTree = SOURCE_ROOT; };
+		71EC7438469A42EF92874242 /* /Users/kevinhouyang/Development/hifi/libraries/render-utils/src/DeferredFramebuffer.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = DeferredFramebuffer.h; path = src/DeferredFramebuffer.h; sourceTree = SOURCE_ROOT; };
+		728E7859CF434A68B8885676 /* /Users/kevinhouyang/Development/hifi/libraries/render-utils/src/RenderShadowTask.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = RenderShadowTask.cpp; path = src/RenderShadowTask.cpp; sourceTree = SOURCE_ROOT; };
+		733BAC49F1764D318EBB49EB /* /Users/kevinhouyang/Development/hifi/libraries/render-utils/src/LightClusters.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = LightClusters.h; path = src/LightClusters.h; sourceTree = SOURCE_ROOT; };
+		73A3367B163542BAB6EF94AA /* /Users/kevinhouyang/Development/hifi/libraries/render-utils/src/AnimDebugDraw.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = AnimDebugDraw.cpp; path = src/AnimDebugDraw.cpp; sourceTree = SOURCE_ROOT; };
+		75FC60EE0DCF4BEFBEB86815 /* /Users/kevinhouyang/Development/hifi/libraries/render-utils/src/PickItemsJob.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = PickItemsJob.cpp; path = src/PickItemsJob.cpp; sourceTree = SOURCE_ROOT; };
+		7682399E95FD4E08B806EFAE /* /Users/kevinhouyang/Development/hifi/libraries/render-utils/src/SurfaceGeometryPass.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = SurfaceGeometryPass.cpp; path = src/SurfaceGeometryPass.cpp; sourceTree = SOURCE_ROOT; };
+		7788DF6513CF4349920EA314 /* /Users/kevinhouyang/Development/hifi/build/libraries/render-utils/render-utils_autogen/mocs_compilation.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = mocs_compilation.cpp; path = "../../build/libraries/render-utils/render-utils_autogen/mocs_compilation.cpp"; sourceTree = SOURCE_ROOT; };
+		78B9B67795744E2D8516F832 /* /Users/kevinhouyang/Development/hifi/libraries/render-utils/src/text/Font.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = Font.cpp; path = src/text/Font.cpp; sourceTree = SOURCE_ROOT; };
+		7A1F86CFC93746C393173229 /* /Users/kevinhouyang/Development/hifi/libraries/render-utils/src/CauterizedModel.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = CauterizedModel.h; path = src/CauterizedModel.h; sourceTree = SOURCE_ROOT; };
+		7AA0CB0AD30848158BDB1F53 /* /Users/kevinhouyang/Development/hifi/libraries/render-utils/src/RenderViewTask.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = RenderViewTask.cpp; path = src/RenderViewTask.cpp; sourceTree = SOURCE_ROOT; };
+		7C4C24BB3550484887AF2419 /* /Users/kevinhouyang/Development/hifi/libraries/render-utils/src/HighlightEffect.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = HighlightEffect.cpp; path = src/HighlightEffect.cpp; sourceTree = SOURCE_ROOT; };
+		7CD897E43D9A48D9A1705EBE /* /Users/kevinhouyang/Development/hifi/libraries/render-utils/src/FadeEffectJobs.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = FadeEffectJobs.h; path = src/FadeEffectJobs.h; sourceTree = SOURCE_ROOT; };
+		7CF161B9B5074807A7E6DA56 /* /Users/kevinhouyang/Development/hifi/libraries/render-utils/src/TextRenderer3D.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = TextRenderer3D.cpp; path = src/TextRenderer3D.cpp; sourceTree = SOURCE_ROOT; };
+		7D120F78097F4E7DAF4AA04B /* /Users/kevinhouyang/Development/hifi/libraries/render-utils/src/BloomEffect.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = BloomEffect.cpp; path = src/BloomEffect.cpp; sourceTree = SOURCE_ROOT; };
+		7DE33E7D791B44209808EB89 /* /Users/kevinhouyang/Development/hifi/libraries/render-utils/src/ZoneRenderer.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = ZoneRenderer.h; path = src/ZoneRenderer.h; sourceTree = SOURCE_ROOT; };
+		7F6DCD991F91425294000475 /* /Users/kevinhouyang/Development/hifi/libraries/render-utils/src/LightStage.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = LightStage.h; path = src/LightStage.h; sourceTree = SOURCE_ROOT; };
+		827069D03E534A6FAC3F1766 /* /Users/kevinhouyang/Development/hifi/libraries/render-utils/src/DrawHaze.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = DrawHaze.cpp; path = src/DrawHaze.cpp; sourceTree = SOURCE_ROOT; };
+		8612A4DCAC694C2DAC4F3CAC /* /Users/kevinhouyang/Development/hifi/libraries/render-utils/src/MetaModelPayload.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = MetaModelPayload.h; path = src/MetaModelPayload.h; sourceTree = SOURCE_ROOT; };
+		867E0FB3C49E4FDBA3E4FE10 /* /Users/kevinhouyang/Development/hifi/libraries/render-utils/src/FramebufferCache.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = FramebufferCache.h; path = src/FramebufferCache.h; sourceTree = SOURCE_ROOT; };
+		87CADB89A6A4452FA26B7C4D /* /Users/kevinhouyang/Development/hifi/libraries/render-utils/src/UpdateSceneTask.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = UpdateSceneTask.h; path = src/UpdateSceneTask.h; sourceTree = SOURCE_ROOT; };
+		88F07D481DCF40BCB2C51C4F /* /Users/kevinhouyang/Development/hifi/libraries/render-utils/src/ToneMappingEffect.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = ToneMappingEffect.h; path = src/ToneMappingEffect.h; sourceTree = SOURCE_ROOT; };
+		8B4CB594F18241529F8EEFEF /* /Users/kevinhouyang/Development/hifi/libraries/render-utils/src/AnimDebugDraw.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = AnimDebugDraw.h; path = src/AnimDebugDraw.h; sourceTree = SOURCE_ROOT; };
+		8BC3B12B522142E6BBF49B16 /* /Users/kevinhouyang/Development/hifi/libraries/render-utils/src/AntialiasingEffect.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = AntialiasingEffect.cpp; path = src/AntialiasingEffect.cpp; sourceTree = SOURCE_ROOT; };
+		8E7328538F784A37BD8D9DD5 /* /Users/kevinhouyang/Development/hifi/libraries/render-utils/src/FadeEffectJobs.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = FadeEffectJobs.cpp; path = src/FadeEffectJobs.cpp; sourceTree = SOURCE_ROOT; };
+		8ED2E57A7F724BCB82AC928D /* /Users/kevinhouyang/Development/hifi/libraries/render-utils/CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; name = CMakeLists.txt; path = CMakeLists.txt; sourceTree = SOURCE_ROOT; };
+		8F6B8D06380E4D3CBDC06A3B /* /Users/kevinhouyang/Development/hifi/libraries/render-utils/src/PickItemsJob.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = PickItemsJob.h; path = src/PickItemsJob.h; sourceTree = SOURCE_ROOT; };
+		9324695D917D4652B0FB358E /* /Users/kevinhouyang/Development/hifi/libraries/render-utils/src/AbstractViewStateInterface.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = AbstractViewStateInterface.cpp; path = src/AbstractViewStateInterface.cpp; sourceTree = SOURCE_ROOT; };
+		97844A853DD049BD9261CEE2 /* /Users/kevinhouyang/Development/hifi/libraries/render-utils/src/Model.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = Model.h; path = src/Model.h; sourceTree = SOURCE_ROOT; };
+		9C71996760C94A68B83C3C8F /* /Users/kevinhouyang/Development/hifi/libraries/render-utils/src/RenderViewTask.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = RenderViewTask.h; path = src/RenderViewTask.h; sourceTree = SOURCE_ROOT; };
+		9E3AC381A2F148599533A8CF /* /Users/kevinhouyang/Development/hifi/libraries/render-utils/src/RenderCommonTask.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = RenderCommonTask.cpp; path = src/RenderCommonTask.cpp; sourceTree = SOURCE_ROOT; };
+		9F73ED7D874647339CF10C1B /* /Users/kevinhouyang/Development/hifi/libraries/render-utils/src/ZoneRenderer.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = ZoneRenderer.cpp; path = src/ZoneRenderer.cpp; sourceTree = SOURCE_ROOT; };
+		9FB95A174751482EB1E7D72B /* /Users/kevinhouyang/Development/hifi/libraries/render-utils/src/RenderForwardTask.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = RenderForwardTask.cpp; path = src/RenderForwardTask.cpp; sourceTree = SOURCE_ROOT; };
+		A0264025501E42EB9043E5D2 /* /Users/kevinhouyang/Development/hifi/libraries/render-utils/src/LightClusters.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = LightClusters.cpp; path = src/LightClusters.cpp; sourceTree = SOURCE_ROOT; };
+		A056C5CFE1F54880B692F790 /* /Users/kevinhouyang/Development/hifi/libraries/render-utils/src/DeferredLightingEffect.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = DeferredLightingEffect.cpp; path = src/DeferredLightingEffect.cpp; sourceTree = SOURCE_ROOT; };
+		A18AD67153B0428F878A6D98 /* render-utils */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = "librender-utils.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A1E7D51DC09941BCA5DE2D25 /* /Users/kevinhouyang/Development/hifi/libraries/render-utils/src/TextureCache.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = TextureCache.h; path = src/TextureCache.h; sourceTree = SOURCE_ROOT; };
+		A9BC6A4193864ADF8AACC337 /* /Users/kevinhouyang/Development/hifi/libraries/render-utils/src/StencilMaskPass.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = StencilMaskPass.h; path = src/StencilMaskPass.h; sourceTree = SOURCE_ROOT; };
+		AE3FE913590C41FDB6377B7A /* /Users/kevinhouyang/Development/hifi/libraries/render-utils/src/text/Glyph.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = Glyph.cpp; path = src/text/Glyph.cpp; sourceTree = SOURCE_ROOT; };
+		B128856426DC4E7A868D71CB /* /Users/kevinhouyang/Development/hifi/libraries/render-utils/src/Model.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = Model.cpp; path = src/Model.cpp; sourceTree = SOURCE_ROOT; };
+		B1D0DD7F41F04BCDB73061C4 /* /Users/kevinhouyang/Development/hifi/libraries/render-utils/src/CauterizedMeshPartPayload.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = CauterizedMeshPartPayload.h; path = src/CauterizedMeshPartPayload.h; sourceTree = SOURCE_ROOT; };
+		B1E5C0ED625541209AC503C4 /* /Users/kevinhouyang/Development/hifi/libraries/render-utils/src/SubsurfaceScattering.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = SubsurfaceScattering.cpp; path = src/SubsurfaceScattering.cpp; sourceTree = SOURCE_ROOT; };
+		B3CC97118E7B4B3DB61D8E26 /* /Users/kevinhouyang/Development/hifi/libraries/render-utils/src/StencilMaskPass.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = StencilMaskPass.cpp; path = src/StencilMaskPass.cpp; sourceTree = SOURCE_ROOT; };
+		B64A50F96D6A428EBCFA49A1 /* /Users/kevinhouyang/Development/hifi/libraries/render-utils/src/GeometryCache.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = GeometryCache.cpp; path = src/GeometryCache.cpp; sourceTree = SOURCE_ROOT; };
+		B68E165AB3574C288354391E /* /Users/kevinhouyang/Development/hifi/libraries/render-utils/src/RenderCommonTask.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = RenderCommonTask.h; path = src/RenderCommonTask.h; sourceTree = SOURCE_ROOT; };
+		B8E86C78662D46799E907706 /* /Users/kevinhouyang/Development/hifi/libraries/render-utils/src/LightPayload.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = LightPayload.h; path = src/LightPayload.h; sourceTree = SOURCE_ROOT; };
+		BA4A32DECACA4984835B7477 /* /Users/kevinhouyang/Development/hifi/libraries/render-utils/src/RenderUtilsLogging.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = RenderUtilsLogging.cpp; path = src/RenderUtilsLogging.cpp; sourceTree = SOURCE_ROOT; };
+		BC1E6BEA5E214C87AFA2C18D /* /Users/kevinhouyang/Development/hifi/libraries/render-utils/src/BloomStage.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = BloomStage.cpp; path = src/BloomStage.cpp; sourceTree = SOURCE_ROOT; };
+		BF31099BDB1147CFBFA2C308 /* /Users/kevinhouyang/Development/hifi/libraries/render-utils/src/RenderPipelines.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = RenderPipelines.cpp; path = src/RenderPipelines.cpp; sourceTree = SOURCE_ROOT; };
+		C86D47B6B27B4BD0B656E329 /* /Users/kevinhouyang/Development/hifi/libraries/render-utils/src/text/Font.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = Font.h; path = src/text/Font.h; sourceTree = SOURCE_ROOT; };
+		CBB06CA8994846688864F84A /* /Users/kevinhouyang/Development/hifi/libraries/render-utils/src/VelocityBufferPass.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = VelocityBufferPass.h; path = src/VelocityBufferPass.h; sourceTree = SOURCE_ROOT; };
+		CCF9FAC1D16F4C439F93D89F /* /Users/kevinhouyang/Development/hifi/libraries/render-utils/src/LightingModel.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = LightingModel.cpp; path = src/LightingModel.cpp; sourceTree = SOURCE_ROOT; };
+		CD65F8C1F87F46D0B4392E28 /* /Users/kevinhouyang/Development/hifi/build/libraries/render-utils/qrc_fonts.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = qrc_fonts.cpp; path = "../../build/libraries/render-utils/qrc_fonts.cpp"; sourceTree = SOURCE_ROOT; };
+		D10BBB273BC54CBB89FCA3B1 /* /Users/kevinhouyang/Development/hifi/libraries/render-utils/src/DebugDeferredBuffer.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = DebugDeferredBuffer.h; path = src/DebugDeferredBuffer.h; sourceTree = SOURCE_ROOT; };
+		D6C2DA7C13CF498CAE46A999 /* /Users/kevinhouyang/Development/hifi/libraries/render-utils/src/BloomEffect.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = BloomEffect.h; path = src/BloomEffect.h; sourceTree = SOURCE_ROOT; };
+		DE298DFE5678454189646ADA /* /Users/kevinhouyang/Development/hifi/libraries/render-utils/src/HazeStage.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = HazeStage.cpp; path = src/HazeStage.cpp; sourceTree = SOURCE_ROOT; };
+		DE4B110A2B264481A37CD136 /* /Users/kevinhouyang/Development/hifi/libraries/render-utils/src/BackgroundStage.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = BackgroundStage.cpp; path = src/BackgroundStage.cpp; sourceTree = SOURCE_ROOT; };
+		DE7D14FF0C4C4C35A30EC3A6 /* /Users/kevinhouyang/Development/hifi/libraries/render-utils/src/SubsurfaceScattering.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = SubsurfaceScattering.h; path = src/SubsurfaceScattering.h; sourceTree = SOURCE_ROOT; };
+		E1094229D5F9462E86093032 /* /Users/kevinhouyang/Development/hifi/libraries/render-utils/src/UpdateSceneTask.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = UpdateSceneTask.cpp; path = src/UpdateSceneTask.cpp; sourceTree = SOURCE_ROOT; };
+		E161AB8F99824A3C9B1A9B30 /* /Users/kevinhouyang/Development/hifi/libraries/render-utils/src/RenderPipelines.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = RenderPipelines.h; path = src/RenderPipelines.h; sourceTree = SOURCE_ROOT; };
+		E18D5531C7D84BB48C268DC2 /* /Users/kevinhouyang/Development/hifi/libraries/render-utils/src/TextRenderer3D.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = TextRenderer3D.h; path = src/TextRenderer3D.h; sourceTree = SOURCE_ROOT; };
+		E5464F2381CB4391AA37EB8E /* /Users/kevinhouyang/Development/hifi/libraries/render-utils/src/LightingModel.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = LightingModel.h; path = src/LightingModel.h; sourceTree = SOURCE_ROOT; };
+		E91BCE952E7349B2A70A4D23 /* /Users/kevinhouyang/Development/hifi/libraries/render-utils/src/RenderDeferredTask.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = RenderDeferredTask.h; path = src/RenderDeferredTask.h; sourceTree = SOURCE_ROOT; };
+		EB28034504704A3D90E25B88 /* /Users/kevinhouyang/Development/hifi/libraries/render-utils/src/text/Glyph.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = Glyph.h; path = src/text/Glyph.h; sourceTree = SOURCE_ROOT; };
+		ED3B4D62F8454EE095BA0B99 /* /Users/kevinhouyang/Development/hifi/libraries/render-utils/src/HighlightEffect.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = HighlightEffect.h; path = src/HighlightEffect.h; sourceTree = SOURCE_ROOT; };
+		ED750F7BE8CB4813A788F135 /* /Users/kevinhouyang/Development/hifi/libraries/render-utils/src/DeferredLightingEffect.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = DeferredLightingEffect.h; path = src/DeferredLightingEffect.h; sourceTree = SOURCE_ROOT; };
+		EDF03088BA59486A94EFFCAA /* /Users/kevinhouyang/Development/hifi/libraries/render-utils/src/CauterizedMeshPartPayload.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = CauterizedMeshPartPayload.cpp; path = src/CauterizedMeshPartPayload.cpp; sourceTree = SOURCE_ROOT; };
+		F227EF57DF494CB4BD5B6E54 /* /Users/kevinhouyang/Development/hifi/libraries/render-utils/src/FramebufferCache.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = FramebufferCache.cpp; path = src/FramebufferCache.cpp; sourceTree = SOURCE_ROOT; };
+		F2882758CFBD4451B4D6E89D /* /Users/kevinhouyang/Development/hifi/libraries/render-utils/src/MeshPartPayload.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = MeshPartPayload.h; path = src/MeshPartPayload.h; sourceTree = SOURCE_ROOT; };
+		F53824024F8B46A39B5A2ACE /* /Users/kevinhouyang/Development/hifi/libraries/render-utils/src/FboCache.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = FboCache.cpp; path = src/FboCache.cpp; sourceTree = SOURCE_ROOT; };
+		F8FC6E76BD1F4E11904EDA57 /* /Users/kevinhouyang/Development/hifi/libraries/render-utils/src/DeferredFramebuffer.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = DeferredFramebuffer.cpp; path = src/DeferredFramebuffer.cpp; sourceTree = SOURCE_ROOT; };
+		FB2C20538D0A46D79BED8B2A /* /Users/kevinhouyang/Development/hifi/libraries/render-utils/src/DrawHaze.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = DrawHaze.h; path = src/DrawHaze.h; sourceTree = SOURCE_ROOT; };
+		FD3346BCA48F43F69788E7B3 /* /Users/kevinhouyang/Development/hifi/libraries/render-utils/src/AntialiasingEffect.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = AntialiasingEffect.h; path = src/AntialiasingEffect.h; sourceTree = SOURCE_ROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXGroup section */
+		062886E472434C4C9F482606 /* Libraries */ = {
+			isa = PBXGroup;
+			children = (
+				7CB4417BFC7D4389A94BF96A /* render-utils */,
+				423A26C77AAA496892918D18 /* render-utils_autogen */,
+			);
+			name = Libraries;
+			sourceTree = "<group>";
+		};
+		1BEF34988C69447985551351 /* CMake Rules */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "CMake Rules";
+			sourceTree = "<group>";
+		};
+		3C7BA25CCABC4F13843747EB /* CMake Rules */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "CMake Rules";
+			sourceTree = "<group>";
+		};
+		423A26C77AAA496892918D18 /* render-utils_autogen */ = {
+			isa = PBXGroup;
+			children = (
+				3C7BA25CCABC4F13843747EB /* CMake Rules */,
+				511EDAB796624BD1B17DA123 /* /Users/kevinhouyang/Development/hifi/libraries/render-utils/CMakeLists.txt */,
+			);
+			name = "render-utils_autogen";
+			sourceTree = "<group>";
+		};
+		5215A14AF31D4271A58F7F0F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A18AD67153B0428F878A6D98 /* render-utils */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		7CB4417BFC7D4389A94BF96A /* render-utils */ = {
+			isa = PBXGroup;
+			children = (
+				DF0BFEC538D840C68A3C2B90 /* Source Files */,
+				DC3336ADDD6643C686A38EA9 /* Header Files */,
+				68EC03D2E55840268C239EC6 /* /Users/kevinhouyang/Development/hifi/libraries/render-utils/CMakeLists.txt */,
+				00F591DF0C0A408FBF53D8EA /* /Users/kevinhouyang/Development/hifi/libraries/render-utils/res/fonts/fonts.qrc */,
+			);
+			name = "render-utils";
+			sourceTree = "<group>";
+		};
+		D12598581A0A4CC08275412A = {
+			isa = PBXGroup;
+			children = (
+				062886E472434C4C9F482606 /* Libraries */,
+				EF1CAA2DECD849309481FDB0 /* ALL_BUILD */,
+				5215A14AF31D4271A58F7F0F /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		DC3336ADDD6643C686A38EA9 /* Header Files */ = {
+			isa = PBXGroup;
+			children = (
+				538C5F05737E4FA7A17E559A /* /Users/kevinhouyang/Development/hifi/libraries/render-utils/src/AbstractViewStateInterface.h */,
+				2A2BF1A93D7E40B194813E19 /* /Users/kevinhouyang/Development/hifi/libraries/render-utils/src/AmbientOcclusionEffect.h */,
+				8B4CB594F18241529F8EEFEF /* /Users/kevinhouyang/Development/hifi/libraries/render-utils/src/AnimDebugDraw.h */,
+				FD3346BCA48F43F69788E7B3 /* /Users/kevinhouyang/Development/hifi/libraries/render-utils/src/AntialiasingEffect.h */,
+				11DF9F2F306741A5A2B06D8C /* /Users/kevinhouyang/Development/hifi/libraries/render-utils/src/BackgroundStage.h */,
+				D6C2DA7C13CF498CAE46A999 /* /Users/kevinhouyang/Development/hifi/libraries/render-utils/src/BloomEffect.h */,
+				48835E2D191D4BD6B909F629 /* /Users/kevinhouyang/Development/hifi/libraries/render-utils/src/BloomStage.h */,
+				B1D0DD7F41F04BCDB73061C4 /* /Users/kevinhouyang/Development/hifi/libraries/render-utils/src/CauterizedMeshPartPayload.h */,
+				7A1F86CFC93746C393173229 /* /Users/kevinhouyang/Development/hifi/libraries/render-utils/src/CauterizedModel.h */,
+				D10BBB273BC54CBB89FCA3B1 /* /Users/kevinhouyang/Development/hifi/libraries/render-utils/src/DebugDeferredBuffer.h */,
+				5B96FBFA6B0A4C3DA405CC61 /* /Users/kevinhouyang/Development/hifi/libraries/render-utils/src/DeferredFrameTransform.h */,
+				71EC7438469A42EF92874242 /* /Users/kevinhouyang/Development/hifi/libraries/render-utils/src/DeferredFramebuffer.h */,
+				ED750F7BE8CB4813A788F135 /* /Users/kevinhouyang/Development/hifi/libraries/render-utils/src/DeferredLightingEffect.h */,
+				FB2C20538D0A46D79BED8B2A /* /Users/kevinhouyang/Development/hifi/libraries/render-utils/src/DrawHaze.h */,
+				6D1F9655D4244390B7796469 /* /Users/kevinhouyang/Development/hifi/libraries/render-utils/src/FadeEffect.h */,
+				7CD897E43D9A48D9A1705EBE /* /Users/kevinhouyang/Development/hifi/libraries/render-utils/src/FadeEffectJobs.h */,
+				53182525C1A043B2A35A5EC7 /* /Users/kevinhouyang/Development/hifi/libraries/render-utils/src/FboCache.h */,
+				867E0FB3C49E4FDBA3E4FE10 /* /Users/kevinhouyang/Development/hifi/libraries/render-utils/src/FramebufferCache.h */,
+				18B292984B5C41EB96C35C54 /* /Users/kevinhouyang/Development/hifi/libraries/render-utils/src/GeometryCache.h */,
+				265E3A39E20D4DAEA74CEC0D /* /Users/kevinhouyang/Development/hifi/libraries/render-utils/src/HazeStage.h */,
+				ED3B4D62F8454EE095BA0B99 /* /Users/kevinhouyang/Development/hifi/libraries/render-utils/src/HighlightEffect.h */,
+				733BAC49F1764D318EBB49EB /* /Users/kevinhouyang/Development/hifi/libraries/render-utils/src/LightClusters.h */,
+				B8E86C78662D46799E907706 /* /Users/kevinhouyang/Development/hifi/libraries/render-utils/src/LightPayload.h */,
+				7F6DCD991F91425294000475 /* /Users/kevinhouyang/Development/hifi/libraries/render-utils/src/LightStage.h */,
+				E5464F2381CB4391AA37EB8E /* /Users/kevinhouyang/Development/hifi/libraries/render-utils/src/LightingModel.h */,
+				F2882758CFBD4451B4D6E89D /* /Users/kevinhouyang/Development/hifi/libraries/render-utils/src/MeshPartPayload.h */,
+				8612A4DCAC694C2DAC4F3CAC /* /Users/kevinhouyang/Development/hifi/libraries/render-utils/src/MetaModelPayload.h */,
+				97844A853DD049BD9261CEE2 /* /Users/kevinhouyang/Development/hifi/libraries/render-utils/src/Model.h */,
+				8F6B8D06380E4D3CBDC06A3B /* /Users/kevinhouyang/Development/hifi/libraries/render-utils/src/PickItemsJob.h */,
+				B68E165AB3574C288354391E /* /Users/kevinhouyang/Development/hifi/libraries/render-utils/src/RenderCommonTask.h */,
+				E91BCE952E7349B2A70A4D23 /* /Users/kevinhouyang/Development/hifi/libraries/render-utils/src/RenderDeferredTask.h */,
+				64894A4E56164F2D8A2D1BB6 /* /Users/kevinhouyang/Development/hifi/libraries/render-utils/src/RenderForwardTask.h */,
+				17F757775F6F4B979EE1C313 /* /Users/kevinhouyang/Development/hifi/libraries/render-utils/src/RenderHifi.h */,
+				E161AB8F99824A3C9B1A9B30 /* /Users/kevinhouyang/Development/hifi/libraries/render-utils/src/RenderPipelines.h */,
+				3038A46D4371485FBF026037 /* /Users/kevinhouyang/Development/hifi/libraries/render-utils/src/RenderShadowTask.h */,
+				5EF74E31762B437A9B115290 /* /Users/kevinhouyang/Development/hifi/libraries/render-utils/src/RenderUtilsLogging.h */,
+				9C71996760C94A68B83C3C8F /* /Users/kevinhouyang/Development/hifi/libraries/render-utils/src/RenderViewTask.h */,
+				5DEABE6C8BDA40F09F65F989 /* /Users/kevinhouyang/Development/hifi/libraries/render-utils/src/SoftAttachmentModel.h */,
+				A9BC6A4193864ADF8AACC337 /* /Users/kevinhouyang/Development/hifi/libraries/render-utils/src/StencilMaskPass.h */,
+				DE7D14FF0C4C4C35A30EC3A6 /* /Users/kevinhouyang/Development/hifi/libraries/render-utils/src/SubsurfaceScattering.h */,
+				00D3645F7CE64791AC521934 /* /Users/kevinhouyang/Development/hifi/libraries/render-utils/src/SurfaceGeometryPass.h */,
+				E18D5531C7D84BB48C268DC2 /* /Users/kevinhouyang/Development/hifi/libraries/render-utils/src/TextRenderer3D.h */,
+				A1E7D51DC09941BCA5DE2D25 /* /Users/kevinhouyang/Development/hifi/libraries/render-utils/src/TextureCache.h */,
+				88F07D481DCF40BCB2C51C4F /* /Users/kevinhouyang/Development/hifi/libraries/render-utils/src/ToneMappingEffect.h */,
+				87CADB89A6A4452FA26B7C4D /* /Users/kevinhouyang/Development/hifi/libraries/render-utils/src/UpdateSceneTask.h */,
+				CBB06CA8994846688864F84A /* /Users/kevinhouyang/Development/hifi/libraries/render-utils/src/VelocityBufferPass.h */,
+				7DE33E7D791B44209808EB89 /* /Users/kevinhouyang/Development/hifi/libraries/render-utils/src/ZoneRenderer.h */,
+				3B85995D6A6C4235A6E08D2B /* /Users/kevinhouyang/Development/hifi/libraries/render-utils/src/render-utils/ShaderConstants.h */,
+				5FC6A758E6AD487482894432 /* /Users/kevinhouyang/Development/hifi/libraries/render-utils/src/text/EffectType.h */,
+				C86D47B6B27B4BD0B656E329 /* /Users/kevinhouyang/Development/hifi/libraries/render-utils/src/text/Font.h */,
+				5D83E13C3DB44BC7B929F2EB /* /Users/kevinhouyang/Development/hifi/libraries/render-utils/src/text/FontFamilies.h */,
+				EB28034504704A3D90E25B88 /* /Users/kevinhouyang/Development/hifi/libraries/render-utils/src/text/Glyph.h */,
+			);
+			name = "Header Files";
+			sourceTree = "<group>";
+		};
+		DF0BFEC538D840C68A3C2B90 /* Source Files */ = {
+			isa = PBXGroup;
+			children = (
+				CD65F8C1F87F46D0B4392E28 /* /Users/kevinhouyang/Development/hifi/build/libraries/render-utils/qrc_fonts.cpp */,
+				7788DF6513CF4349920EA314 /* /Users/kevinhouyang/Development/hifi/build/libraries/render-utils/render-utils_autogen/mocs_compilation.cpp */,
+				9324695D917D4652B0FB358E /* /Users/kevinhouyang/Development/hifi/libraries/render-utils/src/AbstractViewStateInterface.cpp */,
+				312F7B80E5BF48199AF987A0 /* /Users/kevinhouyang/Development/hifi/libraries/render-utils/src/AmbientOcclusionEffect.cpp */,
+				73A3367B163542BAB6EF94AA /* /Users/kevinhouyang/Development/hifi/libraries/render-utils/src/AnimDebugDraw.cpp */,
+				8BC3B12B522142E6BBF49B16 /* /Users/kevinhouyang/Development/hifi/libraries/render-utils/src/AntialiasingEffect.cpp */,
+				DE4B110A2B264481A37CD136 /* /Users/kevinhouyang/Development/hifi/libraries/render-utils/src/BackgroundStage.cpp */,
+				7D120F78097F4E7DAF4AA04B /* /Users/kevinhouyang/Development/hifi/libraries/render-utils/src/BloomEffect.cpp */,
+				BC1E6BEA5E214C87AFA2C18D /* /Users/kevinhouyang/Development/hifi/libraries/render-utils/src/BloomStage.cpp */,
+				EDF03088BA59486A94EFFCAA /* /Users/kevinhouyang/Development/hifi/libraries/render-utils/src/CauterizedMeshPartPayload.cpp */,
+				0203887F0A304BB8AB1CC750 /* /Users/kevinhouyang/Development/hifi/libraries/render-utils/src/CauterizedModel.cpp */,
+				4BE95EB85D9447FA9A8502C7 /* /Users/kevinhouyang/Development/hifi/libraries/render-utils/src/DebugDeferredBuffer.cpp */,
+				002B7BDC621F45B98E1515CE /* /Users/kevinhouyang/Development/hifi/libraries/render-utils/src/DeferredFrameTransform.cpp */,
+				F8FC6E76BD1F4E11904EDA57 /* /Users/kevinhouyang/Development/hifi/libraries/render-utils/src/DeferredFramebuffer.cpp */,
+				A056C5CFE1F54880B692F790 /* /Users/kevinhouyang/Development/hifi/libraries/render-utils/src/DeferredLightingEffect.cpp */,
+				827069D03E534A6FAC3F1766 /* /Users/kevinhouyang/Development/hifi/libraries/render-utils/src/DrawHaze.cpp */,
+				4ECC33433F374D67B7FC62EB /* /Users/kevinhouyang/Development/hifi/libraries/render-utils/src/FadeEffect.cpp */,
+				8E7328538F784A37BD8D9DD5 /* /Users/kevinhouyang/Development/hifi/libraries/render-utils/src/FadeEffectJobs.cpp */,
+				F53824024F8B46A39B5A2ACE /* /Users/kevinhouyang/Development/hifi/libraries/render-utils/src/FboCache.cpp */,
+				F227EF57DF494CB4BD5B6E54 /* /Users/kevinhouyang/Development/hifi/libraries/render-utils/src/FramebufferCache.cpp */,
+				B64A50F96D6A428EBCFA49A1 /* /Users/kevinhouyang/Development/hifi/libraries/render-utils/src/GeometryCache.cpp */,
+				DE298DFE5678454189646ADA /* /Users/kevinhouyang/Development/hifi/libraries/render-utils/src/HazeStage.cpp */,
+				7C4C24BB3550484887AF2419 /* /Users/kevinhouyang/Development/hifi/libraries/render-utils/src/HighlightEffect.cpp */,
+				A0264025501E42EB9043E5D2 /* /Users/kevinhouyang/Development/hifi/libraries/render-utils/src/LightClusters.cpp */,
+				67E4DBF8BBCE409D805EA095 /* /Users/kevinhouyang/Development/hifi/libraries/render-utils/src/LightPayload.cpp */,
+				2E8566C7C6CC4BC8AE49356F /* /Users/kevinhouyang/Development/hifi/libraries/render-utils/src/LightStage.cpp */,
+				CCF9FAC1D16F4C439F93D89F /* /Users/kevinhouyang/Development/hifi/libraries/render-utils/src/LightingModel.cpp */,
+				4FEF13DE5E914ADC8EABEAC1 /* /Users/kevinhouyang/Development/hifi/libraries/render-utils/src/MeshPartPayload.cpp */,
+				021E8BFADF3C462BB8B223AB /* /Users/kevinhouyang/Development/hifi/libraries/render-utils/src/MetaModelPayload.cpp */,
+				B128856426DC4E7A868D71CB /* /Users/kevinhouyang/Development/hifi/libraries/render-utils/src/Model.cpp */,
+				75FC60EE0DCF4BEFBEB86815 /* /Users/kevinhouyang/Development/hifi/libraries/render-utils/src/PickItemsJob.cpp */,
+				9E3AC381A2F148599533A8CF /* /Users/kevinhouyang/Development/hifi/libraries/render-utils/src/RenderCommonTask.cpp */,
+				6721EE4ECB9349E394A98894 /* /Users/kevinhouyang/Development/hifi/libraries/render-utils/src/RenderDeferredTask.cpp */,
+				9FB95A174751482EB1E7D72B /* /Users/kevinhouyang/Development/hifi/libraries/render-utils/src/RenderForwardTask.cpp */,
+				BF31099BDB1147CFBFA2C308 /* /Users/kevinhouyang/Development/hifi/libraries/render-utils/src/RenderPipelines.cpp */,
+				728E7859CF434A68B8885676 /* /Users/kevinhouyang/Development/hifi/libraries/render-utils/src/RenderShadowTask.cpp */,
+				BA4A32DECACA4984835B7477 /* /Users/kevinhouyang/Development/hifi/libraries/render-utils/src/RenderUtilsLogging.cpp */,
+				7AA0CB0AD30848158BDB1F53 /* /Users/kevinhouyang/Development/hifi/libraries/render-utils/src/RenderViewTask.cpp */,
+				57D57CD42F35488BBE8DFD03 /* /Users/kevinhouyang/Development/hifi/libraries/render-utils/src/SoftAttachmentModel.cpp */,
+				B3CC97118E7B4B3DB61D8E26 /* /Users/kevinhouyang/Development/hifi/libraries/render-utils/src/StencilMaskPass.cpp */,
+				B1E5C0ED625541209AC503C4 /* /Users/kevinhouyang/Development/hifi/libraries/render-utils/src/SubsurfaceScattering.cpp */,
+				7682399E95FD4E08B806EFAE /* /Users/kevinhouyang/Development/hifi/libraries/render-utils/src/SurfaceGeometryPass.cpp */,
+				7CF161B9B5074807A7E6DA56 /* /Users/kevinhouyang/Development/hifi/libraries/render-utils/src/TextRenderer3D.cpp */,
+				54FE0C5C97E84495BF145134 /* /Users/kevinhouyang/Development/hifi/libraries/render-utils/src/ToneMappingEffect.cpp */,
+				E1094229D5F9462E86093032 /* /Users/kevinhouyang/Development/hifi/libraries/render-utils/src/UpdateSceneTask.cpp */,
+				5A09A76E19414D9B80C6E7A3 /* /Users/kevinhouyang/Development/hifi/libraries/render-utils/src/VelocityBufferPass.cpp */,
+				9F73ED7D874647339CF10C1B /* /Users/kevinhouyang/Development/hifi/libraries/render-utils/src/ZoneRenderer.cpp */,
+				78B9B67795744E2D8516F832 /* /Users/kevinhouyang/Development/hifi/libraries/render-utils/src/text/Font.cpp */,
+				AE3FE913590C41FDB6377B7A /* /Users/kevinhouyang/Development/hifi/libraries/render-utils/src/text/Glyph.cpp */,
+			);
+			name = "Source Files";
+			sourceTree = "<group>";
+		};
+		EF1CAA2DECD849309481FDB0 /* ALL_BUILD */ = {
+			isa = PBXGroup;
+			children = (
+				1BEF34988C69447985551351 /* CMake Rules */,
+				8ED2E57A7F724BCB82AC928D /* /Users/kevinhouyang/Development/hifi/libraries/render-utils/CMakeLists.txt */,
+			);
+			name = ALL_BUILD;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		152A96F54ED549129B527F7B /* render-utils */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9D35F9CCF1C64650AC751D1C /* Build configuration list for PBXNativeTarget "render-utils" */;
+			buildPhases = (
+				584631B7D1844E6483680CA9 /* CMake Rules */,
+				1DF644E53B4644899FAA73A1 /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				759DA197A4B34C998AB96865 /* PBXTargetDependency */,
+				1C5126AE6928488885EB2E04 /* PBXTargetDependency */,
+			);
+			name = "render-utils";
+			productName = "render-utils";
+			productReference = A18AD67153B0428F878A6D98 /* render-utils */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		89F63BAA0C544A35A17A9A44 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = YES;
+				LastUpgradeCheck = 0930;
+			};
+			buildConfigurationList = 60928C5805C14D00B3D37B90 /* Build configuration list for PBXProject "render-utils" */;
+			buildSettings = {
+			};
+			buildStyles = (
+				8DB08F1E977A469B93DDA275 /* Debug */,
+				8763CADB16D24BEF918A5937 /* Release */,
+				701EB7D6979140AE8A6C5435 /* MinSizeRel */,
+				E696C321A20B44F0B4B559DD /* RelWithDebInfo */,
+			);
+			compatibilityVersion = "Xcode 3.2";
+			hasScannedForEncodings = 0;
+			mainGroup = D12598581A0A4CC08275412A;
+			projectDirPath = "../../../libraries/render-utils";
+			projectRoot = "";
+			targets = (
+				EC7358D97DFB4AB0AF8A20EB /* ALL_BUILD */,
+				76BBA07C604F4D0E89A822F7 /* RUN_TESTS */,
+				324A15BFFEE94E94BA16B115 /* ZERO_CHECK */,
+				7A7E10E72F85450A98FB2D43 /* install */,
+				A0EF40283FD3451D881D67E2 /* package */,
+				152A96F54ED549129B527F7B /* render-utils */,
+				F3D434BEFDC94EB78453FD44 /* render-utils_autogen */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1390D6BCE19E49E2BA093FCD /* CMake Rules */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			name = "CMake Rules";
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "make -C /Users/kevinhouyang/Development/hifi/build/libraries/render-utils -f /Users/kevinhouyang/Development/hifi/build/libraries/render-utils/CMakeScripts/ZERO_CHECK_cmakeRulesBuildPhase.make$CONFIGURATION all";
+			showEnvVarsInLog = 0;
+		};
+		1831F388887B41D2ABBC11BB = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# shell script goes here
+exit 0";
+			showEnvVarsInLog = 0;
+		};
+		1840DF24795C4149BBBC1C12 /* CMake PostBuild Rules */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			name = "CMake PostBuild Rules";
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "make -C /Users/kevinhouyang/Development/hifi/build/libraries/render-utils -f /Users/kevinhouyang/Development/hifi/build/libraries/render-utils/CMakeScripts/install_postBuildPhase.make$CONFIGURATION all";
+			showEnvVarsInLog = 0;
+		};
+		1E09FAC6FF2F44CD839006C4 /* CMake PostBuild Rules */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			name = "CMake PostBuild Rules";
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "make -C /Users/kevinhouyang/Development/hifi/build/libraries/render-utils -f /Users/kevinhouyang/Development/hifi/build/libraries/render-utils/CMakeScripts/RUN_TESTS_postBuildPhase.make$CONFIGURATION all";
+			showEnvVarsInLog = 0;
+		};
+		436A6E3A2EEE46C490CF9B38 /* CMake PostBuild Rules */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			name = "CMake PostBuild Rules";
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "make -C /Users/kevinhouyang/Development/hifi/build/libraries/render-utils -f /Users/kevinhouyang/Development/hifi/build/libraries/render-utils/CMakeScripts/package_postBuildPhase.make$CONFIGURATION all";
+			showEnvVarsInLog = 0;
+		};
+		584631B7D1844E6483680CA9 /* CMake Rules */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			name = "CMake Rules";
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "make -C /Users/kevinhouyang/Development/hifi/build/libraries/render-utils -f /Users/kevinhouyang/Development/hifi/build/libraries/render-utils/CMakeScripts/render-utils_cmakeRulesBuildPhase.make$CONFIGURATION all";
+			showEnvVarsInLog = 0;
+		};
+		6651B425D5CE40B98D2E1247 = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# shell script goes here
+exit 0";
+			showEnvVarsInLog = 0;
+		};
+		89CADB0CF5204B1CAF59C863 = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# shell script goes here
+exit 0";
+			showEnvVarsInLog = 0;
+		};
+		D048ED3C516F4FF4AD2B454D = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# shell script goes here
+exit 0";
+			showEnvVarsInLog = 0;
+		};
+		D209A4C178ED43E4ADB360D1 /* CMake Rules */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			name = "CMake Rules";
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "make -C /Users/kevinhouyang/Development/hifi/build/libraries/render-utils -f /Users/kevinhouyang/Development/hifi/build/libraries/render-utils/CMakeScripts/render-utils_autogen_cmakeRulesBuildPhase.make$CONFIGURATION all";
+			showEnvVarsInLog = 0;
+		};
+		D68D67AD481545C1AB027C5C = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# shell script goes here
+exit 0";
+			showEnvVarsInLog = 0;
+		};
+		E7214F9F9D7A4B5CBFFF6A31 /* CMake Rules */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			name = "CMake Rules";
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "make -C /Users/kevinhouyang/Development/hifi/build/libraries/render-utils -f /Users/kevinhouyang/Development/hifi/build/libraries/render-utils/CMakeScripts/ALL_BUILD_cmakeRulesBuildPhase.make$CONFIGURATION all";
+			showEnvVarsInLog = 0;
+		};
+		F5B76CB04FD04B1F9EC65F6D = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# shell script goes here
+exit 0";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1DF644E53B4644899FAA73A1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2C2CFC002F6E44BAAF5024C7 /* /Users/kevinhouyang/Development/hifi/build/libraries/render-utils/qrc_fonts.cpp */,
+				041CFD5F441447D6A6A1DF85 /* /Users/kevinhouyang/Development/hifi/build/libraries/render-utils/render-utils_autogen/mocs_compilation.cpp */,
+				7C15E753A68B4413B9149085 /* /Users/kevinhouyang/Development/hifi/libraries/render-utils/src/AbstractViewStateInterface.cpp */,
+				26E5157410A04F77B6E07220 /* /Users/kevinhouyang/Development/hifi/libraries/render-utils/src/AmbientOcclusionEffect.cpp */,
+				D44A113029A1496191128B71 /* /Users/kevinhouyang/Development/hifi/libraries/render-utils/src/AnimDebugDraw.cpp */,
+				0BBEA49524674830B4EEECFC /* /Users/kevinhouyang/Development/hifi/libraries/render-utils/src/AntialiasingEffect.cpp */,
+				39A62D3633444B9781CF5B90 /* /Users/kevinhouyang/Development/hifi/libraries/render-utils/src/BackgroundStage.cpp */,
+				587F1B2F7D104E828B11C846 /* /Users/kevinhouyang/Development/hifi/libraries/render-utils/src/BloomEffect.cpp */,
+				4B3069F61F2D498EA6FA7A08 /* /Users/kevinhouyang/Development/hifi/libraries/render-utils/src/BloomStage.cpp */,
+				502454F120FB4A40A0097982 /* /Users/kevinhouyang/Development/hifi/libraries/render-utils/src/CauterizedMeshPartPayload.cpp */,
+				EE4644F695C44D82A001A2FA /* /Users/kevinhouyang/Development/hifi/libraries/render-utils/src/CauterizedModel.cpp */,
+				7C73ACAEFE8F4A3D8B15D7A8 /* /Users/kevinhouyang/Development/hifi/libraries/render-utils/src/DebugDeferredBuffer.cpp */,
+				7AFCBD310D94492C83CCC264 /* /Users/kevinhouyang/Development/hifi/libraries/render-utils/src/DeferredFrameTransform.cpp */,
+				95A1B2AE0614458794EC0853 /* /Users/kevinhouyang/Development/hifi/libraries/render-utils/src/DeferredFramebuffer.cpp */,
+				3E3AAD31EF82455E9E577689 /* /Users/kevinhouyang/Development/hifi/libraries/render-utils/src/DeferredLightingEffect.cpp */,
+				36A2344BA5AD47B0BBD3EE86 /* /Users/kevinhouyang/Development/hifi/libraries/render-utils/src/DrawHaze.cpp */,
+				5744A0614CF94E1A8A6F45F6 /* /Users/kevinhouyang/Development/hifi/libraries/render-utils/src/FadeEffect.cpp */,
+				F31ECC3BFDD3463CB479A5C8 /* /Users/kevinhouyang/Development/hifi/libraries/render-utils/src/FadeEffectJobs.cpp */,
+				83F11C80D7844101BDFF83D4 /* /Users/kevinhouyang/Development/hifi/libraries/render-utils/src/FboCache.cpp */,
+				14D9B9498E2749E381773E20 /* /Users/kevinhouyang/Development/hifi/libraries/render-utils/src/FramebufferCache.cpp */,
+				D73D94C518E64EE2B0B90BD5 /* /Users/kevinhouyang/Development/hifi/libraries/render-utils/src/GeometryCache.cpp */,
+				00AD398B20E34B6DA54BB35F /* /Users/kevinhouyang/Development/hifi/libraries/render-utils/src/HazeStage.cpp */,
+				9795D8191F5C47F49FFF4490 /* /Users/kevinhouyang/Development/hifi/libraries/render-utils/src/HighlightEffect.cpp */,
+				EC124243899A40F88F5649E1 /* /Users/kevinhouyang/Development/hifi/libraries/render-utils/src/LightClusters.cpp */,
+				B0F6763894AA422888842105 /* /Users/kevinhouyang/Development/hifi/libraries/render-utils/src/LightPayload.cpp */,
+				DCC67E3B2F2F48B39261AFFC /* /Users/kevinhouyang/Development/hifi/libraries/render-utils/src/LightStage.cpp */,
+				2F5C30EB96E44EF680E4DC7C /* /Users/kevinhouyang/Development/hifi/libraries/render-utils/src/LightingModel.cpp */,
+				FBD3AE13E38740F2AAF57397 /* /Users/kevinhouyang/Development/hifi/libraries/render-utils/src/MeshPartPayload.cpp */,
+				ADEF34D805B846F8B02DC447 /* /Users/kevinhouyang/Development/hifi/libraries/render-utils/src/MetaModelPayload.cpp */,
+				40C125C3467C4216BAD10D9D /* /Users/kevinhouyang/Development/hifi/libraries/render-utils/src/Model.cpp */,
+				29C3093BE40845749CE8AC85 /* /Users/kevinhouyang/Development/hifi/libraries/render-utils/src/PickItemsJob.cpp */,
+				9179E15FF7AB4BF796B4DD81 /* /Users/kevinhouyang/Development/hifi/libraries/render-utils/src/RenderCommonTask.cpp */,
+				695D3F6452D44B979BEEE37B /* /Users/kevinhouyang/Development/hifi/libraries/render-utils/src/RenderDeferredTask.cpp */,
+				CC6074C9FDD8491188513348 /* /Users/kevinhouyang/Development/hifi/libraries/render-utils/src/RenderForwardTask.cpp */,
+				E0015F806B0B4F69B8550206 /* /Users/kevinhouyang/Development/hifi/libraries/render-utils/src/RenderPipelines.cpp */,
+				2BEE070DD43D4B079954E5D1 /* /Users/kevinhouyang/Development/hifi/libraries/render-utils/src/RenderShadowTask.cpp */,
+				79C6C652BF6A4897BACB275D /* /Users/kevinhouyang/Development/hifi/libraries/render-utils/src/RenderUtilsLogging.cpp */,
+				502C538BA215428EBAAECD3D /* /Users/kevinhouyang/Development/hifi/libraries/render-utils/src/RenderViewTask.cpp */,
+				60EDB0473073459F84297A27 /* /Users/kevinhouyang/Development/hifi/libraries/render-utils/src/SoftAttachmentModel.cpp */,
+				6268FB8513674AAFBE2729A5 /* /Users/kevinhouyang/Development/hifi/libraries/render-utils/src/StencilMaskPass.cpp */,
+				C5B9328674234A4BB27AC9E2 /* /Users/kevinhouyang/Development/hifi/libraries/render-utils/src/SubsurfaceScattering.cpp */,
+				BD938C8D69FA42F494273F93 /* /Users/kevinhouyang/Development/hifi/libraries/render-utils/src/SurfaceGeometryPass.cpp */,
+				FCE27A832E3E4986A0C4982C /* /Users/kevinhouyang/Development/hifi/libraries/render-utils/src/TextRenderer3D.cpp */,
+				E5A462E5F1C54CCDB376571A /* /Users/kevinhouyang/Development/hifi/libraries/render-utils/src/ToneMappingEffect.cpp */,
+				63A94DA4DD1946C697FE467B /* /Users/kevinhouyang/Development/hifi/libraries/render-utils/src/UpdateSceneTask.cpp */,
+				80C30AB786E9434D8305DFCE /* /Users/kevinhouyang/Development/hifi/libraries/render-utils/src/VelocityBufferPass.cpp */,
+				D7730CEE2F3249EA977B6688 /* /Users/kevinhouyang/Development/hifi/libraries/render-utils/src/ZoneRenderer.cpp */,
+				BC55CAB05B0943FA9477E5A6 /* /Users/kevinhouyang/Development/hifi/libraries/render-utils/src/text/Font.cpp */,
+				D0D55C61B72542149229BD66 /* /Users/kevinhouyang/Development/hifi/libraries/render-utils/src/text/Glyph.cpp */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		0EA4F2B9BF4140F58CEAA42E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 152A96F54ED549129B527F7B /* render-utils */;
+			targetProxy = 38962EBD66A94C43A88E088C /* PBXContainerItemProxy */;
+		};
+		1C5126AE6928488885EB2E04 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F3D434BEFDC94EB78453FD44 /* render-utils_autogen */;
+			targetProxy = 4F886F3786B9487687766F8E /* PBXContainerItemProxy */;
+		};
+		4221FBC56A16482C97F512F3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 324A15BFFEE94E94BA16B115 /* ZERO_CHECK */;
+			targetProxy = A2CB5A434A44483BBB5AA17D /* PBXContainerItemProxy */;
+		};
+		43EEC729FE05412691FD7333 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EC7358D97DFB4AB0AF8A20EB /* ALL_BUILD */;
+			targetProxy = 74FB5348B3394DB4AFD4DD38 /* PBXContainerItemProxy */;
+		};
+		50E8A864885041BA83D419AF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 324A15BFFEE94E94BA16B115 /* ZERO_CHECK */;
+			targetProxy = 49BD1DD45D944A5F8D681803 /* PBXContainerItemProxy */;
+		};
+		759DA197A4B34C998AB96865 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 324A15BFFEE94E94BA16B115 /* ZERO_CHECK */;
+			targetProxy = 48106E5FDB13445F915F02DB /* PBXContainerItemProxy */;
+		};
+		9CEE5C47FC5C4B5989F66D4A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EC7358D97DFB4AB0AF8A20EB /* ALL_BUILD */;
+			targetProxy = E355433A4301413FA13B11D8 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		079445028B7E4073B1F22D98 /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .a;
+				FRAMEWORK_SEARCH_PATHS = (/usr/local/Cellar/qt/5.11.2/lib);
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 2;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",GLM_FORCE_RADIANS,DEV_BUILD,QT_GUI_LIB,QT_CORE_LIB,QT_NO_DEBUG,QT_NETWORK_LIB,QT_QML_LIB,QT_QUICK_LIB,QT_SCRIPT_LIB,QT_WIDGETS_LIB,QT_SCRIPTTOOLS_LIB,QT_WEBSOCKETS_LIB);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = ("/Users/kevinhouyang/Development/hifi/build/libraries/render-utils","/Users/kevinhouyang/Development/hifi/libraries/render-utils","/Users/kevinhouyang/Development/hifi/build/libraries/render-utils/render-utils_autogen/include_RelWithDebInfo",/Users/kevinhouyang/Development/hifi/build/includes,/Users/kevinhouyang/Development/hifi/build/ext/Xcode/glm/project/include,/Users/kevinhouyang/Development/hifi/libraries/shared/src,/Users/kevinhouyang/Development/hifi/build/libraries/shared,/Users/kevinhouyang/Development/hifi/libraries/task/src,/Users/kevinhouyang/Development/hifi/build/libraries/task,/Users/kevinhouyang/Development/hifi/libraries/ktx/src,/Users/kevinhouyang/Development/hifi/build/libraries/ktx,/Users/kevinhouyang/Development/hifi/libraries/gpu/src,/Users/kevinhouyang/Development/hifi/build/libraries/gpu,/Users/kevinhouyang/Development/hifi/libraries/shaders/src,/Users/kevinhouyang/Development/hifi/build/libraries/shaders,/Users/kevinhouyang/Development/hifi/libraries/graphics/src,/Users/kevinhouyang/Development/hifi/build/libraries/graphics,"/Users/kevinhouyang/Development/hifi/libraries/graphics-scripting/src","/Users/kevinhouyang/Development/hifi/build/libraries/graphics-scripting","/Users/kevinhouyang/Development/hifi/libraries/model-networking/src","/Users/kevinhouyang/Development/hifi/build/libraries/model-networking",/Users/kevinhouyang/Development/hifi/libraries/render/src,/Users/kevinhouyang/Development/hifi/build/libraries/render,/Users/kevinhouyang/Development/hifi/libraries/animation/src,/Users/kevinhouyang/Development/hifi/build/libraries/animation,/Users/kevinhouyang/Development/hifi/libraries/fbx/src,/Users/kevinhouyang/Development/hifi/build/libraries/fbx,/Users/kevinhouyang/Development/hifi/libraries/image/src,/Users/kevinhouyang/Development/hifi/build/libraries/image,/Users/kevinhouyang/Development/hifi/libraries/procedural/src,/Users/kevinhouyang/Development/hifi/build/libraries/procedural,/Users/kevinhouyang/Development/hifi/libraries/audio/src,/Users/kevinhouyang/Development/hifi/libraries/networking/src,/Users/kevinhouyang/Development/hifi/libraries/octree/src,/Users/kevinhouyang/Development/hifi/build/ext/Xcode/json/project/src/json,/Users/kevinhouyang/Development/hifi/build/ext/Xcode/glad45/project/include);
+				INSTALL_PATH = "";
+				LIBRARY_STYLE = STATIC;
+				OTHER_CPLUSPLUSFLAGS = " -Wall -Wextra -fno-strict-aliasing -Wno-unused-parameter --stdlib=libc++           -DNDEBUG -fPIC '-std=gnu++14'  ";
+				OTHER_LIBTOOLFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = "render-utils";
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/kevinhouyang/Development/hifi/build/libraries/render-utils";
+				SYSTEM_HEADER_SEARCH_PATHS = (/usr/local/Cellar/qt/5.11.2/lib/QtGui.framework/Headers,/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk/System/Library/Frameworks/OpenGL.framework/Headers,/usr/local/Cellar/qt/5.11.2/lib/QtCore.framework/Headers,"/usr/local/Cellar/qt/5.11.2/./mkspecs/macx-clang",/usr/local/Cellar/qt/5.11.2/lib/QtNetwork.framework/Headers,/usr/local/Cellar/qt/5.11.2/lib/QtQml.framework/Headers,/usr/local/Cellar/qt/5.11.2/lib/QtQuick.framework/Headers,/usr/local/Cellar/qt/5.11.2/lib/QtScript.framework/Headers,/usr/local/Cellar/qt/5.11.2/lib/QtWidgets.framework/Headers,/Users/kevinhouyang/Development/hifi/build/ext/Xcode/tbb/project/src/tbb/include,/Users/kevinhouyang/Development/hifi/build/ext/Xcode/quazip/project/include,/usr/local/Cellar/qt/5.11.2/lib/QtScriptTools.framework/Headers,/usr/local/Cellar/qt/5.11.2/lib/QtWebSockets.framework/Headers);
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = RelWithDebInfo;
+		};
+		07E3640E63AF42BD874B3465 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .a;
+				FRAMEWORK_SEARCH_PATHS = (/usr/local/Cellar/qt/5.11.2/lib);
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 3;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",GLM_FORCE_RADIANS,DEV_BUILD,QT_GUI_LIB,QT_CORE_LIB,QT_NO_DEBUG,QT_NETWORK_LIB,QT_QML_LIB,QT_QUICK_LIB,QT_SCRIPT_LIB,QT_WIDGETS_LIB,QT_SCRIPTTOOLS_LIB,QT_WEBSOCKETS_LIB);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = ("/Users/kevinhouyang/Development/hifi/build/libraries/render-utils","/Users/kevinhouyang/Development/hifi/libraries/render-utils","/Users/kevinhouyang/Development/hifi/build/libraries/render-utils/render-utils_autogen/include_Release",/Users/kevinhouyang/Development/hifi/build/includes,/Users/kevinhouyang/Development/hifi/build/ext/Xcode/glm/project/include,/Users/kevinhouyang/Development/hifi/libraries/shared/src,/Users/kevinhouyang/Development/hifi/build/libraries/shared,/Users/kevinhouyang/Development/hifi/libraries/task/src,/Users/kevinhouyang/Development/hifi/build/libraries/task,/Users/kevinhouyang/Development/hifi/libraries/ktx/src,/Users/kevinhouyang/Development/hifi/build/libraries/ktx,/Users/kevinhouyang/Development/hifi/libraries/gpu/src,/Users/kevinhouyang/Development/hifi/build/libraries/gpu,/Users/kevinhouyang/Development/hifi/libraries/shaders/src,/Users/kevinhouyang/Development/hifi/build/libraries/shaders,/Users/kevinhouyang/Development/hifi/libraries/graphics/src,/Users/kevinhouyang/Development/hifi/build/libraries/graphics,"/Users/kevinhouyang/Development/hifi/libraries/graphics-scripting/src","/Users/kevinhouyang/Development/hifi/build/libraries/graphics-scripting","/Users/kevinhouyang/Development/hifi/libraries/model-networking/src","/Users/kevinhouyang/Development/hifi/build/libraries/model-networking",/Users/kevinhouyang/Development/hifi/libraries/render/src,/Users/kevinhouyang/Development/hifi/build/libraries/render,/Users/kevinhouyang/Development/hifi/libraries/animation/src,/Users/kevinhouyang/Development/hifi/build/libraries/animation,/Users/kevinhouyang/Development/hifi/libraries/fbx/src,/Users/kevinhouyang/Development/hifi/build/libraries/fbx,/Users/kevinhouyang/Development/hifi/libraries/image/src,/Users/kevinhouyang/Development/hifi/build/libraries/image,/Users/kevinhouyang/Development/hifi/libraries/procedural/src,/Users/kevinhouyang/Development/hifi/build/libraries/procedural,/Users/kevinhouyang/Development/hifi/libraries/audio/src,/Users/kevinhouyang/Development/hifi/libraries/networking/src,/Users/kevinhouyang/Development/hifi/libraries/octree/src,/Users/kevinhouyang/Development/hifi/build/ext/Xcode/json/project/src/json,/Users/kevinhouyang/Development/hifi/build/ext/Xcode/glad45/project/include);
+				INSTALL_PATH = "";
+				LIBRARY_STYLE = STATIC;
+				OTHER_CPLUSPLUSFLAGS = " -Wall -Wextra -fno-strict-aliasing -Wno-unused-parameter --stdlib=libc++        -DNDEBUG -fPIC '-std=gnu++14'  ";
+				OTHER_LIBTOOLFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = "render-utils";
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/kevinhouyang/Development/hifi/build/libraries/render-utils";
+				SYSTEM_HEADER_SEARCH_PATHS = (/usr/local/Cellar/qt/5.11.2/lib/QtGui.framework/Headers,/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk/System/Library/Frameworks/OpenGL.framework/Headers,/usr/local/Cellar/qt/5.11.2/lib/QtCore.framework/Headers,"/usr/local/Cellar/qt/5.11.2/./mkspecs/macx-clang",/usr/local/Cellar/qt/5.11.2/lib/QtNetwork.framework/Headers,/usr/local/Cellar/qt/5.11.2/lib/QtQml.framework/Headers,/usr/local/Cellar/qt/5.11.2/lib/QtQuick.framework/Headers,/usr/local/Cellar/qt/5.11.2/lib/QtScript.framework/Headers,/usr/local/Cellar/qt/5.11.2/lib/QtWidgets.framework/Headers,/Users/kevinhouyang/Development/hifi/build/ext/Xcode/tbb/project/src/tbb/include,/Users/kevinhouyang/Development/hifi/build/ext/Xcode/quazip/project/include,/usr/local/Cellar/qt/5.11.2/lib/QtScriptTools.framework/Headers,/usr/local/Cellar/qt/5.11.2/lib/QtWebSockets.framework/Headers);
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = Release;
+		};
+		08D793D9D9BA467192DF5206 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ALL_BUILD;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/kevinhouyang/Development/hifi/build/libraries/render-utils";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = Debug;
+		};
+		0C076C3D97844BA58D605882 /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = package;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/kevinhouyang/Development/hifi/build/libraries/render-utils";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = RelWithDebInfo;
+		};
+		0DF498B5445C4122AF4F839A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ZERO_CHECK;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/kevinhouyang/Development/hifi/build/libraries/render-utils";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = Debug;
+		};
+		159C05FB68164A01A0F0589E /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = install;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/kevinhouyang/Development/hifi/build/libraries/render-utils";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = MinSizeRel;
+		};
+		265FBABF83EE4212AA518CE7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = "render-utils_autogen";
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/kevinhouyang/Development/hifi/build/libraries/render-utils";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = Release;
+		};
+		2B7BFC9FDC6E405DA5AB98E4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = RUN_TESTS;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/kevinhouyang/Development/hifi/build/libraries/render-utils";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = Release;
+		};
+		2BFCC906457A4A47B4F0ED40 /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ZERO_CHECK;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/kevinhouyang/Development/hifi/build/libraries/render-utils";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = RelWithDebInfo;
+		};
+		3E3CCD47115F459E9349A96E /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ZERO_CHECK;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/kevinhouyang/Development/hifi/build/libraries/render-utils";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = MinSizeRel;
+		};
+		4466071E304B450587142012 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ALL_BUILD;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/kevinhouyang/Development/hifi/build/libraries/render-utils";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = Release;
+		};
+		46BA66886B4F4762A0D63384 /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = "render-utils_autogen";
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/kevinhouyang/Development/hifi/build/libraries/render-utils";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = RelWithDebInfo;
+		};
+		6993B056CDD84A4BB57E67BF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ZERO_CHECK;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/kevinhouyang/Development/hifi/build/libraries/render-utils";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = Release;
+		};
+		6E89A5E211B24D74A67595FB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "c++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk;
+				SYMROOT = "/Users/kevinhouyang/Development/hifi/build/libraries/render-utils/build";
+			};
+			name = Debug;
+		};
+		76D7EA07337B42D5BD355518 /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = install;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/kevinhouyang/Development/hifi/build/libraries/render-utils";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = RelWithDebInfo;
+		};
+		84D49B1A21784D6485E2B76C /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = RUN_TESTS;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/kevinhouyang/Development/hifi/build/libraries/render-utils";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = RelWithDebInfo;
+		};
+		87DC68ACD913425BB9377BF8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = "render-utils_autogen";
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/kevinhouyang/Development/hifi/build/libraries/render-utils";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = Debug;
+		};
+		8F5A143A22F84D43BA124CF9 /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = package;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/kevinhouyang/Development/hifi/build/libraries/render-utils";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = MinSizeRel;
+		};
+		970B87ACA6F045A29377C298 /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ALL_BUILD;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/kevinhouyang/Development/hifi/build/libraries/render-utils";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = RelWithDebInfo;
+		};
+		A6796ED18A034A27B1602273 /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "c++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk;
+				SYMROOT = "/Users/kevinhouyang/Development/hifi/build/libraries/render-utils/build";
+			};
+			name = MinSizeRel;
+		};
+		A89E5287C4714475AED00DE8 /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "c++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk;
+				SYMROOT = "/Users/kevinhouyang/Development/hifi/build/libraries/render-utils/build";
+			};
+			name = RelWithDebInfo;
+		};
+		A9C5FD4252CA40CEAC4D76FD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = package;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/kevinhouyang/Development/hifi/build/libraries/render-utils";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = Release;
+		};
+		B1D319443A6B4AC5B06F36AC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = install;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/kevinhouyang/Development/hifi/build/libraries/render-utils";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = Release;
+		};
+		B6C60E0B3A784F319E8F3504 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = RUN_TESTS;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/kevinhouyang/Development/hifi/build/libraries/render-utils";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = Debug;
+		};
+		C20D805B76FF42BFA5492397 /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = "render-utils_autogen";
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/kevinhouyang/Development/hifi/build/libraries/render-utils";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = MinSizeRel;
+		};
+		C487566E2E644B27A3899EA6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .a;
+				FRAMEWORK_SEARCH_PATHS = (/usr/local/Cellar/qt/5.11.2/lib);
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",GLM_FORCE_RADIANS,DEV_BUILD,QT_GUI_LIB,QT_CORE_LIB,QT_NETWORK_LIB,QT_QML_LIB,QT_QUICK_LIB,QT_SCRIPT_LIB,QT_WIDGETS_LIB,QT_SCRIPTTOOLS_LIB,QT_WEBSOCKETS_LIB);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = ("/Users/kevinhouyang/Development/hifi/build/libraries/render-utils","/Users/kevinhouyang/Development/hifi/libraries/render-utils","/Users/kevinhouyang/Development/hifi/build/libraries/render-utils/render-utils_autogen/include_Debug",/Users/kevinhouyang/Development/hifi/build/includes,/Users/kevinhouyang/Development/hifi/build/ext/Xcode/glm/project/include,/Users/kevinhouyang/Development/hifi/libraries/shared/src,/Users/kevinhouyang/Development/hifi/build/libraries/shared,/Users/kevinhouyang/Development/hifi/libraries/task/src,/Users/kevinhouyang/Development/hifi/build/libraries/task,/Users/kevinhouyang/Development/hifi/libraries/ktx/src,/Users/kevinhouyang/Development/hifi/build/libraries/ktx,/Users/kevinhouyang/Development/hifi/libraries/gpu/src,/Users/kevinhouyang/Development/hifi/build/libraries/gpu,/Users/kevinhouyang/Development/hifi/libraries/shaders/src,/Users/kevinhouyang/Development/hifi/build/libraries/shaders,/Users/kevinhouyang/Development/hifi/libraries/graphics/src,/Users/kevinhouyang/Development/hifi/build/libraries/graphics,"/Users/kevinhouyang/Development/hifi/libraries/graphics-scripting/src","/Users/kevinhouyang/Development/hifi/build/libraries/graphics-scripting","/Users/kevinhouyang/Development/hifi/libraries/model-networking/src","/Users/kevinhouyang/Development/hifi/build/libraries/model-networking",/Users/kevinhouyang/Development/hifi/libraries/render/src,/Users/kevinhouyang/Development/hifi/build/libraries/render,/Users/kevinhouyang/Development/hifi/libraries/animation/src,/Users/kevinhouyang/Development/hifi/build/libraries/animation,/Users/kevinhouyang/Development/hifi/libraries/fbx/src,/Users/kevinhouyang/Development/hifi/build/libraries/fbx,/Users/kevinhouyang/Development/hifi/libraries/image/src,/Users/kevinhouyang/Development/hifi/build/libraries/image,/Users/kevinhouyang/Development/hifi/libraries/procedural/src,/Users/kevinhouyang/Development/hifi/build/libraries/procedural,/Users/kevinhouyang/Development/hifi/libraries/audio/src,/Users/kevinhouyang/Development/hifi/libraries/networking/src,/Users/kevinhouyang/Development/hifi/libraries/octree/src,/Users/kevinhouyang/Development/hifi/build/ext/Xcode/json/project/src/json,/Users/kevinhouyang/Development/hifi/build/ext/Xcode/glad45/project/include);
+				INSTALL_PATH = "";
+				LIBRARY_STYLE = STATIC;
+				OTHER_CPLUSPLUSFLAGS = " -Wall -Wextra -fno-strict-aliasing -Wno-unused-parameter --stdlib=libc++       -DDEBUG -fPIC '-std=gnu++14'  ";
+				OTHER_LIBTOOLFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = "render-utils";
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/kevinhouyang/Development/hifi/build/libraries/render-utils";
+				SYSTEM_HEADER_SEARCH_PATHS = (/usr/local/Cellar/qt/5.11.2/lib/QtGui.framework/Headers,/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk/System/Library/Frameworks/OpenGL.framework/Headers,/usr/local/Cellar/qt/5.11.2/lib/QtCore.framework/Headers,"/usr/local/Cellar/qt/5.11.2/./mkspecs/macx-clang",/usr/local/Cellar/qt/5.11.2/lib/QtNetwork.framework/Headers,/usr/local/Cellar/qt/5.11.2/lib/QtQml.framework/Headers,/usr/local/Cellar/qt/5.11.2/lib/QtQuick.framework/Headers,/usr/local/Cellar/qt/5.11.2/lib/QtScript.framework/Headers,/usr/local/Cellar/qt/5.11.2/lib/QtWidgets.framework/Headers,/Users/kevinhouyang/Development/hifi/build/ext/Xcode/tbb/project/src/tbb/include,/Users/kevinhouyang/Development/hifi/build/ext/Xcode/quazip/project/include,/usr/local/Cellar/qt/5.11.2/lib/QtScriptTools.framework/Headers,/usr/local/Cellar/qt/5.11.2/lib/QtWebSockets.framework/Headers);
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = Debug;
+		};
+		CD5CF828DA7F484189C6A71F /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ALL_BUILD;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/kevinhouyang/Development/hifi/build/libraries/render-utils";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = MinSizeRel;
+		};
+		D158A45C054F48558CD168BE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "c++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEPLOYMENT_POSTPROCESSING = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk;
+				SYMROOT = "/Users/kevinhouyang/Development/hifi/build/libraries/render-utils/build";
+			};
+			name = Release;
+		};
+		D178A5A18BF2408D8D394434 /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .a;
+				FRAMEWORK_SEARCH_PATHS = (/usr/local/Cellar/qt/5.11.2/lib);
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = s;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",GLM_FORCE_RADIANS,DEV_BUILD,QT_GUI_LIB,QT_CORE_LIB,QT_NO_DEBUG,QT_NETWORK_LIB,QT_QML_LIB,QT_QUICK_LIB,QT_SCRIPT_LIB,QT_WIDGETS_LIB,QT_SCRIPTTOOLS_LIB,QT_WEBSOCKETS_LIB);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = ("/Users/kevinhouyang/Development/hifi/build/libraries/render-utils","/Users/kevinhouyang/Development/hifi/libraries/render-utils","/Users/kevinhouyang/Development/hifi/build/libraries/render-utils/render-utils_autogen/include_MinSizeRel",/Users/kevinhouyang/Development/hifi/build/includes,/Users/kevinhouyang/Development/hifi/build/ext/Xcode/glm/project/include,/Users/kevinhouyang/Development/hifi/libraries/shared/src,/Users/kevinhouyang/Development/hifi/build/libraries/shared,/Users/kevinhouyang/Development/hifi/libraries/task/src,/Users/kevinhouyang/Development/hifi/build/libraries/task,/Users/kevinhouyang/Development/hifi/libraries/ktx/src,/Users/kevinhouyang/Development/hifi/build/libraries/ktx,/Users/kevinhouyang/Development/hifi/libraries/gpu/src,/Users/kevinhouyang/Development/hifi/build/libraries/gpu,/Users/kevinhouyang/Development/hifi/libraries/shaders/src,/Users/kevinhouyang/Development/hifi/build/libraries/shaders,/Users/kevinhouyang/Development/hifi/libraries/graphics/src,/Users/kevinhouyang/Development/hifi/build/libraries/graphics,"/Users/kevinhouyang/Development/hifi/libraries/graphics-scripting/src","/Users/kevinhouyang/Development/hifi/build/libraries/graphics-scripting","/Users/kevinhouyang/Development/hifi/libraries/model-networking/src","/Users/kevinhouyang/Development/hifi/build/libraries/model-networking",/Users/kevinhouyang/Development/hifi/libraries/render/src,/Users/kevinhouyang/Development/hifi/build/libraries/render,/Users/kevinhouyang/Development/hifi/libraries/animation/src,/Users/kevinhouyang/Development/hifi/build/libraries/animation,/Users/kevinhouyang/Development/hifi/libraries/fbx/src,/Users/kevinhouyang/Development/hifi/build/libraries/fbx,/Users/kevinhouyang/Development/hifi/libraries/image/src,/Users/kevinhouyang/Development/hifi/build/libraries/image,/Users/kevinhouyang/Development/hifi/libraries/procedural/src,/Users/kevinhouyang/Development/hifi/build/libraries/procedural,/Users/kevinhouyang/Development/hifi/libraries/audio/src,/Users/kevinhouyang/Development/hifi/libraries/networking/src,/Users/kevinhouyang/Development/hifi/libraries/octree/src,/Users/kevinhouyang/Development/hifi/build/ext/Xcode/json/project/src/json,/Users/kevinhouyang/Development/hifi/build/ext/Xcode/glad45/project/include);
+				INSTALL_PATH = "";
+				LIBRARY_STYLE = STATIC;
+				OTHER_CPLUSPLUSFLAGS = " -Wall -Wextra -fno-strict-aliasing -Wno-unused-parameter --stdlib=libc++        -DNDEBUG -fPIC '-std=gnu++14'  ";
+				OTHER_LIBTOOLFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = "render-utils";
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/kevinhouyang/Development/hifi/build/libraries/render-utils";
+				SYSTEM_HEADER_SEARCH_PATHS = (/usr/local/Cellar/qt/5.11.2/lib/QtGui.framework/Headers,/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk/System/Library/Frameworks/OpenGL.framework/Headers,/usr/local/Cellar/qt/5.11.2/lib/QtCore.framework/Headers,"/usr/local/Cellar/qt/5.11.2/./mkspecs/macx-clang",/usr/local/Cellar/qt/5.11.2/lib/QtNetwork.framework/Headers,/usr/local/Cellar/qt/5.11.2/lib/QtQml.framework/Headers,/usr/local/Cellar/qt/5.11.2/lib/QtQuick.framework/Headers,/usr/local/Cellar/qt/5.11.2/lib/QtScript.framework/Headers,/usr/local/Cellar/qt/5.11.2/lib/QtWidgets.framework/Headers,/Users/kevinhouyang/Development/hifi/build/ext/Xcode/tbb/project/src/tbb/include,/Users/kevinhouyang/Development/hifi/build/ext/Xcode/quazip/project/include,/usr/local/Cellar/qt/5.11.2/lib/QtScriptTools.framework/Headers,/usr/local/Cellar/qt/5.11.2/lib/QtWebSockets.framework/Headers);
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = MinSizeRel;
+		};
+		E51633FB27924BA3AD4349D2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = package;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/kevinhouyang/Development/hifi/build/libraries/render-utils";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = Debug;
+		};
+		F0EDDBE7276440E5B4739E5D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = install;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/kevinhouyang/Development/hifi/build/libraries/render-utils";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = Debug;
+		};
+		F38DCEFD242E4E859C4CB425 /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = RUN_TESTS;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/kevinhouyang/Development/hifi/build/libraries/render-utils";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost","-Wno-four-char-constants","-Wno-unknown-pragmas","$(inherited)");
+			};
+			name = MinSizeRel;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1BA84C77B1454DBBA025B1D7 /* Build configuration list for PBXAggregateTarget "package" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E51633FB27924BA3AD4349D2 /* Debug */,
+				A9C5FD4252CA40CEAC4D76FD /* Release */,
+				8F5A143A22F84D43BA124CF9 /* MinSizeRel */,
+				0C076C3D97844BA58D605882 /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		39E608F0A51A474D880F24CB /* Build configuration list for PBXAggregateTarget "ZERO_CHECK" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0DF498B5445C4122AF4F839A /* Debug */,
+				6993B056CDD84A4BB57E67BF /* Release */,
+				3E3CCD47115F459E9349A96E /* MinSizeRel */,
+				2BFCC906457A4A47B4F0ED40 /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		533890D362874A8AA433EA17 /* Build configuration list for PBXAggregateTarget "render-utils_autogen" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				87DC68ACD913425BB9377BF8 /* Debug */,
+				265FBABF83EE4212AA518CE7 /* Release */,
+				C20D805B76FF42BFA5492397 /* MinSizeRel */,
+				46BA66886B4F4762A0D63384 /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		60928C5805C14D00B3D37B90 /* Build configuration list for PBXProject "render-utils" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6E89A5E211B24D74A67595FB /* Debug */,
+				D158A45C054F48558CD168BE /* Release */,
+				A6796ED18A034A27B1602273 /* MinSizeRel */,
+				A89E5287C4714475AED00DE8 /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		6E49934830C2485184D01BE6 /* Build configuration list for PBXAggregateTarget "install" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F0EDDBE7276440E5B4739E5D /* Debug */,
+				B1D319443A6B4AC5B06F36AC /* Release */,
+				159C05FB68164A01A0F0589E /* MinSizeRel */,
+				76D7EA07337B42D5BD355518 /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		9D35F9CCF1C64650AC751D1C /* Build configuration list for PBXNativeTarget "render-utils" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C487566E2E644B27A3899EA6 /* Debug */,
+				07E3640E63AF42BD874B3465 /* Release */,
+				D178A5A18BF2408D8D394434 /* MinSizeRel */,
+				079445028B7E4073B1F22D98 /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		EC2B1FBDD259434AAEB4C9C0 /* Build configuration list for PBXAggregateTarget "ALL_BUILD" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				08D793D9D9BA467192DF5206 /* Debug */,
+				4466071E304B450587142012 /* Release */,
+				CD5CF828DA7F484189C6A71F /* MinSizeRel */,
+				970B87ACA6F045A29377C298 /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		F9DF4E8C4D80466BB56DED82 /* Build configuration list for PBXAggregateTarget "RUN_TESTS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B6C60E0B3A784F319E8F3504 /* Debug */,
+				2B7BFC9FDC6E405DA5AB98E4 /* Release */,
+				F38DCEFD242E4E859C4CB425 /* MinSizeRel */,
+				84D49B1A21784D6485E2B76C /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 89F63BAA0C544A35A17A9A44 /* Project object */;
+}

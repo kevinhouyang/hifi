@@ -1,0 +1,3 @@
+repository='external project URL'
+module='https://public.highfidelity.com/dependencies/draco-1.1.0.zip'
+tag='MD5=208f8b04c91d5f1c73d731a3ea37c5bb'

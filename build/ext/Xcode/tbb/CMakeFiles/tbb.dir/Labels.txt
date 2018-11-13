@@ -1,0 +1,14 @@
+# Target labels
+ tbb
+# Source files and their labels
+/Users/kevinhouyang/Development/hifi/build/ext/Xcode/tbb/CMakeFiles/tbb
+/Users/kevinhouyang/Development/hifi/build/ext/Xcode/tbb/CMakeFiles/tbb.rule
+/Users/kevinhouyang/Development/hifi/build/ext/Xcode/tbb/CMakeFiles/CMakeFiles/tbb-complete.rule
+/Users/kevinhouyang/Development/hifi/build/ext/Xcode/tbb/project/src/tbb-stamp/CMakeFiles/tbb-install.rule
+/Users/kevinhouyang/Development/hifi/build/ext/Xcode/tbb/project/src/tbb-stamp/CMakeFiles/tbb-mkdir.rule
+/Users/kevinhouyang/Development/hifi/build/ext/Xcode/tbb/project/src/tbb-stamp/CMakeFiles/tbb-download.rule
+/Users/kevinhouyang/Development/hifi/build/ext/Xcode/tbb/project/src/tbb-stamp/CMakeFiles/tbb-update.rule
+/Users/kevinhouyang/Development/hifi/build/ext/Xcode/tbb/project/src/tbb-stamp/CMakeFiles/tbb-patch.rule
+/Users/kevinhouyang/Development/hifi/build/ext/Xcode/tbb/project/src/tbb-stamp/CMakeFiles/tbb-configure.rule
+/Users/kevinhouyang/Development/hifi/build/ext/Xcode/tbb/project/src/tbb-stamp/CMakeFiles/tbb-build.rule
+/Users/kevinhouyang/Development/hifi/build/ext/Xcode/tbb/project/src/tbb-stamp/CMakeFiles/tbb-change-install-name.rule

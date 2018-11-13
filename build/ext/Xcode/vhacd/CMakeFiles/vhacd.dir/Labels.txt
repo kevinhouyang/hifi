@@ -1,0 +1,13 @@
+# Target labels
+ vhacd
+# Source files and their labels
+/Users/kevinhouyang/Development/hifi/build/ext/Xcode/vhacd/CMakeFiles/vhacd
+/Users/kevinhouyang/Development/hifi/build/ext/Xcode/vhacd/CMakeFiles/vhacd.rule
+/Users/kevinhouyang/Development/hifi/build/ext/Xcode/vhacd/CMakeFiles/CMakeFiles/vhacd-complete.rule
+/Users/kevinhouyang/Development/hifi/build/ext/Xcode/vhacd/project/src/vhacd-stamp/CMakeFiles/vhacd-install.rule
+/Users/kevinhouyang/Development/hifi/build/ext/Xcode/vhacd/project/src/vhacd-stamp/CMakeFiles/vhacd-mkdir.rule
+/Users/kevinhouyang/Development/hifi/build/ext/Xcode/vhacd/project/src/vhacd-stamp/CMakeFiles/vhacd-download.rule
+/Users/kevinhouyang/Development/hifi/build/ext/Xcode/vhacd/project/src/vhacd-stamp/CMakeFiles/vhacd-update.rule
+/Users/kevinhouyang/Development/hifi/build/ext/Xcode/vhacd/project/src/vhacd-stamp/CMakeFiles/vhacd-patch.rule
+/Users/kevinhouyang/Development/hifi/build/ext/Xcode/vhacd/project/src/vhacd-stamp/CMakeFiles/vhacd-configure.rule
+/Users/kevinhouyang/Development/hifi/build/ext/Xcode/vhacd/project/src/vhacd-stamp/CMakeFiles/vhacd-build.rule

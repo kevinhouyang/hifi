@@ -1,0 +1,49 @@
+{
+	"sources" : 
+	[
+		{
+			"file" : "/Users/kevinhouyang/Development/hifi/build/ext/Xcode/nvtt/CMakeFiles/nvtt"
+		},
+		{
+			"file" : "/Users/kevinhouyang/Development/hifi/build/ext/Xcode/nvtt/CMakeFiles/nvtt.rule"
+		},
+		{
+			"file" : "/Users/kevinhouyang/Development/hifi/build/ext/Xcode/nvtt/CMakeFiles/CMakeFiles/nvtt-complete.rule"
+		},
+		{
+			"file" : "/Users/kevinhouyang/Development/hifi/build/ext/Xcode/nvtt/project/src/nvtt-stamp/CMakeFiles/nvtt-install.rule"
+		},
+		{
+			"file" : "/Users/kevinhouyang/Development/hifi/build/ext/Xcode/nvtt/project/src/nvtt-stamp/CMakeFiles/nvtt-mkdir.rule"
+		},
+		{
+			"file" : "/Users/kevinhouyang/Development/hifi/build/ext/Xcode/nvtt/project/src/nvtt-stamp/CMakeFiles/nvtt-download.rule"
+		},
+		{
+			"file" : "/Users/kevinhouyang/Development/hifi/build/ext/Xcode/nvtt/project/src/nvtt-stamp/CMakeFiles/nvtt-update.rule"
+		},
+		{
+			"file" : "/Users/kevinhouyang/Development/hifi/build/ext/Xcode/nvtt/project/src/nvtt-stamp/CMakeFiles/nvtt-patch.rule"
+		},
+		{
+			"file" : "/Users/kevinhouyang/Development/hifi/build/ext/Xcode/nvtt/project/src/nvtt-stamp/CMakeFiles/nvtt-configure.rule"
+		},
+		{
+			"file" : "/Users/kevinhouyang/Development/hifi/build/ext/Xcode/nvtt/project/src/nvtt-stamp/CMakeFiles/nvtt-build.rule"
+		},
+		{
+			"file" : "/Users/kevinhouyang/Development/hifi/build/ext/Xcode/nvtt/project/src/nvtt-stamp/CMakeFiles/nvtt-change-install-name.rule"
+		},
+		{
+			"file" : "/Users/kevinhouyang/Development/hifi/build/ext/Xcode/nvtt/project/src/nvtt-stamp/CMakeFiles/nvtt-change-dependency-paths.rule"
+		}
+	],
+	"target" : 
+	{
+		"labels" : 
+		[
+			"nvtt"
+		],
+		"name" : "nvtt"
+	}
+}

@@ -1,0 +1,43 @@
+{
+	"sources" : 
+	[
+		{
+			"file" : "/Users/kevinhouyang/Development/hifi/build/ext/Xcode/etc2comp/CMakeFiles/etc2comp"
+		},
+		{
+			"file" : "/Users/kevinhouyang/Development/hifi/build/ext/Xcode/etc2comp/CMakeFiles/etc2comp.rule"
+		},
+		{
+			"file" : "/Users/kevinhouyang/Development/hifi/build/ext/Xcode/etc2comp/CMakeFiles/CMakeFiles/etc2comp-complete.rule"
+		},
+		{
+			"file" : "/Users/kevinhouyang/Development/hifi/build/ext/Xcode/etc2comp/project/src/etc2comp-stamp/CMakeFiles/etc2comp-install.rule"
+		},
+		{
+			"file" : "/Users/kevinhouyang/Development/hifi/build/ext/Xcode/etc2comp/project/src/etc2comp-stamp/CMakeFiles/etc2comp-mkdir.rule"
+		},
+		{
+			"file" : "/Users/kevinhouyang/Development/hifi/build/ext/Xcode/etc2comp/project/src/etc2comp-stamp/CMakeFiles/etc2comp-download.rule"
+		},
+		{
+			"file" : "/Users/kevinhouyang/Development/hifi/build/ext/Xcode/etc2comp/project/src/etc2comp-stamp/CMakeFiles/etc2comp-update.rule"
+		},
+		{
+			"file" : "/Users/kevinhouyang/Development/hifi/build/ext/Xcode/etc2comp/project/src/etc2comp-stamp/CMakeFiles/etc2comp-patch.rule"
+		},
+		{
+			"file" : "/Users/kevinhouyang/Development/hifi/build/ext/Xcode/etc2comp/project/src/etc2comp-stamp/CMakeFiles/etc2comp-configure.rule"
+		},
+		{
+			"file" : "/Users/kevinhouyang/Development/hifi/build/ext/Xcode/etc2comp/project/src/etc2comp-stamp/CMakeFiles/etc2comp-build.rule"
+		}
+	],
+	"target" : 
+	{
+		"labels" : 
+		[
+			"etc2comp"
+		],
+		"name" : "etc2comp"
+	}
+}
