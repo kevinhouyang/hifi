@@ -68,6 +68,20 @@ const char* EXCLUSION_GROUP_KEY = "exclusionGroup";
 Menu::Menu() {
     auto dialogsManager = DependencyManager::get<DialogsManager>();
     auto accountManager = DependencyManager::get<AccountManager>();
+    
+    // Kevin's changes ----------------------------------
+    MenuWrapper *kevinMenu = addMenu("Kevin");
+    
+    auto sampleSoundAction = addActionToQMenuAndActionHash(kevinMenu, MenuOption::PlaySample);
+    connect(sampleSoundAction, &QAction::triggered, [] {
+        auto avatarManager = DependencyManager::get<AvatarManager>();
+        AudioInjector::playSound(qApp->getSampleSound(), 0.5f, 1.0, avatarManager->getMyAvatarPosition());
+    });
+    
+    auto changeTitleAction = addActionToQMenuAndActionHash(kevinMenu, MenuOption::ChangeTitle);
+    connect(changeTitleAction, &QAction::triggered, [] {
+        qApp->getWindow()->setWindowTitle("Let's Go Exploring!");
+    });
 
     // File/Application menu ----------------------------------
     MenuWrapper* fileMenu = addMenu("File");
