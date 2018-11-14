@@ -1,3 +1,0 @@
-repository='external project URL'
-module='https://public.highfidelity.com/dependencies/glad/glad45.zip'
-tag='MD5=cfb19b3cb5b2f8f1d1669fb3150e5f05'

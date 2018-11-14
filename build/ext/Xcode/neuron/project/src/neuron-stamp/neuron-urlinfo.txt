@@ -1,3 +1,0 @@
-repository='external project URL'
-module='https://public.highfidelity.com/dependencies/neuron_datareader_b.12.2.zip'
-tag='MD5=84273ad2200bf86a9279d1f412a822ca'

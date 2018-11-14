@@ -1,3 +1,0 @@
-repository='external project URL'
-module='https://public.highfidelity.com/dependencies/bullet-2.88.tgz'
-tag='MD5=0a6876607ebe83e227427215f15946fd'

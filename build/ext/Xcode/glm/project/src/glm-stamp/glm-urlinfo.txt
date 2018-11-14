@@ -1,3 +1,0 @@
-repository='external project URL'
-module='https://public.highfidelity.com/dependencies/glm-0.9.8.5-patched.zip'
-tag='MD5=7d39ecc1cea275427534c3cfd6dd63f0'

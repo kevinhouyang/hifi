@@ -1,3 +1,0 @@
-repository='external project URL'
-module='https://public.highfidelity.com/dependencies/SDL2-2.0.3.zip'
-tag='MD5=55f1eae5142d20db11c844d8d4d6deed'

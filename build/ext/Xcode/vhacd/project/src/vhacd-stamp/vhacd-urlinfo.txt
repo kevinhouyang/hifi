@@ -1,3 +1,0 @@
-repository='external project URL'
-module='https://public.highfidelity.com/dependencies/v-hacd-master.zip'
-tag='MD5=3bfc94f8dd3dfbfe8f4dc088f4820b3e'

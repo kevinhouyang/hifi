@@ -1,3 +1,0 @@
-repository='external project URL'
-module='https://public.highfidelity.com/dependencies/GifCreator.zip'
-tag='MD5=8ac8ef5196f47c658dce784df5ecdb70'
